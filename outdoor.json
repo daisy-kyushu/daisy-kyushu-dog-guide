@@ -1,0 +1,44 @@
+[
+  {
+    "id": "kuju-kogen",
+    "name": "くじゅう高原エリア",
+    "area": "大分県竹田市・玖珠郡周辺",
+    "type": "高原 / ドライブ / 散策",
+    "dogAllowed": "施設ごとに要確認",
+    "largeDog": "施設ごとに要確認",
+    "rainyOk": "屋外中心",
+    "indoorOk": "施設ごとに要確認",
+    "officialUrl": "https://www.visit-oita.jp/",
+    "mapQuery": "くじゅう高原 犬連れ",
+    "lastChecked": "2026-05-17",
+    "memo": "高原ドライブや散策候補。牧場・公園・飲食店は施設ごとに犬同伴条件が違います。"
+  },
+  {
+    "id": "yufuin-outdoor",
+    "name": "湯布院・由布岳周辺",
+    "area": "大分県由布市",
+    "type": "観光 / 散策 / ドッグラン",
+    "dogAllowed": "施設ごとに要確認",
+    "largeDog": "施設ごとに要確認",
+    "rainyOk": "雨天時は要確認",
+    "indoorOk": "施設ごとに要確認",
+    "officialUrl": "https://www.visit-oita.jp/",
+    "mapQuery": "湯布院 犬連れ 散策",
+    "lastChecked": "2026-05-17",
+    "memo": "湯布院観光とドッグランを組み合わせやすい候補。混雑・駐車場・犬同伴可否は要確認。"
+  },
+  {
+    "id": "beppu-outdoor",
+    "name": "別府湾周辺ドライブ",
+    "area": "大分県別府市",
+    "type": "ドライブ / 休憩 / サービスエリア",
+    "dogAllowed": "施設ごとに要確認",
+    "largeDog": "施設ごとに要確認",
+    "rainyOk": "一部要確認",
+    "indoorOk": "施設ごとに要確認",
+    "officialUrl": "https://www.visit-oita.jp/",
+    "mapQuery": "別府 犬連れ ドライブ",
+    "lastChecked": "2026-05-17",
+    "memo": "移動途中の休憩や景色を楽しむ候補。犬同伴エリアは施設ごとに確認してください。"
+  }
+]

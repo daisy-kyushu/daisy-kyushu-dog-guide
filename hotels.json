@@ -10,24 +10,9 @@
     "vaccineRequired": "宿ごとに要確認",
     "rakutenTravelUrl": "https://travel.rakuten.co.jp/",
     "searchKeyword": "大分 犬 同伴",
-    "lastChecked": "2026-05-16",
+    "lastChecked": "2026-05-17",
     "status": "楽天トラベル公式トップへ誘導",
     "memo": "楽天トラベルの検索欄で「大分 犬 同伴」「大分 ペットと泊まれる宿」などで検索してください。"
-  },
-  {
-    "id": "rakuten-travel-kyushu",
-    "name": "楽天トラベルで九州の犬と泊まれる宿を探す",
-    "area": "九州",
-    "dogSize": "宿ごとに要確認",
-    "roomWithDog": "宿ごとに要確認",
-    "mealAreaWithDog": "宿ごとに要確認",
-    "dogRun": "宿ごとに要確認",
-    "vaccineRequired": "宿ごとに要確認",
-    "rakutenTravelUrl": "https://travel.rakuten.co.jp/",
-    "searchKeyword": "九州 犬 同伴",
-    "lastChecked": "2026-05-16",
-    "status": "楽天トラベル公式トップへ誘導",
-    "memo": "楽天トラベルの検索欄で「九州 犬 同伴」「九州 ペットと泊まれる宿」などで検索してください。"
   },
   {
     "id": "rakuten-travel-yufuin",
@@ -40,8 +25,23 @@
     "vaccineRequired": "宿ごとに要確認",
     "rakutenTravelUrl": "https://travel.rakuten.co.jp/",
     "searchKeyword": "湯布院 犬 同伴",
-    "lastChecked": "2026-05-16",
+    "lastChecked": "2026-05-17",
     "status": "楽天トラベル公式トップへ誘導",
     "memo": "予約前に犬同伴条件、料金、頭数制限、ワクチン証明の有無を必ず確認してください。"
+  },
+  {
+    "id": "rakuten-travel-kyushu",
+    "name": "楽天トラベルで九州の犬と泊まれる宿を探す",
+    "area": "九州",
+    "dogSize": "宿ごとに要確認",
+    "roomWithDog": "宿ごとに要確認",
+    "mealAreaWithDog": "宿ごとに要確認",
+    "dogRun": "宿ごとに要確認",
+    "vaccineRequired": "宿ごとに要確認",
+    "rakutenTravelUrl": "https://travel.rakuten.co.jp/",
+    "searchKeyword": "九州 犬 同伴",
+    "lastChecked": "2026-05-17",
+    "status": "楽天トラベル公式トップへ誘導",
+    "memo": "楽天トラベルで条件を絞り込み、各宿の公式情報も確認してください。"
   }
 ]
