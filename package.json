@@ -1,0 +1,1 @@
+{"name":"daisy-kyushu-dog-guide","version":"1.0.0","private":true,"scripts":{"update:products":"node scripts/update-rakuten-products.js","update:hotels":"node scripts/update-rakuten-hotels.js","update:events":"node scripts/update-events.js"}}
