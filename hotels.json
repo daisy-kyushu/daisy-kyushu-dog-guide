@@ -1,48 +1,47 @@
-const fs=require("fs/promises");
-
-async function main(){
-  const spots=JSON.parse(await fs.readFile("spots.json","utf8"));
-  const events=JSON.parse(await fs.readFile("events.json","utf8"));
-  const products=JSON.parse(await fs.readFile("products.json","utf8"));
-  const drafts=[];
-
-  for(const s of spots.filter(x=>x.weekendRecommended).slice(0,4)){
-    drafts.push({
-      id:`spot-${s.id}`,
-      type:"spot",
-      title:`${s.name} の紹介下書き`,
-      caption:`${s.area}で犬連れおでかけ候補を探している人へ🐾\n\n${s.name} は「${s.type}」の候補です。\n\n行く前に確認したいこと\n・営業日/営業時間\n・犬同伴条件\n・大型犬OKか\n・雨の日の利用可否\n・駐車場\n\nDaisyメモ：条件は変わることがあるので、必ず公式情報を確認してね。`,
-      hashtags:["#九州犬連れ","#大分犬連れ","#犬連れおでかけ","#サモエド","#DaisyKyushuDogGuide"],
-      status:"下書き",
-      source:"spots.json"
-    });
+[
+  {
+    "id": "rakuten-travel-oita",
+    "name": "楽天トラベルで大分県の犬と泊まれる宿を探す",
+    "area": "大分県",
+    "dogSize": "宿ごとに要確認",
+    "roomWithDog": "宿ごとに要確認",
+    "mealAreaWithDog": "宿ごとに要確認",
+    "dogRun": "宿ごとに要確認",
+    "vaccineRequired": "宿ごとに要確認",
+    "rakutenTravelUrl": "https://travel.rakuten.co.jp/",
+    "searchKeyword": "大分 犬 同伴",
+    "lastChecked": "2026-05-16",
+    "status": "楽天トラベル公式トップへ誘導",
+    "memo": "楽天トラベルの検索欄で「大分 犬 同伴」「大分 ペットと泊まれる宿」などで検索してください。"
+  },
+  {
+    "id": "rakuten-travel-kyushu",
+    "name": "楽天トラベルで九州の犬と泊まれる宿を探す",
+    "area": "九州",
+    "dogSize": "宿ごとに要確認",
+    "roomWithDog": "宿ごとに要確認",
+    "mealAreaWithDog": "宿ごとに要確認",
+    "dogRun": "宿ごとに要確認",
+    "vaccineRequired": "宿ごとに要確認",
+    "rakutenTravelUrl": "https://travel.rakuten.co.jp/",
+    "searchKeyword": "九州 犬 同伴",
+    "lastChecked": "2026-05-16",
+    "status": "楽天トラベル公式トップへ誘導",
+    "memo": "楽天トラベルの検索欄で「九州 犬 同伴」「九州 ペットと泊まれる宿」などで検索してください。"
+  },
+  {
+    "id": "rakuten-travel-yufuin",
+    "name": "楽天トラベルで湯布院・由布院の犬と泊まれる宿を探す",
+    "area": "大分県由布市・湯布院",
+    "dogSize": "宿ごとに要確認",
+    "roomWithDog": "宿ごとに要確認",
+    "mealAreaWithDog": "宿ごとに要確認",
+    "dogRun": "宿ごとに要確認",
+    "vaccineRequired": "宿ごとに要確認",
+    "rakutenTravelUrl": "https://travel.rakuten.co.jp/",
+    "searchKeyword": "湯布院 犬 同伴",
+    "lastChecked": "2026-05-16",
+    "status": "楽天トラベル公式トップへ誘導",
+    "memo": "予約前に犬同伴条件、料金、頭数制限、ワクチン証明の有無を必ず確認してください。"
   }
-
-  for(const e of events.slice(0,3)){
-    drafts.push({
-      id:`event-${e.id}`,
-      type:"event",
-      title:`${e.name} の告知下書き`,
-      caption:`犬連れイベント情報🐾\n\nイベント名：${e.name}\n開催日：${e.date}\n会場：${e.venue}\n\nイベント情報は変更・中止になる場合があります。\n参加前に必ず公式サイト・公式SNSで最新情報をご確認ください。`,
-      hashtags:["#犬イベント","#九州犬イベント","#犬連れおでかけ","#サモエド"],
-      status:"下書き",
-      source:"events.json"
-    });
-  }
-
-  for(const p of products.slice(0,4)){
-    drafts.push({
-      id:`goods-${p.id}`,
-      type:"affiliate",
-      title:`${p.category} グッズ紹介下書き`,
-      caption:`犬連れおでかけの持ち物候補🐾\n\n${p.productName}\n\n${p.whyCandidate}\n\n価格・在庫・評価は変動します。購入前にリンク先で最新情報を確認してください。\n※アフィリエイト広告を含む場合があります。`,
-      hashtags:["#犬用品","#犬連れ旅行","#サモエド","#楽天購入品"],
-      status:"下書き",
-      source:"products.json"
-    });
-  }
-
-  await fs.writeFile("instagram-drafts.json",JSON.stringify(drafts,null,2),"utf8");
-  console.log(`instagram-drafts.json を ${drafts.length} 件で更新しました。`);
-}
-main().catch(e=>{console.error(e);process.exit(1);});
+]
