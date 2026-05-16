@@ -1,0 +1,72 @@
+[
+  {
+    "id": "dogrun-elf",
+    "name": "森のドッグラン 枝瑠風",
+    "area": "大分県由布市湯布院町",
+    "type": "ドッグラン",
+    "dogAllowed": "要確認",
+    "largeDog": "要確認",
+    "parking": "要確認",
+    "officialUrl": "https://www.instagram.com/dogrun_elf/",
+    "sourceUrl": "https://www.instagram.com/dogrun_elf/",
+    "lastChecked": "2026-05-16",
+    "status": "公式SNS要確認",
+    "memo": "来場前に公式Instagramで最新情報を確認してください。"
+  },
+  {
+    "id": "onelove-oita",
+    "name": "森のドッグラン ワンLOVE",
+    "area": "大分県大分市",
+    "type": "ドッグラン / カフェ",
+    "dogAllowed": "狂犬病予防接種・ワクチン接種済みの犬のみ",
+    "largeDog": "要確認",
+    "parking": "要確認",
+    "officialUrl": "https://onelove-oita.com/",
+    "sourceUrl": "https://onelove-oita.com/",
+    "lastChecked": "2026-05-16",
+    "status": "公式確認済み",
+    "memo": "ラン以外ではリード必須。ヒート中・伝染病の可能性がある犬は利用不可。"
+  },
+  {
+    "id": "beppuwan-sa-dogrun",
+    "name": "別府湾SA ドッグラン",
+    "area": "大分県別府市",
+    "type": "ドッグラン / サービスエリア",
+    "dogAllowed": "要確認",
+    "largeDog": "要確認",
+    "parking": "あり",
+    "officialUrl": "https://www.w-holdings.co.jp/sapa/26060/",
+    "sourceUrl": "https://beppu-tourism.com/other/bepuwan-sa-dog-park/",
+    "lastChecked": "2026-05-16",
+    "status": "公式・観光サイト要確認",
+    "memo": "設備は最新情報を確認してください。"
+  },
+  {
+    "id": "yufuin-dogrun",
+    "name": "湯布院ドッグラン",
+    "area": "大分県由布市湯布院町",
+    "type": "ドッグラン",
+    "dogAllowed": "要確認",
+    "largeDog": "要確認",
+    "parking": "要確認",
+    "officialUrl": "https://www.yufuin-dogrun.com/",
+    "sourceUrl": "https://yufuin.gr.jp/spot/spot-4184/",
+    "lastChecked": "2026-05-16",
+    "status": "観光協会掲載・公式要確認",
+    "memo": "天候で営業時間変動や休業の可能性あり。"
+  },
+  {
+    "id": "oita-pet-official-list",
+    "name": "大分県観光公式 ペット同伴OKまとめ",
+    "area": "大分県",
+    "type": "公式まとめ / スポット情報源",
+    "dogAllowed": "施設ごとに要確認",
+    "largeDog": "施設ごとに要確認",
+    "parking": "施設ごとに要確認",
+    "officialUrl": "https://www.visit-oita.jp/topics/detail/548",
+    "sourceUrl": "https://www.visit-oita.jp/topics/detail/548",
+    "lastChecked": "2026-05-16",
+    "status": "公式情報源",
+    "memo": "大分県内のペット同伴情報の公式情報源。"
+  }
+]
