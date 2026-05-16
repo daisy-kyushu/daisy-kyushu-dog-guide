@@ -1,0 +1,32 @@
+name: Instagram First Auto Publish
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "20 0 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Auto collect content from official sources
+        run: node auto-collect-content.js
+      - name: Keep upcoming events only
+        run: node update-events.js
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto publish: official sources -> site JSON"
+          file_pattern: |
+            spots.json
+            outdoor.json
+            hotels.json
+            events.json
+            auto-collection-report.json

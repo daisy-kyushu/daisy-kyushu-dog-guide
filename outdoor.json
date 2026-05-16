@@ -40,5 +40,21 @@
     "mapQuery": "別府 犬連れ ドライブ",
     "lastChecked": "2026-05-17",
     "memo": "移動途中の休憩や景色を楽しむ候補。犬同伴エリアは施設ごとに確認してください。"
+  },
+  {
+    "id": "kuju-flower-park-candidate",
+    "name": "くじゅう花公園",
+    "area": "大分県竹田市久住町",
+    "type": "花公園 / アウトドア / 散策",
+    "dogAllowed": "要確認",
+    "largeDog": "要確認",
+    "rainyOk": "要確認",
+    "indoorOk": "要確認",
+    "officialUrl": "https://www.hana-kouen.com/",
+    "snsUrl": "",
+    "mapQuery": "くじゅう花公園 大分県竹田市久住町",
+    "lastChecked": "2026-05-16",
+    "status": "公式サイト候補",
+    "memo": "犬同伴条件・大型犬可否・リードルール・雨天時対応は公式情報で要確認。"
   }
 ]
