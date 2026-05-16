@@ -66,5 +66,23 @@
     "memo": "犬連れスポットを広げるための公式情報源。個別施設の条件確認に使います。",
     "weekendRecommended": false,
     "mapQuery": "大分県 ペット同伴 OK 観光"
+  },
+  {
+    "id": "dogrun-mozemoze-kagoshima",
+    "name": "室内ドッグラン もぜもぜ",
+    "area": "鹿児島県鹿児島市",
+    "type": "ドッグラン / 犬と遊びに行ける場所",
+    "dogAllowed": "要確認",
+    "largeDog": "要確認",
+    "rainyOk": "要確認",
+    "indoorOk": "要確認",
+    "parking": "要確認",
+    "officialUrl": "https://dogrun-mozemoze.com/",
+    "snsUrl": "",
+    "lastChecked": "2026-05-16",
+    "status": "自動候補 / official-site / 信頼度B",
+    "memo": "施設公式サイトを確認した候補。利用条件・大型犬可否・料金・雨天時運用は公式情報で要確認。",
+    "weekendRecommended": true,
+    "mapQuery": "室内ドッグラン もぜもぜ 鹿児島県鹿児島市"
   }
 ]
