@@ -1,33 +1,50 @@
-# GitHub Pages公開手順
+const fs = require("fs/promises");
+const path = require("path");
 
-## 1. リポジトリ作成
+const DATA_PATH = path.join(__dirname, "hotels.json");
 
-Repository name:
-`daisy-kyushu-dog-guide`
+async function main() {
+  const today = new Date().toISOString().slice(0, 10);
+  const hotels = [
+    {
+      id: "rakuten-travel-oita-pet-search",
+      name: "楽天トラベルで大分県の犬と泊まれる宿を探す",
+      area: "大分県",
+      dogSize: "宿ごとに要確認",
+      roomWithDog: "宿ごとに要確認",
+      mealAreaWithDog: "宿ごとに要確認",
+      dogRun: "宿ごとに要確認",
+      vaccineRequired: "宿ごとに要確認",
+      officialUrl: "https://travel.rakuten.co.jp/",
+      rakutenTravelUrl: "https://travel.rakuten.co.jp/",
+      searchKeyword: "大分 犬 同伴",
+      lastChecked: today,
+      status: "楽天トラベル公式トップへ誘導",
+      memo: "楽天トラベルの検索欄で「大分 犬 同伴」「大分 ペットと泊まれる宿」などで検索してください。犬同伴条件・料金・頭数制限・ワクチン証明の有無は変更される場合があります。"
+    },
+    {
+      id: "rakuten-travel-kyushu-pet-search",
+      name: "楽天トラベルで九州の犬と泊まれる宿を探す",
+      area: "九州",
+      dogSize: "宿ごとに要確認",
+      roomWithDog: "宿ごとに要確認",
+      mealAreaWithDog: "宿ごとに要確認",
+      dogRun: "宿ごとに要確認",
+      vaccineRequired: "宿ごとに要確認",
+      officialUrl: "https://travel.rakuten.co.jp/",
+      rakutenTravelUrl: "https://travel.rakuten.co.jp/",
+      searchKeyword: "九州 犬 同伴",
+      lastChecked: today,
+      status: "楽天トラベル公式トップへ誘導",
+      memo: "楽天トラベルの検索欄で「九州 犬 同伴」「九州 ペットと泊まれる宿」などで検索してください。宿ごとの条件は必ず確認してください。"
+    }
+  ];
 
-## 2. ファイルをアップロード
+  await fs.writeFile(DATA_PATH, JSON.stringify(hotels, null, 2), "utf8");
+  console.log("hotels.json を更新しました。");
+}
 
-このZIPの中身をすべてリポジトリにアップロードします。
-
-## 3. GitHub Pagesを有効化
-
-Settings → Pages → Source: Deploy from a branch → Branch: main → Folder: /root → Save
-
-公開URL:
-`https://daisy-kyushu.github.io/daisy-kyushu-dog-guide/`
-
-## 4. 楽天APIのSecretsを入れる
-
-Settings → Secrets and variables → Actions → New repository secret
-
-登録する名前:
-
-- `RAKUTEN_APP_ID`
-- `RAKUTEN_AFFILIATE_ID`
-
-## 5. Actionsを実行
-
-Actions → Update Rakuten Products → Run workflow
-
-イベント更新:
-Actions → Update Events → Run workflow
+main().catch(err => {
+  console.error(err);
+  process.exit(1);
+});

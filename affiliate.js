@@ -1,9 +1,9 @@
-name: Update Rakuten Hotels
+name: Update Events
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "20 0 * * 1"
+    - cron: "40 0 * * *"
 
 permissions:
   contents: write
@@ -16,10 +16,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-      - name: Update hotels
-        run: node update-rakuten-hotels.js
+      - name: Update events
+        run: node update-events.js
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Update Rakuten hotel links"
-          file_pattern: hotels.json
+          commit_message: "Update event data"
+          file_pattern: events.json

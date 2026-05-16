@@ -1,28 +1,11 @@
-name: Update Events
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Daisy Kyushu Dog Guide | 九州犬連れおでかけガイド</title><meta name="description" content="Daisyと探す、九州の犬連れおでかけ。"><link rel="stylesheet" href="style.css"></head><body><header class="site-header"><a class="brand" href="index.html"><span class="logo-paw">🐾</span><span><strong>Daisy Kyushu Dog Guide</strong><small>九州犬連れおでかけガイド</small></span></a><nav class="site-nav"><a href="index.html">ホーム</a><a href="spots.html">スポット</a><a href="hotels.html">宿</a><a href="events.html">イベント</a><a href="checklist.html">持ち物</a><a href="listing.html">掲載希望</a><a href="contact.html">お問い合わせ</a></nav></header><main><section class="hero"><div class="hero-text"><p class="badge">Samoyed Travel Media</p><h1>Daisyと探す、<br>九州の犬連れおでかけ。</h1><p>白くてふわふわのサモエドDaisyが案内する、九州の犬連れスポット・宿・イベント・持ち物ガイドです。</p><p class="notice">※本サイトにはアフィリエイト広告を含みます。</p><div class="hero-actions"><a class="button primary" href="spots.html">スポットを探す</a><a class="button" href="checklist.html">持ち物を確認する</a></div></div><div class="hero-dog"><div class="dog-face"><div class="ear left"></div><div class="ear right"></div><div class="face"><span class="eye left-eye"></span><span class="eye right-eye"></span><span class="nose"></span><span class="smile"></span></div></div><p>Daisyメモ：犬同伴条件は行く前に必ず公式情報を確認してね。</p></div></section>
+<section class="category-grid"><a class="category-card" href="spots.html"><span>🐾</span><h2>犬連れスポット</h2><p>大分から九州全域へ広げていきます。</p></a><a class="category-card" href="hotels.html"><span>🏡</span><h2>犬と泊まれる宿</h2><p>楽天トラベル導線つき。条件は要確認。</p></a><a class="category-card" href="events.html"><span>🎪</span><h2>イベント情報</h2><p>公式URLつきで変更・中止に注意。</p></a><a class="category-card" href="checklist.html"><span>🎒</span><h2>持ち物チェック</h2><p>Daisyおすすめ診断でグッズを提案。</p></a></section>
+<section class="panel"><h2>🐾 Daisyおすすめ診断</h2><p>わんちゃんのサイズやおでかけスタイルに合わせて、持ち物候補を表示します。</p><div id="diagnosis-widget"></div></section>
 
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: "40 0 * * *"
+<section class="panel">
+  <h2>🐾 Daisyおすすめグッズ</h2>
+  <p>楽天API設定後、レビュー件数や評価を参考に犬連れおでかけグッズを自動更新します。価格・在庫・評価は変動するため、購入前にリンク先で最新情報をご確認ください。</p>
+  <div id="product-banners" class="card-grid"></div>
+</section>
 
-permissions:
-  contents: write
-
-jobs:
-  update:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-
-      - name: Update events
-        run: node scripts/update-events.js
-
-      - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "Update event data"
-          file_pattern: data/events.json
+<section class="two-column"><div class="panel"><h2>大分の注目スポット</h2><div id="featured-spots" class="card-list"></div><a class="text-link" href="spots.html">スポット一覧を見る →</a></div><div class="panel"><h2>Instagram</h2><p>Daisyの日常やおでかけはこちら。</p><img class="qr" src="daisy_samoyed1217_qr.png" alt="Daisy Instagram QR"><p><a class="button" href="https://www.instagram.com/daisy_samoyed1217/" target="_blank" rel="noopener">Instagramを見る</a></p></div></section></main><footer class="site-footer"><div class="footer-grid"><div><strong>Daisy Kyushu Dog Guide</strong><p>九州の犬連れおでかけ情報を、Daisyと一緒に探すメディアです。</p><p class="small">※本サイトにはアフィリエイト広告を含みます。</p></div><div><p><a href="ad-policy.html">広告・PRポリシー</a></p><p><a href="privacy.html">プライバシーポリシー</a></p><p><a href="contact.html">お問い合わせ</a></p></div></div></footer><script src="main.js"></script><script src="diagnosis.js"></script></body></html>
