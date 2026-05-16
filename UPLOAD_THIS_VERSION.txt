@@ -1,8 +1,0 @@
-これは「フォルダなし簡単版」です。
-
-前回のようにCSSが効かず文字だけになる原因：
-HTMLは assets/css/style.css を読もうとしているのに、GitHub上で assets フォルダの構成が崩れていたためです。
-
-この版では index.html と同じ場所に style.css / main.js / products.json を置くので、初心者でも崩れにくいです。
-
-アップロード時は、このフォルダの中身を全部選択してGitHub直下へ入れてください。
