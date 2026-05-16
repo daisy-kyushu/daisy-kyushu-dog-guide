@@ -1,0 +1,1 @@
+const fs=require("fs/promises");async function main(){const today=new Date().toISOString().slice(0,10);const hotels=JSON.parse(await fs.readFile("hotels.json","utf8"));hotels.forEach(h=>h.lastChecked=today);await fs.writeFile("hotels.json",JSON.stringify(hotels,null,2),"utf8");console.log("hotels.json を更新しました。")}main().catch(e=>{console.error(e);process.exit(1);});

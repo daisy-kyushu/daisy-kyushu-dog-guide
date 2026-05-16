@@ -1,0 +1,44 @@
+
+async function fetchJson(path, fallback) {
+  try {
+    const res = await fetch(path, { cache: "no-store" });
+    if (!res.ok) throw new Error(`Failed to load ${path}`);
+    return await res.json();
+  } catch (e) {
+    console.warn(e);
+    return fallback || [];
+  }
+}
+function escapeHtml(value) {
+  return String(value ?? "").replace(/[&<>"']/g, (m) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
+}
+function card(title, rows, links = []) {
+  const meta = rows.map(([k, v, type]) => `<span class="tag ${type || ""}">${escapeHtml(k)}：${escapeHtml(v || "要確認")}</span>`).join("");
+  const linkHtml = links.filter(l => l.url).map(l => `<a class="button" href="${escapeHtml(l.url)}" target="_blank" rel="noopener">${escapeHtml(l.label)}</a>`).join(" ");
+  return `<article class="info-card"><h3>${escapeHtml(title)}</h3><div class="meta">${meta}</div><div class="links">${linkHtml}</div></article>`;
+}
+async function renderFeaturedSpots(){const el=document.getElementById("featured-spots");if(!el)return;const spots=await fetchJson("spots.json",[]);el.innerHTML=spots.slice(0,3).map(s=>card(s.name,[["エリア",s.area],["ジャンル",s.type],["大型犬",s.largeDog,"warn"],["最終確認日",s.lastChecked],["状態",s.status]],[{label:"公式情報を見る",url:s.officialUrl}])).join("")}
+async function renderSpots(){const el=document.getElementById("spots-list");if(!el)return;const spots=await fetchJson("spots.json",[]);const areaFilter=document.getElementById("area-filter");const typeFilter=document.getElementById("type-filter");[...new Set(spots.map(s=>s.area))].forEach(a=>areaFilter.innerHTML+=`<option value="${escapeHtml(a)}">${escapeHtml(a)}</option>`);[...new Set(spots.map(s=>s.type))].forEach(t=>typeFilter.innerHTML+=`<option value="${escapeHtml(t)}">${escapeHtml(t)}</option>`);const draw=()=>{const area=areaFilter.value,type=typeFilter.value;el.innerHTML=spots.filter(s=>(!area||s.area===area)&&(!type||s.type===type)).map(s=>card(s.name,[["エリア",s.area],["ジャンル",s.type],["犬同伴",s.dogAllowed,"warn"],["大型犬",s.largeDog,"warn"],["駐車場",s.parking],["最終確認日",s.lastChecked],["状態",s.status]],[{label:"公式情報",url:s.officialUrl}])).join("")};areaFilter.addEventListener("change",draw);typeFilter.addEventListener("change",draw);draw()}
+async function renderHotels(){const el=document.getElementById("hotels-list");if(!el)return;const hotels=await fetchJson("hotels.json",[]);el.innerHTML=hotels.map(h=>{const search=h.searchKeyword?`<p class="search-keyword">検索ワード例：<strong>${escapeHtml(h.searchKeyword)}</strong></p>`:"";return `<article class="info-card hotel-card"><h3>${escapeHtml(h.name)}</h3><p class="notice">犬同伴条件・料金・頭数制限・ワクチン証明の有無は変更される場合があります。予約前に必ず公式情報をご確認ください。</p>${search}<div class="meta"><span class="tag">エリア：${escapeHtml(h.area)}</span><span class="tag warn">犬サイズ：${escapeHtml(h.dogSize)}</span><span class="tag warn">客室同伴：${escapeHtml(h.roomWithDog)}</span><span class="tag warn">ワクチン証明：${escapeHtml(h.vaccineRequired)}</span><span class="tag">最終確認日：${escapeHtml(h.lastChecked)}</span><span class="tag">${escapeHtml(h.status)}</span></div><a class="button primary" href="${escapeHtml(h.rakutenTravelUrl)}" target="_blank" rel="noopener">楽天トラベルを開く</a></article>`}).join("")}
+function eventEndDate(dateText){const matches=String(dateText||"").match(/\d{4}-\d{2}-\d{2}/g);return matches&&matches.length?matches[matches.length-1]:null}
+function isUpcomingEvent(ev){const end=eventEndDate(ev.date);if(!end)return false;const today=new Date().toISOString().slice(0,10);return end>=today}
+async function renderEvents(){const el=document.getElementById("events-list");if(!el)return;const events=await fetchJson("events.json",[]);const upcoming=events.filter(isUpcomingEvent).sort((a,b)=>(eventEndDate(a.date)||"9999-99-99").localeCompare(eventEndDate(b.date)||"9999-99-99"));if(!upcoming.length){el.innerHTML=`<article class="info-card"><h3>現在掲載中の今後のイベントはありません</h3><p>新しいイベント情報を確認でき次第、公式URL付きで追加します。</p><p class="notice">イベント情報は変更・中止になる場合があります。参加前に必ず公式サイト・公式SNSで最新情報をご確認ください。</p></article>`;return}el.innerHTML=upcoming.map(ev=>card(ev.name,[["開催日",ev.date,"warn"],["エリア",ev.area],["会場",ev.venue,"warn"],["犬同伴ルール",ev.dogRules,"warn"],["最終確認日",ev.lastChecked],["状態",ev.status]],[{label:"公式サイト",url:ev.officialUrl},{label:"公式SNS",url:ev.officialSnsUrl}])).join("")}
+function productCard(p){const imageUrl=Array.isArray(p.mediumImageUrls)&&p.mediumImageUrls.length?p.mediumImageUrls[0]:"";const img=imageUrl?`<img class="product-img" src="${escapeHtml(imageUrl)}" alt="${escapeHtml(p.productName)}">`:`<div class="product-placeholder">🐾</div>`;const url=p.rakutenAffiliateUrl||p.normalUrl||"";const price=p.itemPrice?`<span class="tag">価格目安：${escapeHtml(p.itemPrice)}円</span>`:"";const rating=p.rating?`<span class="tag">評価：${escapeHtml(p.rating)}</span>`:"";const reviews=p.reviewCount?`<span class="tag">レビュー：${escapeHtml(p.reviewCount)}件</span>`:"";const shop=p.shopName?`<span class="tag">ショップ：${escapeHtml(p.shopName)}</span>`:"";return `<article class="info-card product-card">${img}<div class="product-body"><p class="tag">${escapeHtml(p.category||"犬用品")}</p><h3>${escapeHtml(p.productName)}</h3><p>${escapeHtml(p.whyCandidate||"犬連れおでかけに便利な候補です。")}</p><div class="meta">${price}${rating}${reviews}${shop}<span class="tag warn">最終確認日：${escapeHtml(p.lastChecked||"未取得")}</span></div>${url?`<a class="button primary" href="${escapeHtml(url)}" target="_blank" rel="noopener">楽天で見る</a>`:`<span class="tag warn">楽天API更新後にリンク表示</span>`}</div></article>`}
+async function renderProducts(){const el=document.getElementById("products-list");if(!el)return;const products=await fetchJson("products.json",[]);el.innerHTML=products.map(productCard).join("")}
+async function renderProductBanners(){const el=document.getElementById("product-banners");if(!el)return;const products=await fetchJson("products.json",[]);el.innerHTML=products.slice(0,8).map(productCard).join("")}
+const STORAGE_KEY="daisy_diagnosis_preferences";
+const productRules=[
+{name:"車用シートカバー",dogSize:["中型犬","大型犬"],scenes:["車移動"],concerns:["抜け毛","車内の汚れ"]},
+{name:"大型犬用ハーネス",dogSize:["大型犬"],scenes:["車移動","ドッグラン","イベント"],concerns:["安全対策"]},
+{name:"携帯水飲みボトル",dogSize:["小型犬","中型犬","大型犬"],scenes:["宿泊旅行","イベント","ドッグラン","カフェ"],concerns:["暑さ寒さ"]},
+{name:"犬用レインコート",dogSize:["中型犬","大型犬"],scenes:["雨の日"],concerns:["雨対策"]},
+{name:"マナー袋・消臭袋",dogSize:["小型犬","中型犬","大型犬"],scenes:["宿泊旅行","イベント","カフェ"],concerns:["マナー対策"]},
+{name:"抜け毛対策ブラシ",dogSize:["中型犬","大型犬"],scenes:["宿泊旅行","車移動"],concerns:["抜け毛"]},
+{name:"折りたたみフードボウル",dogSize:["小型犬","中型犬","大型犬"],scenes:["宿泊旅行","イベント"],concerns:["荷物が多い"]},
+{name:"吸水タオル",dogSize:["小型犬","中型犬","大型犬"],scenes:["雨の日","車移動"],concerns:["雨対策","車内の汚れ"]}
+];
+function savePrefs(prefs){localStorage.setItem(STORAGE_KEY,JSON.stringify(prefs))}
+function loadPrefs(){try{return JSON.parse(localStorage.getItem(STORAGE_KEY))||{}}catch{return {}}}
+function recommend({dogSize,scene,concern}){const scored=productRules.map(p=>{let score=0;if(p.dogSize.includes(dogSize))score+=2;if(p.scenes.includes(scene))score+=2;if(p.concerns.includes(concern))score+=2;return {...p,score}}).filter(p=>p.score>0).sort((a,b)=>b.score-a.score).slice(0,5);return scored.length?scored:productRules.slice(0,5)}
+function renderDiagnosis(){const root=document.getElementById("diagnosis-widget");if(!root)return;const prefs={dogSize:"大型犬",scene:"車移動",concern:"抜け毛",...loadPrefs()};root.innerHTML=`<div class="diagnosis-box"><div class="diagnosis-grid"><label>わんちゃんのサイズ<select id="dog-size">${["小型犬","中型犬","大型犬"].map(v=>`<option ${prefs.dogSize===v?"selected":""}>${v}</option>`).join("")}</select></label><label>よく行くおでかけ<select id="scene">${["車移動","宿泊旅行","雨の日","ドッグラン","カフェ","イベント"].map(v=>`<option ${prefs.scene===v?"selected":""}>${v}</option>`).join("")}</select></label><label>気になること<select id="concern">${["抜け毛","車内の汚れ","雨対策","荷物が多い","マナー対策","暑さ寒さ","安全対策"].map(v=>`<option ${prefs.concern===v?"selected":""}>${v}</option>`).join("")}</select></label></div><div id="diagnosis-result" class="result-card"></div><p class="small">この診断はブラウザ内に好み設定を保存する場合があります。個人を特定する目的では利用しません。</p></div>`;const draw=()=>{const current={dogSize:document.getElementById("dog-size").value,scene:document.getElementById("scene").value,concern:document.getElementById("concern").value};savePrefs(current);document.getElementById("diagnosis-result").innerHTML=`<strong>Daisyおすすめ候補</strong><ul>${recommend(current).map(p=>`<li>${p.name}</li>`).join("")}</ul><p class="small">価格・在庫・評価は変動します。購入前にリンク先で最新情報を確認してください。</p>`};["dog-size","scene","concern"].map(id=>document.getElementById(id)).forEach(c=>c.addEventListener("change",draw));draw()}
+document.addEventListener("DOMContentLoaded",()=>{renderFeaturedSpots().catch(console.error);renderSpots().catch(console.error);renderHotels().catch(console.error);renderEvents().catch(console.error);renderProducts().catch(console.error);renderProductBanners().catch(console.error);renderDiagnosis()});

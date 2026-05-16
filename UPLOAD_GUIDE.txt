@@ -1,0 +1,11 @@
+アップロード前に、GitHubに残っている古いファイル・フォルダを消すのがおすすめです。
+
+削除推奨：
+- daisy-kyushu-dog-guide フォルダ
+- assets フォルダ
+- data フォルダ
+- docs フォルダ
+- scripts フォルダ
+- 古い index.html / style.css / main.js など
+
+その後、このZIPを解凍して、中身を全部GitHub直下へアップロードしてください。
