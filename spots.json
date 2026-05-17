@@ -165,10 +165,10 @@
     "parking": "要確認",
     "officialUrl": "",
     "snsUrl": "",
-    "instagramUrl": "",
+    "instagramUrl": "https://www.instagram.com/cocohouse.dog?igsh=cHZ1MTl6NjVnNzE5",
     "lastChecked": "2026-05-17",
-    "status": "公式URL要再確認",
-    "memo": "登録していたInstagram URLが利用できないため、公式URLは一旦非表示。営業日・同伴条件・マナー規定はGoogle Maps等で最新情報を確認してください。",
+    "status": "公式Instagram確認",
+    "memo": "公式Instagramを確認。営業日・同伴条件・マナー規定は来店前に公式Instagramの最新案内を確認してください。",
     "weekendRecommended": true,
     "mapQuery": "Dog Cafe COCOHOUSE 熊本県熊本市"
   },
