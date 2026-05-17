@@ -27,6 +27,25 @@ function sanitizeMemo(memo) {
     .trim();
 }
 
+function normalizeRakutenTravelUrl(url) {
+  const value = String(url || "").trim();
+  if (!value || value.includes("/keyword/Search.do")) return "";
+
+  try {
+    const parsed = new URL(value);
+    const allowedHosts = ["travel.rakuten.co.jp", "search.travel.rakuten.co.jp"];
+    if (!allowedHosts.includes(parsed.hostname)) return "";
+    return parsed.toString();
+  } catch (error) {
+    return "";
+  }
+}
+
+function isGenericTravelUrl(url) {
+  const value = String(url || "").trim().replace(/\/+$/, "/");
+  return !value || value === "https://travel.rakuten.co.jp/" || value === DEFAULT_RAKUTEN_TRAVEL_URL;
+}
+
 function pickRegionDestination(hotel) {
   const haystack = [hotel.id, hotel.name, hotel.area, hotel.searchKeyword]
     .map((value) => String(value || "").toLowerCase())
@@ -36,29 +55,19 @@ function pickRegionDestination(hotel) {
     region.keys.some((key) => haystack.includes(String(key).toLowerCase()))
   );
 
-  return matched ? matched.url : "";
-}
-
-function sanitizeTravelUrl(url) {
-  const value = String(url || "").trim();
-
-  // 楽天トラベルの keyword/Search.do は404になりやすいため使わない。
-  if (!value || value === "https://travel.rakuten.co.jp/" || value.includes("/keyword/Search.do")) {
-    return DEFAULT_RAKUTEN_TRAVEL_URL;
-  }
-
-  try {
-    const parsed = new URL(value);
-    const allowedHosts = ["travel.rakuten.co.jp", "search.travel.rakuten.co.jp"];
-    if (!allowedHosts.includes(parsed.hostname)) return DEFAULT_RAKUTEN_TRAVEL_URL;
-    return parsed.toString();
-  } catch (error) {
-    return DEFAULT_RAKUTEN_TRAVEL_URL;
-  }
+  return matched ? matched.url : DEFAULT_RAKUTEN_TRAVEL_URL;
 }
 
 function buildDestination(hotel) {
-  return sanitizeTravelUrl(pickRegionDestination(hotel) || hotel.rakutenTravelUrl);
+  const explicitUrl = normalizeRakutenTravelUrl(hotel.rakutenTravelUrl);
+
+  // 宿泊施設ごとの楽天トラベル詳細URLが入っている場合は、それを最優先で使う。
+  // Generic URLだけの場合は、地域別検索にフォールバックする。
+  if (explicitUrl && !isGenericTravelUrl(explicitUrl)) {
+    return explicitUrl;
+  }
+
+  return normalizeRakutenTravelUrl(pickRegionDestination(hotel)) || DEFAULT_RAKUTEN_TRAVEL_URL;
 }
 
 function buildAffiliateUrl(destination, affiliateId) {
@@ -72,7 +81,9 @@ function buildMemo(currentMemo, affiliateActive, destination) {
   const lead = affiliateActive ? NOTE_ACTIVE : NOTE_SEARCH;
   const regionNote = destination.includes("search.travel.rakuten.co.jp")
     ? "地域別の楽天トラベル宿一覧へ誘導します。"
-    : "楽天トラベルのペット同伴宿ページへ誘導します。";
+    : destination !== DEFAULT_RAKUTEN_TRAVEL_URL
+      ? "宿泊施設ごとの楽天トラベルページへ誘導します。"
+      : "楽天トラベルのペット同伴宿ページへ誘導します。";
   return `${lead} ${regionNote} ${clean ? clean + " " : ""}${CAUTION}`.trim();
 }
 
