@@ -74,3 +74,11 @@ Run workflow
 - `Generate Instagram Drafts`：GitHub Actionsで投稿下書きを生成
 
 過去イベントは画面上で自動非表示になり、`Update Events` 実行時に `events.json` から整理されます。
+
+
+## 掲載ルール（公式情報の扱い）
+
+- 公式情報は、**公式Webサイトだけでなく公式Instagramも含む**運用です。
+- 公式として扱う情報・扱わない情報・Instagram判定条件・登録/表示ルールは `DATA_RULES.md` を参照してください。
+- URLが開けないInstagramは掲載対象外です。
+
