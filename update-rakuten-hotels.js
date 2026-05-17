@@ -1,6 +1,7 @@
 const fs = require("fs/promises");
 
 const AFF_BASE = "https://hb.afl.rakuten.co.jp/hgc/";
+const DEFAULT_RAKUTEN_TRAVEL_URL = "https://travel.rakuten.co.jp/pet/";
 const CAUTION = "料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。";
 const NOTE_ACTIVE = "楽天トラベルのアフィリエイト導線を設定済みです。";
 const NOTE_SEARCH = "楽天トラベルの通常導線のみです。";
@@ -14,13 +15,26 @@ function sanitizeMemo(memo) {
     .trim();
 }
 
-function buildDestination(hotel) {
-  const base = hotel.rakutenTravelUrl || "https://travel.rakuten.co.jp/";
-  const keyword = String(hotel.searchKeyword || "").trim();
-  if (keyword) {
-    return `https://travel.rakuten.co.jp/keyword/Search.do?f_teikei=&f_query=${encodeURIComponent(keyword)}`;
+function sanitizeTravelUrl(url) {
+  const value = String(url || "").trim();
+
+  // 楽天トラベルの keyword/Search.do は環境やパラメータで404になりやすいため使わない。
+  // まずは安定して開けるペット同伴宿ページに寄せる。
+  if (!value || value === "https://travel.rakuten.co.jp/" || value.includes("/keyword/Search.do")) {
+    return DEFAULT_RAKUTEN_TRAVEL_URL;
   }
-  return base;
+
+  try {
+    const parsed = new URL(value);
+    if (parsed.hostname !== "travel.rakuten.co.jp") return DEFAULT_RAKUTEN_TRAVEL_URL;
+    return parsed.toString();
+  } catch (error) {
+    return DEFAULT_RAKUTEN_TRAVEL_URL;
+  }
+}
+
+function buildDestination(hotel) {
+  return sanitizeTravelUrl(hotel.rakutenTravelUrl);
 }
 
 function buildAffiliateUrl(destination, affiliateId) {
@@ -41,17 +55,16 @@ async function main() {
   const hotels = JSON.parse(await fs.readFile("hotels.json", "utf8"));
 
   const updated = hotels.map((hotel) => {
-    const normalUrl = hotel.rakutenTravelUrl || "https://travel.rakuten.co.jp/";
     const destination = buildDestination(hotel);
-    const affiliateUrl = buildAffiliateUrl(destination || normalUrl, affiliateId);
+    const affiliateUrl = buildAffiliateUrl(destination, affiliateId);
 
     let affiliateStatus = "link-missing";
     if (affiliateUrl) affiliateStatus = "affiliate-active";
-    else if (normalUrl) affiliateStatus = "search-only";
+    else if (destination) affiliateStatus = "search-only";
 
     return {
       ...hotel,
-      rakutenTravelUrl: normalUrl,
+      rakutenTravelUrl: destination,
       rakutenTravelAffiliateUrl: affiliateUrl,
       affiliateStatus,
       lastChecked: today,
