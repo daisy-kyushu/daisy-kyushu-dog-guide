@@ -137,23 +137,6 @@
     "mapQuery": "金立サービスエリア 上り ドッグラン 佐賀県佐賀市"
   },
   {
-    "id": "puppy-cafe-rio-fukuoka",
-    "name": "PUPPY CAFE RIO 福岡店",
-    "area": "福岡県福岡市",
-    "type": "ドッグカフェ / 犬同伴OK飲食店",
-    "dogAllowed": "要確認",
-    "largeDog": "要確認",
-    "rainyOk": "要確認",
-    "indoorOk": "店内要確認",
-    "parking": "要確認",
-    "officialUrl": "https://rio-corp.jp/shops/fukuoka/",
-    "lastChecked": "2026-05-17",
-    "status": "公式要確認",
-    "memo": "犬と触れ合えるカフェ形態の候補。犬同伴可否・同伴ルール・予約条件は来店前に公式案内で確認してください。",
-    "weekendRecommended": true,
-    "mapQuery": "PUPPY CAFE RIO 福岡店 福岡県福岡市"
-  },
-  {
     "id": "teo-one-kumamoto",
     "name": "DOG RUN & CAFE Teo One",
     "area": "熊本県熊本市",
