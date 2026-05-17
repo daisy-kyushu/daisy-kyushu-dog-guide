@@ -25,7 +25,7 @@
     .filter-btn.active{background:var(--green);color:#fff;border-color:var(--green)}
     .notice{background:#fff1ed;border:1px solid #f0c7bd;border-radius:16px;padding:10px 12px}
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:24px 0}
-    .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px}.media{height:120px;border-radius:12px;background:var(--cream);display:grid;place-items:center;font-size:42px;margin-bottom:10px;overflow:hidden}.media img{width:100%;height:100%;object-fit:cover;display:block}
     .tag{display:inline-block;background:var(--cream);border-radius:99px;padding:5px 10px;margin:4px;font-size:13px}
     .tag.ok{background:var(--mint);color:#315f48}
     .button{display:inline-block;background:var(--green);color:#fff;padding:10px 16px;border-radius:99px;font-weight:700;margin:6px 6px 0 0}
@@ -59,6 +59,8 @@ const FILTERS = ["すべて","ドッグラン","ホテル","キャンプ","ア�
 function esc(v){return String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[m]));}
 function mapsUrl(q){return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(q||"");}
 function hasLatLng(item){return Number.isFinite(Number(item.lat)) && Number.isFinite(Number(item.lng));}
+function iconFor(t=""){const k=String(t).toLowerCase();if(k.includes("ラン"))return "🐕";if(k.includes("ホテル")||k.includes("宿"))return "🏨";if(k.includes("カフェ"))return "☕";if(k.includes("アウトドア")||k.includes("キャンプ")||k.includes("公園"))return "🌿";if(k.includes("イベント"))return "🎪";if(k.includes("地図"))return "🗺️";return "🐾";}
+function media(item){const icon=iconFor(item.category||item.type);if(!item.imageUrl)return `<div class="media">${icon}</div>`;return `<div class="media"><img src="${esc(item.imageUrl)}" alt="${esc(item.name||"")}" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'media',textContent:'${icon}'}))"></div>`;}
 
 async function fetchJson(path, fallback=[]){
   try{
@@ -111,7 +113,7 @@ function cardButtons(item){
   const officialBtn = item.officialUrl ? `<a class="button" href="${esc(item.officialUrl)}" target="_blank" rel="noopener">公式情報</a>` : "";
   const hotelUrl = item.rakutenTravelAffiliateUrl || item.rakutenTravelUrl;
   const hotelBtn = item.category === "ホテル" && hotelUrl ? `<a class="button" href="${esc(hotelUrl)}" target="_blank" rel="noopener">楽天トラベルを見る</a>` : "";
-  return `${officialBtn}${hotelBtn}${mapsBtn}`;
+  const ig=item.instagramUrl ? `<a class="button sub" href="${esc(item.instagramUrl)}" target="_blank" rel="noopener">公式Instagramを見る</a>` : "";const post=item.instagramPostUrl ? `<a class="button sub" href="${esc(item.instagramPostUrl)}" target="_blank" rel="noopener">Instagram投稿を見る</a>` : "";return `${officialBtn}${ig}${post}${hotelBtn}${mapsBtn}`;
 }
 
 function renderCards(items, filterName){
@@ -125,7 +127,7 @@ function renderCards(items, filterName){
   root.innerHTML = visible.map(item=>{
     const pinState = hasLatLng(item) ? "lat/lngあり（将来ピン対応）" : "lat/lngなし（一覧＋地図リンク）";
     return `<article class="card">
-      <h2>${esc(item.name)}</h2>
+      ${media(item)}<h2>${esc(item.name)}</h2>
       <p>${esc(item.memo||"")}</p>
       <p>
         <span class="tag">カテゴリ：${esc(item.category)}</span>
