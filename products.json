@@ -6,7 +6,7 @@
     "target": "大型犬・サモエドとの車移動",
     "searchKeyword": "犬 車 シートカバー 大型犬",
     "normalUrl": "https://search.rakuten.co.jp/search/mall/犬%20車%20シートカバー%20大型犬/",
-    "rakutenAffiliateUrl": "",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC%2520%E8%BB%8A%2520%E3%82%B7%E3%83%BC%E3%83%88%E3%82%AB%E3%83%90%E3%83%BC%2520%E5%A4%A7%E5%9E%8B%E7%8A%AC%2F&m=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC%2520%E8%BB%8A%2520%E3%82%B7%E3%83%BC%E3%83%88%E3%82%AB%E3%83%90%E3%83%BC%2520%E5%A4%A7%E5%9E%8B%E7%8A%AC%2F",
     "rating": "",
     "reviewCount": "",
     "itemPrice": "",
@@ -14,8 +14,9 @@
     "mediumImageUrls": [],
     "whyCandidate": "抜け毛や泥汚れ対策に役立つため、サモエド系の持ち物記事と相性が良い。",
     "lastChecked": "2026-05-17",
-    "status": "楽天検索リンクあり / API更新後に商品リンク化",
-    "memo": "クリックできる楽天検索リンクを初期設定済み。API更新後は商品単位のリンクに置き換わります。"
+    "status": "楽天アフィリエイトリンク設定済み",
+    "memo": "楽天アフィリエイトIDを使ったリンクです。価格・在庫・評価は変動するため、購入前に楽天側で確認してください。",
+    "affiliateStatus": "affiliate-active"
   },
   {
     "id": "drive-bed",
@@ -24,7 +25,7 @@
     "target": "車移動で落ち着きたい犬向け",
     "searchKeyword": "犬 ドライブベッド 大型犬",
     "normalUrl": "https://search.rakuten.co.jp/search/mall/犬%20ドライブベッド%20大型犬/",
-    "rakutenAffiliateUrl": "",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC%2520%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%E3%83%99%E3%83%83%E3%83%89%2520%E5%A4%A7%E5%9E%8B%E7%8A%AC%2F&m=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC%2520%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%E3%83%99%E3%83%83%E3%83%89%2520%E5%A4%A7%E5%9E%8B%E7%8A%AC%2F",
     "rating": "",
     "reviewCount": "",
     "itemPrice": "",
@@ -32,8 +33,9 @@
     "mediumImageUrls": [],
     "whyCandidate": "車移動中の居場所づくりに使いやすい候補です。",
     "lastChecked": "2026-05-17",
-    "status": "楽天検索リンクあり / API更新後に商品リンク化",
-    "memo": "クリックできる楽天検索リンクを初期設定済み。API更新後は商品単位のリンクに置き換わります。"
+    "status": "楽天アフィリエイトリンク設定済み",
+    "memo": "楽天アフィリエイトIDを使ったリンクです。価格・在庫・評価は変動するため、購入前に楽天側で確認してください。",
+    "affiliateStatus": "affiliate-active"
   },
   {
     "id": "large-harness",
@@ -42,7 +44,7 @@
     "target": "大型犬とのおでかけ",
     "searchKeyword": "大型犬 ハーネス",
     "normalUrl": "https://search.rakuten.co.jp/search/mall/大型犬%20ハーネス/",
-    "rakutenAffiliateUrl": "",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E5%A4%A7%E5%9E%8B%E7%8A%AC%2520%E3%83%8F%E3%83%BC%E3%83%8D%E3%82%B9%2F&m=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E5%A4%A7%E5%9E%8B%E7%8A%AC%2520%E3%83%8F%E3%83%BC%E3%83%8D%E3%82%B9%2F",
     "rating": "",
     "reviewCount": "",
     "itemPrice": "",
@@ -50,8 +52,9 @@
     "mediumImageUrls": [],
     "whyCandidate": "大型犬のおでかけ時の安全対策として紹介しやすい。",
     "lastChecked": "2026-05-17",
-    "status": "楽天検索リンクあり / API更新後に商品リンク化",
-    "memo": "クリックできる楽天検索リンクを初期設定済み。API更新後は商品単位のリンクに置き換わります。"
+    "status": "楽天アフィリエイトリンク設定済み",
+    "memo": "楽天アフィリエイトIDを使ったリンクです。価格・在庫・評価は変動するため、購入前に楽天側で確認してください。",
+    "affiliateStatus": "affiliate-active"
   },
   {
     "id": "dog-cart",
@@ -60,7 +63,7 @@
     "target": "イベントや観光地で歩き疲れ対策",
     "searchKeyword": "大型犬 ペットカート",
     "normalUrl": "https://search.rakuten.co.jp/search/mall/大型犬%20ペットカート/",
-    "rakutenAffiliateUrl": "",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E5%A4%A7%E5%9E%8B%E7%8A%AC%2520%E3%83%9A%E3%83%83%E3%83%88%E3%82%AB%E3%83%BC%E3%83%88%2F&m=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E5%A4%A7%E5%9E%8B%E7%8A%AC%2520%E3%83%9A%E3%83%83%E3%83%88%E3%82%AB%E3%83%BC%E3%83%88%2F",
     "rating": "",
     "reviewCount": "",
     "itemPrice": "",
@@ -68,8 +71,9 @@
     "mediumImageUrls": [],
     "whyCandidate": "大型犬対応の耐荷重を確認して選ぶ候補です。",
     "lastChecked": "2026-05-17",
-    "status": "楽天検索リンクあり / API更新後に商品リンク化",
-    "memo": "クリックできる楽天検索リンクを初期設定済み。API更新後は商品単位のリンクに置き換わります。"
+    "status": "楽天アフィリエイトリンク設定済み",
+    "memo": "楽天アフィリエイトIDを使ったリンクです。価格・在庫・評価は変動するため、購入前に楽天側で確認してください。",
+    "affiliateStatus": "affiliate-active"
   },
   {
     "id": "water-bottle",
@@ -78,7 +82,7 @@
     "target": "散歩・旅行・イベント",
     "searchKeyword": "犬 散歩 給水ボトル",
     "normalUrl": "https://search.rakuten.co.jp/search/mall/犬%20散歩%20給水ボトル/",
-    "rakutenAffiliateUrl": "",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC%2520%E6%95%A3%E6%AD%A9%2520%E7%B5%A6%E6%B0%B4%E3%83%9C%E3%83%88%E3%83%AB%2F&m=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC%2520%E6%95%A3%E6%AD%A9%2520%E7%B5%A6%E6%B0%B4%E3%83%9C%E3%83%88%E3%83%AB%2F",
     "rating": "",
     "reviewCount": "",
     "itemPrice": "",
@@ -86,8 +90,9 @@
     "mediumImageUrls": [],
     "whyCandidate": "外出先で水をあげやすく、全犬種向けに紹介しやすい。",
     "lastChecked": "2026-05-17",
-    "status": "楽天検索リンクあり / API更新後に商品リンク化",
-    "memo": "クリックできる楽天検索リンクを初期設定済み。API更新後は商品単位のリンクに置き換わります。"
+    "status": "楽天アフィリエイトリンク設定済み",
+    "memo": "楽天アフィリエイトIDを使ったリンクです。価格・在庫・評価は変動するため、購入前に楽天側で確認してください。",
+    "affiliateStatus": "affiliate-active"
   },
   {
     "id": "odor-bag",
@@ -96,7 +101,7 @@
     "target": "犬連れ旅行のマナー対策",
     "searchKeyword": "犬 うんち袋 防臭袋",
     "normalUrl": "https://search.rakuten.co.jp/search/mall/犬%20うんち袋%20防臭袋/",
-    "rakutenAffiliateUrl": "",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC%2520%E3%81%86%E3%82%93%E3%81%A1%E8%A2%8B%2520%E9%98%B2%E8%87%AD%E8%A2%8B%2F&m=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC%2520%E3%81%86%E3%82%93%E3%81%A1%E8%A2%8B%2520%E9%98%B2%E8%87%AD%E8%A2%8B%2F",
     "rating": "",
     "reviewCount": "",
     "itemPrice": "",
@@ -104,8 +109,9 @@
     "mediumImageUrls": [],
     "whyCandidate": "宿泊・イベント・カフェでのマナー対策として必須級。",
     "lastChecked": "2026-05-17",
-    "status": "楽天検索リンクあり / API更新後に商品リンク化",
-    "memo": "クリックできる楽天検索リンクを初期設定済み。API更新後は商品単位のリンクに置き換わります。"
+    "status": "楽天アフィリエイトリンク設定済み",
+    "memo": "楽天アフィリエイトIDを使ったリンクです。価格・在庫・評価は変動するため、購入前に楽天側で確認してください。",
+    "affiliateStatus": "affiliate-active"
   },
   {
     "id": "raincoat",
@@ -114,7 +120,7 @@
     "target": "雨の日のおでかけ",
     "searchKeyword": "大型犬 レインコート",
     "normalUrl": "https://search.rakuten.co.jp/search/mall/大型犬%20レインコート/",
-    "rakutenAffiliateUrl": "",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E5%A4%A7%E5%9E%8B%E7%8A%AC%2520%E3%83%AC%E3%82%A4%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%88%2F&m=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E5%A4%A7%E5%9E%8B%E7%8A%AC%2520%E3%83%AC%E3%82%A4%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%88%2F",
     "rating": "",
     "reviewCount": "",
     "itemPrice": "",
@@ -122,8 +128,9 @@
     "mediumImageUrls": [],
     "whyCandidate": "雨の日や泥はね対策に便利。",
     "lastChecked": "2026-05-17",
-    "status": "楽天検索リンクあり / API更新後に商品リンク化",
-    "memo": "クリックできる楽天検索リンクを初期設定済み。API更新後は商品単位のリンクに置き換わります。"
+    "status": "楽天アフィリエイトリンク設定済み",
+    "memo": "楽天アフィリエイトIDを使ったリンクです。価格・在庫・評価は変動するため、購入前に楽天側で確認してください。",
+    "affiliateStatus": "affiliate-active"
   },
   {
     "id": "brush",
@@ -132,7 +139,7 @@
     "target": "サモエド・長毛犬向け",
     "searchKeyword": "犬 抜け毛 ブラシ 大型犬",
     "normalUrl": "https://search.rakuten.co.jp/search/mall/犬%20抜け毛%20ブラシ%20大型犬/",
-    "rakutenAffiliateUrl": "",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC%2520%E6%8A%9C%E3%81%91%E6%AF%9B%2520%E3%83%96%E3%83%A9%E3%82%B7%2520%E5%A4%A7%E5%9E%8B%E7%8A%AC%2F&m=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC%2520%E6%8A%9C%E3%81%91%E6%AF%9B%2520%E3%83%96%E3%83%A9%E3%82%B7%2520%E5%A4%A7%E5%9E%8B%E7%8A%AC%2F",
     "rating": "",
     "reviewCount": "",
     "itemPrice": "",
@@ -140,8 +147,9 @@
     "mediumImageUrls": [],
     "whyCandidate": "サモエド感のある発信と相性が高い。",
     "lastChecked": "2026-05-17",
-    "status": "楽天検索リンクあり / API更新後に商品リンク化",
-    "memo": "クリックできる楽天検索リンクを初期設定済み。API更新後は商品単位のリンクに置き換わります。"
+    "status": "楽天アフィリエイトリンク設定済み",
+    "memo": "楽天アフィリエイトIDを使ったリンクです。価格・在庫・評価は変動するため、購入前に楽天側で確認してください。",
+    "affiliateStatus": "affiliate-active"
   },
   {
     "id": "folding-bowl",
@@ -150,7 +158,7 @@
     "target": "旅行・イベント・ドッグラン",
     "searchKeyword": "犬 折りたたみ フードボウル",
     "normalUrl": "https://search.rakuten.co.jp/search/mall/犬%20折りたたみ%20フードボウル/",
-    "rakutenAffiliateUrl": "",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC%2520%E6%8A%98%E3%82%8A%E3%81%9F%E3%81%9F%E3%81%BF%2520%E3%83%95%E3%83%BC%E3%83%89%E3%83%9C%E3%82%A6%E3%83%AB%2F&m=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC%2520%E6%8A%98%E3%82%8A%E3%81%9F%E3%81%9F%E3%81%BF%2520%E3%83%95%E3%83%BC%E3%83%89%E3%83%9C%E3%82%A6%E3%83%AB%2F",
     "rating": "",
     "reviewCount": "",
     "itemPrice": "",
@@ -158,8 +166,9 @@
     "mediumImageUrls": [],
     "whyCandidate": "荷物を減らしたい犬連れ旅行に向く候補です。",
     "lastChecked": "2026-05-17",
-    "status": "楽天検索リンクあり / API更新後に商品リンク化",
-    "memo": "クリックできる楽天検索リンクを初期設定済み。API更新後は商品単位のリンクに置き換わります。"
+    "status": "楽天アフィリエイトリンク設定済み",
+    "memo": "楽天アフィリエイトIDを使ったリンクです。価格・在庫・評価は変動するため、購入前に楽天側で確認してください。",
+    "affiliateStatus": "affiliate-active"
   },
   {
     "id": "pet-towel",
@@ -168,7 +177,7 @@
     "target": "雨の日・川遊び・車移動",
     "searchKeyword": "犬 吸水 タオル 大型犬",
     "normalUrl": "https://search.rakuten.co.jp/search/mall/犬%20吸水%20タオル%20大型犬/",
-    "rakutenAffiliateUrl": "",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC%2520%E5%90%B8%E6%B0%B4%2520%E3%82%BF%E3%82%AA%E3%83%AB%2520%E5%A4%A7%E5%9E%8B%E7%8A%AC%2F&m=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC%2520%E5%90%B8%E6%B0%B4%2520%E3%82%BF%E3%82%AA%E3%83%AB%2520%E5%A4%A7%E5%9E%8B%E7%8A%AC%2F",
     "rating": "",
     "reviewCount": "",
     "itemPrice": "",
@@ -176,7 +185,8 @@
     "mediumImageUrls": [],
     "whyCandidate": "足拭きや車内汚れ対策に使いやすい候補です。",
     "lastChecked": "2026-05-17",
-    "status": "楽天検索リンクあり / API更新後に商品リンク化",
-    "memo": "クリックできる楽天検索リンクを初期設定済み。API更新後は商品単位のリンクに置き換わります。"
+    "status": "楽天アフィリエイトリンク設定済み",
+    "memo": "楽天アフィリエイトIDを使ったリンクです。価格・在庫・評価は変動するため、購入前に楽天側で確認してください。",
+    "affiliateStatus": "affiliate-active"
   }
 ]
