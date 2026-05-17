@@ -7,14 +7,14 @@ const NOTE_ACTIVE = "楽天トラベルのアフィリエイト導線を設定�
 const NOTE_SEARCH = "楽天トラベルの通常導線のみです。";
 
 const REGION_DESTINATIONS = [
-  { keys: ["福岡", "fukuoka"], url: "https://search.travel.rakuten.co.jp/ds/hotellist/Japan-Fukuoka?f_query=%E7%8A%AC%20%E5%90%8C%E4%BC%B4" },
-  { keys: ["佐賀", "saga"], url: "https://search.travel.rakuten.co.jp/ds/hotellist/Japan-Saga?f_query=%E7%8A%AC%20%E5%90%8C%E4%BC%B4" },
-  { keys: ["長崎", "nagasaki"], url: "https://search.travel.rakuten.co.jp/ds/hotellist/Japan-Nagasaki?f_query=%E7%8A%AC%20%E5%90%8C%E4%BC%B4" },
-  { keys: ["熊本", "kumamoto"], url: "https://search.travel.rakuten.co.jp/ds/hotellist/Japan-Kumamoto?f_query=%E7%8A%AC%20%E5%90%8C%E4%BC%B4" },
-  { keys: ["湯布院", "由布院", "由布", "yufuin"], url: "https://search.travel.rakuten.co.jp/ds/hotellist/Japan-Oita?f_query=%E6%B9%AF%E5%B8%83%E9%99%A2%20%E7%8A%AC%20%E5%90%8C%E4%BC%B4" },
-  { keys: ["大分", "oita"], url: "https://search.travel.rakuten.co.jp/ds/hotellist/Japan-Oita?f_query=%E7%8A%AC%20%E5%90%8C%E4%BC%B4" },
-  { keys: ["宮崎", "miyazaki"], url: "https://search.travel.rakuten.co.jp/ds/hotellist/Japan-Miyazaki?f_query=%E7%8A%AC%20%E5%90%8C%E4%BC%B4" },
-  { keys: ["鹿児島", "kagoshima"], url: "https://search.travel.rakuten.co.jp/ds/hotellist/Japan-Kagoshima?f_query=%E7%8A%AC%20%E5%90%8C%E4%BC%B4" },
+  { keys: ["福岡", "fukuoka"], url: "https://travel.rakuten.co.jp/pet/" },
+  { keys: ["佐賀", "saga"], url: "https://travel.rakuten.co.jp/pet/" },
+  { keys: ["長崎", "nagasaki"], url: "https://travel.rakuten.co.jp/pet/" },
+  { keys: ["熊本", "kumamoto"], url: "https://travel.rakuten.co.jp/pet/" },
+  { keys: ["湯布院", "由布院", "由布", "yufuin"], url: "https://travel.rakuten.co.jp/pet/" },
+  { keys: ["大分", "oita"], url: "https://travel.rakuten.co.jp/pet/" },
+  { keys: ["宮崎", "miyazaki"], url: "https://travel.rakuten.co.jp/pet/" },
+  { keys: ["鹿児島", "kagoshima"], url: "https://travel.rakuten.co.jp/pet/" },
   { keys: ["九州", "kyushu"], url: "https://travel.rakuten.co.jp/pet/" }
 ];
 
@@ -29,11 +29,11 @@ function sanitizeMemo(memo) {
 
 function normalizeRakutenTravelUrl(url) {
   const value = String(url || "").trim();
-  if (!value || value.includes("/keyword/Search.do")) return "";
+  if (!value || value.includes("/keyword/Search.do") || value.includes("search.travel.rakuten.co.jp")) return "";
 
   try {
     const parsed = new URL(value);
-    const allowedHosts = ["travel.rakuten.co.jp", "search.travel.rakuten.co.jp"];
+    const allowedHosts = ["travel.rakuten.co.jp", "hotel.travel.rakuten.co.jp"];
     if (!allowedHosts.includes(parsed.hostname)) return "";
     return parsed.toString();
   } catch (error) {
@@ -62,7 +62,8 @@ function buildDestination(hotel) {
   const explicitUrl = normalizeRakutenTravelUrl(hotel.rakutenTravelUrl);
 
   // 宿泊施設ごとの楽天トラベル詳細URLが入っている場合は、それを最優先で使う。
-  // Generic URLだけの場合は、地域別検索にフォールバックする。
+  // hotel.travel.rakuten.co.jp のペット宿泊情報ページも有効な宿別URLとして扱う。
+  // 検索結果ページはエラーになりやすいため使わず、ペット宿トップにフォールバックする。
   if (explicitUrl && !isGenericTravelUrl(explicitUrl)) {
     return explicitUrl;
   }
@@ -79,11 +80,9 @@ function buildAffiliateUrl(destination, affiliateId) {
 function buildMemo(currentMemo, affiliateActive, destination) {
   const clean = sanitizeMemo(currentMemo);
   const lead = affiliateActive ? NOTE_ACTIVE : NOTE_SEARCH;
-  const regionNote = destination.includes("search.travel.rakuten.co.jp")
-    ? "地域別の楽天トラベル宿一覧へ誘導します。"
-    : destination !== DEFAULT_RAKUTEN_TRAVEL_URL
-      ? "宿泊施設ごとの楽天トラベルページへ誘導します。"
-      : "楽天トラベルのペット同伴宿ページへ誘導します。";
+  const regionNote = destination !== DEFAULT_RAKUTEN_TRAVEL_URL
+    ? "宿泊施設ごとの楽天トラベルページへ誘導します。"
+    : "楽天トラベルのペット同伴宿ページへ誘導します。";
   return `${lead} ${regionNote} ${clean ? clean + " " : ""}${CAUTION}`.trim();
 }
 
