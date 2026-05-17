@@ -10,7 +10,16 @@
     "officialSnsUrl": "https://www.instagram.com/oita_doggoland/",
     "lastChecked": "2026-05-17",
     "status": "公式SNS要確認",
-    "memo": "開催日・会場・犬同伴ルールは変更される可能性があります。参加前に必ず公式サイト・公式SNSで最新情報をご確認ください。"
+    "memo": "開催日・会場・犬同伴条件は変更される場合があります。来場前に必ず公式情報を確認してください。",
+    "title": "OITA DOGGO LAND",
+    "eventDate": "2026-11-21〜2026-11-22",
+    "snsUrl": "https://www.instagram.com/oita_doggoland/",
+    "mapQuery": "大分市内予定（公式SNS要確認） 大分県大分市",
+    "category": "犬イベント",
+    "tags": [
+      "犬イベント"
+    ],
+    "dogPolicy": "要確認"
   },
   {
     "id": "pet-haku-fukuoka-2026",
