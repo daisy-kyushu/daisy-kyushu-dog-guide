@@ -3,7 +3,7 @@ name: Update Rakuten Hotels
 on:
   workflow_dispatch:
   schedule:
-    - cron: "20 0 * * 1"
+    - cron: "15 0 * * 2"
 
 permissions:
   contents: write
@@ -16,10 +16,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-      - name: Update hotels
+      - name: Update Rakuten hotels affiliate links
+        env:
+          RAKUTEN_AFFILIATE_ID: ${{ secrets.RAKUTEN_AFFILIATE_ID }}
         run: node update-rakuten-hotels.js
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Update Rakuten hotel links"
+          commit_message: "Update Rakuten hotels"
           file_pattern: hotels.json

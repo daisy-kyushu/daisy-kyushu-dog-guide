@@ -5,6 +5,7 @@
   "scripts": {
     "update:products": "node update-rakuten-products.js",
     "update:events": "node update-events.js",
-    "generate:instagram": "node generate-instagram-drafts.js"
+    "generate:instagram": "node generate-instagram-drafts.js",
+    "update:hotels": "node update-rakuten-hotels.js"
   }
 }
