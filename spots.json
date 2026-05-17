@@ -135,5 +135,39 @@
     "memo": "NEXCO西日本関連情報でドッグラン設置対象SAとして確認。最新の利用条件・閉鎖情報は公式情報で確認してください。",
     "weekendRecommended": true,
     "mapQuery": "金立サービスエリア 上り ドッグラン 佐賀県佐賀市"
+  },
+  {
+    "id": "teo-one-kumamoto",
+    "name": "DOG RUN & CAFE Teo One",
+    "area": "熊本県熊本市",
+    "type": "ドッグカフェ / 犬同伴OK飲食店 / ドッグラン",
+    "dogAllowed": "要確認",
+    "largeDog": "要確認",
+    "rainyOk": "要確認",
+    "indoorOk": "店内要確認",
+    "parking": "要確認",
+    "officialUrl": "https://teo-one.halfmoon.jp/",
+    "lastChecked": "2026-05-17",
+    "status": "公式要確認",
+    "memo": "熊本市南区のドッグラン併設カフェ候補。犬同伴条件・利用料金・営業日と雨天時運用は来店前に公式案内で確認してください。",
+    "weekendRecommended": true,
+    "mapQuery": "DOG RUN & CAFE Teo One 熊本県熊本市"
+  },
+  {
+    "id": "dogforesta-kagoshima",
+    "name": "グルメバイキングPark DOGフォレスタ",
+    "area": "鹿児島県鹿児島市",
+    "type": "犬同伴OK飲食店 / ドッグラン",
+    "dogAllowed": "要確認",
+    "largeDog": "要確認",
+    "rainyOk": "要確認",
+    "indoorOk": "店内要確認",
+    "parking": "要確認",
+    "officialUrl": "https://dogforesta.com/",
+    "lastChecked": "2026-05-17",
+    "status": "公式要確認",
+    "memo": "鹿児島市の犬同伴OK飲食候補。同伴可能エリア・頭数条件・利用ルールは訪問前に公式情報で確認してください。",
+    "weekendRecommended": true,
+    "mapQuery": "グルメバイキングPark DOGフォレスタ 鹿児島県鹿児島市"
   }
 ]
