@@ -17,6 +17,11 @@
     .hero{margin:20px 0;padding:clamp(20px,5vw,46px);border-radius:28px;background:linear-gradient(135deg,var(--mint),var(--cream));box-shadow:var(--shadow)}
     .hero h1{font-size:clamp(30px,7vw,58px);line-height:1.1;margin:0 0 10px}
     .notice{background:#fff1ed;border:1px solid #f0c7bd;border-radius:14px;padding:10px 12px}
+    .suzuri-banner{margin:18px 0 22px;display:grid;grid-template-columns:1.2fr .8fr;gap:14px;align-items:center;background:linear-gradient(135deg,#fff,#fff4df 55%,#cfeee0);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow);padding:20px;overflow:hidden}
+    .suzuri-banner h2{margin:0 0 6px;font-size:clamp(22px,4vw,34px);line-height:1.25}
+    .suzuri-banner p{margin:6px 0;color:var(--muted)}
+    .suzuri-visual{min-height:150px;border-radius:22px;background:rgba(255,255,255,.65);display:grid;place-items:center;text-align:center;padding:16px;font-size:52px;border:1px dashed rgba(79,140,107,.35)}
+    .suzuri-label{display:inline-block;background:#fff;color:var(--green);border:1px solid rgba(79,140,107,.25);border-radius:999px;padding:5px 10px;font-size:12px;font-weight:800;margin-bottom:8px}
     .quick-grid,.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
     .quick-grid{margin:18px 0}
     .section{margin:16px 0 28px}
@@ -31,15 +36,15 @@
     .button.sub{background:#fff;color:var(--brown);border:1px solid var(--line)}
     .business{margin-top:18px;padding-top:14px;border-top:1px dashed var(--line)}
     footer{margin-top:36px;padding:26px 5vw;border-top:1px solid var(--line);background:#fff;color:var(--muted)}
-    @media(max-width:900px){.site-header{display:block}.quick-grid,.cards{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:560px){main{width:min(100% - 16px,1100px)}.quick-grid,.cards{grid-template-columns:1fr}.hero h1{font-size:34px}}
+    @media(max-width:900px){.site-header{display:block}.quick-grid,.cards{grid-template-columns:repeat(2,1fr)}.suzuri-banner{grid-template-columns:1fr}}
+    @media(max-width:560px){main{width:min(100% - 16px,1100px)}.quick-grid,.cards{grid-template-columns:1fr}.hero h1{font-size:34px}.suzuri-banner{padding:16px}.suzuri-visual{min-height:110px;font-size:42px}}
   </style>
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="index.html">🐾 Daisy Kyushu Dog Guide</a>
     <nav>
-      <a href="index.html">ホーム</a><a href="weekend.html">今週末</a><a href="spots.html">スポット</a><a href="outdoor.html">アウトドア</a><a href="map.html">地図</a><a href="hotels.html">ホテル</a><a href="checklist.html">持ち物</a>
+      <a href="index.html">ホーム</a><a href="weekend.html">今週末</a><a href="spots.html">スポット</a><a href="outdoor.html">アウトドア</a><a href="map.html">地図</a><a href="hotels.html">ホテル</a><a href="checklist.html">持ち物</a><a href="https://suzuri.jp/Daisy_Samoyed" target="_blank" rel="noopener">SUZURI</a>
     </nav>
   </header>
   <main>
@@ -47,6 +52,17 @@
       <h1>Daisyと探す、<br>九州の犬連れおでかけ。</h1>
       <p>犬連れで行きやすいスポット・宿・週末候補・グッズ情報を、スマホで見やすくまとめています。</p>
       <p class="notice">施設情報は変更される場合があります。お出かけ前に公式サイト・公式SNS・地図情報を必ずご確認ください。</p>
+    </section>
+
+    <section class="suzuri-banner" aria-label="Daisy Samoyed SUZURI banner">
+      <div>
+        <span class="suzuri-label">Daisyオリジナルグッズ</span>
+        <h2>Daisy_Samoyed のSUZURIショップ</h2>
+        <p>DaisyのオリジナルアイテムをSUZURIで販売しています。おでかけ気分で使えるグッズをチェックできます。</p>
+        <p class="notice">価格・在庫・販売状況は変更される場合があります。購入前にSUZURIの商品ページで最新情報を確認してください。</p>
+        <div class="buttons"><a class="button" href="https://suzuri.jp/Daisy_Samoyed" target="_blank" rel="noopener">SUZURIで見る</a><a class="button sub" href="https://suzuri.jp/Daisy_Samoyed" target="_blank" rel="noopener">Daisy_Samoyed ショップへ</a></div>
+      </div>
+      <div class="suzuri-visual"><div>🐻‍❄️<br><strong>Daisy Goods</strong></div></div>
     </section>
 
     <section class="section panel">
@@ -77,7 +93,7 @@
   <footer>
     <strong>Daisy Kyushu Dog Guide</strong>
     <p>九州犬連れおでかけ情報メディア。※本サイトにはアフィリエイト広告を含みます。</p>
-    <div class="business"><a href="pr.html">PR料金</a> / <a href="listing.html">掲載希望</a></div>
+    <div class="business"><a href="pr.html">PR料金</a> / <a href="listing.html">掲載希望</a> / <a href="https://suzuri.jp/Daisy_Samoyed" target="_blank" rel="noopener">SUZURI</a></div>
   </footer>
 
   <script>
