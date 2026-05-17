@@ -11,7 +11,11 @@
     "officialUrl": "https://www.visit-oita.jp/",
     "mapQuery": "くじゅう高原 犬連れ",
     "lastChecked": "2026-05-17",
-    "memo": "高原ドライブや散策候補。牧場・公園・飲食店は施設ごとに犬同伴条件が違います。"
+    "memo": "高原ドライブや散策候補。牧場・公園・飲食店は施設ごとに犬同伴条件が違います。",
+    "category": "高原 / ドライブ / 散策",
+    "tags": [],
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%8F%E3%81%98%E3%82%85%E3%81%86%E9%AB%98%E5%8E%9F%20%E7%8A%AC%E9%80%A3%E3%82%8C",
+    "snsUrl": ""
   },
   {
     "id": "yufuin-outdoor",
@@ -25,7 +29,11 @@
     "officialUrl": "https://www.visit-oita.jp/",
     "mapQuery": "湯布院 犬連れ 散策",
     "lastChecked": "2026-05-17",
-    "memo": "湯布院観光とドッグランを組み合わせやすい候補。混雑・駐車場・犬同伴可否は要確認。"
+    "memo": "湯布院観光とドッグランを組み合わせやすい候補。混雑・駐車場・犬同伴可否は要確認。",
+    "category": "観光 / 散策 / ドッグラン",
+    "tags": [],
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%B9%AF%E5%B8%83%E9%99%A2%20%E7%8A%AC%E9%80%A3%E3%82%8C%20%E6%95%A3%E7%AD%96",
+    "snsUrl": ""
   },
   {
     "id": "beppu-outdoor",
@@ -39,6 +47,51 @@
     "officialUrl": "https://www.visit-oita.jp/",
     "mapQuery": "別府 犬連れ ドライブ",
     "lastChecked": "2026-05-17",
-    "memo": "移動途中の休憩や景色を楽しむ候補。犬同伴エリアは施設ごとに確認してください。"
+    "memo": "移動途中の休憩や景色を楽しむ候補。犬同伴エリアは施設ごとに確認してください。",
+    "category": "ドライブ / 休憩 / サービスエリア",
+    "tags": [],
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%88%A5%E5%BA%9C%20%E7%8A%AC%E9%80%A3%E3%82%8C%20%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96",
+    "snsUrl": ""
+  },
+  {
+    "id": "kuju-flower-park-candidate",
+    "name": "くじゅう花公園",
+    "area": "大分県竹田市久住町",
+    "type": "花公園 / アウトドア / 散策",
+    "dogAllowed": "要確認",
+    "largeDog": "要確認",
+    "rainyOk": "要確認",
+    "indoorOk": "要確認",
+    "officialUrl": "https://www.hana-kouen.com/",
+    "snsUrl": "",
+    "mapQuery": "くじゅう花公園 大分県竹田市久住町",
+    "lastChecked": "2026-05-16",
+    "status": "公式サイト候補",
+    "memo": "犬同伴条件・大型犬可否・リードルール・雨天時対応は公式情報で要確認。",
+    "category": "花公園 / アウトドア / 散策",
+    "tags": [],
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%8F%E3%81%98%E3%82%85%E3%81%86%E8%8A%B1%E5%85%AC%E5%9C%92%20%E5%A4%A7%E5%88%86%E7%9C%8C%E7%AB%B9%E7%94%B0%E5%B8%82%E4%B9%85%E4%BD%8F%E7%94%BA"
+  },
+  {
+    "id": "inn-the-park-fukuoka",
+    "name": "INN THE PARK 福岡（光と風の広場）",
+    "area": "福岡県福岡市東区",
+    "type": "キャンプ / グランピング / アウトドア",
+    "category": "キャンプ",
+    "dogAllowed": "要確認",
+    "largeDog": "要確認",
+    "rainyOk": "要確認",
+    "indoorOk": "要確認",
+    "officialUrl": "https://www.innthepark.jp/fukuoka/",
+    "snsUrl": "",
+    "mapQuery": "INN THE PARK 福岡",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=INN%20THE%20PARK%20%E7%A6%8F%E5%B2%A1",
+    "lastChecked": "2026-05-17",
+    "status": "公式サイト確認",
+    "memo": "犬同伴条件・大型犬可否・同伴可能エリア・宿泊ルールは公式情報で要確認。",
+    "tags": [
+      "キャンプ",
+      "アウトドア"
+    ]
   }
 ]

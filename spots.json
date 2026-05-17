@@ -14,7 +14,11 @@
     "status": "公式要確認",
     "memo": "大分市内から行きやすい犬連れ候補。行く前に営業日・犬同伴条件・大型犬可否を公式情報で確認してください。",
     "weekendRecommended": true,
-    "mapQuery": "森のドッグラン ワンLOVE 大分県大分市"
+    "mapQuery": "森のドッグラン ワンLOVE 大分県大分市",
+    "category": "ドッグラン / カフェ",
+    "tags": [],
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%A3%AE%E3%81%AE%E3%83%89%E3%83%83%E3%82%B0%E3%83%A9%E3%83%B3%20%E3%83%AF%E3%83%B3LOVE%20%E5%A4%A7%E5%88%86%E7%9C%8C%E5%A4%A7%E5%88%86%E5%B8%82",
+    "snsUrl": ""
   },
   {
     "id": "dogrun-elf",
@@ -31,7 +35,11 @@
     "status": "公式SNS要確認",
     "memo": "湯布院方面のおでかけ候補。営業日・天候対応・証明書の有無は公式SNSで確認してください。",
     "weekendRecommended": true,
-    "mapQuery": "森のドッグラン 枝瑠風 大分県由布市湯布院町"
+    "mapQuery": "森のドッグラン 枝瑠風 大分県由布市湯布院町",
+    "category": "ドッグラン",
+    "tags": [],
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%A3%AE%E3%81%AE%E3%83%89%E3%83%83%E3%82%B0%E3%83%A9%E3%83%B3%20%E6%9E%9D%E7%91%A0%E9%A2%A8%20%E5%A4%A7%E5%88%86%E7%9C%8C%E7%94%B1%E5%B8%83%E5%B8%82%E6%B9%AF%E5%B8%83%E9%99%A2%E7%94%BA",
+    "snsUrl": ""
   },
   {
     "id": "beppuwan-sa",
@@ -48,7 +56,11 @@
     "status": "公式要確認",
     "memo": "移動中に立ち寄りやすい候補。上下線・設備・利用ルールは公式情報で確認してください。",
     "weekendRecommended": true,
-    "mapQuery": "別府湾サービスエリア ドッグラン"
+    "mapQuery": "別府湾サービスエリア ドッグラン",
+    "category": "サービスエリア / ドッグラン",
+    "tags": [],
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%88%A5%E5%BA%9C%E6%B9%BE%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%82%A8%E3%83%AA%E3%82%A2%20%E3%83%89%E3%83%83%E3%82%B0%E3%83%A9%E3%83%B3",
+    "snsUrl": ""
   },
   {
     "id": "oita-official-pet",
@@ -65,6 +77,50 @@
     "status": "公式情報源",
     "memo": "犬連れスポットを広げるための公式情報源。個別施設の条件確認に使います。",
     "weekendRecommended": false,
-    "mapQuery": "大分県 ペット同伴 OK 観光"
+    "mapQuery": "大分県 ペット同伴 OK 観光",
+    "category": "公式まとめ / 情報源",
+    "tags": [],
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E5%88%86%E7%9C%8C%20%E3%83%9A%E3%83%83%E3%83%88%E5%90%8C%E4%BC%B4%20OK%20%E8%A6%B3%E5%85%89",
+    "snsUrl": ""
+  },
+  {
+    "id": "uminonakamichi-park",
+    "name": "国営海の中道海浜公園",
+    "area": "福岡県福岡市東区",
+    "type": "公園 / 犬と遊びに行ける場所",
+    "category": "公園",
+    "dogAllowed": "要確認",
+    "largeDog": "要確認",
+    "rainyOk": "要確認",
+    "indoorOk": "要確認",
+    "parking": "要確認",
+    "officialUrl": "https://uminaka-park.jp/",
+    "snsUrl": "https://www.instagram.com/uminonakamichiseasidepark/",
+    "lastChecked": "2026-05-17",
+    "status": "公式サイト確認",
+    "memo": "犬同伴条件・立入可能エリア・リードルールは公式情報で要確認。",
+    "weekendRecommended": true,
+    "mapQuery": "国営海の中道海浜公園 福岡市",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%9B%BD%E5%96%B6%E6%B5%B7%E3%81%AE%E4%B8%AD%E9%81%93%E6%B5%B7%E6%B5%9C%E5%85%AC%E5%9C%92"
+  },
+  {
+    "id": "kagoshima-heiwa-park",
+    "name": "平川動物公園（周辺散策候補）",
+    "area": "鹿児島県鹿児島市",
+    "type": "観光スポット / 散策",
+    "category": "観光スポット",
+    "dogAllowed": "要確認",
+    "largeDog": "要確認",
+    "rainyOk": "要確認",
+    "indoorOk": "要確認",
+    "parking": "要確認",
+    "officialUrl": "https://hirakawazoo.jp/",
+    "snsUrl": "",
+    "lastChecked": "2026-05-17",
+    "status": "公式サイト確認",
+    "memo": "犬同伴可否・立入条件は公式情報で要確認。",
+    "weekendRecommended": false,
+    "mapQuery": "平川動物公園 鹿児島市",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%B9%B3%E5%B7%9D%E5%8B%95%E7%89%A9%E5%85%AC%E5%9C%92"
   }
 ]

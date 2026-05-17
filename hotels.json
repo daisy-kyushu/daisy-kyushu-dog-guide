@@ -12,7 +12,15 @@
     "searchKeyword": "大分 犬 同伴",
     "lastChecked": "2026-05-17",
     "status": "楽天トラベル公式トップへ誘導",
-    "memo": "楽天トラベルの検索欄で「大分 犬 同伴」「大分 ペットと泊まれる宿」などで検索してください。"
+    "memo": "楽天トラベルの通常導線のみです。 楽天トラベルの検索欄で「大分 犬 同伴」「大分 ペットと泊まれる宿」などで検索してください。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "rakutenTravelAffiliateUrl": "",
+    "affiliateStatus": "search-only",
+    "category": "ホテル",
+    "tags": [],
+    "mapQuery": "大分県 楽天トラベルで大分県の犬と泊まれる宿を探す",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E5%88%86%E7%9C%8C%20%E6%A5%BD%E5%A4%A9%E3%83%88%E3%83%A9%E3%83%99%E3%83%AB%E3%81%A7%E5%A4%A7%E5%88%86%E7%9C%8C%E3%81%AE%E7%8A%AC%E3%81%A8%E6%B3%8A%E3%81%BE%E3%82%8C%E3%82%8B%E5%AE%BF%E3%82%92%E6%8E%A2%E3%81%99",
+    "officialUrl": "https://travel.rakuten.co.jp/",
+    "snsUrl": ""
   },
   {
     "id": "rakuten-travel-yufuin",
@@ -27,7 +35,15 @@
     "searchKeyword": "湯布院 犬 同伴",
     "lastChecked": "2026-05-17",
     "status": "楽天トラベル公式トップへ誘導",
-    "memo": "予約前に犬同伴条件、料金、頭数制限、ワクチン証明の有無を必ず確認してください。"
+    "memo": "楽天トラベルの通常導線のみです。 予約前に犬同伴条件、料金、頭数制限、ワクチン証明の有無を必ず確認してください。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "rakutenTravelAffiliateUrl": "",
+    "affiliateStatus": "search-only",
+    "category": "ホテル",
+    "tags": [],
+    "mapQuery": "大分県由布市・湯布院 楽天トラベルで湯布院・由布院の犬と泊まれる宿を探す",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E5%88%86%E7%9C%8C%E7%94%B1%E5%B8%83%E5%B8%82%E3%83%BB%E6%B9%AF%E5%B8%83%E9%99%A2%20%E6%A5%BD%E5%A4%A9%E3%83%88%E3%83%A9%E3%83%99%E3%83%AB%E3%81%A7%E6%B9%AF%E5%B8%83%E9%99%A2%E3%83%BB%E7%94%B1%E5%B8%83%E9%99%A2%E3%81%AE%E7%8A%AC%E3%81%A8%E6%B3%8A%E3%81%BE%E3%82%8C%E3%82%8B%E5%AE%BF%E3%82%92%E6%8E%A2%E3%81%99",
+    "officialUrl": "https://travel.rakuten.co.jp/",
+    "snsUrl": ""
   },
   {
     "id": "rakuten-travel-kyushu",
@@ -42,6 +58,14 @@
     "searchKeyword": "九州 犬 同伴",
     "lastChecked": "2026-05-17",
     "status": "楽天トラベル公式トップへ誘導",
-    "memo": "楽天トラベルで条件を絞り込み、各宿の公式情報も確認してください。"
+    "memo": "楽天トラベルの通常導線のみです。 楽天トラベルで条件を絞り込み、各宿の公式情報も確認してください。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "rakutenTravelAffiliateUrl": "",
+    "affiliateStatus": "search-only",
+    "category": "ホテル",
+    "tags": [],
+    "mapQuery": "九州 楽天トラベルで九州の犬と泊まれる宿を探す",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E4%B9%9D%E5%B7%9E%20%E6%A5%BD%E5%A4%A9%E3%83%88%E3%83%A9%E3%83%99%E3%83%AB%E3%81%A7%E4%B9%9D%E5%B7%9E%E3%81%AE%E7%8A%AC%E3%81%A8%E6%B3%8A%E3%81%BE%E3%82%8C%E3%82%8B%E5%AE%BF%E3%82%92%E6%8E%A2%E3%81%99",
+    "officialUrl": "https://travel.rakuten.co.jp/",
+    "snsUrl": ""
   }
 ]
