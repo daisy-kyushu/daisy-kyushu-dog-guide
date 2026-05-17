@@ -8,12 +8,12 @@
     "mealAreaWithDog": "宿ごとに要確認",
     "dogRun": "宿ごとに要確認",
     "vaccineRequired": "宿ごとに要確認",
-    "rakutenTravelUrl": "https://travel.rakuten.co.jp/pet/",
+    "rakutenTravelUrl": "https://search.travel.rakuten.co.jp/ds/hotellist/Japan-Oita?f_query=%E7%8A%AC%20%E5%90%8C%E4%BC%B4",
     "searchKeyword": "大分 犬 同伴",
     "lastChecked": "2026-05-17",
     "status": "楽天トラベル公式トップへ誘導",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルの検索欄で「大分 犬 同伴」「大分 ペットと泊まれる宿」などで検索してください。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
-    "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 地域別の楽天トラベル宿一覧へ誘導します。 楽天トラベルの検索欄で「大分 犬 同伴」「大分 ペットと泊まれる宿」などで検索してください。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Fsearch.travel.rakuten.co.jp%2Fds%2Fhotellist%2FJapan-Oita%3Ff_query%3D%25E7%258A%25AC%2520%25E5%2590%258C%25E4%25BC%25B4&m=https%3A%2F%2Fsearch.travel.rakuten.co.jp%2Fds%2Fhotellist%2FJapan-Oita%3Ff_query%3D%25E7%258A%25AC%2520%25E5%2590%258C%25E4%25BC%25B4",
     "affiliateStatus": "affiliate-active"
   },
   {
@@ -25,12 +25,12 @@
     "mealAreaWithDog": "宿ごとに要確認",
     "dogRun": "宿ごとに要確認",
     "vaccineRequired": "宿ごとに要確認",
-    "rakutenTravelUrl": "https://travel.rakuten.co.jp/pet/",
+    "rakutenTravelUrl": "https://search.travel.rakuten.co.jp/ds/hotellist/Japan-Oita?f_query=%E6%B9%AF%E5%B8%83%E9%99%A2%20%E7%8A%AC%20%E5%90%8C%E4%BC%B4",
     "searchKeyword": "湯布院 犬 同伴",
     "lastChecked": "2026-05-17",
     "status": "楽天トラベル公式トップへ誘導",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 予約前に犬同伴条件、料金、頭数制限、ワクチン証明の有無を必ず確認してください。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
-    "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 地域別の楽天トラベル宿一覧へ誘導します。 予約前に犬同伴条件、料金、頭数制限、ワクチン証明の有無を必ず確認してください。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Fsearch.travel.rakuten.co.jp%2Fds%2Fhotellist%2FJapan-Oita%3Ff_query%3D%25E6%25B9%25AF%25E5%25B8%2583%25E9%2599%25A2%2520%25E7%258A%25AC%2520%25E5%2590%258C%25E4%25BC%25B4&m=https%3A%2F%2Fsearch.travel.rakuten.co.jp%2Fds%2Fhotellist%2FJapan-Oita%3Ff_query%3D%25E6%25B9%25AF%25E5%25B8%2583%25E9%2599%25A2%2520%25E7%258A%25AC%2520%25E5%2590%258C%25E4%25BC%25B4",
     "affiliateStatus": "affiliate-active"
   },
   {
@@ -46,7 +46,7 @@
     "searchKeyword": "九州 犬 同伴",
     "lastChecked": "2026-05-17",
     "status": "楽天トラベル公式トップへ誘導",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルで条件を絞り込み、各宿の公式情報も確認してください。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 楽天トラベルで条件を絞り込み、各宿の公式情報も確認してください。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active"
   }
