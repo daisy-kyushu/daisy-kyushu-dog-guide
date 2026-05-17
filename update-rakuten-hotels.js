@@ -14,8 +14,16 @@ function sanitizeMemo(memo) {
     .trim();
 }
 
+function isSpecificHotelUrl(url) {
+  const u = String(url || "").trim();
+  if (!u) return false;
+  return /travel\.rakuten\.co\.jp\/(HOTEL|hotel\.travel\.rakuten\.co\.jp\/hinfo|hotel\.travel\.rakuten\.co\.jp\/hotelinfo)/i.test(u)
+    && !/^https?:\/\/travel\.rakuten\.co\.jp\/?$/i.test(u);
+}
+
 function buildDestination(hotel) {
   const base = hotel.rakutenTravelUrl || "https://travel.rakuten.co.jp/";
+  if (isSpecificHotelUrl(base)) return base;
   const keyword = String(hotel.searchKeyword || "").trim();
   if (keyword) {
     return `https://travel.rakuten.co.jp/keyword/Search.do?f_teikei=&f_query=${encodeURIComponent(keyword)}`;

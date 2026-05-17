@@ -56,5 +56,47 @@
     "lastChecked": "2026-05-16",
     "status": "公式サイト候補",
     "memo": "犬同伴条件・大型犬可否・リードルール・雨天時対応は公式情報で要確認。"
+  },
+  {
+    "id": "uminonakamichi-seaside-park",
+    "name": "国営海の中道海浜公園",
+    "area": "福岡県福岡市東区",
+    "type": "公園 / 観光スポット / 散策 / 犬と遊びに行ける場所",
+    "dogAllowed": "要確認",
+    "largeDog": "要確認",
+    "rainyOk": "要確認",
+    "indoorOk": "要確認",
+    "officialUrl": "https://uminaka-park.jp/",
+    "mapQuery": "国営海の中道海浜公園 福岡県福岡市東区",
+    "lastChecked": "2026-05-17",
+    "memo": "海沿い散策や公園利用の候補。犬同伴条件・入園ルール・利用可能エリアは行く前に公式情報で確認してください。"
+  },
+  {
+    "id": "yoshinogari-historical-park",
+    "name": "吉野ヶ里歴史公園",
+    "area": "佐賀県神埼郡吉野ヶ里町・神埼市",
+    "type": "観光スポット / 公園 / 散策 / 犬と遊びに行ける場所",
+    "dogAllowed": "要確認",
+    "largeDog": "要確認",
+    "rainyOk": "要確認",
+    "indoorOk": "要確認",
+    "officialUrl": "https://www.yoshinogari.jp/",
+    "mapQuery": "吉野ヶ里歴史公園 佐賀県神埼郡吉野ヶ里町",
+    "lastChecked": "2026-05-17",
+    "memo": "歴史公園での散策候補。犬同伴条件・立入可能エリア・イベント時運用は行く前に公式情報で確認してください。"
+  },
+  {
+    "id": "kirishima-jingu-area-walk",
+    "name": "霧島神宮周辺散策エリア",
+    "area": "鹿児島県霧島市",
+    "type": "観光スポット / アウトドア / 散策 / 犬と遊びに行ける場所",
+    "dogAllowed": "要確認",
+    "largeDog": "要確認",
+    "rainyOk": "要確認",
+    "indoorOk": "要確認",
+    "officialUrl": "https://kirishimajingu.or.jp/",
+    "mapQuery": "霧島神宮 鹿児島県霧島市 犬連れ 散策",
+    "lastChecked": "2026-05-17",
+    "memo": "霧島方面の散策候補。犬同伴条件・参拝時マナー・立入可否は行く前に公式情報で確認してください。"
   }
 ]
