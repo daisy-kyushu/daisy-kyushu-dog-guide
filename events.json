@@ -9,7 +9,64 @@
     "officialUrl": "https://oitabuhiland.com/",
     "officialSnsUrl": "https://www.instagram.com/oita_doggoland/",
     "lastChecked": "2026-05-17",
-    "status": "公式SNS要確認",
-    "memo": "開催日・会場・犬同伴ルールは変更される可能性があります。参加前に必ず公式サイト・公式SNSで最新情報をご確認ください。"
+    "status": "公式確認済み",
+    "memo": "開催日・会場・犬同伴条件は変更される場合があります。来場前に必ず公式情報を確認してください。",
+    "title": "OITA DOGGO LAND",
+    "eventDate": "2026-11-21〜2026-11-22",
+    "snsUrl": "https://www.instagram.com/oita_doggoland/",
+    "mapQuery": "大分市内予定（公式SNS要確認） 大分県大分市",
+    "category": "犬イベント",
+    "tags": [
+      "犬イベント"
+    ],
+    "dogPolicy": "要確認"
+  },
+  {
+    "id": "pet-haku-fukuoka-2026",
+    "title": "Pet博2026福岡",
+    "name": "Pet博2026福岡",
+    "date": "2026-08-08〜2026-08-09",
+    "eventDate": "2026-08-08〜2026-08-09",
+    "area": "福岡県福岡市",
+    "venue": "みずほPayPayドーム福岡",
+    "dogRules": "公式情報で要確認",
+    "dogPolicy": "要確認",
+    "officialUrl": "https://www.pethaku.com/",
+    "officialSnsUrl": "https://www.instagram.com/pethaku_official/",
+    "snsUrl": "https://www.instagram.com/pethaku_official/",
+    "mapQuery": "みずほPayPayドーム福岡 福岡県福岡市中央区地行浜",
+    "category": "犬イベント / ペットイベント",
+    "tags": [
+      "犬イベント",
+      "ペットイベント",
+      "福岡"
+    ],
+    "lastChecked": "2026-05-17",
+    "status": "公式確認済み",
+    "memo": "開催日・会場・犬同伴条件は変更される場合があります。来場前に必ず公式情報を確認してください。"
+  },
+  {
+    "id": "dogfes-ikomakogen-2026",
+    "title": "ドッグフェス（生駒高原）",
+    "name": "ドッグフェス（生駒高原）",
+    "date": "2026-05-23〜2026-05-24",
+    "eventDate": "2026-05-23〜2026-05-24",
+    "area": "宮崎県小林市",
+    "venue": "花の駅 生駒高原",
+    "dogRules": "公式情報で要確認",
+    "dogPolicy": "要確認",
+    "officialUrl": "https://www.wonderful-dogfes.com/",
+    "officialSnsUrl": "https://www.instagram.com/wonderful_dogfes/",
+    "snsUrl": "https://www.instagram.com/wonderful_dogfes/",
+    "mapQuery": "花の駅 生駒高原 宮崎県小林市",
+    "category": "ドッグフェス / 犬イベント",
+    "tags": [
+      "ドッグフェス",
+      "犬イベント",
+      "宮崎"
+    ],
+    "lastChecked": "2026-05-17",
+    "status": "公式確認済み",
+    "memo": "開催日・会場・犬同伴条件は変更される場合があります。来場前に必ず公式情報を確認してください。"
   }
 ]
