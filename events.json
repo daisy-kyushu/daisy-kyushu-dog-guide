@@ -11,5 +11,54 @@
     "lastChecked": "2026-05-17",
     "status": "公式SNS要確認",
     "memo": "開催日・会場・犬同伴ルールは変更される可能性があります。参加前に必ず公式サイト・公式SNSで最新情報をご確認ください。"
+  },
+  {
+    "id": "wonderful-minamikyushu-2026",
+    "title": "わんだふる南九州2026",
+    "name": "わんだふる南九州2026",
+    "area": "宮崎県小林市",
+    "venue": "生駒高原 特設会場",
+    "eventDate": "2026-05-23",
+    "date": "2026-05-23〜2026-05-24",
+    "officialUrl": "https://www.instagram.com/wonderful.kyushu/",
+    "snsUrl": "https://www.instagram.com/wonderful.kyushu/",
+    "mapQuery": "生駒高原 宮崎県小林市",
+    "category": "dog_festival",
+    "tags": [
+      "犬イベント",
+      "ドッグフェス",
+      "マルシェ",
+      "九州",
+      "宮崎"
+    ],
+    "dogPolicy": "犬関連イベントとして確認。犬同伴条件・リード条件・入場ルールは公式情報で確認してください。",
+    "status": "official-confirmed",
+    "memo": "開催日・会場・犬同伴条件は変更される場合があります。来場前に必ず公式情報を確認してください。",
+    "lastChecked": "2026-05-18"
+  },
+  {
+    "id": "dog-expo-fukuoka-2026",
+    "title": "DOG EXPO FUKUOKA 2026",
+    "name": "DOG EXPO FUKUOKA 2026",
+    "area": "福岡県北九州市",
+    "venue": "西日本総合展示場・北九州メッセ",
+    "eventDate": "2026-07-18",
+    "date": "2026-07-18〜2026-07-20",
+    "officialUrl": "https://www.wonderful-dogfes.com/dogexpofukuoka",
+    "snsUrl": "https://www.instagram.com/wonderful.kyushu/",
+    "mapQuery": "西日本総合展示場 北九州市",
+    "category": "dog_expo",
+    "tags": [
+      "犬イベント",
+      "ドッグイベント",
+      "DOGEXPO",
+      "福岡",
+      "北九州",
+      "大型イベント"
+    ],
+    "dogPolicy": "犬関連イベントとして確認。会場ルール・入場条件・リード条件は公式情報で確認してください。",
+    "status": "official-confirmed",
+    "memo": "開催日・会場・犬同伴条件は変更される場合があります。来場前に必ず公式情報を確認してください。",
+    "lastChecked": "2026-05-18"
   }
 ]
