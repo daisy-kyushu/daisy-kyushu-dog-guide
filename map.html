@@ -116,6 +116,10 @@ function cardButtons(item){
   const ig=item.instagramUrl ? `<a class="button sub" href="${esc(item.instagramUrl)}" target="_blank" rel="noopener">公式Instagramを見る</a>` : "";const post=item.instagramPostUrl ? `<a class="button sub" href="${esc(item.instagramPostUrl)}" target="_blank" rel="noopener">Instagram投稿を見る</a>` : "";return `${officialBtn}${ig}${post}${hotelBtn}${mapsBtn}`;
 }
 
+
+function ensureModal(){if(document.getElementById('detail-modal'))return;const m=document.createElement('div');m.id='detail-modal';m.style.cssText='position:fixed;inset:0;background:rgba(30,25,20,.45);display:none;z-index:99;padding:14px;overflow:auto';m.innerHTML='<div style="max-width:760px;margin:28px auto;background:#fffdf8;border-radius:24px;padding:18px;border:1px solid #efe4d5;"><button id="close-detail" class="button sub" style="float:right">閉じる ✕</button><div id="modal-body" style="clear:both"></div></div>';document.body.appendChild(m);document.getElementById('close-detail').onclick=()=>m.style.display='none';m.onclick=(e)=>{if(e.target.id==='detail-modal')m.style.display='none'}}
+function openModal(h){ensureModal();document.getElementById('modal-body').innerHTML=h;document.getElementById('detail-modal').style.display='block'}
+
 function renderCards(items, filterName){
   const root=document.getElementById("map-list");
   const visible = filterName === "すべて" ? items : items.filter(i=>i.category===filterName);
@@ -134,9 +138,10 @@ function renderCards(items, filterName){
         <span class="tag">エリア：${esc(item.area||"要確認")}</span>
         <span class="tag ok">${esc(pinState)}</span>
       </p>
-      ${cardButtons(item)}
+      ${cardButtons(item)}${item.source==="outdoor.json"?`<button class="button js-outdoor-detail" data-id="${esc(item.id||"")}">詳細を見る</button>`:""}
     </article>`;
   }).join("");
+  [...root.querySelectorAll(".js-outdoor-detail")].forEach(btn=>btn.onclick=()=>{const item=visible.find(v=>String(v.id||"")===btn.dataset.id);if(!item)return;const fields=["type","category","dogAllowed","largeDog","rainyOk","indoorOk","parking","walkLevel","estimatedTime","pathType","shade","toilet","caution"];const tags=fields.filter(k=>item[k]).map(k=>`<span class="tag">${esc(k)}：${esc(item[k])}</span>`).join("");openModal(`<h2>${esc(item.name)}</h2><p><span class="tag">エリア：${esc(item.area||"")}</span>${tags}</p><p>${esc(item.memo||"")}</p><p class="notice">犬同伴条件・大型犬可否・立ち入り可能範囲は変更される場合があります。訪問前に必ず公式情報を確認してください。</p><div>${item.officialUrl?`<a class="button" href="${esc(item.officialUrl)}" target="_blank" rel="noopener">公式情報</a>`:""}<a class="button sub" href="${esc(mapsUrl(item.mapQuery||item.name))}" target="_blank" rel="noopener">地図で見る</a></div>`)})
 }
 
 async function initMapPage(){
