@@ -13,108 +13,123 @@
     .site-header{position:sticky;top:0;z-index:10;background:rgba(255,253,248,.95);border-bottom:1px solid var(--line);padding:14px 5vw;display:flex;gap:14px;justify-content:space-between;align-items:center}
     .brand{font-weight:800;color:var(--brown)}
     nav{display:flex;gap:8px;flex-wrap:wrap}nav a{font-size:13px;padding:7px 9px;border-radius:99px}nav a:hover{background:var(--cream);text-decoration:none}
-    main{width:min(1100px,calc(100% - 24px));margin:0 auto}
-    .hero{margin:20px 0;padding:clamp(20px,5vw,46px);border-radius:28px;background:linear-gradient(135deg,var(--mint),var(--cream));box-shadow:var(--shadow)}
+    main{width:min(1120px,calc(100% - 24px));margin:0 auto}
+    .hero{margin:24px 0;padding:clamp(22px,5vw,48px);border-radius:28px;background:linear-gradient(135deg,var(--mint),var(--cream));box-shadow:var(--shadow)}
     .hero h1{font-size:clamp(30px,7vw,58px);line-height:1.1;margin:0 0 10px}
     .notice{background:#fff1ed;border:1px solid #f0c7bd;border-radius:14px;padding:10px 12px}
-    .suzuri-banner{margin:18px 0 22px;display:grid;grid-template-columns:1.2fr .8fr;gap:14px;align-items:center;background:linear-gradient(135deg,#fff,#fff4df 55%,#cfeee0);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow);padding:20px;overflow:hidden}
+    .quick-grid,.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .quick-grid{margin:10px 0 12px}
+    .section{margin:24px 0 34px}
+    .panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
+    .section h2{margin:0 0 8px;font-size:1.45rem;line-height:1.35}
+    .section-lead{margin:0 0 14px;color:var(--muted)}
+    .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px;box-shadow:0 10px 25px rgba(84,66,45,.08)}
+    .card h3{margin:8px 0 6px;font-size:1.05rem;line-height:1.45}
+    .card p{margin:0;color:var(--muted)}
+    .visual{height:84px;border-radius:14px;background:var(--cream);display:grid;place-items:center;font-size:38px;margin-bottom:8px}
+    .meta{display:grid;gap:4px;margin-top:8px;font-size:.92rem;color:var(--brown)}
+    .tag{display:inline-block;background:var(--cream);border-radius:99px;padding:4px 9px;margin:3px;font-size:12px}
+    .status-ok{background:var(--mint);color:#315f48}.status-sns{background:#e8f0ff;color:#2c4f88}.status-check{background:#ffe9e4;color:#85443b}
+    .buttons{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .button{display:inline-block;background:var(--green);color:#fff;padding:9px 13px;border-radius:99px;font-weight:700;font-size:13px}
+    .button.sub{background:#fff;color:var(--brown);border:1px solid var(--line)}
+    .helper-actions{margin-top:14px}
+    .suzuri-banner{margin:22px 0 28px;display:grid;grid-template-columns:1.2fr .8fr;gap:14px;align-items:center;background:linear-gradient(135deg,#fff,#fff4df 55%,#cfeee0);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow);padding:20px;overflow:hidden}
     .suzuri-banner h2{margin:0 0 6px;font-size:clamp(22px,4vw,34px);line-height:1.25}
     .suzuri-banner p{margin:6px 0;color:var(--muted)}
     .suzuri-visual{min-height:150px;border-radius:22px;background:rgba(255,255,255,.65);display:grid;place-items:center;text-align:center;padding:16px;font-size:52px;border:1px dashed rgba(79,140,107,.35)}
     .suzuri-label{display:inline-block;background:#fff;color:var(--green);border:1px solid rgba(79,140,107,.25);border-radius:999px;padding:5px 10px;font-size:12px;font-weight:800;margin-bottom:8px}
-    .quick-grid,.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-    .quick-grid{margin:18px 0}
-    .section{margin:16px 0 28px}
-    .panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}
-    .section h2{margin:0 0 12px;font-size:1.3rem}
-    .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px;box-shadow:0 10px 25px rgba(84,66,45,.08)}
-    .visual{height:90px;border-radius:14px;background:var(--cream);display:grid;place-items:center;font-size:40px;margin-bottom:10px}
-    .tag{display:inline-block;background:var(--cream);border-radius:99px;padding:4px 9px;margin:3px;font-size:12px}
-    .status-ok{background:var(--mint);color:#315f48}.status-sns{background:#e8f0ff;color:#2c4f88}.status-check{background:#ffe9e4;color:#85443b}
-    .buttons{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
-    .button{display:inline-block;background:var(--green);color:#fff;padding:9px 13px;border-radius:99px;font-weight:700;font-size:13px}
-    .button.sub{background:#fff;color:var(--brown);border:1px solid var(--line)}
     .business{margin-top:18px;padding-top:14px;border-top:1px dashed var(--line)}
-    footer{margin-top:36px;padding:26px 5vw;border-top:1px solid var(--line);background:#fff;color:var(--muted)}
+    footer{margin-top:40px;padding:26px 5vw;border-top:1px solid var(--line);background:#fff;color:var(--muted)}
     @media(max-width:900px){.site-header{display:block}.quick-grid,.cards{grid-template-columns:repeat(2,1fr)}.suzuri-banner{grid-template-columns:1fr}}
-    @media(max-width:560px){main{width:min(100% - 16px,1100px)}.quick-grid,.cards{grid-template-columns:1fr}.hero h1{font-size:34px}.suzuri-banner{padding:16px}.suzuri-visual{min-height:110px;font-size:42px}}
+    @media(max-width:560px){main{width:min(100% - 16px,1120px)}.quick-grid,.cards{grid-template-columns:1fr}.hero h1{font-size:34px}.panel{padding:18px}.suzuri-banner{padding:16px}.suzuri-visual{min-height:110px;font-size:42px}}
   </style>
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="index.html">🐾 Daisy Kyushu Dog Guide</a>
-    <nav>
-      <a href="index.html">ホーム</a><a href="weekend.html">今週末</a><a href="spots.html">スポット</a><a href="outdoor.html">アウトドア</a><a href="map.html">地図</a><a href="hotels.html">ホテル</a><a href="checklist.html">持ち物</a><a href="https://suzuri.jp/Daisy_Samoyed" target="_blank" rel="noopener">SUZURI</a>
-    </nav>
-  </header>
-  <main>
-    <section class="hero">
-      <h1>Daisyと探す、<br>九州の犬連れおでかけ。</h1>
-      <p>犬連れで行きやすいスポット・宿・週末候補・グッズ情報を、スマホで見やすくまとめています。</p>
-      <p class="notice">施設情報は変更される場合があります。お出かけ前に公式サイト・公式SNS・地図情報を必ずご確認ください。</p>
-    </section>
+<header class="site-header">
+  <a class="brand" href="index.html">🐾 Daisy Kyushu Dog Guide</a>
+  <nav>
+    <a href="index.html">ホーム</a><a href="weekend.html">今週末</a><a href="spots.html">スポット</a><a href="outdoor.html">アウトドア</a><a href="map.html">地図</a><a href="hotels.html">ホテル</a><a href="checklist.html">持ち物</a><a href="https://suzuri.jp/Daisy_Samoyed" target="_blank" rel="noopener">SUZURI</a>
+  </nav>
+</header>
+<main>
+  <section class="hero">
+    <h1>Daisyと探す、<br>九州の犬連れおでかけ。</h1>
+    <p>犬連れで行きやすいスポット・イベント・宿・グッズ情報を、スマホでも見やすくまとめています。</p>
+    <p class="notice">施設情報は変更される場合があります。お出かけ前に公式サイト・公式SNS・地図情報を必ずご確認ください。</p>
+  </section>
 
-    <section class="suzuri-banner" aria-label="Daisy Samoyed SUZURI banner">
-      <div>
-        <span class="suzuri-label">Daisyオリジナルグッズ</span>
-        <h2>Daisy_Samoyed のSUZURIショップ</h2>
-        <p>DaisyのオリジナルアイテムをSUZURIで販売しています。おでかけ気分で使えるグッズをチェックできます。</p>
-        <p class="notice">価格・在庫・販売状況は変更される場合があります。購入前にSUZURIの商品ページで最新情報を確認してください。</p>
-        <div class="buttons"><a class="button" href="https://suzuri.jp/Daisy_Samoyed" target="_blank" rel="noopener">SUZURIで見る</a><a class="button sub" href="https://suzuri.jp/Daisy_Samoyed" target="_blank" rel="noopener">Daisy_Samoyed ショップへ</a></div>
-      </div>
-      <div class="suzuri-visual"><div>🐻‍❄️<br><strong>Daisy Goods</strong></div></div>
-    </section>
+  <section id="upcoming-events" class="section panel">
+    <h2>今週・今後の犬イベント</h2>
+    <p class="section-lead">開催日が近い順に、直近のイベントを表示します。</p>
+    <div id="events-list" class="cards"></div>
+    <p class="notice">開催日・会場・犬同伴条件は変更される場合があります。来場前に必ず公式情報を確認してください。</p>
+    <div class="buttons helper-actions"><a class="button sub" href="events.html">イベント一覧を見る</a></div>
+  </section>
 
-    <section class="section panel">
-      <h2>まず探す</h2>
-      <div class="quick-grid">
-        <a class="card" href="#new-spots"><h3>新着スポット</h3><p>最新確認の候補から見る</p></a>
-        <a class="card" href="#dog-hotels"><h3>犬と泊まれる宿</h3><p>楽天トラベル導線つき</p></a>
-        <a class="card" href="#weekend"><h3>今週末おすすめ</h3><p>週末向け候補を確認</p></a>
-        <a class="card" href="#rainy"><h3>雨の日・室内OK候補</h3><p>天気に左右されにくい候補</p></a>
-        <a class="card" href="#goods"><h3>Daisyおすすめグッズ</h3><p>楽天検索導線つき</p></a>
-        <a class="card" href="#business"><h3>事業者向け掲載案内</h3><p>PR料金・掲載希望はこちら</p></a>
-      </div>
-    </section>
+  <section class="section panel">
+    <h2>まず探す</h2>
+    <div class="quick-grid">
+      <a class="card" href="#upcoming-events"><h3>今週・イベント</h3><p>まず直近イベントを確認</p></a>
+      <a class="card" href="map.html"><h3>地図から探す</h3><p>Googleマップ連携で探す</p></a>
+      <a class="card" href="#outdoor-walk"><h3>大型犬さんぽ</h3><p>高原・公園散策候補へ</p></a>
+      <a class="card" href="#outdoor-walk"><h3>キャンプ</h3><p>犬連れアウトドア候補</p></a>
+      <a class="card" href="#dog-hotels"><h3>犬と泊まれる宿</h3><p>楽天トラベル導線つき</p></a>
+      <a class="card" href="#goods"><h3>持ち物</h3><p>おでかけ準備の定番品</p></a>
+    </div>
+  </section>
 
-    <section id="new-spots" class="section panel"><h2>新着スポット</h2><div id="spots-list" class="cards"></div></section>
-    <section id="dog-hotels" class="section panel"><h2>犬と泊まれる宿</h2><div id="hotels-list" class="cards"></div></section>
-    <section id="weekend" class="section panel"><h2>今週末おすすめ</h2><div id="weekend-list" class="cards"></div></section>
-    <section id="rainy" class="section panel"><h2>雨の日・室内OK候補</h2><div id="rainy-list" class="cards"></div></section>
-    <section id="goods" class="section panel"><h2>Daisyおすすめグッズ</h2><div id="products-list" class="cards"></div></section>
+  <section id="outdoor-walk" class="section panel"><h2>大型犬さんぽ・アウトドア</h2><p class="section-lead">散歩・高原・公園散策・キャンプを優先して表示しています。</p><div id="outdoor-list" class="cards"></div><p class="notice">犬同伴条件・大型犬可否・立ち入り可能範囲は変更される場合があります。訪問前に必ず公式情報を確認してください。</p><div class="buttons helper-actions"><a class="button sub" href="outdoor.html">アウトドアを見る</a><a class="button sub" href="map.html">地図から探す</a></div></section>
+  <section id="dog-hotels" class="section panel"><h2>犬と泊まれる宿</h2><div id="hotels-list" class="cards"></div><div class="buttons helper-actions"><a class="button sub" href="hotels.html">ホテルを見る</a></div></section>
+  <section id="rainy" class="section panel"><h2>雨の日・室内OK候補</h2><div id="rainy-list" class="cards"></div></section>
+  <section id="goods" class="section panel"><h2>Daisyおすすめグッズ</h2><div id="products-list" class="cards"></div><div class="buttons helper-actions"><a class="button sub" href="checklist.html">持ち物を見る</a></div></section>
 
-    <section id="business" class="section panel">
-      <h2>事業者向け掲載案内</h2>
-      <p>犬連れユーザー向けに施設・サービスを訴求したい事業者さま向けの窓口です。</p>
-      <div class="buttons"><a class="button" href="pr.html">PR料金を見る</a><a class="button sub" href="listing.html">掲載希望フォーム</a></div>
-    </section>
-  </main>
+  <section class="suzuri-banner" aria-label="Daisy Samoyed SUZURI banner">
+    <div>
+      <span class="suzuri-label">Daisyオリジナルグッズ</span>
+      <h2>Daisy_Samoyed のSUZURIショップ</h2>
+      <p>DaisyのオリジナルアイテムをSUZURIで販売しています。おでかけ気分で使えるグッズをチェックできます。</p>
+      <p class="notice">価格・在庫・販売状況は変更される場合があります。購入前にSUZURIの商品ページで最新情報を確認してください。</p>
+      <div class="buttons"><a class="button" href="https://suzuri.jp/Daisy_Samoyed" target="_blank" rel="noopener">SUZURIで見る</a><a class="button sub" href="https://suzuri.jp/Daisy_Samoyed" target="_blank" rel="noopener">Daisy_Samoyed ショップへ</a></div>
+    </div>
+    <div class="suzuri-visual"><div>🐻‍❄️<br><strong>Daisy Goods</strong></div></div>
+  </section>
 
-  <footer>
-    <strong>Daisy Kyushu Dog Guide</strong>
-    <p>九州犬連れおでかけ情報メディア。※本サイトにはアフィリエイト広告を含みます。</p>
-    <div class="business"><a href="pr.html">PR料金</a> / <a href="listing.html">掲載希望</a> / <a href="https://suzuri.jp/Daisy_Samoyed" target="_blank" rel="noopener">SUZURI</a></div>
-  </footer>
+  <section id="business" class="section panel">
+    <h2>事業者向け掲載案内</h2>
+    <p>犬連れユーザー向けに施設・サービスを訴求したい事業者さま向けの窓口です。</p>
+    <div class="buttons"><a class="button" href="pr.html">PR料金を見る</a><a class="button sub" href="listing.html">掲載希望フォーム</a></div>
+  </section>
+</main>
 
-  <script>
-    async function fetchJson(path,fallback=[]){try{const r=await fetch(path,{cache:'no-store'});if(!r.ok)throw new Error(path);return await r.json()}catch(e){console.warn(e);return fallback}}
-    function e(v){return String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
-    function maps(q){return 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(q||'')}
-    function iconByType(t=''){const k=String(t).toLowerCase();if(k.includes('ホテル')||k.includes('宿'))return '🏨';if(k.includes('カフェ'))return '☕';if(k.includes('ラン'))return '🐕';if(k.includes('アウトドア')||k.includes('公園')||k.includes('自然'))return '🌿';if(k.includes('持ち物')||k.includes('グッズ'))return '🎒';return '🐾'}
-    function statusLabel(raw=''){const s=String(raw||'').toLowerCase();if(!raw||s.includes('要確認'))return ['要確認','status-check'];if(s.includes('sns'))return ['公式SNS確認','status-sns'];if(s.includes('公式')||s.includes('確認済'))return ['公式確認済み','status-ok'];return ['公式確認済み','status-ok']}
-    function commonTags(area,category,lastChecked,statusRaw){const status=statusLabel(statusRaw||lastChecked);return `<span class="tag">エリア：${e(area||'九州')}</span><span class="tag">カテゴリ：${e(category||'スポット')}</span><span class="tag ${status[1]}">${status[0]}</span><span class="tag">最終確認日：${e(lastChecked||'要確認')}</span>`}
+<footer>
+  <strong>Daisy Kyushu Dog Guide</strong>
+  <p>九州犬連れおでかけ情報メディア。※本サイトにはアフィリエイト広告を含みます。</p>
+  <div class="business"><a href="pr.html">PR料金</a> / <a href="listing.html">掲載希望</a> / <a href="https://suzuri.jp/Daisy_Samoyed" target="_blank" rel="noopener">SUZURI</a></div>
+</footer>
 
-    async function renderSpots(){const el=document.getElementById('spots-list');if(!el)return;const list=await fetchJson('spots.json');el.innerHTML=list.slice(0,6).map(s=>`<article class="card"><div class="visual">${iconByType(s.type)}</div><h3>${e(s.name)}</h3><p>${commonTags(s.area,s.type,s.lastChecked,s.verificationStatus||s.status)}</p><div class="buttons"><a class="button" href="${e(s.officialUrl)}" target="_blank" rel="noopener">公式情報</a><a class="button sub" href="${e(maps(s.mapQuery||s.name))}" target="_blank" rel="noopener">Google Mapsで見る</a></div></article>`).join('')}
+<script>
+  async function fetchJson(path,fallback=[]){try{const r=await fetch(path,{cache:'no-store'});if(!r.ok)throw new Error(path);return await r.json()}catch(e){console.warn(e);return fallback}}
+  function e(v){return String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
+  function maps(q){return 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(q||'')}
+  function iconByType(t=''){const k=String(t).toLowerCase();if(k.includes('イベント'))return '🎪';if(k.includes('ホテル')||k.includes('宿'))return '🏨';if(k.includes('カフェ'))return '☕';if(k.includes('ラン'))return '🐕';if(k.includes('アウトドア')||k.includes('公園')||k.includes('自然')||k.includes('散歩')||k.includes('高原')||k.includes('キャンプ'))return '🌿';if(k.includes('持ち物')||k.includes('グッズ'))return '🎒';return '🐾'}
+  function statusLabel(raw=''){const s=String(raw||'').toLowerCase();if(!raw||s.includes('要確認'))return ['要確認','status-check'];if(s.includes('sns'))return ['公式SNS確認','status-sns'];if(s.includes('公式')||s.includes('confirm'))return ['公式確認済み','status-ok'];return [String(raw),'status-ok']}
+  function commonTags(area,category,lastChecked,statusRaw){const status=statusLabel(statusRaw||lastChecked);return `<span class="tag">エリア：${e(area||'九州')}</span><span class="tag">カテゴリ：${e(category||'スポット')}</span><span class="tag ${status[1]}">${status[0]}</span><span class="tag">最終確認日：${e(lastChecked||'要確認')}</span>`}
+  function parseEventDate(item){if(!item||!item.eventDate)return null;const d=new Date(`${item.eventDate}T00:00:00`);return Number.isNaN(d.getTime())?null:d}
+  function isUpcomingEvent(item){const d=parseEventDate(item);if(!d)return false;const today=new Date();today.setHours(0,0,0,0);return d>=today}
+  function sortEventsByDate(a,b){return parseEventDate(a)-parseEventDate(b)}
 
-    async function renderWeekend(){const el=document.getElementById('weekend-list');if(!el)return;const list=(await fetchJson('spots.json')).filter(x=>x.weekendRecommended);el.innerHTML=(list.length?list:(await fetchJson('outdoor.json')).slice(0,4)).map(s=>`<article class="card"><div class="visual">${iconByType(s.type||'アウトドア')}</div><h3>${e(s.name)}</h3><p>${commonTags(s.area,s.type||'週末候補',s.lastChecked,s.verificationStatus||s.status)}</p><div class="buttons"><a class="button" href="${e(s.officialUrl)}" target="_blank" rel="noopener">公式情報</a><a class="button sub" href="${e(maps(s.mapQuery||s.name))}" target="_blank" rel="noopener">Google Mapsで見る</a></div></article>`).join('')}
+  async function renderEvents(){const el=document.getElementById('events-list');if(!el)return;const list=await fetchJson('events.json');const upcoming=list.filter(isUpcomingEvent).sort(sortEventsByDate).slice(0,3);if(!upcoming.length){el.innerHTML='<article class="card"><h3>掲載準備中</h3><p>今後のイベントは確認でき次第追加します。</p></article>';return}
+    el.innerHTML=upcoming.map(ev=>{const url=ev.officialUrl||ev.snsUrl||ev.officialSnsUrl;const status=statusLabel(ev.status);const mapUrl=maps(ev.mapQuery||ev.venue||ev.name);const officialBtn=url?`<a class="button" href="${e(url)}" target="_blank" rel="noopener">公式情報</a>`:'';return `<article class="card"><div class="visual">🎪</div><h3>${e(ev.name||ev.title)}</h3><div class="meta"><div>開催日：${e(ev.eventDate||ev.date||'要確認')}</div><div>エリア：${e(ev.area||'要確認')}</div><div>会場：${e(ev.venue||'要確認')}</div><div><span class="tag ${status[1]}">${e(status[0])}</span><span class="tag">犬同伴：${e(ev.dogPolicy||ev.dogRules||'要確認')}</span></div></div><div class="buttons">${officialBtn}<a class="button sub" href="${e(mapUrl)}" target="_blank" rel="noopener">地図で見る</a></div></article>`}).join('')}
 
-    async function renderRainy(){const el=document.getElementById('rainy-list');if(!el)return;const spots=await fetchJson('spots.json');const outdoor=await fetchJson('outdoor.json');const list=[...spots,...outdoor].filter(s=>String(s.rainyOk).includes('可')||String(s.indoorOk).includes('可')||String(s.type).includes('カフェ')).slice(0,6);el.innerHTML=list.map(s=>`<article class="card"><div class="visual">${iconByType(s.type||'雨の日')}</div><h3>${e(s.name)}</h3><p>${commonTags(s.area,s.type||'雨の日候補',s.lastChecked,s.verificationStatus||s.status)}<span class="tag">雨の日：${e(s.rainyOk||'要確認')}</span><span class="tag">室内：${e(s.indoorOk||'要確認')}</span></p><div class="buttons"><a class="button" href="${e(s.officialUrl)}" target="_blank" rel="noopener">公式情報</a><a class="button sub" href="${e(maps(s.mapQuery||s.name))}" target="_blank" rel="noopener">Google Mapsで見る</a></div></article>`).join('')||'<article class="card"><h3>候補準備中</h3><p>雨の日・室内OK候補は確認でき次第更新します。</p></article>'}
+  async function renderOutdoor(){const el=document.getElementById('outdoor-list');if(!el)return;const data=await fetchJson('outdoor.json');const priorityWords=['散歩','高原','公園散策','大型犬向け','キャンプ'];const scored=data.map(item=>{const text=`${item.type||''} ${item.category||''} ${item.name||''}`;const score=priorityWords.reduce((acc,w)=>acc+(text.includes(w)?1:0),0);return {item,score}}).sort((a,b)=>b.score-a.score).map(x=>x.item).slice(0,6);
+    el.innerHTML=scored.map(s=>`<article class="card"><div class="visual">${iconByType(s.type||s.category||'アウトドア')}</div><h3>${e(s.name)}</h3><p>${commonTags(s.area,s.type||s.category||'アウトドア',s.lastChecked,s.verificationStatus||s.status)}<span class="tag">犬同伴：${e(s.dogAllowed||'要確認')}</span><span class="tag">大型犬：${e(s.largeDog||'要確認')}</span></p><div class="buttons"><a class="button" href="${e(s.officialUrl)}" target="_blank" rel="noopener">公式情報</a><a class="button sub" href="${e(maps(s.mapQuery||s.name))}" target="_blank" rel="noopener">Google Mapsで見る</a></div></article>`).join('')}
 
-    async function renderHotels(){const el=document.getElementById('hotels-list');if(!el)return;const hotels=await fetchJson('hotels.json');el.innerHTML=hotels.slice(0,6).map(h=>`<article class="card"><div class="visual">🏨</div><h3>${e(h.name)}</h3><p>${commonTags(h.area,'ホテル',h.lastChecked,h.verificationStatus||h.status)}</p><div class="buttons"><a class="button" href="${e(h.officialUrl||h.rakutenTravelUrl)}" target="_blank" rel="noopener">公式情報</a><a class="button sub" href="${e(maps(h.mapQuery||h.name))}" target="_blank" rel="noopener">Google Mapsで見る</a><a class="button" href="${e(h.rakutenTravelUrl)}" target="_blank" rel="noopener">楽天トラベル</a></div></article>`).join('')}
+  async function renderRainy(){const el=document.getElementById('rainy-list');if(!el)return;const spots=await fetchJson('spots.json');const outdoor=await fetchJson('outdoor.json');const list=[...spots,...outdoor].filter(s=>String(s.rainyOk).includes('可')||String(s.indoorOk).includes('可')||String(s.type).includes('カフェ')).slice(0,6);el.innerHTML=list.map(s=>`<article class="card"><div class="visual">${iconByType(s.type||'雨の日')}</div><h3>${e(s.name)}</h3><p>${commonTags(s.area,s.type||'雨の日候補',s.lastChecked,s.verificationStatus||s.status)}<span class="tag">雨の日：${e(s.rainyOk||'要確認')}</span><span class="tag">室内：${e(s.indoorOk||'要確認')}</span></p><div class="buttons"><a class="button" href="${e(s.officialUrl)}" target="_blank" rel="noopener">公式情報</a><a class="button sub" href="${e(maps(s.mapQuery||s.name))}" target="_blank" rel="noopener">Google Mapsで見る</a></div></article>`).join('')||'<article class="card"><h3>候補準備中</h3><p>雨の日・室内OK候補は確認でき次第更新します。</p></article>'}
+  async function renderHotels(){const el=document.getElementById('hotels-list');if(!el)return;const hotels=await fetchJson('hotels.json');el.innerHTML=hotels.slice(0,6).map(h=>`<article class="card"><div class="visual">🏨</div><h3>${e(h.name)}</h3><p>${commonTags(h.area,'ホテル',h.lastChecked,h.verificationStatus||h.status)}</p><div class="buttons"><a class="button" href="${e(h.officialUrl||h.rakutenTravelUrl)}" target="_blank" rel="noopener">公式情報</a><a class="button sub" href="${e(maps(h.mapQuery||h.name))}" target="_blank" rel="noopener">Google Mapsで見る</a><a class="button" href="${e(h.rakutenTravelUrl)}" target="_blank" rel="noopener">楽天トラベル</a></div></article>`).join('')}
+  async function renderProducts(){const el=document.getElementById('products-list');if(!el)return;const products=await fetchJson('products.json');el.innerHTML=products.slice(0,8).map(p=>{const url=p.rakutenAffiliateUrl||p.normalUrl||('https://search.rakuten.co.jp/search/mall/'+encodeURIComponent(p.searchKeyword||p.productName)+'/');return `<article class="card"><div class="visual">🎒</div><h3>${e(p.productName)}</h3><p>${commonTags('九州全域',p.category,p.lastChecked,p.verificationStatus||p.status)}</p><div class="buttons"><a class="button" href="${e(url)}" target="_blank" rel="noopener">楽天で探す</a></div></article>`}).join('')}
 
-    async function renderProducts(){const el=document.getElementById('products-list');if(!el)return;const products=await fetchJson('products.json');el.innerHTML=products.slice(0,8).map(p=>{const url=p.rakutenAffiliateUrl||p.normalUrl||('https://search.rakuten.co.jp/search/mall/'+encodeURIComponent(p.searchKeyword||p.productName)+'/');return `<article class="card"><div class="visual">🎒</div><h3>${e(p.productName)}</h3><p>${commonTags('九州全域',p.category,p.lastChecked,p.verificationStatus||p.status)}</p><div class="buttons"><a class="button" href="${e(url)}" target="_blank" rel="noopener">楽天で探す</a></div></article>`}).join('')}
-
-    document.addEventListener('DOMContentLoaded',()=>{renderSpots();renderHotels();renderWeekend();renderRainy();renderProducts()})
-  </script>
+  document.addEventListener('DOMContentLoaded',()=>{renderEvents();renderOutdoor();renderHotels();renderRainy();renderProducts()})
+</script>
 </body>
 </html>
