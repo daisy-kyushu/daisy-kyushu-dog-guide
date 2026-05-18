@@ -188,5 +188,43 @@
     "status": "楽天アフィリエイトリンク設定済み",
     "memo": "楽天アフィリエイトIDを使ったリンクです。価格・在庫・評価は変動するため、購入前に楽天側で確認してください。",
     "affiliateStatus": "affiliate-active"
+  },
+  {
+    "id": "cool-vest-dog",
+    "category": "暑さ対策",
+    "productName": "OUTDOOR 犬用クールベスト",
+    "target": "夏の散歩・アウトドア向け",
+    "searchKeyword": "OUTDOOR 犬用 クールベスト",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/OUTDOOR%20犬用%20クールベスト/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FOUTDOOR%2520%E7%8A%AC%E7%94%A8%2520%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%99%E3%82%B9%E3%83%88%2F&m=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FOUTDOOR%2520%E7%8A%AC%E7%94%A8%2520%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%99%E3%82%B9%E3%83%88%2F",
+    "rating": "",
+    "reviewCount": "",
+    "itemPrice": "",
+    "shopName": "",
+    "mediumImageUrls": [],
+    "whyCandidate": "夏場の体温上昇対策として紹介しやすい候補です。",
+    "lastChecked": "2026-05-18",
+    "status": "楽天アフィリエイトリンク設定済み",
+    "memo": "楽天アフィリエイトIDを使ったリンクです。価格・在庫・カラー/サイズ・仕様は変動するため、購入前に楽天市場の商品ページで必ず確認してください。",
+    "affiliateStatus": "affiliate-active"
+  },
+  {
+    "id": "car-harness-seatbelt-large-dog",
+    "category": "車移動",
+    "productName": "大型犬用 車用ハーネス 犬用シートベルト",
+    "target": "大型犬との車移動時の飛び出し・急停止対策",
+    "searchKeyword": "大型犬 車用ハーネス 犬用シートベルト",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/大型犬%20車用ハーネス%20犬用シートベルト/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E5%A4%A7%E5%9E%8B%E7%8A%AC%2520%E8%BB%8A%E7%94%A8%E3%83%8F%E3%83%BC%E3%83%8D%E3%82%B9%2520%E7%8A%AC%E7%94%A8%E3%82%B7%E3%83%BC%E3%83%88%E3%83%99%E3%83%AB%E3%83%88%2F&m=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E5%A4%A7%E5%9E%8B%E7%8A%AC%2520%E8%BB%8A%E7%94%A8%E3%83%8F%E3%83%BC%E3%83%8D%E3%82%B9%2520%E7%8A%AC%E7%94%A8%E3%82%B7%E3%83%BC%E3%83%88%E3%83%99%E3%83%AB%E3%83%88%2F",
+    "rating": "",
+    "reviewCount": "",
+    "itemPrice": "",
+    "shopName": "",
+    "mediumImageUrls": [],
+    "whyCandidate": "ドライブ時の安全対策カテゴリを補強できます。",
+    "lastChecked": "2026-05-18",
+    "status": "楽天アフィリエイトリンク設定済み",
+    "memo": "楽天アフィリエイトIDを使ったリンクです。価格・在庫・適合体重/サイズ・固定方法など仕様は変動するため、購入前に楽天市場の商品ページで必ず確認してください。",
+    "affiliateStatus": "affiliate-active"
   }
 ]

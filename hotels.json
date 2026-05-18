@@ -128,5 +128,24 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F14985%2F14985.html&m=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F14985%2F14985.html",
     "affiliateStatus": "affiliate-active",
     "mapQuery": "日奈久温泉 不知火ホテル 熊本県八代市"
+  },
+  {
+    "id": "d-plus-kirishima",
+    "name": "愛犬と泊まれる宿 D+KIRISHIMA",
+    "area": "鹿児島県霧島市",
+    "dogSize": "宿ごとに要確認",
+    "roomWithDog": "公式サイトで愛犬同伴専用客室の案内あり",
+    "mealAreaWithDog": "要確認",
+    "dogRun": "要確認",
+    "vaccineRequired": "要確認",
+    "rakutenTravelUrl": "https://travel.rakuten.co.jp/HOTEL/149083/149083.html",
+    "rakutenHotelId": "149083",
+    "searchKeyword": "D+KIRISHIMA",
+    "lastChecked": "2026-05-18",
+    "status": "楽天トラベル宿ページ候補",
+    "memo": "公式サイトで愛犬同伴専用施設である旨を確認。建物は霧島観光ホテルの一部で共用施設がある案内もあるため、同伴可能エリア・食事同伴可否・大型犬可否・頭数制限・ワクチン証明の要否は予約前に楽天トラベル側と公式側の両方で必ず確認してください。料金・空室・条件は変動します。",
+    "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F149083%2F149083.html&m=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F149083%2F149083.html",
+    "affiliateStatus": "affiliate-active",
+    "mapQuery": "D+KIRISHIMA 鹿児島県霧島市"
   }
 ]
