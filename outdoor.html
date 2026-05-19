@@ -11,19 +11,16 @@ async function fetchJson(path,fallback=[]){try{const r=await fetch(path,{cache:'
 function e(v){return String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
 function maps(q){return 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(q||'')}
 function productUrl(p){return p?.rakutenAffiliateUrl||p?.normalUrl||''}
+function productButtonText(i){return ['楽天で価格を確認する','サイズ・在庫を確認する','おでかけ前にチェックする'][i%3]}
+function byId(products,id){return products.find(p=>p.id===id&&productUrl(p))}
+function tokenText(item){return `${item.type||''} ${item.category||''} ${item.name||''} ${item.memo||''} ${item.target||''} ${item.searchKeyword||''}`.toLowerCase()}
 function matchProducts(item,products){
- const text=`${item.type||''} ${item.category||''} ${item.name||''} ${item.title||''} ${item.memo||''}`;
- const picks=[];
- const has=(...w)=>w.some(x=>text.includes(x));
- const by=(keys)=>products.find(p=>!picks.includes(p)&&keys.some(k=>`${p.productName||''} ${p.category||''} ${p.searchKeyword||''}`.includes(k))&&productUrl(p));
- if(has('キャンプ'))['折りたたみ','給水','虫よけ','シート','ボウル'].forEach(k=>{const p=by([k]);if(p)picks.push(p)});
- if(has('散歩','高原','公園'))['ハーネス','給水','クール','うんち','消臭'].forEach(k=>{const p=by([k]);if(p)picks.push(p)});
- if(has('イベント'))['カート','給水','マナー','暑さ','消臭'].forEach(k=>{const p=by([k]);if(p)picks.push(p)});
- if(has('雨','室内'))['レイン','タオル','マット'].forEach(k=>{const p=by([k]);if(p)picks.push(p)});
- if(String(item.largeDog||'').includes('要確認')||text.includes('大型犬'))['大型犬','ハーネス','ロングリード','シート'].forEach(k=>{const p=by([k]);if(p)picks.push(p)});
- return picks.slice(0,3);
+ const text=tokenText(item);
+ const isCamp=/キャンプ|グランピング|camp/.test(text);
+ const ids=isCamp?['outdoor-dog-peg-lead','portable-pet-fence-camp','folding-bowl','water-bottle','dog-cooling-mat-outdoor']:['water-bottle','large-harness','cool-vest-dog','pet-towel','odor-bag'];
+ return ids.map(id=>byId(products,id)).filter(Boolean).slice(0,3);
 }
-function productBlock(list){if(!list.length)return '<p class="notice">関連グッズは準備中です。</p>';return `<h3>このおでかけにあると便利</h3><div>${list.map(p=>`<article class="card" style="padding:12px;margin:8px 0"><strong>${e(p.productName)}</strong><div><span class="tag">${e(p.category||'グッズ')}</span></div>${productUrl(p)?`<a class="button" href="${e(productUrl(p))}" target="_blank" rel="noopener">楽天で見る</a>`:''}</article>`).join('')}</div><p class="notice">価格・在庫・仕様は変更される場合があります。購入前に楽天市場の商品ページで最新情報を確認してください。</p>`}
+function productBlock(list){if(!list.length)return '<p class="notice">関連グッズは準備中です。</p>';return `<h3>このおでかけにあると便利</h3><p style="font-size:12px;color:#7d7168;margin-top:-4px">このページにはアフィリエイト広告を含みます。</p><div>${list.map((p,i)=>`<article class="card" style="padding:12px;margin:8px 0"><strong>${e(p.productName)}</strong><div><span class="tag">${e(p.category||'グッズ')}</span><span class="tag">${e(p.target||'犬連れおでかけ')}</span></div><p>${e(p.whyCandidate||'')}</p>${productUrl(p)?`<a class="button" href="${e(productUrl(p))}" target="_blank" rel="noopener">${productButtonText(i)}</a>`:''}</article>`).join('')}</div><p class="notice">価格・在庫・仕様は変更される場合があります。購入前に楽天市場の商品ページで最新情報を確認してください。</p>`}
 function ensureModal(){if(document.getElementById('detail-modal'))return;const m=document.createElement('div');m.id='detail-modal';m.style.cssText='position:fixed;inset:0;background:rgba(30,25,20,.45);display:none;z-index:99;padding:14px;overflow:auto';m.innerHTML='<div style="max-width:760px;margin:28px auto;background:#fffdf8;border-radius:24px;padding:18px;border:1px solid #efe4d5;box-shadow:0 18px 45px rgba(84,66,45,.18)"><button id="close-detail" class="button sub" style="float:right">閉じる ✕</button><div id="modal-body" style="clear:both"></div></div>';document.body.appendChild(m);m.addEventListener('click',ev=>{if(ev.target.id==='detail-modal')m.style.display='none'});document.getElementById('close-detail').onclick=()=>m.style.display='none'}
 function openModal(html){ensureModal();document.getElementById('modal-body').innerHTML=html;document.getElementById('detail-modal').style.display='block'}
 
