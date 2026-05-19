@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>地図から探す | Daisy Kyushu Dog Guide</title>
   <meta name="description" content="掲載済み情報から犬連れスポットを地図検索できます。">
-  <style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet"><style>
     :root{--bg:#fffdf8;--cream:#fff4df;--mint:#cfeee0;--green:#4f8c6b;--brown:#44352a;--muted:#7d7168;--line:#efe4d5;--shadow:0 18px 45px rgba(84,66,45,.12);--radius:24px}
     *{box-sizing:border-box}
     body{margin:0;background:radial-gradient(circle at 85% 5%,rgba(207,238,224,.55) 0 130px,transparent 131px),var(--bg);color:var(--brown);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.7}
@@ -34,7 +36,10 @@
     footer{margin-top:50px;padding:28px 5vw;border-top:1px solid var(--line);background:#fff;color:var(--muted)}
     @media(max-width:900px){.site-header{display:block}.grid{grid-template-columns:repeat(2,1fr)}}
     @media(max-width:560px){.grid{grid-template-columns:1fr}.hero h1{font-size:36px}main{width:min(100% - 20px,1120px)}}
-  </style>
+  
+/* Daisy typography refresh */
+body{font-family:"Noto Sans JP",system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:400;letter-spacing:.01em;line-height:1.82}.brand,h1,h2,h3{font-family:"Zen Maru Gothic","Noto Sans JP",sans-serif;letter-spacing:.02em}.brand,h1{font-weight:900}h2,h3{font-weight:700;margin-top:0;margin-bottom:.72em}h2{line-height:1.38}h3{line-height:1.5}p,li{line-height:1.9}nav a,.button,.tag{font-family:"Noto Sans JP",system-ui,sans-serif;font-weight:700}nav a{font-size:14px;letter-spacing:.01em}.hero h1{letter-spacing:.03em;text-wrap:balance}.card h2,.card h3{line-height:1.48}.card p{font-size:.98rem}.button{font-size:14px;letter-spacing:.015em}.tag{font-size:13px;padding:6px 11px}.section h2,.panel h2{padding-bottom:.3em}.section h2::after,.panel h2::after{content:"";display:block;width:3.2rem;height:4px;border-radius:999px;background:rgba(79,140,107,.25);margin-top:.45em}@media(max-width:560px){body{line-height:1.92}nav a{font-size:14px;padding:8px 10px}.hero h1{font-size:clamp(31px,10vw,38px);line-height:1.22}h2{font-size:1.32rem}h3{font-size:1.08rem}.card p{font-size:1rem}.tag{font-size:13px;padding:6px 10px}.button{font-size:14px;padding:10px 15px}}
+</style>
 </head>
 <body>
 <header class="site-header"><a class="brand" href="index.html">🐾 Daisy Kyushu Dog Guide</a><nav><a href="index.html">ホーム</a><a href="weekend.html">今週末</a><a href="spots.html">スポット</a><a href="outdoor.html">アウトドア</a><a href="map.html">地図</a><a href="hotels.html">ホテル</a><a href="events.html">イベント</a><a href="checklist.html">持ち物</a><a href="pr.html">PR料金</a><a href="listing.html">掲載希望</a><a href="admin.html">運営管理</a></nav></header>
