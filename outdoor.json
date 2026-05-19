@@ -289,8 +289,8 @@
     "officialUrl": "https://www.snowpeak.co.jp/locations/okuhita/index.html",
     "instagramUrl": "https://www.instagram.com/snowpeak_okuhita/",
     "mapQuery": "スノーピーク奥日田キャンプフィールド",
-    "lastChecked": "2026-05-18",
-    "status": "掲載中",
+    "lastChecked": "2026-05-19",
+    "status": "official-confirmed",
     "memo": "スノーピーク公式の奥日田拠点。公式利用規約にペット同伴可能（予約時入力）と記載があります。大型犬可否や同伴頭数、リード・ワクチン証明などの詳細条件は予約前に必ず公式情報で確認してください。"
   },
   {
@@ -307,8 +307,8 @@
     "officialUrl": "https://www.city.yame.fukuoka.jp/soshiki/11/h1/4/1456884046980.html",
     "instagramUrl": "",
     "mapQuery": "池の山キャンプ場 八女市星野村",
-    "lastChecked": "2026-05-18",
-    "status": "掲載中",
+    "lastChecked": "2026-05-19",
+    "status": "needs-confirmation",
     "memo": "八女市公式ページで施設概要を確認。犬同伴可否や大型犬の受け入れ、宿泊棟ごとの同伴条件は公式ページ上で明示確認できないため要確認。予約前に現地へ犬同伴条件（エリア、頭数、リード・ケージ、証明書要件）を必ず確認してください。"
   }
 ]

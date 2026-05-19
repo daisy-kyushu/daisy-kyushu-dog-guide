@@ -141,11 +141,13 @@
     "rakutenTravelUrl": "https://travel.rakuten.co.jp/HOTEL/149083/149083.html",
     "rakutenHotelId": "149083",
     "searchKeyword": "D+KIRISHIMA",
-    "lastChecked": "2026-05-18",
-    "status": "楽天トラベル宿ページ候補",
+    "lastChecked": "2026-05-19",
+    "status": "official-confirmed",
     "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 宿泊施設ごとの楽天トラベルページへ誘導します。 公式サイトで愛犬同伴専用施設である旨を確認。建物は霧島観光ホテルの一部で共用施設がある案内もあるため、同伴可能エリア・食事同伴可否・大型犬可否・頭数制限・ワクチン証明の要否は予約前に楽天トラベル側と公式側の両方で必ず確認してください。料金・空室・条件は変動します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F149083%2F149083.html&m=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F149083%2F149083.html",
     "affiliateStatus": "affiliate-active",
-    "mapQuery": "D+KIRISHIMA 鹿児島県霧島市"
+    "mapQuery": "D+KIRISHIMA 鹿児島県霧島市",
+    "officialUrl": "https://d-plus-kirishima.com/",
+    "snsUrl": ""
   }
 ]
