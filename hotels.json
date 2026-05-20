@@ -15,7 +15,10 @@
     "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
-    "mapQuery": "大分県 犬と泊まれる宿"
+    "mapQuery": "大分県 犬と泊まれる宿",
+    "image": "https://trvimg.r10s.jp/share/image_up/4765/LARGE/7e6ffaf3004f3f55be4a62380182f54b0ecb789c.47.9.26.3.jpg",
+    "imageSource": "楽天トラベル",
+    "officialUrl": "https://travel.rakuten.co.jp/share/batch/rrg_pg/pgenerator/hotel/id4/ooita/index.html"
   },
   {
     "id": "rakuten-travel-yufuin",
@@ -33,7 +36,10 @@
     "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
-    "mapQuery": "湯布院 犬と泊まれる宿"
+    "mapQuery": "湯布院 犬と泊まれる宿",
+    "image": "https://trvis.r10s.com/d/strg/ctrl/26/6f10ef6c284cd9e1d847a22588948e08b4a00b1d.47.1.26.2.jpg",
+    "imageSource": "楽天トラベル",
+    "officialUrl": "https://travel.rakuten.com/usa/en-us/hotel_info_item/cnt_japan/sub_oita_prefecture/cty_yufu_city/10123456863458/"
   },
   {
     "id": "rakuten-travel-kyushu",
@@ -51,7 +57,10 @@
     "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
-    "mapQuery": "九州 犬と泊まれる宿"
+    "mapQuery": "九州 犬と泊まれる宿",
+    "image": "https://img.travel.rakuten.co.jp/share/assets/test/demo/pet/images/top.jpg",
+    "imageSource": "楽天トラベル",
+    "officialUrl": "https://travel.rakuten.co.jp/pet/"
   },
   {
     "id": "yufuin-garden-hotel-dogrun-resort",
@@ -70,7 +79,10 @@
     "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 宿泊施設ごとの楽天トラベルページへ誘導します。 予約前に犬同伴条件・サイズ制限・頭数制限・ワクチン証明の有無を楽天トラベル側・宿公式側で必ず確認してください。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F137895%2F137895.html&m=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F137895%2F137895.html",
     "affiliateStatus": "affiliate-active",
-    "mapQuery": "湯布院ガーデンホテル ドッグラン＆リゾート 大分県由布市"
+    "mapQuery": "湯布院ガーデンホテル ドッグラン＆リゾート 大分県由布市",
+    "image": "https://www.yufuin-gardenhotel.jp/images/home/img_slider_01.jpg",
+    "imageSource": "公式サイト",
+    "officialUrl": "https://www.yufuin-gardenhotel.jp/"
   },
   {
     "id": "rakuten-stay-villa-yufuin-onsen",
@@ -89,7 +101,10 @@
     "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 宿泊施設ごとの楽天トラベルページへ誘導します。 予約前に犬同伴条件・サイズ制限・頭数制限・ワクチン証明の有無を楽天トラベル側・宿公式側で必ず確認してください。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F195540%2F195540.html&m=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F195540%2F195540.html",
     "affiliateStatus": "affiliate-active",
-    "mapQuery": "Rakuten STAY VILLA 由布院温泉 大分県由布市"
+    "mapQuery": "Rakuten STAY VILLA 由布院温泉 大分県由布市",
+    "image": "https://stay.rakuten.co.jp/images/pages/villa/yufuin-onsen/ogp-rakuten-stay-villa-yufuin-onsen.png",
+    "imageSource": "公式サイト",
+    "officialUrl": "https://stay.rakuten.co.jp/villa/yufuin-onsen/"
   },
   {
     "id": "long-vacation-resort-fukuoka",
@@ -108,7 +123,10 @@
     "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 宿泊施設ごとの楽天トラベルページへ誘導します。 予約前に犬同伴条件・サイズ制限・頭数制限・ワクチン証明の有無を楽天トラベル側・宿公式側で必ず確認してください。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F197857%2F197857.html&m=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F197857%2F197857.html",
     "affiliateStatus": "affiliate-active",
-    "mapQuery": "LONG VACATION RESORT 福岡県福岡市東区"
+    "mapQuery": "LONG VACATION RESORT 福岡県福岡市東区",
+    "image": "https://longvacationresort.jp/wp-content/uploads/2026/04/01-1.jpg",
+    "imageSource": "公式サイト",
+    "officialUrl": "https://longvacationresort.jp/"
   },
   {
     "id": "shiranui-hotel-hinagu",
@@ -127,7 +145,10 @@
     "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 宿泊施設ごとの楽天トラベルページへ誘導します。 予約前に犬同伴条件・サイズ制限・頭数制限・ワクチン証明の有無を楽天トラベル側・宿公式側で必ず確認してください。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F14985%2F14985.html&m=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F14985%2F14985.html",
     "affiliateStatus": "affiliate-active",
-    "mapQuery": "日奈久温泉 不知火ホテル 熊本県八代市"
+    "mapQuery": "日奈久温泉 不知火ホテル 熊本県八代市",
+    "image": "https://static.wixstatic.com/media/f8a90d_664868d3b47c4b11a6f28c86a311aa12~mv2.jpg/v1/fill/w_513,h_507,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/f8a90d_664868d3b47c4b11a6f28c86a311aa12~mv2.jpg",
+    "imageSource": "公式サイト",
+    "officialUrl": "https://www.shiranuhihotel.com/"
   },
   {
     "id": "d-plus-kirishima",
@@ -146,7 +167,10 @@
     "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 宿泊施設ごとの楽天トラベルページへ誘導します。 公式サイトで愛犬同伴専用施設である旨を確認。建物は霧島観光ホテルの一部で共用施設がある案内もあるため、同伴可能エリア・食事同伴可否・大型犬可否・頭数制限・ワクチン証明の要否は予約前に楽天トラベル側と公式側の両方で必ず確認してください。料金・空室・条件は変動します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F149083%2F149083.html&m=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F149083%2F149083.html",
     "affiliateStatus": "affiliate-active",
-    "mapQuery": "D+KIRISHIMA 鹿児島県霧島市"
+    "mapQuery": "D+KIRISHIMA 鹿児島県霧島市",
+    "image": "https://dplus-kirishima.com/wp-content/uploads/2025/01/春うららブログサイズ-2.webp",
+    "imageSource": "公式サイト",
+    "officialUrl": "https://dplus-kirishima.com/"
   },
   {
     "id": "inuyado-fukuoka",
@@ -164,7 +188,10 @@
     "memo": "愛犬と一緒に過ごすことに特化した小さなホテル。全室愛犬同伴可。",
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2Fsearch%2F%3Fpref%3D40%26keyword%3D%E3%82%A4%E3%83%8C%E3%83%A4%E3%83%89",
     "affiliateStatus": "active",
-    "mapQuery": "イヌヤド 福岡市博多区"
+    "mapQuery": "イヌヤド 福岡市博多区",
+    "image": "https://trvimg.r10s.jp/share/image_up/180743/LARGE/dad14fe8e5ff082b16d702285b2c1bcba3744251.47.9.26.3.jpg",
+    "imageSource": "楽天トラベル",
+    "officialUrl": "https://travel.rakuten.co.jp/HOTEL/180743/180743.html"
   },
   {
     "id": "sorasuna-resort-fukuoka",
@@ -182,7 +209,10 @@
     "memo": "愛犬に優しい芝生広場とビーチが目の前のリゾートホテル。海を眺めながら愛犬と過ごせる。",
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2Fsearch%2F%3Fpref%3D40%26keyword%3D%E3%81%9D%E3%82%89%E3%81%99%E3%81%AA",
     "affiliateStatus": "active",
-    "mapQuery": "そらすな 苅田町"
+    "mapQuery": "そらすな 苅田町",
+    "image": "https://nagaihama-resort.com/solasuna/wp-content/uploads/2023/11/IMG_0206.webp",
+    "imageSource": "公式サイト",
+    "officialUrl": "https://nagaihama-resort.com/solasuna/"
   },
   {
     "id": "honjin-kokonoe-oita",
@@ -200,7 +230,10 @@
     "memo": "全室掛け流し温泉付き。愛犬専用の小さな浴槽を併設。片時も愛犬と離れずに過ごせる宿。",
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2Fsearch%2F%3Fpref%3D44%26keyword%3D%E4%B9%9D%E9%87%8D%2B%E6%84%9B%E7%8A%AC",
     "affiliateStatus": "active",
-    "mapQuery": "HONJIN 九重町 大分"
+    "mapQuery": "HONJIN 九重町 大分",
+    "image": "https://hongin.jp/wp-content/uploads/2023/05/HONJIN230512016-scaled.jpg",
+    "imageSource": "公式サイト",
+    "officialUrl": "https://hongin.jp/"
   },
   {
     "id": "enokiya-yufuin-oita",
@@ -218,7 +251,10 @@
     "memo": "湯布院の温泉旅館。愛犬同伴で温泉を楽しめる。由布院の街歩きも愛犬と一緒に楽しめる立地。",
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2Fsearch%2F%3Fpref%3D44%26keyword%3D%E7%94%B1%E5%B8%83%E9%99%A2%2B%E6%84%9B%E7%8A%AC",
     "affiliateStatus": "active",
-    "mapQuery": "由布院温泉 榎屋旅館"
+    "mapQuery": "由布院温泉 榎屋旅館",
+    "image": "https://www.yufuin-enokiya.jp/wp-content/themes/enky/img/ph_mv_01.jpg",
+    "imageSource": "公式サイト",
+    "officialUrl": "https://www.yufuin-enokiya.jp/"
   },
   {
     "id": "ogasawara-aso-kumamoto",
@@ -236,7 +272,10 @@
     "memo": "全室離れ一戸建て形式の天然温泉付き。ペットと楽しく安心して泊まれる本格温泉宿。",
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2Fsearch%2F%3Fpref%3D43%26keyword%3D%E9%98%BF%E8%98%87%2B%E6%84%9B%E7%8A%AC%2B%E6%B8%A9%E6%B3%89",
     "affiliateStatus": "active",
-    "mapQuery": "阿蘇温泉 御宿 小笠原"
+    "mapQuery": "阿蘇温泉 御宿 小笠原",
+    "image": "https://onyado-ogasawara.com/wp-content/uploads/2024/07/yushoku-scaled.jpg",
+    "imageSource": "公式サイト",
+    "officialUrl": "https://onyado-ogasawara.com/"
   },
   {
     "id": "brains-amakusa-kumamoto",
@@ -254,7 +293,10 @@
     "memo": "全室オーシャンビュー。レストラン同伴可。天草の海辺で愛犬と開放的な時間を過ごせる。",
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2Fsearch%2F%3Fpref%3D43%26keyword%3D%E5%A4%A9%E8%8D%89%2B%E3%83%9A%E3%83%83%E3%83%88",
     "affiliateStatus": "active",
-    "mapQuery": "ペットリゾート ブレインズ天草"
+    "mapQuery": "ペットリゾート ブレインズ天草",
+    "image": "https://www.brains-amakusa.com/dest/wp-content/themes/theme2/assets/img/top/background_keyvisual_20251107_01.jpg",
+    "imageSource": "公式サイト",
+    "officialUrl": "https://www.brains-amakusa.com/"
   },
   {
     "id": "iland-nagasaki",
@@ -272,7 +314,10 @@
     "memo": "全長80mの天然芝ドッグラン「BARK LODGE」で宿泊。ペットアメニティや設備が充実した本格ペットリゾート。",
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2Fsearch%2F%3Fpref%3D42%26keyword%3D%E9%95%B7%E5%B4%8E%2B%E3%83%9A%E3%83%83%E3%83%88",
     "affiliateStatus": "active",
-    "mapQuery": "i+Land nagasaki 長崎市"
+    "mapQuery": "i+Land nagasaki 長崎市",
+    "image": "https://www.islandnagasaki.jp/img/top/sp_main01.jpg",
+    "imageSource": "公式サイト",
+    "officialUrl": "https://www.islandnagasaki.jp/"
   },
   {
     "id": "nanpuro-kazadog-nagasaki",
@@ -290,7 +335,10 @@
     "memo": "有明海のオーシャンビュー。1日1組限定の「KaZeDoG」は屋根付きドッグランと露天ジャグジーバス完備。",
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2Fsearch%2F%3Fpref%3D42%26keyword%3D%E5%B3%B6%E5%8E%9F%2B%E3%83%9A%E3%83%83%E3%83%88",
     "affiliateStatus": "active",
-    "mapQuery": "ホテル南風楼 島原市"
+    "mapQuery": "ホテル南風楼 島原市",
+    "image": "https://www.kazedog.com/img/sec0_img01.png",
+    "imageSource": "公式サイト",
+    "officialUrl": "https://www.kazedog.com/"
   },
   {
     "id": "suginoya-furuyu-saga",
@@ -308,7 +356,10 @@
     "memo": "古湯温泉の温泉宿。山の緑に囲まれた静かな環境で愛犬と一緒に温泉を楽しめる。",
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2Fsearch%2F%3Fpref%3D41%26keyword%3D%E4%BD%90%E8%B3%80%2B%E3%83%9A%E3%83%83%E3%83%88",
     "affiliateStatus": "active",
-    "mapQuery": "みはらしの宿 杉乃家 佐賀市富士町"
+    "mapQuery": "みはらしの宿 杉乃家 佐賀市富士町",
+    "image": "https://www.furuyu-suginoya.com/wp-content/themes/site/images/mv-img01.jpg",
+    "imageSource": "公式サイト",
+    "officialUrl": "https://www.furuyu-suginoya.com/"
   },
   {
     "id": "forest-villa-miyazaki",
@@ -326,7 +377,10 @@
     "memo": "宮崎の自然の中に佇むヴィラタイプの宿。ドッグラン完備で愛犬も思いっきり遊べる。",
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2Fsearch%2F%3Fpref%3D45%26keyword%3D%E5%AE%AE%E5%B4%8E%2B%E3%83%9A%E3%83%83%E3%83%88",
     "affiliateStatus": "active",
-    "mapQuery": "フォレストヴィラ 宮崎市"
+    "mapQuery": "フォレストヴィラ 宮崎市",
+    "image": "https://seagaia.g.kuroco-img.app/files/topics/115_ext_24_0.jpg?width=500&quality=70",
+    "imageSource": "公式サイト",
+    "officialUrl": "https://seagaia.co.jp/hotel/forest-cottages/"
   },
   {
     "id": "livemax-sakurajima-kagoshima",
@@ -344,7 +398,10 @@
     "memo": "桜島を望む絶景のシーフロントリゾート。ペット同伴可能な客室あり。",
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2Fsearch%2F%3Fpref%3D46%26keyword%3D%E9%B9%BF%E5%85%90%E5%B3%B6%2B%E3%83%9A%E3%83%83%E3%83%88",
     "affiliateStatus": "active",
-    "mapQuery": "リブマックスリゾート桜島シーフロント 垂水市"
+    "mapQuery": "リブマックスリゾート桜島シーフロント 垂水市",
+    "image": "https://www.livemax-resort.com/kagoshima/sakurajima_sf/img/top/mv1_hq.webp",
+    "imageSource": "公式サイト",
+    "officialUrl": "https://www.livemax-resort.com/kagoshima/sakurajima_sf/"
   },
   {
     "id": "ibusuki-onsen-pet-hotel",
@@ -362,6 +419,9 @@
     "memo": "日本最南端の温泉地・指宿で愛犬と泊まれる宿。砂蒸し温泉で有名な指宿を愛犬と一緒に楽しめる。",
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2Fsearch%2F%3Fpref%3D46%26keyword%3D%E6%8C%87%E5%AE%BF%2B%E3%83%9A%E3%83%83%E3%83%88",
     "affiliateStatus": "active",
-    "mapQuery": "指宿温泉 ペット 犬"
+    "mapQuery": "指宿温泉 ペット 犬",
+    "image": "http://www.enakaya.com/imgs/2016_su_top_p1.jpg",
+    "imageSource": "公式サイト",
+    "officialUrl": "http://www.enakaya.com/"
   }
 ]

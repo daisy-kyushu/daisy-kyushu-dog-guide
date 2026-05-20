@@ -14,7 +14,9 @@
     "status": "公式要確認",
     "memo": "大分市内から行きやすい犬連れ候補。行く前に営業日・犬同伴条件・大型犬可否を公式情報で確認してください。",
     "weekendRecommended": true,
-    "mapQuery": "森のドッグラン ワンLOVE 大分県大分市"
+    "mapQuery": "森のドッグラン ワンLOVE 大分県大分市",
+    "image": "https://onelove-oita.com/wp-content/themes/original/img/img56.webp",
+    "imageSource": "公式サイト"
   },
   {
     "id": "dogrun-elf",
@@ -31,7 +33,9 @@
     "status": "公式SNS要確認",
     "memo": "湯布院方面のおでかけ候補。営業日・天候対応・証明書の有無は公式SNSで確認してください。",
     "weekendRecommended": true,
-    "mapQuery": "森のドッグラン 枝瑠風 大分県由布市湯布院町"
+    "mapQuery": "森のドッグラン 枝瑠風 大分県由布市湯布院町",
+    "image": "https://stat.ameba.jp/user_images/20230427/16/dogrun-elf/f1/cc/j/o1500200015276180447.jpg?caw=800",
+    "imageSource": "アメブロ"
   },
   {
     "id": "beppuwan-sa",
@@ -48,7 +52,9 @@
     "status": "公式要確認",
     "memo": "移動中に立ち寄りやすい候補。上下線・設備・利用ルールは公式情報で確認してください。",
     "weekendRecommended": true,
-    "mapQuery": "別府湾サービスエリア ドッグラン"
+    "mapQuery": "別府湾サービスエリア ドッグラン",
+    "image": "https://www.w-holdings.co.jp/assets/beppuwan_focus_5-1.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "oita-official-pet",
@@ -65,7 +71,9 @@
     "status": "公式情報源",
     "memo": "犬連れスポットを広げるための公式情報源。個別施設の条件確認に使います。",
     "weekendRecommended": false,
-    "mapQuery": "大分県 ペット同伴 OK 観光"
+    "mapQuery": "大分県 ペット同伴 OK 観光",
+    "image": "https://www.visit-oita.jp/files/cache/9876d2abdce3dd5d4a2055a1ede10de8_1748396237.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "dogrun-mozemoze-kagoshima",
@@ -83,7 +91,9 @@
     "status": "自動候補 / official-site / 信頼度B",
     "memo": "施設公式サイトを確認した候補。利用条件・大型犬可否・料金・雨天時運用は公式情報で要確認。",
     "weekendRecommended": true,
-    "mapQuery": "室内ドッグラン もぜもぜ 鹿児島県鹿児島市"
+    "mapQuery": "室内ドッグラン もぜもぜ 鹿児島県鹿児島市",
+    "image": "https://lutie.jp/wp-content/uploads/2024/03/dogrun-mozemoze.jpg",
+    "imageSource": "Lutie（ルティエ）"
   },
   {
     "id": "koga-sa-down-dogrun",
@@ -100,7 +110,9 @@
     "status": "公式要確認",
     "memo": "NEXCO西日本のSA公式ページでドッグラン設置案内を確認。利用時間・利用条件は訪問前に公式情報を確認してください。",
     "weekendRecommended": true,
-    "mapQuery": "古賀サービスエリア 下り ドッグラン 福岡県古賀市"
+    "mapQuery": "古賀サービスエリア 下り ドッグラン 福岡県古賀市",
+    "image": "https://www.w-holdings.co.jp/assets/koga_s_focus_5-1.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "hirokawa-sa-down-dogrun",
@@ -117,7 +129,9 @@
     "status": "公式要確認",
     "memo": "NEXCO西日本のSA公式ページを情報源にした候補。利用ルール・一時閉鎖情報は事前に公式案内を確認してください。",
     "weekendRecommended": true,
-    "mapQuery": "広川サービスエリア 下り ドッグラン 福岡県八女郡広川町"
+    "mapQuery": "広川サービスエリア 下り ドッグラン 福岡県八女郡広川町",
+    "image": "https://www.w-holdings.co.jp/assets/img_dogrun_01.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "kinryu-sa-up-dogrun",
@@ -134,7 +148,9 @@
     "status": "公式要確認",
     "memo": "NEXCO西日本関連情報でドッグラン設置対象SAとして確認。最新の利用条件・閉鎖情報は公式情報で確認してください。",
     "weekendRecommended": true,
-    "mapQuery": "金立サービスエリア 上り ドッグラン 佐賀県佐賀市"
+    "mapQuery": "金立サービスエリア 上り ドッグラン 佐賀県佐賀市",
+    "image": "https://clicccar.com/wp-content/uploads/2023/04/sapa_dogrun_04-800x533.jpg",
+    "imageSource": "clicccar.com"
   },
   {
     "id": "puppy-cafe-rio-fukuoka",
@@ -151,7 +167,9 @@
     "status": "公式要確認",
     "memo": "犬と触れ合えるカフェ形態の候補。犬同伴可否・同伴ルール・予約条件は来店前に公式案内で確認してください。",
     "weekendRecommended": true,
-    "mapQuery": "PUPPY CAFE RIO 福岡店 福岡県福岡市"
+    "mapQuery": "PUPPY CAFE RIO 福岡店 福岡県福岡市",
+    "image": "https://rio-corp.jp/cms/wp-content/uploads/2026/03/fukuoka_1.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "dogcafe-cocohouse-kumamoto",
@@ -170,7 +188,9 @@
     "status": "公式Instagram確認",
     "memo": "公式Instagramを確認。営業日・同伴条件・マナー規定は来店前に公式Instagramの最新案内を確認してください。",
     "weekendRecommended": true,
-    "mapQuery": "Dog Cafe COCOHOUSE 熊本県熊本市"
+    "mapQuery": "Dog Cafe COCOHOUSE 熊本県熊本市",
+    "image": "https://www.instagram.com/p/DW5-X-Oj3gf/media?size=l",
+    "imageSource": "Instagram"
   },
   {
     "id": "doghill-cafe-kagoshima",
@@ -189,7 +209,9 @@
     "status": "公式サイト確認",
     "memo": "公式サイトを確認。Instagram公式アカウントは今回確認できなかったため未登録。入店可能エリア・頭数制限・混雑時ルールは来店前に公式案内で確認してください。",
     "weekendRecommended": true,
-    "mapQuery": "DOG HILL CAFE 鹿児島県鹿児島市"
+    "mapQuery": "DOG HILL CAFE 鹿児島県鹿児島市",
+    "image": "https://www.dog-hill.net/cafe/cafe2.jpg",
+    "imageSource": "公式サイト (長崎県東彼杵町に所在)"
   },
   {
     "id": "teo-one-kumamoto",
@@ -206,7 +228,9 @@
     "status": "公式要確認",
     "memo": "熊本市南区のドッグラン併設カフェ候補。犬同伴条件・利用料金・営業日と雨天時運用は来店前に公式案内で確認してください。",
     "weekendRecommended": true,
-    "mapQuery": "DOG RUN & CAFE Teo One 熊本県熊本市"
+    "mapQuery": "DOG RUN & CAFE Teo One 熊本県熊本市",
+    "image": "https://teo-one.halfmoon.jp/wp-content/uploads/2023/01/slide2.png",
+    "imageSource": "公式サイト"
   },
   {
     "id": "dogforesta-kagoshima",
@@ -223,7 +247,9 @@
     "status": "公式要確認",
     "memo": "鹿児島市の犬同伴OK飲食候補。同伴可能エリア・頭数条件・利用ルールは訪問前に公式情報で確認してください。",
     "weekendRecommended": true,
-    "mapQuery": "グルメバイキングPark DOGフォレスタ 鹿児島県鹿児島市"
+    "mapQuery": "グルメバイキングPark DOGフォレスタ 鹿児島県鹿児島市",
+    "image": "https://dogforesta.com/wp-content/uploads/2023/07/top_main_pc.webp",
+    "imageSource": "公式サイト"
   },
   {
     "id": "uminonakamichi-dogrun-fukuoka",
@@ -240,7 +266,9 @@
     "status": "active",
     "memo": "約5,200㎡の広さ。フリーエリアと小型犬エリアに分かれており、海辺の開放的な環境で遊べる。",
     "weekendRecommended": true,
-    "mapQuery": "海の中道海浜公園 ドッグラン 福岡市東区"
+    "mapQuery": "海の中道海浜公園 ドッグラン 福岡市東区",
+    "image": "https://uminaka-park.jp/images/facility/img_new-facility_dogrun_01.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "nishi-koen-dogrun-fukuoka",
@@ -257,7 +285,9 @@
     "status": "active",
     "memo": "500平方メートル。利用料200円/頭。福岡市内からアクセスしやすい公営ドッグラン。",
     "weekendRecommended": true,
-    "mapQuery": "県営西公園ドッグラン 福岡市西区"
+    "mapQuery": "県営西公園ドッグラン 福岡市西区",
+    "image": "https://nishikouen.jp/img/map/dogrun/dogrun_01.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "ohori-park-walk-fukuoka",
@@ -274,7 +304,9 @@
     "status": "active",
     "memo": "福岡市内最大の公園。池の周りを一周約2kmのお散歩コースが人気。リード着用で犬と散歩できる。",
     "weekendRecommended": true,
-    "mapQuery": "大濠公園 福岡市中央区"
+    "mapQuery": "大濠公園 福岡市中央区",
+    "image": "https://www.ohorikouen.jp/img/index/visual.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "itoshima-shiraiwa-walk",
@@ -291,7 +323,9 @@
     "status": "active",
     "memo": "自然豊かな糸島の山里を歩く散策コース。涼しい渓流沿いを愛犬と一緒に歩ける。",
     "weekendRecommended": true,
-    "mapQuery": "白糸の滝 糸島市"
+    "mapQuery": "白糸の滝 糸島市",
+    "image": "https://shiraitonotaki.jp/wp-content/uploads/2020/03/shiraitonotaki_1960x900-1024x470.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "farm-resort-itoshima-dogrun",
@@ -308,7 +342,9 @@
     "status": "active",
     "memo": "糸島の自然の中に広がるドッグラン。カフェも併設しており、愛犬と一緒に食事も楽しめる。",
     "weekendRecommended": true,
-    "mapQuery": "FARM RESORT ITOSHIMA 糸島市"
+    "mapQuery": "FARM RESORT ITOSHIMA 糸島市",
+    "image": "https://static.wixstatic.com/media/75f9fe_002d6b6b4891485f940f9389a3606cba~mv2_d_2519_1948_s_2.jpg/v1/fill/w_1265,h_1289,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/75f9fe_002d6b6b4891485f940f9389a3606cba~mv2_d_2519_1948_s_2.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "kannawa-jigoku-dogrun-beppu",
@@ -325,7 +361,9 @@
     "status": "active",
     "memo": "総敷地面積約2,900m²。大型犬エリア・小型犬エリア・フリーエリアに分かれている。別府温泉観光のついでに立ち寄れる。",
     "weekendRecommended": true,
-    "mapQuery": "鉄輪地獄地帯公園ドッグラン 別府市"
+    "mapQuery": "鉄輪地獄地帯公園ドッグラン 別府市",
+    "image": "https://www.city.beppu.oita.jp/images/sisetu/kouen_tyuusyajyou/03-07dogrun.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "yufuin-yutopo-walk",
@@ -342,7 +380,9 @@
     "status": "active",
     "memo": "由布院温泉の中心街。リード着用でお散歩しながらショッピングや食べ歩きが楽しめる。犬連れOKのカフェや土産店も多い。",
     "weekendRecommended": true,
-    "mapQuery": "由布院 湯の坪街道"
+    "mapQuery": "由布院 湯の坪街道",
+    "image": "https://yufuin.gr.jp/wp-content/uploads/2024/11/湯の坪街道①-2.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "kuju-hana-koen-walk",
@@ -359,7 +399,9 @@
     "status": "active",
     "memo": "標高850mの高原に広がる花の公園。リード着用で愛犬と一緒に入園可能。季節の花々を楽しみながらお散歩できる。",
     "weekendRecommended": true,
-    "mapQuery": "くじゅう花公園 竹田市"
+    "mapQuery": "くじゅう花公園 竹田市",
+    "image": "https://media.kuju-flower-park.com/DSC_04216_0b4f550c92.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "morinomiyako-dogrun-kumamoto",
@@ -376,7 +418,9 @@
     "status": "active",
     "memo": "熊本市内のドッグラン。小型犬・中型犬・大型犬それぞれ料金設定あり。",
     "weekendRecommended": true,
-    "mapQuery": "くまもとドッグラン もりのみやこ 熊本市南区"
+    "mapQuery": "くまもとドッグラン もりのみやこ 熊本市南区",
+    "image": "https://www.dogrunmorinomiyako.jp/images/index/index_img_album_01.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "happytail-dogrun-kumamoto",
@@ -393,7 +437,9 @@
     "status": "active",
     "memo": "総敷地面積約7,500㎡の広大なドッグラン。大型犬専用エリアもあり、サモエドなど大型犬も思いっきり走れる。",
     "weekendRecommended": true,
-    "mapQuery": "HappyTail ハッピーテイル 熊本市北区"
+    "mapQuery": "HappyTail ハッピーテイル 熊本市北区",
+    "image": "http://happytail.jp/wp-content/uploads/2024/01/アートボード-1-100.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "kusasenri-aso-walk",
@@ -410,7 +456,9 @@
     "status": "active",
     "memo": "阿蘇の大自然の中、広大な草原を愛犬と散策できる絶景スポット。リード着用で入場可能。",
     "weekendRecommended": true,
-    "mapQuery": "草千里ヶ浜 阿蘇市"
+    "mapQuery": "草千里ヶ浜 阿蘇市",
+    "image": "https://kumamoto.guide/files/21f475da-d8c4-4a36-8601-dc56dc87a5ac_l.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "inasayama-dogrun-nagasaki",
@@ -427,7 +475,9 @@
     "status": "active",
     "memo": "長崎市街地や長崎港を一望できるロケーション。無料で利用できる公営ドッグラン。",
     "weekendRecommended": true,
-    "mapQuery": "稲佐山公園ドッグラン 長崎市"
+    "mapQuery": "稲佐山公園ドッグラン 長崎市",
+    "image": "https://inasayama.info/wp-content/uploads/2024/04/P4170026-scaled.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "mozaki-dinosaur-dogrun-nagasaki",
@@ -444,7 +494,9 @@
     "status": "active",
     "memo": "天然芝の広々としたドッグラン。アジリティも設置。恐竜パークの施設内にあり、子連れファミリーにも人気。",
     "weekendRecommended": true,
-    "mapQuery": "長崎のもざき恐竜パーク ドッグラン"
+    "mapQuery": "長崎のもざき恐竜パーク ドッグラン",
+    "image": "https://www.at-nagasaki.jp/storage/tourism_attractions/7001/responsive_images/TP697VvXC4JAeVGqT1BsI1zNur1TtemASYybAuIG__1778_999.jpg",
+    "imageSource": "長崎市公式観光サイト「travel nagasaki」"
   },
   {
     "id": "huistenbosch-dogrun-sasebo",
@@ -461,7 +513,9 @@
     "status": "active",
     "memo": "ハウステンボス園内にあるドッグラン。テーマパークを楽しみながら愛犬も一緒に遊べる。",
     "weekendRecommended": true,
-    "mapQuery": "ハウステンボス ドッグラン 佐世保市"
+    "mapQuery": "ハウステンボス ドッグラン 佐世保市",
+    "image": "https://www.dogbox.me/img/header/slide_img03.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "cafe-fuchsia-dogrun-saga",
@@ -473,12 +527,14 @@
     "rainyOk": false,
     "indoorOk": false,
     "parking": true,
-    "officialUrl": "",
+    "officialUrl": "https://cafefukusia.com/",
     "lastChecked": "2026-05-20",
     "status": "active",
     "memo": "約60坪の芝生ドッグラン併設カフェ。食事を楽しみながら愛犬を遊ばせることができる。",
     "weekendRecommended": true,
-    "mapQuery": "カフェフクシア 佐賀市大和町"
+    "mapQuery": "カフェフクシア 佐賀市大和町",
+    "image": "https://cafefukusia.com/wp-content/uploads/2020/10/home-main-2-1280x966.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "secret-garden-dogrun-saga",
@@ -490,12 +546,14 @@
     "rainyOk": false,
     "indoorOk": false,
     "parking": true,
-    "officialUrl": "",
+    "officialUrl": "https://www.momosecretgarden.com/",
     "lastChecked": "2026-05-20",
     "status": "active",
     "memo": "完全予約制のプライベートドッグラン。他の犬と接触させたくない場合や貸し切りで遊ばせたい場合に最適。",
     "weekendRecommended": false,
-    "mapQuery": "SECRET GARDEN ドッグラン 佐賀市三瀬村"
+    "mapQuery": "SECRET GARDEN ドッグラン 佐賀市三瀬村",
+    "image": "https://www.momosecretgarden.com/IMG_0417nashi.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "yoshinogari-walk-saga",
@@ -512,7 +570,9 @@
     "status": "active",
     "memo": "弥生時代の遺跡公園。広大な敷地をリード着用で愛犬と一緒に散策できる。歴史と自然を同時に楽しめる。",
     "weekendRecommended": true,
-    "mapQuery": "吉野ヶ里歴史公園 神埼郡"
+    "mapQuery": "吉野ヶ里歴史公園 神埼郡",
+    "image": "https://www.yoshinogari.jp/mainvisual/.assets/%E3%80%90%E4%BF%AE%E6%AD%A3%E3%80%91PC%E7%94%A8%E3%83%90%E3%83%8A%E3%83%BC.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "miyazaki-sports-park-dogrun",
@@ -529,7 +589,9 @@
     "status": "active",
     "memo": "宮崎市内の大型運動公園内にあるドッグラン。広い芝生エリアで愛犬を思いっきり走らせることができる。",
     "weekendRecommended": true,
-    "mapQuery": "宮崎県総合運動公園 ドッグラン"
+    "mapQuery": "宮崎県総合運動公園 ドッグラン",
+    "image": "https://www.kanko-miyazaki.jp/images/spot/1228/1228_01.jpg",
+    "imageSource": "みやざき観光ナビ"
   },
   {
     "id": "takachiho-kyo-walk",
@@ -546,7 +608,9 @@
     "status": "active",
     "memo": "国の名勝・天然記念物に指定された絶景渓谷。遊歩道をリード着用で愛犬と散策できる。ボートは犬連れ不可。",
     "weekendRecommended": true,
-    "mapQuery": "高千穂峡 高千穂町"
+    "mapQuery": "高千穂峡 高千穂町",
+    "image": "https://takachiho-kanko.info/files/images/home/takachihokyo.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "aoshima-jinja-walk-miyazaki",
@@ -563,7 +627,9 @@
     "status": "active",
     "memo": "南国ムードあふれる青島周辺の海岸沿いを愛犬と散歩できる。神社境内はリード着用で入れる。",
     "weekendRecommended": true,
-    "mapQuery": "青島神社 宮崎市"
+    "mapQuery": "青島神社 宮崎市",
+    "image": "https://aoshima-jinja.jp/wp-content/uploads/2018/05/about02-min.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "dogcom-park-kagoshima",
@@ -580,7 +646,9 @@
     "status": "active",
     "memo": "総面積1,450㎡。フリー広場と大型犬優先広場がある。鹿児島市内からアクセスしやすい。",
     "weekendRecommended": true,
-    "mapQuery": "DOGCOM.Park 鹿児島市西別府町"
+    "mapQuery": "DOGCOM.Park 鹿児島市西別府町",
+    "image": "https://www.honda.co.jp/dog/travel/data/dogcompark/images/main.jpg",
+    "imageSource": "Honda Dog"
   },
   {
     "id": "wanpark-toride-ibusuki",
@@ -597,7 +665,9 @@
     "status": "active",
     "memo": "芝生のドッグラン。指宿温泉観光のついでに立ち寄れる。大型犬も利用可能。",
     "weekendRecommended": true,
-    "mapQuery": "ワンパーク砦 指宿市"
+    "mapQuery": "ワンパーク砦 指宿市",
+    "image": "https://pjm.synapse-site.jp/gazo001.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "kirishima-jingu-walk-kagoshima",
@@ -614,6 +684,8 @@
     "status": "active",
     "memo": "霧島神宮周辺の自然豊かな散策コース。リード着用で愛犬と一緒に歩ける。霧島連山の雄大な景色が楽しめる。",
     "weekendRecommended": true,
-    "mapQuery": "霧島神宮 霧島市"
+    "mapQuery": "霧島神宮 霧島市",
+    "image": "https://www.kagoshima-kankou.com/storage/tourism_attractions/10113/responsive_images/gYQASEkE5PvQVtYB8Mhe4Xre3FuQK6kZ05rDF23n__1673_1109.jpg",
+    "imageSource": "鹿児島県観光サイト かごしまの旅"
   }
 ]

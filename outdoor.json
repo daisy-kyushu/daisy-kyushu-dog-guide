@@ -11,7 +11,9 @@
     "officialUrl": "https://www.visit-oita.jp/",
     "mapQuery": "くじゅう高原 犬連れ",
     "lastChecked": "2026-05-17",
-    "memo": "高原ドライブや散策候補。牧場・公園・飲食店は施設ごとに犬同伴条件が違います。"
+    "memo": "高原ドライブや散策候補。牧場・公園・飲食店は施設ごとに犬同伴条件が違います。",
+    "image": "https://k-miyachan.com/wp-content/uploads/2021/07/cropped-kokonoe_baner_miyachan.png",
+    "imageSource": "公式サイト"
   },
   {
     "id": "yufuin-outdoor",
@@ -25,7 +27,9 @@
     "officialUrl": "https://www.visit-oita.jp/",
     "mapQuery": "湯布院 犬連れ 散策",
     "lastChecked": "2026-05-17",
-    "memo": "湯布院観光とドッグランを組み合わせやすい候補。混雑・駐車場・犬同伴可否は要確認。"
+    "memo": "湯布院観光とドッグランを組み合わせやすい候補。混雑・駐車場・犬同伴可否は要確認。",
+    "image": "https://www.visit-oita.jp/files/cache/221bd1a13b62259a507f71cc5d808b77_1770854356.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "beppu-outdoor",
@@ -39,7 +43,9 @@
     "officialUrl": "https://www.visit-oita.jp/",
     "mapQuery": "別府 犬連れ ドライブ",
     "lastChecked": "2026-05-17",
-    "memo": "移動途中の休憩や景色を楽しむ候補。犬同伴エリアは施設ごとに確認してください。"
+    "memo": "移動途中の休憩や景色を楽しむ候補。犬同伴エリアは施設ごとに確認してください。",
+    "image": "https://beppu-tourism.com/wp-content/uploads/2023/01/小ぶりな公園とイングリッシュローズ-1.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "kuju-flower-park-candidate",
@@ -55,7 +61,9 @@
     "mapQuery": "くじゅう花公園 大分県竹田市久住町",
     "lastChecked": "2026-05-17",
     "status": "公式サイト確認",
-    "memo": "季節の花が楽しめる大型公園候補。営業時間・定休日・犬同伴条件は変更される場合があります。訪問前に必ず公式情報を確認してください。"
+    "memo": "季節の花が楽しめる大型公園候補。営業時間・定休日・犬同伴条件は変更される場合があります。訪問前に必ず公式情報を確認してください。",
+    "image": "https://kuju-flower-park.com/ogp.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "uminonakamichi-seaside-park",
@@ -69,7 +77,9 @@
     "officialUrl": "https://uminaka-park.jp/",
     "mapQuery": "国営海の中道海浜公園 福岡県福岡市東区",
     "lastChecked": "2026-05-17",
-    "memo": "海沿い散策や公園利用の候補。犬同伴条件・入園ルール・利用可能エリアは行く前に公式情報で確認してください。"
+    "memo": "海沿い散策や公園利用の候補。犬同伴条件・入園ルール・利用可能エリアは行く前に公式情報で確認してください。",
+    "image": "https://uminaka-park.jp/images/4159d405df115208b8d296c8bd0b5b1739224241.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "yoshinogari-historical-park",
@@ -83,7 +93,9 @@
     "officialUrl": "https://www.yoshinogari.jp/",
     "mapQuery": "吉野ヶ里歴史公園 佐賀県神埼郡吉野ヶ里町",
     "lastChecked": "2026-05-17",
-    "memo": "歴史公園での散策候補。犬同伴条件・立入可能エリア・イベント時運用は行く前に公式情報で確認してください。"
+    "memo": "歴史公園での散策候補。犬同伴条件・立入可能エリア・イベント時運用は行く前に公式情報で確認してください。",
+    "image": "https://www.yoshinogari.jp/en/.assets/R3_spring_01_en.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "kirishima-jingu-area-walk",
@@ -97,7 +109,9 @@
     "officialUrl": "https://kirishimajingu.or.jp/",
     "mapQuery": "霧島神宮 鹿児島県霧島市 犬連れ 散策",
     "lastChecked": "2026-05-17",
-    "memo": "霧島方面の散策候補。犬同伴条件・参拝時マナー・立入可否は行く前に公式情報で確認してください。"
+    "memo": "霧島方面の散策候補。犬同伴条件・参拝時マナー・立入可否は行く前に公式情報で確認してください。",
+    "image": "https://kirishimajingu.or.jp/wp/wp-content/uploads/gengu-i.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "hoshino-star-fukuoka",
@@ -116,7 +130,9 @@
     "lastChecked": "2026-05-17",
     "status": "掲載中",
     "memo": "福岡・星野村の犬同伴可キャンプ＆グランピング候補。公式サイトで天然芝ドッグランとペット同伴設備の案内を確認。公式Instagramは未確認のため一旦非表示。営業日・料金・犬同伴条件・リードルール・ワクチン証明の有無は変更される場合があります。訪問前に必ず公式情報を確認してください。",
-    "weekendRecommended": true
+    "weekendRecommended": true,
+    "image": "https://cafe-glamping-hoshino.com/_astro/hero-bg.Cz-8dJje_ZXYOAJ.webp",
+    "imageSource": "公式サイト"
   },
   {
     "id": "ume-camp-mura-oita",
@@ -135,7 +151,9 @@
     "lastChecked": "2026-05-17",
     "status": "掲載中",
     "memo": "コテージ・オートサイト・フリーサイトがあるキャンプ候補。公的観光情報でペット同伴可能エリアの記載を確認。公式Instagramは未確認のため一旦非表示。営業日・料金・犬同伴条件・リードルール・ワクチン証明の有無は変更される場合があります。訪問前に必ず公式情報を確認してください。",
-    "weekendRecommended": true
+    "weekendRecommended": true,
+    "image": "https://storage.googleapis.com/studio-design-asset-files/projects/1YWj8R3Zqm/s-512x400_webp_e22a223f-8fe3-43b5-a67e-0731fbaa59f6.webp",
+    "imageSource": "公式サイト"
   },
   {
     "id": "aoshima-shirahama-camp-miyazaki",
@@ -154,7 +172,9 @@
     "lastChecked": "2026-05-17",
     "status": "掲載中",
     "memo": "宮崎の海沿いキャンプ候補。公式案内と利用注意PDFでペット同伴時のマナー注意を確認。公式Instagramは未確認のため一旦非表示。営業日・料金・犬同伴条件・リードルール・ワクチン証明の有無は変更される場合があります。訪問前に必ず公式情報を確認してください。",
-    "weekendRecommended": true
+    "weekendRecommended": true,
+    "image": "https://aoshima-camp.com/img/about/about_2025.webp",
+    "imageSource": "公式サイト"
   },
   {
     "id": "tenten-campfield-kagoshima",
@@ -173,7 +193,9 @@
     "lastChecked": "2026-05-17",
     "status": "掲載中",
     "memo": "鹿児島の犬連れキャンプ候補。公式サイト上でペット同伴可・ドッグラン情報を確認。公式Instagramは未確認のため一旦非表示。営業日・料金・犬同伴条件・リードルール・ワクチン証明の有無は変更される場合があります。訪問前に必ず公式情報を確認してください。",
-    "weekendRecommended": true
+    "weekendRecommended": true,
+    "image": "https://static.wixstatic.com/media/ee4934_4f90d8cdeab44cb49f4ea94aefeaa534~mv2.jpg/v1/fill/w_1280,h_615,al_c,q_85,enc_avif,quality_auto/ee4934_4f90d8cdeab44cb49f4ea94aefeaa534~mv2.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "chojabaru-walk-oita",
@@ -198,7 +220,9 @@
     "pathType": "遊歩道・舗装路・木道（区間により異なる） / 要確認",
     "shade": "一部あり / 要確認",
     "toilet": "ビジターセンター等で要確認",
-    "caution": "湿原・木道・自然保護エリアは犬の立ち入り可能範囲を必ず公式情報で確認してください。"
+    "caution": "湿原・木道・自然保護エリアは犬の立ち入り可能範囲を必ず公式情報で確認してください。",
+    "image": "https://kujufanclub.com/wp/wp-content/themes/kuju/img/contents/photo_chojabaru_vc.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "tadewara-walk-oita",
@@ -223,7 +247,9 @@
     "pathType": "木道・遊歩道（保護区域あり） / 要確認",
     "shade": "少なめ区間あり / 要確認",
     "toilet": "周辺施設で要確認",
-    "caution": "湿原・木道・自然保護エリアは犬の立ち入り可能範囲を必ず公式情報で確認してください。"
+    "caution": "湿原・木道・自然保護エリアは犬の立ち入り可能範囲を必ず公式情報で確認してください。",
+    "image": "https://www.visit-oita.jp/files/cache/845cb6a1328e5791704cd126eb8d4972_1727314028.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "uminonakamichi-park-fukuoka",
@@ -248,7 +274,9 @@
     "pathType": "舗装路・園路中心 / 要確認",
     "shade": "一部あり / 要確認",
     "toilet": "園内施設あり / 要確認",
-    "caution": "イベント開催時やエリア別ルールにより同伴条件が変わる場合があります。"
+    "caution": "イベント開催時やエリア別ルールにより同伴条件が変わる場合があります。",
+    "image": "https://uminaka-park.jp/images/dog.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "yoshinogari-park-saga",
@@ -273,7 +301,9 @@
     "pathType": "舗装路・園路中心 / 要確認",
     "shade": "一部あり / 要確認",
     "toilet": "園内施設あり / 要確認",
-    "caution": "保護区域・イベント時の立入制限は公式案内を必ず確認してください。"
+    "caution": "保護区域・イベント時の立入制限は公式案内を必ず確認してください。",
+    "image": "https://www.yoshinogari.jp/mainvisual/.assets/R4_autumn_02.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "snowpeak-okuhita-campfield",
@@ -291,7 +321,9 @@
     "mapQuery": "スノーピーク奥日田キャンプフィールド",
     "lastChecked": "2026-05-18",
     "status": "掲載中",
-    "memo": "スノーピーク公式の奥日田拠点。公式利用規約にペット同伴可能（予約時入力）と記載があります。大型犬可否や同伴頭数、リード・ワクチン証明などの詳細条件は予約前に必ず公式情報で確認してください。"
+    "memo": "スノーピーク公式の奥日田拠点。公式利用規約にペット同伴可能（予約時入力）と記載があります。大型犬可否や同伴頭数、リード・ワクチン証明などの詳細条件は予約前に必ず公式情報で確認してください。",
+    "image": "https://www.snowpeak.co.jp/assets/images/campfield/okuhita_ph_freesite.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "ikenoyama-camp-fukuoka",
@@ -309,7 +341,9 @@
     "mapQuery": "池の山キャンプ場 八女市星野村",
     "lastChecked": "2026-05-18",
     "status": "掲載中",
-    "memo": "八女市公式ページで施設概要を確認。犬同伴可否や大型犬の受け入れ、宿泊棟ごとの同伴条件は公式ページ上で明示確認できないため要確認。予約前に現地へ犬同伴条件（エリア、頭数、リード・ケージ、証明書要件）を必ず確認してください。"
+    "memo": "八女市公式ページで施設概要を確認。犬同伴可否や大型犬の受け入れ、宿泊棟ごとの同伴条件は公式ページ上で明示確認できないため要確認。予約前に現地へ犬同伴条件（エリア、頭数、リード・ケージ、証明書要件）を必ず確認してください。",
+    "image": "https://cdn.r-corona.jp/prd.jln.r-corona.jp/assets/site_files/dxtmkqnq/930848/x499_bw480h360.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "shikajima-walk-fukuoka",
@@ -323,7 +357,9 @@
     "officialUrl": "https://www.city.fukuoka.lg.jp/",
     "mapQuery": "志賀島 福岡市東区",
     "lastChecked": "2026-05-20",
-    "memo": "玄界灘に浮かぶ島を一周する散歩コース。海岸線を愛犬と一緒に歩ける。金印が発見された歴史ある島。"
+    "memo": "玄界灘に浮かぶ島を一周する散歩コース。海岸線を愛犬と一緒に歩ける。金印が発見された歴史ある島。",
+    "image": "https://www.city.fukuoka.lg.jp/higashi/miryoku-ibento/images/shikanoshima_drive_w680.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "hikosan-hiking-fukuoka",
@@ -337,7 +373,9 @@
     "officialUrl": "https://www.town.soeda.fukuoka.jp/",
     "mapQuery": "英彦山 添田町",
     "lastChecked": "2026-05-20",
-    "memo": "九州を代表する霊山。リード着用で愛犬と一緒に登山できる。初心者向けコースもあり。"
+    "memo": "九州を代表する霊山。リード着用で愛犬と一緒に登山できる。初心者向けコースもあり。",
+    "image": "https://www.town.soeda.fukuoka.jp/uploaded/image/3422.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "kokonoe-bridge-walk-oita",
@@ -351,7 +389,9 @@
     "officialUrl": "https://www.yumeooturihashi.com/",
     "mapQuery": "九重夢大吊橋 九重町",
     "lastChecked": "2026-05-20",
-    "memo": "日本一の高さを誇る歩行者専用吊橋。リード着用で愛犬と一緒に渡れる。紅葉シーズンは特に絶景。"
+    "memo": "日本一の高さを誇る歩行者専用吊橋。リード着用で愛犬と一緒に渡れる。紅葉シーズンは特に絶景。",
+    "image": "https://www.yumeooturihashi.com/top/img/spr/01.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "amakusa-gokyo-walk",
@@ -365,7 +405,9 @@
     "officialUrl": "https://www.t-island.jp/",
     "mapQuery": "天草五橋 上天草市",
     "lastChecked": "2026-05-20",
-    "memo": "天草の海を渡る5つの橋を巡るコース。海の絶景を眺めながら愛犬と一緒に散歩できる。"
+    "memo": "天草の海を渡る5つの橋を巡るコース。海の絶景を眺めながら愛犬と一緒に散歩できる。",
+    "image": "https://kumamoto.guide/files/2782a46e-2b99-4967-b6ec-2b9b66d85ac_m.jpg",
+    "imageSource": "熊本県観光サイト"
   },
   {
     "id": "goto-fukuejima-walk",
@@ -379,7 +421,9 @@
     "officialUrl": "https://www.goto.nagasaki.jp/",
     "mapQuery": "福江島 五島市",
     "lastChecked": "2026-05-20",
-    "memo": "世界遺産の教会群がある五島列島。島の自然の中を愛犬と一緒に散策できる。フェリーで愛犬と渡れる。"
+    "memo": "世界遺産の教会群がある五島列島。島の自然の中を愛犬と一緒に散策できる。フェリーで愛犬と渡れる。",
+    "image": "https://goto.nagasaki-tabinet.com/storage/special_features/123/responsive_images/WV4ZQzOKWWFo6jt8LVbKKtn0TmnPUJk1uBjyeIkU__1673_1115.jpeg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "niji-matsubara-walk-saga",
@@ -393,7 +437,9 @@
     "officialUrl": "https://www.karatsu-kankou.jp/",
     "mapQuery": "虹の松原 唐津市",
     "lastChecked": "2026-05-20",
-    "memo": "日本三大松原の一つ。約5kmにわたる松林の中を愛犬と散歩できる。唐津湾の海岸線も美しい。"
+    "memo": "日本三大松原の一つ。約5kmにわたる松林の中を愛犬と散歩できる。唐津湾の海岸線も美しい。",
+    "image": "https://www.jalan.net/news/img/1/000/006/914/20190705153646_1_640x480.jpg",
+    "imageSource": "じゃらんnet"
   },
   {
     "id": "toi-misaki-walk-miyazaki",
@@ -407,7 +453,9 @@
     "officialUrl": "https://www.kanko-miyazaki.jp/",
     "mapQuery": "都井岬 串間市",
     "lastChecked": "2026-05-20",
-    "memo": "野生の岬馬が生息する自然豊かな岬。リード着用で愛犬と一緒に散策できる。太平洋の絶景が広がる。"
+    "memo": "野生の岬馬が生息する自然豊かな岬。リード着用で愛犬と一緒に散策できる。太平洋の絶景が広がる。",
+    "image": "https://kushima-city.jp/toi/img/main2022.jpg",
+    "imageSource": "公式サイト"
   },
   {
     "id": "kaimondake-hiking-kagoshima",
@@ -421,6 +469,8 @@
     "officialUrl": "https://www.ibusuki.or.jp/",
     "mapQuery": "開聞岳 指宿市",
     "lastChecked": "2026-05-20",
-    "memo": "「薩摩富士」と呼ばれる美しい円錐形の山。リード着用で愛犬と一緒に登山できる。山頂からは薩摩半島を一望。"
+    "memo": "「薩摩富士」と呼ばれる美しい円錐形の山。リード着用で愛犬と一緒に登山できる。山頂からは薩摩半島を一望。",
+    "image": "https://www.ibusuki.or.jp/tourism/assets_c/2024/06/%E9%96%8B%E8%81%9E%E5%B2%B3%E3%81%A8%E3%83%92%E3%83%9E%E3%83%AF%E3%83%AA%EF%BC%91-thumb-420xauto-55998.jpeg",
+    "imageSource": "公式サイト"
   }
 ]
