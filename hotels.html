@@ -124,7 +124,7 @@ function renderHotels() {
           ${h.priceRange?`<span class="tag tag-gray">${esc(h.priceRange)}</span>`:''}
         </div>
         <div class="card-meta" style="margin-top:5px">${features}</div>
-        <p class="card-desc">${esc(h.description||h.desc||'')}</p>
+        <p class="card-desc">${esc(h.memo||h.description||h.desc||'')}</p>
         <div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap">
           <a href="${esc(rkUrl)}" target="_blank" rel="noopener" class="btn btn-amber btn-sm" onclick="if(window.trackClick)trackClick('rakuten_hotel_click','${esc(h.name)}')">楽天で予約</a>
           ${h.officialUrl ? `<a href="${esc(h.officialUrl)}" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">公式サイト</a>` : ''}

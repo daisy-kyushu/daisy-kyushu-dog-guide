@@ -570,11 +570,22 @@ function renderEvents(items) {
     return;
   }
   el.innerHTML = items.map(e => {
-    const d = e.date ? new Date(e.date) : null;
+    // 「2026-05-23〜2026-05-24」形式にも対応
+    let dateLabel = '';
+    if (e.date) {
+      const startStr = e.date.split('〜')[0].trim();
+      const d = new Date(startStr);
+      if (!isNaN(d.getTime())) {
+        dateLabel = `${d.getMonth()+1}/${d.getDate()}`;
+        if (e.date.includes('〜')) dateLabel += '〜';
+      } else {
+        dateLabel = e.date;
+      }
+    }
     return `
       <div class="card">
         <div class="card-body">
-          ${d ? `<div class="card-meta"><span class="tag">${d.getMonth()+1}/${d.getDate()}</span></div>` : ''}
+          ${dateLabel ? `<div class="card-meta"><span class="tag">${escHtml(dateLabel)}</span></div>` : ''}
           <h3 class="card-title">${escHtml(e.name || e.title || 'イベント')}</h3>
           <p class="card-desc">${escHtml(e.description || e.location || '')}</p>
         </div>
