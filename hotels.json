@@ -8,17 +8,17 @@
     "mealAreaWithDog": "宿ごとに要確認",
     "dogRun": "宿ごとに要確認",
     "vaccineRequired": "宿ごとに要確認",
-    "rakutenTravelUrl": "https://travel.rakuten.co.jp/pet/",
+    "rakutenTravelUrl": "https://kw.travel.rakuten.co.jp/keyword/Event.do?f_teikei=&f_query=&f_max=30&f_category=3&f_flg=&f_cd_application=&f_sort=0&f_cd_chain=&f_all_chain=0&f_su=2&f_area=9&l-id=pet_area_oita",
     "searchKeyword": "大分 犬 同伴",
     "lastChecked": "2026-05-19",
     "status": "楽天トラベル公式ペット宿導線",
     "memo": "大分県内の犬連れOK宿を楽天トラベルで一括検索。温泉宿・ペンション・ホテルなど多数掲載。ポイント還元でお得に予約できます。",
-    "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
+    "rakutenTravelAffiliateUrl": "https://kw.travel.rakuten.co.jp/keyword/Event.do?f_teikei=&f_query=&f_max=30&f_category=3&f_flg=&f_cd_application=&f_sort=0&f_cd_chain=&f_all_chain=0&f_su=2&f_area=9&l-id=pet_area_oita",
     "affiliateStatus": "affiliate-active",
     "mapQuery": "大分県 犬と泊まれる宿",
     "image": "https://trvimg.r10s.jp/share/image_up/4765/LARGE/7e6ffaf3004f3f55be4a62380182f54b0ecb789c.47.9.26.3.jpg",
     "imageSource": "楽天トラベル",
-    "officialUrl": "https://travel.rakuten.co.jp/share/batch/rrg_pg/pgenerator/hotel/id4/ooita/index.html"
+    "officialUrl": "https://kw.travel.rakuten.co.jp/keyword/Event.do?f_teikei=&f_query=&f_max=30&f_category=3&f_flg=&f_cd_application=&f_sort=0&f_cd_chain=&f_all_chain=0&f_su=2&f_area=9&l-id=pet_area_oita"
   },
   {
     "id": "rakuten-travel-yufuin",
@@ -29,17 +29,17 @@
     "mealAreaWithDog": "宿ごとに要確認",
     "dogRun": "宿ごとに要確認",
     "vaccineRequired": "宿ごとに要確認",
-    "rakutenTravelUrl": "https://travel.rakuten.co.jp/pet/",
+    "rakutenTravelUrl": "https://kw.travel.rakuten.co.jp/keyword/Search.do?f_teikei=&f_query=%E6%B9%AF%E5%B8%83%E9%99%A2+%E3%83%9A%E3%83%83%E3%83%88&f_max=30&f_category=3&f_area=9",
     "searchKeyword": "湯布院 犬 同伴",
     "lastChecked": "2026-05-19",
     "status": "楽天トラベル公式ペット宿導線",
     "memo": "湯布院・由布院エリアの犬連れ宿を楽天トラベルで検索。温泉付きの宿も多く、愛犬と一緒に温泉旅行が楽しめます。",
-    "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
+    "rakutenTravelAffiliateUrl": "https://kw.travel.rakuten.co.jp/keyword/Search.do?f_teikei=&f_query=%E6%B9%AF%E5%B8%83%E9%99%A2+%E3%83%9A%E3%83%83%E3%83%88&f_max=30&f_category=3&f_area=9",
     "affiliateStatus": "affiliate-active",
     "mapQuery": "湯布院 犬と泊まれる宿",
     "image": "https://trvis.r10s.com/d/strg/ctrl/26/6f10ef6c284cd9e1d847a22588948e08b4a00b1d.47.1.26.2.jpg",
     "imageSource": "楽天トラベル",
-    "officialUrl": "https://travel.rakuten.com/usa/en-us/hotel_info_item/cnt_japan/sub_oita_prefecture/cty_yufu_city/10123456863458/"
+    "officialUrl": "https://kw.travel.rakuten.co.jp/keyword/Search.do?f_teikei=&f_query=%E6%B9%AF%E5%B8%83%E9%99%A2+%E3%83%9A%E3%83%83%E3%83%88&f_max=30&f_category=3&f_area=9"
   },
   {
     "id": "rakuten-travel-kyushu",
@@ -50,17 +50,17 @@
     "mealAreaWithDog": "宿ごとに要確認",
     "dogRun": "宿ごとに要確認",
     "vaccineRequired": "宿ごとに要確認",
-    "rakutenTravelUrl": "https://travel.rakuten.co.jp/pet/",
+    "rakutenTravelUrl": "https://kw.travel.rakuten.co.jp/keyword/Event.do?f_teikei=&f_query=&f_max=30&f_category=3&f_flg=&f_cd_application=&f_sort=0&f_cd_chain=&f_all_chain=0&f_su=2&f_area=12&l-id=pet_area_kyushu",
     "searchKeyword": "九州 犬 同伴",
     "lastChecked": "2026-05-19",
     "status": "楽天トラベル公式ペット宿導線",
     "memo": "九州全域の犬連れOK宿を楽天トラベルで一括検索。福岡・大分・熊本・長崎・宮崎・鹿児島・佐賀の宿が揃っています。",
-    "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
+    "rakutenTravelAffiliateUrl": "https://kw.travel.rakuten.co.jp/keyword/Event.do?f_teikei=&f_query=&f_max=30&f_category=3&f_flg=&f_cd_application=&f_sort=0&f_cd_chain=&f_all_chain=0&f_su=2&f_area=12&l-id=pet_area_kyushu",
     "affiliateStatus": "affiliate-active",
     "mapQuery": "九州 犬と泊まれる宿",
     "image": "https://img.travel.rakuten.co.jp/share/assets/test/demo/pet/images/top.jpg",
     "imageSource": "楽天トラベル",
-    "officialUrl": "https://travel.rakuten.co.jp/pet/"
+    "officialUrl": "https://kw.travel.rakuten.co.jp/keyword/Event.do?f_teikei=&f_query=&f_max=30&f_category=3&f_flg=&f_cd_application=&f_sort=0&f_cd_chain=&f_all_chain=0&f_su=2&f_area=12&l-id=pet_area_kyushu"
   },
   {
     "id": "yufuin-garden-hotel-dogrun-resort",
