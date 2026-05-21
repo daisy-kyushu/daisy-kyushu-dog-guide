@@ -127,20 +127,20 @@ function renderHotels() {
         <p class="card-desc">${esc(h.description||h.desc||'')}</p>
         <div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap">
           <a href="${esc(rkUrl)}" target="_blank" rel="noopener" class="btn btn-amber btn-sm" onclick="if(window.trackClick)trackClick('rakuten_hotel_click','${esc(h.name)}')">楽天で予約</a>
-          <a href="hotel/${encodeURIComponent(h.name)}.html" class="btn btn-secondary btn-sm">詳細を見る</a>
+          ${h.officialUrl ? `<a href="${esc(h.officialUrl)}" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">公式サイト</a>` : ''}
         </div>
       </div>
     </div>
   `}).join('');
 }
 
-function openModal(name, meta, desc, rkUrl, detailUrl) {
+function openModal(name, meta, desc, rkUrl, officialUrl) {
   document.getElementById('modal-title').textContent = name;
   document.getElementById('modal-meta').innerHTML = meta.trim().split(' ').filter(Boolean).map(m=>`<span class="tag">${m}</span>`).join('');
   document.getElementById('modal-desc').textContent = desc;
   document.getElementById('modal-actions').innerHTML = `
     <a href="${rkUrl}" target="_blank" rel="noopener" class="btn btn-amber">楽天で予約</a>
-    <a href="${detailUrl}" class="btn btn-secondary">詳細を見る</a>
+    ${officialUrl ? `<a href="${officialUrl}" target="_blank" rel="noopener" class="btn btn-secondary">公式サイト</a>` : ''}
   `;
   document.getElementById('modal-overlay').classList.add('open');
   document.body.style.overflow='hidden';

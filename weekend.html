@@ -153,7 +153,7 @@ async function loadData() {
   // おすすめスポット（ランダムに3件）
   const shuffled = [...spots].sort(() => Math.random() - 0.5).slice(0, 3);
   document.getElementById('weekend-spots').innerHTML = shuffled.map(s => `
-    <a href="spot/${encodeURIComponent(s.name)}.html" class="card" style="text-decoration:none">
+    <a href="spots.html" class="card" style="text-decoration:none">
       <div class="card-thumb" style="height:130px;font-size:40px">${s.emoji||'🌿'}</div>
       <div class="card-body">
         <h3 class="card-title">${esc(s.name)}</h3>
