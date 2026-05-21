@@ -114,7 +114,7 @@ function renderSpots() {
   if (currentSearch) items = items.filter(s =>
     (s.name||'').toLowerCase().includes(currentSearch) ||
     (s.area||'').toLowerCase().includes(currentSearch) ||
-    (s.description||s.desc||'').toLowerCase().includes(currentSearch)
+    (s.memo||s.description||s.desc||'').toLowerCase().includes(currentSearch)
   );
   const grid = document.getElementById('spots-grid');
   if (!items.length) {

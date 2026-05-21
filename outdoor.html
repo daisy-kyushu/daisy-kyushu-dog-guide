@@ -94,7 +94,7 @@ function renderOutdoor() {
   if (currentFilter !== 'all') items = items.filter(s =>
     (s.type||'').includes(currentFilter) ||
     (s.name||'').includes(currentFilter) ||
-    (s.description||s.desc||'').includes(currentFilter)
+    (s.memo||s.description||s.desc||'').toLowerCase().includes(currentFilter.toLowerCase())
   );
   const grid = document.getElementById('outdoor-grid');
   if (!items.length) {
