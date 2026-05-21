@@ -122,7 +122,7 @@ function renderSpots() {
     return;
   }
   grid.innerHTML = items.map(s => `
-    <div class="card" onclick="openModal('${esc(s.name)}','${esc(s.area||'')} ${esc(s.category||'')}','${esc(s.description||s.desc||'')}','spot/${encodeURIComponent(s.name)}.html')">
+    <div class="card" onclick="openModal('${esc(s.name)}','${esc(s.area||'')} ${esc(s.category||'')}','${esc(s.description||s.desc||'')}')">
       <div class="card-thumb" style="height:140px;font-size:44px">${s.emoji||'🌿'}</div>
       <div class="card-body">
         <h3 class="card-title">${esc(s.name)}</h3>
@@ -137,11 +137,11 @@ function renderSpots() {
   `).join('');
 }
 
-function openModal(name, meta, desc, detailUrl) {
+function openModal(name, meta, desc) {
   document.getElementById('modal-title').textContent = name;
   document.getElementById('modal-meta').innerHTML = meta.trim().split(' ').filter(Boolean).map(m=>`<span class="tag">${m}</span>`).join('');
   document.getElementById('modal-desc').textContent = desc;
-  document.getElementById('modal-actions').innerHTML = `<a href="${detailUrl}" class="btn btn-primary">詳細を見る</a><a href="index.html" class="btn btn-secondary">ホームへ</a>`;
+  document.getElementById('modal-actions').innerHTML = `<a href="index.html" class="btn btn-secondary">ホームへ</a>`;
   document.getElementById('modal-overlay').classList.add('open');
   document.body.style.overflow='hidden';
 }

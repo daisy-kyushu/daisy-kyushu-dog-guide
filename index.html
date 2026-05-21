@@ -488,7 +488,7 @@ function renderSpots(items) {
   const el = document.getElementById('spots-list');
   if (!items.length) { el.innerHTML = '<p class="text-muted">スポット情報を準備中です</p>'; return; }
   el.innerHTML = items.map(s => `
-    <div class="card" onclick="openModal('spot','${escHtml(s.name)}','${escHtml(s.area||'')} ${escHtml(s.category||'')}','${escHtml(s.description||s.desc||'')}','spots.html','spot/${encodeURIComponent(s.name)}.html')">
+    <div class="card" onclick="openModal('spot','${escHtml(s.name)}','${escHtml(s.area||'')} ${escHtml(s.category||'')}','${escHtml(s.description||s.desc||'')}','spots.html')">
       <div class="card-thumb" style="height:140px;font-size:40px">${s.emoji || '🌿'}</div>
       <div class="card-body">
         <h3 class="card-title">${escHtml(s.name)}</h3>
@@ -506,7 +506,7 @@ function renderOutdoor(items) {
   const el = document.getElementById('outdoor-list');
   if (!items.length) { el.innerHTML = '<p class="text-muted">アウトドア情報を準備中です</p>'; return; }
   el.innerHTML = items.map(s => `
-    <div class="card" onclick="openModal('outdoor','${escHtml(s.name)}','${escHtml(s.area||'')} ${escHtml(s.type||'')}','${escHtml(s.description||s.desc||'')}','outdoor.html','outdoor/${encodeURIComponent(s.name)}.html')">
+    <div class="card" onclick="openModal('outdoor','${escHtml(s.name)}','${escHtml(s.area||'')} ${escHtml(s.type||'')}','${escHtml(s.description||s.desc||'')}','outdoor.html')">
       <div class="card-thumb" style="height:140px;font-size:40px">${s.emoji || '⛺'}</div>
       <div class="card-body">
         <h3 class="card-title">${escHtml(s.name)}</h3>
@@ -524,7 +524,7 @@ function renderHotels(items) {
   const el = document.getElementById('hotels-list');
   if (!items.length) { el.innerHTML = '<p class="text-muted">ホテル情報を準備中です</p>'; return; }
   el.innerHTML = items.map(h => `
-    <div class="card" onclick="openModal('hotel','${escHtml(h.name)}','${escHtml(h.area||'')} ${escHtml(h.prefecture||'')}','${escHtml(h.description||h.desc||'')}','hotels.html','hotel/${encodeURIComponent(h.name)}.html')">
+    <div class="card" onclick="openModal('hotel','${escHtml(h.name)}','${escHtml(h.area||'')} ${escHtml(h.prefecture||'')}','${escHtml(h.description||h.desc||'')}','hotels.html')">
       <div class="card-thumb" style="height:140px;font-size:40px">${h.emoji || '🏨'}</div>
       <div class="card-body">
         <h3 class="card-title">${escHtml(h.name)}</h3>
@@ -584,13 +584,12 @@ function renderWeekend(items) {
 }
 
 // ── モーダル ──────────────────────────────────────────────────────────
-function openModal(type, name, meta, desc, listUrl, detailUrl) {
+function openModal(type, name, meta, desc, listUrl) {
   document.getElementById('modal-title').textContent = name;
   document.getElementById('modal-meta').innerHTML = meta.trim().split(' ').filter(Boolean).map(m => `<span class="tag">${m}</span>`).join('');
   document.getElementById('modal-desc').textContent = desc;
   document.getElementById('modal-actions').innerHTML = `
-    <a href="${detailUrl}" class="btn btn-primary">詳細を見る</a>
-    <a href="${listUrl}" class="btn btn-secondary">一覧に戻る</a>
+    <a href="${listUrl}" class="btn btn-primary">一覧で詳しく見る</a>
   `;
   document.getElementById('modal-overlay').classList.add('open');
   document.body.style.overflow = 'hidden';
