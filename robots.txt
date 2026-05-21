@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# 管理・内部ページはインデックス不要
+Disallow: /admin.html
+Disallow: /listing.html
+Disallow: /pr.html
+
+Sitemap: https://daisy-kyushu.github.io/daisy-kyushu-dog-guide/sitemap.xml
