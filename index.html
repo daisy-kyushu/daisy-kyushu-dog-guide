@@ -296,7 +296,7 @@
   </section>
 
   <!-- 楽天市場バナー -->
-  <a href="https://www.rakuten.co.jp/category/dog/" target="_blank" rel="noopener" class="rk-banner fade-in" style="background:linear-gradient(135deg,#bf0000,#8b0000)" onclick="if(window.trackClick)trackClick('rakuten_market_banner','home')">
+  <a href="https://www.rakuten.co.jp/category/101213/" target="_blank" rel="noopener" class="rk-banner fade-in" style="background:linear-gradient(135deg,#bf0000,#8b0000)" onclick="if(window.trackClick)trackClick('rakuten_market_banner','home')">
     <div class="rk-banner-icon">🛒</div>
     <div class="rk-banner-text">
       <strong>楽天市場で犬用グッズをお得に購入</strong>
@@ -606,7 +606,9 @@ function openSpotModal(data) {
   if (typeof data === 'string') data = JSON.parse(data);
   document.getElementById('modal-title').textContent = data.name || '';
   // タグ
-  const tags = [data.area, data.type, data.dogAllowed ? '犬同伴:'+data.dogAllowed : null, data.largeDog ? '大型犬:'+data.largeDog : null].filter(Boolean);
+  const dogTag = data.dogAllowed ? (data.dogAllowed === true || data.dogAllowed === 'true' ? '犬同伴:OK' : '犬同伴:'+data.dogAllowed) : null;
+  const largeTag = data.largeDog ? (data.largeDog === true || data.largeDog === 'true' ? '大型犬:OK' : '大型犬:'+data.largeDog) : null;
+  const tags = [data.area, data.type, dogTag, largeTag].filter(Boolean);
   document.getElementById('modal-meta').innerHTML = tags.map(t => `<span class="tag">${escHtml(t)}</span>`).join('');
   // 説明
   document.getElementById('modal-desc').textContent = data.memo || data.description || data.desc || '';
