@@ -1078,6 +1078,72 @@ h1, h2, h3, h4 {
   100% { background-position: -200% 0; }
 }
 
+/* ── ヒーロー犬写真 ── */
+.hero-dog {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+.hero-dog-img {
+  width: clamp(180px, 45vw, 320px);
+  height: clamp(180px, 45vw, 320px);
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid rgba(255,255,255,.9);
+  box-shadow: 0 8px 32px rgba(0,0,0,.18);
+  animation: heroFadeIn .8s ease both;
+}
+@keyframes heroFadeIn {
+  from { opacity:0; transform:scale(.92) translateY(12px); }
+  to   { opacity:1; transform:scale(1) translateY(0); }
+}
+
+/* ── Daisyギャラリー ── */
+.daisy-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.gallery-item {
+  position: relative;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  aspect-ratio: 3/4;
+  background: var(--surface);
+}
+.gallery-item--tall {
+  grid-row: span 2;
+  aspect-ratio: unset;
+}
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .4s ease;
+}
+.gallery-item:hover img { transform: scale(1.04); }
+.gallery-caption {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 8px 10px;
+  background: linear-gradient(transparent, rgba(0,0,0,.55));
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* ── Aboutページ ── */
+.daisy-profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--green-mid);
+  box-shadow: var(--shadow-sm);
+  flex-shrink: 0;
+}
+
 /* ── Responsive ── */
 @media (max-width: 860px) {
   .quick-nav { grid-template-columns: repeat(4, 1fr); gap: 8px; }
@@ -1088,6 +1154,11 @@ h1, h2, h3, h4 {
   .footer-inner, .footer-grid { grid-template-columns: 1fr; }
   .footer-links { align-items: flex-start; flex-direction: row; flex-wrap: wrap; }
   .site-header { padding: 0 16px; }
+}
+
+@media (max-width: 860px) {
+  .daisy-gallery { grid-template-columns: repeat(2, 1fr); }
+  .gallery-item--tall { grid-row: span 1; }
 }
 
 @media (max-width: 560px) {
