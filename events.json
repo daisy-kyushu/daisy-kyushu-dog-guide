@@ -21,7 +21,7 @@
     "dogPolicy": "犬関連イベントとして確認。犬同伴条件・リード条件・入場ルールは公式情報で確認してください。",
     "status": "official-confirmed",
     "memo": "開催日・会場・犬同伴条件は変更される場合があります。来場前に必ず公式情報を確認してください。",
-    "lastChecked": "2026-05-20"
+    "lastChecked": "2026-05-21"
   },
   {
     "id": "dog-expo-fukuoka-2026",
@@ -46,7 +46,7 @@
     "dogPolicy": "犬関連イベントとして確認。会場ルール・入場条件・リード条件は公式情報で確認してください。",
     "status": "official-confirmed",
     "memo": "公式Instagramは未確認のため、公式サイトを優先して確認してください。開催日・会場・犬同伴条件は変更される場合があります。来場前に必ず公式情報を確認してください。",
-    "lastChecked": "2026-05-20"
+    "lastChecked": "2026-05-21"
   },
   {
     "id": "oita-doggo-land-2026",
@@ -57,7 +57,7 @@
     "dogRules": "公式サイト・公式SNSで要確認",
     "officialUrl": "https://oitabuhiland.com/",
     "officialSnsUrl": "https://www.instagram.com/oita_doggoland/",
-    "lastChecked": "2026-05-20",
+    "lastChecked": "2026-05-21",
     "status": "公式SNS要確認",
     "memo": "開催日・会場・犬同伴ルールは変更される可能性があります。参加前に必ず公式サイト・公式SNSで最新情報をご確認ください。"
   }
