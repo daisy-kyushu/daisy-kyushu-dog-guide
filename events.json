@@ -1,485 +1,5 @@
 [
   {
-    "id": "event-126",
-    "title": "わんマルシェ（同時開催：第8回宮崎BUHI会）",
-    "name": "わんマルシェ（同時開催：第8回宮崎BUHI会）",
-    "area": "宮崎県東諸県郡国富町",
-    "venue": "宮崎県東諸県郡国富町深年4106-18 国富町 法華嶽公園ドッグラン広場（南芝生広場・北芝生広場）",
-    "eventDate": "2026年1月11日（日）",
-    "date": "2026年1月11日（日）",
-    "officialUrl": "https://www.instagram.com/miyazaki_buhikai/",
-    "snsUrl": "",
-    "mapQuery": "宮崎県東諸県郡国富町深年4106-18 国富町 法華嶽公園ドッグラン広場（南芝生広場・北芝生広場）",
-    "category": "event",
-    "tags": [
-      "dogAllowed"
-    ],
-    "dogPolicy": "全犬種OK",
-    "status": "upcoming",
-    "memo": "これまで宮崎BUHI会と同時開催されていたマルシェが、今回から『わんマルシェ』としてパワーアップ！出店数も増え、特定の犬種だけでなく一般の方や他犬種のわんちゃんも一緒にお買い物を楽しめるイベントです。 Daisyの可愛いグッズや美味しいおやつを探しに行きたいです。",
-    "lastChecked": "2026-05-22"
-  },
-  {
-    "id": "event-110",
-    "title": "あしあと🐾マルシェ",
-    "name": "あしあと🐾マルシェ",
-    "area": "長崎県長崎市",
-    "venue": "長崎県長崎市 i+Land nagasaki",
-    "eventDate": "2026年1月18日",
-    "date": "2026年1月18日",
-    "officialUrl": "https://www.islandnagasaki.jp/event/ashiato_marche/",
-    "snsUrl": "",
-    "mapQuery": "長崎県長崎市 i+Land nagasaki",
-    "category": "event",
-    "tags": [
-      "dogAllowed"
-    ],
-    "dogPolicy": "全犬種OK",
-    "status": "upcoming",
-    "memo": "保護犬・保護猫活動支援マルシェ。ワンちゃん関連のお店、フード販売、撮影会、お年玉抽選会。 Daisyの可愛いグッズや美味しいおやつを探しに行きたいです。",
-    "lastChecked": "2026-05-22"
-  },
-  {
-    "id": "event-113",
-    "title": "おばまワンワン朝市",
-    "name": "おばまワンワン朝市",
-    "area": "鹿児島県霧島市",
-    "venue": "鹿児島県霧島市 Obama Village（小浜ヴィレッジ）店舗前駐車場",
-    "eventDate": "2026年1月18日（日）",
-    "date": "2026年1月18日（日）",
-    "officialUrl": "https://www.instagram.com/obama_village/",
-    "snsUrl": "",
-    "mapQuery": "鹿児島県霧島市 Obama Village（小浜ヴィレッジ）店舗前駐車場",
-    "category": "event",
-    "tags": [
-      "dogAllowed"
-    ],
-    "dogPolicy": "全犬種OK",
-    "status": "upcoming",
-    "memo": "毎月恒例の朝市、1月は初のペットマルシェとして開催。 Daisyの可愛いグッズや美味しいおやつを探しに行きたいです。",
-    "lastChecked": "2026-05-22"
-  },
-  {
-    "id": "event-108",
-    "title": "DCMポスターモデルオーディション撮影会",
-    "name": "DCMポスターモデルオーディション撮影会",
-    "area": "熊本県熊本市中央区本山町",
-    "venue": "熊本県熊本市中央区本山町 DCMペット＆グリーン本山店",
-    "eventDate": "2026年1月24日",
-    "date": "2026年1月24日",
-    "officialUrl": "https://event.photoreco.com/dcm/202601pgmotoyama/",
-    "snsUrl": "",
-    "mapQuery": "熊本県熊本市中央区本山町 DCMペット＆グリーン本山店",
-    "category": "event",
-    "tags": [
-      "dogAllowed"
-    ],
-    "dogPolicy": "全犬種OK",
-    "status": "upcoming",
-    "memo": "「和」をテーマにしたプロカメラマン撮影会。ポスターモデル選出のチャンスも。新年の記念撮影に。要事前予約。 Daisyの可愛い写真を撮りに行きたいです。",
-    "lastChecked": "2026-05-22"
-  },
-  {
-    "id": "event-125",
-    "title": "コーギーズJAM 2026",
-    "name": "コーギーズJAM 2026",
-    "area": "福岡県宗像市",
-    "venue": "福岡県宗像市久原400 宗像ユリックス 芝生広場",
-    "eventDate": "2026年2月14日（土）",
-    "date": "2026年2月14日（土）",
-    "officialUrl": "https://www.instagram.com/doggies_mart/",
-    "snsUrl": "",
-    "mapQuery": "福岡県宗像市久原400 宗像ユリックス 芝生広場",
-    "category": "event",
-    "tags": [
-      "dogAllowed"
-    ],
-    "dogPolicy": "全犬種OK",
-    "status": "upcoming",
-    "memo": "九州各地からコーギーが集まるオフ会スタイルの大規模フェス。犬種特有の体型に合わせた「コーギー専用ウェア」の販売や、圧巻の集合写真撮影、お楽しみ抽選会などが予定されています。 Daisyの可愛いグッズや美味しいおやつを探しに行きたいです。",
-    "lastChecked": "2026-05-22"
-  },
-  {
-    "id": "event-124",
-    "title": "プードルJAM 九州 2026",
-    "name": "プードルJAM 九州 2026",
-    "area": "福岡県宗像市",
-    "venue": "福岡県宗像市久原400 宗像ユリックス 芝生広場",
-    "eventDate": "2026年2月15日（日）",
-    "date": "2026年2月15日（日）",
-    "officialUrl": "https://www.wonderful-dogfes.com/jamevent",
-    "snsUrl": "",
-    "mapQuery": "福岡県宗像市久原400 宗像ユリックス 芝生広場",
-    "category": "event",
-    "tags": [
-      "dogAllowed"
-    ],
-    "dogPolicy": "全犬種OK",
-    "status": "upcoming",
-    "memo": "九州最大級のプードルの祭典。トイ、ミニチュア、スタンダードなど全てのプードルが対象です。こだわりのトリミングサロンやセレクトショップが並び、スタイル維持のためのケアグッズも豊富に揃います。 Daisyの可愛いグッズや美味しいおやつを探しに行きたいです。",
-    "lastChecked": "2026-05-22"
-  },
-  {
-    "id": "event-115",
-    "title": "さがトキメキニャボ（猫と犬の日スペシャル）",
-    "name": "さがトキメキニャボ（猫と犬の日スペシャル）",
-    "area": "佐賀県佐賀市",
-    "venue": "佐賀県佐賀市 佐賀駅前交流広場",
-    "eventDate": "2026年2月21日（土）",
-    "date": "2026年2月21日（土）",
-    "officialUrl": "https://www.instagram.com/saga_tokimeki_marche/",
-    "snsUrl": "",
-    "mapQuery": "佐賀県佐賀市 佐賀駅前交流広場",
-    "category": "event",
-    "tags": [
-      "dogAllowed"
-    ],
-    "dogPolicy": "全犬種OK",
-    "status": "upcoming",
-    "memo": "2月22日の「猫の日」に合わせた犬猫マルシェ。 Daisyの可愛いグッズや美味しいおやつを探しに行きたいです。",
-    "lastChecked": "2026-05-22"
-  },
-  {
-    "id": "event-127",
-    "title": "ABURAYAMA WANT（あぶらやま わんと）",
-    "name": "ABURAYAMA WANT（あぶらやま わんと）",
-    "area": "福岡県福岡市南区",
-    "venue": "福岡県福岡市南区柏原710-2 ABURAYAMA FUKUOKA 牧場側",
-    "eventDate": "2026年2月21日(土)・22日(日)・23日(月・祝)",
-    "date": "2026年2月21日(土)・22日(日)・23日(月・祝)",
-    "officialUrl": "https://www.aburayama-fukuoka.com/want_26221/",
-    "snsUrl": "",
-    "mapQuery": "福岡県福岡市南区柏原710-2 ABURAYAMA FUKUOKA 牧場側",
-    "category": "event",
-    "tags": [
-      "dogAllowed"
-    ],
-    "dogPolicy": "全犬種OK",
-    "status": "upcoming",
-    "memo": "『犬としたい○○』がコンセプト。犬と犬・犬と人が一緒にしたいを叶えるイベントです。特設ドッグランや無料撮影会をはじめ、わんちゃんの雑貨・おやつの販売、ワークショップなど、全50店舗が大集合！ Daisyも思いっきり走って遊べそうです！",
-    "lastChecked": "2026-05-22"
-  },
-  {
-    "id": "event-123",
-    "title": "ポメラニアンJAM 九州 2026",
-    "name": "ポメラニアンJAM 九州 2026",
-    "area": "福岡県宗像市",
-    "venue": "福岡県宗像市久原400 宗像ユリックス 芝生広場",
-    "eventDate": "2026年2月28日（土）",
-    "date": "2026年2月28日（土）",
-    "officialUrl": "https://www.wonderful-dogfes.com/jamevent/pomeranian",
-    "snsUrl": "",
-    "mapQuery": "福岡県宗像市久原400 宗像ユリックス 芝生広場",
-    "category": "event",
-    "tags": [
-      "dogAllowed"
-    ],
-    "dogPolicy": "全犬種OK",
-    "status": "upcoming",
-    "memo": "昨年12月から延期となったファン待望の開催。ポメラニアンらしい華やかなフォトスポットが設置されるほか、軽量で機能的なリードやハーネスの展示販売が行われます。 Daisyの可愛いグッズや美味しいおやつを探しに行きたいです。",
-    "lastChecked": "2026-05-22"
-  },
-  {
-    "id": "event-122",
-    "title": "第5回 ワンちゃんDay",
-    "name": "第5回 ワンちゃんDay",
-    "area": "宮崎県宮崎市山崎町",
-    "venue": "宮崎県宮崎市山崎町浜山414-16 フローランテ宮崎",
-    "eventDate": "2026年3月8日（日）",
-    "date": "2026年3月8日（日）",
-    "officialUrl": "https://www.florante.or.jp/event-news/2026wantyan0308/",
-    "snsUrl": "",
-    "mapQuery": "宮崎県宮崎市山崎町浜山414-16 フローランテ宮崎",
-    "category": "event",
-    "tags": [
-      "dogAllowed"
-    ],
-    "dogPolicy": "全犬種OK",
-    "status": "upcoming",
-    "memo": "春の花々に囲まれた芝生広場を、愛犬とのんびりお散歩できる人気イベント。プロカメラマンによる撮影会やしつけ教室、人気ショップが集まる「ワンちゃん雑貨マルシェ」が開催されます。 Daisyの可愛いグッズや美味しいおやつを探しに行きたいです。",
-    "lastChecked": "2026-05-22"
-  },
-  {
-    "id": "event-101",
-    "title": "RKB福岡百道浜ドッグフェスタ2026",
-    "name": "RKB福岡百道浜ドッグフェスタ2026",
-    "area": "福岡県福岡市早良区",
-    "venue": "福岡県福岡市早良区百道浜 シーサイドももち&RKB放送会館エリア周辺",
-    "eventDate": "2026年3月14日(土)・15日(日)",
-    "date": "2026年3月14日(土)・15日(日)",
-    "officialUrl": "https://www.wonderful-dogfes.com/rkbfukuokamomochihamadf",
-    "snsUrl": "",
-    "mapQuery": "福岡県福岡市早良区百道浜 シーサイドももち&RKB放送会館エリア周辺",
-    "category": "event",
-    "tags": [
-      "dogAllowed"
-    ],
-    "dogPolicy": "全犬種OK",
-    "status": "upcoming",
-    "memo": "シーサイドももちで愛犬と人がつながるドッグフェスタ。入場無料。 Daisyと一緒に楽しみたいイベントです！",
-    "lastChecked": "2026-05-22"
-  },
-  {
-    "id": "event-121",
-    "title": "& My Dog ドッグマルシェ 2026 Spring 門司港レトロ",
-    "name": "& My Dog ドッグマルシェ 2026 Spring 門司港レトロ",
-    "area": "福岡県北九州市門司区",
-    "venue": "福岡県北九州市門司区 門司港レトロ 中央広場・親水広場",
-    "eventDate": "2026年3月14日（土）・15日（日）",
-    "date": "2026年3月14日（土）・15日（日）",
-    "officialUrl": "https://my-dog.me/",
-    "snsUrl": "",
-    "mapQuery": "福岡県北九州市門司区 門司港レトロ 中央広場・親水広場",
-    "category": "event",
-    "tags": [
-      "dogAllowed"
-    ],
-    "dogPolicy": "全犬種OK",
-    "status": "upcoming",
-    "memo": "歴史ある門司港を舞台にした人気のマルシェ。愛犬向けのこだわりフードや雑貨が集結し、潮風を感じながらのお散歩ショッピングが楽しめます。 Daisyの可愛いグッズや美味しいおやつを探しに行きたいです。",
-    "lastChecked": "2026-05-22"
-  },
-  {
-    "id": "event-128",
-    "title": "はぴわん！糸島おさんぽマルシェ&春の運動会",
-    "name": "はぴわん！糸島おさんぽマルシェ&春の運動会",
-    "area": "福岡県糸島市",
-    "venue": "福岡県糸島市志摩初1 志摩中央公園 プロムナード",
-    "eventDate": "2026年3月15日(日)",
-    "date": "2026年3月15日(日)",
-    "officialUrl": "https://www.instagram.com/happy_wanfes/",
-    "snsUrl": "",
-    "mapQuery": "福岡県糸島市志摩初1 志摩中央公園 プロムナード",
-    "category": "event",
-    "tags": [
-      "dogAllowed"
-    ],
-    "dogPolicy": "全犬種OK",
-    "status": "upcoming",
-    "memo": "お買い物やグルメ、運動や撮影を楽しみながら春を満喫できます。 Daisyの可愛い写真を撮りに行きたいです。",
-    "lastChecked": "2026-05-22"
-  },
-  {
-    "id": "event-102",
-    "title": "ワンリンピック2026",
-    "name": "ワンリンピック2026",
-    "area": "福岡県直方市",
-    "venue": "福岡県直方市 直方リバーサイドパーク（直方市役所側）",
-    "eventDate": "2026年3月28日（土）・29日（日）",
-    "date": "2026年3月28日（土）・29日（日）",
-    "officialUrl": "https://wanlympic.com/",
-    "snsUrl": "",
-    "mapQuery": "福岡県直方市 直方リバーサイドパーク（直方市役所側）",
-    "category": "event",
-    "tags": [
-      "dogAllowed"
-    ],
-    "dogPolicy": "全犬種OK",
-    "status": "upcoming",
-    "memo": "犬と楽しめるスポーツイベント。 Daisyも思いっきり走って遊べそうです！",
-    "lastChecked": "2026-05-22"
-  },
-  {
-    "id": "event-119",
-    "title": "わんらいふフェスティバル in Fukuoka",
-    "name": "わんらいふフェスティバル in Fukuoka",
-    "area": "福岡県福岡市中央区",
-    "venue": "福岡県福岡市中央区警固1-15-38 CAITAC SQUARE GARDEN（カイタック スクエア ガーデン）",
-    "eventDate": "2026年3月28日（土）・29日（日）",
-    "date": "2026年3月28日（土）・29日（日）",
-    "officialUrl": "https://wanlifefes.com/",
-    "snsUrl": "",
-    "mapQuery": "福岡県福岡市中央区警固1-15-38 CAITAC SQUARE GARDEN（カイタック スクエア ガーデン）",
-    "category": "event",
-    "tags": [
-      "dogAllowed"
-    ],
-    "dogPolicy": "全犬種OK",
-    "status": "upcoming",
-    "memo": "「体験が学びに、学びが健康に」をテーマにした都市型ドッグフェスティバル。獣医師による健康対談やQ&Aセッション、プロに学ぶ「しつけ教室」など。 Daisyと一緒に楽しみたいイベントです！",
-    "lastChecked": "2026-05-22"
-  },
-  {
-    "id": "event-117",
-    "title": "BULL JAM 九州 2026",
-    "name": "BULL JAM 九州 2026",
-    "area": "福岡県宗像市",
-    "venue": "福岡県宗像市久原400 宗像ユリックス 芝生広場",
-    "eventDate": "2026年3月29日（日）",
-    "date": "2026年3月29日（日）",
-    "officialUrl": "https://www.wonderful-dogfes.com/jamevent/bull",
-    "snsUrl": "",
-    "mapQuery": "福岡県宗像市久原400 宗像ユリックス 芝生広場",
-    "category": "event",
-    "tags": [
-      "dogAllowed"
-    ],
-    "dogPolicy": "全犬種OK",
-    "status": "upcoming",
-    "memo": "フレンチブルドッグやパグなど「鼻ペチャ犬」に特化した祭典。短頭種でも安心して着用できるハーネスや、春夏の暑さ対策グッズが先行販売されます。 Daisyの可愛いグッズや美味しいおやつを探しに行きたいです。",
-    "lastChecked": "2026-05-22"
-  },
-  {
-    "id": "event-116",
-    "title": "第6回BUHIマーケット",
-    "name": "第6回BUHIマーケット",
-    "area": "大分県杵築市山香町",
-    "venue": "大分県杵築市山香町大字日指1-1 るるパーク（大分農業文化公園）",
-    "eventDate": "2026年4月4日（土）・5日（日）",
-    "date": "2026年4月4日（土）・5日（日）",
-    "officialUrl": "https://www.instagram.com/p/DSKYgymiUK7/",
-    "snsUrl": "",
-    "mapQuery": "大分県杵築市山香町大字日指1-1 るるパーク（大分農業文化公園）",
-    "category": "event",
-    "tags": [
-      "dogAllowed"
-    ],
-    "dogPolicy": "全犬種OK",
-    "status": "upcoming",
-    "memo": "大分県「るるパーク」で開催される、2日間限定のビッグイベント。夏向けの洋服や冷感グッズ、雑貨、ペットフードからオーナー用アパレルまで多彩なショップが勢揃い。 Daisyの可愛いグッズや美味しいおやつを探しに行きたいです。",
-    "lastChecked": "2026-05-22"
-  },
-  {
-    "id": "event-109",
-    "title": "春のワンコイベント開催！《WAN🐾DERLAND》",
-    "name": "春のワンコイベント開催！《WAN🐾DERLAND》",
-    "area": "長崎県長崎市",
-    "venue": "長崎県長崎市 i+Land nagasaki",
-    "eventDate": "2026年4月11日～12日",
-    "date": "2026年4月11日～12日",
-    "officialUrl": "https://www.islandnagasaki.jp/event/event-7734/",
-    "snsUrl": "",
-    "mapQuery": "長崎県長崎市 i+Land nagasaki",
-    "category": "event",
-    "tags": [
-      "dogAllowed"
-    ],
-    "dogPolicy": "全犬種OK",
-    "status": "upcoming",
-    "memo": "NO DOG NO LIFE NAGASAKI主催のワンコイベント。キッチンカーやワンコグッズ販売など。 Daisyの可愛いグッズや美味しいおやつを探しに行きたいです。",
-    "lastChecked": "2026-05-22"
-  },
-  {
-    "id": "event-103",
-    "title": "福岡わんわん春まつり2026",
-    "name": "福岡わんわん春まつり2026",
-    "area": "福岡県",
-    "venue": "福岡県内 (詳細不明)",
-    "eventDate": "2026年4月18日(土) 〜 2026年4月19日(日)",
-    "date": "2026年4月18日(土) 〜 2026年4月19日(日)",
-    "officialUrl": "https://www.instagram.com/fukuoka_wanwan_event",
-    "snsUrl": "",
-    "mapQuery": "福岡県内 (詳細不明)",
-    "category": "event",
-    "tags": [
-      "dogAllowed"
-    ],
-    "dogPolicy": "全犬種OK",
-    "status": "upcoming",
-    "memo": "犬関連のイベント。入場料500円（高校生以下無料）。 Daisyと一緒に楽しみたいイベントです！",
-    "lastChecked": "2026-05-22"
-  },
-  {
-    "id": "event-105",
-    "title": "HappyとLoveをmelissaから わんにゃんフェスタ",
-    "name": "HappyとLoveをmelissaから わんにゃんフェスタ",
-    "area": "大分県大分市萩原緑町",
-    "venue": "大分県大分市萩原緑町1 平和市民公園",
-    "eventDate": "2026年4月19日(日)",
-    "date": "2026年4月19日(日)",
-    "officialUrl": "",
-    "snsUrl": "",
-    "mapQuery": "大分県大分市萩原緑町1 平和市民公園",
-    "category": "event",
-    "tags": [
-      "dogAllowed"
-    ],
-    "dogPolicy": "全犬種OK",
-    "status": "upcoming",
-    "memo": "わんちゃん・ねこちゃんと一緒に楽しめる、春の公園イベントです。 Daisyと一緒に楽しみたいイベントです！",
-    "lastChecked": "2026-05-22"
-  },
-  {
-    "id": "event-111",
-    "title": "日本犬フェスタ春季展",
-    "name": "日本犬フェスタ春季展",
-    "area": "鹿児島県鹿児島市",
-    "venue": "鹿児島県鹿児島市 かごしま健康の森公園（ファミリー広場）",
-    "eventDate": "2026年4月19日（日）",
-    "date": "2026年4月19日（日）",
-    "officialUrl": "https://nihonken-aigokai.jp/?p=497",
-    "snsUrl": "",
-    "mapQuery": "鹿児島県鹿児島市 かごしま健康の森公園（ファミリー広場）",
-    "category": "event",
-    "tags": [
-      "dogAllowed"
-    ],
-    "dogPolicy": "全犬種OK",
-    "status": "upcoming",
-    "memo": "鹿児島県内外の日本犬や豆柴が集まる春季展。 Daisyと一緒にお出かけしてみたいです。",
-    "lastChecked": "2026-05-22"
-  },
-  {
-    "id": "event-114",
-    "title": "わんこの集い",
-    "name": "わんこの集い",
-    "area": "佐賀県佐賀市",
-    "venue": "佐賀県佐賀市 どんどんどんの森",
-    "eventDate": "2026年5月5日(kidsday)",
-    "date": "2026年5月5日(kidsday)",
-    "officialUrl": "https://www.tsunasaga.jp/plaza/events/2026/05/d7dd32274003f7d3ff6a8b96c7c1d730b667fdd8.html",
-    "snsUrl": "",
-    "mapQuery": "佐賀県佐賀市 どんどんどんの森",
-    "category": "event",
-    "tags": [
-      "dogAllowed"
-    ],
-    "dogPolicy": "全犬種OK",
-    "status": "upcoming",
-    "memo": "佐賀市で開催される犬のイベント。 Daisyと一緒に楽しみたいイベントです！",
-    "lastChecked": "2026-05-22"
-  },
-  {
-    "id": "event-112",
-    "title": "いぬとぴあ 鹿児島出水 2026",
-    "name": "いぬとぴあ 鹿児島出水 2026",
-    "area": "鹿児島県出水市",
-    "venue": "鹿児島県出水市 出水市総合運動公園ウイングドーム",
-    "eventDate": "2026年5月9日(土)・10日(日)",
-    "date": "2026年5月9日(土)・10日(日)",
-    "officialUrl": "https://wannyan-smile.com/5738p/",
-    "snsUrl": "",
-    "mapQuery": "鹿児島県出水市 出水市総合運動公園ウイングドーム",
-    "category": "event",
-    "tags": [
-      "dogAllowed"
-    ],
-    "dogPolicy": "全犬種OK",
-    "status": "upcoming",
-    "memo": "鹿児島県出水市で開催される犬イベント。 Daisyと一緒に楽しみたいイベントです！",
-    "lastChecked": "2026-05-22"
-  },
-  {
-    "id": "event-131",
-    "title": "& My Dog 2026 Early Summer 門司港レトロ ドッグマルシェ＋キャットマルシェ",
-    "name": "& My Dog 2026 Early Summer 門司港レトロ ドッグマルシェ＋キャットマルシェ",
-    "area": "福岡県北九州市",
-    "venue": "福岡県北九州市 門司港レトロ 親水広場",
-    "eventDate": "2026年5月9日（土）・5月10日（日）",
-    "date": "2026年5月9日（土）・5月10日（日）",
-    "officialUrl": "",
-    "snsUrl": "",
-    "mapQuery": "福岡県北九州市 門司港レトロ 親水広場",
-    "category": "event",
-    "tags": [
-      "dogAllowed"
-    ],
-    "dogPolicy": "全犬種OK",
-    "status": "upcoming",
-    "memo": "門司港レトロで開催されるドッグマルシェとキャットマルシェの同時開催イベント。 Daisyの可愛いグッズや美味しいおやつを探しに行きたいです。",
-    "lastChecked": "2026-05-22"
-  },
-  {
     "id": "wonderful-minamikyushu-2026",
     "title": "わんだふる南九州2026",
     "name": "わんだふる南九州2026",
@@ -499,7 +19,7 @@
       "宮崎"
     ],
     "dogPolicy": "犬関連イベントとして確認。犬同伴条件・リード条件・入場ルールは公式情報で確認してください。",
-    "status": "official-confirmed",
+    "status": "upcoming",
     "memo": "開催日・会場・犬同伴条件は変更される場合があります。来場前に必ず公式情報を確認してください。",
     "lastChecked": "2026-05-21"
   },
@@ -544,6 +64,66 @@
     "lastChecked": "2026-05-22"
   },
   {
+    "id": "event-203",
+    "title": "ペテモポスターモデルオーディション撮影会",
+    "name": "ペテモポスターモデルオーディション撮影会",
+    "area": "熊本県上益城郡嘉島町",
+    "venue": "熊本県上益城郡嘉島町大字上島字長池2232 イオンモール熊本1階 ペテモ熊本店",
+    "eventDate": "2026年6月20日(土)",
+    "date": "2026年6月20日(土)",
+    "officialUrl": "https://event.photoreco.com/basepetphoto/202606aeonpetkumamoto/",
+    "snsUrl": "",
+    "mapQuery": "熊本県上益城郡嘉島町大字上島字長池2232 イオンモール熊本1階 ペテモ熊本店",
+    "category": "event",
+    "tags": [
+      "dogAllowed"
+    ],
+    "dogPolicy": "全犬種OK",
+    "status": "upcoming",
+    "memo": "新宿駅前の大型ビジョンに出るワンちゃんモデルのオーディション。 Daisyと一緒にお出かけしてみたいです。",
+    "lastChecked": "2026-05-22"
+  },
+  {
+    "id": "event-200",
+    "title": "門司港マルシェ&WAN GOODS",
+    "name": "門司港マルシェ&WAN GOODS",
+    "area": "福岡県北九州市",
+    "venue": "福岡県北九州市 門司港",
+    "eventDate": "2026年6月27日(土)・28日(日)",
+    "date": "2026年6月27日(土)・28日(日)",
+    "officialUrl": "https://www.instagram.com/p/DXB58vJCAAU/",
+    "snsUrl": "",
+    "mapQuery": "福岡県北九州市 門司港",
+    "category": "event",
+    "tags": [
+      "dogAllowed"
+    ],
+    "dogPolicy": "全犬種OK",
+    "status": "upcoming",
+    "memo": "WAN GOODSと同時開催のマルシェイベント Daisyの可愛いグッズや美味しいおやつを探しに行きたいです。",
+    "lastChecked": "2026-05-22"
+  },
+  {
+    "id": "event-204",
+    "title": "佐賀フェス",
+    "name": "佐賀フェス",
+    "area": "佐賀県有田町",
+    "venue": "佐賀県有田町 炎の博記念堂",
+    "eventDate": "2026年6月28日(日)",
+    "date": "2026年6月28日(日)",
+    "officialUrl": "https://www.instagram.com/p/DUzD_1oEurP/",
+    "snsUrl": "",
+    "mapQuery": "佐賀県有田町 炎の博記念堂",
+    "category": "event",
+    "tags": [
+      "dogAllowed"
+    ],
+    "dogPolicy": "全犬種OK",
+    "status": "upcoming",
+    "memo": "子供から大人まで楽しめるイベント。犬イベントであるかは要確認 Daisyと一緒にお出かけしてみたいです。",
+    "lastChecked": "2026-05-22"
+  },
+  {
     "id": "dog-expo-fukuoka-2026",
     "title": "DOG EXPO FUKUOKA 2026",
     "name": "DOG EXPO FUKUOKA 2026",
@@ -564,7 +144,7 @@
       "大型イベント"
     ],
     "dogPolicy": "犬関連イベントとして確認。会場ルール・入場条件・リード条件は公式情報で確認してください。",
-    "status": "official-confirmed",
+    "status": "upcoming",
     "memo": "公式Instagramは未確認のため、公式サイトを優先して確認してください。開催日・会場・犬同伴条件は変更される場合があります。来場前に必ず公式情報を確認してください。",
     "lastChecked": "2026-05-21"
   },
@@ -586,6 +166,26 @@
     "dogPolicy": "全犬種OK",
     "status": "upcoming",
     "memo": "国内最大級のペット総合イベント。 Daisyと一緒に楽しみたいイベントです！",
+    "lastChecked": "2026-05-22"
+  },
+  {
+    "id": "event-201",
+    "title": "& My Dog ドッグマルシェ＋関門シティ トワイライトマルシェ",
+    "name": "& My Dog ドッグマルシェ＋関門シティ トワイライトマルシェ",
+    "area": "福岡県北九州市",
+    "venue": "福岡県北九州市門司港レトロ親水広場",
+    "eventDate": "2026年9月11日(金)・12日(土)・13日(日)",
+    "date": "2026年9月11日(金)・12日(土)・13日(日)",
+    "officialUrl": "https://my-dog.me/",
+    "snsUrl": "",
+    "mapQuery": "福岡県北九州市門司港レトロ親水広場",
+    "category": "event",
+    "tags": [
+      "dogAllowed"
+    ],
+    "dogPolicy": "全犬種OK",
+    "status": "upcoming",
+    "memo": "愛犬と楽しく幸せな時間を過ごすためのドッグイベント Daisyと一緒にお出かけしてみたいです。",
     "lastChecked": "2026-05-22"
   },
   {
@@ -618,7 +218,487 @@
     "officialUrl": "https://oitabuhiland.com/",
     "officialSnsUrl": "https://www.instagram.com/oita_doggoland/",
     "lastChecked": "2026-05-21",
-    "status": "公式SNS要確認",
+    "status": "upcoming",
     "memo": "開催日・会場・犬同伴ルールは変更される可能性があります。参加前に必ず公式サイト・公式SNSで最新情報をご確認ください。"
+  },
+  {
+    "id": "event-126",
+    "title": "わんマルシェ（同時開催：第8回宮崎BUHI会）",
+    "name": "わんマルシェ（同時開催：第8回宮崎BUHI会）",
+    "area": "宮崎県東諸県郡国富町",
+    "venue": "宮崎県東諸県郡国富町深年4106-18 国富町 法華嶽公園ドッグラン広場（南芝生広場・北芝生広場）",
+    "eventDate": "2026年1月11日（日）",
+    "date": "2026年1月11日（日）",
+    "officialUrl": "https://www.instagram.com/miyazaki_buhikai/",
+    "snsUrl": "",
+    "mapQuery": "宮崎県東諸県郡国富町深年4106-18 国富町 法華嶽公園ドッグラン広場（南芝生広場・北芝生広場）",
+    "category": "event",
+    "tags": [
+      "dogAllowed"
+    ],
+    "dogPolicy": "全犬種OK",
+    "status": "ended",
+    "memo": "これまで宮崎BUHI会と同時開催されていたマルシェが、今回から『わんマルシェ』としてパワーアップ！出店数も増え、特定の犬種だけでなく一般の方や他犬種のわんちゃんも一緒にお買い物を楽しめるイベントです。 Daisyの可愛いグッズや美味しいおやつを探しに行きたいです。",
+    "lastChecked": "2026-05-22"
+  },
+  {
+    "id": "event-110",
+    "title": "あしあと🐾マルシェ",
+    "name": "あしあと🐾マルシェ",
+    "area": "長崎県長崎市",
+    "venue": "長崎県長崎市 i+Land nagasaki",
+    "eventDate": "2026年1月18日",
+    "date": "2026年1月18日",
+    "officialUrl": "https://www.islandnagasaki.jp/event/ashiato_marche/",
+    "snsUrl": "",
+    "mapQuery": "長崎県長崎市 i+Land nagasaki",
+    "category": "event",
+    "tags": [
+      "dogAllowed"
+    ],
+    "dogPolicy": "全犬種OK",
+    "status": "ended",
+    "memo": "保護犬・保護猫活動支援マルシェ。ワンちゃん関連のお店、フード販売、撮影会、お年玉抽選会。 Daisyの可愛いグッズや美味しいおやつを探しに行きたいです。",
+    "lastChecked": "2026-05-22"
+  },
+  {
+    "id": "event-113",
+    "title": "おばまワンワン朝市",
+    "name": "おばまワンワン朝市",
+    "area": "鹿児島県霧島市",
+    "venue": "鹿児島県霧島市 Obama Village（小浜ヴィレッジ）店舗前駐車場",
+    "eventDate": "2026年1月18日（日）",
+    "date": "2026年1月18日（日）",
+    "officialUrl": "https://www.instagram.com/obama_village/",
+    "snsUrl": "",
+    "mapQuery": "鹿児島県霧島市 Obama Village（小浜ヴィレッジ）店舗前駐車場",
+    "category": "event",
+    "tags": [
+      "dogAllowed"
+    ],
+    "dogPolicy": "全犬種OK",
+    "status": "ended",
+    "memo": "毎月恒例の朝市、1月は初のペットマルシェとして開催。 Daisyの可愛いグッズや美味しいおやつを探しに行きたいです。",
+    "lastChecked": "2026-05-22"
+  },
+  {
+    "id": "event-108",
+    "title": "DCMポスターモデルオーディション撮影会",
+    "name": "DCMポスターモデルオーディション撮影会",
+    "area": "熊本県熊本市中央区本山町",
+    "venue": "熊本県熊本市中央区本山町 DCMペット＆グリーン本山店",
+    "eventDate": "2026年1月24日",
+    "date": "2026年1月24日",
+    "officialUrl": "https://event.photoreco.com/dcm/202601pgmotoyama/",
+    "snsUrl": "",
+    "mapQuery": "熊本県熊本市中央区本山町 DCMペット＆グリーン本山店",
+    "category": "event",
+    "tags": [
+      "dogAllowed"
+    ],
+    "dogPolicy": "全犬種OK",
+    "status": "ended",
+    "memo": "「和」をテーマにしたプロカメラマン撮影会。ポスターモデル選出のチャンスも。新年の記念撮影に。要事前予約。 Daisyの可愛い写真を撮りに行きたいです。",
+    "lastChecked": "2026-05-22"
+  },
+  {
+    "id": "event-125",
+    "title": "コーギーズJAM 2026",
+    "name": "コーギーズJAM 2026",
+    "area": "福岡県宗像市",
+    "venue": "福岡県宗像市久原400 宗像ユリックス 芝生広場",
+    "eventDate": "2026年2月14日（土）",
+    "date": "2026年2月14日（土）",
+    "officialUrl": "https://www.instagram.com/doggies_mart/",
+    "snsUrl": "",
+    "mapQuery": "福岡県宗像市久原400 宗像ユリックス 芝生広場",
+    "category": "event",
+    "tags": [
+      "dogAllowed"
+    ],
+    "dogPolicy": "全犬種OK",
+    "status": "ended",
+    "memo": "九州各地からコーギーが集まるオフ会スタイルの大規模フェス。犬種特有の体型に合わせた「コーギー専用ウェア」の販売や、圧巻の集合写真撮影、お楽しみ抽選会などが予定されています。 Daisyの可愛いグッズや美味しいおやつを探しに行きたいです。",
+    "lastChecked": "2026-05-22"
+  },
+  {
+    "id": "event-124",
+    "title": "プードルJAM 九州 2026",
+    "name": "プードルJAM 九州 2026",
+    "area": "福岡県宗像市",
+    "venue": "福岡県宗像市久原400 宗像ユリックス 芝生広場",
+    "eventDate": "2026年2月15日（日）",
+    "date": "2026年2月15日（日）",
+    "officialUrl": "https://www.wonderful-dogfes.com/jamevent",
+    "snsUrl": "",
+    "mapQuery": "福岡県宗像市久原400 宗像ユリックス 芝生広場",
+    "category": "event",
+    "tags": [
+      "dogAllowed"
+    ],
+    "dogPolicy": "全犬種OK",
+    "status": "ended",
+    "memo": "九州最大級のプードルの祭典。トイ、ミニチュア、スタンダードなど全てのプードルが対象です。こだわりのトリミングサロンやセレクトショップが並び、スタイル維持のためのケアグッズも豊富に揃います。 Daisyの可愛いグッズや美味しいおやつを探しに行きたいです。",
+    "lastChecked": "2026-05-22"
+  },
+  {
+    "id": "event-115",
+    "title": "さがトキメキニャボ（猫と犬の日スペシャル）",
+    "name": "さがトキメキニャボ（猫と犬の日スペシャル）",
+    "area": "佐賀県佐賀市",
+    "venue": "佐賀県佐賀市 佐賀駅前交流広場",
+    "eventDate": "2026年2月21日（土）",
+    "date": "2026年2月21日（土）",
+    "officialUrl": "https://www.instagram.com/saga_tokimeki_marche/",
+    "snsUrl": "",
+    "mapQuery": "佐賀県佐賀市 佐賀駅前交流広場",
+    "category": "event",
+    "tags": [
+      "dogAllowed"
+    ],
+    "dogPolicy": "全犬種OK",
+    "status": "ended",
+    "memo": "2月22日の「猫の日」に合わせた犬猫マルシェ。 Daisyの可愛いグッズや美味しいおやつを探しに行きたいです。",
+    "lastChecked": "2026-05-22"
+  },
+  {
+    "id": "event-127",
+    "title": "ABURAYAMA WANT（あぶらやま わんと）",
+    "name": "ABURAYAMA WANT（あぶらやま わんと）",
+    "area": "福岡県福岡市南区",
+    "venue": "福岡県福岡市南区柏原710-2 ABURAYAMA FUKUOKA 牧場側",
+    "eventDate": "2026年2月21日(土)・22日(日)・23日(月・祝)",
+    "date": "2026年2月21日(土)・22日(日)・23日(月・祝)",
+    "officialUrl": "https://www.aburayama-fukuoka.com/want_26221/",
+    "snsUrl": "",
+    "mapQuery": "福岡県福岡市南区柏原710-2 ABURAYAMA FUKUOKA 牧場側",
+    "category": "event",
+    "tags": [
+      "dogAllowed"
+    ],
+    "dogPolicy": "全犬種OK",
+    "status": "ended",
+    "memo": "『犬としたい○○』がコンセプト。犬と犬・犬と人が一緒にしたいを叶えるイベントです。特設ドッグランや無料撮影会をはじめ、わんちゃんの雑貨・おやつの販売、ワークショップなど、全50店舗が大集合！ Daisyも思いっきり走って遊べそうです！",
+    "lastChecked": "2026-05-22"
+  },
+  {
+    "id": "event-123",
+    "title": "ポメラニアンJAM 九州 2026",
+    "name": "ポメラニアンJAM 九州 2026",
+    "area": "福岡県宗像市",
+    "venue": "福岡県宗像市久原400 宗像ユリックス 芝生広場",
+    "eventDate": "2026年2月28日（土）",
+    "date": "2026年2月28日（土）",
+    "officialUrl": "https://www.wonderful-dogfes.com/jamevent/pomeranian",
+    "snsUrl": "",
+    "mapQuery": "福岡県宗像市久原400 宗像ユリックス 芝生広場",
+    "category": "event",
+    "tags": [
+      "dogAllowed"
+    ],
+    "dogPolicy": "全犬種OK",
+    "status": "ended",
+    "memo": "昨年12月から延期となったファン待望の開催。ポメラニアンらしい華やかなフォトスポットが設置されるほか、軽量で機能的なリードやハーネスの展示販売が行われます。 Daisyの可愛いグッズや美味しいおやつを探しに行きたいです。",
+    "lastChecked": "2026-05-22"
+  },
+  {
+    "id": "event-122",
+    "title": "第5回 ワンちゃんDay",
+    "name": "第5回 ワンちゃんDay",
+    "area": "宮崎県宮崎市山崎町",
+    "venue": "宮崎県宮崎市山崎町浜山414-16 フローランテ宮崎",
+    "eventDate": "2026年3月8日（日）",
+    "date": "2026年3月8日（日）",
+    "officialUrl": "https://www.florante.or.jp/event-news/2026wantyan0308/",
+    "snsUrl": "",
+    "mapQuery": "宮崎県宮崎市山崎町浜山414-16 フローランテ宮崎",
+    "category": "event",
+    "tags": [
+      "dogAllowed"
+    ],
+    "dogPolicy": "全犬種OK",
+    "status": "ended",
+    "memo": "春の花々に囲まれた芝生広場を、愛犬とのんびりお散歩できる人気イベント。プロカメラマンによる撮影会やしつけ教室、人気ショップが集まる「ワンちゃん雑貨マルシェ」が開催されます。 Daisyの可愛いグッズや美味しいおやつを探しに行きたいです。",
+    "lastChecked": "2026-05-22"
+  },
+  {
+    "id": "event-101",
+    "title": "RKB福岡百道浜ドッグフェスタ2026",
+    "name": "RKB福岡百道浜ドッグフェスタ2026",
+    "area": "福岡県福岡市早良区",
+    "venue": "福岡県福岡市早良区百道浜 シーサイドももち&RKB放送会館エリア周辺",
+    "eventDate": "2026年3月14日(土)・15日(日)",
+    "date": "2026年3月14日(土)・15日(日)",
+    "officialUrl": "https://www.wonderful-dogfes.com/rkbfukuokamomochihamadf",
+    "snsUrl": "",
+    "mapQuery": "福岡県福岡市早良区百道浜 シーサイドももち&RKB放送会館エリア周辺",
+    "category": "event",
+    "tags": [
+      "dogAllowed"
+    ],
+    "dogPolicy": "全犬種OK",
+    "status": "ended",
+    "memo": "シーサイドももちで愛犬と人がつながるドッグフェスタ。入場無料。 Daisyと一緒に楽しみたいイベントです！",
+    "lastChecked": "2026-05-22"
+  },
+  {
+    "id": "event-121",
+    "title": "& My Dog ドッグマルシェ 2026 Spring 門司港レトロ",
+    "name": "& My Dog ドッグマルシェ 2026 Spring 門司港レトロ",
+    "area": "福岡県北九州市門司区",
+    "venue": "福岡県北九州市門司区 門司港レトロ 中央広場・親水広場",
+    "eventDate": "2026年3月14日（土）・15日（日）",
+    "date": "2026年3月14日（土）・15日（日）",
+    "officialUrl": "https://my-dog.me/",
+    "snsUrl": "",
+    "mapQuery": "福岡県北九州市門司区 門司港レトロ 中央広場・親水広場",
+    "category": "event",
+    "tags": [
+      "dogAllowed"
+    ],
+    "dogPolicy": "全犬種OK",
+    "status": "ended",
+    "memo": "歴史ある門司港を舞台にした人気のマルシェ。愛犬向けのこだわりフードや雑貨が集結し、潮風を感じながらのお散歩ショッピングが楽しめます。 Daisyの可愛いグッズや美味しいおやつを探しに行きたいです。",
+    "lastChecked": "2026-05-22"
+  },
+  {
+    "id": "event-128",
+    "title": "はぴわん！糸島おさんぽマルシェ&春の運動会",
+    "name": "はぴわん！糸島おさんぽマルシェ&春の運動会",
+    "area": "福岡県糸島市",
+    "venue": "福岡県糸島市志摩初1 志摩中央公園 プロムナード",
+    "eventDate": "2026年3月15日(日)",
+    "date": "2026年3月15日(日)",
+    "officialUrl": "https://www.instagram.com/happy_wanfes/",
+    "snsUrl": "",
+    "mapQuery": "福岡県糸島市志摩初1 志摩中央公園 プロムナード",
+    "category": "event",
+    "tags": [
+      "dogAllowed"
+    ],
+    "dogPolicy": "全犬種OK",
+    "status": "ended",
+    "memo": "お買い物やグルメ、運動や撮影を楽しみながら春を満喫できます。 Daisyの可愛い写真を撮りに行きたいです。",
+    "lastChecked": "2026-05-22"
+  },
+  {
+    "id": "event-102",
+    "title": "ワンリンピック2026",
+    "name": "ワンリンピック2026",
+    "area": "福岡県直方市",
+    "venue": "福岡県直方市 直方リバーサイドパーク（直方市役所側）",
+    "eventDate": "2026年3月28日（土）・29日（日）",
+    "date": "2026年3月28日（土）・29日（日）",
+    "officialUrl": "https://wanlympic.com/",
+    "snsUrl": "",
+    "mapQuery": "福岡県直方市 直方リバーサイドパーク（直方市役所側）",
+    "category": "event",
+    "tags": [
+      "dogAllowed"
+    ],
+    "dogPolicy": "全犬種OK",
+    "status": "ended",
+    "memo": "犬と楽しめるスポーツイベント。 Daisyも思いっきり走って遊べそうです！",
+    "lastChecked": "2026-05-22"
+  },
+  {
+    "id": "event-119",
+    "title": "わんらいふフェスティバル in Fukuoka",
+    "name": "わんらいふフェスティバル in Fukuoka",
+    "area": "福岡県福岡市中央区",
+    "venue": "福岡県福岡市中央区警固1-15-38 CAITAC SQUARE GARDEN（カイタック スクエア ガーデン）",
+    "eventDate": "2026年3月28日（土）・29日（日）",
+    "date": "2026年3月28日（土）・29日（日）",
+    "officialUrl": "https://wanlifefes.com/",
+    "snsUrl": "",
+    "mapQuery": "福岡県福岡市中央区警固1-15-38 CAITAC SQUARE GARDEN（カイタック スクエア ガーデン）",
+    "category": "event",
+    "tags": [
+      "dogAllowed"
+    ],
+    "dogPolicy": "全犬種OK",
+    "status": "ended",
+    "memo": "「体験が学びに、学びが健康に」をテーマにした都市型ドッグフェスティバル。獣医師による健康対談やQ&Aセッション、プロに学ぶ「しつけ教室」など。 Daisyと一緒に楽しみたいイベントです！",
+    "lastChecked": "2026-05-22"
+  },
+  {
+    "id": "event-117",
+    "title": "BULL JAM 九州 2026",
+    "name": "BULL JAM 九州 2026",
+    "area": "福岡県宗像市",
+    "venue": "福岡県宗像市久原400 宗像ユリックス 芝生広場",
+    "eventDate": "2026年3月29日（日）",
+    "date": "2026年3月29日（日）",
+    "officialUrl": "https://www.wonderful-dogfes.com/jamevent/bull",
+    "snsUrl": "",
+    "mapQuery": "福岡県宗像市久原400 宗像ユリックス 芝生広場",
+    "category": "event",
+    "tags": [
+      "dogAllowed"
+    ],
+    "dogPolicy": "全犬種OK",
+    "status": "ended",
+    "memo": "フレンチブルドッグやパグなど「鼻ペチャ犬」に特化した祭典。短頭種でも安心して着用できるハーネスや、春夏の暑さ対策グッズが先行販売されます。 Daisyの可愛いグッズや美味しいおやつを探しに行きたいです。",
+    "lastChecked": "2026-05-22"
+  },
+  {
+    "id": "event-116",
+    "title": "第6回BUHIマーケット",
+    "name": "第6回BUHIマーケット",
+    "area": "大分県杵築市山香町",
+    "venue": "大分県杵築市山香町大字日指1-1 るるパーク（大分農業文化公園）",
+    "eventDate": "2026年4月4日（土）・5日（日）",
+    "date": "2026年4月4日（土）・5日（日）",
+    "officialUrl": "https://www.instagram.com/p/DSKYgymiUK7/",
+    "snsUrl": "",
+    "mapQuery": "大分県杵築市山香町大字日指1-1 るるパーク（大分農業文化公園）",
+    "category": "event",
+    "tags": [
+      "dogAllowed"
+    ],
+    "dogPolicy": "全犬種OK",
+    "status": "ended",
+    "memo": "大分県「るるパーク」で開催される、2日間限定のビッグイベント。夏向けの洋服や冷感グッズ、雑貨、ペットフードからオーナー用アパレルまで多彩なショップが勢揃い。 Daisyの可愛いグッズや美味しいおやつを探しに行きたいです。",
+    "lastChecked": "2026-05-22"
+  },
+  {
+    "id": "event-109",
+    "title": "春のワンコイベント開催！《WAN🐾DERLAND》",
+    "name": "春のワンコイベント開催！《WAN🐾DERLAND》",
+    "area": "長崎県長崎市",
+    "venue": "長崎県長崎市 i+Land nagasaki",
+    "eventDate": "2026年4月11日～12日",
+    "date": "2026年4月11日～12日",
+    "officialUrl": "https://www.islandnagasaki.jp/event/event-7734/",
+    "snsUrl": "",
+    "mapQuery": "長崎県長崎市 i+Land nagasaki",
+    "category": "event",
+    "tags": [
+      "dogAllowed"
+    ],
+    "dogPolicy": "全犬種OK",
+    "status": "ended",
+    "memo": "NO DOG NO LIFE NAGASAKI主催のワンコイベント。キッチンカーやワンコグッズ販売など。 Daisyの可愛いグッズや美味しいおやつを探しに行きたいです。",
+    "lastChecked": "2026-05-22"
+  },
+  {
+    "id": "event-103",
+    "title": "福岡わんわん春まつり2026",
+    "name": "福岡わんわん春まつり2026",
+    "area": "福岡県",
+    "venue": "福岡県内 (詳細不明)",
+    "eventDate": "2026年4月18日(土) 〜 2026年4月19日(日)",
+    "date": "2026年4月18日(土) 〜 2026年4月19日(日)",
+    "officialUrl": "https://www.instagram.com/fukuoka_wanwan_event",
+    "snsUrl": "",
+    "mapQuery": "福岡県内 (詳細不明)",
+    "category": "event",
+    "tags": [
+      "dogAllowed"
+    ],
+    "dogPolicy": "全犬種OK",
+    "status": "ended",
+    "memo": "犬関連のイベント。入場料500円（高校生以下無料）。 Daisyと一緒に楽しみたいイベントです！",
+    "lastChecked": "2026-05-22"
+  },
+  {
+    "id": "event-105",
+    "title": "HappyとLoveをmelissaから わんにゃんフェスタ",
+    "name": "HappyとLoveをmelissaから わんにゃんフェスタ",
+    "area": "大分県大分市萩原緑町",
+    "venue": "大分県大分市萩原緑町1 平和市民公園",
+    "eventDate": "2026年4月19日(日)",
+    "date": "2026年4月19日(日)",
+    "officialUrl": "",
+    "snsUrl": "",
+    "mapQuery": "大分県大分市萩原緑町1 平和市民公園",
+    "category": "event",
+    "tags": [
+      "dogAllowed"
+    ],
+    "dogPolicy": "全犬種OK",
+    "status": "ended",
+    "memo": "わんちゃん・ねこちゃんと一緒に楽しめる、春の公園イベントです。 Daisyと一緒に楽しみたいイベントです！",
+    "lastChecked": "2026-05-22"
+  },
+  {
+    "id": "event-111",
+    "title": "日本犬フェスタ春季展",
+    "name": "日本犬フェスタ春季展",
+    "area": "鹿児島県鹿児島市",
+    "venue": "鹿児島県鹿児島市 かごしま健康の森公園（ファミリー広場）",
+    "eventDate": "2026年4月19日（日）",
+    "date": "2026年4月19日（日）",
+    "officialUrl": "https://nihonken-aigokai.jp/?p=497",
+    "snsUrl": "",
+    "mapQuery": "鹿児島県鹿児島市 かごしま健康の森公園（ファミリー広場）",
+    "category": "event",
+    "tags": [
+      "dogAllowed"
+    ],
+    "dogPolicy": "全犬種OK",
+    "status": "ended",
+    "memo": "鹿児島県内外の日本犬や豆柴が集まる春季展。 Daisyと一緒にお出かけしてみたいです。",
+    "lastChecked": "2026-05-22"
+  },
+  {
+    "id": "event-114",
+    "title": "わんこの集い",
+    "name": "わんこの集い",
+    "area": "佐賀県佐賀市",
+    "venue": "佐賀県佐賀市 どんどんどんの森",
+    "eventDate": "2026年5月5日(kidsday)",
+    "date": "2026年5月5日(kidsday)",
+    "officialUrl": "https://www.tsunasaga.jp/plaza/events/2026/05/d7dd32274003f7d3ff6a8b96c7c1d730b667fdd8.html",
+    "snsUrl": "",
+    "mapQuery": "佐賀県佐賀市 どんどんどんの森",
+    "category": "event",
+    "tags": [
+      "dogAllowed"
+    ],
+    "dogPolicy": "全犬種OK",
+    "status": "ended",
+    "memo": "佐賀市で開催される犬のイベント。 Daisyと一緒に楽しみたいイベントです！",
+    "lastChecked": "2026-05-22"
+  },
+  {
+    "id": "event-112",
+    "title": "いぬとぴあ 鹿児島出水 2026",
+    "name": "いぬとぴあ 鹿児島出水 2026",
+    "area": "鹿児島県出水市",
+    "venue": "鹿児島県出水市 出水市総合運動公園ウイングドーム",
+    "eventDate": "2026年5月9日(土)・10日(日)",
+    "date": "2026年5月9日(土)・10日(日)",
+    "officialUrl": "https://wannyan-smile.com/5738p/",
+    "snsUrl": "",
+    "mapQuery": "鹿児島県出水市 出水市総合運動公園ウイングドーム",
+    "category": "event",
+    "tags": [
+      "dogAllowed"
+    ],
+    "dogPolicy": "全犬種OK",
+    "status": "ended",
+    "memo": "鹿児島県出水市で開催される犬イベント。 Daisyと一緒に楽しみたいイベントです！",
+    "lastChecked": "2026-05-22"
+  },
+  {
+    "id": "event-131",
+    "title": "& My Dog 2026 Early Summer 門司港レトロ ドッグマルシェ＋キャットマルシェ",
+    "name": "& My Dog 2026 Early Summer 門司港レトロ ドッグマルシェ＋キャットマルシェ",
+    "area": "福岡県北九州市",
+    "venue": "福岡県北九州市 門司港レトロ 親水広場",
+    "eventDate": "2026年5月9日（土）・5月10日（日）",
+    "date": "2026年5月9日（土）・5月10日（日）",
+    "officialUrl": "",
+    "snsUrl": "",
+    "mapQuery": "福岡県北九州市 門司港レトロ 親水広場",
+    "category": "event",
+    "tags": [
+      "dogAllowed"
+    ],
+    "dogPolicy": "全犬種OK",
+    "status": "ended",
+    "memo": "門司港レトロで開催されるドッグマルシェとキャットマルシェの同時開催イベント。 Daisyの可愛いグッズや美味しいおやつを探しに行きたいです。",
+    "lastChecked": "2026-05-22"
   }
 ]
