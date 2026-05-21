@@ -1,0 +1,7 @@
+# Daisy Kyushu Dog Guide - ads.txt
+# Google AdSense
+# ※ AdSense申請後、実際のパブリッシャーIDに置き換えてください
+# google.com, pub-XXXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+
+# 楽天アフィリエイト（参考）
+# rakuten.co.jp, XXXXXXXXX, DIRECT
