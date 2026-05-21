@@ -498,11 +498,27 @@
     </article>`).join('');
   }
 
-  // ===== HOTELS =====
+  // ===== HOTELS（Firestoreクリック数で自動ソート）=====
   async function renderHotels(){
     const el=document.getElementById('hotels-list');if(!el)return;
     const hotels=await fetchJson('hotels.json');
-    el.innerHTML=hotels.slice(0,3).map(h=>`<article class="card">
+    let sortedHotels=[...hotels];
+    try{
+      const {initializeApp,getApps}=await import('https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js');
+      const {getFirestore,collection,getDocs}=await import('https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js');
+      const fbCfg={apiKey:'AIzaSyDRVtANI251gyQjY-okPAzlSYXTGpslwnQ',authDomain:'daisysamoyed-86dd8.firebaseapp.com',projectId:'daisysamoyed-86dd8',storageBucket:'daisysamoyed-86dd8.firebasestorage.app',messagingSenderId:'1061044129374',appId:'1:1061044129374:web:a117a6ed94a0eb6491aecf'};
+      const fbApp=getApps().length?getApps()[0]:initializeApp(fbCfg);
+      const db=getFirestore(fbApp);
+      const snap=await getDocs(collection(db,'clickStats'));
+      const clickMap={};
+      snap.forEach(d=>{const dat=d.data();if(dat.type==='hotel')clickMap[d.id]=dat.totalClicks||0;});
+      sortedHotels.sort((a,b)=>{
+        const idA='hotel_'+((a.rakutenTravelUrl||'').match(/HOTEL\/(\d+)/)||[])[1]||'';
+        const idB='hotel_'+((b.rakutenTravelUrl||'').match(/HOTEL\/(\d+)/)||[])[1]||'';
+        return (clickMap[idB]||0)-(clickMap[idA]||0);
+      });
+    }catch(e){/* Firestore未接続時はデフォルト順 */}
+    el.innerHTML=sortedHotels.slice(0,3).map(h=>`<article class="card">
       <div class="card-icon">🏨</div>
       <div class="card-title">${esc(h.name)}</div>
       <div class="card-meta"><span>📍 ${esc(h.area||'')}</span></div>
@@ -558,5 +574,37 @@
     renderProducts();
   });
 </script>
+
+  <!-- Firebase Tracker -->
+  <script type="module">
+    import { initTracker } from "firebase-tracker.js";
+    initTracker(document.title);
+  </script>
+  <script type="module">
+    import { trackRakutenClick } from "firebase-tracker.js";
+    // 動的に生成される楽天リンクを監視してクリック計測
+    const observer = new MutationObserver(() => {
+      document.querySelectorAll('a[href*="rakuten"]:not([data-rk-tracked]), a[href*="hb.afl"]:not([data-rk-tracked])').forEach(link => {
+        link.dataset.rkTracked = "1";
+        const href = link.href;
+        const hotelMatch = href.match(/HOTEL\/(\d+)/);
+        let itemId = hotelMatch ? `hotel_${hotelMatch[1]}` : `rk_${href.slice(-20).replace(/[^a-z0-9]/gi,'_')}`;
+        let itemTitle = link.closest('[data-hotel-name]')?.dataset.hotelName || link.textContent.trim() || itemId;
+        let itemType = hotelMatch ? 'hotel' : (link.closest('.rk-banner') ? 'banner' : 'product');
+        link.addEventListener('click', () => trackRakutenClick(itemId, itemTitle, itemType));
+      });
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+    // 初回実行
+    document.querySelectorAll('a[href*="rakuten"]:not([data-rk-tracked]), a[href*="hb.afl"]:not([data-rk-tracked])').forEach(link => {
+      link.dataset.rkTracked = "1";
+      const href = link.href;
+      const hotelMatch = href.match(/HOTEL\/(\d+)/);
+      let itemId = hotelMatch ? `hotel_${hotelMatch[1]}` : `rk_${href.slice(-20).replace(/[^a-z0-9]/gi,'_')}`;
+      let itemTitle = link.closest('[data-hotel-name]')?.dataset.hotelName || link.textContent.trim() || itemId;
+      let itemType = hotelMatch ? 'hotel' : (link.closest('.rk-banner') ? 'banner' : 'product');
+      link.addEventListener('click', () => trackRakutenClick(itemId, itemTitle, itemType));
+    });
+  </script>
 </body>
 </html>

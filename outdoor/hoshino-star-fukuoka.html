@@ -138,5 +138,37 @@
   </p>
   <p style="margin-top:12px;font-size:11px;opacity:.7;">※ このページには楽天アフィリエイト広告を含みます</p>
 </footer>
+
+  <!-- Firebase Tracker -->
+  <script type="module">
+    import { initTracker } from "../firebase-tracker.js";
+    initTracker(document.title);
+  </script>
+  <script type="module">
+    import { trackRakutenClick } from "../firebase-tracker.js";
+    // 動的に生成される楽天リンクを監視してクリック計測
+    const observer = new MutationObserver(() => {
+      document.querySelectorAll('a[href*="rakuten"]:not([data-rk-tracked]), a[href*="hb.afl"]:not([data-rk-tracked])').forEach(link => {
+        link.dataset.rkTracked = "1";
+        const href = link.href;
+        const hotelMatch = href.match(/HOTEL\/(\d+)/);
+        let itemId = hotelMatch ? `hotel_${hotelMatch[1]}` : `rk_${href.slice(-20).replace(/[^a-z0-9]/gi,'_')}`;
+        let itemTitle = link.closest('[data-hotel-name]')?.dataset.hotelName || link.textContent.trim() || itemId;
+        let itemType = hotelMatch ? 'hotel' : (link.closest('.rk-banner') ? 'banner' : 'product');
+        link.addEventListener('click', () => trackRakutenClick(itemId, itemTitle, itemType));
+      });
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+    // 初回実行
+    document.querySelectorAll('a[href*="rakuten"]:not([data-rk-tracked]), a[href*="hb.afl"]:not([data-rk-tracked])').forEach(link => {
+      link.dataset.rkTracked = "1";
+      const href = link.href;
+      const hotelMatch = href.match(/HOTEL\/(\d+)/);
+      let itemId = hotelMatch ? `hotel_${hotelMatch[1]}` : `rk_${href.slice(-20).replace(/[^a-z0-9]/gi,'_')}`;
+      let itemTitle = link.closest('[data-hotel-name]')?.dataset.hotelName || link.textContent.trim() || itemId;
+      let itemType = hotelMatch ? 'hotel' : (link.closest('.rk-banner') ? 'banner' : 'product');
+      link.addEventListener('click', () => trackRakutenClick(itemId, itemTitle, itemType));
+    });
+  </script>
 </body>
 </html>

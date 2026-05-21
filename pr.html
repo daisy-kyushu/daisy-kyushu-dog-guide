@@ -6,4 +6,36 @@ async function renderPlaces(file,target,weekend=false){const el=document.getElem
 async function renderHotels(){const el=document.getElementById('hotels-list');if(!el)return;const hotels=await fetchJson('hotels.json');el.innerHTML=hotels.map(h=>`<article class="card"><h2>${e(h.name)}</h2><p class="notice">${e(h.memo)}</p><p><span class="tag">エリア：${e(h.area)}</span><span class="tag">犬サイズ：${e(h.dogSize)}</span><span class="tag">客室：${e(h.roomWithDog)}</span><span class="tag ok">確認：${e(h.lastChecked)}</span></p><p><strong>検索ワード例：</strong>${e(h.searchKeyword)}</p><a class="button" href="${e(h.rakutenTravelUrl)}" target="_blank" rel="noopener">楽天トラベルを開く</a></article>`).join('')}
 function eventEnd(d){const m=String(d||'').match(/\d{4}-\d{2}-\d{2}/g);return m?m[m.length-1]:''}async function renderEvents(){const el=document.getElementById('events-list');if(!el)return;const today=new Date().toISOString().slice(0,10);const events=(await fetchJson('events.json')).filter(ev=>(eventEnd(ev.date)||'9999')>=today);el.innerHTML=events.length?events.map(ev=>`<article class="card"><h2>${e(ev.name)}</h2><p><span class="tag warn">開催日：${e(ev.date)}</span><span class="tag">エリア：${e(ev.area)}</span><span class="tag">会場：${e(ev.venue)}</span></p><p>${e(ev.memo)}</p><p class="notice">イベント情報は変更・中止になる場合があります。参加前に公式情報をご確認ください。</p><a class="button" href="${e(ev.officialUrl)}" target="_blank" rel="noopener">公式サイト</a><a class="button sub" href="${e(ev.officialSnsUrl)}" target="_blank" rel="noopener">公式SNS</a></article>`).join(''):'<article class="card"><h2>今後のイベントは準備中です</h2><p>確認でき次第、公式URL付きで追加します。</p></article>'}
 function productCard(p){const url=p.rakutenAffiliateUrl||p.normalUrl||('https://search.rakuten.co.jp/search/mall/'+encodeURIComponent(p.searchKeyword||p.productName)+'/');return `<article class="card"><div class="product-placeholder">🐾</div><h2>${e(p.productName)}</h2><p>${e(p.whyCandidate)}</p><p><span class="tag">${e(p.category)}</span><span class="tag ok">確認：${e(p.lastChecked)}</span></p><a class="button" href="${e(url)}" target="_blank" rel="noopener">楽天で探す</a></article>`}async function renderProducts(target='products-list',limit=99){const el=document.getElementById(target);if(!el)return;const products=await fetchJson('products.json');el.innerHTML=products.slice(0,limit).map(productCard).join('')}function diagnosis(){const el=document.getElementById('diagnosis');if(!el)return;el.innerHTML='<article class="card"><h2>Daisyおすすめ診断</h2><p>大型犬・車移動・抜け毛対策なら、車用シートカバー、吸水タオル、マナー袋がおすすめ候補です。</p><a class="button" href="checklist.html">おすすめグッズを見る</a></article>'}
-document.addEventListener('DOMContentLoaded',()=>{renderPlaces('spots.json','spots-list');renderPlaces('spots.json','weekend-list',true);renderPlaces('outdoor.json','outdoor-list');renderPlaces('spots.json','map-list');renderHotels();renderEvents();renderProducts('products-list');renderProducts('product-banners',8);diagnosis()})</script></body></html>
+document.addEventListener('DOMContentLoaded',()=>{renderPlaces('spots.json','spots-list');renderPlaces('spots.json','weekend-list',true);renderPlaces('outdoor.json','outdoor-list');renderPlaces('spots.json','map-list');renderHotels();renderEvents();renderProducts('products-list');renderProducts('product-banners',8);diagnosis()})</script>
+  <!-- Firebase Tracker -->
+  <script type="module">
+    import { initTracker } from "firebase-tracker.js";
+    initTracker(document.title);
+  </script>
+  <script type="module">
+    import { trackRakutenClick } from "firebase-tracker.js";
+    // 動的に生成される楽天リンクを監視してクリック計測
+    const observer = new MutationObserver(() => {
+      document.querySelectorAll('a[href*="rakuten"]:not([data-rk-tracked]), a[href*="hb.afl"]:not([data-rk-tracked])').forEach(link => {
+        link.dataset.rkTracked = "1";
+        const href = link.href;
+        const hotelMatch = href.match(/HOTEL\/(\d+)/);
+        let itemId = hotelMatch ? `hotel_${hotelMatch[1]}` : `rk_${href.slice(-20).replace(/[^a-z0-9]/gi,'_')}`;
+        let itemTitle = link.closest('[data-hotel-name]')?.dataset.hotelName || link.textContent.trim() || itemId;
+        let itemType = hotelMatch ? 'hotel' : (link.closest('.rk-banner') ? 'banner' : 'product');
+        link.addEventListener('click', () => trackRakutenClick(itemId, itemTitle, itemType));
+      });
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+    // 初回実行
+    document.querySelectorAll('a[href*="rakuten"]:not([data-rk-tracked]), a[href*="hb.afl"]:not([data-rk-tracked])').forEach(link => {
+      link.dataset.rkTracked = "1";
+      const href = link.href;
+      const hotelMatch = href.match(/HOTEL\/(\d+)/);
+      let itemId = hotelMatch ? `hotel_${hotelMatch[1]}` : `rk_${href.slice(-20).replace(/[^a-z0-9]/gi,'_')}`;
+      let itemTitle = link.closest('[data-hotel-name]')?.dataset.hotelName || link.textContent.trim() || itemId;
+      let itemType = hotelMatch ? 'hotel' : (link.closest('.rk-banner') ? 'banner' : 'product');
+      link.addEventListener('click', () => trackRakutenClick(itemId, itemTitle, itemType));
+    });
+  </script>
+</body></html>
