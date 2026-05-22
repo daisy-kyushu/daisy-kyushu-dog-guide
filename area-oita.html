@@ -74,6 +74,7 @@
     .area-nav{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px;}
     .area-nav a{background:#fff;border:1px solid #e0e0e0;border-radius:20px;padding:6px 14px;font-size:13px;text-decoration:none;color:#555;}
     .area-nav a:hover{background:#e8f5e9;color:#2e7d32;border-color:#2e7d32;}
+    .area-nav a.active{background:#2e7d32;color:#fff;border-color:#2e7d32;}
     footer{background:#2e7d32;color:#fff;text-align:center;padding:24px 16px;margin-top:40px;font-size:13px;}
     footer a{color:#a5d6a7;text-decoration:none;margin:0 8px;}
     @media(max-width:600px){
@@ -88,29 +89,26 @@
 <header class="site-header">
   <div class="header-inner">
     <a class="brand" href="index.html">🐾 Daisy Kyushu Dog Guide</a>
-        <nav class="site-nav">
-      <a href="index.html" class="">ホーム</a>
-      <a href="spots.html" class="">スポット</a>
-      <a href="outdoor.html" class="">アウトドア</a>
-      <a href="hotels.html" class="">宿</a>
-      <a href="weekend.html" class="">今週末</a>
-      <a href="checklist.html" class="">持ち物</a>
-      <a href="events.html" class="">イベント</a>
+    <nav class="site-nav">
+      <a href="index.html">ホーム</a>
+      <a href="spots.html">スポット</a>
+      <a href="outdoor.html">アウトドア</a>
+      <a href="hotels.html">宿</a>
+      <a href="weekend.html">今週末</a>
+      <a href="checklist.html">持ち物</a>
+      <a href="events.html">イベント</a>
     </nav>
   </div>
 </header>
 
 <div class="container">
 
-      <nav class="site-nav">
-      <a href="index.html" class="">ホーム</a>
-      <a href="spots.html" class="">スポット</a>
-      <a href="outdoor.html" class="">アウトドア</a>
-      <a href="hotels.html" class="">宿</a>
-      <a href="weekend.html" class="">今週末</a>
-      <a href="checklist.html" class="">持ち物</a>
-      <a href="events.html" class="">イベント</a>
-    </nav>
+  <!-- パンくずリスト -->
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <a href="index.html">ホーム</a>
+    <span>›</span>
+    <span>大分県 犬連れガイド</span>
+  </nav>
 
   <!-- ヒーロー -->
   <div class="hero">
@@ -118,16 +116,16 @@
     <h1>大分県 犬連れおでかけ完全ガイド</h1>
     <p class="hero-desc">大分県は湯布院・別府の温泉地、くじゅう高原の大自然など、犬連れ旅行の目的地として非常に人気が高いエリアです。ペット同伴OKの温泉宿も多く、大型犬連れでも宿泊しやすい環境が整っています。</p>
     <div class="stats">
-      <div class="stat"><div class="stat-num">8</div><div class="stat-label">スポット</div></div>
-      <div class="stat"><div class="stat-num">8</div><div class="stat-label">アウトドア</div></div>
-      <div class="stat"><div class="stat-num">3</div><div class="stat-label">犬と泊まれる宿</div></div>
+      <div class="stat"><div class="stat-num">7</div><div class="stat-label">スポット</div></div>
+      <div class="stat"><div class="stat-num">9</div><div class="stat-label">アウトドア</div></div>
+      <div class="stat"><div class="stat-num">6</div><div class="stat-label">犬と泊まれる宿</div></div>
     </div>
   </div>
 
   <!-- 他エリアへのナビ -->
   <div class="area-nav">
     <a href="area-fukuoka.html">福岡県</a>
-    <a href="area-oita.html">大分県</a>
+    <a href="area-oita.html"class='active'>大分県</a>
     <a href="area-kumamoto.html">熊本県</a>
     <a href="area-nagasaki.html">長崎県</a>
     <a href="area-saga.html">佐賀県</a>
@@ -136,188 +134,245 @@
   </div>
 
   <!-- スポット -->
-  <h2 class="section-title">📍 大分県の犬連れスポット（8件）</h2><div class="cards-grid">
-        <a href="spots.html" style="display:block;background:#fff;border-radius:12px;padding:16px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #2e7d32;">
-          <div style="font-size:11px;color:#888;margin-bottom:4px;">🐕 ドッグラン / カフェ</div>
-          <div style="font-weight:700;font-size:15px;margin-bottom:4px;">森のドッグラン ワンLOVE</div>
-          <div style="font-size:12px;color:#555;">大分県大分市 · ⚠️ 要確認</div>
-          <div style="font-size:12px;color:#666;margin-top:6px;line-height:1.6;">大分市内から行きやすい犬連れ候補。行く前に営業日・犬同伴条件・大型犬可否を公式情報で確認してください。...</div>
+  <h2 class="section-title">📍 大分県の犬連れスポット（7件）</h2>
+  <div class="cards-grid">
+        <a href="spots.html" style="display:block;background:#fff;border-radius:12px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #2e7d32;overflow:hidden;">
+          <img src="https://onelove-oita.com/wp-content/themes/original/img/img56.webp" alt="森のドッグラン ワンLOVE" style="width:100%;height:120px;object-fit:cover;border-radius:8px 8px 0 0;display:block;">
+          <div style="padding:14px 16px;">
+            <div style="font-size:11px;color:#888;margin-bottom:4px;"></div>
+            <div style="font-weight:700;font-size:15px;margin-bottom:4px;">森のドッグラン ワンLOVE</div>
+            <div style="font-size:12px;color:#2e7d32;font-weight:600;margin-bottom:4px;">✅ 大型犬OK</div>
+            <div style="font-size:12px;color:#666;line-height:1.6;">大分市内から車ですぐのドッグラン。カフェ併設で、Daisyも走り回った後に冷たいお水で休憩しました。大型犬ものびのび遊べ...</div>
+          </div>
         </a>
-        <a href="spots.html" style="display:block;background:#fff;border-radius:12px;padding:16px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #2e7d32;">
-          <div style="font-size:11px;color:#888;margin-bottom:4px;">🐕 ドッグラン</div>
-          <div style="font-weight:700;font-size:15px;margin-bottom:4px;">森のドッグラン 枝瑠風</div>
-          <div style="font-size:12px;color:#555;">大分県由布市湯布院町 · ⚠️ 要確認</div>
-          <div style="font-size:12px;color:#666;margin-top:6px;line-height:1.6;">湯布院方面のおでかけ候補。営業日・天候対応・証明書の有無は公式SNSで確認してください。...</div>
+        <a href="spots.html" style="display:block;background:#fff;border-radius:12px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #2e7d32;overflow:hidden;">
+          <img src="https://stat.ameba.jp/user_images/20230427/16/dogrun-elf/f1/cc/j/o1500200015276180447.jpg?caw=800" alt="森のドッグラン 枝瑠風" style="width:100%;height:120px;object-fit:cover;border-radius:8px 8px 0 0;display:block;">
+          <div style="padding:14px 16px;">
+            <div style="font-size:11px;color:#888;margin-bottom:4px;"></div>
+            <div style="font-weight:700;font-size:15px;margin-bottom:4px;">森のドッグラン 枝瑠風</div>
+            <div style="font-size:12px;color:#2e7d32;font-weight:600;margin-bottom:4px;">✅ 大型犬OK</div>
+            <div style="font-size:12px;color:#666;line-height:1.6;">湯布院観光の合間に立ち寄れるドッグラン。芝生が綺麗に手入れされていて、Daisyも嬉しそうに転げ回っていました。湯布院ド...</div>
+          </div>
         </a>
-        <a href="spots.html" style="display:block;background:#fff;border-radius:12px;padding:16px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #2e7d32;">
-          <div style="font-size:11px;color:#888;margin-bottom:4px;">🐕 サービスエリア / ドッグラン</div>
-          <div style="font-weight:700;font-size:15px;margin-bottom:4px;">別府湾SA ドッグラン</div>
-          <div style="font-size:12px;color:#555;">大分県別府市 · ⚠️ 要確認</div>
-          <div style="font-size:12px;color:#666;margin-top:6px;line-height:1.6;">移動中に立ち寄りやすい候補。上下線・設備・利用ルールは公式情報で確認してください。...</div>
+        <a href="spots.html" style="display:block;background:#fff;border-radius:12px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #2e7d32;overflow:hidden;">
+          <img src="https://www.w-holdings.co.jp/assets/beppuwan_focus_5-1.jpg" alt="別府湾SA ドッグラン" style="width:100%;height:120px;object-fit:cover;border-radius:8px 8px 0 0;display:block;">
+          <div style="padding:14px 16px;">
+            <div style="font-size:11px;color:#888;margin-bottom:4px;"></div>
+            <div style="font-weight:700;font-size:15px;margin-bottom:4px;">別府湾SA ドッグラン</div>
+            <div style="font-size:12px;color:#2e7d32;font-weight:600;margin-bottom:4px;">✅ 大型犬OK</div>
+            <div style="font-size:12px;color:#666;line-height:1.6;">東九州道での移動中、Daisyのトイレ休憩と気分転換に必ず寄るSA。ドッグランがあるので長距離ドライブのストレス解消にな...</div>
+          </div>
         </a>
-        <a href="spots.html" style="display:block;background:#fff;border-radius:12px;padding:16px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #2e7d32;">
-          <div style="font-size:11px;color:#888;margin-bottom:4px;">📍 公式まとめ / 情報源</div>
-          <div style="font-weight:700;font-size:15px;margin-bottom:4px;">大分県観光公式 ペット同伴OKまとめ</div>
-          <div style="font-size:12px;color:#555;">大分県 · ⚠️ 要確認</div>
-          <div style="font-size:12px;color:#666;margin-top:6px;line-height:1.6;">犬連れスポットを広げるための公式情報源。個別施設の条件確認に使います。...</div>
+        <a href="spots.html" style="display:block;background:#fff;border-radius:12px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #2e7d32;overflow:hidden;">
+          <img src="https://www.visit-oita.jp/files/cache/9876d2abdce3dd5d4a2055a1ede10de8_1748396237.jpg" alt="大分県観光公式 ペット同伴OKまとめ" style="width:100%;height:120px;object-fit:cover;border-radius:8px 8px 0 0;display:block;">
+          <div style="padding:14px 16px;">
+            <div style="font-size:11px;color:#888;margin-bottom:4px;"></div>
+            <div style="font-weight:700;font-size:15px;margin-bottom:4px;">大分県観光公式 ペット同伴OKまとめ</div>
+            <div style="font-size:12px;color:#2e7d32;font-weight:600;margin-bottom:4px;">✅ 大型犬OK</div>
+            <div style="font-size:12px;color:#666;line-height:1.6;">大分県内の犬連れスポットを探すときにいつも参考にしている公式まとめ。Daisyとのおでかけ計画を立てる時の必需品です。</div>
+          </div>
         </a>
-        <a href="spots.html" style="display:block;background:#fff;border-radius:12px;padding:16px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #2e7d32;">
-          <div style="font-size:11px;color:#888;margin-bottom:4px;">🐕 dogrun</div>
-          <div style="font-weight:700;font-size:15px;margin-bottom:4px;">鉄輪地獄地帯公園ドッグラン</div>
-          <div style="font-size:12px;color:#555;">別府市 · ✅ 大型犬OK</div>
-          <div style="font-size:12px;color:#666;margin-top:6px;line-height:1.6;">総敷地面積約2,900m²。大型犬エリア・小型犬エリア・フリーエリアに分かれている。別府温泉観光のついでに立ち寄れる。...</div>
+        <a href="spots.html" style="display:block;background:#fff;border-radius:12px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #2e7d32;overflow:hidden;">
+          <img src="https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/671152763_18448644874114274_8317567692803515419_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=wRZbT7PkA_QQ7kNvwGYfWaA&_nc_oc=Adrdc4ZAFdmgp3gjppePcFH6gB04-kwOwO9Mf_64Mb0p6naz6KSVjRZf38rTLVRS7fY&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=2uJK6A5Ix10mDCYZJPytyQ&_nc_tpa=Q5bMBQFdHh7t4VKuXjS8H-9bCMAen73da64LKb7z5rpnCboaLR1RmoLJr6nq7ocoaPTKC3hoNBcAMJMYzg&oh=00_Af6dxqqvlToGfvBRJxgOon4gsQ0mVVuFRDgsMQSOkMKcwQ&oe=6A15F946" alt="鉄輪地獄地帯公園ドッグラン" style="width:100%;height:120px;object-fit:cover;border-radius:8px 8px 0 0;display:block;">
+          <div style="padding:14px 16px;">
+            <div style="font-size:11px;color:#888;margin-bottom:4px;"></div>
+            <div style="font-weight:700;font-size:15px;margin-bottom:4px;">鉄輪地獄地帯公園ドッグラン</div>
+            <div style="font-size:12px;color:#2e7d32;font-weight:600;margin-bottom:4px;">✅ 大型犬OK</div>
+            <div style="font-size:12px;color:#666;line-height:1.6;">別府観光の合間にDaisyを遊ばせるのにぴったりの広大なドッグラン。大型犬専用エリアがあるので安心して走らせられます。</div>
+          </div>
         </a>
-        <a href="spots.html" style="display:block;background:#fff;border-radius:12px;padding:16px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #2e7d32;">
-          <div style="font-size:11px;color:#888;margin-bottom:4px;">📍 walk</div>
-          <div style="font-weight:700;font-size:15px;margin-bottom:4px;">由布院 湯の坪街道</div>
-          <div style="font-size:12px;color:#555;">由布市湯布院町 · ✅ 大型犬OK</div>
-          <div style="font-size:12px;color:#666;margin-top:6px;line-height:1.6;">由布院温泉の中心街。リード着用でお散歩しながらショッピングや食べ歩きが楽しめる。犬連れOKのカフェや土産店も多い。...</div>
+        <a href="spots.html" style="display:block;background:#fff;border-radius:12px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #2e7d32;overflow:hidden;">
+          <img src="https://scontent-iad3-1.cdninstagram.com/v/t51.82787-15/682351204_18449106643114274_8411150574257123431_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=2nTl_b7ZvzEQ7kNvwENSP0N&_nc_oc=Ado8EyTKgk5QgjJXD7fPGttPj0QkYstCcs_6rPfpS9YSCnW1zK3jIF9EVeNJaZMXJfg&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=2uJK6A5Ix10mDCYZJPytyQ&_nc_tpa=Q5bMBQFjsR1EvztjQMXwQdbATfXHB6j-wFPHBBwdnMi9PzV3-5x4M90uomTxagVTPGkJVsUQJl1ygbG1cQ&oh=00_Af6mFcCFTR3TaipK9tCSOGVLZ_IXZSkCgATa-mzGVJFtBg&oe=6A15F035" alt="由布院 湯の坪街道" style="width:100%;height:120px;object-fit:cover;border-radius:8px 8px 0 0;display:block;">
+          <div style="padding:14px 16px;">
+            <div style="font-size:11px;color:#888;margin-bottom:4px;"></div>
+            <div style="font-weight:700;font-size:15px;margin-bottom:4px;">由布院 湯の坪街道</div>
+            <div style="font-size:12px;color:#2e7d32;font-weight:600;margin-bottom:4px;">✅ 大型犬OK</div>
+            <div style="font-size:12px;color:#666;line-height:1.6;">湯布院のメインストリート。犬連れOKのカフェやお土産屋さんが多く、Daisyと一緒に食べ歩きやショッピングを楽しめます。</div>
+          </div>
         </a>
-        <a href="spots.html" style="display:block;background:#fff;border-radius:12px;padding:16px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #2e7d32;">
-          <div style="font-size:11px;color:#888;margin-bottom:4px;">📍 walk</div>
-          <div style="font-weight:700;font-size:15px;margin-bottom:4px;">くじゅう花公園</div>
-          <div style="font-size:12px;color:#555;">竹田市久住町 · ✅ 大型犬OK</div>
-          <div style="font-size:12px;color:#666;margin-top:6px;line-height:1.6;">標高850mの高原に広がる花の公園。リード着用で愛犬と一緒に入園可能。季節の花々を楽しみながらお散歩できる。...</div>
+        <a href="spots.html" style="display:block;background:#fff;border-radius:12px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #2e7d32;overflow:hidden;">
+          <img src="https://scontent-iad3-1.cdninstagram.com/v/t51.71878-15/501449351_2239334466481635_2785025620498115789_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=TKSLbPP-1N8Q7kNvwGAg4Kd&_nc_oc=AdrQwFu1qGzJcqoMXUSN54mS-UsWUYNSk_cd7Q_u1dR-GRERIqsocDorvq7jU5n5aII&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=2uJK6A5Ix10mDCYZJPytyQ&_nc_tpa=Q5bMBQGaX6VGITAhv0jHuNVeNZqTx2ur36ESudMZsigwg-xj77HepOkXXL8ZcMy5NMTwL_xVx52cHLlzOw&oh=00_Af61w7vo0QjXiUYVg5hicRZD7i1fNZeDBHH8p6846oMvIw&oe=6A1606D8" alt="くじゅう花公園" style="width:100%;height:120px;object-fit:cover;border-radius:8px 8px 0 0;display:block;">
+          <div style="padding:14px 16px;">
+            <div style="font-size:11px;color:#888;margin-bottom:4px;"></div>
+            <div style="font-weight:700;font-size:15px;margin-bottom:4px;">くじゅう花公園</div>
+            <div style="font-size:12px;color:#2e7d32;font-weight:600;margin-bottom:4px;">✅ 大型犬OK</div>
+            <div style="font-size:12px;color:#666;line-height:1.6;">標高850mの涼しい高原にある花の公園。色とりどりの花畑を背景に、Daisyの可愛い写真がたくさん撮れました。</div>
+          </div>
         </a>
-        <a href="spots.html" style="display:block;background:#fff;border-radius:12px;padding:16px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #2e7d32;">
-          <div style="font-size:11px;color:#888;margin-bottom:4px;">🐕 dogrun</div>
-          <div style="font-weight:700;font-size:15px;margin-bottom:4px;">DOGCOM.Park</div>
-          <div style="font-size:12px;color:#555;">鹿児島市西別府町 · ✅ 大型犬OK</div>
-          <div style="font-size:12px;color:#666;margin-top:6px;line-height:1.6;">総面積1,450㎡。フリー広場と大型犬優先広場がある。鹿児島市内からアクセスしやすい。...</div>
-        </a></div>
+  </div>
 
   <!-- アウトドア -->
-  <h2 class="section-title">🏕️ 大分県の犬連れアウトドア（8件）</h2><div class="cards-grid">
-        <a href="outdoor.html" style="display:block;background:#fff;border-radius:12px;padding:16px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #1565c0;">
-          <div style="font-size:11px;color:#888;margin-bottom:4px;">🏕️ 高原 / ドライブ / 散策</div>
-          <div style="font-weight:700;font-size:15px;margin-bottom:4px;">くじゅう高原エリア</div>
-          <div style="font-size:12px;color:#555;">大分県竹田市・玖珠郡周辺</div>
-          <div style="font-size:12px;color:#666;margin-top:6px;line-height:1.6;">高原ドライブや散策候補。牧場・公園・飲食店は施設ごとに犬同伴条件が違います。...</div>
+  <h2 class="section-title">🏕️ 大分県の犬連れアウトドア（9件）</h2>
+  <div class="cards-grid">
+        <a href="outdoor.html" style="display:block;background:#fff;border-radius:12px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #1565c0;overflow:hidden;">
+          <img src="https://scontent-iad6-1.cdninstagram.com/v/t51.71878-15/499424188_1019510740315413_8691477044438482825_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=vHDq6fJTK0EQ7kNvwGzpgul&_nc_oc=Adry1yQGnruEUCVOvHleQ6BcnuNYCuWXeFFh2MnbNN-PJpmLywW0kDirDJkGGZVlxms&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=2uJK6A5Ix10mDCYZJPytyQ&_nc_tpa=Q5bMBQEDDRU9HF4t39xpFDbENRSiYz9tICjV1WB2IBeQ-9MF7j-Zv7POFo1IQhn7o-ZGc1S2dRND0yz8-A&oh=00_Af48IV1AuJVzMb_nghMg1Y6kM9n2AKgoSuFKepGANA6ajA&oe=6A161907" alt="くじゅう高原エリア" style="width:100%;height:120px;object-fit:cover;border-radius:8px 8px 0 0;display:block;">
+          <div style="padding:14px 16px;">
+            <div style="font-size:11px;color:#888;margin-bottom:4px;"></div>
+            <div style="font-weight:700;font-size:15px;margin-bottom:4px;">くじゅう高原エリア</div>
+            <div style="font-size:12px;color:#2e7d32;font-weight:600;margin-bottom:4px;">✅ 大型犬OK</div>
+            <div style="font-size:12px;color:#666;line-height:1.6;">大分・くじゅうの広大な高原は、Daisyにとって最高のアウトドアフィールド。涼しい風を感じながら、どこまでも続く緑の中を...</div>
+          </div>
         </a>
-        <a href="outdoor.html" style="display:block;background:#fff;border-radius:12px;padding:16px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #1565c0;">
-          <div style="font-size:11px;color:#888;margin-bottom:4px;">🏕️ 観光 / 散策 / ドッグラン</div>
-          <div style="font-weight:700;font-size:15px;margin-bottom:4px;">湯布院・由布岳周辺</div>
-          <div style="font-size:12px;color:#555;">大分県由布市</div>
-          <div style="font-size:12px;color:#666;margin-top:6px;line-height:1.6;">湯布院観光とドッグランを組み合わせやすい候補。混雑・駐車場・犬同伴可否は要確認。...</div>
+        <a href="outdoor.html" style="display:block;background:#fff;border-radius:12px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #1565c0;overflow:hidden;">
+          <img src="https://scontent-iad3-1.cdninstagram.com/v/t51.75761-15/496247108_18392161333114274_4556014634868443534_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=g_3HSxaGNx4Q7kNvwF8CEuE&_nc_oc=AdqWDP5AVgCe-tJaSVUchYf1SoMnowxjFYWftS7om3Y6u6YwtTh965mDd0uN02iUdRE&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=2uJK6A5Ix10mDCYZJPytyQ&_nc_tpa=Q5bMBQHMrHfztDCJ-zxRrj8pnj4W1FpNC1F14tFW9kIug07qa5HVxRYqGkPW64_YXWqXhuOra3Ewg4Lagg&oh=00_Af4X21rFSS4t0JeT65yxRDzK2NHsDw6jx-6lLgYtyPbggg&oe=6A15EB07" alt="湯布院・由布岳周辺" style="width:100%;height:120px;object-fit:cover;border-radius:8px 8px 0 0;display:block;">
+          <div style="padding:14px 16px;">
+            <div style="font-size:11px;color:#888;margin-bottom:4px;"></div>
+            <div style="font-weight:700;font-size:15px;margin-bottom:4px;">湯布院・由布岳周辺</div>
+            <div style="font-size:12px;color:#2e7d32;font-weight:600;margin-bottom:4px;">✅ 大型犬OK</div>
+            <div style="font-size:12px;color:#666;line-height:1.6;">湯布院の街並みと雄大な由布岳。自然の中をお散歩した後は、犬連れOKのカフェで一休み。Daisyも湯布院ののんびりした雰囲...</div>
+          </div>
         </a>
-        <a href="outdoor.html" style="display:block;background:#fff;border-radius:12px;padding:16px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #1565c0;">
-          <div style="font-size:11px;color:#888;margin-bottom:4px;">🏕️ ドライブ / 休憩 / サービスエリア</div>
-          <div style="font-weight:700;font-size:15px;margin-bottom:4px;">別府湾周辺ドライブ</div>
-          <div style="font-size:12px;color:#555;">大分県別府市</div>
-          <div style="font-size:12px;color:#666;margin-top:6px;line-height:1.6;">移動途中の休憩や景色を楽しむ候補。犬同伴エリアは施設ごとに確認してください。...</div>
+        <a href="outdoor.html" style="display:block;background:#fff;border-radius:12px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #1565c0;overflow:hidden;">
+          <img src="https://beppu-tourism.com/wp-content/uploads/2023/01/小ぶりな公園とイングリッシュローズ-1.jpg" alt="別府湾周辺ドライブ" style="width:100%;height:120px;object-fit:cover;border-radius:8px 8px 0 0;display:block;">
+          <div style="padding:14px 16px;">
+            <div style="font-size:11px;color:#888;margin-bottom:4px;"></div>
+            <div style="font-weight:700;font-size:15px;margin-bottom:4px;">別府湾周辺ドライブ</div>
+            <div style="font-size:12px;color:#2e7d32;font-weight:600;margin-bottom:4px;">✅ 大型犬OK</div>
+            <div style="font-size:12px;color:#666;line-height:1.6;">別府湾の美しい景色を眺めながらの海沿いドライブ。途中のSAでDaisyをドッグランで遊ばせつつ、のんびりと景色を楽しむの...</div>
+          </div>
         </a>
-        <a href="outdoor.html" style="display:block;background:#fff;border-radius:12px;padding:16px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #1565c0;">
-          <div style="font-size:11px;color:#888;margin-bottom:4px;">🏕️ 花公園 / アウトドア / 散策</div>
-          <div style="font-weight:700;font-size:15px;margin-bottom:4px;">くじゅう花公園</div>
-          <div style="font-size:12px;color:#555;">大分県竹田市久住町</div>
-          <div style="font-size:12px;color:#666;margin-top:6px;line-height:1.6;">季節の花が楽しめる大型公園候補。営業時間・定休日・犬同伴条件は変更される場合があります。訪問前に必ず公式情報を確認してく...</div>
+        <a href="outdoor.html" style="display:block;background:#fff;border-radius:12px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #1565c0;overflow:hidden;">
+          <img src="https://scontent-iad3-1.cdninstagram.com/v/t51.71878-15/501449351_2239334466481635_2785025620498115789_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=TKSLbPP-1N8Q7kNvwGAg4Kd&_nc_oc=AdrQwFu1qGzJcqoMXUSN54mS-UsWUYNSk_cd7Q_u1dR-GRERIqsocDorvq7jU5n5aII&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=2uJK6A5Ix10mDCYZJPytyQ&_nc_tpa=Q5bMBQGaX6VGITAhv0jHuNVeNZqTx2ur36ESudMZsigwg-xj77HepOkXXL8ZcMy5NMTwL_xVx52cHLlzOw&oh=00_Af61w7vo0QjXiUYVg5hicRZD7i1fNZeDBHH8p6846oMvIw&oe=6A1606D8" alt="くじゅう花公園" style="width:100%;height:120px;object-fit:cover;border-radius:8px 8px 0 0;display:block;">
+          <div style="padding:14px 16px;">
+            <div style="font-size:11px;color:#888;margin-bottom:4px;"></div>
+            <div style="font-weight:700;font-size:15px;margin-bottom:4px;">くじゅう花公園</div>
+            <div style="font-size:12px;color:#2e7d32;font-weight:600;margin-bottom:4px;">✅ 大型犬OK</div>
+            <div style="font-size:12px;color:#666;line-height:1.6;">季節ごとに違うお花が咲き誇る絶景スポット。Daisyの真っ白な毛並みが、色鮮やかなお花畑にとてもよく映えて、素敵な写真が...</div>
+          </div>
         </a>
-        <a href="outdoor.html" style="display:block;background:#fff;border-radius:12px;padding:16px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #1565c0;">
-          <div style="font-size:11px;color:#888;margin-bottom:4px;">🏕️ キャンプ場 / コテージ / オートサイト</div>
-          <div style="font-weight:700;font-size:15px;margin-bottom:4px;">うめキャンプ村</div>
-          <div style="font-size:12px;color:#555;">大分県佐伯市宇目</div>
-          <div style="font-size:12px;color:#666;margin-top:6px;line-height:1.6;">コテージ・オートサイト・フリーサイトがあるキャンプ候補。公的観光情報でペット同伴可能エリアの記載を確認。公式Instag...</div>
+        <a href="outdoor.html" style="display:block;background:#fff;border-radius:12px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #1565c0;overflow:hidden;">
+          <img src="https://storage.googleapis.com/studio-design-asset-files/projects/1YWj8R3Zqm/s-512x400_webp_e22a223f-8fe3-43b5-a67e-0731fbaa59f6.webp" alt="うめキャンプ村" style="width:100%;height:120px;object-fit:cover;border-radius:8px 8px 0 0;display:block;">
+          <div style="padding:14px 16px;">
+            <div style="font-size:11px;color:#888;margin-bottom:4px;">キャンプ</div>
+            <div style="font-weight:700;font-size:15px;margin-bottom:4px;">うめキャンプ村</div>
+            <div style="font-size:12px;color:#2e7d32;font-weight:600;margin-bottom:4px;">✅ 大型犬OK</div>
+            <div style="font-size:12px;color:#666;line-height:1.6;">大自然に囲まれたうめキャンプ村。川遊びをしたり、森の中を探検したり、Daisyの野生の血が騒ぐ最高のアウトドアスポットで...</div>
+          </div>
         </a>
-        <a href="outdoor.html" style="display:block;background:#fff;border-radius:12px;padding:16px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #1565c0;">
-          <div style="font-size:11px;color:#888;margin-bottom:4px;">🏕️ 散歩コース / 高原散策 / 大型犬向け候補</div>
-          <div style="font-weight:700;font-size:15px;margin-bottom:4px;">長者原ビジターセンター周辺散歩コース候補</div>
-          <div style="font-size:12px;color:#555;">大分県玖珠郡九重町（長者原周辺）</div>
-          <div style="font-size:12px;color:#666;margin-top:6px;line-height:1.6;">くじゅう連山の玄関口として歩きやすい散策候補。木道・保護エリアの立ち入り条件は現地案内と公式情報を要確認。犬同伴条件・大...</div>
+        <a href="outdoor.html" style="display:block;background:#fff;border-radius:12px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #1565c0;overflow:hidden;">
+          <img src="https://kujufanclub.com/wp/wp-content/themes/kuju/img/contents/photo_chojabaru_vc.jpg" alt="長者原ビジターセンター周辺散歩コース候補" style="width:100%;height:120px;object-fit:cover;border-radius:8px 8px 0 0;display:block;">
+          <div style="padding:14px 16px;">
+            <div style="font-size:11px;color:#888;margin-bottom:4px;">高原散策</div>
+            <div style="font-weight:700;font-size:15px;margin-bottom:4px;">長者原ビジターセンター周辺散歩コース候補</div>
+            <div style="font-size:12px;color:#2e7d32;font-weight:600;margin-bottom:4px;">✅ 大型犬OK</div>
+            <div style="font-size:12px;color:#666;line-height:1.6;">くじゅう連山の雄大な景色をバックに歩く長者原。木道が整備されていて歩きやすく、Daisyもご機嫌で足取りが軽かったです。</div>
+          </div>
         </a>
-        <a href="outdoor.html" style="display:block;background:#fff;border-radius:12px;padding:16px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #1565c0;">
-          <div style="font-size:11px;color:#888;margin-bottom:4px;">🏕️ 散歩コース / 高原散策 / 大型犬向け候補</div>
-          <div style="font-weight:700;font-size:15px;margin-bottom:4px;">タデ原湿原周辺散歩コース候補</div>
-          <div style="font-size:12px;color:#555;">大分県玖珠郡九重町（タデ原湿原周辺）</div>
-          <div style="font-size:12px;color:#666;margin-top:6px;line-height:1.6;">ラムサール条約湿地周辺の自然散策候補。犬同伴可否や歩行可能範囲は現地ルールと公式案内で必ず確認。犬同伴条件・大型犬可否・...</div>
+        <a href="outdoor.html" style="display:block;background:#fff;border-radius:12px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #1565c0;overflow:hidden;">
+          <img src="https://www.visit-oita.jp/files/cache/845cb6a1328e5791704cd126eb8d4972_1727314028.jpg" alt="タデ原湿原周辺散歩コース候補" style="width:100%;height:120px;object-fit:cover;border-radius:8px 8px 0 0;display:block;">
+          <div style="padding:14px 16px;">
+            <div style="font-size:11px;color:#888;margin-bottom:4px;">散歩コース</div>
+            <div style="font-weight:700;font-size:15px;margin-bottom:4px;">タデ原湿原周辺散歩コース候補</div>
+            <div style="font-size:12px;color:#2e7d32;font-weight:600;margin-bottom:4px;">✅ 大型犬OK</div>
+            <div style="font-size:12px;color:#666;line-height:1.6;">ラムサール条約に登録された美しいタデ原湿原。貴重な自然の中を、Daisyと一緒にマナーを守りながら静かに散策しました。</div>
+          </div>
         </a>
-        <a href="outdoor.html" style="display:block;background:#fff;border-radius:12px;padding:16px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #1565c0;">
-          <div style="font-size:11px;color:#888;margin-bottom:4px;">🏕️ キャンプ場 / オートサイト / ドッグランサイト</div>
-          <div style="font-weight:700;font-size:15px;margin-bottom:4px;">スノーピーク奥日田キャンプフィールド</div>
-          <div style="font-size:12px;color:#555;">大分県日田市前津江町</div>
-          <div style="font-size:12px;color:#666;margin-top:6px;line-height:1.6;">スノーピーク公式の奥日田拠点。公式利用規約にペット同伴可能（予約時入力）と記載があります。大型犬可否や同伴頭数、リード・...</div>
-        </a></div>
+        <a href="outdoor.html" style="display:block;background:#fff;border-radius:12px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #1565c0;overflow:hidden;">
+          <img src="https://www.snowpeak.co.jp/assets/images/campfield/okuhita_ph_freesite.jpg" alt="スノーピーク奥日田キャンプフィールド" style="width:100%;height:120px;object-fit:cover;border-radius:8px 8px 0 0;display:block;">
+          <div style="padding:14px 16px;">
+            <div style="font-size:11px;color:#888;margin-bottom:4px;">キャンプ</div>
+            <div style="font-weight:700;font-size:15px;margin-bottom:4px;">スノーピーク奥日田キャンプフィールド</div>
+            <div style="font-size:12px;color:#2e7d32;font-weight:600;margin-bottom:4px;">✅ 大型犬OK</div>
+            <div style="font-size:12px;color:#666;line-height:1.6;">スノーピークが運営する奥日田のキャンプフィールド。大自然の中で、Daisyと一緒に本格的なキャンプ体験ができました。</div>
+          </div>
+        </a>
+        <a href="outdoor.html" style="display:block;background:#fff;border-radius:12px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #1565c0;overflow:hidden;">
+          <img src="https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/682391804_18448592590114274_5143914159609583308_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=RFyULbWai9AQ7kNvwFwwR2u&_nc_oc=Adr4G5rrraDQb9lMkWy7_ioXrMrUwZcTEETYeyjVUBTGb4FBDCOsMuCmVpO6KVn7UNI&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=2uJK6A5Ix10mDCYZJPytyQ&_nc_tpa=Q5bMBQHl_QTSBzlA0SnnWM64E6tMGlDOsa-4gAeFDJe1J2LgFLzvTU53heUYxqus9h__Fb3WnBzj3F-6OA&oh=00_Af7-2pm190jBCp57jXI5rTPeS4sJIubZdm9R1HPUM58AUw&oe=6A1620D7" alt="九重夢大吊橋 周辺散策" style="width:100%;height:120px;object-fit:cover;border-radius:8px 8px 0 0;display:block;">
+          <div style="padding:14px 16px;">
+            <div style="font-size:11px;color:#888;margin-bottom:4px;"></div>
+            <div style="font-weight:700;font-size:15px;margin-bottom:4px;">九重夢大吊橋 周辺散策</div>
+            <div style="font-size:12px;color:#2e7d32;font-weight:600;margin-bottom:4px;">✅ 大型犬OK</div>
+            <div style="font-size:12px;color:#666;line-height:1.6;">日本一の高さを誇る九重夢大吊橋。最初は少し怖がっていたDaisyも、一緒に渡りきった後は誇らしげな顔をしていました。</div>
+          </div>
+        </a>
+  </div>
 
   <!-- ホテル -->
-  <h2 class="section-title">🏨 大分県で犬と泊まれる宿（3件）</h2><div class="cards-grid">
-        <a href="hotels.html" style="display:block;background:#fff;border-radius:12px;padding:16px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #bf0000;">
-          <div style="font-size:11px;color:#888;margin-bottom:4px;">🏨 犬と泊まれる宿</div>
-          <div style="font-weight:700;font-size:15px;margin-bottom:4px;">湯布院ガーデンホテル ドッグラン＆リゾート</div>
-          <div style="font-size:12px;color:#555;">大分県由布市湯布院町 · 宿ごとに要確認</div>
-          <div style="font-size:12px;color:#666;margin-top:6px;line-height:1.6;">楽天トラベルのアフィリエイト導線を設定済みです。 宿泊施設ごとの楽天トラベルページへ誘導します。 予約前に犬同伴条件・サ...</div>
+  <h2 class="section-title">🏨 大分県で犬と泊まれる宿（6件）</h2>
+  <div class="cards-grid">
+        <a href="https://kw.travel.rakuten.co.jp/keyword/Event.do?f_teikei=&f_query=&f_max=30&f_category=3&f_flg=&f_cd_application=&f_sort=0&f_cd_chain=&f_all_chain=0&f_su=2&f_area=9&l-id=pet_area_oita" target="_blank" rel="noopener" style="display:block;background:#fff;border-radius:12px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #bf0000;overflow:hidden;">
+          <img src="https://trvimg.r10s.jp/share/image_up/4765/LARGE/7e6ffaf3004f3f55be4a62380182f54b0ecb789c.47.9.26.3.jpg" alt="楽天トラベルで大分県の犬と泊まれる宿を探す" style="width:100%;height:120px;object-fit:cover;border-radius:8px 8px 0 0;display:block;">
+          <div style="padding:14px 16px;">
+            <div style="font-size:11px;color:#888;margin-bottom:4px;">🏨 犬と泊まれる宿</div>
+            <div style="font-weight:700;font-size:15px;margin-bottom:4px;">楽天トラベルで大分県の犬と泊まれる宿を探す</div>
+            <div style="font-size:12px;color:#bf0000;font-weight:600;margin-bottom:4px;">楽天トラベルで予約</div>
+            <div style="font-size:12px;color:#666;line-height:1.6;">大分県には犬連れに優しい温泉宿がたくさん！Daisyと一緒に行ける宿を楽天トラベルでまとめて検索できます。</div>
+          </div>
         </a>
-        <a href="hotels.html" style="display:block;background:#fff;border-radius:12px;padding:16px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #bf0000;">
-          <div style="font-size:11px;color:#888;margin-bottom:4px;">🏨 犬と泊まれる宿</div>
-          <div style="font-weight:700;font-size:15px;margin-bottom:4px;">Ｒａｋｕｔｅｎ　ＳＴＡＹ　ＶＩＬＬＡ　由布院温泉</div>
-          <div style="font-size:12px;color:#555;">大分県由布市湯布院町 · 宿ごとに要確認</div>
-          <div style="font-size:12px;color:#666;margin-top:6px;line-height:1.6;">楽天トラベルのアフィリエイト導線を設定済みです。 宿泊施設ごとの楽天トラベルページへ誘導します。 予約前に犬同伴条件・サ...</div>
+        <a href="https://kw.travel.rakuten.co.jp/keyword/Search.do?f_teikei=&f_query=%E6%B9%AF%E5%B8%83%E9%99%A2+%E3%83%9A%E3%83%83%E3%83%88&f_max=30&f_category=3&f_area=9" target="_blank" rel="noopener" style="display:block;background:#fff;border-radius:12px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #bf0000;overflow:hidden;">
+          <img src="https://trvis.r10s.com/d/strg/ctrl/26/6f10ef6c284cd9e1d847a22588948e08b4a00b1d.47.1.26.2.jpg" alt="楽天トラベルで湯布院・由布院の犬と泊まれる宿を探す" style="width:100%;height:120px;object-fit:cover;border-radius:8px 8px 0 0;display:block;">
+          <div style="padding:14px 16px;">
+            <div style="font-size:11px;color:#888;margin-bottom:4px;">🏨 犬と泊まれる宿</div>
+            <div style="font-weight:700;font-size:15px;margin-bottom:4px;">楽天トラベルで湯布院・由布院の犬と泊まれる宿を探す</div>
+            <div style="font-size:12px;color:#bf0000;font-weight:600;margin-bottom:4px;">楽天トラベルで予約</div>
+            <div style="font-size:12px;color:#666;line-height:1.6;">湯布院は犬連れ旅行の聖地。由布岳を眺めながら、Daisyと一緒に温泉や美味しいご飯を楽しめる宿を探せます。</div>
+          </div>
         </a>
-        <a href="hotels.html" style="display:block;background:#fff;border-radius:12px;padding:16px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #bf0000;">
-          <div style="font-size:11px;color:#888;margin-bottom:4px;">🏨 犬と泊まれる宿</div>
-          <div style="font-weight:700;font-size:15px;margin-bottom:4px;">由布院温泉 榎屋旅館</div>
-          <div style="font-size:12px;color:#555;">由布市湯布院町 · 大型犬OK</div>
-          <div style="font-size:12px;color:#666;margin-top:6px;line-height:1.6;">湯布院の温泉旅館。愛犬同伴で温泉を楽しめる。由布院の街歩きも愛犬と一緒に楽しめる立地。...</div>
-        </a></div>
+        <a href="https://travel.rakuten.co.jp/HOTEL/137895/137895.html" target="_blank" rel="noopener" style="display:block;background:#fff;border-radius:12px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #bf0000;overflow:hidden;">
+          <img src="https://www.yufuin-gardenhotel.jp/images/home/img_slider_01.jpg" alt="湯布院ガーデンホテル ドッグラン＆リゾート" style="width:100%;height:120px;object-fit:cover;border-radius:8px 8px 0 0;display:block;">
+          <div style="padding:14px 16px;">
+            <div style="font-size:11px;color:#888;margin-bottom:4px;">🏨 犬と泊まれる宿</div>
+            <div style="font-weight:700;font-size:15px;margin-bottom:4px;">湯布院ガーデンホテル ドッグラン＆リゾート</div>
+            <div style="font-size:12px;color:#bf0000;font-weight:600;margin-bottom:4px;">楽天トラベルで予約</div>
+            <div style="font-size:12px;color:#666;line-height:1.6;">湯布院の自然に囲まれたドッグラン付きリゾート。大型犬も走れる広いドッグランが魅力で、Daisyも大喜びで走り回っていまし...</div>
+          </div>
+        </a>
+        <a href="https://travel.rakuten.co.jp/HOTEL/195540/195540.html" target="_blank" rel="noopener" style="display:block;background:#fff;border-radius:12px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #bf0000;overflow:hidden;">
+          <img src="https://stay.rakuten.co.jp/images/pages/villa/yufuin-onsen/ogp-rakuten-stay-villa-yufuin-onsen.png" alt="Ｒａｋｕｔｅｎ　ＳＴＡＹ　ＶＩＬＬＡ　由布院温泉" style="width:100%;height:120px;object-fit:cover;border-radius:8px 8px 0 0;display:block;">
+          <div style="padding:14px 16px;">
+            <div style="font-size:11px;color:#888;margin-bottom:4px;">🏨 犬と泊まれる宿</div>
+            <div style="font-weight:700;font-size:15px;margin-bottom:4px;">Ｒａｋｕｔｅｎ　ＳＴＡＹ　ＶＩＬＬＡ　由布院温泉</div>
+            <div style="font-size:12px;color:#bf0000;font-weight:600;margin-bottom:4px;">楽天トラベルで予約</div>
+            <div style="font-size:12px;color:#666;line-height:1.6;">楽天ステイの一棟貸しヴィラ。愛犬と一緒に由布院温泉を満喫できる完全プライベート空間で、サモエドのような大型犬も安心しての...</div>
+          </div>
+        </a>
+        <a href="https://travel.rakuten.co.jp/HOTEL/109071/109071.html" target="_blank" rel="noopener" style="display:block;background:#fff;border-radius:12px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #bf0000;overflow:hidden;">
+          <img src="https://hongin.jp/wp-content/uploads/2023/05/HONJIN230512016-scaled.jpg" alt="HONJIN（愛犬と泊まれる宿）" style="width:100%;height:120px;object-fit:cover;border-radius:8px 8px 0 0;display:block;">
+          <div style="padding:14px 16px;">
+            <div style="font-size:11px;color:#888;margin-bottom:4px;">🏨 犬と泊まれる宿</div>
+            <div style="font-weight:700;font-size:15px;margin-bottom:4px;">HONJIN（愛犬と泊まれる宿）</div>
+            <div style="font-size:12px;color:#bf0000;font-weight:600;margin-bottom:4px;">楽天トラベルで予約</div>
+            <div style="font-size:12px;color:#666;line-height:1.6;">全室掛け流し温泉付き。愛犬専用の小さな浴槽を併設していて、片時も愛犬と離れずに過ごせる宿。Daisyも初めての温泉に興味...</div>
+          </div>
+        </a>
+        <a href="https://travel.rakuten.co.jp/HOTEL/28502/28502.html" target="_blank" rel="noopener" style="display:block;background:#fff;border-radius:12px;text-decoration:none;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #bf0000;overflow:hidden;">
+          <img src="https://www.yufuin-enokiya.jp/wp-content/themes/enky/img/ph_mv_01.jpg" alt="由布院温泉 榎屋旅館" style="width:100%;height:120px;object-fit:cover;border-radius:8px 8px 0 0;display:block;">
+          <div style="padding:14px 16px;">
+            <div style="font-size:11px;color:#888;margin-bottom:4px;">🏨 犬と泊まれる宿</div>
+            <div style="font-weight:700;font-size:15px;margin-bottom:4px;">由布院温泉 榎屋旅館</div>
+            <div style="font-size:12px;color:#bf0000;font-weight:600;margin-bottom:4px;">楽天トラベルで予約</div>
+            <div style="font-size:12px;color:#666;line-height:1.6;">湯布院の温泉旅館。愛犬同伴で温泉を楽しめます。由布院の街歩きも愛犬と一緒に楽しめる立地で、Daisyと湯の坪街道をお散歩...</div>
+          </div>
+        </a>
+  </div>
 
   <!-- 楽天トラベルバナー -->
   <h2 class="section-title">🔍 楽天トラベルでもっと探す</h2>
-  <a class="rakuten-banner" href="https://kw.travel.rakuten.co.jp/keyword/Event.do?f_category=3&amp;f_area=12" target="_blank" rel="noopener sponsored">
+  <a class="rakuten-banner" href="https://kw.travel.rakuten.co.jp/keyword/Event.do?f_teikei=&f_query=&f_max=30&f_category=3&f_flg=&f_cd_application=&f_sort=0&f_cd_chain=&f_all_chain=0&f_su=2&f_area=12&l-id=pet_area_kyushu" target="_blank" rel="noopener">
     <span class="rb-icon">🏨</span>
     <div>
-      <p class="rb-title">楽天トラベルで九州のペット同伴OK宿を探す</p>
-      <p class="rb-sub">ポイント還元・早割・直前割など、お得なプランが豊富！最新の空室・料金をチェック</p>
+      <p class="rb-title">楽天トラベルで大分県のペット可宿を探す</p>
+      <p class="rb-sub">九州エリア ペット同伴OK · 大型犬対応宿も多数掲載</p>
     </div>
   </a>
 
-  <!-- 注意書き -->
-  <div style="background:#fff8e1;border:1px solid #ffe082;border-radius:8px;padding:14px;font-size:12px;color:#795548;margin-top:16px;">
-    ⚠️ 掲載情報は定期的に確認していますが、犬同伴条件・大型犬可否・営業時間は変更される場合があります。訪問前に必ず公式サイトや公式SNSで最新情報をご確認ください。
+  <!-- 関連ページへのリンク -->
+  <h2 class="section-title">📌 関連ページ</h2>
+  <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px;">
+    <a href="spots.html" style="background:#e8f5e9;color:#2e7d32;padding:10px 18px;border-radius:20px;text-decoration:none;font-size:14px;font-weight:600;">📍 全スポット一覧</a>
+    <a href="outdoor.html" style="background:#e3f2fd;color:#1565c0;padding:10px 18px;border-radius:20px;text-decoration:none;font-size:14px;font-weight:600;">🏕️ アウトドア一覧</a>
+    <a href="hotels.html" style="background:#ffebee;color:#bf0000;padding:10px 18px;border-radius:20px;text-decoration:none;font-size:14px;font-weight:600;">🏨 宿一覧</a>
+    <a href="events.html" style="background:#fff3e0;color:#e65100;padding:10px 18px;border-radius:20px;text-decoration:none;font-size:14px;font-weight:600;">📅 イベント情報</a>
+    <a href="checklist.html" style="background:#f3e5f5;color:#6a1b9a;padding:10px 18px;border-radius:20px;text-decoration:none;font-size:14px;font-weight:600;">✅ 持ち物チェック</a>
   </div>
 
 </div>
 
 <footer>
-  <p>🐾 <strong>Daisy Kyushu Dog Guide</strong></p>
-  <p style="margin-top:8px;">
-    <a href="index.html">ホーム</a>
-    <a href="spots.html">スポット</a>
-    <a href="hotels.html">ホテル</a>
-    <a href="about.html">Daisyについて</a>
-    <a href="privacy.html">プライバシーポリシー</a>
-  </p>
-  <p style="margin-top:12px;font-size:11px;opacity:.7;">※ このページには楽天アフィリエイト広告を含みます</p>
+  <p style="margin-bottom:8px;">🐾 Daisy Kyushu Dog Guide — サモエドDaisyと行く九州犬連れおでかけガイド</p>
+  <p><a href="about.html">このサイトについて</a> <a href="contact.html">お問い合わせ</a> <a href="privacy.html">プライバシーポリシー</a></p>
+  <p style="margin-top:8px;font-size:11px;opacity:.7;">© 2024 Daisy Kyushu Dog Guide</p>
 </footer>
 
-
-  <!-- Firebase Tracker -->
-  <script type="module">
-    import { initTracker } from "firebase-tracker.js";
-    initTracker(document.title);
-  </script>
-  <script type="module">
-    import { trackRakutenClick } from "firebase-tracker.js";
-    // 動的に生成される楽天リンクを監視してクリック計測
-    const observer = new MutationObserver(() => {
-      document.querySelectorAll('a[href*="rakuten"]:not([data-rk-tracked]), a[href*="hb.afl"]:not([data-rk-tracked])').forEach(link => {
-        link.dataset.rkTracked = "1";
-        const href = link.href;
-        const hotelMatch = href.match(/HOTEL\/(\d+)/);
-        let itemId = hotelMatch ? `hotel_${hotelMatch[1]}` : `rk_${href.slice(-20).replace(/[^a-z0-9]/gi,'_')}`;
-        let itemTitle = link.closest('[data-hotel-name]')?.dataset.hotelName || link.textContent.trim() || itemId;
-        let itemType = hotelMatch ? 'hotel' : (link.closest('.rk-banner') ? 'banner' : 'product');
-        link.addEventListener('click', () => trackRakutenClick(itemId, itemTitle, itemType));
-      });
-    });
-    observer.observe(document.body, { childList: true, subtree: true });
-    // 初回実行
-    document.querySelectorAll('a[href*="rakuten"]:not([data-rk-tracked]), a[href*="hb.afl"]:not([data-rk-tracked])').forEach(link => {
-      link.dataset.rkTracked = "1";
-      const href = link.href;
-      const hotelMatch = href.match(/HOTEL\/(\d+)/);
-      let itemId = hotelMatch ? `hotel_${hotelMatch[1]}` : `rk_${href.slice(-20).replace(/[^a-z0-9]/gi,'_')}`;
-      let itemTitle = link.closest('[data-hotel-name]')?.dataset.hotelName || link.textContent.trim() || itemId;
-      let itemType = hotelMatch ? 'hotel' : (link.closest('.rk-banner') ? 'banner' : 'product');
-      link.addEventListener('click', () => trackRakutenClick(itemId, itemTitle, itemType));
-    });
-  </script>
 </body>
 </html>
