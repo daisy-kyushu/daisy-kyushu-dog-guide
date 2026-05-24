@@ -1309,3 +1309,50 @@ h1, h2, h3, h4 {
   margin: 0;
   font-style: italic;
 }
+
+/* ===== カード信頼性バッジ ===== */
+.card-badges {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  z-index: 2;
+}
+.card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
+  white-space: nowrap;
+}
+.badge-dog {
+  background: rgba(34, 197, 94, 0.92);
+  color: #fff;
+}
+.badge-verified {
+  background: rgba(59, 130, 246, 0.92);
+  color: #fff;
+}
+.badge-daisy {
+  background: rgba(249, 115, 22, 0.92);
+  color: #fff;
+}
+
+/* ===== 大型犬OKフィルターボタン ===== */
+.filter-btn-dog {
+  background: #dcfce7 !important;
+  color: #166534 !important;
+  border-color: #86efac !important;
+  font-weight: 800 !important;
+}
+.filter-btn-dog.active {
+  background: #16a34a !important;
+  color: #fff !important;
+  border-color: #16a34a !important;
+}

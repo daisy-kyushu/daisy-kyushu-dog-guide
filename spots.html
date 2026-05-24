@@ -190,14 +190,15 @@
 
   <!-- フィルター -->
   <div class="filter-bar" id="filter-bar">
-    <button class="filter-btn active" onclick="filterSpots('all',this)">すべて</button>
-    <button class="filter-btn" onclick="filterSpots('福岡',this)">🌸 福岡</button>
-    <button class="filter-btn" onclick="filterSpots('大分',this)">♨️ 大分</button>
-    <button class="filter-btn" onclick="filterSpots('熊本',this)">🏯 熊本</button>
-    <button class="filter-btn" onclick="filterSpots('長崎',this)">⛵ 長崎</button>
-    <button class="filter-btn" onclick="filterSpots('宮崎',this)">🌊 宮崎</button>
-    <button class="filter-btn" onclick="filterSpots('鹿児島',this)">🌋 鹿児島</button>
-    <button class="filter-btn" onclick="filterSpots('佐賀',this)">🏺 佐賀</button>
+    <button class="filter-btn active" onclick="filterSpots('all',this)" data-filter="all">すべて</button>
+    <button class="filter-btn filter-btn-dog" onclick="filterSpots('large_dog_ok',this)" data-filter="large_dog_ok">🐕 大型犬OK</button>
+    <button class="filter-btn" onclick="filterSpots('福岡',this)" data-filter="福岡">🌸 福岡</button>
+    <button class="filter-btn" onclick="filterSpots('大分',this)" data-filter="大分">♨️ 大分</button>
+    <button class="filter-btn" onclick="filterSpots('熊本',this)" data-filter="熊本">🏯 熊本</button>
+    <button class="filter-btn" onclick="filterSpots('長崎',this)" data-filter="長崎">⛵ 長崎</button>
+    <button class="filter-btn" onclick="filterSpots('宮崎',this)" data-filter="宮崎">🌊 宮崎</button>
+    <button class="filter-btn" onclick="filterSpots('鹿児島',this)" data-filter="鹿児島">🌋 鹿児島</button>
+    <button class="filter-btn" onclick="filterSpots('佐賀',this)" data-filter="佐賀">🏺 佐賀</button>
   </div>
 
   <div class="search-box">
@@ -257,6 +258,11 @@ function filterSpots(area, btn) {
   renderSpots();
 }
 
+function isLargeDogOk(s) {
+  const ld = (s.large_dog || s.largeDog || '').toLowerCase();
+  return ld.includes('ok') || ld.includes('大型犬ok') || ld.includes('大型犬可');
+}
+
 function searchSpots(q) {
   currentSearch = q.toLowerCase();
   renderSpots();
@@ -264,7 +270,11 @@ function searchSpots(q) {
 
 function renderSpots() {
   let items = allSpots;
-  if (currentFilter !== 'all') items = items.filter(s => (s.area||'').includes(currentFilter));
+  if (currentFilter === 'large_dog_ok') {
+    items = items.filter(s => isLargeDogOk(s));
+  } else if (currentFilter !== 'all') {
+    items = items.filter(s => (s.area||'').includes(currentFilter));
+  }
   if (currentSearch) items = items.filter(s =>
     (s.name||'').toLowerCase().includes(currentSearch) ||
     (s.area||'').toLowerCase().includes(currentSearch) ||
@@ -275,20 +285,30 @@ function renderSpots() {
     grid.innerHTML = '<p class="text-muted" style="padding:20px">該当するスポットが見つかりませんでした</p>';
     return;
   }
-  grid.innerHTML = items.map(s => `
+  grid.innerHTML = items.map(s => {
+    const largeDogOk = isLargeDogOk(s);
+    const isVerified = s.lastChecked && s.lastChecked >= '2026-01-01';
+    const hasComment = !!s.daisy_comment;
+    const badges = [];
+    if (largeDogOk) badges.push(`<span class="card-badge badge-dog">🐕 大型犬OK</span>`);
+    if (isVerified) badges.push(`<span class="card-badge badge-verified">✓ 2026年確認済</span>`);
+    if (hasComment) badges.push(`<span class="card-badge badge-daisy">🐾 Daisy体験</span>`);
+    return `
     <div class="card" onclick="openModal(this.dataset.spot)" data-spot='${JSON.stringify(s).replace(/'/g,"&#39;")}'>
-      <div class="card-thumb" style="height:140px;">${s.image ? `<img src="${s.image}" alt="${s.name}" onerror="this.parentElement.innerHTML='🌿'" loading="lazy" style="width:100%;height:100%;object-fit:cover;">` : (s.emoji || '🌿')}</div>
+      <div class="card-thumb" style="height:140px;position:relative;">
+        ${s.image ? `<img src="${s.image}" alt="${s.name}" onerror="this.parentElement.querySelector('img').style.display='none'" loading="lazy" style="width:100%;height:100%;object-fit:cover;">` : `<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;background:linear-gradient(135deg,#f0faf4,#e8f5e9);">${s.emoji||'🌿'}</div>`}
+        ${badges.length ? `<div class="card-badges">${badges.join('')}</div>` : ''}
+      </div>
       <div class="card-body">
         <h3 class="card-title">${esc(s.name)}</h3>
         <div class="card-meta">
           <span class="tag">${esc(s.area||'九州')}</span>
           ${s.type?`<span class="tag tag-amber">${esc(s.type)}</span>`:s.category?`<span class="tag tag-amber">${esc(s.category)}</span>`:''}
-          ${s.dogAllowed?`<span class="tag tag-gray">犬同伴:${esc(s.dogAllowed)}</span>`:''}
         </div>
         <p class="card-desc">${esc(s.memo||s.description||s.desc||'')}</p>
       </div>
-    </div>
-  `).join('');
+    </div>`;
+  }).join('');
 }
 
 function openModal(jsonStr) {
