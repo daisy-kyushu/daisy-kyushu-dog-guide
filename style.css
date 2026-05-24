@@ -1173,8 +1173,9 @@ h1, h2, h3, h4 {
   .area-grid { grid-template-columns: repeat(3, 1fr); }
   .hero { border-radius: var(--r-lg); }
   .hero h1 { font-size: 1.7rem; }
-  .site-nav { gap: 2px; }
-  .site-nav a { font-size: 12px; padding: 5px 8px; }
+  .site-nav { gap: 1px; flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .site-nav::-webkit-scrollbar { display: none; }
+  .site-nav a { font-size: 11px; padding: 4px 7px; white-space: nowrap; flex-shrink: 0; }
   .modal-sheet { border-radius: var(--r-lg) var(--r-lg) 0 0; }
   .checklist-grid { grid-template-columns: 1fr; }
 }
