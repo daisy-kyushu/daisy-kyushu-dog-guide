@@ -68,7 +68,37 @@
   </url>
   <url>
     <loc>https://daisy-kyushu.github.io/daisy-kyushu-dog-guide/area-oita.html</loc>
-    <lastmod>2026-05-20</lastmod>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daisy-kyushu.github.io/daisy-kyushu-dog-guide/oita-dogrun.html</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daisy-kyushu.github.io/daisy-kyushu-dog-guide/oita-cafe.html</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daisy-kyushu.github.io/daisy-kyushu-dog-guide/oita-hotels.html</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daisy-kyushu.github.io/daisy-kyushu-dog-guide/oita-outdoor.html</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daisy-kyushu.github.io/daisy-kyushu-dog-guide/oita-emergency.html</loc>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

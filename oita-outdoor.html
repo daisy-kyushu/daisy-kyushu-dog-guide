@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>大分県 犬連れキャンプ・アウトドア完全ガイド | Daisyと九州おでかけガイド</title>
+  <meta name="description" content="大分県で犬と一緒に楽しめるキャンプ場・ハイキングコース・アウトドアスポット11選。くじゅう・日田・佐伯など各エリアの詳細情報、料金・設備・ペット可条件を徹底解説。">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .hero-oita-outdoor {
+      background: linear-gradient(135deg, #2d6a4f 0%, #40916c 50%, #74c69d 100%);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero-oita-outdoor h1 { font-size: 2.2rem; margin-bottom: 15px; }
+    .hero-oita-outdoor p { font-size: 1.1rem; opacity: 0.9; max-width: 700px; margin: 0 auto 20px; }
+    .badge-row { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 15px; }
+    .badge { background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.4); border-radius: 20px; padding: 6px 16px; font-size: 0.9rem; }
+    .area-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin: 20px 0; }
+    .area-tab { padding: 8px 18px; border-radius: 20px; border: 2px solid #2d6a4f; background: white; color: #2d6a4f; cursor: pointer; font-size: 0.9rem; transition: all 0.2s; }
+    .area-tab.active, .area-tab:hover { background: #2d6a4f; color: white; }
+    .camp-card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+      margin-bottom: 30px;
+      border-left: 5px solid #40916c;
+    }
+    .camp-card-header {
+      background: linear-gradient(135deg, #d8f3dc, #b7e4c7);
+      padding: 20px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .camp-name { font-size: 1.4rem; font-weight: bold; color: #1b4332; }
+    .camp-area { font-size: 0.85rem; color: #40916c; font-weight: bold; }
+    .camp-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+    .tag { padding: 4px 10px; border-radius: 12px; font-size: 0.78rem; font-weight: bold; }
+    .tag-free { background: #d4edda; color: #155724; }
+    .tag-paid { background: #fff3cd; color: #856404; }
+    .tag-dogrun { background: #cce5ff; color: #004085; }
+    .tag-large { background: #f8d7da; color: #721c24; }
+    .tag-river { background: #d1ecf1; color: #0c5460; }
+    .tag-mountain { background: #e2d9f3; color: #4a235a; }
+    .camp-card-body { padding: 20px 25px; }
+    .camp-info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin-bottom: 15px;
+    }
+    .info-item { display: flex; align-items: flex-start; gap: 8px; }
+    .info-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 2px; }
+    .info-content { font-size: 0.9rem; color: #555; }
+    .info-label { font-weight: bold; color: #333; font-size: 0.85rem; }
+    .pet-rules {
+      background: #f0fff4;
+      border: 1px solid #b7e4c7;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 15px 0;
+    }
+    .pet-rules h4 { color: #1b4332; margin-bottom: 10px; font-size: 0.95rem; }
+    .pet-rules ul { margin: 0; padding-left: 20px; }
+    .pet-rules li { font-size: 0.88rem; color: #555; margin-bottom: 5px; }
+    .daisy-comment {
+      background: linear-gradient(135deg, #fff9e6, #fff3cd);
+      border-left: 4px solid #ffc107;
+      border-radius: 0 10px 10px 0;
+      padding: 12px 15px;
+      margin: 12px 0;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .daisy-comment::before { content: "🐾 Daisyコメント："; font-weight: bold; color: #856404; }
+    .map-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #2d6a4f;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.88rem;
+      margin-top: 10px;
+    }
+    .map-btn:hover { background: #1b4332; }
+    .section-title {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #1b4332;
+      border-bottom: 3px solid #40916c;
+      padding-bottom: 10px;
+      margin: 40px 0 25px;
+    }
+    .hiking-card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      padding: 25px;
+      margin-bottom: 25px;
+      border-top: 4px solid #74c69d;
+    }
+    .hiking-name { font-size: 1.3rem; font-weight: bold; color: #1b4332; margin-bottom: 10px; }
+    .difficulty-bar { display: flex; gap: 4px; margin: 8px 0; }
+    .diff-dot { width: 14px; height: 14px; border-radius: 50%; }
+    .diff-filled { background: #2d6a4f; }
+    .diff-empty { background: #d8f3dc; }
+    .tips-box {
+      background: #e8f5e9;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+    .tips-box h3 { color: #1b4332; margin-bottom: 15px; }
+    .tips-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
+    .tip-item { background: white; border-radius: 8px; padding: 15px; }
+    .tip-item h4 { color: #2d6a4f; margin-bottom: 8px; font-size: 0.95rem; }
+    .tip-item p { font-size: 0.88rem; color: #555; margin: 0; }
+    .warning-box {
+      background: #fff3cd;
+      border: 1px solid #ffc107;
+      border-radius: 10px;
+      padding: 15px 20px;
+      margin: 20px 0;
+    }
+    .warning-box h4 { color: #856404; margin-bottom: 10px; }
+    .warning-box ul { margin: 0; padding-left: 20px; }
+    .warning-box li { font-size: 0.9rem; color: #555; margin-bottom: 6px; }
+    .season-guide {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin: 20px 0;
+    }
+    .season-card { border-radius: 12px; padding: 20px; }
+    .season-spring { background: linear-gradient(135deg, #fce4ec, #f8bbd9); }
+    .season-summer { background: linear-gradient(135deg, #e3f2fd, #bbdefb); }
+    .season-autumn { background: linear-gradient(135deg, #fff3e0, #ffe0b2); }
+    .season-winter { background: linear-gradient(135deg, #e8eaf6, #c5cae9); }
+    .season-card h3 { font-size: 1.1rem; margin-bottom: 10px; }
+    .season-card p { font-size: 0.88rem; color: #555; }
+    .checklist-box {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      padding: 25px;
+      margin: 20px 0;
+    }
+    .checklist-box h3 { color: #1b4332; margin-bottom: 15px; }
+    .checklist-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+    .check-item { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; color: #555; }
+    .check-item::before { content: "☐"; color: #40916c; font-size: 1.1rem; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">🐾 Daisyと九州おでかけガイド</a>
+      <nav class="main-nav">
+        <a href="spots.html">スポット</a>
+        <a href="hotels.html">宿泊</a>
+        <a href="outdoor.html">アウトドア</a>
+        <a href="food.html">ご飯</a>
+        <a href="checklist.html">持ち物</a>
+        <a href="area-oita.html" class="nav-active">大分県</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero-oita-outdoor">
+    <h1>🏕️ 大分県 犬連れキャンプ・アウトドア完全ガイド</h1>
+    <p>くじゅう連山・日田・佐伯・宇佐…大自然が広がる大分県で愛犬と思いっきりアウトドアを楽しもう！ペット可キャンプ場11選＋ハイキングコース情報を詳しく解説。</p>
+    <div class="badge-row">
+      <span class="badge">🏕️ キャンプ場 11選</span>
+      <span class="badge">🥾 ハイキング 6コース</span>
+      <span class="badge">🏔️ くじゅう・由布岳</span>
+      <span class="badge">🐕 大型犬対応情報あり</span>
+    </div>
+  </div>
+
+  <div class="container" style="max-width:1100px; margin:0 auto; padding:30px 20px;">
+
+    <div class="warning-box">
+      <h4>⚠️ ご利用前に必ずご確認ください</h4>
+      <ul>
+        <li>掲載情報は2026年5月時点のものです。料金・ルール・営業状況は変更になる場合があります。</li>
+        <li>訪問前に必ず各施設に電話またはウェブサイトで最新情報をご確認ください。</li>
+        <li>大型犬（25kg以上）は一部施設で別途確認が必要な場合があります。</li>
+        <li>くじゅう連山は気象変化が激しいため、天気予報を必ず確認してください。</li>
+      </ul>
+    </div>
+
+    <!-- ========== キャンプ場セクション ========== -->
+    <h2 class="section-title">🏕️ 大分県 ペット可キャンプ場 11選</h2>
+
+    <!-- 1. くじゅう花公園キャンプ場 -->
+    <div class="camp-card">
+      <div class="camp-card-header">
+        <div>
+          <div class="camp-area">📍 竹田市（くじゅうエリア）</div>
+          <div class="camp-name">くじゅう花公園 オートキャンプ場</div>
+        </div>
+        <div class="camp-tags">
+          <span class="tag tag-paid">有料</span>
+          <span class="tag tag-mountain">高原</span>
+          <span class="tag tag-large">大型犬OK</span>
+        </div>
+      </div>
+      <div class="camp-card-body">
+        <div class="camp-info-grid">
+          <div class="info-item">
+            <span class="info-icon">📍</span>
+            <div class="info-content"><div class="info-label">住所</div>大分県竹田市久住町大字久住4050</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📞</span>
+            <div class="info-content"><div class="info-label">電話</div>0974-76-1174</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">🕐</span>
+            <div class="info-content"><div class="info-label">チェックイン</div>13:00〜17:00</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📅</span>
+            <div class="info-content"><div class="info-label">営業期間</div>3月上旬〜11月下旬（要確認）</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">💰</span>
+            <div class="info-content"><div class="info-label">料金目安</div>オートサイト 3,500円〜/泊</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">🚗</span>
+            <div class="info-content"><div class="info-label">アクセス</div>大分道・九重ICから約30分</div>
+          </div>
+        </div>
+        <div class="pet-rules">
+          <h4>🐾 ペットルール</h4>
+          <ul>
+            <li>ペット同伴可（リード必須）</li>
+            <li>サイト内・共有スペースではリードを外さないこと</li>
+            <li>テント内への同伴可</li>
+            <li>ふん・尿の後始末は飼い主の責任で行うこと</li>
+            <li>他のキャンパーへの配慮をお願いします</li>
+          </ul>
+        </div>
+        <div class="daisy-comment">くじゅう連山を眺めながらのキャンプは最高！花公園の花畑の横を散歩できるのが嬉しい。朝晩は冷えるので防寒対策を忘れずに。</div>
+        <a href="https://www.kujukahana.com/" target="_blank" rel="noopener" class="map-btn">🌐 公式サイト</a>
+        <a href="https://maps.google.com/?q=くじゅう花公園" target="_blank" rel="noopener" class="map-btn">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <!-- 2. 九重グリーンパーク泉水 -->
+    <div class="camp-card">
+      <div class="camp-card-header">
+        <div>
+          <div class="camp-area">📍 玖珠郡九重町（くじゅうエリア）</div>
+          <div class="camp-name">九重グリーンパーク泉水キャンプ村</div>
+        </div>
+        <div class="camp-tags">
+          <span class="tag tag-paid">有料</span>
+          <span class="tag tag-mountain">高原</span>
+          <span class="tag tag-large">大型犬OK</span>
+        </div>
+      </div>
+      <div class="camp-card-body">
+        <div class="camp-info-grid">
+          <div class="info-item">
+            <span class="info-icon">📍</span>
+            <div class="info-content"><div class="info-label">住所</div>大分県玖珠郡九重町田野1712-2</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📞</span>
+            <div class="info-content"><div class="info-label">電話</div>0973-79-3111</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">🕐</span>
+            <div class="info-content"><div class="info-label">チェックイン</div>13:00〜18:00</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📅</span>
+            <div class="info-content"><div class="info-label">営業期間</div>通年（冬季は要確認）</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">💰</span>
+            <div class="info-content"><div class="info-label">料金目安</div>テントサイト 2,000円〜/泊</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">🚗</span>
+            <div class="info-content"><div class="info-label">アクセス</div>大分道・九重ICから約15分</div>
+          </div>
+        </div>
+        <div class="pet-rules">
+          <h4>🐾 ペットルール</h4>
+          <ul>
+            <li>ペット同伴可（リード必須）</li>
+            <li>ドッグランエリアあり（要確認）</li>
+            <li>ふん・尿の後始末は飼い主の責任</li>
+            <li>吠え声など他のキャンパーへの配慮をお願いします</li>
+          </ul>
+        </div>
+        <div class="daisy-comment">九重の大自然の中で思いっきり走り回れる！標高が高いので夏でも涼しく、Daisyには最高の環境。近くの泉水渓谷の散歩もおすすめ。</div>
+        <a href="https://maps.google.com/?q=九重グリーンパーク泉水キャンプ村" target="_blank" rel="noopener" class="map-btn">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <!-- 3. 日田市 大山ダム周辺キャンプ場 -->
+    <div class="camp-card">
+      <div class="camp-card-header">
+        <div>
+          <div class="camp-area">📍 日田市（日田エリア）</div>
+          <div class="camp-name">大山ダム湖畔キャンプ場</div>
+        </div>
+        <div class="camp-tags">
+          <span class="tag tag-free">無料</span>
+          <span class="tag tag-river">湖畔</span>
+          <span class="tag tag-large">大型犬OK</span>
+        </div>
+      </div>
+      <div class="camp-card-body">
+        <div class="camp-info-grid">
+          <div class="info-item">
+            <span class="info-icon">📍</span>
+            <div class="info-content"><div class="info-label">住所</div>大分県日田市大山町西大山</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📞</span>
+            <div class="info-content"><div class="info-label">問合せ</div>日田市観光協会 0973-22-2036</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">💰</span>
+            <div class="info-content"><div class="info-label">料金</div>無料（一部施設利用は有料）</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">🚗</span>
+            <div class="info-content"><div class="info-label">アクセス</div>大分道・日田ICから約30分</div>
+          </div>
+        </div>
+        <div class="pet-rules">
+          <h4>🐾 ペットルール</h4>
+          <ul>
+            <li>ペット同伴可（リード必須）</li>
+            <li>湖畔での水遊びも楽しめる</li>
+            <li>ゴミは必ず持ち帰ること</li>
+          </ul>
+        </div>
+        <div class="daisy-comment">無料で使えてダム湖の景色が最高！水辺が好きなワンコには特におすすめ。日田市内からのアクセスも良く、デイキャンプにも最適。</div>
+        <a href="https://maps.google.com/?q=大山ダム+日田市" target="_blank" rel="noopener" class="map-btn">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <!-- 4. 宇佐市 院内銀座キャンプ場 -->
+    <div class="camp-card">
+      <div class="camp-card-header">
+        <div>
+          <div class="camp-area">📍 宇佐市（宇佐エリア）</div>
+          <div class="camp-name">院内銀座キャンプ場</div>
+        </div>
+        <div class="camp-tags">
+          <span class="tag tag-paid">有料</span>
+          <span class="tag tag-river">川沿い</span>
+          <span class="tag tag-large">大型犬OK</span>
+        </div>
+      </div>
+      <div class="camp-card-body">
+        <div class="camp-info-grid">
+          <div class="info-item">
+            <span class="info-icon">📍</span>
+            <div class="info-content"><div class="info-label">住所</div>大分県宇佐市院内町副</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📞</span>
+            <div class="info-content"><div class="info-label">問合せ</div>宇佐市観光協会 0978-32-1834</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">💰</span>
+            <div class="info-content"><div class="info-label">料金目安</div>サイト 1,500円〜/泊</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">🚗</span>
+            <div class="info-content"><div class="info-label">アクセス</div>東九州道・院内ICから約5分</div>
+          </div>
+        </div>
+        <div class="pet-rules">
+          <h4>🐾 ペットルール</h4>
+          <ul>
+            <li>ペット同伴可（リード必須）</li>
+            <li>川での水遊び可（増水時は注意）</li>
+            <li>ふん・尿の後始末は飼い主の責任</li>
+          </ul>
+        </div>
+        <div class="daisy-comment">川沿いのサイトで涼しく過ごせる！院内の石橋群の散策も犬連れで楽しめる。宇佐神宮も近いので観光と組み合わせて。</div>
+        <a href="https://maps.google.com/?q=院内銀座キャンプ場+宇佐市" target="_blank" rel="noopener" class="map-btn">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <!-- 5. 佐伯市 蒲江オートキャンプ場 -->
+    <div class="camp-card">
+      <div class="camp-card-header">
+        <div>
+          <div class="camp-area">📍 佐伯市（佐伯エリア）</div>
+          <div class="camp-name">蒲江オートキャンプ場</div>
+        </div>
+        <div class="camp-tags">
+          <span class="tag tag-paid">有料</span>
+          <span class="tag tag-river">海沿い</span>
+          <span class="tag tag-large">大型犬OK</span>
+        </div>
+      </div>
+      <div class="camp-card-body">
+        <div class="camp-info-grid">
+          <div class="info-item">
+            <span class="info-icon">📍</span>
+            <div class="info-content"><div class="info-label">住所</div>大分県佐伯市蒲江大字蒲江浦</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📞</span>
+            <div class="info-content"><div class="info-label">問合せ</div>佐伯市観光協会 0972-22-1111</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">💰</span>
+            <div class="info-content"><div class="info-label">料金目安</div>オートサイト 3,000円〜/泊</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">🚗</span>
+            <div class="info-content"><div class="info-label">アクセス</div>東九州道・蒲江ICから約10分</div>
+          </div>
+        </div>
+        <div class="pet-rules">
+          <h4>🐾 ペットルール</h4>
+          <ul>
+            <li>ペット同伴可（リード必須）</li>
+            <li>海岸での散歩可（一部エリア制限あり）</li>
+            <li>ふん・尿の後始末は飼い主の責任</li>
+          </ul>
+        </div>
+        <div class="daisy-comment">リアス式海岸の絶景を楽しめる海沿いキャンプ場！海の幸も豊富で、キャンプ飯も充実。夕日が特に美しい。</div>
+        <a href="https://maps.google.com/?q=蒲江オートキャンプ場+佐伯市" target="_blank" rel="noopener" class="map-btn">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <!-- 6. 豊後大野市 清川いこいの里 -->
+    <div class="camp-card">
+      <div class="camp-card-header">
+        <div>
+          <div class="camp-area">📍 豊後大野市（豊後大野エリア）</div>
+          <div class="camp-name">清川いこいの里キャンプ場</div>
+        </div>
+        <div class="camp-tags">
+          <span class="tag tag-paid">有料</span>
+          <span class="tag tag-river">川沿い</span>
+          <span class="tag tag-large">大型犬OK</span>
+        </div>
+      </div>
+      <div class="camp-card-body">
+        <div class="camp-info-grid">
+          <div class="info-item">
+            <span class="info-icon">📍</span>
+            <div class="info-content"><div class="info-label">住所</div>大分県豊後大野市清川町砂田</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📞</span>
+            <div class="info-content"><div class="info-label">電話</div>0974-35-2811</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">💰</span>
+            <div class="info-content"><div class="info-label">料金目安</div>テントサイト 1,500円〜/泊</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">🚗</span>
+            <div class="info-content"><div class="info-label">アクセス</div>大分道・犬飼ICから約20分</div>
+          </div>
+        </div>
+        <div class="pet-rules">
+          <h4>🐾 ペットルール</h4>
+          <ul>
+            <li>ペット同伴可（リード必須）</li>
+            <li>川での水遊び可</li>
+            <li>ふん・尿の後始末は飼い主の責任</li>
+          </ul>
+        </div>
+        <div class="daisy-comment">清川の清流沿いで自然豊か！近くの原尻の滝（東洋のナイアガラ）への散歩も最高。豊後大野のジオパークを犬連れで探索できる。</div>
+        <a href="https://maps.google.com/?q=清川いこいの里+豊後大野市" target="_blank" rel="noopener" class="map-btn">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <!-- 7. 玖珠町 万年山キャンプ場 -->
+    <div class="camp-card">
+      <div class="camp-card-header">
+        <div>
+          <div class="camp-area">📍 玖珠郡玖珠町（玖珠エリア）</div>
+          <div class="camp-name">万年山（はねやま）キャンプ場</div>
+        </div>
+        <div class="camp-tags">
+          <span class="tag tag-free">無料</span>
+          <span class="tag tag-mountain">高原</span>
+          <span class="tag tag-large">大型犬OK</span>
+        </div>
+      </div>
+      <div class="camp-card-body">
+        <div class="camp-info-grid">
+          <div class="info-item">
+            <span class="info-icon">📍</span>
+            <div class="info-content"><div class="info-label">住所</div>大分県玖珠郡玖珠町大字帆足</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📞</span>
+            <div class="info-content"><div class="info-label">問合せ</div>玖珠町観光協会 0973-72-1313</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">💰</span>
+            <div class="info-content"><div class="info-label">料金</div>無料</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📅</span>
+            <div class="info-content"><div class="info-label">営業期間</div>4月〜11月（要確認）</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">🚗</span>
+            <div class="info-content"><div class="info-label">アクセス</div>大分道・玖珠ICから約20分</div>
+          </div>
+        </div>
+        <div class="pet-rules">
+          <h4>🐾 ペットルール</h4>
+          <ul>
+            <li>ペット同伴可（リード必須）</li>
+            <li>ミヤマキリシマの群生地近く（5〜6月が見頃）</li>
+            <li>ゴミは必ず持ち帰ること</li>
+          </ul>
+        </div>
+        <div class="daisy-comment">無料で使えて景色が最高！5〜6月のミヤマキリシマの季節は特におすすめ。玖珠盆地を一望できる絶景スポット。</div>
+        <a href="https://maps.google.com/?q=万年山+玖珠町" target="_blank" rel="noopener" class="map-btn">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <!-- 8. 中津市 耶馬溪キャンプ場 -->
+    <div class="camp-card">
+      <div class="camp-card-header">
+        <div>
+          <div class="camp-area">📍 中津市（耶馬溪エリア）</div>
+          <div class="camp-name">耶馬溪キャンプ場</div>
+        </div>
+        <div class="camp-tags">
+          <span class="tag tag-paid">有料</span>
+          <span class="tag tag-river">渓谷</span>
+          <span class="tag tag-large">大型犬OK</span>
+        </div>
+      </div>
+      <div class="camp-card-body">
+        <div class="camp-info-grid">
+          <div class="info-item">
+            <span class="info-icon">📍</span>
+            <div class="info-content"><div class="info-label">住所</div>大分県中津市耶馬溪町大字柿坂</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📞</span>
+            <div class="info-content"><div class="info-label">問合せ</div>耶馬溪観光協会 0979-54-3111</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">💰</span>
+            <div class="info-content"><div class="info-label">料金目安</div>テントサイト 1,000円〜/泊</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">🚗</span>
+            <div class="info-content"><div class="info-label">アクセス</div>東九州道・中津ICから約40分</div>
+          </div>
+        </div>
+        <div class="pet-rules">
+          <h4>🐾 ペットルール</h4>
+          <ul>
+            <li>ペット同伴可（リード必須）</li>
+            <li>渓谷沿いの散歩が楽しめる</li>
+            <li>秋の紅葉シーズンは特に人気</li>
+          </ul>
+        </div>
+        <div class="daisy-comment">耶馬溪の奇岩絶壁を眺めながらのキャンプは格別！秋の紅葉シーズンは日本随一の美しさ。渓谷沿いの散歩コースも充実。</div>
+        <a href="https://maps.google.com/?q=耶馬溪キャンプ場" target="_blank" rel="noopener" class="map-btn">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <!-- 9. 別府市 鶴見岳キャンプ場 -->
+    <div class="camp-card">
+      <div class="camp-card-header">
+        <div>
+          <div class="camp-area">📍 別府市（別府エリア）</div>
+          <div class="camp-name">鶴見岳一気登山道キャンプエリア</div>
+        </div>
+        <div class="camp-tags">
+          <span class="tag tag-free">無料</span>
+          <span class="tag tag-mountain">山岳</span>
+          <span class="tag tag-large">大型犬OK</span>
+        </div>
+      </div>
+      <div class="camp-card-body">
+        <div class="camp-info-grid">
+          <div class="info-item">
+            <span class="info-icon">📍</span>
+            <div class="info-content"><div class="info-label">住所</div>大分県別府市大字内成</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📞</span>
+            <div class="info-content"><div class="info-label">問合せ</div>別府市観光協会 0977-24-2838</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">💰</span>
+            <div class="info-content"><div class="info-label">料金</div>無料</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">🚗</span>
+            <div class="info-content"><div class="info-label">アクセス</div>別府市内から約20分</div>
+          </div>
+        </div>
+        <div class="pet-rules">
+          <h4>🐾 ペットルール</h4>
+          <ul>
+            <li>ペット同伴可（リード必須）</li>
+            <li>登山道での犬連れハイキングも可能</li>
+            <li>ゴミは必ず持ち帰ること</li>
+          </ul>
+        </div>
+        <div class="daisy-comment">別府の街と海を見下ろせる絶景キャンプ！鶴見岳への登山コースも犬連れで楽しめる。別府温泉に近いので人間は温泉も楽しめる。</div>
+        <a href="https://maps.google.com/?q=鶴見岳+別府市" target="_blank" rel="noopener" class="map-btn">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <!-- 10. 由布市 湯布院オートキャンプ場 -->
+    <div class="camp-card">
+      <div class="camp-card-header">
+        <div>
+          <div class="camp-area">📍 由布市（湯布院エリア）</div>
+          <div class="camp-name">湯布院オートキャンプ場</div>
+        </div>
+        <div class="camp-tags">
+          <span class="tag tag-paid">有料</span>
+          <span class="tag tag-mountain">高原</span>
+          <span class="tag tag-large">大型犬OK</span>
+        </div>
+      </div>
+      <div class="camp-card-body">
+        <div class="camp-info-grid">
+          <div class="info-item">
+            <span class="info-icon">📍</span>
+            <div class="info-content"><div class="info-label">住所</div>大分県由布市湯布院町川上</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📞</span>
+            <div class="info-content"><div class="info-label">問合せ</div>由布市観光協会 0977-84-2446</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">💰</span>
+            <div class="info-content"><div class="info-label">料金目安</div>オートサイト 3,500円〜/泊</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">🚗</span>
+            <div class="info-content"><div class="info-label">アクセス</div>大分道・湯布院ICから約10分</div>
+          </div>
+        </div>
+        <div class="pet-rules">
+          <h4>🐾 ペットルール</h4>
+          <ul>
+            <li>ペット同伴可（リード必須）</li>
+            <li>由布岳を眺めながらのキャンプ</li>
+            <li>湯布院の街へのアクセスも便利</li>
+          </ul>
+        </div>
+        <div class="daisy-comment">由布岳を目の前に見ながらのキャンプは最高！湯布院の街まで歩いて行けるので観光も楽しめる。朝霧の湯布院は幻想的な美しさ。</div>
+        <a href="https://maps.google.com/?q=湯布院オートキャンプ場" target="_blank" rel="noopener" class="map-btn">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <!-- 11. 国東市 両子寺キャンプ場 -->
+    <div class="camp-card">
+      <div class="camp-card-header">
+        <div>
+          <div class="camp-area">📍 国東市（国東エリア）</div>
+          <div class="camp-name">両子山キャンプ場</div>
+        </div>
+        <div class="camp-tags">
+          <span class="tag tag-free">無料</span>
+          <span class="tag tag-mountain">山岳</span>
+          <span class="tag tag-large">大型犬OK</span>
+        </div>
+      </div>
+      <div class="camp-card-body">
+        <div class="camp-info-grid">
+          <div class="info-item">
+            <span class="info-icon">📍</span>
+            <div class="info-content"><div class="info-label">住所</div>大分県国東市安岐町両子</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📞</span>
+            <div class="info-content"><div class="info-label">問合せ</div>国東市観光協会 0978-72-5168</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">💰</span>
+            <div class="info-content"><div class="info-label">料金</div>無料</div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">🚗</span>
+            <div class="info-content"><div class="info-label">アクセス</div>東九州道・安岐ICから約20分</div>
+          </div>
+        </div>
+        <div class="pet-rules">
+          <h4>🐾 ペットルール</h4>
+          <ul>
+            <li>ペット同伴可（リード必須）</li>
+            <li>国東半島の豊かな自然の中でキャンプ</li>
+            <li>両子寺周辺の散策も楽しめる</li>
+          </ul>
+        </div>
+        <div class="daisy-comment">国東半島の神秘的な雰囲気の中でキャンプ！両子寺の石段や仁王像は圧巻。静かで人が少なく、のんびり過ごせる穴場スポット。</div>
+        <a href="https://maps.google.com/?q=両子山+国東市" target="_blank" rel="noopener" class="map-btn">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <!-- ========== ハイキングセクション ========== -->
+    <h2 class="section-title">🥾 犬連れハイキングコース 6選</h2>
+
+    <div class="warning-box">
+      <h4>⚠️ 山岳エリアでの犬連れ注意事項</h4>
+      <ul>
+        <li>くじゅう連山・由布岳は天候変化が激しいため、必ず天気予報を確認してから出発してください。</li>
+        <li>登山道では他のハイカーへの配慮としてリードを短く保ってください。</li>
+        <li>夏場の山岳エリアは涼しいですが、急な雷雨に注意が必要です。</li>
+        <li>水分は人間の分だけでなく、犬の分も十分に持参してください。</li>
+        <li>くじゅう連山の一部エリアはペット禁止の場合があります。事前に確認してください。</li>
+      </ul>
+    </div>
+
+    <div class="hiking-card">
+      <div class="camp-tags" style="margin-bottom:10px;">
+        <span class="tag tag-mountain">くじゅうエリア</span>
+        <span class="tag tag-large">大型犬OK</span>
+      </div>
+      <div class="hiking-name">① 牧ノ戸峠〜沓掛山コース（くじゅう連山）</div>
+      <div style="display:flex; gap:20px; flex-wrap:wrap; margin:10px 0; font-size:0.9rem; color:#555;">
+        <span>📏 往復 約3km</span>
+        <span>⏱️ 約2時間</span>
+        <span>🏔️ 標高 1,503m（沓掛山）</span>
+      </div>
+      <div style="margin:8px 0;">
+        <div style="font-size:0.85rem; color:#555; margin-bottom:4px;">難易度</div>
+        <div class="difficulty-bar">
+          <div class="diff-dot diff-filled"></div>
+          <div class="diff-dot diff-filled"></div>
+          <div class="diff-dot diff-empty"></div>
+          <div class="diff-dot diff-empty"></div>
+          <div class="diff-dot diff-empty"></div>
+        </div>
+      </div>
+      <p style="font-size:0.9rem; color:#555; margin:10px 0;">牧ノ戸峠（標高1,330m）からスタートする初心者向けコース。くじゅう連山の絶景を楽しみながら歩ける。展望台からの眺めは圧巻で、晴れた日は阿蘇山まで見える。</p>
+      <div class="pet-rules">
+        <h4>🐾 犬連れ注意点</h4>
+        <ul>
+          <li>リード必須（外すと他のハイカーに迷惑）</li>
+          <li>岩場があるので足元に注意</li>
+          <li>夏場でも気温が低いので防寒着を持参</li>
+          <li>水分は多めに持参（犬用も必須）</li>
+        </ul>
+      </div>
+      <a href="https://maps.google.com/?q=牧ノ戸峠+くじゅう" target="_blank" rel="noopener" class="map-btn">📍 牧ノ戸峠 Google Maps</a>
+    </div>
+
+    <div class="hiking-card">
+      <div class="camp-tags" style="margin-bottom:10px;">
+        <span class="tag tag-mountain">由布市エリア</span>
+        <span class="tag tag-large">大型犬OK</span>
+      </div>
+      <div class="hiking-name">② 由布岳 東登山口〜合野越コース</div>
+      <div style="display:flex; gap:20px; flex-wrap:wrap; margin:10px 0; font-size:0.9rem; color:#555;">
+        <span>📏 往復 約5km</span>
+        <span>⏱️ 約3時間</span>
+        <span>🏔️ 標高 1,580m（由布岳）</span>
+      </div>
+      <div style="margin:8px 0;">
+        <div style="font-size:0.85rem; color:#555; margin-bottom:4px;">難易度</div>
+        <div class="difficulty-bar">
+          <div class="diff-dot diff-filled"></div>
+          <div class="diff-dot diff-filled"></div>
+          <div class="diff-dot diff-filled"></div>
+          <div class="diff-dot diff-empty"></div>
+          <div class="diff-dot diff-empty"></div>
+        </div>
+      </div>
+      <p style="font-size:0.9rem; color:#555; margin:10px 0;">豊後富士とも呼ばれる由布岳への登山コース。合野越（標高約1,000m）まで犬連れで楽しめる。山頂付近は急斜面のため大型犬には難易度が高い。</p>
+      <div class="pet-rules">
+        <h4>🐾 犬連れ注意点</h4>
+        <ul>
+          <li>山頂付近の急斜面は大型犬には危険な場合あり</li>
+          <li>合野越までの往復がおすすめ</li>
+          <li>リード必須</li>
+          <li>登山口に駐車場あり（有料）</li>
+        </ul>
+      </div>
+      <a href="https://maps.google.com/?q=由布岳東登山口" target="_blank" rel="noopener" class="map-btn">📍 東登山口 Google Maps</a>
+    </div>
+
+    <div class="hiking-card">
+      <div class="camp-tags" style="margin-bottom:10px;">
+        <span class="tag tag-river">中津エリア</span>
+        <span class="tag tag-large">大型犬OK</span>
+      </div>
+      <div class="hiking-name">③ 耶馬溪 青の洞門〜競秀峰ハイキングコース</div>
+      <div style="display:flex; gap:20px; flex-wrap:wrap; margin:10px 0; font-size:0.9rem; color:#555;">
+        <span>📏 約4km</span>
+        <span>⏱️ 約2時間</span>
+        <span>🏔️ 渓谷コース</span>
+      </div>
+      <div style="margin:8px 0;">
+        <div style="font-size:0.85rem; color:#555; margin-bottom:4px;">難易度</div>
+        <div class="difficulty-bar">
+          <div class="diff-dot diff-filled"></div>
+          <div class="diff-dot diff-empty"></div>
+          <div class="diff-dot diff-empty"></div>
+          <div class="diff-dot diff-empty"></div>
+          <div class="diff-dot diff-empty"></div>
+        </div>
+      </div>
+      <p style="font-size:0.9rem; color:#555; margin:10px 0;">奇岩絶壁が連なる耶馬溪の渓谷沿いを歩くコース。青の洞門（禅海和尚が掘った手掘りのトンネル）から競秀峰まで歩ける。秋の紅葉シーズンは特に美しい。</p>
+      <div class="pet-rules">
+        <h4>🐾 犬連れ注意点</h4>
+        <ul>
+          <li>リード必須</li>
+          <li>平坦な道が多く歩きやすい</li>
+          <li>秋の紅葉シーズンは混雑するので早朝がおすすめ</li>
+        </ul>
+      </div>
+      <a href="https://maps.google.com/?q=青の洞門+耶馬溪" target="_blank" rel="noopener" class="map-btn">📍 青の洞門 Google Maps</a>
+    </div>
+
+    <div class="hiking-card">
+      <div class="camp-tags" style="margin-bottom:10px;">
+        <span class="tag tag-mountain">別府エリア</span>
+        <span class="tag tag-large">大型犬OK</span>
+      </div>
+      <div class="hiking-name">④ 鶴見岳 一気登山道コース</div>
+      <div style="display:flex; gap:20px; flex-wrap:wrap; margin:10px 0; font-size:0.9rem; color:#555;">
+        <span>📏 往復 約6km</span>
+        <span>⏱️ 約4時間</span>
+        <span>🏔️ 標高 1,375m（鶴見岳）</span>
+      </div>
+      <div style="margin:8px 0;">
+        <div style="font-size:0.85rem; color:#555; margin-bottom:4px;">難易度</div>
+        <div class="difficulty-bar">
+          <div class="diff-dot diff-filled"></div>
+          <div class="diff-dot diff-filled"></div>
+          <div class="diff-dot diff-filled"></div>
+          <div class="diff-dot diff-empty"></div>
+          <div class="diff-dot diff-empty"></div>
+        </div>
+      </div>
+      <p style="font-size:0.9rem; color:#555; margin:10px 0;">別府市街から登れる鶴見岳への登山コース。山頂からは別府湾・大分市街・くじゅう連山が一望できる。ロープウェイでの下山も可能（ペット可要確認）。</p>
+      <div class="pet-rules">
+        <h4>🐾 犬連れ注意点</h4>
+        <ul>
+          <li>リード必須</li>
+          <li>急登があるので体力のある犬向け</li>
+          <li>ロープウェイのペット同乗は事前確認が必要</li>
+        </ul>
+      </div>
+      <a href="https://maps.google.com/?q=鶴見岳登山口+別府" target="_blank" rel="noopener" class="map-btn">📍 登山口 Google Maps</a>
+    </div>
+
+    <div class="hiking-card">
+      <div class="camp-tags" style="margin-bottom:10px;">
+        <span class="tag tag-mountain">豊後大野エリア</span>
+        <span class="tag tag-large">大型犬OK</span>
+      </div>
+      <div class="hiking-name">⑤ 原尻の滝〜緒方川散策コース</div>
+      <div style="display:flex; gap:20px; flex-wrap:wrap; margin:10px 0; font-size:0.9rem; color:#555;">
+        <span>📏 約3km</span>
+        <span>⏱️ 約1.5時間</span>
+        <span>🏔️ 平坦コース</span>
+      </div>
+      <div style="margin:8px 0;">
+        <div style="font-size:0.85rem; color:#555; margin-bottom:4px;">難易度</div>
+        <div class="difficulty-bar">
+          <div class="diff-dot diff-filled"></div>
+          <div class="diff-dot diff-empty"></div>
+          <div class="diff-dot diff-empty"></div>
+          <div class="diff-dot diff-empty"></div>
+          <div class="diff-dot diff-empty"></div>
+        </div>
+      </div>
+      <p style="font-size:0.9rem; color:#555; margin:10px 0;">「東洋のナイアガラ」と呼ばれる原尻の滝から緒方川沿いを歩くコース。平坦で歩きやすく、大型犬でも安心。滝の迫力は圧巻で、春の菜の花・秋のコスモスとのコントラストが美しい。</p>
+      <div class="pet-rules">
+        <h4>🐾 犬連れ注意点</h4>
+        <ul>
+          <li>リード必須</li>
+          <li>平坦で歩きやすく、シニア犬にもおすすめ</li>
+          <li>川沿いは水遊びも可能</li>
+          <li>駐車場あり（無料）</li>
+        </ul>
+      </div>
+      <a href="https://maps.google.com/?q=原尻の滝+豊後大野市" target="_blank" rel="noopener" class="map-btn">📍 原尻の滝 Google Maps</a>
+    </div>
+
+    <div class="hiking-card">
+      <div class="camp-tags" style="margin-bottom:10px;">
+        <span class="tag tag-mountain">国東エリア</span>
+        <span class="tag tag-large">大型犬OK</span>
+      </div>
+      <div class="hiking-name">⑥ 国東半島 両子山ハイキングコース</div>
+      <div style="display:flex; gap:20px; flex-wrap:wrap; margin:10px 0; font-size:0.9rem; color:#555;">
+        <span>📏 往復 約4km</span>
+        <span>⏱️ 約2.5時間</span>
+        <span>🏔️ 標高 721m（両子山）</span>
+      </div>
+      <div style="margin:8px 0;">
+        <div style="font-size:0.85rem; color:#555; margin-bottom:4px;">難易度</div>
+        <div class="difficulty-bar">
+          <div class="diff-dot diff-filled"></div>
+          <div class="diff-dot diff-filled"></div>
+          <div class="diff-dot diff-empty"></div>
+          <div class="diff-dot diff-empty"></div>
+          <div class="diff-dot diff-empty"></div>
+        </div>
+      </div>
+      <p style="font-size:0.9rem; color:#555; margin:10px 0;">国東半島の最高峰・両子山への登山コース。両子寺から出発し、神秘的な雰囲気の森の中を歩く。山頂からは国東半島と別府湾が一望できる。</p>
+      <div class="pet-rules">
+        <h4>🐾 犬連れ注意点</h4>
+        <ul>
+          <li>リード必須</li>
+          <li>両子寺境内はペット不可の場合あり（要確認）</li>
+          <li>登山道は整備されており歩きやすい</li>
+        </ul>
+      </div>
+      <a href="https://maps.google.com/?q=両子寺+国東市" target="_blank" rel="noopener" class="map-btn">📍 両子寺 Google Maps</a>
+    </div>
+
+    <!-- ========== 季節別ガイド ========== -->
+    <h2 class="section-title">🌸 季節別 アウトドアおすすめ情報</h2>
+    <div class="season-guide">
+      <div class="season-card season-spring">
+        <h3>🌸 春（3〜5月）</h3>
+        <p><strong>おすすめ：</strong>くじゅうのミヤマキリシマ（5〜6月）、原尻の滝の菜の花（3月）、耶馬溪の新緑（4月）</p>
+        <p style="margin-top:8px; font-size:0.85rem;">気温が過ごしやすく、犬連れアウトドアに最適な季節。花粉症の犬は注意。</p>
+      </div>
+      <div class="season-card season-summer">
+        <h3>☀️ 夏（6〜8月）</h3>
+        <p><strong>おすすめ：</strong>くじゅう高原（涼しい）、蒲江の海水浴、大山ダムの水遊び</p>
+        <p style="margin-top:8px; font-size:0.85rem;">大分市内は暑いため、標高の高いくじゅうや海沿いへ。熱中症対策必須。</p>
+      </div>
+      <div class="season-card season-autumn">
+        <h3>🍂 秋（9〜11月）</h3>
+        <p><strong>おすすめ：</strong>耶馬溪の紅葉（10〜11月）、くじゅうの草紅葉（9〜10月）、原尻の滝のコスモス（10月）</p>
+        <p style="margin-top:8px; font-size:0.85rem;">大分県で最も犬連れアウトドアが楽しい季節。紅葉シーズンは混雑に注意。</p>
+      </div>
+      <div class="season-card season-winter">
+        <h3>❄️ 冬（12〜2月）</h3>
+        <p><strong>おすすめ：</strong>くじゅうの雪景色、別府温泉の足湯（犬連れ可の場所あり）</p>
+        <p style="margin-top:8px; font-size:0.85rem;">山岳エリアは積雪・凍結に注意。防寒対策をしっかりして。</p>
+      </div>
+    </div>
+
+    <!-- ========== キャンプ持ち物チェックリスト ========== -->
+    <h2 class="section-title">🎒 犬連れキャンプ 持ち物チェックリスト</h2>
+    <div class="checklist-box">
+      <h3>🐾 愛犬のための持ち物</h3>
+      <div class="checklist-cols">
+        <div>
+          <div class="check-item">リード（予備含む2本）</div>
+          <div class="check-item">首輪・ハーネス</div>
+          <div class="check-item">迷子札（連絡先記載）</div>
+          <div class="check-item">フード（多めに）</div>
+          <div class="check-item">水（2L以上）</div>
+          <div class="check-item">折りたたみボウル</div>
+          <div class="check-item">おやつ</div>
+        </div>
+        <div>
+          <div class="check-item">うんち袋（多めに）</div>
+          <div class="check-item">ペットシーツ</div>
+          <div class="check-item">犬用ベッド・マット</div>
+          <div class="check-item">タオル（複数枚）</div>
+          <div class="check-item">虫除けスプレー（犬用）</div>
+          <div class="check-item">マダニ対策薬</div>
+          <div class="check-item">常備薬（かかりつけ医に相談）</div>
+        </div>
+        <div>
+          <div class="check-item">ワクチン証明書のコピー</div>
+          <div class="check-item">狂犬病予防接種証明書</div>
+          <div class="check-item">かかりつけ動物病院の連絡先</div>
+          <div class="check-item">近隣動物病院の情報</div>
+          <div class="check-item">犬用救急セット</div>
+          <div class="check-item">クレート・キャリー</div>
+          <div class="check-item">ロングリード（広場用）</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== アウトドアTips ========== -->
+    <div class="tips-box">
+      <h3>💡 犬連れアウトドア 知っておきたいTips</h3>
+      <div class="tips-grid">
+        <div class="tip-item">
+          <h4>🦟 マダニ対策</h4>
+          <p>大分県の山林はマダニが多い。フロントラインなどのダニ予防薬を事前に投与し、帰宅後は全身をチェック。</p>
+        </div>
+        <div class="tip-item">
+          <h4>🌡️ 熱中症対策</h4>
+          <p>夏の低山は特に危険。早朝・夕方に行動し、水分補給をこまめに。くじゅう高原（標高1,000m以上）は夏でも涼しい。</p>
+        </div>
+        <div class="tip-item">
+          <h4>🐻 野生動物対策</h4>
+          <p>大分県の山林にはイノシシ・シカが生息。夜間の単独行動は避け、鈴を付けて存在を知らせよう。</p>
+        </div>
+        <div class="tip-item">
+          <h4>💧 水場の確認</h4>
+          <p>山岳エリアの沢水は飲用不可。必ず飲料水を持参。川での水遊びは増水時は絶対に避けること。</p>
+        </div>
+        <div class="tip-item">
+          <h4>🏥 緊急時の準備</h4>
+          <p>キャンプ前に近隣の動物病院を必ず確認。大分市・別府市・中津市に夜間対応病院あり。<a href="oita-emergency.html">緊急時ガイドはこちら</a></p>
+        </div>
+        <div class="tip-item">
+          <h4>🤝 マナーの徹底</h4>
+          <p>ふんの持ち帰り・リード着用・吠え声対策は基本中の基本。他のキャンパーへの配慮が犬連れ文化を守る。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== 関連ページリンク ========== -->
+    <div style="background: linear-gradient(135deg, #d8f3dc, #b7e4c7); border-radius: 16px; padding: 30px; margin: 40px 0; text-align: center;">
+      <h3 style="color: #1b4332; margin-bottom: 20px;">🗺️ 大分県の犬連れ情報をもっと見る</h3>
+      <div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;">
+        <a href="area-oita.html" style="background: #2d6a4f; color: white; padding: 12px 20px; border-radius: 10px; text-decoration: none; font-weight: bold;">🏠 大分県トップ</a>
+        <a href="oita-dogrun.html" style="background: #40916c; color: white; padding: 12px 20px; border-radius: 10px; text-decoration: none; font-weight: bold;">🏃 ドッグラン</a>
+        <a href="oita-cafe.html" style="background: #52b788; color: white; padding: 12px 20px; border-radius: 10px; text-decoration: none; font-weight: bold;">☕ カフェ</a>
+        <a href="oita-hotels.html" style="background: #74c69d; color: white; padding: 12px 20px; border-radius: 10px; text-decoration: none; font-weight: bold;">🏨 宿泊</a>
+        <a href="oita-emergency.html" style="background: #e63946; color: white; padding: 12px 20px; border-radius: 10px; text-decoration: none; font-weight: bold;">🏥 緊急時・動物病院</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>🐾 Daisyと九州おでかけガイド</p>
+      <p style="font-size:0.85rem; color:#aaa; margin-top:8px;">掲載情報は2026年5月時点のものです。訪問前に必ず各施設にご確認ください。</p>
+      <nav class="footer-nav">
+        <a href="index.html">トップ</a>
+        <a href="area-oita.html">大分県</a>
+        <a href="spots.html">スポット</a>
+        <a href="hotels.html">宿泊</a>
+        <a href="outdoor.html">アウトドア</a>
+        <a href="about.html">このサイトについて</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

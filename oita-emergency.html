@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>大分県の動物病院・緊急時ガイド｜Daisy's 九州犬連れガイド</title>
+  <meta name="description" content="大分県の夜間救急動物病院・緊急時の対処法・熱中症対策・怪我の応急処置など、愛犬の緊急時に役立つ情報をまとめました。">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .emergency-hero {
+      background: linear-gradient(135deg, #c0392b 0%, #e74c3c 50%, #e67e22 100%);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .emergency-hero h1 { font-size: 2.2rem; margin-bottom: 10px; }
+    .emergency-hero p { font-size: 1.1rem; opacity: 0.9; }
+    .alert-box {
+      background: #fff3cd;
+      border: 2px solid #ffc107;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+    .alert-box.danger {
+      background: #f8d7da;
+      border-color: #dc3545;
+    }
+    .hospital-card {
+      background: white;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 16px 0;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      border-left: 5px solid #e74c3c;
+    }
+    .hospital-card.night {
+      border-left-color: #2c3e50;
+      background: #f8f9fa;
+    }
+    .hospital-card h3 {
+      font-size: 1.3rem;
+      color: #2c3e50;
+      margin-bottom: 12px;
+    }
+    .hospital-info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      margin: 12px 0;
+    }
+    .info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 0.9rem;
+    }
+    .info-item .label {
+      font-weight: bold;
+      color: #666;
+      white-space: nowrap;
+      min-width: 60px;
+    }
+    .tel-link {
+      display: inline-block;
+      background: #e74c3c;
+      color: white;
+      padding: 8px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+    .tel-link:hover { background: #c0392b; }
+    .badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      margin-right: 6px;
+    }
+    .badge-night { background: #2c3e50; color: white; }
+    .badge-24h { background: #e74c3c; color: white; }
+    .badge-regular { background: #27ae60; color: white; }
+    .symptom-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin: 20px 0;
+    }
+    .symptom-card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .symptom-card h4 {
+      color: #e74c3c;
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      border-bottom: 2px solid #e74c3c;
+      padding-bottom: 8px;
+    }
+    .symptom-card ul { padding-left: 20px; }
+    .symptom-card li { margin: 6px 0; font-size: 0.9rem; }
+    .first-aid-steps {
+      counter-reset: step;
+    }
+    .first-aid-step {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 12px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .step-number {
+      background: #e74c3c;
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .area-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px 0;
+    }
+    .area-tab {
+      padding: 8px 20px;
+      border-radius: 25px;
+      border: 2px solid #e74c3c;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.2s;
+      background: white;
+      color: #e74c3c;
+    }
+    .area-tab.active, .area-tab:hover {
+      background: #e74c3c;
+      color: white;
+    }
+    .section-title {
+      font-size: 1.6rem;
+      color: #2c3e50;
+      border-bottom: 3px solid #e74c3c;
+      padding-bottom: 10px;
+      margin: 40px 0 20px;
+    }
+    .back-link {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #ecf0f1;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #2c3e50;
+      margin: 20px 0;
+      font-weight: bold;
+    }
+    .back-link:hover { background: #dfe6e9; }
+    .checklist-box {
+      background: #eaf4fb;
+      border: 2px solid #3498db;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+    .checklist-box h4 { color: #2980b9; margin-bottom: 12px; }
+    .checklist-box ul { list-style: none; padding: 0; }
+    .checklist-box li { padding: 4px 0; }
+    .checklist-box li::before { content: "☐ "; color: #3498db; font-weight: bold; }
+    .map-btn {
+      display: inline-block;
+      background: #27ae60;
+      color: white;
+      padding: 6px 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.85rem;
+      margin-top: 8px;
+    }
+    .map-btn:hover { background: #229954; }
+    @media (max-width: 768px) {
+      .emergency-hero h1 { font-size: 1.6rem; }
+      .hospital-info-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ナビゲーション -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">🐾 Daisy's 九州犬連れガイド</a>
+    <div class="nav-links">
+      <a href="spots.html">スポット</a>
+      <a href="hotels.html">宿泊</a>
+      <a href="outdoor.html">アウトドア</a>
+      <a href="food.html">ご飯</a>
+      <a href="checklist.html">持ち物</a>
+      <a href="area-oita.html" class="active">大分県</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ヒーローセクション -->
+<div class="emergency-hero">
+  <h1>🚨 大分県の動物病院・緊急時ガイド</h1>
+  <p>愛犬の急な体調不良・怪我に備えて。夜間救急病院・応急処置・緊急連絡先をまとめました。</p>
+  <p style="font-size:0.9rem; margin-top:10px; opacity:0.8;">※ 診療時間・対応内容は変更になる場合があります。必ず事前にお電話でご確認ください。</p>
+</div>
+
+<div class="container" style="max-width:900px; margin:0 auto; padding:20px;">
+
+  <a href="area-oita.html" class="back-link">← 大分県トップに戻る</a>
+
+  <!-- 緊急時の注意 -->
+  <div class="alert-box danger">
+    <strong>🚨 緊急時の基本ルール</strong><br>
+    ① まず落ち着いて愛犬の状態を確認する<br>
+    ② 病院に電話してから向かう（受け入れ確認が必須）<br>
+    ③ 移動中は愛犬を安静にさせる（揺らさない）<br>
+    ④ かかりつけ医の電話番号を事前に登録しておく
+  </div>
+
+  <!-- 夜間救急病院 -->
+  <h2 class="section-title">🌙 大分県の夜間・救急動物病院</h2>
+
+  <div class="alert-box">
+    <strong>📋 夜間救急を利用する前に</strong><br>
+    夜間救急病院は通常より診療費が高くなります（深夜割増あり）。また、すべての病気・怪我に対応できるわけではありません。<strong>必ず電話で状況を伝えてから向かってください。</strong>
+  </div>
+
+  <h3 style="color:#2c3e50; margin:24px 0 12px;">大分市エリア</h3>
+
+  <div class="hospital-card night">
+    <h3>
+      <span class="badge badge-night">🌙 夜間専門</span>
+      大分動物夜間診療
+    </h3>
+    <div class="hospital-info-grid">
+      <div class="info-item">
+        <span class="label">診療時間</span>
+        <span>22:00〜翌9:00</span>
+      </div>
+      <div class="info-item">
+        <span class="label">定休日</span>
+        <span>なし（年中無休）</span>
+      </div>
+      <div class="info-item">
+        <span class="label">住所</span>
+        <span>大分市内（電話で確認）</span>
+      </div>
+    </div>
+    <p style="font-size:0.9rem; color:#666; margin:10px 0;">大分県で数少ない夜間専門の動物診療サービス。重篤な子を優先するため、まず電話で状況を伝えてください。</p>
+    <a href="tel:090-9785-3974" class="tel-link">📞 090-9785-3974</a>
+    <a href="http://animal.oita.jp/" target="_blank" class="map-btn">公式サイト</a>
+  </div>
+
+  <div class="hospital-card">
+    <h3>
+      <span class="badge badge-regular">🏥 時間外対応</span>
+      大分動物医療センター
+    </h3>
+    <div class="hospital-info-grid">
+      <div class="info-item">
+        <span class="label">診療時間</span>
+        <span>時間外対応は22時まで</span>
+      </div>
+      <div class="info-item">
+        <span class="label">住所</span>
+        <span>大分県大分市三芳1074-13</span>
+      </div>
+      <div class="info-item">
+        <span class="label">アクセス</span>
+        <span>JR大分駅上野の杜口より車で約5分</span>
+      </div>
+    </div>
+    <a href="tel:097-543-5500" class="tel-link">📞 097-543-5500</a>
+    <a href="https://maps.google.com/?q=大分県大分市三芳1074-13" target="_blank" class="map-btn">📍 地図</a>
+    <a href="http://www.oita-amc.jp/" target="_blank" class="map-btn">公式サイト</a>
+  </div>
+
+  <div class="hospital-card">
+    <h3>
+      <span class="badge badge-regular">🏥 時間外対応</span>
+      COMS動物病院
+    </h3>
+    <div class="hospital-info-grid">
+      <div class="info-item">
+        <span class="label">診療時間</span>
+        <span>一般診療19時まで・可能な限り時間外対応</span>
+      </div>
+      <div class="info-item">
+        <span class="label">住所</span>
+        <span>大分県大分市仲西町1-3-16</span>
+      </div>
+      <div class="info-item">
+        <span class="label">アクセス</span>
+        <span>日豊本線「高城駅」より徒歩約8分</span>
+      </div>
+    </div>
+    <a href="tel:097-576-7826" class="tel-link">📞 097-576-7826</a>
+    <a href="https://maps.google.com/?q=大分県大分市仲西町1-3-16" target="_blank" class="map-btn">📍 地図</a>
+    <a href="https://coms-animalhospital.com/" target="_blank" class="map-btn">公式サイト</a>
+  </div>
+
+  <div class="hospital-card">
+    <h3>
+      <span class="badge badge-regular">🏥 時間外対応</span>
+      大分小動物病院
+    </h3>
+    <div class="hospital-info-grid">
+      <div class="info-item">
+        <span class="label">診療時間</span>
+        <span>月火水金は22時まで対応</span>
+      </div>
+      <div class="info-item">
+        <span class="label">住所</span>
+        <span>大分市金池町3-1-98</span>
+      </div>
+      <div class="info-item">
+        <span class="label">アクセス</span>
+        <span>JR大分駅最寄り</span>
+      </div>
+    </div>
+    <a href="tel:097-535-9880" class="tel-link">📞 097-535-9880</a>
+    <a href="https://maps.google.com/?q=大分市金池町3-1-98" target="_blank" class="map-btn">📍 地図</a>
+    <a href="https://www.oita-vet.com/" target="_blank" class="map-btn">公式サイト</a>
+  </div>
+
+  <div class="hospital-card">
+    <h3>
+      <span class="badge badge-regular">🏥 時間外対応</span>
+      有賀動物病院
+    </h3>
+    <div class="hospital-info-grid">
+      <div class="info-item">
+        <span class="label">診療時間</span>
+        <span>一般診療19時まで・可能な限り時間外対応</span>
+      </div>
+      <div class="info-item">
+        <span class="label">住所</span>
+        <span>大分市新春日町1-1-33</span>
+      </div>
+    </div>
+    <a href="tel:050-3362-1311" class="tel-link">📞 050-3362-1311</a>
+    <a href="https://maps.google.com/?q=大分市新春日町1-1-33" target="_blank" class="map-btn">📍 地図</a>
+    <a href="http://ariga-ah.jp/" target="_blank" class="map-btn">公式サイト</a>
+  </div>
+
+  <h3 style="color:#2c3e50; margin:24px 0 12px;">別府市エリア</h3>
+
+  <div class="hospital-card">
+    <h3>
+      <span class="badge badge-regular">🏥 時間外対応</span>
+      すえつぐ動物病院
+    </h3>
+    <div class="hospital-info-grid">
+      <div class="info-item">
+        <span class="label">エリア</span>
+        <span>別府市</span>
+      </div>
+      <div class="info-item">
+        <span class="label">備考</span>
+        <span>時間外対応あり（要電話確認）</span>
+      </div>
+    </div>
+    <a href="https://www.suetsugu-ah.jp/" target="_blank" class="map-btn">公式サイト・電話番号確認</a>
+  </div>
+
+  <div class="hospital-card">
+    <h3>
+      <span class="badge badge-regular">🏥 時間外対応</span>
+      アン動物病院
+    </h3>
+    <div class="hospital-info-grid">
+      <div class="info-item">
+        <span class="label">エリア</span>
+        <span>別府市</span>
+      </div>
+      <div class="info-item">
+        <span class="label">備考</span>
+        <span>時間外対応あり（要電話確認）</span>
+      </div>
+    </div>
+    <a href="https://ann-ah.info/" target="_blank" class="map-btn">公式サイト・電話番号確認</a>
+  </div>
+
+  <div class="hospital-card">
+    <h3>
+      <span class="badge badge-regular">🏥 土日診療</span>
+      ファミリア動物病院
+    </h3>
+    <div class="hospital-info-grid">
+      <div class="info-item">
+        <span class="label">エリア</span>
+        <span>別府市</span>
+      </div>
+      <div class="info-item">
+        <span class="label">特徴</span>
+        <span>土日営業・WEB予約対応</span>
+      </div>
+    </div>
+    <a href="https://mpanimal.com/" target="_blank" class="map-btn">公式サイト・電話番号確認</a>
+  </div>
+
+  <h3 style="color:#2c3e50; margin:24px 0 12px;">佐伯市エリア</h3>
+
+  <div class="hospital-card">
+    <h3>
+      <span class="badge badge-regular">🏥 時間外対応</span>
+      ココロアニマルクリニック
+    </h3>
+    <div class="hospital-info-grid">
+      <div class="info-item">
+        <span class="label">エリア</span>
+        <span>佐伯市</span>
+      </div>
+      <div class="info-item">
+        <span class="label">備考</span>
+        <span>時間外対応あり（要電話確認）</span>
+      </div>
+    </div>
+    <a href="http://cocoro-animal.com/" target="_blank" class="map-btn">公式サイト・電話番号確認</a>
+  </div>
+
+  <!-- 大分県獣医師会 -->
+  <div class="alert-box" style="margin-top:30px;">
+    <strong>📋 大分県獣医師会（会員病院検索）</strong><br>
+    地域別・診療科目別に動物病院を検索できます。かかりつけ医を探す際に活用してください。<br>
+    <a href="https://oita-vma.jp/hospital/" target="_blank" style="color:#2980b9; font-weight:bold;">→ 大分県獣医師会 会員病院案内</a>
+  </div>
+
+  <!-- 症状別緊急度チェック -->
+  <h2 class="section-title">⚠️ 症状別・緊急度チェック</h2>
+  <p style="color:#666; margin-bottom:20px;">以下の症状が見られたら、すぐに動物病院へ連絡してください。</p>
+
+  <div class="symptom-grid">
+    <div class="symptom-card" style="border-top: 4px solid #e74c3c;">
+      <h4>🔴 今すぐ病院へ（緊急）</h4>
+      <ul>
+        <li>呼吸が苦しそう・口を開けて呼吸している</li>
+        <li>意識がない・ぐったりしている</li>
+        <li>大量出血が止まらない</li>
+        <li>けいれん・ひきつけが起きている</li>
+        <li>毒物・異物を飲み込んだ可能性がある</li>
+        <li>交通事故にあった</li>
+        <li>お腹が急に膨れた（胃捻転の疑い）</li>
+        <li>尿が全く出ない（尿道閉塞の疑い）</li>
+      </ul>
+    </div>
+    <div class="symptom-card" style="border-top: 4px solid #f39c12;">
+      <h4>🟡 早めに病院へ（準緊急）</h4>
+      <ul>
+        <li>嘔吐・下痢が続いている（3回以上）</li>
+        <li>食欲が全くない状態が1日以上続く</li>
+        <li>足を引きずっている・歩けない</li>
+        <li>目が充血・目やにが多い</li>
+        <li>耳を頻繁に掻いている・頭を振る</li>
+        <li>体に腫れ・しこりがある</li>
+        <li>水をたくさん飲む・尿量が多い</li>
+        <li>体温が高い（39.5℃以上）</li>
+      </ul>
+    </div>
+    <div class="symptom-card" style="border-top: 4px solid #27ae60;">
+      <h4>🟢 様子を見て翌日受診</h4>
+      <ul>
+        <li>1〜2回の嘔吐（元気はある）</li>
+        <li>食欲がやや落ちている</li>
+        <li>軽い咳・くしゃみ</li>
+        <li>少量の目やに</li>
+        <li>皮膚の軽い痒み</li>
+        <li>便が少し柔らかい</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 熱中症対策 -->
+  <h2 class="section-title">☀️ 熱中症の対処法（大分の夏は特に注意！）</h2>
+
+  <div class="alert-box danger">
+    <strong>⚠️ 大分県の夏は危険！</strong><br>
+    大分県は盆地が多く、大分市・日田市・竹田市などは夏に35℃を超えることがあります。特に日田市は「日本一暑い街」と呼ばれることも。犬は人間より熱中症になりやすく、<strong>短時間でも命に関わります。</strong>
+  </div>
+
+  <h3 style="color:#2c3e50; margin:20px 0 12px;">熱中症の症状</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card">
+      <h4>初期症状</h4>
+      <ul>
+        <li>激しいパンティング（ハアハア）</li>
+        <li>よだれが多い</li>
+        <li>体が熱い</li>
+        <li>元気がなくなる</li>
+      </ul>
+    </div>
+    <div class="symptom-card">
+      <h4>重症症状（即病院へ）</h4>
+      <ul>
+        <li>ぐったりして動けない</li>
+        <li>嘔吐・下痢</li>
+        <li>歯茎が白っぽい・青紫色</li>
+        <li>意識がない・けいれん</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 style="color:#2c3e50; margin:20px 0 12px;">熱中症の応急処置（病院に電話しながら行う）</h3>
+  <div class="first-aid-steps">
+    <div class="first-aid-step">
+      <div class="step-number">1</div>
+      <div>
+        <strong>涼しい場所に移動</strong><br>
+        エアコンの効いた室内・日陰に移動させる。車内の場合はすぐに外へ出す。
+      </div>
+    </div>
+    <div class="first-aid-step">
+      <div class="step-number">2</div>
+      <div>
+        <strong>体を冷やす</strong><br>
+        水道水（冷たすぎない）で体全体を濡らす。特に首・脇・内股・足の裏を重点的に冷やす。氷水は血管が収縮するので使わない。
+      </div>
+    </div>
+    <div class="first-aid-step">
+      <div class="step-number">3</div>
+      <div>
+        <strong>水を飲ませる（飲める場合のみ）</strong><br>
+        意識がある場合は少量ずつ水を飲ませる。無理に飲ませると誤嚥の危険があるので注意。
+      </div>
+    </div>
+    <div class="first-aid-step">
+      <div class="step-number">4</div>
+      <div>
+        <strong>すぐに動物病院へ</strong><br>
+        応急処置をしながら動物病院に電話。自己判断で「回復した」と思っても必ず受診する。
+      </div>
+    </div>
+  </div>
+
+  <!-- 怪我の応急処置 -->
+  <h2 class="section-title">🩹 怪我の応急処置</h2>
+
+  <div class="symptom-grid">
+    <div class="symptom-card">
+      <h4>出血している場合</h4>
+      <ul>
+        <li>清潔なタオル・ガーゼで傷口を押さえる</li>
+        <li>5〜10分間、強く圧迫する</li>
+        <li>止まらない場合は即病院へ</li>
+        <li>傷口を水で洗わない（感染リスク）</li>
+        <li>傷口を舐めさせない</li>
+      </ul>
+    </div>
+    <div class="symptom-card">
+      <h4>骨折・捻挫の疑い</h4>
+      <ul>
+        <li>患部を動かさない</li>
+        <li>無理に歩かせない</li>
+        <li>タオルで包んで固定（ただし締めすぎない）</li>
+        <li>抱っこして安静に病院へ</li>
+        <li>患部を冷やしすぎない</li>
+      </ul>
+    </div>
+    <div class="symptom-card">
+      <h4>異物を飲み込んだ場合</h4>
+      <ul>
+        <li>無理に吐かせない（食道を傷つける）</li>
+        <li>飲み込んだものを特定する</li>
+        <li>すぐに動物病院へ連絡</li>
+        <li>チョコレート・ぶどう・玉ねぎは特に危険</li>
+        <li>薬・洗剤・タバコも即病院へ</li>
+      </ul>
+    </div>
+    <div class="symptom-card">
+      <h4>蜂・虫に刺された場合</h4>
+      <ul>
+        <li>刺された部分を確認する</li>
+        <li>蜂の針が残っている場合はピンセットで除去</li>
+        <li>流水で洗い流す</li>
+        <li>顔・首が腫れている場合は即病院へ</li>
+        <li>アナフィラキシーに注意（急激な腫れ・呼吸困難）</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 旅行中の緊急連絡先 -->
+  <h2 class="section-title">📞 旅行中の緊急連絡先まとめ</h2>
+
+  <div style="background:white; border-radius:12px; padding:24px; box-shadow:0 2px 12px rgba(0,0,0,0.1);">
+    <table style="width:100%; border-collapse:collapse;">
+      <thead>
+        <tr style="background:#e74c3c; color:white;">
+          <th style="padding:12px; text-align:left;">機関</th>
+          <th style="padding:12px; text-align:left;">電話番号</th>
+          <th style="padding:12px; text-align:left;">備考</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom:1px solid #eee;">
+          <td style="padding:12px;">大分動物夜間診療</td>
+          <td style="padding:12px;"><a href="tel:090-9785-3974" style="color:#e74c3c; font-weight:bold;">090-9785-3974</a></td>
+          <td style="padding:12px;">22:00〜翌9:00</td>
+        </tr>
+        <tr style="border-bottom:1px solid #eee; background:#f9f9f9;">
+          <td style="padding:12px;">大分動物医療センター</td>
+          <td style="padding:12px;"><a href="tel:097-543-5500" style="color:#e74c3c; font-weight:bold;">097-543-5500</a></td>
+          <td style="padding:12px;">時間外22時まで</td>
+        </tr>
+        <tr style="border-bottom:1px solid #eee;">
+          <td style="padding:12px;">大分小動物病院</td>
+          <td style="padding:12px;"><a href="tel:097-535-9880" style="color:#e74c3c; font-weight:bold;">097-535-9880</a></td>
+          <td style="padding:12px;">月火水金22時まで</td>
+        </tr>
+        <tr style="border-bottom:1px solid #eee; background:#f9f9f9;">
+          <td style="padding:12px;">COMS動物病院</td>
+          <td style="padding:12px;"><a href="tel:097-576-7826" style="color:#e74c3c; font-weight:bold;">097-576-7826</a></td>
+          <td style="padding:12px;">可能な限り時間外対応</td>
+        </tr>
+        <tr style="border-bottom:1px solid #eee;">
+          <td style="padding:12px;">有賀動物病院</td>
+          <td style="padding:12px;"><a href="tel:050-3362-1311" style="color:#e74c3c; font-weight:bold;">050-3362-1311</a></td>
+          <td style="padding:12px;">可能な限り時間外対応</td>
+        </tr>
+        <tr style="background:#f9f9f9;">
+          <td style="padding:12px;">大分県動物愛護センター</td>
+          <td style="padding:12px;"><a href="tel:097-542-0510" style="color:#e74c3c; font-weight:bold;">097-542-0510</a></td>
+          <td style="padding:12px;">平日9:00〜17:00</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 旅行前の準備チェックリスト -->
+  <h2 class="section-title">✅ 旅行前の準備チェックリスト</h2>
+
+  <div class="checklist-box">
+    <h4>🏥 医療・健康関連</h4>
+    <ul>
+      <li>かかりつけ医の電話番号をスマホに登録した</li>
+      <li>目的地近くの動物病院を調べた</li>
+      <li>フィラリア・ノミダニ予防薬を投与した</li>
+      <li>狂犬病予防接種が最新の状態か確認した</li>
+      <li>混合ワクチンの接種証明書を持参した</li>
+      <li>常備薬（下痢止め・胃薬など）を準備した</li>
+      <li>保険証（ペット保険に加入している場合）を持参した</li>
+    </ul>
+  </div>
+
+  <div class="checklist-box">
+    <h4>🌡️ 熱中症対策（夏季）</h4>
+    <ul>
+      <li>冷却グッズ（冷却マット・ネッククーラー）を準備した</li>
+      <li>水分（愛犬用の水）を十分に持参した</li>
+      <li>携帯用水飲みボウルを準備した</li>
+      <li>日陰での休憩スポットを事前に調べた</li>
+      <li>車内に犬を置き去りにしないと決めた</li>
+      <li>散歩は朝夕の涼しい時間帯に計画した</li>
+    </ul>
+  </div>
+
+  <!-- 大分県特有の注意事項 -->
+  <h2 class="section-title">🗾 大分県特有の注意事項</h2>
+
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:20px; margin:20px 0;">
+    <div style="background:white; border-radius:12px; padding:20px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+      <h4 style="color:#e74c3c; margin-bottom:12px;">🌋 くじゅう・由布岳の注意</h4>
+      <ul style="font-size:0.9rem; padding-left:20px;">
+        <li>標高が高く気温差が大きい（夏でも寒い）</li>
+        <li>火山ガスが発生する地域あり（硫黄山周辺）</li>
+        <li>登山道は足場が悪い箇所あり</li>
+        <li>熊の目撃情報あり（熊鈴推奨）</li>
+        <li>天候が急変しやすい</li>
+      </ul>
+    </div>
+    <div style="background:white; border-radius:12px; padding:20px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+      <h4 style="color:#e74c3c; margin-bottom:12px;">♨️ 温泉地での注意</h4>
+      <ul style="font-size:0.9rem; padding-left:20px;">
+        <li>温泉の蒸気・硫黄ガスは犬に有害な場合あり</li>
+        <li>地面が熱い場所（地熱地帯）に注意</li>
+        <li>別府・湯布院の観光地は人が多い</li>
+        <li>温泉施設は基本的に犬連れ不可</li>
+        <li>足湯は犬を入れないこと</li>
+      </ul>
+    </div>
+    <div style="background:white; border-radius:12px; padding:20px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+      <h4 style="color:#e74c3c; margin-bottom:12px;">🌊 海・川での注意</h4>
+      <ul style="font-size:0.9rem; padding-left:20px;">
+        <li>海水浴後は必ず真水で体を洗う</li>
+        <li>川は流れが速い場所あり（特に増水時）</li>
+        <li>海藻・貝殻を食べないよう注意</li>
+        <li>日焼けに注意（鼻・耳は特に）</li>
+        <li>溺れた場合は無理に助けず救助要請</li>
+      </ul>
+    </div>
+    <div style="background:white; border-radius:12px; padding:20px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+      <h4 style="color:#e74c3c; margin-bottom:12px;">🐛 マダニ・虫の注意</h4>
+      <ul style="font-size:0.9rem; padding-left:20px;">
+        <li>大分県は山・草地が多くマダニが多い</li>
+        <li>草むらの後は全身チェック</li>
+        <li>マダニは無理に取らず病院へ</li>
+        <li>フィラリア・ノミダニ予防薬の投与を忘れずに</li>
+        <li>SFTS（重症熱性血小板減少症候群）に注意</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 関連ページリンク -->
+  <div style="background:#f8f9fa; border-radius:12px; padding:24px; margin:30px 0;">
+    <h3 style="color:#2c3e50; margin-bottom:16px;">🔗 関連ページ</h3>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:12px;">
+      <a href="area-oita.html" style="display:block; background:white; border-radius:8px; padding:14px; text-decoration:none; color:#2c3e50; box-shadow:0 2px 6px rgba(0,0,0,0.08); text-align:center;">
+        🗾 大分県トップ
+      </a>
+      <a href="oita-dogrun.html" style="display:block; background:white; border-radius:8px; padding:14px; text-decoration:none; color:#2c3e50; box-shadow:0 2px 6px rgba(0,0,0,0.08); text-align:center;">
+        🐕 大分のドッグラン
+      </a>
+      <a href="oita-cafe.html" style="display:block; background:white; border-radius:8px; padding:14px; text-decoration:none; color:#2c3e50; box-shadow:0 2px 6px rgba(0,0,0,0.08); text-align:center;">
+        ☕ 大分のカフェ
+      </a>
+      <a href="oita-hotels.html" style="display:block; background:white; border-radius:8px; padding:14px; text-decoration:none; color:#2c3e50; box-shadow:0 2px 6px rgba(0,0,0,0.08); text-align:center;">
+        🏨 大分の宿泊
+      </a>
+      <a href="oita-outdoor.html" style="display:block; background:white; border-radius:8px; padding:14px; text-decoration:none; color:#2c3e50; box-shadow:0 2px 6px rgba(0,0,0,0.08); text-align:center;">
+        🏕️ 大分のアウトドア
+      </a>
+      <a href="emergency.html" style="display:block; background:white; border-radius:8px; padding:14px; text-decoration:none; color:#2c3e50; box-shadow:0 2px 6px rgba(0,0,0,0.08); text-align:center;">
+        🚨 九州全域の緊急ガイド
+      </a>
+    </div>
+  </div>
+
+  <p style="font-size:0.8rem; color:#999; text-align:center; margin:20px 0;">
+    ※ 掲載情報は2026年5月時点のものです。診療時間・対応内容は変更になる場合があります。必ず事前にお電話でご確認ください。
+  </p>
+
+</div>
+
+<!-- フッター -->
+<footer class="footer">
+  <div class="footer-content">
+    <p>🐾 Daisy's 九州犬連れガイド</p>
+    <p>大型犬ダイジーと一緒に九州を旅する情報サイト</p>
+    <div class="footer-links">
+      <a href="index.html">トップ</a>
+      <a href="about.html">このサイトについて</a>
+      <a href="area-oita.html">大分県</a>
+      <a href="sitemap.html">サイトマップ</a>
+    </div>
+    <p style="font-size:0.8rem; margin-top:10px;">© 2026 Daisy's 九州犬連れガイド</p>
+  </div>
+</footer>
+
+</body>
+</html>

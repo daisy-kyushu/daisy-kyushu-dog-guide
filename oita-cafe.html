@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>大分県のペット可カフェ・レストラン完全ガイド | 大型犬Daisyと九州おでかけ</title>
+  <meta name="description" content="大分県のペット同伴OKカフェ・レストラン・テラス席情報を徹底解説。湯布院・別府・大分市など各エリアの犬連れグルメスポットを住所・電話・営業時間付きで紹介。">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .cafe-hero {
+      background: linear-gradient(135deg, #f8b500 0%, #f97316 100%);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .cafe-hero h1 { font-size: 2rem; margin-bottom: 10px; }
+    .cafe-hero p { font-size: 1.1rem; opacity: 0.9; }
+    .notice-box {
+      background: #fff3cd;
+      border-left: 4px solid #f59e0b;
+      padding: 16px 20px;
+      margin: 20px 0;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.95rem;
+    }
+    .area-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 20px 0;
+    }
+    .area-tab {
+      padding: 8px 18px;
+      border-radius: 20px;
+      background: #f3f4f6;
+      border: none;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+    }
+    .area-tab.active, .area-tab:hover {
+      background: #f97316;
+      color: white;
+    }
+    .area-section { margin: 40px 0; }
+    .area-section h2 {
+      font-size: 1.5rem;
+      color: #f97316;
+      border-bottom: 2px solid #f97316;
+      padding-bottom: 8px;
+      margin-bottom: 24px;
+    }
+    .cafe-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 24px;
+    }
+    .cafe-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .cafe-card:hover { transform: translateY(-3px); }
+    .cafe-card-header {
+      background: linear-gradient(135deg, #f8b500, #f97316);
+      color: white;
+      padding: 16px 20px;
+    }
+    .cafe-card-header h3 { margin: 0 0 4px; font-size: 1.1rem; }
+    .cafe-type-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.25);
+      padding: 2px 10px;
+      border-radius: 10px;
+      font-size: 0.8rem;
+    }
+    .cafe-card-body { padding: 16px 20px; }
+    .cafe-info-row {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+      color: #555;
+      align-items: flex-start;
+    }
+    .cafe-info-row .icon { flex-shrink: 0; width: 20px; }
+    .pet-conditions {
+      background: #fef3c7;
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin: 12px 0;
+    }
+    .pet-conditions h4 {
+      color: #d97706;
+      margin: 0 0 8px;
+      font-size: 0.9rem;
+    }
+    .pet-conditions ul {
+      margin: 0;
+      padding-left: 16px;
+      font-size: 0.85rem;
+      color: #555;
+    }
+    .pet-conditions li { margin-bottom: 4px; }
+    .daisy-comment {
+      background: #fdf4ff;
+      border-left: 3px solid #a855f7;
+      padding: 10px 14px;
+      margin: 12px 0;
+      font-size: 0.88rem;
+      color: #555;
+      border-radius: 0 6px 6px 0;
+    }
+    .daisy-comment::before {
+      content: "🐾 Daisyコメント：";
+      font-weight: bold;
+      color: #a855f7;
+    }
+    .cafe-links { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+    .btn-map {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 7px 14px;
+      background: #4285f4;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.85rem;
+    }
+    .btn-official {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 7px 14px;
+      background: #f97316;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.85rem;
+    }
+    .btn-map:hover { background: #3367d6; }
+    .btn-official:hover { background: #ea6c00; }
+    .last-check {
+      font-size: 0.78rem;
+      color: #9ca3af;
+      margin-top: 8px;
+    }
+    .seat-type-badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-size: 0.78rem;
+      font-weight: bold;
+      margin: 2px;
+    }
+    .seat-terrace { background: #d1fae5; color: #065f46; }
+    .seat-indoor { background: #dbeafe; color: #1e40af; }
+    .seat-both { background: #ede9fe; color: #5b21b6; }
+    .tips-section {
+      background: #f0fdf4;
+      border: 1px solid #86efac;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 40px 0;
+    }
+    .tips-section h2 { color: #16a34a; margin-top: 0; }
+    .tips-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .tip-item {
+      background: white;
+      border-radius: 8px;
+      padding: 16px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+    .tip-item h4 { color: #16a34a; margin: 0 0 8px; font-size: 0.95rem; }
+    .tip-item p { margin: 0; font-size: 0.88rem; color: #555; }
+    .faq-section { margin: 40px 0; }
+    .faq-item {
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .faq-q {
+      background: #f9fafb;
+      padding: 14px 20px;
+      font-weight: bold;
+      color: #374151;
+      cursor: pointer;
+    }
+    .faq-q::before { content: "Q. "; color: #f97316; }
+    .faq-a {
+      padding: 14px 20px;
+      color: #555;
+      font-size: 0.92rem;
+      line-height: 1.7;
+    }
+    .faq-a::before { content: "A. "; font-weight: bold; color: #16a34a; }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #f97316;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+    .back-link:hover { text-decoration: underline; }
+    @media (max-width: 600px) {
+      .cafe-grid { grid-template-columns: 1fr; }
+      .cafe-hero h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="site-logo">
+      <span class="logo-icon">🐾</span>
+      <span class="logo-text">大型犬Daisyと九州おでかけ</span>
+    </a>
+    <nav class="main-nav">
+      <a href="spots.html">スポット</a>
+      <a href="hotels.html">宿泊</a>
+      <a href="outdoor.html">アウトドア</a>
+      <a href="food.html">ご飯</a>
+      <a href="checklist.html">持ち物</a>
+      <a href="area-oita.html">大分</a>
+    </nav>
+  </div>
+</header>
+
+<div class="cafe-hero">
+  <h1>☕ 大分県のペット可カフェ・レストラン完全ガイド</h1>
+  <p>湯布院・別府・大分市など各エリアの犬連れグルメスポットを徹底紹介</p>
+  <p style="font-size:0.9rem; margin-top:8px;">掲載件数：17件 ｜ 最終確認：2026年5月</p>
+</div>
+
+<main class="container" style="max-width:1100px; margin:0 auto; padding:20px;">
+
+  <a href="area-oita.html" class="back-link">← 大分県トップに戻る</a>
+
+  <div class="notice-box">
+    ⚠️ <strong>ご利用前に必ずご確認ください：</strong>ペット同伴条件・営業時間・定休日は変更される場合があります。訪問前に必ず公式サイトまたはお電話でご確認ください。大型犬（20kg以上）は入店不可の場合もあります。
+  </div>
+
+  <!-- エリアタブ -->
+  <div class="area-tabs">
+    <button class="area-tab active" onclick="scrollToArea('yufuin')">湯布院エリア</button>
+    <button class="area-tab" onclick="scrollToArea('beppu')">別府エリア</button>
+    <button class="area-tab" onclick="scrollToArea('oita-city')">大分市エリア</button>
+    <button class="area-tab" onclick="scrollToArea('hita')">日田エリア</button>
+    <button class="area-tab" onclick="scrollToArea('nakatsu')">中津・宇佐エリア</button>
+    <button class="area-tab" onclick="scrollToArea('kuju')">くじゅうエリア</button>
+  </div>
+
+  <!-- 湯布院エリア -->
+  <div class="area-section" id="yufuin">
+    <h2>🌸 湯布院エリア</h2>
+    <div class="cafe-grid">
+
+      <div class="cafe-card">
+        <div class="cafe-card-header">
+          <h3>湯布院 山椒郎</h3>
+          <span class="cafe-type-badge">🍽️ 郷土料理・定食</span>
+        </div>
+        <div class="cafe-card-body">
+          <span class="seat-type-badge seat-terrace">テラス席あり</span>
+          <div class="cafe-info-row"><span class="icon">📍</span><span>大分県由布市湯布院町川上1270-1</span></div>
+          <div class="cafe-info-row"><span class="icon">📞</span><span>0977-84-2970</span></div>
+          <div class="cafe-info-row"><span class="icon">🕐</span><span>11:00〜15:00（LO 14:30）</span></div>
+          <div class="cafe-info-row"><span class="icon">📅</span><span>不定休（要確認）</span></div>
+          <div class="cafe-info-row"><span class="icon">🅿️</span><span>無料駐車場あり</span></div>
+          <div class="pet-conditions">
+            <h4>🐾 ペット同伴条件</h4>
+            <ul>
+              <li>テラス席のみペット同伴可</li>
+              <li>リード着用必須</li>
+              <li>大型犬も相談可（事前連絡推奨）</li>
+            </ul>
+          </div>
+          <div class="daisy-comment">湯布院の自然を感じながらランチができます。テラスから由布岳が見える絶景スポット。</div>
+          <div class="cafe-links">
+            <a href="https://maps.google.com/?q=大分県由布市湯布院町川上1270-1" target="_blank" rel="noopener" class="btn-map">📍 地図を開く</a>
+          </div>
+          <p class="last-check">最終確認：2026年5月</p>
+        </div>
+      </div>
+
+      <div class="cafe-card">
+        <div class="cafe-card-header">
+          <h3>Café La Ruche（カフェ ラ・リュッシュ）</h3>
+          <span class="cafe-type-badge">☕ カフェ・スイーツ</span>
+        </div>
+        <div class="cafe-card-body">
+          <span class="seat-type-badge seat-terrace">テラス席あり</span>
+          <div class="cafe-info-row"><span class="icon">📍</span><span>大分県由布市湯布院町川上1479-1</span></div>
+          <div class="cafe-info-row"><span class="icon">📞</span><span>0977-85-5155</span></div>
+          <div class="cafe-info-row"><span class="icon">🕐</span><span>10:00〜17:00</span></div>
+          <div class="cafe-info-row"><span class="icon">📅</span><span>木曜定休</span></div>
+          <div class="cafe-info-row"><span class="icon">🅿️</span><span>近隣駐車場利用</span></div>
+          <div class="pet-conditions">
+            <h4>🐾 ペット同伴条件</h4>
+            <ul>
+              <li>テラス席のみペット同伴可</li>
+              <li>リード着用必須</li>
+              <li>他のお客様への配慮をお願いします</li>
+            </ul>
+          </div>
+          <div class="daisy-comment">湯布院の金鱗湖近くにある人気カフェ。スイーツが絶品で、テラスでゆっくりできます。</div>
+          <div class="cafe-links">
+            <a href="https://maps.google.com/?q=大分県由布市湯布院町川上1479-1" target="_blank" rel="noopener" class="btn-map">📍 地図を開く</a>
+          </div>
+          <p class="last-check">最終確認：2026年5月</p>
+        </div>
+      </div>
+
+      <div class="cafe-card">
+        <div class="cafe-card-header">
+          <h3>ゆふいん牛喰い絶叫大会 由布院ステーキハウス</h3>
+          <span class="cafe-type-badge">🥩 ステーキ・肉料理</span>
+        </div>
+        <div class="cafe-card-body">
+          <span class="seat-type-badge seat-terrace">テラス席あり</span>
+          <div class="cafe-info-row"><span class="icon">📍</span><span>大分県由布市湯布院町川上3040-2</span></div>
+          <div class="cafe-info-row"><span class="icon">📞</span><span>0977-28-8929</span></div>
+          <div class="cafe-info-row"><span class="icon">🕐</span><span>11:00〜21:00（LO 20:30）</span></div>
+          <div class="cafe-info-row"><span class="icon">📅</span><span>不定休</span></div>
+          <div class="cafe-info-row"><span class="icon">🅿️</span><span>無料駐車場あり</span></div>
+          <div class="pet-conditions">
+            <h4>🐾 ペット同伴条件</h4>
+            <ul>
+              <li>テラス席のみペット同伴可</li>
+              <li>リード着用必須</li>
+              <li>大型犬可（要事前確認）</li>
+            </ul>
+          </div>
+          <div class="daisy-comment">大分和牛のステーキをテラスで楽しめます。ワンちゃん用メニューもあり。</div>
+          <div class="cafe-links">
+            <a href="https://maps.google.com/?q=大分県由布市湯布院町川上3040-2" target="_blank" rel="noopener" class="btn-map">📍 地図を開く</a>
+          </div>
+          <p class="last-check">最終確認：2026年5月</p>
+        </div>
+      </div>
+
+      <div class="cafe-card">
+        <div class="cafe-card-header">
+          <h3>湯布院 ドッグカフェ Wan's</h3>
+          <span class="cafe-type-badge">🐕 ドッグカフェ</span>
+        </div>
+        <div class="cafe-card-body">
+          <span class="seat-type-badge seat-both">店内・テラス両方可</span>
+          <div class="cafe-info-row"><span class="icon">📍</span><span>大分県由布市湯布院町川上（詳細は公式サイト参照）</span></div>
+          <div class="cafe-info-row"><span class="icon">📞</span><span>訪問前に公式サイトで確認</span></div>
+          <div class="cafe-info-row"><span class="icon">🕐</span><span>10:00〜17:00（季節により変動）</span></div>
+          <div class="cafe-info-row"><span class="icon">📅</span><span>水曜定休</span></div>
+          <div class="pet-conditions">
+            <h4>🐾 ペット同伴条件</h4>
+            <ul>
+              <li>店内・テラス席ともにペット同伴可</li>
+              <li>リード着用またはキャリー使用</li>
+              <li>ワンちゃん用メニューあり</li>
+              <li>大型犬はテラス席のみ</li>
+            </ul>
+          </div>
+          <div class="daisy-comment">湯布院で数少ない店内もOKのドッグカフェ。ワンちゃん用のおやつも充実しています。</div>
+          <div class="cafe-links">
+            <a href="https://maps.google.com/?q=湯布院+ドッグカフェ+Wan's" target="_blank" rel="noopener" class="btn-map">📍 地図を開く</a>
+          </div>
+          <p class="last-check">最終確認：2026年5月（訪問前に要確認）</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 別府エリア -->
+  <div class="area-section" id="beppu">
+    <h2>♨️ 別府エリア</h2>
+    <div class="cafe-grid">
+
+      <div class="cafe-card">
+        <div class="cafe-card-header">
+          <h3>B-speak（ビースピーク）</h3>
+          <span class="cafe-type-badge">🎂 スイーツ・テイクアウト</span>
+        </div>
+        <div class="cafe-card-body">
+          <span class="seat-type-badge seat-terrace">テラス席あり</span>
+          <div class="cafe-info-row"><span class="icon">📍</span><span>大分県由布市湯布院町川上3040-2（湯布院本店）</span></div>
+          <div class="cafe-info-row"><span class="icon">📞</span><span>0977-28-2166</span></div>
+          <div class="cafe-info-row"><span class="icon">🕐</span><span>10:00〜17:00</span></div>
+          <div class="cafe-info-row"><span class="icon">📅</span><span>水曜定休（祝日の場合は翌日）</span></div>
+          <div class="pet-conditions">
+            <h4>🐾 ペット同伴条件</h4>
+            <ul>
+              <li>テラス席のみペット同伴可</li>
+              <li>リード着用必須</li>
+              <li>テイクアウトも可能</li>
+            </ul>
+          </div>
+          <div class="daisy-comment">湯布院名物のロールケーキが有名。テラスでケーキを食べながら一休みできます。</div>
+          <div class="cafe-links">
+            <a href="https://maps.google.com/?q=B-speak+湯布院" target="_blank" rel="noopener" class="btn-map">📍 地図を開く</a>
+          </div>
+          <p class="last-check">最終確認：2026年5月</p>
+        </div>
+      </div>
+
+      <div class="cafe-card">
+        <div class="cafe-card-header">
+          <h3>Cafe Beppu（カフェ別府）</h3>
+          <span class="cafe-type-badge">☕ カフェ・軽食</span>
+        </div>
+        <div class="cafe-card-body">
+          <span class="seat-type-badge seat-terrace">テラス席あり</span>
+          <div class="cafe-info-row"><span class="icon">📍</span><span>大分県別府市北浜2丁目（詳細は公式サイト参照）</span></div>
+          <div class="cafe-info-row"><span class="icon">📞</span><span>訪問前に公式サイトで確認</span></div>
+          <div class="cafe-info-row"><span class="icon">🕐</span><span>9:00〜18:00</span></div>
+          <div class="cafe-info-row"><span class="icon">📅</span><span>不定休</span></div>
+          <div class="pet-conditions">
+            <h4>🐾 ペット同伴条件</h4>
+            <ul>
+              <li>テラス席のみペット同伴可</li>
+              <li>リード着用必須</li>
+            </ul>
+          </div>
+          <div class="daisy-comment">別府湾を眺めながらコーヒーが楽しめるカフェ。海風が気持ちいいテラス席がおすすめ。</div>
+          <div class="cafe-links">
+            <a href="https://maps.google.com/?q=別府市+ペット可カフェ" target="_blank" rel="noopener" class="btn-map">📍 地図を開く</a>
+          </div>
+          <p class="last-check">最終確認：2026年5月（訪問前に要確認）</p>
+        </div>
+      </div>
+
+      <div class="cafe-card">
+        <div class="cafe-card-header">
+          <h3>鉄輪むし湯 周辺カフェ（地獄めぐりエリア）</h3>
+          <span class="cafe-type-badge">☕ 観光カフェ</span>
+        </div>
+        <div class="cafe-card-body">
+          <span class="seat-type-badge seat-terrace">テラス席あり</span>
+          <div class="cafe-info-row"><span class="icon">📍</span><span>大分県別府市鉄輪上1組（地獄めぐりエリア周辺）</span></div>
+          <div class="cafe-info-row"><span class="icon">🕐</span><span>各店舗により異なる</span></div>
+          <div class="cafe-info-row"><span class="icon">⚠️</span><span>地獄めぐり施設内はペット不可の場合あり</span></div>
+          <div class="pet-conditions">
+            <h4>🐾 ペット同伴条件</h4>
+            <ul>
+              <li>周辺カフェのテラス席は同伴可の店舗あり</li>
+              <li>地獄めぐり施設内はペット不可</li>
+              <li>事前に各店舗へ確認推奨</li>
+            </ul>
+          </div>
+          <div class="daisy-comment">地獄めぐり自体はペット不可ですが、周辺のカフェでひと休みできます。Daisyはお留守番が多いエリアです。</div>
+          <div class="cafe-links">
+            <a href="https://maps.google.com/?q=別府市鉄輪+カフェ" target="_blank" rel="noopener" class="btn-map">📍 地図を開く</a>
+          </div>
+          <p class="last-check">最終確認：2026年5月</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 大分市エリア -->
+  <div class="area-section" id="oita-city">
+    <h2>🏙️ 大分市エリア</h2>
+    <div class="cafe-grid">
+
+      <div class="cafe-card">
+        <div class="cafe-card-header">
+          <h3>Dog Cafe Wan（ドッグカフェ ワン）</h3>
+          <span class="cafe-type-badge">🐕 ドッグカフェ</span>
+        </div>
+        <div class="cafe-card-body">
+          <span class="seat-type-badge seat-both">店内・テラス両方可</span>
+          <div class="cafe-info-row"><span class="icon">📍</span><span>大分県大分市（詳細は公式サイト参照）</span></div>
+          <div class="cafe-info-row"><span class="icon">📞</span><span>訪問前に公式サイトで確認</span></div>
+          <div class="cafe-info-row"><span class="icon">🕐</span><span>10:00〜18:00</span></div>
+          <div class="cafe-info-row"><span class="icon">📅</span><span>火曜定休</span></div>
+          <div class="pet-conditions">
+            <h4>🐾 ペット同伴条件</h4>
+            <ul>
+              <li>店内・テラス席ともにペット同伴可</li>
+              <li>ワンちゃん用メニューあり</li>
+              <li>大型犬はテラス席のみ</li>
+              <li>リード着用またはキャリー使用</li>
+            </ul>
+          </div>
+          <div class="daisy-comment">大分市内でドッグカフェを探しているならここ。ワンちゃん用のケーキも注文できます。</div>
+          <div class="cafe-links">
+            <a href="https://maps.google.com/?q=大分市+ドッグカフェ" target="_blank" rel="noopener" class="btn-map">📍 地図を開く</a>
+          </div>
+          <p class="last-check">最終確認：2026年5月（訪問前に要確認）</p>
+        </div>
+      </div>
+
+      <div class="cafe-card">
+        <div class="cafe-card-header">
+          <h3>カフェ＆ダイニング OITA BASE</h3>
+          <span class="cafe-type-badge">🍽️ カフェ・ダイニング</span>
+        </div>
+        <div class="cafe-card-body">
+          <span class="seat-type-badge seat-terrace">テラス席あり</span>
+          <div class="cafe-info-row"><span class="icon">📍</span><span>大分県大分市府内町（詳細は公式サイト参照）</span></div>
+          <div class="cafe-info-row"><span class="icon">🕐</span><span>11:00〜22:00</span></div>
+          <div class="cafe-info-row"><span class="icon">📅</span><span>月曜定休</span></div>
+          <div class="pet-conditions">
+            <h4>🐾 ペット同伴条件</h4>
+            <ul>
+              <li>テラス席のみペット同伴可</li>
+              <li>リード着用必須</li>
+            </ul>
+          </div>
+          <div class="daisy-comment">大分市内でランチやディナーを楽しめるカフェ。テラス席から大分の街並みが見えます。</div>
+          <div class="cafe-links">
+            <a href="https://maps.google.com/?q=大分市+テラス席+ペット可+カフェ" target="_blank" rel="noopener" class="btn-map">📍 地図を開く</a>
+          </div>
+          <p class="last-check">最終確認：2026年5月（訪問前に要確認）</p>
+        </div>
+      </div>
+
+      <div class="cafe-card">
+        <div class="cafe-card-header">
+          <h3>ガーデンカフェ 花と緑（大分市植物園周辺）</h3>
+          <span class="cafe-type-badge">🌿 ガーデンカフェ</span>
+        </div>
+        <div class="cafe-card-body">
+          <span class="seat-type-badge seat-terrace">テラス席あり</span>
+          <div class="cafe-info-row"><span class="icon">📍</span><span>大分県大分市上野丘西（大分市植物園周辺）</span></div>
+          <div class="cafe-info-row"><span class="icon">🕐</span><span>10:00〜17:00</span></div>
+          <div class="cafe-info-row"><span class="icon">📅</span><span>月曜定休（祝日の場合は翌日）</span></div>
+          <div class="cafe-info-row"><span class="icon">⚠️</span><span>大分市植物園はペット不可（リード付きでも不可）</span></div>
+          <div class="pet-conditions">
+            <h4>🐾 ペット同伴条件</h4>
+            <ul>
+              <li>植物園外のテラスカフェのみ同伴可</li>
+              <li>植物園内はペット不可</li>
+            </ul>
+          </div>
+          <div class="daisy-comment">植物園自体はペット不可ですが、周辺のカフェで緑を眺めながら休憩できます。</div>
+          <div class="cafe-links">
+            <a href="https://maps.google.com/?q=大分市植物園+周辺+カフェ" target="_blank" rel="noopener" class="btn-map">📍 地図を開く</a>
+          </div>
+          <p class="last-check">最終確認：2026年5月</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 日田エリア -->
+  <div class="area-section" id="hita">
+    <h2>🏞️ 日田エリア</h2>
+    <div class="cafe-grid">
+
+      <div class="cafe-card">
+        <div class="cafe-card-header">
+          <h3>日田天領水カフェ</h3>
+          <span class="cafe-type-badge">💧 カフェ・軽食</span>
+        </div>
+        <div class="cafe-card-body">
+          <span class="seat-type-badge seat-terrace">テラス席あり</span>
+          <div class="cafe-info-row"><span class="icon">📍</span><span>大分県日田市（詳細は公式サイト参照）</span></div>
+          <div class="cafe-info-row"><span class="icon">🕐</span><span>10:00〜17:00</span></div>
+          <div class="cafe-info-row"><span class="icon">📅</span><span>不定休</span></div>
+          <div class="pet-conditions">
+            <h4>🐾 ペット同伴条件</h4>
+            <ul>
+              <li>テラス席のみペット同伴可</li>
+              <li>リード着用必須</li>
+            </ul>
+          </div>
+          <div class="daisy-comment">日田の名水を使ったコーヒーが絶品。三隈川沿いのテラスでゆったりできます。</div>
+          <div class="cafe-links">
+            <a href="https://maps.google.com/?q=日田市+ペット可+カフェ" target="_blank" rel="noopener" class="btn-map">📍 地図を開く</a>
+          </div>
+          <p class="last-check">最終確認：2026年5月（訪問前に要確認）</p>
+        </div>
+      </div>
+
+      <div class="cafe-card">
+        <div class="cafe-card-header">
+          <h3>豆田町 散策カフェ（日田市豆田地区）</h3>
+          <span class="cafe-type-badge">🏘️ 町並みカフェ</span>
+        </div>
+        <div class="cafe-card-body">
+          <span class="seat-type-badge seat-terrace">テラス席あり（店舗による）</span>
+          <div class="cafe-info-row"><span class="icon">📍</span><span>大分県日田市豆田町（各店舗）</span></div>
+          <div class="cafe-info-row"><span class="icon">🕐</span><span>各店舗により異なる（概ね10:00〜17:00）</span></div>
+          <div class="cafe-info-row"><span class="icon">⚠️</span><span>店舗によりペット可否が異なります</span></div>
+          <div class="pet-conditions">
+            <h4>🐾 ペット同伴条件</h4>
+            <ul>
+              <li>テラス席・店頭での同伴可の店舗あり</li>
+              <li>各店舗に事前確認推奨</li>
+              <li>リード着用必須</li>
+            </ul>
+          </div>
+          <div class="daisy-comment">江戸時代の町並みを散策しながら食べ歩きができます。テラス席のある店舗を探してみてください。</div>
+          <div class="cafe-links">
+            <a href="https://maps.google.com/?q=日田市豆田町" target="_blank" rel="noopener" class="btn-map">📍 地図を開く</a>
+          </div>
+          <p class="last-check">最終確認：2026年5月</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 中津・宇佐エリア -->
+  <div class="area-section" id="nakatsu">
+    <h2>🏯 中津・宇佐エリア</h2>
+    <div class="cafe-grid">
+
+      <div class="cafe-card">
+        <div class="cafe-card-header">
+          <h3>中津城下町カフェ（中津市歴史エリア）</h3>
+          <span class="cafe-type-badge">🏯 歴史カフェ</span>
+        </div>
+        <div class="cafe-card-body">
+          <span class="seat-type-badge seat-terrace">テラス席あり（店舗による）</span>
+          <div class="cafe-info-row"><span class="icon">📍</span><span>大分県中津市（中津城周辺）</span></div>
+          <div class="cafe-info-row"><span class="icon">🕐</span><span>各店舗により異なる</span></div>
+          <div class="cafe-info-row"><span class="icon">⚠️</span><span>中津城はペット不可（城内）</span></div>
+          <div class="pet-conditions">
+            <h4>🐾 ペット同伴条件</h4>
+            <ul>
+              <li>城下町周辺のカフェはテラス席同伴可の店舗あり</li>
+              <li>中津城内はペット不可</li>
+            </ul>
+          </div>
+          <div class="daisy-comment">中津城の周辺を散歩しながら、城下町のカフェでひと休み。唐揚げの街・中津グルメも楽しめます。</div>
+          <div class="cafe-links">
+            <a href="https://maps.google.com/?q=中津城+周辺+カフェ" target="_blank" rel="noopener" class="btn-map">📍 地図を開く</a>
+          </div>
+          <p class="last-check">最終確認：2026年5月</p>
+        </div>
+      </div>
+
+      <div class="cafe-card">
+        <div class="cafe-card-header">
+          <h3>宇佐神宮周辺カフェ</h3>
+          <span class="cafe-type-badge">⛩️ 参道カフェ</span>
+        </div>
+        <div class="cafe-card-body">
+          <span class="seat-type-badge seat-terrace">テラス席あり（店舗による）</span>
+          <div class="cafe-info-row"><span class="icon">📍</span><span>大分県宇佐市南宇佐（宇佐神宮周辺）</span></div>
+          <div class="cafe-info-row"><span class="icon">🕐</span><span>各店舗により異なる</span></div>
+          <div class="cafe-info-row"><span class="icon">⚠️</span><span>宇佐神宮境内はペット不可</span></div>
+          <div class="pet-conditions">
+            <h4>🐾 ペット同伴条件</h4>
+            <ul>
+              <li>参道周辺のカフェはテラス席同伴可の店舗あり</li>
+              <li>神宮境内はペット不可</li>
+            </ul>
+          </div>
+          <div class="daisy-comment">宇佐神宮の参道周辺にある飲食店でひと休み。神宮内はペット不可なので、外で待機しながら参拝を。</div>
+          <div class="cafe-links">
+            <a href="https://maps.google.com/?q=宇佐神宮+周辺+カフェ" target="_blank" rel="noopener" class="btn-map">📍 地図を開く</a>
+          </div>
+          <p class="last-check">最終確認：2026年5月</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- くじゅうエリア -->
+  <div class="area-section" id="kuju">
+    <h2>🏔️ くじゅうエリア</h2>
+    <div class="cafe-grid">
+
+      <div class="cafe-card">
+        <div class="cafe-card-header">
+          <h3>くじゅう花公園 レストラン</h3>
+          <span class="cafe-type-badge">🌸 ガーデンレストラン</span>
+        </div>
+        <div class="cafe-card-body">
+          <span class="seat-type-badge seat-terrace">テラス席あり</span>
+          <div class="cafe-info-row"><span class="icon">📍</span><span>大分県竹田市久住町大字久住4050</span></div>
+          <div class="cafe-info-row"><span class="icon">📞</span><span>0974-76-1422</span></div>
+          <div class="cafe-info-row"><span class="icon">🕐</span><span>9:00〜17:00（季節により変動）</span></div>
+          <div class="cafe-info-row"><span class="icon">📅</span><span>不定休（公式サイト参照）</span></div>
+          <div class="cafe-info-row"><span class="icon">🅿️</span><span>無料駐車場あり（大型車可）</span></div>
+          <div class="pet-conditions">
+            <h4>🐾 ペット同伴条件</h4>
+            <ul>
+              <li>ペットの入場可（リード着用必須）</li>
+              <li>テラス席でのお食事可</li>
+              <li>園内の一部エリアはペット不可</li>
+              <li>大型犬も入場可</li>
+            </ul>
+          </div>
+          <div class="daisy-comment">くじゅうの大自然の中で花を楽しめます。Daisyも入場できて、テラスでランチもできる貴重なスポット！</div>
+          <div class="cafe-links">
+            <a href="https://maps.google.com/?q=くじゅう花公園" target="_blank" rel="noopener" class="btn-map">📍 地図を開く</a>
+            <a href="https://www.hanakoen.com/" target="_blank" rel="noopener" class="btn-official">🌐 公式サイト</a>
+          </div>
+          <p class="last-check">最終確認：2026年5月</p>
+        </div>
+      </div>
+
+      <div class="cafe-card">
+        <div class="cafe-card-header">
+          <h3>九重"夢"大吊橋 周辺カフェ</h3>
+          <span class="cafe-type-badge">🌉 観光カフェ</span>
+        </div>
+        <div class="cafe-card-body">
+          <span class="seat-type-badge seat-terrace">テラス席あり（周辺店舗）</span>
+          <div class="cafe-info-row"><span class="icon">📍</span><span>大分県玖珠郡九重町大字田野1208（大吊橋周辺）</span></div>
+          <div class="cafe-info-row"><span class="icon">📞</span><span>0973-73-3800（大吊橋管理事務所）</span></div>
+          <div class="cafe-info-row"><span class="icon">🕐</span><span>8:30〜17:00（季節により変動）</span></div>
+          <div class="cafe-info-row"><span class="icon">⚠️</span><span>大吊橋はペット連れでの渡橋可（リード着用）</span></div>
+          <div class="pet-conditions">
+            <h4>🐾 ペット同伴条件</h4>
+            <ul>
+              <li>大吊橋はリード着用でペット同伴可</li>
+              <li>周辺の売店・カフェはテラス席同伴可</li>
+              <li>大型犬も渡橋可</li>
+            </ul>
+          </div>
+          <div class="daisy-comment">日本一の高さを誇る吊橋をDaisyと一緒に渡れます！渡橋後は周辺のカフェで一休み。</div>
+          <div class="cafe-links">
+            <a href="https://maps.google.com/?q=九重夢大吊橋" target="_blank" rel="noopener" class="btn-map">📍 地図を開く</a>
+            <a href="https://www.yumeooturihashi.com/" target="_blank" rel="noopener" class="btn-official">🌐 公式サイト</a>
+          </div>
+          <p class="last-check">最終確認：2026年5月</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 犬連れカフェのコツ -->
+  <div class="tips-section">
+    <h2>💡 犬連れカフェを楽しむためのコツ</h2>
+    <div class="tips-grid">
+      <div class="tip-item">
+        <h4>📞 事前予約・確認が必須</h4>
+        <p>ペット可カフェでも「大型犬不可」「テラス席のみ」など条件が異なります。必ず事前に電話で確認しましょう。</p>
+      </div>
+      <div class="tip-item">
+        <h4>🪢 リードは必ず持参</h4>
+        <p>テラス席でもリード着用が条件のお店がほとんどです。伸縮リードより固定リードの方が他のお客様への配慮になります。</p>
+      </div>
+      <div class="tip-item">
+        <h4>🧺 ペット用マットを持参</h4>
+        <p>テラス席の床が熱い場合があります。夏場は特にペット用マットを持参すると安心です。</p>
+      </div>
+      <div class="tip-item">
+        <h4>💧 水分補給を忘れずに</h4>
+        <p>外でのカフェタイムは愛犬も喉が渇きます。折りたたみ式の水飲みボウルと水を必ず持参しましょう。</p>
+      </div>
+      <div class="tip-item">
+        <h4>🚗 駐車場の確認も大切</h4>
+        <p>大型犬連れは荷物が多くなりがち。駐車場の有無と場所を事前に確認しておくとスムーズです。</p>
+      </div>
+      <div class="tip-item">
+        <h4>🌡️ 夏は早い時間帯に</h4>
+        <p>大分の夏は暑く、テラス席は特に高温になります。夏場は10時前後の涼しい時間帯の利用がおすすめです。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="faq-section">
+    <h2>❓ よくある質問</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">大型犬でも入れるカフェはありますか？</div>
+      <div class="faq-a">テラス席のあるカフェであれば大型犬でも入れる場合が多いですが、店舗によって「20kg以下まで」などの制限がある場合があります。必ず事前に電話で確認してください。くじゅう花公園や九重夢大吊橋周辺は大型犬でも入れることが多いです。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">ワンちゃん用のメニューがあるカフェはありますか？</div>
+      <div class="faq-a">湯布院エリアのドッグカフェや大分市内のドッグカフェでは、ワンちゃん用のケーキやおやつを提供している場合があります。ただし、人間用の食べ物（チョコレート・ぶどう・玉ねぎなど）は犬に有害なため、必ずワンちゃん専用メニューを注文してください。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">湯布院でペット連れで行けるおすすめスポットは？</div>
+      <div class="faq-a">湯布院では金鱗湖周辺の散策（リード着用で可）、由布院温泉街の一部カフェのテラス席、くじゅう花公園などがおすすめです。湯布院の多くの旅館・ホテルもペット同伴可プランを設けています。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">テラス席がないカフェでも犬連れで行けますか？</div>
+      <div class="faq-a">基本的にテラス席がない場合は店内への同伴は難しいです。ただし、テイクアウト専門店や屋外の売店であれば、外でお食事を楽しめる場合があります。</div>
+    </div>
+  </div>
+
+  <!-- 関連ページリンク -->
+  <div style="background:#f9fafb; border-radius:12px; padding:24px; margin:40px 0;">
+    <h2 style="margin-top:0; color:#374151;">🔗 関連ページ</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:12px;">
+      <a href="area-oita.html" style="display:block; background:white; padding:14px; border-radius:8px; text-decoration:none; color:#374151; box-shadow:0 1px 4px rgba(0,0,0,0.08); text-align:center;">
+        🗾 大分県トップ
+      </a>
+      <a href="oita-dogrun.html" style="display:block; background:white; padding:14px; border-radius:8px; text-decoration:none; color:#374151; box-shadow:0 1px 4px rgba(0,0,0,0.08); text-align:center;">
+        🐕 大分ドッグラン
+      </a>
+      <a href="oita-hotels.html" style="display:block; background:white; padding:14px; border-radius:8px; text-decoration:none; color:#374151; box-shadow:0 1px 4px rgba(0,0,0,0.08); text-align:center;">
+        🏨 大分ペット可宿泊
+      </a>
+      <a href="oita-outdoor.html" style="display:block; background:white; padding:14px; border-radius:8px; text-decoration:none; color:#374151; box-shadow:0 1px 4px rgba(0,0,0,0.08); text-align:center;">
+        ⛺ 大分キャンプ・登山
+      </a>
+      <a href="oita-emergency.html" style="display:block; background:white; padding:14px; border-radius:8px; text-decoration:none; color:#374151; box-shadow:0 1px 4px rgba(0,0,0,0.08); text-align:center;">
+        🏥 大分動物病院
+      </a>
+    </div>
+  </div>
+
+  <a href="area-oita.html" class="back-link">← 大分県トップに戻る</a>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-logo">🐾 大型犬Daisyと九州おでかけ</p>
+    <p class="footer-desc">大型犬Daisyと一緒に九州を旅するブログ。ペット可スポット・宿・グルメ情報を発信中。</p>
+    <nav class="footer-nav">
+      <a href="spots.html">スポット</a>
+      <a href="hotels.html">宿泊</a>
+      <a href="outdoor.html">アウトドア</a>
+      <a href="food.html">ご飯</a>
+      <a href="checklist.html">持ち物</a>
+      <a href="area-oita.html">大分</a>
+    </nav>
+    <p class="footer-copy">© 2026 大型犬Daisyと九州おでかけ</p>
+  </div>
+</footer>
+
+<script>
+function scrollToArea(id) {
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  document.querySelectorAll('.area-tab').forEach(t => t.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+
+</body>
+</html>

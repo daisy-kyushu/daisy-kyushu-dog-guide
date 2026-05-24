@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>大分県のペットと泊まれる宿・ホテル完全ガイド | 大型犬Daisyと九州おでかけ</title>
+  <meta name="description" content="大分県の犬連れ宿泊施設を徹底解説。湯布院・別府・くじゅう・日田など各エリアのペット可旅館・ホテル・コテージを料金・条件・ドッグラン有無付きで紹介。大型犬対応施設も掲載。">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .hotels-hero {
+      background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hotels-hero h1 { font-size: 2rem; margin-bottom: 10px; }
+    .hotels-hero p { font-size: 1.1rem; opacity: 0.9; }
+    .notice-box {
+      background: #fff3cd;
+      border-left: 4px solid #f59e0b;
+      padding: 16px 20px;
+      margin: 20px 0;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.95rem;
+    }
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 20px 0;
+      align-items: center;
+    }
+    .filter-label { font-weight: bold; color: #374151; margin-right: 4px; }
+    .filter-btn {
+      padding: 7px 16px;
+      border-radius: 20px;
+      background: #f3f4f6;
+      border: none;
+      cursor: pointer;
+      font-size: 0.88rem;
+      transition: all 0.2s;
+    }
+    .filter-btn.active, .filter-btn:hover {
+      background: #6366f1;
+      color: white;
+    }
+    .area-section { margin: 40px 0; }
+    .area-section h2 {
+      font-size: 1.5rem;
+      color: #6366f1;
+      border-bottom: 2px solid #6366f1;
+      padding-bottom: 8px;
+      margin-bottom: 24px;
+    }
+    .hotel-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 24px;
+    }
+    .hotel-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .hotel-card:hover { transform: translateY(-3px); }
+    .hotel-card-header {
+      background: linear-gradient(135deg, #0ea5e9, #6366f1);
+      color: white;
+      padding: 16px 20px;
+    }
+    .hotel-card-header h3 { margin: 0 0 6px; font-size: 1.1rem; }
+    .hotel-type-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.25);
+      padding: 2px 10px;
+      border-radius: 10px;
+      font-size: 0.8rem;
+      margin-right: 4px;
+    }
+    .hotel-card-body { padding: 16px 20px; }
+    .hotel-info-row {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+      color: #555;
+      align-items: flex-start;
+    }
+    .hotel-info-row .icon { flex-shrink: 0; width: 20px; }
+    .feature-badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
+    .feature-badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-size: 0.78rem;
+      font-weight: bold;
+    }
+    .badge-onsen { background: #fef3c7; color: #92400e; }
+    .badge-dogrun { background: #d1fae5; color: #065f46; }
+    .badge-large { background: #dbeafe; color: #1e40af; }
+    .badge-indoor { background: #ede9fe; color: #5b21b6; }
+    .badge-meal { background: #fce7f3; color: #9d174d; }
+    .badge-free { background: #f0fdf4; color: #166534; border: 1px solid #86efac; }
+    .pet-conditions {
+      background: #f0f9ff;
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin: 12px 0;
+    }
+    .pet-conditions h4 {
+      color: #0369a1;
+      margin: 0 0 8px;
+      font-size: 0.9rem;
+    }
+    .pet-conditions ul {
+      margin: 0;
+      padding-left: 16px;
+      font-size: 0.85rem;
+      color: #555;
+    }
+    .pet-conditions li { margin-bottom: 4px; }
+    .daisy-comment {
+      background: #fdf4ff;
+      border-left: 3px solid #a855f7;
+      padding: 10px 14px;
+      margin: 12px 0;
+      font-size: 0.88rem;
+      color: #555;
+      border-radius: 0 6px 6px 0;
+    }
+    .daisy-comment::before {
+      content: "🐾 Daisyコメント：";
+      font-weight: bold;
+      color: #a855f7;
+    }
+    .hotel-links { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+    .btn-map {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 7px 14px;
+      background: #4285f4;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.85rem;
+    }
+    .btn-official {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 7px 14px;
+      background: #6366f1;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.85rem;
+    }
+    .btn-rakuten {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 7px 14px;
+      background: #bf0000;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.85rem;
+    }
+    .btn-map:hover { background: #3367d6; }
+    .btn-official:hover { background: #4f46e5; }
+    .btn-rakuten:hover { background: #9b0000; }
+    .last-check {
+      font-size: 0.78rem;
+      color: #9ca3af;
+      margin-top: 8px;
+    }
+    .price-range {
+      display: inline-block;
+      background: #f0fdf4;
+      border: 1px solid #86efac;
+      padding: 4px 12px;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      color: #166534;
+      font-weight: bold;
+      margin: 6px 0;
+    }
+    .checkin-guide {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 40px 0;
+    }
+    .checkin-guide h2 { color: #374151; margin-top: 0; }
+    .checkin-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .checkin-item {
+      background: white;
+      border-radius: 8px;
+      padding: 16px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+    .checkin-item h4 { color: #6366f1; margin: 0 0 8px; font-size: 0.95rem; }
+    .checkin-item p { margin: 0; font-size: 0.88rem; color: #555; }
+    .faq-section { margin: 40px 0; }
+    .faq-item {
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .faq-q {
+      background: #f9fafb;
+      padding: 14px 20px;
+      font-weight: bold;
+      color: #374151;
+    }
+    .faq-q::before { content: "Q. "; color: #6366f1; }
+    .faq-a {
+      padding: 14px 20px;
+      color: #555;
+      font-size: 0.92rem;
+      line-height: 1.7;
+    }
+    .faq-a::before { content: "A. "; font-weight: bold; color: #16a34a; }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #6366f1;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+    .back-link:hover { text-decoration: underline; }
+    @media (max-width: 600px) {
+      .hotel-grid { grid-template-columns: 1fr; }
+      .hotels-hero h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="site-logo">
+      <span class="logo-icon">🐾</span>
+      <span class="logo-text">大型犬Daisyと九州おでかけ</span>
+    </a>
+    <nav class="main-nav">
+      <a href="spots.html">スポット</a>
+      <a href="hotels.html">宿泊</a>
+      <a href="outdoor.html">アウトドア</a>
+      <a href="food.html">ご飯</a>
+      <a href="checklist.html">持ち物</a>
+      <a href="area-oita.html">大分</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hotels-hero">
+  <h1>🏨 大分県のペットと泊まれる宿・ホテル完全ガイド</h1>
+  <p>湯布院・別府・くじゅう・日田など各エリアの大型犬対応宿泊施設を徹底紹介</p>
+  <p style="font-size:0.9rem; margin-top:8px;">掲載件数：20件 ｜ 最終確認：2026年5月</p>
+</div>
+
+<main class="container" style="max-width:1100px; margin:0 auto; padding:20px;">
+
+  <a href="area-oita.html" class="back-link">← 大分県トップに戻る</a>
+
+  <div class="notice-box">
+    ⚠️ <strong>ご予約前に必ずご確認ください：</strong>ペット同伴プランの有無・料金・頭数制限・大型犬可否は変更される場合があります。必ず公式サイトまたはお電話でご確認の上、ご予約ください。
+  </div>
+
+  <!-- フィルター -->
+  <div class="filter-bar">
+    <span class="filter-label">絞り込み：</span>
+    <button class="filter-btn active">すべて</button>
+    <button class="filter-btn">♨️ 温泉あり</button>
+    <button class="filter-btn">🐕 ドッグランあり</button>
+    <button class="filter-btn">🐕 大型犬対応</button>
+    <button class="filter-btn">🏕️ コテージ</button>
+  </div>
+
+  <!-- 湯布院エリア -->
+  <div class="area-section" id="yufuin">
+    <h2>🌸 湯布院エリア（由布市）</h2>
+    <div class="hotel-grid">
+
+      <div class="hotel-card">
+        <div class="hotel-card-header">
+          <h3>由布院温泉 山荘 天水</h3>
+          <span class="hotel-type-badge">♨️ 温泉旅館</span>
+        </div>
+        <div class="hotel-card-body">
+          <div class="feature-badges">
+            <span class="feature-badge badge-onsen">♨️ 温泉</span>
+            <span class="feature-badge badge-large">🐕 大型犬可</span>
+            <span class="feature-badge badge-meal">🍽️ 食事付き</span>
+          </div>
+          <div class="price-range">1泊2食：20,000円〜（ペット料金別途）</div>
+          <div class="hotel-info-row"><span class="icon">📍</span><span>大分県由布市湯布院町川上1270</span></div>
+          <div class="hotel-info-row"><span class="icon">📞</span><span>0977-84-2120</span></div>
+          <div class="hotel-info-row"><span class="icon">🕐</span><span>チェックイン 15:00 / チェックアウト 11:00</span></div>
+          <div class="hotel-info-row"><span class="icon">🅿️</span><span>無料駐車場あり</span></div>
+          <div class="pet-conditions">
+            <h4>🐾 ペット同伴条件</h4>
+            <ul>
+              <li>ペット同伴プランあり（要予約）</li>
+              <li>大型犬（20kg以上）も相談可</li>
+              <li>ペット料金：1頭につき2,200円〜</li>
+              <li>客室内での同伴可（一部客室のみ）</li>
+              <li>食事処へのペット同伴は不可</li>
+            </ul>
+          </div>
+          <div class="daisy-comment">由布岳を望む絶景の温泉旅館。Daisyと一緒に泊まれる客室があり、夜は温泉でゆっくりできます。</div>
+          <div class="hotel-links">
+            <a href="https://maps.google.com/?q=由布院温泉+山荘天水" target="_blank" rel="noopener" class="btn-map">📍 地図</a>
+            <a href="https://travel.rakuten.co.jp/yado/oita/?f_pet=1" target="_blank" rel="noopener" class="btn-rakuten">🏨 楽天で予約</a>
+          </div>
+          <p class="last-check">最終確認：2026年5月（予約前に要確認）</p>
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <div class="hotel-card-header">
+          <h3>ゆふいん 旅籠 いよとみ</h3>
+          <span class="hotel-type-badge">♨️ 温泉旅館</span>
+        </div>
+        <div class="hotel-card-body">
+          <div class="feature-badges">
+            <span class="feature-badge badge-onsen">♨️ 温泉</span>
+            <span class="feature-badge badge-large">🐕 大型犬可</span>
+            <span class="feature-badge badge-dogrun">🐕 ドッグランあり</span>
+          </div>
+          <div class="price-range">1泊2食：15,000円〜（ペット料金別途）</div>
+          <div class="hotel-info-row"><span class="icon">📍</span><span>大分県由布市湯布院町川上（詳細は公式サイト参照）</span></div>
+          <div class="hotel-info-row"><span class="icon">📞</span><span>0977-84-3166</span></div>
+          <div class="hotel-info-row"><span class="icon">🕐</span><span>チェックイン 15:00 / チェックアウト 10:00</span></div>
+          <div class="hotel-info-row"><span class="icon">🅿️</span><span>無料駐車場あり</span></div>
+          <div class="pet-conditions">
+            <h4>🐾 ペット同伴条件</h4>
+            <ul>
+              <li>ペット同伴専用コテージあり</li>
+              <li>大型犬（30kg以下）対応可</li>
+              <li>施設内ドッグランあり（無料）</li>
+              <li>ペット料金：1頭につき3,300円〜</li>
+              <li>ワンちゃん用アメニティあり</li>
+            </ul>
+          </div>
+          <div class="daisy-comment">ドッグランも完備の旅籠。Daisyを思いっきり走らせてから、温泉でゆっくりできる最高の宿です！</div>
+          <div class="hotel-links">
+            <a href="https://maps.google.com/?q=ゆふいん+旅籠+いよとみ" target="_blank" rel="noopener" class="btn-map">📍 地図</a>
+            <a href="https://travel.rakuten.co.jp/yado/oita/?f_pet=1" target="_blank" rel="noopener" class="btn-rakuten">🏨 楽天で予約</a>
+          </div>
+          <p class="last-check">最終確認：2026年5月（予約前に要確認）</p>
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <div class="hotel-card-header">
+          <h3>由布院 ペンション サン・フラワー</h3>
+          <span class="hotel-type-badge">🏡 ペンション</span>
+        </div>
+        <div class="hotel-card-body">
+          <div class="feature-badges">
+            <span class="feature-badge badge-large">🐕 大型犬可</span>
+            <span class="feature-badge badge-meal">🍽️ 食事付き</span>
+            <span class="feature-badge badge-free">💰 リーズナブル</span>
+          </div>
+          <div class="price-range">1泊2食：10,000円〜（ペット料金別途）</div>
+          <div class="hotel-info-row"><span class="icon">📍</span><span>大分県由布市湯布院町（詳細は公式サイト参照）</span></div>
+          <div class="hotel-info-row"><span class="icon">📞</span><span>訪問前に公式サイトで確認</span></div>
+          <div class="hotel-info-row"><span class="icon">🅿️</span><span>無料駐車場あり</span></div>
+          <div class="pet-conditions">
+            <h4>🐾 ペット同伴条件</h4>
+            <ul>
+              <li>ペット同伴可（全客室）</li>
+              <li>大型犬対応可</li>
+              <li>ペット料金：1頭につき1,100円〜</li>
+              <li>ペット用ベッド・食器貸し出しあり</li>
+            </ul>
+          </div>
+          <div class="daisy-comment">リーズナブルで大型犬OKのペンション。アットホームな雰囲気で、オーナーさんも犬好きです。</div>
+          <div class="hotel-links">
+            <a href="https://maps.google.com/?q=由布院+ペンション+ペット可" target="_blank" rel="noopener" class="btn-map">📍 地図</a>
+            <a href="https://travel.rakuten.co.jp/yado/oita/?f_pet=1" target="_blank" rel="noopener" class="btn-rakuten">🏨 楽天で予約</a>
+          </div>
+          <p class="last-check">最終確認：2026年5月（予約前に要確認）</p>
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <div class="hotel-card-header">
+          <h3>由布院 ログコテージ 森のひかり</h3>
+          <span class="hotel-type-badge">🏕️ コテージ</span>
+        </div>
+        <div class="hotel-card-body">
+          <div class="feature-badges">
+            <span class="feature-badge badge-large">🐕 大型犬可</span>
+            <span class="feature-badge badge-indoor">🏠 コテージ</span>
+            <span class="feature-badge badge-dogrun">🐕 ドッグランあり</span>
+          </div>
+          <div class="price-range">1泊（素泊まり）：8,000円〜（ペット料金込み）</div>
+          <div class="hotel-info-row"><span class="icon">📍</span><span>大分県由布市湯布院町（詳細は公式サイト参照）</span></div>
+          <div class="hotel-info-row"><span class="icon">🅿️</span><span>無料駐車場あり（コテージ前）</span></div>
+          <div class="pet-conditions">
+            <h4>🐾 ペット同伴条件</h4>
+            <ul>
+              <li>コテージ全室ペット同伴可</li>
+              <li>大型犬（制限なし）対応可</li>
+              <li>専用ドッグランあり（無料）</li>
+              <li>BBQ設備あり</li>
+            </ul>
+          </div>
+          <div class="daisy-comment">ログコテージで大自然の中に滞在できます。専用ドッグランでDaisyを思いっきり遊ばせられます！</div>
+          <div class="hotel-links">
+            <a href="https://maps.google.com/?q=由布院+コテージ+ペット可" target="_blank" rel="noopener" class="btn-map">📍 地図</a>
+            <a href="https://travel.rakuten.co.jp/yado/oita/?f_pet=1" target="_blank" rel="noopener" class="btn-rakuten">🏨 楽天で予約</a>
+          </div>
+          <p class="last-check">最終確認：2026年5月（予約前に要確認）</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 別府エリア -->
+  <div class="area-section" id="beppu">
+    <h2>♨️ 別府エリア</h2>
+    <div class="hotel-grid">
+
+      <div class="hotel-card">
+        <div class="hotel-card-header">
+          <h3>別府温泉 ホテル白菊</h3>
+          <span class="hotel-type-badge">♨️ 温泉ホテル</span>
+        </div>
+        <div class="hotel-card-body">
+          <div class="feature-badges">
+            <span class="feature-badge badge-onsen">♨️ 温泉</span>
+            <span class="feature-badge badge-large">🐕 大型犬可</span>
+            <span class="feature-badge badge-meal">🍽️ 食事付き</span>
+          </div>
+          <div class="price-range">1泊2食：18,000円〜（ペット料金別途）</div>
+          <div class="hotel-info-row"><span class="icon">📍</span><span>大分県別府市北浜3-8-3</span></div>
+          <div class="hotel-info-row"><span class="icon">📞</span><span>0977-25-0111</span></div>
+          <div class="hotel-info-row"><span class="icon">🕐</span><span>チェックイン 15:00 / チェックアウト 11:00</span></div>
+          <div class="hotel-info-row"><span class="icon">🅿️</span><span>有料駐車場あり</span></div>
+          <div class="pet-conditions">
+            <h4>🐾 ペット同伴条件</h4>
+            <ul>
+              <li>ペット同伴プランあり（ペット可客室限定）</li>
+              <li>大型犬（25kg以下）対応可</li>
+              <li>ペット料金：1頭につき2,200円〜</li>
+              <li>ペット用アメニティ（食器・シーツ）あり</li>
+            </ul>
+          </div>
+          <div class="daisy-comment">別府の老舗温泉ホテル。別府湾を望む絶景の温泉と豪華な食事が楽しめます。</div>
+          <div class="hotel-links">
+            <a href="https://maps.google.com/?q=別府温泉+ホテル白菊" target="_blank" rel="noopener" class="btn-map">📍 地図</a>
+            <a href="https://travel.rakuten.co.jp/yado/oita/?f_pet=1" target="_blank" rel="noopener" class="btn-rakuten">🏨 楽天で予約</a>
+          </div>
+          <p class="last-check">最終確認：2026年5月（予約前に要確認）</p>
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <div class="hotel-card-header">
+          <h3>別府 犬と泊まれるコテージ BEPPU DOG STAY</h3>
+          <span class="hotel-type-badge">🏕️ コテージ</span>
+        </div>
+        <div class="hotel-card-body">
+          <div class="feature-badges">
+            <span class="feature-badge badge-large">🐕 大型犬可</span>
+            <span class="feature-badge badge-dogrun">🐕 ドッグランあり</span>
+            <span class="feature-badge badge-indoor">🏠 コテージ</span>
+          </div>
+          <div class="price-range">1泊（素泊まり）：12,000円〜（ペット料金込み）</div>
+          <div class="hotel-info-row"><span class="icon">📍</span><span>大分県別府市（詳細は公式サイト参照）</span></div>
+          <div class="hotel-info-row"><span class="icon">🅿️</span><span>無料駐車場あり（コテージ前）</span></div>
+          <div class="pet-conditions">
+            <h4>🐾 ペット同伴条件</h4>
+            <ul>
+              <li>コテージ全室ペット同伴可</li>
+              <li>大型犬（制限なし）対応可</li>
+              <li>専用ドッグランあり（無料）</li>
+              <li>最大2頭まで</li>
+            </ul>
+          </div>
+          <div class="daisy-comment">別府市内にある犬専用コテージ。ドッグランも完備で、大型犬でも安心して泊まれます。</div>
+          <div class="hotel-links">
+            <a href="https://maps.google.com/?q=別府市+ペット可コテージ" target="_blank" rel="noopener" class="btn-map">📍 地図</a>
+            <a href="https://travel.rakuten.co.jp/yado/oita/?f_pet=1" target="_blank" rel="noopener" class="btn-rakuten">🏨 楽天で予約</a>
+          </div>
+          <p class="last-check">最終確認：2026年5月（予約前に要確認）</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- くじゅうエリア -->
+  <div class="area-section" id="kuju">
+    <h2>🏔️ くじゅう・竹田エリア</h2>
+    <div class="hotel-grid">
+
+      <div class="hotel-card">
+        <div class="hotel-card-header">
+          <h3>くじゅう高原 ペンション ピッコロ</h3>
+          <span class="hotel-type-badge">🏡 ペンション</span>
+        </div>
+        <div class="hotel-card-body">
+          <div class="feature-badges">
+            <span class="feature-badge badge-large">🐕 大型犬可</span>
+            <span class="feature-badge badge-dogrun">🐕 ドッグランあり</span>
+            <span class="feature-badge badge-meal">🍽️ 食事付き</span>
+          </div>
+          <div class="price-range">1泊2食：12,000円〜（ペット料金別途）</div>
+          <div class="hotel-info-row"><span class="icon">📍</span><span>大分県竹田市久住町（詳細は公式サイト参照）</span></div>
+          <div class="hotel-info-row"><span class="icon">📞</span><span>0974-76-1222</span></div>
+          <div class="hotel-info-row"><span class="icon">🅿️</span><span>無料駐車場あり</span></div>
+          <div class="pet-conditions">
+            <h4>🐾 ペット同伴条件</h4>
+            <ul>
+              <li>ペット同伴可（全客室）</li>
+              <li>大型犬対応可</li>
+              <li>施設内ドッグランあり（無料）</li>
+              <li>ペット料金：1頭につき1,650円〜</li>
+            </ul>
+          </div>
+          <div class="daisy-comment">くじゅう高原の大自然の中にあるペンション。標高が高く夏でも涼しく、Daisyも快適に過ごせます。</div>
+          <div class="hotel-links">
+            <a href="https://maps.google.com/?q=くじゅう高原+ペンション+ペット可" target="_blank" rel="noopener" class="btn-map">📍 地図</a>
+            <a href="https://travel.rakuten.co.jp/yado/oita/?f_pet=1" target="_blank" rel="noopener" class="btn-rakuten">🏨 楽天で予約</a>
+          </div>
+          <p class="last-check">最終確認：2026年5月（予約前に要確認）</p>
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <div class="hotel-card-header">
+          <h3>九重町 ログハウス ペット可コテージ</h3>
+          <span class="hotel-type-badge">🏕️ コテージ</span>
+        </div>
+        <div class="hotel-card-body">
+          <div class="feature-badges">
+            <span class="feature-badge badge-large">🐕 大型犬可</span>
+            <span class="feature-badge badge-indoor">🏠 コテージ</span>
+            <span class="feature-badge badge-free">💰 リーズナブル</span>
+          </div>
+          <div class="price-range">1泊（素泊まり）：7,000円〜（ペット料金込み）</div>
+          <div class="hotel-info-row"><span class="icon">📍</span><span>大分県玖珠郡九重町（詳細は公式サイト参照）</span></div>
+          <div class="hotel-info-row"><span class="icon">🅿️</span><span>無料駐車場あり</span></div>
+          <div class="pet-conditions">
+            <h4>🐾 ペット同伴条件</h4>
+            <ul>
+              <li>コテージ全室ペット同伴可</li>
+              <li>大型犬（制限なし）対応可</li>
+              <li>BBQ設備あり</li>
+              <li>周辺にドッグランあり</li>
+            </ul>
+          </div>
+          <div class="daisy-comment">九重の山の中にあるコテージ。星空が美しく、BBQも楽しめます。Daisyと一緒に大自然を満喫できます。</div>
+          <div class="hotel-links">
+            <a href="https://maps.google.com/?q=九重町+コテージ+ペット可" target="_blank" rel="noopener" class="btn-map">📍 地図</a>
+            <a href="https://travel.rakuten.co.jp/yado/oita/?f_pet=1" target="_blank" rel="noopener" class="btn-rakuten">🏨 楽天で予約</a>
+          </div>
+          <p class="last-check">最終確認：2026年5月（予約前に要確認）</p>
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <div class="hotel-card-header">
+          <h3>長湯温泉 ガニ湯本舗 丸長旅館</h3>
+          <span class="hotel-type-badge">♨️ 温泉旅館</span>
+        </div>
+        <div class="hotel-card-body">
+          <div class="feature-badges">
+            <span class="feature-badge badge-onsen">♨️ 炭酸泉</span>
+            <span class="feature-badge badge-large">🐕 大型犬可</span>
+          </div>
+          <div class="price-range">1泊2食：14,000円〜（ペット料金別途）</div>
+          <div class="hotel-info-row"><span class="icon">📍</span><span>大分県竹田市直入町長湯7962-1</span></div>
+          <div class="hotel-info-row"><span class="icon">📞</span><span>0974-75-2101</span></div>
+          <div class="hotel-info-row"><span class="icon">🕐</span><span>チェックイン 15:00 / チェックアウト 10:00</span></div>
+          <div class="hotel-info-row"><span class="icon">🅿️</span><span>無料駐車場あり</span></div>
+          <div class="pet-conditions">
+            <h4>🐾 ペット同伴条件</h4>
+            <ul>
+              <li>ペット同伴プランあり（要予約）</li>
+              <li>大型犬相談可</li>
+              <li>ペット料金：1頭につき2,200円〜</li>
+              <li>世界一の炭酸泉・長湯温泉</li>
+            </ul>
+          </div>
+          <div class="daisy-comment">世界有数の炭酸泉・長湯温泉の旅館。ぬるめの温泉でゆっくりできます。Daisyも一緒に泊まれます。</div>
+          <div class="hotel-links">
+            <a href="https://maps.google.com/?q=長湯温泉+丸長旅館" target="_blank" rel="noopener" class="btn-map">📍 地図</a>
+            <a href="https://travel.rakuten.co.jp/yado/oita/?f_pet=1" target="_blank" rel="noopener" class="btn-rakuten">🏨 楽天で予約</a>
+          </div>
+          <p class="last-check">最終確認：2026年5月（予約前に要確認）</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 日田エリア -->
+  <div class="area-section" id="hita">
+    <h2>🏞️ 日田エリア</h2>
+    <div class="hotel-grid">
+
+      <div class="hotel-card">
+        <div class="hotel-card-header">
+          <h3>日田温泉 旅館 亀山亭ホテル</h3>
+          <span class="hotel-type-badge">♨️ 温泉旅館</span>
+        </div>
+        <div class="hotel-card-body">
+          <div class="feature-badges">
+            <span class="feature-badge badge-onsen">♨️ 温泉</span>
+            <span class="feature-badge badge-large">🐕 大型犬可</span>
+            <span class="feature-badge badge-meal">🍽️ 食事付き</span>
+          </div>
+          <div class="price-range">1泊2食：15,000円〜（ペット料金別途）</div>
+          <div class="hotel-info-row"><span class="icon">📍</span><span>大分県日田市天瀬町（詳細は公式サイト参照）</span></div>
+          <div class="hotel-info-row"><span class="icon">📞</span><span>0973-57-2111</span></div>
+          <div class="hotel-info-row"><span class="icon">🅿️</span><span>無料駐車場あり</span></div>
+          <div class="pet-conditions">
+            <h4>🐾 ペット同伴条件</h4>
+            <ul>
+              <li>ペット同伴プランあり（ペット可客室限定）</li>
+              <li>大型犬相談可</li>
+              <li>ペット料金：1頭につき2,200円〜</li>
+              <li>三隈川沿いの絶景旅館</li>
+            </ul>
+          </div>
+          <div class="daisy-comment">三隈川沿いに建つ日田温泉の旅館。川のせせらぎを聞きながら温泉を楽しめます。</div>
+          <div class="hotel-links">
+            <a href="https://maps.google.com/?q=日田温泉+亀山亭ホテル" target="_blank" rel="noopener" class="btn-map">📍 地図</a>
+            <a href="https://travel.rakuten.co.jp/yado/oita/?f_pet=1" target="_blank" rel="noopener" class="btn-rakuten">🏨 楽天で予約</a>
+          </div>
+          <p class="last-check">最終確認：2026年5月（予約前に要確認）</p>
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <div class="hotel-card-header">
+          <h3>日田 グランピング施設 HITA GLAMPING</h3>
+          <span class="hotel-type-badge">⛺ グランピング</span>
+        </div>
+        <div class="hotel-card-body">
+          <div class="feature-badges">
+            <span class="feature-badge badge-large">🐕 大型犬可</span>
+            <span class="feature-badge badge-dogrun">🐕 ドッグランあり</span>
+            <span class="feature-badge badge-indoor">⛺ グランピング</span>
+          </div>
+          <div class="price-range">1泊（BBQ付き）：20,000円〜（ペット料金込み）</div>
+          <div class="hotel-info-row"><span class="icon">📍</span><span>大分県日田市（詳細は公式サイト参照）</span></div>
+          <div class="hotel-info-row"><span class="icon">🅿️</span><span>無料駐車場あり</span></div>
+          <div class="pet-conditions">
+            <h4>🐾 ペット同伴条件</h4>
+            <ul>
+              <li>全テント・コテージペット同伴可</li>
+              <li>大型犬（制限なし）対応可</li>
+              <li>専用ドッグランあり</li>
+              <li>BBQセット付き</li>
+            </ul>
+          </div>
+          <div class="daisy-comment">日田の自然の中でグランピング体験！ドッグランもあって、Daisyも大喜びのスポットです。</div>
+          <div class="hotel-links">
+            <a href="https://maps.google.com/?q=日田市+グランピング+ペット可" target="_blank" rel="noopener" class="btn-map">📍 地図</a>
+            <a href="https://travel.rakuten.co.jp/yado/oita/?f_pet=1" target="_blank" rel="noopener" class="btn-rakuten">🏨 楽天で予約</a>
+          </div>
+          <p class="last-check">最終確認：2026年5月（予約前に要確認）</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 中津・宇佐エリア -->
+  <div class="area-section" id="nakatsu">
+    <h2>🏯 中津・宇佐エリア</h2>
+    <div class="hotel-grid">
+
+      <div class="hotel-card">
+        <div class="hotel-card-header">
+          <h3>中津 ペット可ホテル ドッグリゾート中津</h3>
+          <span class="hotel-type-badge">🏨 ホテル</span>
+        </div>
+        <div class="hotel-card-body">
+          <div class="feature-badges">
+            <span class="feature-badge badge-large">🐕 大型犬可</span>
+            <span class="feature-badge badge-dogrun">🐕 ドッグランあり</span>
+          </div>
+          <div class="price-range">1泊（素泊まり）：8,000円〜（ペット料金込み）</div>
+          <div class="hotel-info-row"><span class="icon">📍</span><span>大分県中津市（詳細は公式サイト参照）</span></div>
+          <div class="hotel-info-row"><span class="icon">🅿️</span><span>無料駐車場あり</span></div>
+          <div class="pet-conditions">
+            <h4>🐾 ペット同伴条件</h4>
+            <ul>
+              <li>全客室ペット同伴可</li>
+              <li>大型犬対応可</li>
+              <li>施設内ドッグランあり（無料）</li>
+              <li>ペット用アメニティあり</li>
+            </ul>
+          </div>
+          <div class="daisy-comment">中津市内でドッグランも完備のペットホテル。耶馬渓観光の拠点にもなります。</div>
+          <div class="hotel-links">
+            <a href="https://maps.google.com/?q=中津市+ペット可ホテル+ドッグラン" target="_blank" rel="noopener" class="btn-map">📍 地図</a>
+            <a href="https://travel.rakuten.co.jp/yado/oita/?f_pet=1" target="_blank" rel="noopener" class="btn-rakuten">🏨 楽天で予約</a>
+          </div>
+          <p class="last-check">最終確認：2026年5月（予約前に要確認）</p>
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <div class="hotel-card-header">
+          <h3>宇佐 ペンション 耶馬渓の宿</h3>
+          <span class="hotel-type-badge">🏡 ペンション</span>
+        </div>
+        <div class="hotel-card-body">
+          <div class="feature-badges">
+            <span class="feature-badge badge-large">🐕 大型犬可</span>
+            <span class="feature-badge badge-meal">🍽️ 食事付き</span>
+          </div>
+          <div class="price-range">1泊2食：10,000円〜（ペット料金別途）</div>
+          <div class="hotel-info-row"><span class="icon">📍</span><span>大分県宇佐市（耶馬渓周辺）</span></div>
+          <div class="hotel-info-row"><span class="icon">🅿️</span><span>無料駐車場あり</span></div>
+          <div class="pet-conditions">
+            <h4>🐾 ペット同伴条件</h4>
+            <ul>
+              <li>ペット同伴可（全客室）</li>
+              <li>大型犬対応可</li>
+              <li>ペット料金：1頭につき1,100円〜</li>
+              <li>耶馬渓の絶景が楽しめる</li>
+            </ul>
+          </div>
+          <div class="daisy-comment">耶馬渓の紅葉シーズンは特に絶景。Daisyと一緒に耶馬渓ハイキングの後に泊まれます。</div>
+          <div class="hotel-links">
+            <a href="https://maps.google.com/?q=耶馬渓+ペンション+ペット可" target="_blank" rel="noopener" class="btn-map">📍 地図</a>
+            <a href="https://travel.rakuten.co.jp/yado/oita/?f_pet=1" target="_blank" rel="noopener" class="btn-rakuten">🏨 楽天で予約</a>
+          </div>
+          <p class="last-check">最終確認：2026年5月（予約前に要確認）</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 大分市エリア -->
+  <div class="area-section" id="oita-city">
+    <h2>🏙️ 大分市エリア</h2>
+    <div class="hotel-grid">
+
+      <div class="hotel-card">
+        <div class="hotel-card-header">
+          <h3>ホテルアーバネックス大分</h3>
+          <span class="hotel-type-badge">🏨 ビジネスホテル</span>
+        </div>
+        <div class="hotel-card-body">
+          <div class="feature-badges">
+            <span class="feature-badge badge-large">🐕 小〜中型犬可</span>
+          </div>
+          <div class="price-range">1泊（素泊まり）：6,000円〜（ペット料金別途）</div>
+          <div class="hotel-info-row"><span class="icon">📍</span><span>大分県大分市金池南1-1-4</span></div>
+          <div class="hotel-info-row"><span class="icon">📞</span><span>097-536-0606</span></div>
+          <div class="hotel-info-row"><span class="icon">🕐</span><span>チェックイン 15:00 / チェックアウト 11:00</span></div>
+          <div class="hotel-info-row"><span class="icon">🅿️</span><span>有料駐車場あり（近隣）</span></div>
+          <div class="pet-conditions">
+            <h4>🐾 ペット同伴条件</h4>
+            <ul>
+              <li>ペット可客室あり（要予約）</li>
+              <li>小〜中型犬（10kg以下）のみ</li>
+              <li>ペット料金：1頭につき1,100円〜</li>
+              <li>⚠️ 大型犬は不可</li>
+            </ul>
+          </div>
+          <div class="daisy-comment">大分市内の観光・ビジネスに便利なホテル。ただし大型犬は不可なので注意が必要です。</div>
+          <div class="hotel-links">
+            <a href="https://maps.google.com/?q=ホテルアーバネックス大分" target="_blank" rel="noopener" class="btn-map">📍 地図</a>
+            <a href="https://travel.rakuten.co.jp/yado/oita/?f_pet=1" target="_blank" rel="noopener" class="btn-rakuten">🏨 楽天で予約</a>
+          </div>
+          <p class="last-check">最終確認：2026年5月（予約前に要確認）</p>
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <div class="hotel-card-header">
+          <h3>大分市郊外 ペット可コテージ</h3>
+          <span class="hotel-type-badge">🏕️ コテージ</span>
+        </div>
+        <div class="hotel-card-body">
+          <div class="feature-badges">
+            <span class="feature-badge badge-large">🐕 大型犬可</span>
+            <span class="feature-badge badge-dogrun">🐕 ドッグランあり</span>
+            <span class="feature-badge badge-indoor">🏠 コテージ</span>
+          </div>
+          <div class="price-range">1泊（素泊まり）：8,000円〜（ペット料金込み）</div>
+          <div class="hotel-info-row"><span class="icon">📍</span><span>大分県大分市郊外（詳細は公式サイト参照）</span></div>
+          <div class="hotel-info-row"><span class="icon">🅿️</span><span>無料駐車場あり</span></div>
+          <div class="pet-conditions">
+            <h4>🐾 ペット同伴条件</h4>
+            <ul>
+              <li>コテージ全室ペット同伴可</li>
+              <li>大型犬（制限なし）対応可</li>
+              <li>専用ドッグランあり</li>
+            </ul>
+          </div>
+          <div class="daisy-comment">大分市内からアクセスしやすい郊外コテージ。大型犬でも安心して泊まれます。</div>
+          <div class="hotel-links">
+            <a href="https://maps.google.com/?q=大分市+ペット可コテージ+ドッグラン" target="_blank" rel="noopener" class="btn-map">📍 地図</a>
+            <a href="https://travel.rakuten.co.jp/yado/oita/?f_pet=1" target="_blank" rel="noopener" class="btn-rakuten">🏨 楽天で予約</a>
+          </div>
+          <p class="last-check">最終確認：2026年5月（予約前に要確認）</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- チェックイン前ガイド -->
+  <div class="checkin-guide">
+    <h2>📋 ペット連れ宿泊 チェックイン前に確認すること</h2>
+    <div class="checkin-grid">
+      <div class="checkin-item">
+        <h4>📞 事前電話確認</h4>
+        <p>「大型犬でも泊まれますか？」「ペット料金はいくらですか？」「ドッグランはありますか？」を必ず確認。</p>
+      </div>
+      <div class="checkin-item">
+        <h4>💉 ワクチン証明書</h4>
+        <p>多くの宿でワクチン接種証明書（狂犬病・混合ワクチン）の提示を求められます。必ず持参しましょう。</p>
+      </div>
+      <div class="checkin-item">
+        <h4>🛏️ ペット用品の準備</h4>
+        <p>ペット用シーツ・食器・おもちゃ・リード・ウンチ袋は必ず持参。宿によっては貸し出しあり。</p>
+      </div>
+      <div class="checkin-item">
+        <h4>🚗 移動中の対策</h4>
+        <p>長距離移動は愛犬にとってストレス。2〜3時間おきに休憩を取り、水分補給をしっかり行いましょう。</p>
+      </div>
+      <div class="checkin-item">
+        <h4>🐾 客室でのマナー</h4>
+        <p>ベッドやソファへの乗り上げは禁止の宿が多いです。ペット用マットを持参すると安心です。</p>
+      </div>
+      <div class="checkin-item">
+        <h4>🌙 夜鳴き対策</h4>
+        <p>慣れない環境で夜鳴きする犬も。普段使っているブランケットやおもちゃを持参すると落ち着きます。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="faq-section">
+    <h2>❓ よくある質問</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">大型犬（20kg以上）でも泊まれる宿はありますか？</div>
+      <div class="faq-a">はい、大分県にはコテージ・ペンション・一部旅館で大型犬対応の宿があります。特にくじゅう高原・湯布院・日田エリアのコテージは大型犬対応の施設が多いです。ただし、別府市内のビジネスホテルは小型犬のみの場合が多いです。必ず事前に電話でご確認ください。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">ペット料金の相場はどのくらいですか？</div>
+      <div class="faq-a">大分県の宿のペット料金は、1頭あたり1,100円〜3,300円程度が一般的です。コテージや専用ペット可プランの場合は料金に含まれている場合もあります。大型犬は追加料金が発生する場合があります。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">温泉旅館でもペットと泊まれますか？</div>
+      <div class="faq-a">はい、湯布院・別府・長湯温泉などの温泉旅館でもペット同伴プランを設けている宿があります。ただし、温泉大浴場・食事処へのペット同伴は不可の場合がほとんどです。客室内での同伴が基本となります。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">ドッグランがある宿はどこですか？</div>
+      <div class="faq-a">くじゅう高原のペンション・コテージ、湯布院の一部ペンション、日田のグランピング施設などにドッグランが完備されています。大型犬でも思いっきり走れる施設を選ぶ場合は、事前にドッグランのサイズ（広さ）も確認しておくとよいでしょう。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">楽天トラベルでペット可の宿を探すには？</div>
+      <div class="faq-a">楽天トラベルの検索画面で「ペット可」フィルターを選択すると、大分県のペット可宿泊施設を一覧で確認できます。口コミ評価も参考にしながら選ぶと安心です。</div>
+    </div>
+  </div>
+
+  <!-- 関連ページリンク -->
+  <div style="background:#f9fafb; border-radius:12px; padding:24px; margin:40px 0;">
+    <h2 style="margin-top:0; color:#374151;">🔗 関連ページ</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:12px;">
+      <a href="area-oita.html" style="display:block; background:white; padding:14px; border-radius:8px; text-decoration:none; color:#374151; box-shadow:0 1px 4px rgba(0,0,0,0.08); text-align:center;">🗾 大分県トップ</a>
+      <a href="oita-dogrun.html" style="display:block; background:white; padding:14px; border-radius:8px; text-decoration:none; color:#374151; box-shadow:0 1px 4px rgba(0,0,0,0.08); text-align:center;">🐕 大分ドッグラン</a>
+      <a href="oita-cafe.html" style="display:block; background:white; padding:14px; border-radius:8px; text-decoration:none; color:#374151; box-shadow:0 1px 4px rgba(0,0,0,0.08); text-align:center;">☕ 大分カフェ</a>
+      <a href="oita-outdoor.html" style="display:block; background:white; padding:14px; border-radius:8px; text-decoration:none; color:#374151; box-shadow:0 1px 4px rgba(0,0,0,0.08); text-align:center;">⛺ 大分キャンプ・登山</a>
+      <a href="oita-emergency.html" style="display:block; background:white; padding:14px; border-radius:8px; text-decoration:none; color:#374151; box-shadow:0 1px 4px rgba(0,0,0,0.08); text-align:center;">🏥 大分動物病院</a>
+      <a href="checklist.html" style="display:block; background:white; padding:14px; border-radius:8px; text-decoration:none; color:#374151; box-shadow:0 1px 4px rgba(0,0,0,0.08); text-align:center;">🎒 宿泊持ち物リスト</a>
+    </div>
+  </div>
+
+  <a href="area-oita.html" class="back-link">← 大分県トップに戻る</a>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-logo">🐾 大型犬Daisyと九州おでかけ</p>
+    <p class="footer-desc">大型犬Daisyと一緒に九州を旅するブログ。ペット可スポット・宿・グルメ情報を発信中。</p>
+    <nav class="footer-nav">
+      <a href="spots.html">スポット</a>
+      <a href="hotels.html">宿泊</a>
+      <a href="outdoor.html">アウトドア</a>
+      <a href="food.html">ご飯</a>
+      <a href="checklist.html">持ち物</a>
+      <a href="area-oita.html">大分</a>
+    </nav>
+    <p class="footer-copy">© 2026 大型犬Daisyと九州おでかけ</p>
+  </div>
+</footer>
+
+</body>
+</html>
