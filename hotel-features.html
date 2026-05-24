@@ -377,5 +377,43 @@ document.addEventListener('DOMContentLoaded',async()=>{
       link.addEventListener('click', () => trackRakutenClick(itemId, itemTitle, itemType));
     });
   </script>
+
+<!-- ▼ Affiliate Fixed Bottom Banner ▼ -->
+<div id="affiliate-bar">
+  <span class="affiliate-bar-icon">🐾</span>
+  <div class="affiliate-bar-text">
+    <strong>Daisyおすすめ！愛犬ごはん定期便</strong>
+    <span>このこのごはん・ネルソンズなど大型犬向けフード多数</span>
+  </div>
+  <!-- A8.netバナーコード挿入箇所 ↓ (バナーコード取得後に差し替え) -->
+  <a href="https://px.a8.net/svt/ejp?a8mat=PLACEHOLDER_A8_CODE" 
+     target="_blank" rel="noopener sponsored" 
+     class="affiliate-bar-btn" id="affiliate-bar-link">
+    詳しく見る →
+  </a>
+  <!-- A8.netバナーコード挿入箇所 ↑ -->
+  <button class="affiliate-bar-close" id="affiliate-bar-close" aria-label="閉じる">✕</button>
+</div>
+<script>
+(function(){
+  var bar = document.getElementById('affiliate-bar');
+  var closeBtn = document.getElementById('affiliate-bar-close');
+  if (!bar) return;
+  // セッション中に閉じた場合は非表示
+  if (sessionStorage.getItem('affiliateBarClosed')) {
+    bar.classList.add('hidden');
+    return;
+  }
+  // 2秒後にスライドイン
+  setTimeout(function(){ bar.classList.add('visible'); }, 2000);
+  // ×ボタンで閉じる
+  closeBtn.addEventListener('click', function(){
+    bar.classList.remove('visible');
+    setTimeout(function(){ bar.classList.add('hidden'); }, 400);
+    sessionStorage.setItem('affiliateBarClosed', '1');
+  });
+})();
+</script>
+<!-- ▲ Affiliate Fixed Bottom Banner ▲ -->
 </body>
 </html>
