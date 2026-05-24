@@ -1246,3 +1246,66 @@ h1, h2, h3, h4 {
   .affiliate-bar-text span { font-size: 10px; }
   .affiliate-bar-btn { font-size: 11px; padding: 6px 10px; }
 }
+
+/* ===== モーダル詳細グリッド ===== */
+.modal-img-wrap {
+  margin: -20px -20px 0 -20px;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+}
+.modal-body-inner {
+  padding: 16px 0 0 0;
+}
+.modal-detail-grid {
+  margin: 12px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+.modal-detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.modal-detail-icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.modal-detail-label {
+  font-size: 0.72rem;
+  color: #888;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 2px;
+}
+.modal-detail-value {
+  font-size: 0.88rem;
+  color: #333;
+  line-height: 1.5;
+}
+.daisy-comment-bubble {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: linear-gradient(135deg, #fff8f0, #fff3e0);
+  border-left: 3px solid #f97316;
+  border-radius: 0 12px 12px 12px;
+  padding: 12px 14px;
+  margin: 12px 0;
+}
+.daisy-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+.daisy-comment-bubble p {
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+  font-style: italic;
+}

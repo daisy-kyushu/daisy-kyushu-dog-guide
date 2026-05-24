@@ -16,7 +16,12 @@
     "weekendRecommended": true,
     "mapQuery": "森のドッグラン ワンLOVE 大分県大分市",
     "image": "https://onelove-oita.com/wp-content/themes/original/img/img56.webp",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "hours": "9:00〜18:00（火曜定休 ※祝日の場合は営業）",
+    "fee": "ドッグラン1頭600円（1日利用可）",
+    "access": "大分県大分市葛木1069 / 大分ICから車で約30分",
+    "large_dog": "大型犬OK・リード必須",
+    "url": "https://www.instagram.com/moricafewan.love/"
   },
   {
     "id": "dogrun-elf",
@@ -35,7 +40,12 @@
     "weekendRecommended": true,
     "mapQuery": "森のドッグラン 枝瑠風 大分県由布市湯布院町",
     "image": "https://stat.ameba.jp/user_images/20230427/16/dogrun-elf/f1/cc/j/o1500200015276180447.jpg?caw=800",
-    "imageSource": "アメブロ"
+    "imageSource": "アメブロ",
+    "hours": "11:00〜16:00（月曜〜金曜定休 ※前日までの連絡で月曜も営業）",
+    "fee": "ワンちゃん一匹500円・高校生以上一人500円",
+    "access": "大分県由布市湯布院町川西 字山口1750番116 / 要確認",
+    "large_dog": "大型犬OK・リード必須・体重制限なし",
+    "url": "https://www.instagram.com/dogrun_elf/?hl=ja"
   },
   {
     "id": "beppuwan-sa",
@@ -54,7 +64,12 @@
     "weekendRecommended": true,
     "mapQuery": "別府湾サービスエリア ドッグラン",
     "image": "https://www.w-holdings.co.jp/assets/beppuwan_focus_5-1.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "hours": "要確認",
+    "fee": "無料",
+    "access": "大分県別府市大字内竈字扇山3677-43-2",
+    "large_dog": "大型犬OK・リード必須・体重制限要確認",
+    "url": "https://www.w-holdings.co.jp/sapa/26060/"
   },
   {
     "id": "oita-official-pet",
@@ -93,7 +108,12 @@
     "weekendRecommended": true,
     "mapQuery": "室内ドッグラン もぜもぜ 鹿児島県鹿児島市",
     "image": "https://lutie.jp/wp-content/uploads/2024/03/dogrun-mozemoze.jpg",
-    "imageSource": "Lutie（ルティエ）"
+    "imageSource": "Lutie（ルティエ）",
+    "hours": "10:00〜14:00／15:00〜19:00（木曜定休）",
+    "fee": "ドッグラン：愛犬1頭＋大人2名まで700円（1時間）、愛犬1頭追加＋700円、大人1名追加＋300円、貸切10,000円（1時間）。セルフウォッシュ：60分2,400円、90分3,600円。ペット専用コインランドリー：洗濯機1回45分600円、乾燥機1回10分100円。",
+    "access": "鹿児島県鹿児島市新栄町22-26 / JR南鹿児島駅から徒歩約15分、鹿児島市街地中心部から車で約10分",
+    "large_dog": "要確認",
+    "url": "https://doghealth-mozemoze.com/"
   },
   {
     "id": "koga-sa-down-dogrun",
@@ -112,7 +132,12 @@
     "weekendRecommended": true,
     "mapQuery": "古賀サービスエリア 下り ドッグラン 福岡県古賀市",
     "image": "https://www.w-holdings.co.jp/assets/koga_s_focus_5-1.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "hours": "日の出から日没まで",
+    "fee": "無料",
+    "access": "福岡県古賀市 / 九州自動車道 古賀サービスエリア（下り）",
+    "large_dog": "要確認",
+    "url": "https://www.w-holdings.co.jp/sapa/25060/"
   },
   {
     "id": "hirokawa-sa-down-dogrun",
@@ -131,7 +156,12 @@
     "weekendRecommended": true,
     "mapQuery": "広川サービスエリア 下り ドッグラン 福岡県八女郡広川町",
     "image": "https://www.w-holdings.co.jp/assets/img_dogrun_01.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "hours": "日の出～日没（夜間照明設備なし）",
+    "fee": "無料",
+    "access": "福岡県八女郡広川町新代１３１５−１ / 九州自動車道 広川SA（下り線）内",
+    "large_dog": "大型犬OK・リード必須・体重制限なし",
+    "url": "https://www.w-holdings.co.jp/sapa/25120/"
   },
   {
     "id": "kinryu-sa-up-dogrun",
@@ -150,7 +180,12 @@
     "weekendRecommended": true,
     "mapQuery": "金立サービスエリア 上り ドッグラン 佐賀県佐賀市",
     "image": "https://clicccar.com/wp-content/uploads/2023/04/sapa_dogrun_04-800x533.jpg",
-    "imageSource": "clicccar.com"
+    "imageSource": "clicccar.com",
+    "hours": "日の出から日没まで",
+    "fee": "要確認",
+    "access": "佐賀県佐賀市金立町大字金立1204-1 / 長崎自動車道 金立サービスエリア内",
+    "large_dog": "要確認",
+    "url": "https://www.w-holdings.co.jp/sapa/27030/"
   },
   {
     "id": "puppy-cafe-rio-fukuoka",
@@ -169,7 +204,12 @@
     "weekendRecommended": true,
     "mapQuery": "PUPPY CAFE RIO 福岡店 福岡県福岡市",
     "image": "https://rio-corp.jp/cms/wp-content/uploads/2026/03/fukuoka_1.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "hours": "10:00〜20:00（定休日なし、ただし変更の可能性あり）",
+    "fee": "平日: 220円(税込) / 10分、土日祝: 250円(税込) / 10分、ドリンク飲み放題: 385円(税込)",
+    "access": "福岡県糟屋郡粕屋町大字酒殿字老ノ木192-1 イオンモール福岡1階 / 酒殿駅から徒歩12分",
+    "large_dog": "要確認",
+    "url": "https://rio-corp.jp/shops/fukuoka/"
   },
   {
     "id": "dogcafe-cocohouse-kumamoto",
@@ -190,7 +230,12 @@
     "weekendRecommended": true,
     "mapQuery": "Dog Cafe COCOHOUSE 熊本県熊本市",
     "image": "https://lutie.jp/wp-content/uploads/2024/03/dogrun-mozemoze.jpg",
-    "imageSource": "Instagram"
+    "imageSource": "Instagram",
+    "hours": "要確認",
+    "fee": "要確認",
+    "access": "要確認",
+    "large_dog": "要確認",
+    "url": "要確認"
   },
   {
     "id": "doghill-cafe-kagoshima",
@@ -211,7 +256,12 @@
     "weekendRecommended": true,
     "mapQuery": "DOG HILL CAFE 鹿児島県鹿児島市",
     "image": "https://www.dog-hill.net/cafe/cafe2.jpg",
-    "imageSource": "公式サイト (長崎県東彼杵町に所在)"
+    "imageSource": "公式サイト (長崎県東彼杵町に所在)",
+    "hours": "平日 11:30～17:00（オーダーストップ 16:30）、土日祝日 11:30～18:00（オーダーストップ 17:30）、木曜・金曜定休",
+    "fee": "要確認",
+    "access": "長崎県東彼杵郡東彼杵町小音琴郷2303-1 / 国道205号線沿い",
+    "large_dog": "犬同伴可（コーギーは牧畜犬のため、興奮させる行為は控えるよう注意書きあり）。大型犬の可否、リード、体重制限については明記なし。",
+    "url": "https://www.dog-hill.net/cafe.html"
   },
   {
     "id": "teo-one-kumamoto",
@@ -230,7 +280,12 @@
     "weekendRecommended": true,
     "mapQuery": "DOG RUN & CAFE Teo One 熊本県熊本市",
     "image": "https://teo-one.halfmoon.jp/wp-content/uploads/2023/01/slide2.png",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "hours": "7:00〜日没まで（季節により変動あり、定休日なし）",
+    "fee": "犬：小型犬600円/2頭目以降400円、中型犬800円/2頭目以降600円、大型犬1,000円/2頭目以降800円。飼い主：1人300円/1世帯500円。個室利用料：1回2時間200円（別途入場料）",
+    "access": "熊本県熊本市南区城南町赤見1302 / 平成駅から車で約10分",
+    "large_dog": "大型犬OK・ドッグラン内はリードを外して利用可・体重制限なし",
+    "url": "https://teo-one.halfmoon.jp/"
   },
   {
     "id": "dogforesta-kagoshima",
@@ -249,7 +304,12 @@
     "weekendRecommended": true,
     "mapQuery": "グルメバイキングPark DOGフォレスタ 鹿児島県鹿児島市",
     "image": "https://dogforesta.com/wp-content/uploads/2023/07/top_main_pc.webp",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "hours": "5:00〜23:00（年中無休）",
+    "fee": "会員（年間登録料5000円）貸し切り30分500円〜、非会員貸し切り30分2000円〜",
+    "access": "鹿児島県鹿児島市小野町3284番",
+    "large_dog": "犬種条件：要問い合わせ・接種証明書および事前会員登録必須",
+    "url": "https://dogforesta.com/"
   },
   {
     "id": "uminonakamichi-dogrun-fukuoka",
@@ -268,7 +328,12 @@
     "weekendRecommended": true,
     "mapQuery": "海の中道海浜公園 ドッグラン 福岡市東区",
     "image": "https://uminaka-park.jp/images/facility/img_new-facility_dogrun_01.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "hours": "3月1日〜10月31日 9:30〜17:30、11月1日〜2月末日 9:30〜17:00（ドッグラン利用は閉園30分前まで。休園日：12月31日、1月1日、1月第3月曜日～直後の金曜日、特定の期間の毎週火曜日）",
+    "fee": "ドッグラン利用料：1日券60円/頭、年間パスポート600円/頭。別途公園入園料：大人450円、シルバー210円、中学生以下無料。",
+    "access": "福岡県福岡市東区大字西戸崎18-25 / 海ノ中道駅",
+    "large_dog": "大型犬OK（フリーエリア、くつろぎエリア）。フリーエリアはノーリード可、くつろぎエリアはリード必須。飼い主の指示を守れる犬以外はリードを放さないこと。犬鑑札と狂犬病予防注射済票のプレート装着必須。",
+    "url": "https://uminaka-park.jp/facility/dogrun/"
   },
   {
     "id": "nishi-koen-dogrun-fukuoka",
@@ -287,7 +352,12 @@
     "weekendRecommended": true,
     "mapQuery": "県営西公園ドッグラン 福岡市西区",
     "image": "https://nishikouen.jp/img/map/dogrun/dogrun_01.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "hours": "9:00〜17:00（最終受付16:30）、第2・第4木曜日は14:00まで（祝日の場合は17:00まで）",
+    "fee": "登録料500円/年、利用料200円/回（イエローリボンイベントタイムは別途1,000円）",
+    "access": "福岡県福岡市中央区西公園13−13 / 市営地下鉄「大濠公園」駅より徒歩約15分、福岡都市高速道路「西公園」ICより約5分",
+    "large_dog": "大型犬は通常時間不可、大型犬タイム（11:00～13:00）に事前申込（3日前まで）で利用可能。リード必須の記載なし、体重制限の記載なし。",
+    "url": "https://nishikouen.jp/map/dogrun/"
   },
   {
     "id": "ohori-park-walk-fukuoka",
@@ -306,7 +376,12 @@
     "weekendRecommended": true,
     "mapQuery": "大濠公園 福岡市中央区",
     "image": "https://www.ohorikouen.jp/img/index/visual.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "hours": "公園：5月〜9月 5:00〜23:00、10月〜4月 7:00〜23:00 / 日本庭園：5月〜9月 9:00〜18:00（入園は17:45まで）、10月〜4月 9:00〜17:00（入園は16:45まで）、休園日：月曜日（祝日の場合は翌日）、年末年始（12月29日～1月3日）",
+    "fee": "公園入場無料（日本庭園：大人250円、高校生120円、中学生以下無料 / 貸ボート：白鳥ボート小30分1200円、白鳥ボート大30分1800円、手こぎボート30分800円）",
+    "access": "福岡県福岡市中央区大濠公園1番2号 / 福岡市営地下鉄（空港線）大濠公園駅",
+    "large_dog": "大型犬OK・リード必須・フンの処理必須・体重制限なし",
+    "url": "https://www.ohorikouen.jp/"
   },
   {
     "id": "itoshima-shiraiwa-walk",
@@ -325,7 +400,12 @@
     "weekendRecommended": true,
     "mapQuery": "白糸の滝 糸島市",
     "image": "https://shiraitonotaki.jp/wp-content/uploads/2020/03/shiraitonotaki_1960x900-1024x470.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "hours": "9:00〜17:00（7・8月は18時まで）12月～3月は毎週水曜定休",
+    "fee": "要確認",
+    "access": "福岡県糸島市白糸460-6 / 前原インターから車約20分 / JR筑前前原駅からコミュニティバス（白糸線）約25分、その後遊歩道を徒歩25分",
+    "large_dog": "要確認",
+    "url": "https://shiraitonotaki.jp/"
   },
   {
     "id": "farm-resort-itoshima-dogrun",
@@ -344,7 +424,12 @@
     "weekendRecommended": true,
     "mapQuery": "FARM RESORT ITOSHIMA 糸島市",
     "image": "https://static.wixstatic.com/media/75f9fe_002d6b6b4891485f940f9389a3606cba~mv2_d_2519_1948_s_2.jpg/v1/fill/w_1265,h_1289,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/75f9fe_002d6b6b4891485f940f9389a3606cba~mv2_d_2519_1948_s_2.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "hours": "夏季 11:00〜21:00（7〜9月の3ヵ月）、冬季 11:00〜18:00（火曜定休）",
+    "fee": "大型・中型犬：1頭 800円、小型犬：1匹 600円",
+    "access": "福岡県糸島市志摩小金丸1738 / 西九州道前原ICから車20分、JR筑肥線美咲ヶ丘駅から5.6km",
+    "large_dog": "大型犬OK・ドッグラン内はリード不要、ドッグラン以外はリード必須・体重制限なし",
+    "url": "https://www.farmresort-itoshima.com/"
   },
   {
     "id": "kannawa-jigoku-dogrun-beppu",
@@ -363,7 +448,12 @@
     "weekendRecommended": true,
     "mapQuery": "鉄輪地獄地帯公園ドッグラン 別府市",
     "image": "https://oita-tourism.com/lsc/upfile/spot/0000/1008/1008_1_l.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "hours": "4月～10月: 10:00～18:00、11月～3月: 10:00～17:00（毎月第3木曜日、年末年始休業）",
+    "fee": "一時利用 320円（1頭・1回）、年間利用 4,760円（1頭・1年）",
+    "access": "大分県別府市小倉町979番1 / 別府ICから車で5分、JR別府駅から車で15分",
+    "large_dog": "大型犬エリアあり、小型犬エリア（体高40cmまで）、フリーエリアあり",
+    "url": "https://www.city.beppu.oita.jp/sisetu/kouen_tyuusyajyou/03kouen_03-07dogrun.html"
   },
   {
     "id": "yufuin-yutopo-walk",
@@ -383,7 +473,12 @@
     "mapQuery": "由布院 湯の坪街道",
     "image": "https://yunotubo.com/images/top/mv_img01.jpg",
     "imageSource": "公式サイト",
-    "instagramUrl": "https://www.instagram.com/p/DXosIjwFdpi/"
+    "instagramUrl": "https://www.instagram.com/p/DXosIjwFdpi/",
+    "hours": "店によるため要確認",
+    "fee": "要確認",
+    "access": "大分県由布市湯布院町川上 / JR由布院駅から徒歩約5分",
+    "large_dog": "街道は大型犬OK・リード必須。店舗により異なるため要確認",
+    "url": "https://yunotubo.com/"
   },
   {
     "id": "kuju-hana-koen-walk",
@@ -403,7 +498,12 @@
     "mapQuery": "くじゅう花公園 竹田市",
     "image": "https://oita-tourism.com/lsc/upfile/spot/0000/1041/1041_1_l.jpg",
     "imageSource": "公式サイト",
-    "instagramUrl": "https://www.instagram.com/reel/DKFE4FPzIN9/"
+    "instagramUrl": "https://www.instagram.com/reel/DKFE4FPzIN9/",
+    "hours": "8:30〜17:30（最終入園17:00、冬季休園あり：12月〜2月末日まで、シーズン中は無休）",
+    "fee": "大人（高校生以上）1,300円、こども（5歳以上）500円（変動料金制あり）",
+    "access": "大分県竹田市久住町大字久住4050 / 公共交通機関での直接の来園は不可、車またはタクシーでの来園を推奨",
+    "large_dog": "大型犬OK・リード必須・糞は持ち帰り・オシッコは水を掛けて流す・ショップ入店不可・無料ドッグランあり（小型・中型・大型犬用）",
+    "url": "https://kuju-flower-park.com/"
   },
   {
     "id": "morinomiyako-dogrun-kumamoto",
@@ -422,7 +522,12 @@
     "weekendRecommended": true,
     "mapQuery": "くまもとドッグラン もりのみやこ 熊本市南区",
     "image": "https://www.dogrunmorinomiyako.jp/images/index/index_img_album_01.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "hours": "9:00〜18:00（受付は営業終了の1時間前まで） ※12/31～1/3は16:00受付終了、17:00閉園",
+    "fee": "ワンちゃん：小型犬600円（2頭目から400円）、中型犬800円（2頭目から500円）、大型犬1,000円（2頭目から600円）。飼い主様：大人（中学生以上）500円（2人目から300円）、小学生200円、幼児無料。",
+    "access": "熊本県熊本市南区良町5-25-8 / バス停中の瀬車庫入口から徒歩約4分",
+    "large_dog": "大型犬OK・リード必須・闘犬及び攻撃的、噛み付き等危険な行動をする犬は入場不可",
+    "url": "https://www.dogrunmorinomiyako.jp/"
   },
   {
     "id": "happytail-dogrun-kumamoto",
@@ -441,7 +546,12 @@
     "weekendRecommended": true,
     "mapQuery": "HappyTail ハッピーテイル 熊本市北区",
     "image": "http://happytail.jp/wp-content/uploads/2024/01/アートボード-1-100.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "hours": "9:00〜17:00（最終受付16：00まで、雨天休園）",
+    "fee": "犬：小型犬600円（2頭目から400円）、中型犬800円（2頭目から500円）、大型犬1,000円（2頭目から600円）。飼い主：大人（中学生以上）500円（2人目から300円）、小学生200円（幼児・園児無料）。個別ブース（2時間）は基本料金にプラス300円。",
+    "access": "熊本県熊本市北区四方寄町1475番 / 西里駅出口から徒歩約27分",
+    "large_dog": "大型犬OK・高さ180cmフェンスあり・狂犬病および各種ワクチン接種証明書必須（1年以内）",
+    "url": "https://happytail.jp/"
   },
   {
     "id": "kusasenri-aso-walk",
@@ -460,7 +570,12 @@
     "weekendRecommended": true,
     "mapQuery": "草千里ヶ浜 阿蘇市",
     "image": "https://kumamoto.guide/files/21f475da-d8c4-4a36-8601-dc56dc87a5ac_l.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "hours": "散策自由",
+    "fee": "要確認",
+    "access": "熊本県阿蘇市草千里ヶ浜 / 九州道熊本ICから国道57号経由60分1時間20分",
+    "large_dog": "要確認",
+    "url": "要確認"
   },
   {
     "id": "inasayama-dogrun-nagasaki",
@@ -479,7 +594,12 @@
     "weekendRecommended": true,
     "mapQuery": "稲佐山公園ドッグラン 長崎市",
     "image": "https://inasayama.info/wp-content/uploads/2024/04/P4170026-scaled.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "hours": "日の出～日没",
+    "fee": "無料",
+    "access": "長崎県長崎市淵町407-6",
+    "large_dog": "大型犬OK（フリーゾーン利用可）・飼い主の指示に従わない犬はリード必須・体重制限なし",
+    "url": "https://inasayama.info/park/"
   },
   {
     "id": "mozaki-dinosaur-dogrun-nagasaki",
@@ -498,7 +618,12 @@
     "weekendRecommended": true,
     "mapQuery": "長崎のもざき恐竜パーク ドッグラン",
     "image": "https://www.at-nagasaki.jp/storage/tourism_attractions/7001/responsive_images/TP697VvXC4JAeVGqT1BsI1zNur1TtemASYybAuIG__1778_999.jpg",
-    "imageSource": "長崎市公式観光サイト「travel nagasaki」"
+    "imageSource": "長崎市公式観光サイト「travel nagasaki」",
+    "hours": "要確認",
+    "fee": "要確認",
+    "access": "〒851-0505 長崎県長崎市野母町562-1",
+    "large_dog": "要確認（施設内にドッグランの記載なし。水仙の丘公園は犬同伴可）",
+    "url": "https://nd-park.jp/"
   },
   {
     "id": "huistenbosch-dogrun-sasebo",
@@ -517,7 +642,12 @@
     "weekendRecommended": true,
     "mapQuery": "ハウステンボス ドッグラン 佐世保市",
     "image": "https://www.dogbox.me/img/header/slide_img03.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "hours": "9:00〜21:00（年中無休）",
+    "fee": "ドッグラン無料（ハウステンボス入場料別途）",
+    "access": "長崎県佐世保市ハウステンボス町1-1 / ハウステンボス駅",
+    "large_dog": "大型犬OK・リード必須・小型犬エリアと中・大型犬エリアに分かれている",
+    "url": "https://www.huistenbosch.co.jp/service/pet.html"
   },
   {
     "id": "cafe-fuchsia-dogrun-saga",
@@ -536,7 +666,12 @@
     "weekendRecommended": true,
     "mapQuery": "カフェフクシア 佐賀市大和町",
     "image": "https://cafefukusia.com/wp-content/uploads/2020/10/home-main-2-1280x966.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "hours": "月〜金11:00〜17:00、土・祝日11:00〜18:00（水曜定休）",
+    "fee": "ドッグラン利用料：1頭500円（時間無制限）、2頭目以降300円",
+    "access": "佐賀県佐賀市大和町尼寺3220-1",
+    "large_dog": "大型犬OK・リード必須・ワクチン接種証明書、狂犬病予防接種証明書必須",
+    "url": "https://cafefukusia.com/"
   },
   {
     "id": "secret-garden-dogrun-saga",
@@ -555,7 +690,12 @@
     "weekendRecommended": false,
     "mapQuery": "SECRET GARDEN ドッグラン 佐賀市三瀬村",
     "image": "https://www.momosecretgarden.com/IMG_0417nashi.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "hours": "6月〜9月: 9:00〜22:00、10月〜5月: 9:00〜21:00（雨天休業、完全予約制）",
+    "fee": "ビジター2匹まで1時間: 平日￥1,100 / 土日祝￥1,650、3匹1時間: 平日￥1,430 / 土日祝￥1,980、4匹1時間: 平日￥1,760 / 土日祝￥2,310、5匹1時間: 平日￥2,090 / 土日祝￥2,640、追加1匹につき1時間: 平日・土日祝プラス￥330。グループ利用2時間: 平日￥6,600 / 土日祝￥8,800、延長1時間: 平日￥3,300 / 土日祝￥4,400（1グループ15匹まで）",
+    "access": "佐賀県佐賀市三瀬村藤原537-13",
+    "large_dog": "大型犬OK（リード必須の記載なし、体重制限の記載なし）",
+    "url": "https://www.momosecretgarden.com/"
   },
   {
     "id": "yoshinogari-walk-saga",
@@ -574,7 +714,12 @@
     "weekendRecommended": true,
     "mapQuery": "吉野ヶ里歴史公園 神埼郡",
     "image": "https://www.yoshinogari.jp/mainvisual/.assets/%E3%80%90%E4%BF%AE%E6%AD%A3%E3%80%91PC%E7%94%A8%E3%83%90%E3%83%8A%E3%83%BC.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "hours": "4月1日～5月31日、9月1日～3月31日：9:00～17:00、6月1日～8月31日：9:00～18:00（休園日：12月31日、1月の第3月曜日とその翌日）",
+    "fee": "入場料：中学生以下無料、大人460円、シルバー（65歳以上）200円。駐車場料金：普通車310円、二輪車100円、大型車1,050円（2027年3月31日まで普通車・二輪車無料キャンペーン中）",
+    "access": "佐賀県神埼郡吉野ヶ里町田手1843 / 長崎自動車道東脊振ICから車で5分、JR吉野ヶ里公園駅から徒歩約15分、JR神埼駅から徒歩約15分",
+    "large_dog": "大型犬OK・リード必須・建物内への同伴不可。ドッグランあり（小型・中型犬エリアと大型犬エリアがそれぞれ400平方メートル）",
+    "url": "https://www.yoshinogari.jp/"
   },
   {
     "id": "miyazaki-sports-park-dogrun",
@@ -593,7 +738,12 @@
     "weekendRecommended": true,
     "mapQuery": "宮崎県総合運動公園 ドッグラン",
     "image": "https://www.kanko-miyazaki.jp/images/spot/1228/1228_01.jpg",
-    "imageSource": "みやざき観光ナビ"
+    "imageSource": "みやざき観光ナビ",
+    "hours": "要確認",
+    "fee": "要確認",
+    "access": "〒889-2151 宮崎県宮崎市大字熊野2206-1 / JR宮崎駅から木花駅及び運動公園駅まで約20分（日南線）、JR宮崎駅から運動公園前まで約35分（青島線）、JR宮崎駅から車で約25分、宮崎自動車道で宮崎インターチェンジから車で約10分、宮崎空港から車で約10分",
+    "large_dog": "要確認",
+    "url": "http://www.miyazaki-spokyo.jp/sougou/"
   },
   {
     "id": "takachiho-kyo-walk",
@@ -612,7 +762,12 @@
     "weekendRecommended": true,
     "mapQuery": "高千穂峡 高千穂町",
     "image": "https://takachiho-kanko.info/files/images/home/takachihokyo.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "hours": "散策自由（貸しボートは8:30〜17:00、最終受付16:30）。貸しボートは河川増水時、定期安全点検時（1月、4月、7月、10月）、緊急安全点検時休業。",
+    "fee": "入場無料。貸しボートは1艇30分4,100円〜5,100円（曜日により異なる）。",
+    "access": "宮崎県西臼杵郡高千穂町大字三田井御塩井 / JR延岡駅からバスで高千穂バスセンター（約1時間30分）、バスセンターから車5分または徒歩30分",
+    "large_dog": "遊歩道は大型犬OK・リード必須。貸しボートはペット乗船不可。",
+    "url": "https://takachiho-kanko.info/"
   },
   {
     "id": "aoshima-jinja-walk-miyazaki",
@@ -631,7 +786,12 @@
     "weekendRecommended": true,
     "mapQuery": "青島神社 宮崎市",
     "image": "https://aoshima-jinja.jp/wp-content/uploads/2018/05/about02-min.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "hours": "参拝時間: 6:00から日没まで（季節により変動あり）、御守り・御朱印授与: 8:00〜17:00（正月以外）",
+    "fee": "参拝無料、日向神話館: 大人600円・中高生400円・小学生300円・幼児無料",
+    "access": "宮崎県宮崎市青島2丁目13番1号 / JR日南線青島駅より徒歩約10分",
+    "large_dog": "青島神社は犬連れ可能の可能性あり（リード・体重制限は要確認）、青島海水浴場は要確認",
+    "url": "https://aoshima-jinja.jp/"
   },
   {
     "id": "dogcom-park-kagoshima",
@@ -650,7 +810,12 @@
     "weekendRecommended": true,
     "mapQuery": "DOGCOM.Park 鹿児島市西別府町",
     "image": "https://www.honda.co.jp/dog/travel/data/dogcompark/images/main.jpg",
-    "imageSource": "Honda Dog"
+    "imageSource": "Honda Dog",
+    "hours": "6月〜9月は平日15:00〜19:00、土日祝は15:00〜日没。10月〜5月は平日10:00〜17:30、土日祝は8:30〜18:00（火曜、水曜定休）",
+    "fee": "会員：大人200円・子供100円、一般：大人300円・子供200円。わんこ入園料：会員300円（2頭目からプラス150円）、一般500円（2頭目からプラス300円）",
+    "access": "鹿児島県鹿児島市西別府町130-1 / 南九州自動車道 鹿児島西ICより5km・松元ICより1km、JR鹿児島本線 上伊集院駅より徒歩25分",
+    "large_dog": "大型犬OK・生後5か月以上・狂犬病ワクチン＆混合ワクチン接種済（ワクチン証明書が必要）",
+    "url": "http://www.dogcom.jp/dogrun/"
   },
   {
     "id": "wanpark-toride-ibusuki",
@@ -669,7 +834,12 @@
     "weekendRecommended": true,
     "mapQuery": "ワンパーク砦 指宿市",
     "image": "https://pjm.synapse-site.jp/gazo001.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "hours": "9:00〜19:00（6月～9月） / 9:00〜17:30（10月～5月）（年中無休）",
+    "fee": "ワンちゃん1匹 700円（3時間） / 追加1匹ごとに 400円 / 同伴者1人 100円（幼児無料）",
+    "access": "鹿児島県指宿市新西方2913",
+    "large_dog": "大型犬OK・リード必須・体重制限なし（大型犬用広場あり）",
+    "url": "https://pjm.synapse-site.jp/sub2.html"
   },
   {
     "id": "kirishima-jingu-walk-kagoshima",
@@ -688,6 +858,11 @@
     "weekendRecommended": true,
     "mapQuery": "霧島神宮 霧島市",
     "image": "https://www.kagoshima-kankou.com/storage/tourism_attractions/10113/responsive_images/gYQASEkE5PvQVtYB8Mhe4Xre3FuQK6kZ05rDF23n__1673_1109.jpg",
-    "imageSource": "鹿児島県観光サイト かごしまの旅"
+    "imageSource": "鹿児島県観光サイト かごしまの旅",
+    "hours": "境内の参拝自由。祈願・授与所受付は8:00～17:00（年中無休）",
+    "fee": "無料",
+    "access": "鹿児島県霧島市霧島田口2608-5 / JR霧島神宮駅から車10分 / 宮崎道高原ICから",
+    "large_dog": "霧島神宮の境内はペット同伴禁止。周辺散策コースも同様に不可。",
+    "url": "https://kirishimajingu.or.jp/"
   }
 ]

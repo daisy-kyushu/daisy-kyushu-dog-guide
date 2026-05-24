@@ -227,10 +227,15 @@
   <div class="modal-sheet" id="modal-sheet">
     <div class="modal-handle"></div>
     <button class="modal-close" onclick="closeModal()">✕</button>
-    <h2 class="modal-title" id="modal-title"></h2>
-    <div class="modal-meta" id="modal-meta"></div>
-    <p class="modal-desc" id="modal-desc"></p>
-    <div class="modal-actions" id="modal-actions"></div>
+    <div class="modal-img-wrap" id="modal-img-wrap"></div>
+    <div class="modal-body-inner">
+      <h2 class="modal-title" id="modal-title"></h2>
+      <div class="modal-meta" id="modal-meta"></div>
+      <p class="modal-desc" id="modal-desc"></p>
+      <div class="modal-detail-grid" id="modal-detail-grid"></div>
+      <div class="modal-daisy-comment" id="modal-daisy-comment"></div>
+      <div class="modal-actions" id="modal-actions"></div>
+    </div>
   </div>
 </div>
 
@@ -289,15 +294,70 @@ function renderSpots() {
 function openModal(jsonStr) {
   let data;
   try { data = typeof jsonStr === 'string' ? JSON.parse(jsonStr) : jsonStr; } catch(e) { return; }
+
+  // 画像
+  const imgWrap = document.getElementById('modal-img-wrap');
+  if (data.image) {
+    imgWrap.innerHTML = `<img src="${esc(data.image)}" alt="${esc(data.name)}" onerror="this.parentElement.innerHTML=''" style="width:100%;height:220px;object-fit:cover;border-radius:16px 16px 0 0;">`;
+    imgWrap.style.display = 'block';
+  } else {
+    imgWrap.innerHTML = '';
+    imgWrap.style.display = 'none';
+  }
+
+  // タイトル
   document.getElementById('modal-title').textContent = data.name || '';
-  const tags = [data.area, data.type||data.category, data.dogAllowed ? '犬同伴:'+data.dogAllowed : null, data.largeDog ? '大型犬:'+data.largeDog : null, data.rainyOk ? '雨天:'+data.rainyOk : null].filter(Boolean);
+
+  // タグ
+  const tags = [data.area, data.type||data.category, data.dogAllowed ? '犬同伴:'+data.dogAllowed : null].filter(Boolean);
   document.getElementById('modal-meta').innerHTML = tags.map(t=>`<span class="tag">${esc(t)}</span>`).join('');
+
+  // 説明
   document.getElementById('modal-desc').textContent = data.memo || data.description || data.desc || '';
+
+  // 詳細グリッド（営業時間・料金・アクセス・大型犬情報）
+  const details = [];
+  if (data.hours && data.hours !== '要確認') details.push({icon:'🕐', label:'営業時間', value: data.hours});
+  if (data.fee && data.fee !== '要確認') details.push({icon:'💴', label:'料金', value: data.fee});
+  if (data.access && data.access !== '要確認') details.push({icon:'📍', label:'アクセス', value: data.access});
+  if (data.large_dog && data.large_dog !== '要確認') details.push({icon:'🐕', label:'大型犬', value: data.large_dog});
+
+  const grid = document.getElementById('modal-detail-grid');
+  if (details.length > 0) {
+    grid.innerHTML = details.map(d => `
+      <div class="modal-detail-item">
+        <span class="modal-detail-icon">${d.icon}</span>
+        <div>
+          <div class="modal-detail-label">${d.label}</div>
+          <div class="modal-detail-value">${esc(d.value)}</div>
+        </div>
+      </div>
+    `).join('');
+    grid.style.display = 'block';
+  } else {
+    grid.innerHTML = '';
+    grid.style.display = 'none';
+  }
+
+  // Daisyコメント
+  const daisyEl = document.getElementById('modal-daisy-comment');
+  if (data.daisy_comment) {
+    daisyEl.innerHTML = `<div class="daisy-comment-bubble"><span class="daisy-icon">🐾</span><p>${esc(data.daisy_comment)}</p></div>`;
+    daisyEl.style.display = 'block';
+  } else {
+    daisyEl.innerHTML = '';
+    daisyEl.style.display = 'none';
+  }
+
+  // ボタン
   let btns = '';
-  if (data.officialUrl) btns += `<a href="${esc(data.officialUrl)}" target="_blank" rel="noopener" class="btn btn-primary">公式サイト</a>`;
+  const officialUrl = data.url || data.officialUrl;
+  if (officialUrl) btns += `<a href="${esc(officialUrl)}" target="_blank" rel="noopener" class="btn btn-primary">公式サイト</a>`;
   if (data.mapQuery) btns += `<a href="https://maps.google.com/?q=${encodeURIComponent(data.mapQuery)}" target="_blank" rel="noopener" class="btn btn-secondary">地図で見る</a>`;
+  else if (data.access && data.access !== '要確認') btns += `<a href="https://maps.google.com/?q=${encodeURIComponent(data.name + ' ' + (data.area||''))}" target="_blank" rel="noopener" class="btn btn-secondary">地図で見る</a>`;
   if (!btns) btns = `<a href="index.html" class="btn btn-secondary">ホームへ</a>`;
   document.getElementById('modal-actions').innerHTML = btns;
+
   document.getElementById('modal-overlay').classList.add('open');
   document.body.style.overflow='hidden';
 }
