@@ -405,7 +405,7 @@ function renderHotels() {
     const rkUrl = h.rakutenTravelAffiliateUrl || h.rakutenTravelUrl || 'https://travel.rakuten.co.jp/';
     return `
     <div class="card">
-      <div class="card-thumb" style="height:140px;font-size:44px">${h.emoji||'🏨'}</div>
+      <div class="card-thumb" style="height:140px;">${h.image ? `<img src="${h.image}" alt="${h.name}" onerror="this.parentElement.innerHTML='🏨'" loading="lazy" style="width:100%;height:100%;object-fit:cover;">` : (h.emoji || '🏨')}</div>
       <div class="card-body">
         <h3 class="card-title">${esc(h.name)}</h3>
         <div class="card-meta">
