@@ -238,9 +238,9 @@
     "url": "要確認"
   },
   {
-    "id": "doghill-cafe-kagoshima",
+    "id": "doghill-cafe-nagasaki",
     "name": "DOG HILL CAFE",
-    "area": "鹿児島県鹿児島市",
+    "area": "長崎県東彼杵郡東彼杵町",
     "type": "ドッグカフェ / 犬同伴OK飲食店",
     "dogAllowed": "要確認",
     "largeDog": "要確認",
@@ -254,9 +254,9 @@
     "status": "公式サイト確認",
     "memo": "鹿児島市内にあるドッグカフェ。ドッグメニューもあるので、Daisyも一緒におやつタイムを楽しめました。",
     "weekendRecommended": true,
-    "mapQuery": "DOG HILL CAFE 鹿児島県鹿児島市",
+    "mapQuery": "DOG HILL CAFE 長崎県東彼杵郡東彼杵町",
     "image": "https://www.dog-hill.net/cafe/cafe2.jpg",
-    "imageSource": "公式サイト (長崎県東彼杵町に所在)",
+    "imageSource": "公式サイト",
     "hours": "平日 11:30～17:00（オーダーストップ 16:30）、土日祝日 11:30～18:00（オーダーストップ 17:30）、木曜・金曜定休",
     "fee": "要確認",
     "access": "長崎県東彼杵郡東彼杵町小音琴郷2303-1 / 国道205号線沿い",
@@ -557,7 +557,7 @@
   {
     "id": "kusasenri-aso-walk",
     "name": "阿蘇くじゅう国立公園 草千里ヶ浜",
-    "area": "阿蘇市",
+    "area": "熊本県阿蘇市",
     "type": "walk",
     "dogAllowed": "OK",
     "largeDog": "OK",
@@ -1039,7 +1039,7 @@
   {
     "id": "aso-nakadake-walk",
     "name": "阿蘇中岳火口周辺 散策",
-    "area": "大分県阿蘇市",
+    "area": "熊本県阿蘇市",
     "type": "walk",
     "large_dog": "大型犬OK・リード必須",
     "largeDog": "大型犬OK（火山活動状況による）",
