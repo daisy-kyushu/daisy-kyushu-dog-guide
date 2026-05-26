@@ -83,6 +83,40 @@
     </div>
   </section>
 
+  <!-- ===== サイト内検索 ===== -->
+  <section class="site-search-section" id="site-search-section">
+    <div class="site-search-inner">
+      <div class="site-search-label">🔍 スポット・宿・グッズを検索</div>
+      <div class="site-search-box">
+        <input
+          type="search"
+          id="site-search-input"
+          class="site-search-input"
+          placeholder="例：ケーキ、ドッグラン、福岡、温泉..."
+          autocomplete="off"
+          inputmode="search"
+        >
+        <button class="site-search-btn" id="site-search-btn" aria-label="検索">検索</button>
+      </div>
+      <div class="site-search-chips">
+        <button class="search-chip" onclick="runSearch('ケーキ')">🎂 ケーキ</button>
+        <button class="search-chip" onclick="runSearch('ドッグラン')">🏃 ドッグラン</button>
+        <button class="search-chip" onclick="runSearch('温泉')">♨️ 温泉</button>
+        <button class="search-chip" onclick="runSearch('カフェ')">☕ カフェ</button>
+        <button class="search-chip" onclick="runSearch('キャンプ')">⛺ キャンプ</button>
+        <button class="search-chip" onclick="runSearch('大型犬')">🐕 大型犬OK</button>
+      </div>
+    </div>
+    <!-- 検索結果エリア -->
+    <div id="search-results-wrap" class="search-results-wrap" style="display:none;">
+      <div class="search-results-header">
+        <span id="search-results-count"></span>
+        <button class="search-results-close" onclick="clearSearch()">✕ 閉じる</button>
+      </div>
+      <div id="search-results-grid" class="card-grid"></div>
+    </div>
+  </section>
+
   <!-- このサイトでできること（目次ブロック） -->
   <section class="site-index-block fade-in" aria-label="このサイトでできること">
     <div class="site-index-title">🐾 このサイトでできること</div>
@@ -830,11 +864,100 @@ function initFadeIn() {
   document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
 }
 
-// ── 初期化 ────────────────────────────────────────────────────────────
+//// ── サイト内検索 ──────────────────────────────────────────────────────
+let _searchCache = null;
+
+async function getSearchCache() {
+  if (_searchCache) return _searchCache;
+  const [spots, outdoor, hotels, products] = await Promise.all([
+    fetch('spots.json').then(r=>r.json()).catch(()=>[]),
+    fetch('outdoor.json').then(r=>r.json()).catch(()=>[]),
+    fetch('hotels.json').then(r=>r.json()).catch(()=>[]),
+    fetch('products.json').then(r=>r.json()).catch(()=>[])
+  ]);
+  _searchCache = [
+    ...spots.map(s => ({ ...s, _type: 'spot', _icon: s.emoji || '🌿', _link: 'spots.html', _label: 'スポット' })),
+    ...outdoor.map(s => ({ ...s, _type: 'outdoor', _icon: s.emoji || '⛺', _link: 'outdoor.html', _label: 'アウトドア' })),
+    ...hotels.map(h => ({ ...h, _type: 'hotel', _icon: h.emoji || '🏨', _link: 'hotels.html', _label: '宿' })),
+    ...products.map(p => ({ ...p, _type: 'product', _icon: '🛒', _link: p.rakutenAffiliateUrl || p.normalUrl || '', _label: p.category || '商品', name: p.productName }))
+  ];
+  return _searchCache;
+}
+
+async function runSearch(query) {
+  const q = (query || document.getElementById('site-search-input').value || '').trim();
+  if (!q) return;
+  document.getElementById('site-search-input').value = q;
+
+  const wrap = document.getElementById('search-results-wrap');
+  const grid = document.getElementById('search-results-grid');
+  const countEl = document.getElementById('search-results-count');
+  grid.innerHTML = '<div style="padding:20px;color:var(--muted)">検索中...</div>';
+  wrap.style.display = 'block';
+  wrap.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+  const all = await getSearchCache();
+  const kw = q.toLowerCase();
+  const results = all.filter(item => {
+    const text = [
+      item.name, item.productName, item.memo, item.description, item.desc,
+      item.area, item.type, item.category, item.whyCandidate, item.prefecture,
+      item.shopName, item._label
+    ].filter(Boolean).join(' ').toLowerCase();
+    return text.includes(kw);
+  });
+
+  countEl.textContent = `「${q}」の検索結果：${results.length}件`;
+
+  if (!results.length) {
+    grid.innerHTML = `<div style="padding:20px;color:var(--muted);">「${escHtml(q)}」に一致する情報が見つかりませんでした。<br>別のキーワードをお試しください。</div>`;
+    return;
+  }
+
+  grid.innerHTML = '';
+  results.forEach(item => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    const isProduct = item._type === 'product';
+    const desc = item.memo || item.description || item.desc || item.whyCandidate || '';
+    const area = item.area || item.prefecture || '';
+    const linkUrl = isProduct ? (item.rakutenAffiliateUrl || item.normalUrl || '') : item._link;
+    card.innerHTML = `
+      <div class="card-thumb" style="font-size:2rem;display:flex;align-items:center;justify-content:center;background:#f5f0e8;">${item._icon}</div>
+      <div class="card-body">
+        <div class="card-meta" style="margin-bottom:4px;">
+          <span class="tag tag-green" style="font-size:11px;">${escHtml(item._label)}</span>
+          ${area ? `<span class="tag" style="font-size:11px;">${escHtml(area)}</span>` : ''}
+        </div>
+        <h3 class="card-title">${escHtml(item.name || '')}</h3>
+        <p class="card-desc">${escHtml(desc.slice(0, 80))}${desc.length > 80 ? '…' : ''}</p>
+        ${linkUrl ? `<a href="${escHtml(linkUrl)}" ${isProduct ? 'target="_blank" rel="noopener"' : ''} class="btn btn-primary" style="font-size:12px;padding:6px 14px;margin-top:8px;">${isProduct ? '商品を見る →' : '詳しく見る →'}</a>` : ''}
+      </div>`;
+    if (!isProduct && !linkUrl) {
+      card.style.cursor = 'pointer';
+      if (item._type === 'spot') card.addEventListener('click', () => openSpotModal(item));
+      else if (item._type === 'hotel') card.addEventListener('click', () => openHotelModal(item));
+    }
+    grid.appendChild(card);
+  });
+}
+
+function clearSearch() {
+  document.getElementById('site-search-input').value = '';
+  document.getElementById('search-results-wrap').style.display = 'none';
+  document.getElementById('search-results-grid').innerHTML = '';
+}
+
+// ── 初期化 ────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
   loadWeather();
   loadData();
   initFadeIn();
+  // 検索ボタン・Enterキー
+  const btn = document.getElementById('site-search-btn');
+  const inp = document.getElementById('site-search-input');
+  if (btn) btn.addEventListener('click', () => runSearch());
+  if (inp) inp.addEventListener('keydown', e => { if (e.key === 'Enter') runSearch(); });
 });
 
 function escHtml(str) {
