@@ -65,6 +65,56 @@
       border-color: #2e7d32 !important;
       color: #fff;
     }
+    /* カードアクションボタン */
+    .card-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px solid #f0f0f0;
+    }
+    .card-map-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: #e8f5e9;
+      color: #2e7d32;
+      border: 1px solid #c8e6c9;
+      border-radius: 20px;
+      padding: 5px 12px;
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background .15s;
+    }
+    .card-map-btn:hover { background: #c8e6c9; }
+    .card-fav-btn {
+      background: none;
+      border: none;
+      font-size: 1.3rem;
+      cursor: pointer;
+      padding: 2px 6px;
+      border-radius: 50%;
+      transition: transform .2s;
+      margin-left: auto;
+    }
+    .card-fav-btn:hover { transform: scale(1.2); }
+    /* お気に入りモーダルアイテム */
+    .fav-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .fav-item-emoji { font-size: 1.8rem; width: 40px; text-align: center; }
+    .fav-item-body { flex: 1; min-width: 0; }
+    .fav-item-name { font-weight: 800; font-size: 0.95rem; color: #333; }
+    .fav-item-area { font-size: 0.8rem; color: #888; margin-top: 2px; }
+    .fav-item-actions { display: flex; gap: 8px; align-items: center; }
+    .fav-map-btn { font-size: 1.3rem; text-decoration: none; }
+    .fav-remove-btn { background: #f5f5f5; border: none; border-radius: 50%; width: 28px; height: 28px; cursor: pointer; font-size: 0.9rem; color: #888; }
     /* ===== しおりバー ===== */
     #itinerary-bar {
       display: none;
@@ -186,6 +236,7 @@
       <a href="checklist.html" class="">持ち物</a>
       <a href="events.html" class="">イベント</a>
       <a href="food.html">ご飯・おやつ</a>
+      <a href="favorites.html">❤️ お気に入り</a>
     </nav>
   </div>
 </header>
@@ -269,6 +320,22 @@
   </a>
 
 </main>
+
+<!-- お気に入りバー -->
+<div id="fav-bar" style="display:none;position:fixed;bottom:80px;right:16px;z-index:300;background:linear-gradient(135deg,#e91e63,#f06292);color:#fff;padding:10px 16px;border-radius:50px;box-shadow:0 4px 16px rgba(233,30,99,.4);align-items:center;gap:8px;cursor:pointer;font-weight:700;font-size:14px;" onclick="openFavList()">
+  ❤️ お気に入り <span id="fav-count" style="background:rgba(255,255,255,.3);border-radius:50px;padding:2px 8px;">0</span>
+</div>
+
+<!-- お気に入りモーダル -->
+<div id="fav-modal" style="display:none;position:fixed;inset:0;z-index:400;background:rgba(0,0,0,.5);align-items:flex-end;justify-content:center;" onclick="if(event.target===this)closeFavModal()">
+  <div style="background:#fff;border-radius:24px 24px 0 0;width:100%;max-width:600px;max-height:80vh;overflow-y:auto;padding:24px;">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+      <h2 style="font-size:1.2rem;font-weight:900;color:#333;">❤️ お気に入りスポット</h2>
+      <button onclick="closeFavModal()" style="background:none;border:none;font-size:1.4rem;cursor:pointer;">✕</button>
+    </div>
+    <div id="fav-list"></div>
+  </div>
+</div>
 
 <!-- スポット詳細モーダル -->
 <div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
@@ -380,6 +447,7 @@ function renderSpots() {
     if (hasComment) badges.push(`<span class="card-badge badge-daisy">🐾 Daisy体験</span>`);
     const isSelected = selectedSpots.some(sel => sel.id === s.id);
     const spotJson = JSON.stringify(s).replace(/'/g,"&#39;");
+    const spotPageUrl = `spot/${esc(s.id)}.html`;
     return `
     <div class="card spot-card${isSelected?' spot-selected':''}" id="card-${esc(s.id)}" onclick="handleCardClick(event,'${esc(s.id)}')" data-spot='${spotJson}' data-id='${esc(s.id)}'>
       <div class="card-thumb" style="height:140px;position:relative;">
@@ -394,6 +462,11 @@ function renderSpots() {
           ${s.type?`<span class="tag tag-amber">${esc(s.type)}</span>`:s.category?`<span class="tag tag-amber">${esc(s.category)}</span>`:''}
         </div>
         <p class="card-desc">${esc(s.memo||s.description||s.desc||'')}</p>
+        <div class="card-actions">
+          <a href="spot/${esc(s.id)}.html" class="card-map-btn" style="background:#e3f2fd;color:#1565c0;border-color:#bbdefb;" onclick="event.stopPropagation()">📄 詳細</a>
+          <a href="https://maps.google.com/?q=${encodeURIComponent(s.mapQuery||(s.name+' '+(s.area||'')))}" target="_blank" rel="noopener" class="card-map-btn" onclick="event.stopPropagation()">🗺️ 地図</a>
+          <button class="card-fav-btn${isFav(s.id)?' faved':''}" onclick="event.stopPropagation();toggleFav('${esc(s.id)}',this)" title="お気に入り">${isFav(s.id)?'❤️':'🤍'}</button>
+        </div>
       </div>
     </div>`;
   }).join('');
@@ -660,7 +733,63 @@ function esc(s) {
   return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
 }
 
+/* ===== お気に入り機能 ===== */
+function getFavs() {
+  try { return JSON.parse(localStorage.getItem('daisy_favs') || '[]'); } catch(e) { return []; }
+}
+function isFav(id) { return getFavs().includes(id); }
+function toggleFav(id, btn) {
+  let favs = getFavs();
+  if (favs.includes(id)) {
+    favs = favs.filter(f => f !== id);
+    if (btn) { btn.textContent = '🤍'; btn.classList.remove('faved'); }
+  } else {
+    favs.push(id);
+    if (btn) { btn.textContent = '❤️'; btn.classList.add('faved'); }
+    // プチアニメ
+    if (btn) { btn.style.transform='scale(1.4)'; setTimeout(()=>btn.style.transform='',300); }
+  }
+  localStorage.setItem('daisy_favs', JSON.stringify(favs));
+  updateFavBar();
+}
+function updateFavBar() {
+  const favs = getFavs();
+  let bar = document.getElementById('fav-bar');
+  if (!bar) return;
+  if (favs.length > 0) {
+    bar.style.display = 'flex';
+    document.getElementById('fav-count').textContent = favs.length;
+  } else {
+    bar.style.display = 'none';
+  }
+}
+function openFavList() {
+  const favs = getFavs();
+  const spots = allSpots.filter(s => favs.includes(s.id));
+  if (!spots.length) { alert('まだお気に入りがありません。ハートボタンでスポットを追加してね！'); return; }
+  const modal = document.getElementById('fav-modal');
+  const list = document.getElementById('fav-list');
+  list.innerHTML = spots.map(s => `
+    <div class="fav-item">
+      <div class="fav-item-emoji">${s.emoji||'🌿'}</div>
+      <div class="fav-item-body">
+        <div class="fav-item-name">${esc(s.name)}</div>
+        <div class="fav-item-area">${esc(s.area||'九州')} ${s.type?'・'+esc(s.type):''}</div>
+      </div>
+      <div class="fav-item-actions">
+        <a href="https://maps.google.com/?q=${encodeURIComponent(s.mapQuery||(s.name+' '+(s.area||'')))}" target="_blank" rel="noopener" class="fav-map-btn">🗺️</a>
+        <button class="fav-remove-btn" onclick="toggleFav('${esc(s.id)}',null);renderSpots();openFavList();">✕</button>
+      </div>
+    </div>
+  `).join('');
+  modal.style.display = 'flex';
+}
+function closeFavModal() {
+  document.getElementById('fav-modal').style.display = 'none';
+}
+
 loadSpots();
+setTimeout(updateFavBar, 500);
 </script>
 
 <footer class="site-footer">

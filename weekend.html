@@ -111,8 +111,23 @@
         <div class="weather-desc" id="weather-desc">天気情報を取得中...</div>
       </div>
     </div>
+    <!-- 土日の天気予報 -->
+    <div id="weekend-forecast" style="display:flex;gap:12px;margin:12px 0;">
+      <div class="forecast-day" style="flex:1;background:rgba(255,255,255,.6);border-radius:12px;padding:10px;text-align:center;">
+        <div class="forecast-label" style="font-size:11px;color:var(--muted);font-weight:700;">土曜</div>
+        <div class="forecast-icon" style="font-size:1.8rem;">⏳</div>
+        <div class="forecast-temp" style="font-weight:900;font-size:1.1rem;">--°C</div>
+        <div class="forecast-desc" style="font-size:11px;color:var(--muted);">取得中</div>
+      </div>
+      <div class="forecast-day" style="flex:1;background:rgba(255,255,255,.6);border-radius:12px;padding:10px;text-align:center;">
+        <div class="forecast-label" style="font-size:11px;color:var(--muted);font-weight:700;">日曜</div>
+        <div class="forecast-icon" style="font-size:1.8rem;">⏳</div>
+        <div class="forecast-temp" style="font-weight:900;font-size:1.1rem;">--°C</div>
+        <div class="forecast-desc" style="font-size:11px;color:var(--muted);">取得中</div>
+      </div>
+    </div>
     <div class="weather-recommend">
-      <div class="weather-recommend-title">🐾 今週末のDaisyおすすめプラン</div>
+      <div class="weather-recommend-title" id="weather-recommend-label">🐾 今週末のDaisyおすすめプラン</div>
       <div class="weather-spots" id="weather-spots">
         <div class="weather-spot-item"><span class="weather-spot-icon">⏳</span><span>読み込み中...</span></div>
       </div>
@@ -126,6 +141,18 @@
     </div>
     <div id="weekend-spots" class="card-grid">
       <div class="card"><div class="card-body"><div class="skeleton" style="height:80px;border-radius:8px"></div></div></div>
+      <div class="card"><div class="card-body"><div class="skeleton" style="height:80px;border-radius:8px"></div></div></div>
+      <div class="card"><div class="card-body"><div class="skeleton" style="height:80px;border-radius:8px"></div></div></div>
+    </div>
+  </section>
+
+  <!-- 今週末のアウトドア -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">⛺ 今週末のアウトドア</h2>
+      <a href="outdoor.html" class="section-link">すべて見る →</a>
+    </div>
+    <div id="weekend-outdoor" class="card-grid">
       <div class="card"><div class="card-body"><div class="skeleton" style="height:80px;border-radius:8px"></div></div></div>
       <div class="card"><div class="card-body"><div class="skeleton" style="height:80px;border-radius:8px"></div></div></div>
     </div>
@@ -172,7 +199,68 @@
 const WEATHER_ICONS = {0:"☀️",1:"🌤️",2:"⛅",3:"☁️",45:"🌫️",48:"🌫️",51:"🌦️",53:"🌦️",55:"🌧️",61:"🌧️",63:"🌧️",65:"🌧️",71:"❄️",73:"❄️",75:"❄️",80:"🌦️",81:"🌧️",82:"⛈️",95:"⛈️",96:"⛈️",99:"⛈️"};
 const WEATHER_DESCS = {0:"快晴",1:"晴れ",2:"晴れ時々曇り",3:"曇り",45:"霧",48:"霧",51:"小雨",53:"雨",55:"強い雨",61:"小雨",63:"雨",65:"強い雨",71:"小雪",73:"雪",75:"大雪",80:"にわか雨",81:"雨",82:"激しい雨",95:"雷雨",96:"雷雨",99:"激しい雷雨"};
 
+function getSeason() {
+  const m = new Date().getMonth() + 1;
+  if (m >= 3 && m <= 5) return 'spring';
+  if (m >= 6 && m <= 8) return 'summer';
+  if (m >= 9 && m <= 11) return 'autumn';
+  return 'winter';
+}
+
+const SEASON_PLANS = {
+  spring: {
+    label: '🌸 春のおすすめ',
+    sunny: [
+      {icon:'🌸',name:'海の中道海浜公園',url:'spots.html?area=福岡',desc:'ネモフィラ等春の花とDaisyを撮影しよう！',area:'福岡'},
+      {icon:'⛰️',name:'くじゅう高原エリア',url:'outdoor.html',desc:'春の高原は穏やかで気持ちいい！',area:'大分'},
+      {icon:'🌿',name:'糸島・二見ヶ浦',url:'spots.html?area=福岡',desc:'春の海岸散歩は最高！',area:'福岡'},
+    ],
+    rainy: [
+      {icon:'☕',name:'テラス席カフェ特集',url:'spots.html',desc:'雨の日は屋根付きテラスでのんびり',area:'全九州'},
+      {icon:'🏨',name:'室内ドッグラン付き宿',url:'hotels.html',desc:'雨でも安心して遊べる宿でリフレッシュ',area:'全九州'},
+    ]
+  },
+  summer: {
+    label: '🌞 夏のおすすめ',
+    sunny: [
+      {icon:'🏖️',name:'宮崎・海岸エリア',url:'spots.html?area=宮崎',desc:'早朝散歩がおすすめ！暑い日中は海風で涼やかに',area:'宮崎'},
+      {icon:'⛺',name:'くじゅう高原キャンプ',url:'outdoor.html',desc:'海抜高めの高原は夏でも涼しい！',area:'大分'},
+      {icon:'💧',name:'清流・水遊びスポット',url:'outdoor.html',desc:'清流でDaisyと水遊び！大型犬は水大好き',area:'大分・熊本'},
+    ],
+    rainy: [
+      {icon:'☕',name:'室内ドッグカフェ',url:'spots.html',desc:'エアコンがきいた室内カフェで涼やかに',area:'全九州'},
+      {icon:'🏨',name:'宿泊プランを検討',url:'hotels.html',desc:'雨の週末は山間温泉宿でのんびり',area:'全九州'},
+    ]
+  },
+  autumn: {
+    label: '🍂 秋のおすすめ',
+    sunny: [
+      {icon:'🍂',name:'くじゅう高原紅葉散歩',url:'outdoor.html',desc:'秋の高原は紅葉が絶景！Daisyも大はしゃぎ',area:'大分'},
+      {icon:'⛰️',name:'霧島神宮周辺散策',url:'spots.html?area=鹿児島',desc:'消える秋の空気の中、神社を散策',area:'鹿児島'},
+      {icon:'🌿',name:'油山市民の森',url:'spots.html?area=福岡',desc:'秋の森散歩は最高のリフレッシュ',area:'福岡'},
+    ],
+    rainy: [
+      {icon:'☕',name:'温泉地のカフェでのんびり',url:'spots.html',desc:'秋雨は温泉地のカフェで暗い気分を払拭',area:'大分・熊本'},
+      {icon:'🏨',name:'温泉宿でリフレッシュ',url:'hotels.html',desc:'雨の日は温泉宿でノンビリが最高',area:'大分・熊本'},
+    ]
+  },
+  winter: {
+    label: '❄️ 冬のおすすめ',
+    sunny: [
+      {icon:'♨️',name:'湯布院温泉宿',url:'hotels.html',desc:'冬は温泉宿でDaisyとノンビリが最高！',area:'大分'},
+      {icon:'⛰️',name:'霧島神宮・高千穂山エリア',url:'spots.html?area=鹿児島',desc:'冬の清々しい空気の中、大自然を散策',area:'鹿児島'},
+      {icon:'🌿',name:'山内散歩スポット',url:'outdoor.html',desc:'冷たい空気はサモエドに最高！',area:'大分・熊本'},
+    ],
+    rainy: [
+      {icon:'☕',name:'屋内ドッグカフェで温まり時間',url:'spots.html',desc:'冬の雨は暖かい屋内カフェでゆったり',area:'全九州'},
+      {icon:'🏨',name:'室内ドッグラン付き宿',url:'hotels.html',desc:'雨でも室内で遊べる宿でノンビリ',area:'全九州'},
+    ]
+  }
+};
+
 async function loadWeather() {
+  const season = getSeason();
+  const plan = SEASON_PLANS[season];
   try {
     const res = await fetch('https://api.open-meteo.com/v1/forecast?latitude=33.59&longitude=130.42&current=temperature_2m,weathercode&daily=weathercode,temperature_2m_max,temperature_2m_min&forecast_days=7&timezone=Asia%2FTokyo');
     const data = await res.json();
@@ -181,60 +269,129 @@ async function loadWeather() {
     document.getElementById('weather-icon').textContent = WEATHER_ICONS[code]||'🌤️';
     document.getElementById('weather-temp').textContent = temp+'°C';
     document.getElementById('weather-desc').textContent = WEATHER_DESCS[code]||'天気情報取得済み';
-    document.getElementById('weather-location').textContent = '📍 福岡';
-    
-    const isRainy = [61,63,65,80,81,82,95,96,99,51,53,55].includes(code);
-    const spots = isRainy ? [
-      {icon:'🏪',name:'ペット可カフェ特集',url:'spots.html',desc:'雨の日はカフェでのんびり'},
-      {icon:'🏨',name:'室内ドッグラン付きホテル',url:'hotels.html',desc:'室内で遊べる宿がおすすめ'},
-    ] : [
-      {icon:'🌿',name:'油山市民の森',url:'spots.html?area=福岡',desc:'晴れの日は森でのびのびお散歩'},
-      {icon:'🏖️',name:'糸島・二見ヶ浦',url:'spots.html?area=福岡',desc:'海岸でDaisyと波打ち際を歩こう'},
-      {icon:'⛺',name:'くじゅう高原キャンプ',url:'outdoor.html',desc:'週末キャンプで大自然を満喫'},
-    ];
+    document.getElementById('weather-location').textContent = '📍 福岡（現在地）';
+
+    // 週末天気予報（土日の天気コードを取得）
+    const today = new Date();
+    const dow = today.getDay();
+    const satOffset = dow <= 6 ? (6 - dow) : 0;
+    const satCode = data.daily.weathercode[satOffset] || code;
+    const sunCode = data.daily.weathercode[satOffset + 1] || code;
+    const satMax = Math.round(data.daily.temperature_2m_max[satOffset] || temp);
+    const sunMax = Math.round(data.daily.temperature_2m_max[satOffset + 1] || temp);
+
+    // 週末天気ウィジェットを更新
+    const weekendEl = document.getElementById('weekend-forecast');
+    if (weekendEl) {
+      weekendEl.innerHTML = `
+        <div class="forecast-day">
+          <div class="forecast-label">土曜</div>
+          <div class="forecast-icon">${WEATHER_ICONS[satCode]||'🌤️'}</div>
+          <div class="forecast-temp">${satMax}°C</div>
+          <div class="forecast-desc">${WEATHER_DESCS[satCode]||''}</div>
+        </div>
+        <div class="forecast-day">
+          <div class="forecast-label">日曜</div>
+          <div class="forecast-icon">${WEATHER_ICONS[sunCode]||'🌤️'}</div>
+          <div class="forecast-temp">${sunMax}°C</div>
+          <div class="forecast-desc">${WEATHER_DESCS[sunCode]||''}</div>
+        </div>
+      `;
+    }
+
+    const isRainy = [61,63,65,80,81,82,95,96,99,51,53,55].includes(satCode) || [61,63,65,80,81,82,95,96,99,51,53,55].includes(sunCode);
+    const spots = isRainy ? plan.rainy : plan.sunny;
+    const labelEl = document.getElementById('weather-recommend-label');
+    if (labelEl) labelEl.textContent = plan.label + (isRainy ? '（雨対応）' : '（晴天）');
     document.getElementById('weather-spots').innerHTML = spots.map(s=>`
       <a href="${s.url}" class="weather-spot-item">
         <span class="weather-spot-icon">${s.icon}</span>
-        <div><div style="font-weight:800">${s.name}</div><div style="font-size:12px;color:var(--muted)">${s.desc}</div></div>
+        <div>
+          <div style="font-weight:800">${s.name}</div>
+          <div style="font-size:12px;color:var(--muted)">${s.desc}</div>
+          <div style="font-size:11px;color:var(--muted);margin-top:2px">📍 ${s.area}</div>
+        </div>
       </a>
     `).join('');
   } catch(e) {
     document.getElementById('weather-icon').textContent = '🌤️';
     document.getElementById('weather-temp').textContent = '---';
     document.getElementById('weather-desc').textContent = '天気情報を取得できませんでした';
+    const spots = plan.sunny;
+    document.getElementById('weather-spots').innerHTML = spots.map(s=>`
+      <a href="${s.url}" class="weather-spot-item">
+        <span class="weather-spot-icon">${s.icon}</span>
+        <div><div style="font-weight:800">${s.name}</div><div style="font-size:12px;color:var(--muted)">${s.desc}</div></div>
+      </a>
+    `).join('');
   }
 }
 
 async function loadData() {
-  const [spotsRes, hotelsRes] = await Promise.all([fetch('spots.json'), fetch('hotels.json')]);
+  const [spotsRes, hotelsRes, outdoorRes] = await Promise.all([fetch('spots.json'), fetch('hotels.json'), fetch('outdoor.json')]);
   const spots = await spotsRes.json();
   const hotels = await hotelsRes.json();
-  
-  // おすすめスポット（ランダムに3件）
-  const shuffled = [...spots].sort(() => Math.random() - 0.5).slice(0, 3);
-  document.getElementById('weekend-spots').innerHTML = shuffled.map(s => `
-    <a href="spots.html" class="card" style="text-decoration:none">
-      <div class="card-thumb" style="height:130px;">${s.image ? `<img src="${s.image}" alt="${s.name}" onerror="this.parentElement.innerHTML='🌿'" loading="lazy" style="width:100%;height:100%;object-fit:cover;">` : (s.emoji || '🌿')}</div>
+  const outdoors = await outdoorRes.json();
+  const season = getSeason();
+
+  // 季節に合わせたエリアを優先してスポットを3件選択
+  const seasMap = {spring:['福岡','大分'],summer:['宮崎','鹿児島'],autumn:['大分','熊本'],winter:['大分','鹿児島']};
+  const pref = seasMap[season];
+  const preferred = spots.filter(s => pref.some(p => (s.area||'').includes(p)));
+  const others = spots.filter(s => !pref.some(p => (s.area||'').includes(p)));
+  const picked = [...preferred.sort(()=>Math.random()-.5).slice(0,2), ...others.sort(()=>Math.random()-.5).slice(0,1)];
+
+  document.getElementById('weekend-spots').innerHTML = picked.map(s => {
+    const mapUrl = `https://maps.google.com/?q=${encodeURIComponent(s.mapQuery||(s.name+' '+(s.area||'')))}`;
+    return `
+    <div class="card">
+      <div class="card-thumb" style="height:130px;">${s.image ? `<img src="${s.image}" alt="${esc(s.name)}" onerror="this.parentElement.innerHTML='🌿'" loading="lazy" style="width:100%;height:100%;object-fit:cover;">` : `<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;background:linear-gradient(135deg,#f0faf4,#e8f5e9);">${s.emoji||'🌿'}</div>`}</div>
       <div class="card-body">
         <h3 class="card-title">${esc(s.name)}</h3>
-        <div class="card-meta"><span class="tag">${esc(s.area||'九州')}</span></div>
-        <p class="card-desc">${esc(s.description||s.desc||'')}</p>
+        <div class="card-meta"><span class="tag">${esc(s.area||'九州')}</span>${s.type?`<span class="tag tag-amber">${esc(s.type)}</span>`:''}</div>
+        <p class="card-desc">${esc(s.memo||s.description||s.desc||'')}</p>
+        <div style="display:flex;gap:8px;margin-top:10px;">
+          <a href="spots.html" class="btn btn-secondary btn-sm">詳しく見る</a>
+          <a href="${mapUrl}" target="_blank" rel="noopener" class="btn btn-sm" style="background:#e8f5e9;color:#2e7d32;border:1px solid #c8e6c9;">🗺️ 地図</a>
+        </div>
       </div>
-    </a>
-  `).join('');
-  
+    </div>`;
+  }).join('');
+
+  // アウトドアセクション
+  const outdoorSection = document.getElementById('weekend-outdoor');
+  if (outdoorSection) {
+    const picked2 = [...outdoors].sort(()=>Math.random()-.5).slice(0,2);
+    outdoorSection.innerHTML = picked2.map(o => {
+      const mapUrl = `https://maps.google.com/?q=${encodeURIComponent(o.mapQuery||(o.name+' '+(o.area||'')))}`;
+      return `
+      <div class="card">
+        <div class="card-thumb" style="height:130px;">${o.image ? `<img src="${o.image}" alt="${esc(o.name)}" onerror="this.parentElement.innerHTML='⛺'" loading="lazy" style="width:100%;height:100%;object-fit:cover;">` : `<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;background:linear-gradient(135deg,#e8f5e9,#f0faf4);">${o.emoji||'⛺'}</div>`}</div>
+        <div class="card-body">
+          <h3 class="card-title">${esc(o.name)}</h3>
+          <div class="card-meta"><span class="tag">${esc(o.area||'九州')}</span></div>
+          <p class="card-desc">${esc(o.memo||o.description||o.desc||'')}</p>
+          <div style="display:flex;gap:8px;margin-top:10px;">
+            <a href="outdoor.html" class="btn btn-secondary btn-sm">詳しく見る</a>
+            <a href="${mapUrl}" target="_blank" rel="noopener" class="btn btn-sm" style="background:#e8f5e9;color:#2e7d32;border:1px solid #c8e6c9;">🗺️ 地図</a>
+          </div>
+        </div>
+      </div>`;
+    }).join('');
+  }
+
   // ホテル（2件）
   const topHotels = hotels.slice(0, 2);
   document.getElementById('weekend-hotels').innerHTML = topHotels.map(h => {
     const rkUrl = h.rakutenTravelAffiliateUrl || h.rakutenTravelUrl || 'https://travel.rakuten.co.jp/';
     return `
     <div class="card">
-      <div class="card-thumb" style="height:130px;">${h.image ? `<img src="${h.image}" alt="${h.name}" onerror="this.parentElement.innerHTML='🏨'" loading="lazy" style="width:100%;height:100%;object-fit:cover;">` : (h.emoji || '🏨')}</div>
+      <div class="card-thumb" style="height:130px;">${h.image ? `<img src="${h.image}" alt="${esc(h.name)}" onerror="this.parentElement.innerHTML='🏨'" loading="lazy" style="width:100%;height:100%;object-fit:cover;">` : `<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;background:linear-gradient(135deg,#fff8e1,#fff3cd);">${h.emoji||'🏨'}</div>`}</div>
       <div class="card-body">
         <h3 class="card-title">${esc(h.name)}</h3>
         <div class="card-meta"><span class="tag">${esc(h.area||h.prefecture||'九州')}</span></div>
         <p class="card-desc">${esc(h.description||h.desc||'')}</p>
-        <a href="${esc(rkUrl)}" target="_blank" rel="noopener" class="btn btn-amber btn-sm" style="margin-top:12px">楽天で予約</a>
+        <a href="${esc(rkUrl)}" target="_blank" rel="noopener" class="btn btn-amber btn-sm" style="margin-top:12px">🏨 楽天で予約</a>
       </div>
     </div>
   `}).join('');

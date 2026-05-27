@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E1XSFE7LXG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-E1XSFE7LXG');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お気に入りリスト | Daisy Kyushu Dog Guide</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .fav-hero {
+      background: linear-gradient(135deg, #880e4f 0%, #e91e63 50%, #f06292 100%);
+      color: white;
+      padding: 40px 20px 32px;
+      text-align: center;
+    }
+    .fav-hero h1 {
+      font-family: 'Zen Maru Gothic', sans-serif;
+      font-size: clamp(1.4rem, 4vw, 2rem);
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+    .fav-hero p { font-size: 0.9rem; opacity: 0.85; }
+    .fav-container { max-width: 800px; margin: 0 auto; padding: 24px 16px 60px; }
+    .fav-section-title {
+      font-family: 'Zen Maru Gothic', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 900;
+      color: #880e4f;
+      margin: 28px 0 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #fce4ec;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .fav-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    @media (max-width: 480px) { .fav-grid { grid-template-columns: 1fr; } }
+    .fav-card {
+      background: #fff;
+      border: 1px solid #fce4ec;
+      border-radius: 14px;
+      padding: 14px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      position: relative;
+    }
+    .fav-card-emoji { font-size: 2rem; flex-shrink: 0; }
+    .fav-card-info { flex: 1; min-width: 0; }
+    .fav-card-name { font-weight: 800; font-size: 0.95rem; color: #1b5e20; margin-bottom: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .fav-card-area { font-size: 0.78rem; color: #888; margin-bottom: 6px; }
+    .fav-card-btns { display: flex; gap: 6px; flex-wrap: wrap; }
+    .fav-card-btn {
+      display: inline-flex; align-items: center; gap: 3px;
+      padding: 5px 10px; border-radius: 20px; font-size: 11px; font-weight: 700;
+      text-decoration: none; border: 1px solid;
+    }
+    .btn-green { background: #e8f5e9; color: #2e7d32; border-color: #c8e6c9; }
+    .btn-blue { background: #e3f2fd; color: #1565c0; border-color: #bbdefb; }
+    .fav-remove-btn {
+      position: absolute; top: 10px; right: 10px;
+      background: #fce4ec; border: none; border-radius: 50%;
+      width: 24px; height: 24px; cursor: pointer; font-size: 12px;
+      color: #e91e63; display: flex; align-items: center; justify-content: center;
+    }
+    .fav-remove-btn:hover { background: #f8bbd0; }
+    .empty-state {
+      text-align: center;
+      padding: 60px 20px;
+      color: #aaa;
+    }
+    .empty-state .empty-icon { font-size: 4rem; margin-bottom: 16px; }
+    .empty-state p { font-size: 0.95rem; line-height: 1.8; }
+    .empty-state a {
+      display: inline-block; margin-top: 20px;
+      background: #e91e63; color: #fff;
+      padding: 12px 24px; border-radius: 50px;
+      text-decoration: none; font-weight: 700; font-size: 0.9rem;
+    }
+    .fav-actions {
+      display: flex; gap: 10px; flex-wrap: wrap;
+      margin: 16px 0;
+    }
+    .fav-action-btn {
+      padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 700;
+      border: none; cursor: pointer;
+    }
+    .btn-clear { background: #fce4ec; color: #c62828; }
+    .btn-share { background: #e3f2fd; color: #1565c0; }
+    .fav-count-badge {
+      background: rgba(255,255,255,.25);
+      border-radius: 50px;
+      padding: 2px 10px;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">🐾</div>
+      <div>
+        <div class="logo-text">Daisy</div>
+        <div class="logo-sub">Kyushu Dog Guide</div>
+      </div>
+    </a>
+    <nav class="site-nav">
+      <a href="spots.html">スポット</a>
+      <a href="hotels.html">宿</a>
+      <a href="outdoor.html">アウトドア</a>
+    </nav>
+  </div>
+</header>
+
+<div class="fav-hero">
+  <h1>❤️ お気に入りリスト</h1>
+  <p>行きたいスポット・宿をまとめてチェック <span class="fav-count-badge" id="total-count">0件</span></p>
+</div>
+
+<div class="fav-container">
+
+  <div id="empty-state" class="empty-state" style="display:none;">
+    <div class="empty-icon">🤍</div>
+    <p>まだお気に入りがありません。<br>スポット一覧でハートボタンをタップして<br>行きたい場所を保存しましょう！</p>
+    <a href="spots.html">スポット一覧を見る →</a>
+  </div>
+
+  <div id="fav-content" style="display:none;">
+    <div class="fav-actions">
+      <button class="fav-action-btn btn-clear" onclick="clearAll()">🗑️ 全て削除</button>
+      <button class="fav-action-btn btn-share" onclick="shareList()">📤 リストを共有</button>
+    </div>
+
+    <div id="spots-section" style="display:none;">
+      <div class="fav-section-title">📍 スポット <span id="spots-count" style="font-size:0.8rem;color:#888;"></span></div>
+      <div class="fav-grid" id="spots-grid"></div>
+    </div>
+
+    <div id="outdoor-section" style="display:none;">
+      <div class="fav-section-title">🏕️ アウトドア <span id="outdoor-count" style="font-size:0.8rem;color:#888;"></span></div>
+      <div class="fav-grid" id="outdoor-grid"></div>
+    </div>
+
+    <div id="hotels-section" style="display:none;">
+      <div class="fav-section-title">🏨 宿 <span id="hotels-count" style="font-size:0.8rem;color:#888;"></span></div>
+      <div class="fav-grid" id="hotels-grid"></div>
+    </div>
+
+    <div id="unknown-section" style="display:none;">
+      <div class="fav-section-title">🐾 その他 <span id="unknown-count" style="font-size:0.8rem;color:#888;"></span></div>
+      <div class="fav-grid" id="unknown-grid"></div>
+    </div>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">🐾 Daisy Kyushu Dog Guide</div>
+      <p class="footer-desc">サモエド犬Daisyと行く九州犬連れおでかけガイド。</p>
+    </div>
+    <div class="footer-links">
+      <a href="about.html">このサイトについて</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+    </div>
+  </div>
+  <p class="footer-copy">© 2024 Daisy Kyushu Dog Guide.</p>
+</footer>
+
+<script>
+const FAV_KEY = 'daisy_favs';
+
+function getFavs() {
+  try { return JSON.parse(localStorage.getItem(FAV_KEY) || '[]'); } catch(e) { return []; }
+}
+function saveFavs(favs) {
+  localStorage.setItem(FAV_KEY, JSON.stringify(favs));
+}
+function removeFav(id) {
+  let favs = getFavs().filter(f => f !== id);
+  saveFavs(favs);
+  renderFavs();
+}
+function clearAll() {
+  if (!confirm('お気に入りを全て削除しますか？')) return;
+  saveFavs([]);
+  renderFavs();
+}
+function shareList() {
+  const favs = getFavs();
+  if (favs.length === 0) { alert('お気に入りがありません'); return; }
+  const text = 'Daisy Kyushu Dog Guideのお気に入りリスト\n' + favs.map(id => `https://daisy-kyushu.github.io/daisy-kyushu-dog-guide/spot/${id}.html`).join('\n');
+  if (navigator.share) {
+    navigator.share({ title: 'お気に入りスポットリスト', text: text });
+  } else {
+    navigator.clipboard.writeText(text).then(() => alert('URLをコピーしました！'));
+  }
+}
+
+function makeCard(item, type) {
+  const id = item.id || '';
+  const name = item.name || id;
+  const area = item.area || '';
+  const emoji = item.emoji || (type === 'hotels' ? '🏨' : type === 'outdoor' ? '🏕️' : '🐕');
+  const mapQ = encodeURIComponent((item.mapQuery || name + ' ' + area));
+  const detailUrl = type === 'spots' ? `spot/${id}.html` : type === 'outdoor' ? `outdoor/${id}.html` : `hotels.html`;
+
+  return `
+  <div class="fav-card" id="fav-card-${id}">
+    <div class="fav-card-emoji">${emoji}</div>
+    <div class="fav-card-info">
+      <div class="fav-card-name">${name}</div>
+      <div class="fav-card-area">📍 ${area}</div>
+      <div class="fav-card-btns">
+        <a href="${detailUrl}" class="fav-card-btn btn-green">📄 詳細</a>
+        <a href="https://maps.google.com/?q=${mapQ}" target="_blank" rel="noopener" class="fav-card-btn btn-blue">🗺️ 地図</a>
+      </div>
+    </div>
+    <button class="fav-remove-btn" onclick="removeFav('${id}')" title="削除">✕</button>
+  </div>`;
+}
+
+async function renderFavs() {
+  const favIds = getFavs();
+  const totalEl = document.getElementById('total-count');
+  totalEl.textContent = favIds.length + '件';
+
+  if (favIds.length === 0) {
+    document.getElementById('empty-state').style.display = 'block';
+    document.getElementById('fav-content').style.display = 'none';
+    return;
+  }
+  document.getElementById('empty-state').style.display = 'none';
+  document.getElementById('fav-content').style.display = 'block';
+
+  // データを並行ロード
+  let spotsData = [], outdoorData = [], hotelsData = [];
+  try {
+    const [sr, or, hr] = await Promise.all([
+      fetch('spots.json').then(r => r.json()).catch(() => []),
+      fetch('outdoor.json').then(r => r.json()).catch(() => []),
+      fetch('hotels.json').then(r => r.json()).catch(() => [])
+    ]);
+    spotsData = sr; outdoorData = or; hotelsData = hr;
+  } catch(e) {}
+
+  const spotItems = [], outdoorItems = [], hotelItems = [], unknownItems = [];
+
+  for (const id of favIds) {
+    const s = spotsData.find(x => x.id === id);
+    if (s) { spotItems.push(s); continue; }
+    const o = outdoorData.find(x => x.id === id);
+    if (o) { outdoorItems.push(o); continue; }
+    const h = hotelsData.find(x => x.id === id);
+    if (h) { hotelItems.push(h); continue; }
+    unknownItems.push({ id, name: id, area: '' });
+  }
+
+  function renderSection(sectionId, gridId, countId, items, type) {
+    const sec = document.getElementById(sectionId);
+    if (items.length === 0) { sec.style.display = 'none'; return; }
+    sec.style.display = 'block';
+    document.getElementById(countId).textContent = items.length + '件';
+    document.getElementById(gridId).innerHTML = items.map(item => makeCard(item, type)).join('');
+  }
+
+  renderSection('spots-section', 'spots-grid', 'spots-count', spotItems, 'spots');
+  renderSection('outdoor-section', 'outdoor-grid', 'outdoor-count', outdoorItems, 'outdoor');
+  renderSection('hotels-section', 'hotels-grid', 'hotels-count', hotelItems, 'hotels');
+  renderSection('unknown-section', 'unknown-grid', 'unknown-count', unknownItems, 'unknown');
+}
+
+renderFavs();
+</script>
+</body>
+</html>
