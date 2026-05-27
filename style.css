@@ -1553,7 +1553,69 @@ h1, h2, h3, h4 {
   color: var(--green-dark) !important;
 }
 
+/* 検索結果：商品カード（横並びレイアウト） */
+.search-product-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: var(--surface);
+  border-radius: var(--r-lg);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-card);
+  padding: 14px 16px;
+  margin-bottom: 0;
+}
+
+.search-product-icon {
+  font-size: 2rem;
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--green-light), var(--amber-light));
+  border-radius: var(--r-md);
+  flex-shrink: 0;
+}
+
+.search-product-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.search-product-name {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--brown);
+  margin-bottom: 2px;
+  line-height: 1.4;
+}
+
+/* 検索結果グリッドで商品カードを1列表示 */
+#search-results-grid .search-product-card {
+  grid-column: 1 / -1;
+}
+
 @media (max-width: 560px) {
-  .site-search-btn { padding: 12px 16px; font-size: 0.85rem; }
-  .site-search-input { padding: 12px 14px; font-size: 0.95rem; }
+  .site-search-box {
+    flex-wrap: nowrap;
+    gap: 6px;
+  }
+  .site-search-input {
+    padding: 12px 12px;
+    font-size: 0.9rem;
+    min-width: 0;
+    flex: 1 1 0;
+  }
+  .site-search-btn {
+    padding: 12px 14px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .site-search-section {
+    padding: 16px 12px;
+    margin: 12px 0 16px;
+  }
 }

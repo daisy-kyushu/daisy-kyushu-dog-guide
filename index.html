@@ -917,26 +917,46 @@ async function runSearch(query) {
   grid.innerHTML = '';
   results.forEach(item => {
     const card = document.createElement('div');
-    card.className = 'card';
     const isProduct = item._type === 'product';
     const desc = item.memo || item.description || item.desc || item.whyCandidate || '';
     const area = item.area || item.prefecture || '';
     const linkUrl = isProduct ? (item.rakutenAffiliateUrl || item.normalUrl || '') : item._link;
-    card.innerHTML = `
-      <div class="card-thumb" style="font-size:2rem;display:flex;align-items:center;justify-content:center;background:#f5f0e8;">${item._icon}</div>
-      <div class="card-body">
-        <div class="card-meta" style="margin-bottom:4px;">
-          <span class="tag tag-green" style="font-size:11px;">${escHtml(item._label)}</span>
-          ${area ? `<span class="tag" style="font-size:11px;">${escHtml(area)}</span>` : ''}
-        </div>
-        <h3 class="card-title">${escHtml(item.name || '')}</h3>
-        <p class="card-desc">${escHtml(desc.slice(0, 80))}${desc.length > 80 ? '…' : ''}</p>
-        ${linkUrl ? `<a href="${escHtml(linkUrl)}" ${isProduct ? 'target="_blank" rel="noopener"' : ''} class="btn btn-primary" style="font-size:12px;padding:6px 14px;margin-top:8px;">${isProduct ? '商品を見る →' : '詳しく見る →'}</a>` : ''}
-      </div>`;
-    if (!isProduct && !linkUrl) {
-      card.style.cursor = 'pointer';
-      if (item._type === 'spot') card.addEventListener('click', () => openSpotModal(item));
-      else if (item._type === 'hotel') card.addEventListener('click', () => openHotelModal(item));
+    const shopName = item.shopName || '';
+    const displayName = item.name || item.productName || '';
+
+    if (isProduct) {
+      // 商品カードは横並びレイアウト
+      card.className = 'search-product-card';
+      card.innerHTML = `
+        <div class="search-product-icon">${item._icon}</div>
+        <div class="search-product-body">
+          <div class="card-meta" style="margin-bottom:4px;">
+            <span class="tag tag-green" style="font-size:11px;">${escHtml(item._label)}</span>
+            ${shopName ? `<span class="tag" style="font-size:11px;">${escHtml(shopName)}</span>` : ''}
+          </div>
+          <div class="search-product-name">${escHtml(displayName)}</div>
+          <p class="card-desc" style="margin:4px 0 8px;font-size:0.8rem;">${escHtml(desc.slice(0, 80))}${desc.length > 80 ? '…' : ''}</p>
+          ${linkUrl ? `<a href="${escHtml(linkUrl)}" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:12px;padding:6px 14px;">詳しく見る →</a>` : ''}
+        </div>`;
+    } else {
+      // スポット・宿カードは従来通り
+      card.className = 'card';
+      card.innerHTML = `
+        <div class="card-thumb" style="font-size:2rem;display:flex;align-items:center;justify-content:center;background:#f5f0e8;">${item._icon}</div>
+        <div class="card-body">
+          <div class="card-meta" style="margin-bottom:4px;">
+            <span class="tag tag-green" style="font-size:11px;">${escHtml(item._label)}</span>
+            ${area ? `<span class="tag" style="font-size:11px;">${escHtml(area)}</span>` : ''}
+          </div>
+          <h3 class="card-title">${escHtml(displayName)}</h3>
+          <p class="card-desc">${escHtml(desc.slice(0, 80))}${desc.length > 80 ? '…' : ''}</p>
+          ${linkUrl ? `<a href="${escHtml(linkUrl)}" class="btn btn-primary" style="font-size:12px;padding:6px 14px;margin-top:8px;">詳しく見る →</a>` : ''}
+        </div>`;
+      if (!linkUrl) {
+        card.style.cursor = 'pointer';
+        if (item._type === 'spot') card.addEventListener('click', () => openSpotModal(item));
+        else if (item._type === 'hotel') card.addEventListener('click', () => openHotelModal(item));
+      }
     }
     grid.appendChild(card);
   });
