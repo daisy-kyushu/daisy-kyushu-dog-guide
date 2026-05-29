@@ -397,5 +397,375 @@
     "status": "公式確認済み",
     "memo": "オンラインショップ専門。",
     "affiliateStatus": "none"
+  },
+  {
+    "id": "dog-food-large-breed",
+    "category": "ドッグフード",
+    "productName": "大型犬用ドッグフード",
+    "target": "サモエドなど大型犬",
+    "searchKeyword": "ドッグフード 大型犬 無添加",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/ドッグフード+大型犬+無添加/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E3%83%89%E3%83%83%E3%82%B0%E3%83%95%E3%83%BC%E3%83%89+%E5%A4%A7%E5%9E%8B%E7%8A%AC+%E7%84%A1%E6%B7%BB%E5%8A%A0%2F",
+    "description": "サモエドなど大型犬に最適な無添加ドッグフード。タンパク質豊富で被毛ケアにも効果的。"
+  },
+  {
+    "id": "dog-snack-natural",
+    "category": "おやつ",
+    "productName": "無添加犬用おやつ",
+    "target": "全犬種",
+    "searchKeyword": "犬 おやつ 無添加 国産",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+おやつ+無添加+国産/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E3%81%8A%E3%82%84%E3%81%A4+%E7%84%A1%E6%B7%BB%E5%8A%A0+%E5%9B%BD%E7%94%A3%2F",
+    "description": "国産素材を使った無添加のおやつ。旅行中のご褒美にも最適。"
+  },
+  {
+    "id": "dog-jerky-chicken",
+    "category": "おやつ",
+    "productName": "鶏ささみジャーキー",
+    "target": "全犬種",
+    "searchKeyword": "犬 ジャーキー 鶏ささみ 国産",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+ジャーキー+鶏ささみ+国産/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E3%82%B8%E3%83%A3%E3%83%BC%E3%82%AD%E3%83%BC+%E9%B6%8F%E3%81%95%E3%81%95%E3%81%BF+%E5%9B%BD%E7%94%A3%2F",
+    "description": "旅行中の携帯おやつに便利な鶏ささみジャーキー。低カロリーで大型犬にも。"
+  },
+  {
+    "id": "dog-dental-chew",
+    "category": "おやつ",
+    "productName": "デンタルガム・歯磨きおやつ",
+    "target": "全犬種",
+    "searchKeyword": "犬 デンタルガム 歯磨き おやつ",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+デンタルガム+歯磨き/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E3%83%87%E3%83%B3%E3%82%BF%E3%83%AB%E3%82%AC%E3%83%A0+%E6%AD%AF%E7%A3%A8%E3%81%8D%2F",
+    "description": "旅行中でも口腔ケアを忘れずに。噛むだけで歯石予防できるデンタルガム。"
+  },
+  {
+    "id": "dog-food-wet",
+    "category": "ドッグフード",
+    "productName": "ウェットフード・缶詰",
+    "target": "全犬種",
+    "searchKeyword": "犬 ウェットフード 缶詰 国産",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+ウェットフード+缶詰+国産/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E3%82%A6%E3%82%A7%E3%83%83%E3%83%88%E3%83%95%E3%83%BC%E3%83%89+%E7%BC%B6%E8%A9%B0+%E5%9B%BD%E7%94%A3%2F",
+    "description": "旅行先でも手軽に与えられるウェットフード。水分補給にも役立つ。"
+  },
+  {
+    "id": "dog-carrier-large",
+    "category": "キャリー・バッグ",
+    "productName": "大型犬用キャリーバッグ",
+    "target": "大型犬・サモエド",
+    "searchKeyword": "犬 キャリーバッグ 大型犬 旅行",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+キャリーバッグ+大型犬+旅行/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E3%82%AD%E3%83%A3%E3%83%AA%E3%83%BC%E3%83%90%E3%83%83%E3%82%B0+%E5%A4%A7%E5%9E%8B%E7%8A%AC+%E6%97%85%E8%A1%8C%2F",
+    "description": "大型犬でも快適に移動できる大容量キャリーバッグ。通気性抜群。"
+  },
+  {
+    "id": "dog-stroller",
+    "category": "キャリー・バッグ",
+    "productName": "犬用ペットカート・ストローラー",
+    "target": "大型犬・シニア犬",
+    "searchKeyword": "犬 ペットカート ストローラー 大型",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+ペットカート+ストローラー+大型/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E3%83%9A%E3%83%83%E3%83%88%E3%82%AB%E3%83%BC%E3%83%88+%E3%82%B9%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC+%E5%A4%A7%E5%9E%8B%2F",
+    "description": "長距離の観光でも疲れ知らず。大型犬対応の頑丈なペットカート。"
+  },
+  {
+    "id": "dog-water-bottle",
+    "category": "お出かけグッズ",
+    "productName": "犬用携帯水筒・ウォーターボトル",
+    "target": "全犬種",
+    "searchKeyword": "犬 水筒 携帯 ウォーターボトル",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+水筒+携帯+ウォーターボトル/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E6%B0%B4%E7%AD%92+%E6%90%BA%E5%B8%AF+%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%9C%E3%83%88%E3%83%AB%2F",
+    "description": "お散歩・旅行中の水分補給に必須。ワンタッチで給水できる便利な携帯水筒。"
+  },
+  {
+    "id": "dog-portable-bowl",
+    "category": "お出かけグッズ",
+    "productName": "折りたたみ携帯食器",
+    "target": "全犬種",
+    "searchKeyword": "犬 折りたたみ 食器 携帯 旅行",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+折りたたみ+食器+携帯/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E6%8A%98%E3%82%8A%E3%81%9F%E3%81%9F%E3%81%BF+%E9%A3%9F%E5%99%A8+%E6%90%BA%E5%B8%AF%2F",
+    "description": "コンパクトに折りたためる携帯食器。旅行バッグにすっきり収納。"
+  },
+  {
+    "id": "dog-cooling-mat",
+    "category": "お出かけグッズ",
+    "productName": "犬用冷却マット・クールマット",
+    "target": "大型犬・サモエド",
+    "searchKeyword": "犬 冷却マット クールマット 夏",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+冷却マット+クールマット+夏/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E5%86%B7%E5%8D%B4%E3%83%9E%E3%83%83%E3%83%88+%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%9E%E3%83%83%E3%83%88+%E5%A4%8F%2F",
+    "description": "夏の旅行に必須！サモエドなど厚い被毛の犬の熱中症対策に。"
+  },
+  {
+    "id": "dog-cooling-vest",
+    "category": "お出かけグッズ",
+    "productName": "犬用冷却ベスト・クールウェア",
+    "target": "大型犬・サモエド",
+    "searchKeyword": "犬 冷却ベスト クールウェア 大型犬",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+冷却ベスト+クールウェア+大型犬/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E5%86%B7%E5%8D%B4%E3%83%99%E3%82%B9%E3%83%88+%E3%82%AF%E3%83%BC%E3%83%AB%E3%82%A6%E3%82%A7%E3%82%A2+%E5%A4%A7%E5%9E%8B%E7%8A%AC%2F",
+    "description": "水に濡らして着せるだけで体温を下げる冷却ベスト。夏の九州旅行に必携。"
+  },
+  {
+    "id": "dog-harness-large",
+    "category": "リード・ハーネス",
+    "productName": "大型犬用ハーネス",
+    "target": "大型犬・サモエド",
+    "searchKeyword": "犬 ハーネス 大型犬 旅行",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+ハーネス+大型犬+旅行/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E3%83%8F%E3%83%BC%E3%83%8D%E3%82%B9+%E5%A4%A7%E5%9E%8B%E7%8A%AC+%E6%97%85%E8%A1%8C%2F",
+    "description": "大型犬でも安心して使える頑丈なハーネス。首への負担を軽減。"
+  },
+  {
+    "id": "dog-leash-retractable",
+    "category": "リード・ハーネス",
+    "productName": "伸縮リード・フレキシリード",
+    "target": "全犬種",
+    "searchKeyword": "犬 伸縮リード フレキシリード 大型犬",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+伸縮リード+フレキシリード/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E4%BC%B8%E7%B8%AE%E3%83%AA%E3%83%BC%E3%83%89+%E3%83%95%E3%83%AC%E3%82%AD%E3%82%B7%E3%83%AA%E3%83%BC%E3%83%89%2F",
+    "description": "ドッグランや広い公園での散歩に便利な伸縮リード。最大5m伸縮。"
+  },
+  {
+    "id": "dog-leash-short",
+    "category": "リード・ハーネス",
+    "productName": "短リード・トレーニングリード",
+    "target": "全犬種",
+    "searchKeyword": "犬 短リード トレーニング 大型犬",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+短リード+トレーニング/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E7%9F%AD%E3%83%AA%E3%83%BC%E3%83%89+%E3%83%88%E3%83%AC%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%2F",
+    "description": "混雑した観光地での安全管理に。コントロールしやすい短リード。"
+  },
+  {
+    "id": "dog-shampoo-samoyed",
+    "category": "グルーミング",
+    "productName": "白い犬用ホワイトシャンプー",
+    "target": "サモエド・白い犬",
+    "searchKeyword": "犬 シャンプー ホワイト 白い犬",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+シャンプー+ホワイト+白い犬/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E3%82%B7%E3%83%A3%E3%83%B3%E3%83%97%E3%83%BC+%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88+%E7%99%BD%E3%81%84%E7%8A%AC%2F",
+    "description": "サモエドの真っ白な被毛をより美しく保つホワイトシャンプー。旅行後のケアに。"
+  },
+  {
+    "id": "dog-brush-samoyed",
+    "category": "グルーミング",
+    "productName": "大型犬用スリッカーブラシ",
+    "target": "サモエド・長毛種",
+    "searchKeyword": "犬 スリッカーブラシ 大型犬 長毛",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+スリッカーブラシ+大型犬+長毛/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E3%82%B9%E3%83%AA%E3%83%83%E3%82%AB%E3%83%BC%E3%83%96%E3%83%A9%E3%82%B7+%E5%A4%A7%E5%9E%8B%E7%8A%AC+%E9%95%B7%E6%AF%9B%2F",
+    "description": "サモエドのふわふわ被毛を美しく保つスリッカーブラシ。旅行中も毎日ブラッシングを。"
+  },
+  {
+    "id": "dog-wipe-paw",
+    "category": "グルーミング",
+    "productName": "犬用足拭きウェットシート",
+    "target": "全犬種",
+    "searchKeyword": "犬 足拭き ウェットシート 旅行",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+足拭き+ウェットシート+旅行/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E8%B6%B3%E6%8B%AD%E3%81%8D+%E3%82%A6%E3%82%A7%E3%83%83%E3%83%88%E3%82%B7%E3%83%BC%E3%83%88+%E6%97%85%E8%A1%8C%2F",
+    "description": "散歩後・ドッグラン後の足の汚れをさっと拭けるウェットシート。旅行に必携。"
+  },
+  {
+    "id": "dog-dry-shampoo",
+    "category": "グルーミング",
+    "productName": "犬用ドライシャンプー",
+    "target": "全犬種",
+    "searchKeyword": "犬 ドライシャンプー 旅行 簡単",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+ドライシャンプー+旅行/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E3%83%89%E3%83%A9%E3%82%A4%E3%82%B7%E3%83%A3%E3%83%B3%E3%83%97%E3%83%BC+%E6%97%85%E8%A1%8C%2F",
+    "description": "水なしで使えるドライシャンプー。旅行先でお風呂が使えない時に便利。"
+  },
+  {
+    "id": "dog-bed-travel",
+    "category": "宿泊グッズ",
+    "productName": "犬用折りたたみベッド・マット",
+    "target": "全犬種",
+    "searchKeyword": "犬 折りたたみ ベッド マット 旅行",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+折りたたみ+ベッド+マット+旅行/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E6%8A%98%E3%82%8A%E3%81%9F%E3%81%9F%E3%81%BF+%E3%83%99%E3%83%83%E3%83%89+%E3%83%9E%E3%83%83%E3%83%88+%E6%97%85%E8%A1%8C%2F",
+    "description": "旅行先でも愛犬が安心して眠れる折りたたみベッド。コンパクトに収納可能。"
+  },
+  {
+    "id": "dog-cage-folding",
+    "category": "宿泊グッズ",
+    "productName": "折りたたみケージ・クレート",
+    "target": "全犬種",
+    "searchKeyword": "犬 折りたたみ ケージ クレート 旅行",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+折りたたみ+ケージ+クレート+旅行/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E6%8A%98%E3%82%8A%E3%81%9F%E3%81%9F%E3%81%BF+%E3%82%B1%E3%83%BC%E3%82%B8+%E3%82%AF%E3%83%AC%E3%83%BC%E3%83%88+%E6%97%85%E8%A1%8C%2F",
+    "description": "宿泊先でも安心できる自分のスペースを確保。折りたたんで車に積めるケージ。"
+  },
+  {
+    "id": "dog-pee-sheet",
+    "category": "宿泊グッズ",
+    "productName": "ペットシーツ・トイレシート",
+    "target": "全犬種",
+    "searchKeyword": "犬 ペットシーツ トイレシート 旅行",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+ペットシーツ+トイレシート+旅行/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E3%83%9A%E3%83%83%E3%83%88%E3%82%B7%E3%83%BC%E3%83%84+%E3%83%88%E3%82%A4%E3%83%AC%E3%82%B7%E3%83%BC%E3%83%88+%E6%97%85%E8%A1%8C%2F",
+    "description": "旅行先でのトイレ対策に必須。厚型で吸収力が高いペットシーツ。"
+  },
+  {
+    "id": "dog-tick-repellent",
+    "category": "健康・医療",
+    "productName": "犬用虫除け・ダニ予防スプレー",
+    "target": "全犬種",
+    "searchKeyword": "犬 虫除け ダニ予防 スプレー アウトドア",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+虫除け+ダニ予防+スプレー+アウトドア/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E8%99%AB%E9%99%A4%E3%81%91+%E3%83%80%E3%83%8B%E4%BA%88%E9%98%B2+%E3%82%B9%E3%83%97%E3%83%AC%E3%83%BC+%E3%82%A2%E3%82%A6%E3%83%88%E3%83%89%E3%82%A2%2F",
+    "description": "九州の山や自然の中で遊ぶ前に必須。マダニ・ノミ予防スプレー。"
+  },
+  {
+    "id": "dog-first-aid",
+    "category": "健康・医療",
+    "productName": "犬用救急セット・応急処置キット",
+    "target": "全犬種",
+    "searchKeyword": "犬 救急セット 応急処置 旅行",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+救急セット+応急処置+旅行/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E6%95%91%E6%80%A5%E3%82%BB%E3%83%83%E3%83%88+%E5%BF%9C%E6%80%A5%E5%87%A6%E7%BD%AE+%E6%97%85%E8%A1%8C%2F",
+    "description": "旅行中のもしもに備えて。消毒液・包帯・ピンセットなどを収めた犬用救急セット。"
+  },
+  {
+    "id": "dog-supplement-joint",
+    "category": "健康・医療",
+    "productName": "犬用関節サプリメント",
+    "target": "大型犬・シニア犬",
+    "searchKeyword": "犬 サプリメント 関節 大型犬 グルコサミン",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+サプリメント+関節+大型犬+グルコサミン/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E3%82%B5%E3%83%97%E3%83%AA%E3%83%A1%E3%83%B3%E3%83%88+%E9%96%A2%E7%AF%80+%E5%A4%A7%E5%9E%8B%E7%8A%AC+%E3%82%B0%E3%83%AB%E3%82%B3%E3%82%B5%E3%83%9F%E3%83%B3%2F",
+    "description": "旅行でたくさん歩く大型犬の関節をサポート。グルコサミン・コンドロイチン配合。"
+  },
+  {
+    "id": "dog-supplement-skin",
+    "category": "健康・医療",
+    "productName": "犬用皮膚・被毛サプリメント",
+    "target": "サモエド・長毛種",
+    "searchKeyword": "犬 サプリメント 皮膚 被毛 オメガ3",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+サプリメント+皮膚+被毛+オメガ3/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E3%82%B5%E3%83%97%E3%83%AA%E3%83%A1%E3%83%B3%E3%83%88+%E7%9A%AE%E8%86%9A+%E8%A2%AB%E6%AF%9B+%E3%82%AA%E3%83%A1%E3%82%AC3%2F",
+    "description": "サモエドの美しい白い被毛を保つオメガ3・ビオチン配合サプリメント。"
+  },
+  {
+    "id": "dog-photo-album",
+    "category": "記念品・写真",
+    "productName": "ペット用フォトアルバム・写真集",
+    "target": "全犬種",
+    "searchKeyword": "犬 フォトアルバム 写真集 ペット",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+フォトアルバム+写真集+ペット/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E3%83%95%E3%82%A9%E3%83%88%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0+%E5%86%99%E7%9C%9F%E9%9B%86+%E3%83%9A%E3%83%83%E3%83%88%2F",
+    "description": "旅行の思い出を美しく残すペット用フォトアルバム。九州の旅の記念に。"
+  },
+  {
+    "id": "dog-bandana",
+    "category": "ファッション",
+    "productName": "犬用バンダナ・スカーフ",
+    "target": "全犬種",
+    "searchKeyword": "犬 バンダナ スカーフ おしゃれ",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+バンダナ+スカーフ+おしゃれ/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E3%83%90%E3%83%B3%E3%83%80%E3%83%8A+%E3%82%B9%E3%82%AB%E3%83%BC%E3%83%95+%E3%81%8A%E3%81%97%E3%82%83%E3%82%8C%2F",
+    "description": "旅行先での写真映えに！かわいいバンダナで愛犬をおしゃれに。"
+  },
+  {
+    "id": "dog-raincoat",
+    "category": "ファッション",
+    "productName": "犬用レインコート",
+    "target": "全犬種",
+    "searchKeyword": "犬 レインコート 大型犬 雨",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+レインコート+大型犬+雨/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E3%83%AC%E3%82%A4%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%88+%E5%A4%A7%E5%9E%8B%E7%8A%AC+%E9%9B%A8%2F",
+    "description": "雨の日の旅行でも安心。大型犬対応の全身をカバーするレインコート。"
+  },
+  {
+    "id": "dog-boots",
+    "category": "ファッション",
+    "productName": "犬用ブーツ・靴",
+    "target": "全犬種",
+    "searchKeyword": "犬 ブーツ 靴 肉球 保護",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+ブーツ+靴+肉球+保護/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E3%83%96%E3%83%BC%E3%83%84+%E9%9D%B4+%E8%82%89%E7%90%83+%E4%BF%9D%E8%AD%B7%2F",
+    "description": "夏の熱いアスファルトや冬の雪道から肉球を守るブーツ。"
+  },
+  {
+    "id": "dog-car-barrier",
+    "category": "車移動",
+    "productName": "犬用カーバリア・仕切りネット",
+    "target": "全犬種",
+    "searchKeyword": "犬 カーバリア 仕切り ネット 車",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+カーバリア+仕切り+ネット+車/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E3%82%AB%E3%83%BC%E3%83%90%E3%83%AA%E3%82%A2+%E4%BB%95%E5%88%87%E3%82%8A+%E3%83%8D%E3%83%83%E3%83%88+%E8%BB%8A%2F",
+    "description": "ドライブ中に犬が前席に来ないよう仕切るカーバリア。安全運転のために。"
+  },
+  {
+    "id": "dog-car-seat-belt",
+    "category": "車移動",
+    "productName": "犬用シートベルト・安全ベルト",
+    "target": "全犬種",
+    "searchKeyword": "犬 シートベルト 安全ベルト 車 旅行",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+シートベルト+安全ベルト+車/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E3%82%B7%E3%83%BC%E3%83%88%E3%83%99%E3%83%AB%E3%83%88+%E5%AE%89%E5%85%A8%E3%83%99%E3%83%AB%E3%83%88+%E8%BB%8A%2F",
+    "description": "急ブレーキ時の安全を確保する犬用シートベルト。旅行中の安全対策に。"
+  },
+  {
+    "id": "dog-car-deodorizer",
+    "category": "車移動",
+    "productName": "ペット用車内消臭剤",
+    "target": "全犬種",
+    "searchKeyword": "犬 車内 消臭 ペット 臭い",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+車内+消臭+ペット+臭い/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E8%BB%8A%E5%86%85+%E6%B6%88%E8%87%AD+%E3%83%9A%E3%83%83%E3%83%88+%E8%87%AD%E3%81%84%2F",
+    "description": "長距離ドライブ後の車内の臭いを消す消臭剤。ペット専用で安心。"
+  },
+  {
+    "id": "dog-tent-outdoor",
+    "category": "キャンプグッズ",
+    "productName": "犬用テント・サンシェード",
+    "target": "全犬種",
+    "searchKeyword": "犬 テント サンシェード キャンプ アウトドア",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+テント+サンシェード+キャンプ+アウトドア/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E3%83%86%E3%83%B3%E3%83%88+%E3%82%B5%E3%83%B3%E3%82%B7%E3%82%A7%E3%83%BC%E3%83%89+%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97+%E3%82%A2%E3%82%A6%E3%83%88%E3%83%89%E3%82%A2%2F",
+    "description": "キャンプ場や海岸での日差し対策に。犬専用の折りたたみテント。"
+  },
+  {
+    "id": "dog-life-jacket",
+    "category": "キャンプグッズ",
+    "productName": "犬用ライフジャケット",
+    "target": "全犬種",
+    "searchKeyword": "犬 ライフジャケット 海 川 水遊び",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+ライフジャケット+海+川+水遊び/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E3%83%A9%E3%82%A4%E3%83%95%E3%82%B8%E3%83%A3%E3%82%B1%E3%83%83%E3%83%88+%E6%B5%B7+%E5%B7%9D+%E6%B0%B4%E9%81%8A%E3%81%B3%2F",
+    "description": "九州の海や川での水遊びに必須。犬用ライフジャケットで安全に水遊び。"
+  },
+  {
+    "id": "dog-stake-outdoor",
+    "category": "キャンプグッズ",
+    "productName": "犬用アウトドアステーク・杭",
+    "target": "全犬種",
+    "searchKeyword": "犬 アウトドア ステーク 杭 キャンプ",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+アウトドア+ステーク+杭+キャンプ/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E3%82%A2%E3%82%A6%E3%83%88%E3%83%89%E3%82%A2+%E3%82%B9%E3%83%86%E3%83%BC%E3%82%AF+%E6%9D%AD+%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%2F",
+    "description": "キャンプ場で地面に刺して使うリード用ステーク。大型犬でも抜けない頑丈設計。"
+  },
+  {
+    "id": "dog-figure-custom",
+    "category": "記念品・写真",
+    "productName": "愛犬リアルフィギュア（オーダーメイド）",
+    "target": "全犬種",
+    "searchKeyword": "犬 フィギュア オーダーメイド リアル",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+フィギュア+オーダーメイド+リアル/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E3%83%95%E3%82%A3%E3%82%AE%E3%83%A5%E3%82%A2+%E3%82%AA%E3%83%BC%E3%83%80%E3%83%BC%E3%83%A1%E3%82%A4%E3%83%89+%E3%83%AA%E3%82%A2%E3%83%AB%2F",
+    "description": "愛犬の写真から作るリアルフィギュア。旅行の記念に世界に1つだけのフィギュアを。"
+  },
+  {
+    "id": "dog-name-tag",
+    "category": "記念品・写真",
+    "productName": "犬用迷子札・IDタグ",
+    "target": "全犬種",
+    "searchKeyword": "犬 迷子札 IDタグ 旅行 名前",
+    "normalUrl": "https://search.rakuten.co.jp/search/mall/犬+迷子札+IDタグ+旅行+名前/",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856b7.4fecc3be.a4b5e5a7/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%8A%AC+%E8%BF%B7%E5%AD%90%E6%9C%AD+ID%E3%82%BF%E3%82%B0+%E6%97%85%E8%A1%8C+%E5%90%8D%E5%89%8D%2F",
+    "description": "旅行中の万が一の迷子対策に。名前・電話番号を刻印した迷子札。"
   }
 ]
