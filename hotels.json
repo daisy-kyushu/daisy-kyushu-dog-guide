@@ -1252,5 +1252,1603 @@
     "status": "open",
     "affiliateStatus": "affiliate-active",
     "searchKeyword": "九重 犬 ヴィラ"
+  },
+  {
+    "id": "hotel-fukuoka-32e042",
+    "name": "東横ＩＮＮ北九州空港",
+    "area": "福岡県 北九州市",
+    "prefecture": "福岡県",
+    "address": "福岡県 北九州市",
+    "type": "宿泊施設",
+    "description": "北九州空港より徒歩5分♪小倉から車で25分♪北九州空港発着飛行機に合わせ、ホテル⇔空港間の送迎17：30〜",
+    "tags": [
+      "福岡県"
+    ],
+    "features": [],
+    "price": "9,030円〜",
+    "dogSize": "小型犬",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/fukuoka/?distCd=05&ssc=57197&searchModeTab=1"
+  },
+  {
+    "id": "hotel-fukuoka-36c1c6",
+    "name": "くつろぎの森 グリーンピア八女",
+    "area": "福岡県 久留米市",
+    "prefecture": "福岡県",
+    "address": "福岡県 久留米市",
+    "type": "宿泊施設",
+    "description": "車で福岡市内から高速利用の場合 １時間３０分",
+    "tags": [
+      "福岡県",
+      "温泉"
+    ],
+    "features": [
+      "温泉"
+    ],
+    "price": "13,500円〜",
+    "dogSize": "全犬種対応",
+    "dogrun": false,
+    "onsen": true,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/fukuoka/?distCd=05&ssc=57197&searchModeTab=1"
+  },
+  {
+    "id": "hotel-fukuoka-72266d",
+    "name": "ホテルリブマックス小倉駅前",
+    "area": "福岡県 北九州市",
+    "prefecture": "福岡県",
+    "address": "福岡県 北九州市",
+    "type": "ホテル",
+    "description": "JR九州／山陽新幹線「小倉」駅 小倉城口 目の前のロータリーより徒歩にてすぐ！！（駅近の好立地ホテル）",
+    "tags": [
+      "福岡県"
+    ],
+    "features": [],
+    "price": "10,500円〜",
+    "dogSize": "小型犬",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/fukuoka/?distCd=05&ssc=57197&searchModeTab=1"
+  },
+  {
+    "id": "hotel-fukuoka-c5dda5",
+    "name": "LONG VACATION RESORT",
+    "area": "福岡県 福岡市",
+    "prefecture": "福岡県",
+    "address": "福岡県 福岡市",
+    "type": "宿泊施設",
+    "description": "博多湾を一望できる最高のロケーション。 プールと露天風呂のあるリゾートグランピングで極上のリ...",
+    "tags": [
+      "福岡県"
+    ],
+    "features": [
+      "プール",
+      "BBQ",
+      "オーシャンビュー"
+    ],
+    "price": "67,800円〜",
+    "dogSize": "全犬種対応",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/fukuoka/?distCd=05&ssc=57197&searchModeTab=1"
+  },
+  {
+    "id": "hotel-fukuoka-ff0fdb",
+    "name": "コインズホステル天神",
+    "area": "福岡県 福岡市",
+    "prefecture": "福岡県",
+    "address": "福岡県 福岡市",
+    "type": "ホテル",
+    "description": "福岡市中央区天神から徒歩5分に位置する数少ないペットと同伴宿泊可能なホテルです。 ※小型犬1泊1匹3,000円〜、猫1泊1匹5,000円。 ツインルーム...",
+    "tags": [
+      "福岡県"
+    ],
+    "features": [],
+    "price": "13,000円〜",
+    "dogSize": "小型犬",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/fukuoka/?distCd=05&ssc=57197&searchModeTab=1"
+  },
+  {
+    "id": "hotel-fukuoka-1abd06",
+    "name": "１ｃｏ．ＩＴＯＳＨＩＭＡ（ワンコイトシマ）",
+    "area": "福岡県 糸島市",
+    "prefecture": "福岡県",
+    "address": "福岡県 糸島市",
+    "type": "宿泊施設",
+    "description": "2022年10月グランドオープン！ペット可 海岸まで１分 天然芝のプライベートドッグラン付き貸別荘【5名まで・無料駐車場２台付】...",
+    "tags": [
+      "福岡県",
+      "ドッグラン付き"
+    ],
+    "features": [
+      "ドッグラン",
+      "BBQ"
+    ],
+    "price": "44,000円〜",
+    "dogSize": "全犬種対応",
+    "dogrun": true,
+    "onsen": false,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/fukuoka/?distCd=05&ssc=57197&searchModeTab=1"
+  },
+  {
+    "id": "hotel-fukuoka-9e818c",
+    "name": "そらすな",
+    "area": "福岡県 北九州市",
+    "prefecture": "福岡県",
+    "address": "福岡県 北九州市",
+    "type": "宿泊施設",
+    "description": "ここは無限に続く⽔平線の⼊り⼝。「そらすな」は福岡県⾏橋市の⻑井浜公園内のリゾートホテル。砂浜から客室へ繋がる階段テラスの先、ビーチに面した大きな窓が迎えるオーシャンビュー。6種のマリンアクティビティや屋外ジャグジー、コミュニティルームなど多彩な楽しみを満喫した後は、⽔平線を望む全室オーシャンビュールームであなただけの「⼼地良い」時間と空間をご堪能ください。",
+    "tags": [
+      "福岡県",
+      "大型犬OK"
+    ],
+    "features": [],
+    "price": "30,000円〜",
+    "dogSize": "大型犬",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://kyuzitsu-inubu.com/hotel/search/?pref=1857"
+  },
+  {
+    "id": "hotel-fukuoka-49c479",
+    "name": "イヌヤド　‐愛犬と宿泊する小さなホテル‐",
+    "area": "福岡県 福岡市",
+    "prefecture": "福岡県",
+    "address": "福岡県 福岡市",
+    "type": "ホテル",
+    "description": "イヌヤドは、愛犬と宿泊するペットファーストの一軒家ホテルです。一日一組限定だからできるオンリーワンのホテルを目指しています。ホテルから徒歩１分のところには、公園がありますのでお散歩にも最適です。愛犬と福岡へ旅してみませんか。ペットといつもより近い距離で、濃密な時間をお過ごしください。",
+    "tags": [
+      "福岡県",
+      "大型犬OK"
+    ],
+    "features": [],
+    "price": "33,000円〜",
+    "dogSize": "大型犬",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://kyuzitsu-inubu.com/hotel/search/?pref=1857"
+  },
+  {
+    "id": "hotel-fukuoka-b16602",
+    "name": "ヒルトン福岡シーホーク",
+    "area": "福岡県 福岡市",
+    "prefecture": "福岡県",
+    "address": "福岡県 福岡市",
+    "type": "ホテル",
+    "description": "ヒルトン福岡シーホークは、「日本の都市景観100選」に選ばれた福岡市シーサイドももち地区に位置する地上35階、客室1053室を持つ巨大ホテルです。",
+    "tags": [
+      "福岡県"
+    ],
+    "features": [],
+    "price": "44,008円〜",
+    "dogSize": "小型犬",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://kyuzitsu-inubu.com/hotel/search/?pref=1857"
+  },
+  {
+    "id": "hotel-fukuoka-a70b21",
+    "name": "筑後川温泉　ふくせんか",
+    "area": "福岡県 久留米市",
+    "prefecture": "福岡県",
+    "address": "福岡県 久留米市",
+    "type": "旅館",
+    "description": "地産地消の会席料理や、とろとろとしたやさしい天然温泉をご堪能ください。10kg未満の小型犬のみ宿泊可能。当館より徒歩2分の広場にドッグランがあり、ご宿泊のお客様には無料でご利用いただけます。思いっきり遊んだあとはワンちゃん専用温泉でゆったり、アメニティもあります。",
+    "tags": [
+      "福岡県",
+      "ドッグラン付き",
+      "温泉",
+      "旅館"
+    ],
+    "features": [
+      "温泉",
+      "ドッグラン"
+    ],
+    "price": "27,280円〜",
+    "dogSize": "小型犬",
+    "dogrun": true,
+    "onsen": true,
+    "verified": true,
+    "source": "https://kyuzitsu-inubu.com/hotel/search/?pref=1857"
+  },
+  {
+    "id": "hotel-saga-34cf0d",
+    "name": "尾ノ上Ｒｙｏｋａｎ",
+    "area": "唐津市",
+    "prefecture": "佐賀県",
+    "address": "唐津市",
+    "type": "旅館",
+    "description": "玄海灘を一望する丘の上に佇む呼子の宿",
+    "tags": [
+      "佐賀県",
+      "ドッグラン付き",
+      "旅館"
+    ],
+    "features": [
+      "ドッグランあり"
+    ],
+    "price": "不明",
+    "dogSize": "全犬種対応",
+    "dogrun": true,
+    "onsen": false,
+    "verified": true,
+    "source": "https://web.travel.rakuten.co.jp/portal/my/pet_kensaku.result?f_slct=saga"
+  },
+  {
+    "id": "hotel-saga-6c2e93",
+    "name": "古湯温泉 旅館 杉乃家",
+    "area": "佐賀市",
+    "prefecture": "佐賀県",
+    "address": "佐賀市",
+    "type": "旅館",
+    "description": "絶景露天風呂と佐賀牛・旬の会席を堪能",
+    "tags": [
+      "佐賀県",
+      "温泉",
+      "旅館"
+    ],
+    "features": [
+      "温泉あり"
+    ],
+    "price": "不明",
+    "dogSize": "不明",
+    "dogrun": false,
+    "onsen": true,
+    "verified": true,
+    "source": "https://web.travel.rakuten.co.jp/portal/my/pet_kensaku.result?f_slct=saga"
+  },
+  {
+    "id": "hotel-saga-755f8f",
+    "name": "ＴＨＥ ＴＲＡＩＬＥＲＨＯＵＳＥ ＶＩＬＬＡＧＥ 呼子 ＳＥＡＳＩＤＥ",
+    "area": "唐津市",
+    "prefecture": "佐賀県",
+    "address": "唐津市",
+    "type": "コテージ",
+    "description": "海が見えるトレーラーハウス敷地内で、約半年レンタルもあり設備充実のトレーラーで手ぶらBBQが楽しめます。",
+    "tags": [
+      "佐賀県",
+      "コテージ"
+    ],
+    "features": [
+      "BBQ可能"
+    ],
+    "price": "不明",
+    "dogSize": "不明",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://web.travel.rakuten.co.jp/portal/my/pet_kensaku.result?f_slct=saga"
+  },
+  {
+    "id": "hotel-saga-f73685",
+    "name": "Ｓｅａ Ｓｔｙｌｅ Ｒｅｓｏｒｔ Ｏｃｅａｎ",
+    "area": "唐津市",
+    "prefecture": "佐賀県",
+    "address": "唐津市",
+    "type": "リゾートホテル",
+    "description": "贅沢な九州の隠れ家的リゾートホテル",
+    "tags": [
+      "佐賀県"
+    ],
+    "features": [],
+    "price": "不明",
+    "dogSize": "全犬種対応",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://web.travel.rakuten.co.jp/portal/my/pet_kensaku.result?f_slct=saga"
+  },
+  {
+    "id": "hotel-saga-97244b",
+    "name": "ヴィラ 海ノソラ ＳＯＲＡ海テラス／海辺ＤＥさんぽ",
+    "area": "唐津市",
+    "prefecture": "佐賀県",
+    "address": "唐津市",
+    "type": "ヴィラ",
+    "description": "海に触れる一棟貸しコテージ。静かな海と空を独り占め。",
+    "tags": [
+      "佐賀県"
+    ],
+    "features": [],
+    "price": "不明",
+    "dogSize": "不明",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://web.travel.rakuten.co.jp/portal/my/pet_kensaku.result?f_slct=saga"
+  },
+  {
+    "id": "hotel-saga-48fd61",
+    "name": "貸別荘 古湯ウッディハウスＤ",
+    "area": "佐賀市",
+    "prefecture": "佐賀県",
+    "address": "佐賀市",
+    "type": "貸別荘",
+    "description": "落ち着きのあるレトロな雰囲気の別荘です。",
+    "tags": [
+      "佐賀県"
+    ],
+    "features": [],
+    "price": "不明",
+    "dogSize": "全犬種対応",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://web.travel.rakuten.co.jp/portal/my/pet_kensaku.result?f_slct=saga"
+  },
+  {
+    "id": "hotel-saga-ef845f",
+    "name": "みはらしの宿　杉乃家",
+    "area": "佐賀市",
+    "prefecture": "佐賀県",
+    "address": "佐賀市",
+    "type": "不明",
+    "description": "離れ露天風呂付き客室でお部屋食～御篭りステイ～が可能です。福岡市内から車でも６０分ほどで、どこか懐かしい 田舎の雰囲気が楽しめる素敵な温泉地へぜひ 【アクセス】佐賀大和ＩＣから古湯温泉方面に車で20分",
+    "tags": [
+      "佐賀県",
+      "温泉"
+    ],
+    "features": [
+      "温泉あり"
+    ],
+    "price": "55,000円～",
+    "dogSize": "不明",
+    "dogrun": false,
+    "onsen": true,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/saga/?distCd=05&ssc=57198&searchModeTab=1"
+  },
+  {
+    "id": "hotel-saga-3ac3d2",
+    "name": "嬉野 八十八",
+    "area": "武雄市",
+    "prefecture": "佐賀県",
+    "address": "武雄市",
+    "type": "不明",
+    "description": "36室の客室すべてに希少な「100％源泉かけ流し」の温泉を贅沢に完備。 専属茶",
+    "tags": [
+      "佐賀県",
+      "温泉"
+    ],
+    "features": [
+      "温泉あり"
+    ],
+    "price": "140,910円～",
+    "dogSize": "全犬種対応",
+    "dogrun": false,
+    "onsen": true,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/saga/?distCd=05&ssc=57198&searchModeTab=1"
+  },
+  {
+    "id": "hotel-saga-35185a",
+    "name": "旅館大政",
+    "area": "唐津市",
+    "prefecture": "佐賀県",
+    "address": "唐津市",
+    "type": "旅館",
+    "description": "【創業80年】玄界灘や唐津城が見える城下町。豊臣秀吉が愛した唐津名物塩釜焼（太閤焼）は商標登録の好",
+    "tags": [
+      "佐賀県",
+      "旅館"
+    ],
+    "features": [],
+    "price": "59,400円～",
+    "dogSize": "全犬種対応",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/saga/?distCd=05&ssc=57198&searchModeTab=1"
+  },
+  {
+    "id": "hotel-saga-be636b",
+    "name": "dog space 里庵",
+    "area": "佐賀市",
+    "prefecture": "佐賀県",
+    "address": "佐賀市",
+    "type": "コテージ",
+    "description": "2024.11バレルサウナOPEN! 大自然に囲まれた古民家♪ 広々ドッグランで愛犬とおもいっきり遊べ",
+    "tags": [
+      "佐賀県",
+      "ドッグラン付き",
+      "コテージ"
+    ],
+    "features": [
+      "ドッグランあり",
+      "BBQ可能",
+      "サウナあり"
+    ],
+    "price": "30,000円～",
+    "dogSize": "不明",
+    "dogrun": true,
+    "onsen": false,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/saga/?distCd=05&ssc=57198&searchModeTab=1"
+  },
+  {
+    "id": "hotel-saga-48641e",
+    "name": "うらり 武雄 Garden Terrace Spa Resorts",
+    "area": "武雄市",
+    "prefecture": "佐賀県",
+    "address": "武雄市",
+    "type": "リゾートホテル",
+    "description": "“うららかに、ゆったりと”...",
+    "tags": [
+      "佐賀県"
+    ],
+    "features": [],
+    "price": "82,280円～",
+    "dogSize": "不明",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/saga/?distCd=05&ssc=57198&searchModeTab=1"
+  },
+  {
+    "id": "hotel-saga-a58d57",
+    "name": "神籬 HIMOROGI KARATSU 001",
+    "area": "唐津市",
+    "prefecture": "佐賀県",
+    "address": "唐津市",
+    "type": "貸別荘",
+    "description": "九州の海と山。地域に眠る観光資源を巡りながら、 一度では終わらない旅へ。 【アクセス】 JR東唐津駅より車で5分",
+    "tags": [
+      "佐賀県"
+    ],
+    "features": [
+      "BBQ可能",
+      "サウナあり"
+    ],
+    "price": "55,000円～",
+    "dogSize": "小型犬・中型犬",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/saga/?distCd=05&ssc=57198&searchModeTab=1"
+  },
+  {
+    "id": "hotel-nagasaki-773fe6",
+    "name": "i+Land nagasaki (旧名称：長崎温泉やすらぎ伊王島)",
+    "area": "長崎県長崎市",
+    "prefecture": "長崎県",
+    "address": "長崎県長崎市",
+    "type": "ホテル",
+    "description": "新しく生まれ変わったエンターテインメントリゾート。ライフスタイルに合わせて選べる客室やレストラン・天然温泉を満喫。",
+    "tags": [
+      "長崎県",
+      "ドッグラン付き",
+      "温泉"
+    ],
+    "features": [
+      "ドッグラン",
+      "天然温泉"
+    ],
+    "price": "17,700円〜",
+    "dogSize": "不明",
+    "dogrun": true,
+    "onsen": true,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/nagasaki/?distCd=05&ssc=57199&searchModeTab=1"
+  },
+  {
+    "id": "hotel-nagasaki-b62cc8",
+    "name": "海のサウナ＆スパ オールインクルーシブ 島原温泉ホテル南風楼",
+    "area": "長崎県島原市",
+    "prefecture": "長崎県",
+    "address": "長崎県島原市",
+    "type": "ホテル",
+    "description": "4/25からプールOPEN！水しぶきと笑顔いっぱい。子どもも大人も楽しめる南風楼のファミリーリゾート。",
+    "tags": [
+      "長崎県",
+      "ドッグラン付き",
+      "温泉"
+    ],
+    "features": [
+      "専用ドッグラン",
+      "温泉",
+      "サウナ",
+      "プール"
+    ],
+    "price": "23,100円〜",
+    "dogSize": "不明",
+    "dogrun": true,
+    "onsen": true,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/nagasaki/?distCd=05&ssc=57199&searchModeTab=1"
+  },
+  {
+    "id": "hotel-nagasaki-9fad08",
+    "name": "そのぎ茶温泉里山の湯宿 つわぶきの花",
+    "area": "長崎県佐世保市",
+    "prefecture": "長崎県",
+    "address": "長崎県佐世保市",
+    "type": "旅館",
+    "description": "2万坪の敷地の中に13戸の離れ和洋室。全部屋＜源泉かけ流し＞露天風呂・内風呂付。五感で体験できる「日本の原風景」がここに。",
+    "tags": [
+      "長崎県",
+      "温泉",
+      "旅館"
+    ],
+    "features": [
+      "源泉かけ流し露天風呂",
+      "内風呂"
+    ],
+    "price": "41,890円〜",
+    "dogSize": "不明",
+    "dogrun": false,
+    "onsen": true,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/nagasaki/?distCd=05&ssc=57199&searchModeTab=1"
+  },
+  {
+    "id": "hotel-nagasaki-397f35",
+    "name": "ホテル長崎",
+    "area": "長崎県長崎市",
+    "prefecture": "長崎県",
+    "address": "長崎県長崎市",
+    "type": "ホテル",
+    "description": "長崎市内観光地までは車で10分程度の好立地。路線バスや長崎駅から徒歩でも移動が可能。四季折々に移り変わる長崎の絶景をお愉しみください。",
+    "tags": [
+      "長崎県"
+    ],
+    "features": [
+      "新世界三大夜景"
+    ],
+    "price": "29,200円〜",
+    "dogSize": "不明",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/nagasaki/?distCd=05&ssc=57199&searchModeTab=1"
+  },
+  {
+    "id": "hotel-nagasaki-2a0605",
+    "name": "そのぎ茶温泉 ヴィラそのぎ",
+    "area": "長崎県佐世保市",
+    "prefecture": "長崎県",
+    "address": "長崎県佐世保市",
+    "type": "ヴィラ",
+    "description": "木々や鳥の歌声がBGM。心もからだも生き返る、癒しのおこもり空間。全室【温泉ヒノキ風呂付】。",
+    "tags": [
+      "長崎県",
+      "ドッグラン付き",
+      "温泉"
+    ],
+    "features": [
+      "温泉ヒノキ風呂",
+      "共用ドッグラン"
+    ],
+    "price": "13,200円〜",
+    "dogSize": "不明",
+    "dogrun": true,
+    "onsen": true,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/nagasaki/?distCd=05&ssc=57199&searchModeTab=1"
+  },
+  {
+    "id": "hotel-nagasaki-02b53e",
+    "name": "KawanTanyanの宿（かわんたにゃんのやど）",
+    "area": "長崎県佐世保市",
+    "prefecture": "長崎県",
+    "address": "長崎県佐世保市",
+    "type": "貸別荘",
+    "description": "犬や猫と一緒に泊まることができる、ハウステンボスに近い一棟貸し宿。バーベキューを楽しんだり、海を眺めながらゆっくりとお過ごしください。",
+    "tags": [
+      "長崎県",
+      "大型犬OK"
+    ],
+    "features": [
+      "一棟貸し",
+      "バーベキュー"
+    ],
+    "price": "7,800円〜",
+    "dogSize": "小型犬、大型犬、猫",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/nagasaki/?distCd=05&ssc=57199&searchModeTab=1"
+  },
+  {
+    "id": "hotel-nagasaki-e26228",
+    "name": "コーストハウスナブラ",
+    "area": "長崎県長崎市",
+    "prefecture": "長崎県",
+    "address": "長崎県長崎市",
+    "type": "貸別荘",
+    "description": "市街地より３０分圏内の長崎半島の中央付近に位置し、温泉、海水浴場、フィッシングスポットも多数あり家族旅行や友人と魚釣りにペットとのんびりした時間を楽しめます。",
+    "tags": [
+      "長崎県"
+    ],
+    "features": [
+      "オーシャンビュー",
+      "EV車充電"
+    ],
+    "price": "10,900円〜",
+    "dogSize": "小型犬",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/nagasaki/?distCd=05&ssc=57199&searchModeTab=1"
+  },
+  {
+    "id": "hotel-nagasaki-998b2b",
+    "name": "NAGASAKI HOUSE ぶらぶら",
+    "area": "長崎県長崎市",
+    "prefecture": "長崎県",
+    "address": "長崎県長崎市",
+    "type": "ゲストハウス",
+    "description": "長崎市にあるペット同伴可能なゲストハウス。",
+    "tags": [
+      "長崎県"
+    ],
+    "features": [],
+    "price": "不明",
+    "dogSize": "不明",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://travel.yahoo.co.jp/kyushu/350902/acr4096/si1/"
+  },
+  {
+    "id": "hotel-kumamoto-95a18e",
+    "name": "OMO5熊本 by 星野リゾート",
+    "area": "熊本県熊本市",
+    "prefecture": "熊本県",
+    "address": "熊本県熊本市",
+    "type": "ホテル",
+    "description": "熊本城を望む、空港バス発着場目の前、繁華街へも便利な立地。",
+    "tags": [
+      "熊本県"
+    ],
+    "features": [
+      "熊本城を望む",
+      "空港バス発着場目の前",
+      "繁華街へも便利な立地。"
+    ],
+    "price": "詳細は公式サイト等でご確認ください",
+    "dogSize": "【愛犬と楽しむ“街ナカ”ステイ】プランあり。詳細は要確認。",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/kumamoto/?distCd=05&ssc=57200&searchModeTab=1"
+  },
+  {
+    "id": "hotel-kumamoto-ce99a1",
+    "name": "全室温泉付の離れでペットと過ごすひととき 御宿 小笠原",
+    "area": "熊本県阿蘇市",
+    "prefecture": "熊本県",
+    "address": "熊本県阿蘇市",
+    "type": "旅館（離れ形式）",
+    "description": "天然温泉付き、わんこ専用温泉サロン、ドッグラン広場あり。",
+    "tags": [
+      "熊本県",
+      "ドッグラン付き",
+      "温泉",
+      "大型犬OK",
+      "旅館"
+    ],
+    "features": [
+      "天然温泉付き",
+      "わんこ専用温泉サロン",
+      "ドッグラン広場あり。"
+    ],
+    "price": "詳細は公式サイト等でご確認ください",
+    "dogSize": "全室離れ形式、超大型犬OK、大型犬OK、中型犬OK、小型犬OK、多頭OK、猫OK、小動物OK。ペット料金はプランページで確認。",
+    "dogrun": true,
+    "onsen": true,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/kumamoto/?distCd=05&ssc=57200&searchModeTab=1, https://kyuzitsu-inubu.com/hotel/search/?area=1881"
+  },
+  {
+    "id": "hotel-kumamoto-93c979",
+    "name": "野の花の宿 阿蘇の四季",
+    "area": "熊本県阿蘇市",
+    "prefecture": "熊本県",
+    "address": "熊本県阿蘇市",
+    "type": "旅館",
+    "description": "炭火焼、貸切風呂。",
+    "tags": [
+      "熊本県",
+      "旅館"
+    ],
+    "features": [
+      "炭火焼",
+      "貸切風呂。"
+    ],
+    "price": "詳細は公式サイト等でご確認ください",
+    "dogSize": "詳細は要確認。",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/kumamoto/?distCd=05&ssc=57200&searchModeTab=1"
+  },
+  {
+    "id": "hotel-kumamoto-0c0867",
+    "name": "ペットリゾート ブレインズ 天草",
+    "area": "熊本県天草市",
+    "prefecture": "熊本県",
+    "address": "熊本県天草市",
+    "type": "リゾート",
+    "description": "宿泊者専用ドッグラン、ペット専用温泉あり、海の見えるテラスでペットと一緒に食事可能。",
+    "tags": [
+      "熊本県",
+      "ドッグラン付き",
+      "温泉"
+    ],
+    "features": [
+      "宿泊者専用ドッグラン",
+      "ペット専用温泉あり",
+      "海の見えるテラスでペットと一緒に食事可能。"
+    ],
+    "price": "詳細は公式サイト等でご確認ください",
+    "dogSize": "館内ケージなしで同伴OK、オールインクルーシブ。詳細は要確認。",
+    "dogrun": true,
+    "onsen": true,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/kumamoto/?distCd=05&ssc=57200&searchModeTab=1"
+  },
+  {
+    "id": "hotel-kumamoto-3a2d2e",
+    "name": "ＵＫＩＵＫＩ ＳＥＡ ＲＥＳＯＲＴ（ウキウキシーリゾート）",
+    "area": "熊本県天草市",
+    "prefecture": "熊本県",
+    "address": "熊本県天草市",
+    "type": "コテージ（1棟貸し）",
+    "description": "全室ウッドデッキ完備、プライベート岬、BBQ、酸素カプセル、サウナ。",
+    "tags": [
+      "熊本県",
+      "コテージ"
+    ],
+    "features": [
+      "全室ウッドデッキ完備",
+      "プライベート岬",
+      "BBQ",
+      "酸素カプセル",
+      "サウナ。"
+    ],
+    "price": "詳細は公式サイト等でご確認ください",
+    "dogSize": "わんちゃん同伴OK。詳細は要確認。",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/kumamoto/?distCd=05&ssc=57200&searchModeTab=1"
+  },
+  {
+    "id": "hotel-kumamoto-1993b0",
+    "name": "南阿蘇 野ばら ＩＮＮ",
+    "area": "熊本県南阿蘇村",
+    "prefecture": "熊本県",
+    "address": "熊本県南阿蘇村",
+    "type": "ホテル",
+    "description": "全室眺望抜群、あか牛＆スペアリブのコースディナー。",
+    "tags": [
+      "熊本県"
+    ],
+    "features": [
+      "全室眺望抜群",
+      "あか牛＆スペアリブのコースディナー。"
+    ],
+    "price": "詳細は公式サイト等でご確認ください",
+    "dogSize": "1室限定のペット室あり。詳細は要確認。",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/kumamoto/?distCd=05&ssc=57200&searchModeTab=1"
+  },
+  {
+    "id": "hotel-kumamoto-2059e4",
+    "name": "ペンションむさし",
+    "area": "熊本県阿蘇市",
+    "prefecture": "熊本県",
+    "address": "熊本県阿蘇市",
+    "type": "ペンション",
+    "description": "約600坪の広大なドッグランあり。",
+    "tags": [
+      "熊本県",
+      "ドッグラン付き",
+      "大型犬OK"
+    ],
+    "features": [
+      "約600坪の広大なドッグランあり。"
+    ],
+    "price": "詳細は公式サイト等でご確認ください",
+    "dogSize": "ミニドッグラン付きのお部屋あり、大型犬まで宿泊可能。ペット料金はプランページで確認。",
+    "dogrun": true,
+    "onsen": false,
+    "verified": true,
+    "source": "https://kyuzitsu-inubu.com/hotel/search/?area=1881"
+  },
+  {
+    "id": "hotel-kumamoto-680885",
+    "name": "大自然を感じる眺望のリゾート 月亭～ＴＳＵＫＩＴＥＩ～",
+    "area": "熊本県阿蘇市",
+    "prefecture": "熊本県",
+    "address": "熊本県阿蘇市",
+    "type": "リゾート",
+    "description": "屋根付きバルコニー、広々としたドッグラン完備。",
+    "tags": [
+      "熊本県",
+      "ドッグラン付き"
+    ],
+    "features": [
+      "屋根付きバルコニー",
+      "広々としたドッグラン完備。"
+    ],
+    "price": "詳細は公式サイト等でご確認ください",
+    "dogSize": "中型犬OK、小型犬OK、多頭OK。ペット料金はプランページで確認。",
+    "dogrun": true,
+    "onsen": false,
+    "verified": true,
+    "source": "https://kyuzitsu-inubu.com/hotel/search/?area=1881"
+  },
+  {
+    "id": "hotel-kumamoto-c709b9",
+    "name": "ペンション ハウディ",
+    "area": "熊本県阿蘇市",
+    "prefecture": "熊本県",
+    "address": "熊本県阿蘇市",
+    "type": "ペンション",
+    "description": "ドッグラン併設。",
+    "tags": [
+      "熊本県",
+      "ドッグラン付き",
+      "大型犬OK"
+    ],
+    "features": [
+      "ドッグラン併設。"
+    ],
+    "price": "詳細は公式サイト等でご確認ください",
+    "dogSize": "本館は小型犬2頭、抱いて移動可能な中型犬(10㎏未満)1頭まで。大型犬(抱いて移動ができない中型犬含む)以上は離れのみ同伴可能。多頭OK。ペット料金はプランページで確認。",
+    "dogrun": true,
+    "onsen": false,
+    "verified": true,
+    "source": "https://kyuzitsu-inubu.com/hotel/search/?area=1881"
+  },
+  {
+    "id": "hotel-kumamoto-9e3fbe",
+    "name": "ガーデン INN Blue Bell",
+    "area": "熊本県阿蘇市",
+    "prefecture": "熊本県",
+    "address": "熊本県阿蘇市",
+    "type": "コテージ",
+    "description": "ドッグラン完備。",
+    "tags": [
+      "熊本県",
+      "ドッグラン付き",
+      "コテージ"
+    ],
+    "features": [
+      "ドッグラン完備。"
+    ],
+    "price": "詳細は公式サイト等でご確認ください",
+    "dogSize": "10kg以下の小型犬1頭のみ宿泊可能。客室ではケージ内で過ごす。ペット料金はプランページで確認。",
+    "dogrun": true,
+    "onsen": false,
+    "verified": true,
+    "source": "https://kyuzitsu-inubu.com/hotel/search/?area=1881"
+  },
+  {
+    "id": "hotel-kumamoto-b9a836",
+    "name": "ストーンハウス INN キャメリオ",
+    "area": "熊本県阿蘇市",
+    "prefecture": "熊本県",
+    "address": "熊本県阿蘇市",
+    "type": "ペンション/コテージ",
+    "description": "南阿蘇の雄大な根子岳が前にそびえる。",
+    "tags": [
+      "熊本県",
+      "大型犬OK",
+      "コテージ"
+    ],
+    "features": [
+      "南阿蘇の雄大な根子岳が前にそびえる。"
+    ],
+    "price": "詳細は公式サイト等でご確認ください",
+    "dogSize": "離れのコテージのみペット可。3頭まで宿泊可能（大型犬は1頭まで）。愛犬用のゲージやご飯、グッズは持参。ペット料金はプランページで確認。",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://kyuzitsu-inubu.com/hotel/search/?area=1881"
+  },
+  {
+    "id": "hotel-kumamoto-0b6412",
+    "name": "ドッグパレスリゾート阿蘇乙姫",
+    "area": "熊本県阿蘇市",
+    "prefecture": "熊本県",
+    "address": "熊本県阿蘇市",
+    "type": "リゾート",
+    "description": "250坪のドッグランあり、食事もワンちゃん同伴可能。",
+    "tags": [
+      "熊本県",
+      "ドッグラン付き",
+      "大型犬OK"
+    ],
+    "features": [
+      "250坪のドッグランあり",
+      "食事もワンちゃん同伴可能。"
+    ],
+    "price": "詳細は公式サイト等でご確認ください",
+    "dogSize": "超大型犬OK、大型犬OK、中型犬OK、小型犬OK、多頭OK、猫OK、小動物OK。ペット料金はプランページで確認。",
+    "dogrun": true,
+    "onsen": false,
+    "verified": true,
+    "source": "https://kyuzitsu-inubu.com/hotel/search/?area=1881"
+  },
+  {
+    "id": "hotel-kumamoto-f80fb3",
+    "name": "ペットと泊まれる貸宿 南阿蘇 久木野の郷",
+    "area": "熊本県南阿蘇村",
+    "prefecture": "熊本県",
+    "address": "熊本県南阿蘇村",
+    "type": "貸別荘",
+    "description": "温泉付き、阿蘇を一望できる高台に位置、蛇口をひねれば南阿蘇の天然水。",
+    "tags": [
+      "熊本県",
+      "温泉",
+      "大型犬OK"
+    ],
+    "features": [
+      "温泉付き",
+      "阿蘇を一望できる高台に位置",
+      "蛇口をひねれば南阿蘇の天然水。"
+    ],
+    "price": "詳細は公式サイト等でご確認ください",
+    "dogSize": "超大型犬OK、大型犬OK、中型犬OK、小型犬OK、多頭OK、全室ペットOK。ペット料金はプランページで確認。",
+    "dogrun": false,
+    "onsen": true,
+    "verified": true,
+    "source": "https://kyuzitsu-inubu.com/hotel/search/?area=1881"
+  },
+  {
+    "id": "hotel-kumamoto-723169",
+    "name": "栄美屋旅館",
+    "area": "熊本県天草市",
+    "prefecture": "熊本県",
+    "address": "熊本県天草市",
+    "type": "旅館",
+    "description": "昭和8年創業、天草の旬の食材。",
+    "tags": [
+      "熊本県",
+      "旅館"
+    ],
+    "features": [
+      "昭和8年創業",
+      "天草の旬の食材。"
+    ],
+    "price": "詳細は公式サイト等でご確認ください",
+    "dogSize": "詳細は要確認。",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/kumamoto/?distCd=05&ssc=57200&searchModeTab=1"
+  },
+  {
+    "id": "hotel-kumamoto-8beb69",
+    "name": "旅館 有明荘",
+    "area": "熊本県天草市",
+    "prefecture": "熊本県",
+    "address": "熊本県天草市",
+    "type": "旅館",
+    "description": "倉岳町棚底港のすぐ近く、魚釣り、海水浴。",
+    "tags": [
+      "熊本県",
+      "旅館"
+    ],
+    "features": [
+      "倉岳町棚底港のすぐ近く",
+      "魚釣り",
+      "海水浴。"
+    ],
+    "price": "詳細は公式サイト等でご確認ください",
+    "dogSize": "ペット同宿OK。詳細は要確認。",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/kumamoto/?distCd=05&ssc=57200&searchModeTab=1"
+  },
+  {
+    "id": "hotel-oita-5db228",
+    "name": "HONJIN",
+    "area": "大分県九重",
+    "prefecture": "大分県",
+    "address": "大分県九重",
+    "type": "要確認",
+    "description": "愛犬と片時も離れずに過ごせる宿です。部屋の中にはテーブルくらいの高さの段差が設えられており、緩やかにリビングと寝室が分けられいつでも愛犬と同じ目線で過ごせます。わ...",
+    "tags": [
+      "大分県",
+      "温泉",
+      "大型犬OK"
+    ],
+    "features": [],
+    "price": "56,430円",
+    "dogSize": "超大型犬",
+    "dogrun": false,
+    "onsen": true,
+    "verified": true,
+    "source": ""
+  },
+  {
+    "id": "hotel-oita-68da2b",
+    "name": "宝泉寺温泉 季の郷 山の湯",
+    "area": "大分県九重",
+    "prefecture": "大分県",
+    "address": "大分県九重",
+    "type": "要確認",
+    "description": "源泉かけ流しの温泉や、九重の四季を盛り込んだお料理を堪能できる旅館です。大正ロマンの雰囲気感じる癒しの空間でゆっくりとしたひと時をお過ごしください。わんちゃんは中型犬まで宿泊可能、屋上にドッグラ...",
+    "tags": [
+      "大分県",
+      "ドッグラン付き",
+      "温泉"
+    ],
+    "features": [],
+    "price": "不明",
+    "dogSize": "中型犬",
+    "dogrun": true,
+    "onsen": true,
+    "verified": true,
+    "source": "不明"
+  },
+  {
+    "id": "hotel-oita-f7a4e6",
+    "name": "別府温泉 ホテル好楽",
+    "area": "大分県別府",
+    "prefecture": "大分県",
+    "address": "大分県別府",
+    "type": "ホテル",
+    "description": "ペットと泊まれるのは和室で、夕食は嬉しいお部屋食です。ペット専用の温泉「わんこの湯」があり、わんちゃん用のシャンプーやドライヤーなども完備されています。オーナー様は、大浴場や展望露天風呂で別府温...",
+    "tags": [
+      "大分県",
+      "ドッグラン付き",
+      "温泉"
+    ],
+    "features": [],
+    "price": "不明",
+    "dogSize": "小型犬",
+    "dogrun": true,
+    "onsen": true,
+    "verified": true,
+    "source": "不明"
+  },
+  {
+    "id": "hotel-oita-6b7ddf",
+    "name": "別府温泉 わんこの宿ゆるり",
+    "area": "大分県別府",
+    "prefecture": "大分県",
+    "address": "大分県別府",
+    "type": "要確認",
+    "description": "全5室温泉露天風呂付き離れタイプのわんちゃんと泊まれる旅館。ワンフロアのフラットタイプでバリアフリーなので、シニア犬やパピーでも安心してご宿泊いただけます。食事は半個室のレストランで、お部屋には...",
+    "tags": [
+      "大分県",
+      "ドッグラン付き",
+      "温泉"
+    ],
+    "features": [],
+    "price": "25,410円",
+    "dogSize": "中型犬",
+    "dogrun": true,
+    "onsen": true,
+    "verified": true,
+    "source": "不明"
+  },
+  {
+    "id": "hotel-oita-4db707",
+    "name": "癒しの宿 鷹勝",
+    "area": "大分県湯布院",
+    "prefecture": "大分県",
+    "address": "大分県湯布院",
+    "type": "要確認",
+    "description": "湯布院・湯平に位置する「癒しの宿 鷹勝」。全4室のペット宿泊可の客室は、内湯付きの風情あるしつらいが自慢の客室で、大型犬まで宿泊いただけます。素材にこだわった自慢の料理や歴史ある温泉をゆったりと...",
+    "tags": [
+      "大分県",
+      "温泉",
+      "大型犬OK"
+    ],
+    "features": [],
+    "price": "62,000円",
+    "dogSize": "大型犬",
+    "dogrun": false,
+    "onsen": true,
+    "verified": true,
+    "source": "不明"
+  },
+  {
+    "id": "hotel-oita-2e7450",
+    "name": "旅籠彩くら",
+    "area": "大分県九重",
+    "prefecture": "大分県",
+    "address": "大分県九重",
+    "type": "要確認",
+    "description": "四季折々の彩りと故郷の懐かしい風景に、もう一度訪れたくなる全室離れの温泉旅館です。",
+    "tags": [
+      "大分県",
+      "ドッグラン付き",
+      "温泉",
+      "大型犬OK"
+    ],
+    "features": [],
+    "price": "59,400円",
+    "dogSize": "大型犬",
+    "dogrun": true,
+    "onsen": true,
+    "verified": true,
+    "source": "不明"
+  },
+  {
+    "id": "hotel-oita-6b655b",
+    "name": "由布院オッポ",
+    "area": "大分県湯布院",
+    "prefecture": "大分県",
+    "address": "大分県湯布院",
+    "type": "要確認",
+    "description": "豊かな自然に囲まれた由布院の温泉付き別荘で、ペット同室可の一棟をご用意しています。由布院駅から徒歩5分、湯の坪街道から金鱗湖への散策など、由布院観光の拠点としてご利用いただけます。ペット用のアメ...",
+    "tags": [
+      "大分県",
+      "ドッグラン付き",
+      "温泉",
+      "大型犬OK"
+    ],
+    "features": [],
+    "price": "44,000円",
+    "dogSize": "超大型犬",
+    "dogrun": true,
+    "onsen": true,
+    "verified": true,
+    "source": "不明"
+  },
+  {
+    "id": "hotel-oita-79a2b5",
+    "name": "貸別荘 宝泉寺温泉ログハウスＡ",
+    "area": "大分県九重",
+    "prefecture": "大分県",
+    "address": "大分県九重",
+    "type": "コテージ",
+    "description": "飯田や湯布院へも車で１時間圏内で便利な立地です。ご家族はもちろん、小グループのご旅行にもおすすめ。テラスでBBQができます。大型犬まで宿泊可能、ワンちゃん用グッズやご飯は全てご持参ください。",
+    "tags": [
+      "大分県",
+      "温泉",
+      "大型犬OK",
+      "コテージ"
+    ],
+    "features": [],
+    "price": "17,800円",
+    "dogSize": "超大型犬",
+    "dogrun": false,
+    "onsen": true,
+    "verified": true,
+    "source": "不明"
+  },
+  {
+    "id": "hotel-oita-7d1fee",
+    "name": "和モダンな温泉旅館 湯布院らんぷの宿",
+    "area": "大分県湯布院",
+    "prefecture": "大分県",
+    "address": "大分県湯布院",
+    "type": "旅館",
+    "description": "築175年の古民家をリニューアルした母屋と離れ、貸切温泉がある湯布院のモダンな宿です。 温泉は...",
+    "tags": [
+      "大分県",
+      "温泉",
+      "旅館"
+    ],
+    "features": [],
+    "price": "不明",
+    "dogSize": "不明",
+    "dogrun": false,
+    "onsen": true,
+    "verified": true,
+    "source": "不明"
+  },
+  {
+    "id": "hotel-oita-6f8c9e",
+    "name": "由布院温泉 楓の小舎",
+    "area": "大分県湯布院",
+    "prefecture": "大分県",
+    "address": "大分県湯布院",
+    "type": "要確認",
+    "description": "秀峰由布岳の山懐に佇む全室離れの宿。ワンちゃん同伴可能なお部屋は「椋の間」と「梼の間」でどちらも露天風呂付き。「梼の間」には隣接ドッグランがあり、リード着用で...",
+    "tags": [
+      "大分県",
+      "ドッグラン付き",
+      "温泉"
+    ],
+    "features": [],
+    "price": "不明",
+    "dogSize": "不明",
+    "dogrun": true,
+    "onsen": true,
+    "verified": true,
+    "source": "不明"
+  },
+  {
+    "id": "hotel-oita-15fbb5",
+    "name": "湯布院別荘 四季彩",
+    "area": "大分県由布市",
+    "prefecture": "大分県",
+    "address": "大分県由布市",
+    "type": "コテージ",
+    "description": "由布岳を望む絶景と、源泉かけ流しの露天風呂が自慢の貸別荘。ペットと泊まれるお部屋もご用意。",
+    "tags": [
+      "大分県",
+      "温泉",
+      "コテージ"
+    ],
+    "features": [],
+    "price": "不明",
+    "dogSize": "不明",
+    "dogrun": false,
+    "onsen": true,
+    "verified": true,
+    "source": "不明"
+  },
+  {
+    "id": "hotel-miyazaki-fb7425",
+    "name": "1NLDK AOSHIMA",
+    "area": "宮崎県宮崎市加江田",
+    "prefecture": "宮崎県",
+    "address": "宮崎県宮崎市加江田",
+    "type": "グランピング施設・トレーラーホテル",
+    "description": "2025年夏誕生の青島初のグランピング施設。2ベットルームとミニキッチン完備。専用庭ではBBQや焚き火が楽しめ、リバーサイド棟には専用サウナ付き。",
+    "tags": [
+      "宮崎県",
+      "大型犬OK"
+    ],
+    "features": [
+      "BBQ可",
+      "焚き火可",
+      "サウナ有"
+    ],
+    "price": "33,550円〜",
+    "dogSize": "小型犬・中型犬・大型犬（要問合せ）",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/miyazaki/?distCd=05&ssc=57202&searchModeTab=1"
+  },
+  {
+    "id": "hotel-miyazaki-604ad4",
+    "name": "ＳＡＫＵＲＡ ＶＩＬＬＡ",
+    "area": "宮崎県宮崎市",
+    "prefecture": "宮崎県",
+    "address": "宮崎県宮崎市",
+    "type": "一棟貸しヴィラ",
+    "description": "高台から海を望む、1日1組限定の一棟貸し宿。古民家の面影を残した空間に広いリビング、シングルベッド2台を備えています。",
+    "tags": [
+      "宮崎県",
+      "大型犬OK"
+    ],
+    "features": [
+      "一棟貸し",
+      "オーシャンビュー"
+    ],
+    "price": "29,800円〜",
+    "dogSize": "小型犬・中型犬・大型犬",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/miyazaki/?distCd=05&ssc=57202&searchModeTab=1"
+  },
+  {
+    "id": "hotel-miyazaki-fd388b",
+    "name": "fan! ABURATSU",
+    "area": "宮崎県日南市油津",
+    "prefecture": "宮崎県",
+    "address": "宮崎県日南市油津",
+    "type": "宿泊施設・コンテナハウス",
+    "description": "南国ムード漂う日南海岸の近く、油津商店街にある宿泊施設。徒歩5分圏内には飲食店・スーパー・コンビニが揃っており、キッチン付きで長期滞在にも最適。",
+    "tags": [
+      "宮崎県"
+    ],
+    "features": [
+      "キッチン付き",
+      "駅近",
+      "長期滞在可"
+    ],
+    "price": "11,400円〜",
+    "dogSize": "不明",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/miyazaki/?distCd=05&ssc=57202&searchModeTab=1"
+  },
+  {
+    "id": "hotel-miyazaki-34dcd0",
+    "name": "ゆすの木",
+    "area": "宮崎県宮崎市高岡町上倉永",
+    "prefecture": "宮崎県",
+    "address": "宮崎県宮崎市高岡町上倉永",
+    "type": "コテージ",
+    "description": "宮崎市内でペットと一緒に寛げる癒しのコテージ。条件付でBBQも可能。自然豊かな環境で、虫や湿気は自然の一部として受け入れる宿。",
+    "tags": [
+      "宮崎県",
+      "コテージ"
+    ],
+    "features": [
+      "BBQ可"
+    ],
+    "price": "8,000円〜",
+    "dogSize": "不明",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/miyazaki/?distCd=05&ssc=57202&searchModeTab=1"
+  },
+  {
+    "id": "hotel-miyazaki-f77da5",
+    "name": "SAKURAVILLA2nd",
+    "area": "宮崎県宮崎市",
+    "prefecture": "宮崎県",
+    "address": "宮崎県宮崎市",
+    "type": "貸切宿",
+    "description": "2026年4月フルリノベーションOpen！宮崎市街にもアクセスがしやすい、大人２名定員の貸切宿。",
+    "tags": [
+      "宮崎県"
+    ],
+    "features": [
+      "一棟貸し",
+      "フルリノベーション"
+    ],
+    "price": "25,800円〜",
+    "dogSize": "大型・中型犬1匹または小型犬2匹",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/miyazaki/?distCd=05&ssc=57202&searchModeTab=1"
+  },
+  {
+    "id": "hotel-miyazaki-bd97e5",
+    "name": "LODGE n’tribe",
+    "area": "宮崎県日南市平山",
+    "prefecture": "宮崎県",
+    "address": "宮崎県日南市平山",
+    "type": "宿泊施設",
+    "description": "一部の客室でペット同伴可。中型犬以上の宿泊可否は要問合せ。",
+    "tags": [
+      "宮崎県"
+    ],
+    "features": [],
+    "price": "不明",
+    "dogSize": "小型犬",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://traveldog.jp/miyazaki/area.php?p=nanbu"
+  },
+  {
+    "id": "hotel-miyazaki-c053d6",
+    "name": "OceansideRanch Miyazaki",
+    "area": "宮崎県宮崎市",
+    "prefecture": "宮崎県",
+    "address": "宮崎県宮崎市",
+    "type": "グランピングリゾート",
+    "description": "太平洋を一望できるグランピングリゾート。各棟は一棟貸しタイプで高台に位置し、どの部屋からも海を見渡せるロケーションが魅力。",
+    "tags": [
+      "宮崎県"
+    ],
+    "features": [
+      "一棟貸し",
+      "オーシャンビュー",
+      "プライベートサウナ（オプション）"
+    ],
+    "price": "不明",
+    "dogSize": "不明",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://traveldog.jp/miyazaki/area.php?p=miyazaki"
+  },
+  {
+    "id": "hotel-miyazaki-dd91ad",
+    "name": "CORAL RESORT VILLA aoshima",
+    "area": "宮崎県宮崎市",
+    "prefecture": "宮崎県",
+    "address": "宮崎県宮崎市",
+    "type": "貸別荘",
+    "description": "青島エリアにある貸別荘。ジャグジー・バレルサウナ・全天候型BBQスペース完備。BBQプランや体験サップなどのオプションが付けられる。",
+    "tags": [
+      "宮崎県"
+    ],
+    "features": [
+      "貸別荘",
+      "ジャグジー有",
+      "サウナ有",
+      "BBQ可"
+    ],
+    "price": "不明",
+    "dogSize": "不明",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://traveldog.jp/miyazaki/area.php?p=miyazaki"
+  },
+  {
+    "id": "hotel-kagoshima-220758",
+    "name": "ラビスタ霧島ヒルズ",
+    "area": "鹿児島県霧島市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県霧島市",
+    "type": "ホテル",
+    "description": "全室天然温泉露天風呂付きのホテル。貸切露天風呂や夜鳴きラーメンなど無料サービスが充実。愛犬と泊まるルシアンルームも完備。",
+    "tags": [
+      "鹿児島県",
+      "温泉"
+    ],
+    "features": [
+      "天然温泉露天風呂付き客室",
+      "貸切露天風呂",
+      "夜鳴きラーメン",
+      "愛犬と泊まれるルシアンルーム"
+    ],
+    "price": "61,294円〜",
+    "dogSize": "記載なし",
+    "dogrun": false,
+    "onsen": true,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/kagoshima/?distCd=05&ssc=57203&searchModeTab=1"
+  },
+  {
+    "id": "hotel-kagoshima-e326ca",
+    "name": "愛犬と泊まれるスタイリッシュ宿。D+KIRISHIMA",
+    "area": "鹿児島県霧島市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県霧島市",
+    "type": "旅館",
+    "description": "愛犬と過ごす贅沢なひととき。アプローチから客室まで愛犬目線に立ちながらも、落ち着きある空間を演出。全客室露天風呂付き（愛犬用もあり）。",
+    "tags": [
+      "鹿児島県",
+      "ドッグラン付き",
+      "温泉",
+      "旅館"
+    ],
+    "features": [
+      "全客室露天風呂付き",
+      "愛犬用露天風呂",
+      "朝夕お部屋食",
+      "愛犬用会席option有",
+      "ドッグラン完備"
+    ],
+    "price": "62,920円〜",
+    "dogSize": "記載なし",
+    "dogrun": true,
+    "onsen": true,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/kagoshima/?distCd=05&ssc=57203&searchModeTab=1"
+  },
+  {
+    "id": "hotel-kagoshima-d34d92",
+    "name": "全室源泉かけ流し温泉 グランピング&旅館 美肌の湯 こしかの温泉",
+    "area": "鹿児島県霧島市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県霧島市",
+    "type": "グランピング&旅館",
+    "description": "温泉宿総選挙2023 4部門全国1位受賞。全室源泉かけ流しの美肌旅へ。旅館でゆっくり過ごす人も、グランピングで盛り上がるグループも。",
+    "tags": [
+      "鹿児島県",
+      "温泉",
+      "旅館"
+    ],
+    "features": [
+      "全室源泉かけ流し温泉",
+      "グランピング",
+      "旅館",
+      "貸切風呂"
+    ],
+    "price": "37,060円〜",
+    "dogSize": "記載なし",
+    "dogrun": false,
+    "onsen": true,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/kagoshima/?distCd=05&ssc=57203&searchModeTab=1"
+  },
+  {
+    "id": "hotel-kagoshima-1cdfaf",
+    "name": "霧島四季彩の郷 万遊",
+    "area": "鹿児島県霧島市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県霧島市",
+    "type": "ホテル",
+    "description": "じゃらんアワード2024 泊まって良かった宿大賞 都道府県【鹿児島】1〜50室部門 1位受賞。ペットと同宿可能。源泉かけ流しのにごり湯と、真心込めて作るお料理が好評。",
+    "tags": [
+      "鹿児島県",
+      "温泉"
+    ],
+    "features": [
+      "ペットと同宿可能",
+      "源泉かけ流しのにごり湯",
+      "手作り料理"
+    ],
+    "price": "35,400円〜",
+    "dogSize": "記載なし",
+    "dogrun": false,
+    "onsen": true,
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/kagoshima/?distCd=05&ssc=57203&searchModeTab=1"
+  },
+  {
+    "id": "hotel-kagoshima-d5662d",
+    "name": "指宿中国民宿",
+    "area": "鹿児島県指宿市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県指宿市",
+    "type": "民宿",
+    "description": "指宿市で人気のペット同伴可ホテル。詳細情報はBooking.comで確認可能。",
+    "tags": [
+      "鹿児島県"
+    ],
+    "features": [],
+    "price": "8,500円〜",
+    "dogSize": "記載なし",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://www.booking.com/pets/city/jp/ibusuki.ja.html"
+  },
+  {
+    "id": "hotel-kagoshima-ee8ac5",
+    "name": "指宿静香ibusiki shizuka",
+    "area": "鹿児島県指宿市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県指宿市",
+    "type": "ホテル",
+    "description": "指宿市で人気のペット同伴可ホテル。詳細情報はBooking.comで確認可能。",
+    "tags": [
+      "鹿児島県"
+    ],
+    "features": [],
+    "price": "23,000円〜",
+    "dogSize": "記載なし",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://www.booking.com/pets/city/jp/ibusuki.ja.html"
+  },
+  {
+    "id": "hotel-kagoshima-6d9c86",
+    "name": "Cotton's House",
+    "area": "鹿児島県指宿市山川",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県指宿市山川",
+    "type": "貸別荘",
+    "description": "指宿市山川浜児ヶ水にあるペットと泊まれる宿。小型犬・中型犬・大型犬・猫・小動物に対応。",
+    "tags": [
+      "鹿児島県",
+      "大型犬OK"
+    ],
+    "features": [],
+    "price": "記載なし",
+    "dogSize": "小型犬・中型犬・大型犬・猫・小動物",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://ameblo.jp/odekake-note/entry-12963737993.html"
+  },
+  {
+    "id": "hotel-kagoshima-ffea67",
+    "name": "ホテルリブマックス鹿児島",
+    "area": "鹿児島県鹿児島市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県鹿児島市",
+    "type": "ホテル",
+    "description": "鹿児島市でおすすめのペット歓迎ホテル。詳細情報はエクスペディアで確認可能。",
+    "tags": [
+      "鹿児島県"
+    ],
+    "features": [],
+    "price": "記載なし",
+    "dogSize": "記載なし",
+    "dogrun": false,
+    "onsen": false,
+    "verified": true,
+    "source": "https://www.expedia.co.jp/Ibusuki-Hotels-Pet-Friendly-Hotel.0-0-d6130776-tPetfriendlyHotel.Travel-Guide-Filter-Hotels"
   }
 ]

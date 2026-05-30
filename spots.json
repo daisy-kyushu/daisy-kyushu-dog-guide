@@ -3689,5 +3689,3334 @@
     "status": "open",
     "rating": 4.0,
     "reviewCount": 23
+  },
+  {
+    "id": "fukuoka-cb69e9",
+    "name": "太宰府天満宮",
+    "area": "福岡県太宰府市",
+    "prefecture": "福岡県",
+    "address": "福岡県太宰府市",
+    "category": "犬連れOKの公園・自然スポット",
+    "description": "全国に1万2000社もある天満宮の総本宮。2024年4月からはペット連れでの楼門・回廊内への立ち入りはできませんが、社務所や手水舎、宝物殿までは愛犬も一緒に行くことができます。",
+    "tags": [
+      "公園",
+      "福岡県"
+    ],
+    "features": [
+      "一部エリアのみペット同伴可",
+      "リード必須"
+    ],
+    "price": "無料",
+    "dogSize": "制限なし",
+    "verified": true,
+    "source": "https://wankonowa.com/column/1693/"
+  },
+  {
+    "id": "fukuoka-97f7ce",
+    "name": "花畑園芸公園",
+    "area": "福岡県福岡市南区",
+    "prefecture": "福岡県",
+    "address": "福岡県福岡市南区",
+    "category": "犬連れOKの公園・自然スポット",
+    "description": "花とフルーツの公園。静かで自然豊かな公園で、ゆっくりと散策を楽しめます。2021年4月からペット連れでの...",
+    "tags": [
+      "公園",
+      "福岡県"
+    ],
+    "features": [
+      "リード必須"
+    ],
+    "price": "無料",
+    "dogSize": "制限なし",
+    "verified": true,
+    "source": "https://wankonowa.com/column/1693/"
+  },
+  {
+    "id": "fukuoka-e4fe8b",
+    "name": "今津運動公園",
+    "area": "福岡県福岡市西区",
+    "prefecture": "福岡県",
+    "address": "福岡県福岡市西区",
+    "category": "犬連れOKの公園・自然スポット",
+    "description": "総面積約31万平方メートルの広大な公園。野球場、テニスコート、体育館、ウォーキングコースなどがあります。",
+    "tags": [
+      "公園",
+      "福岡県"
+    ],
+    "features": [
+      "リード必須"
+    ],
+    "price": "無料 (有料施設あり)",
+    "dogSize": "制限なし",
+    "verified": true,
+    "source": "https://wankonowa.com/column/1693/"
+  },
+  {
+    "id": "fukuoka-597276",
+    "name": "だざいふ遊園地",
+    "area": "福岡県太宰府市",
+    "prefecture": "福岡県",
+    "address": "福岡県太宰府市",
+    "category": "犬連れOKの公園・自然スポット",
+    "description": "レトロ感のある遊園地。犬を連れての入園も可能ですが、リード必須、アトラクションの犬の同伴は不可です。",
+    "tags": [
+      "公園",
+      "福岡県"
+    ],
+    "features": [
+      "リード必須",
+      "アトラクション同伴不可"
+    ],
+    "price": "要問い合わせ",
+    "dogSize": "制限なし",
+    "verified": true,
+    "source": "https://wankonowa.com/column/1693/"
+  },
+  {
+    "id": "fukuoka-8414b7",
+    "name": "筑前國一之宮 筥崎宮",
+    "area": "福岡県福岡市東区",
+    "prefecture": "福岡県",
+    "address": "福岡県福岡市東区",
+    "category": "犬連れOKの公園・自然スポット",
+    "description": "日本三大八幡宮の一つ。犬を連れての参拝が許可されています。",
+    "tags": [
+      "公園",
+      "福岡県"
+    ],
+    "features": [
+      "リード必須"
+    ],
+    "price": "無料",
+    "dogSize": "制限なし",
+    "verified": true,
+    "source": "https://wankonowa.com/column/1693/"
+  },
+  {
+    "id": "fukuoka-40c287",
+    "name": "博多・中洲・那珂川水上バス（リバークルーズ）",
+    "area": "福岡県福岡市",
+    "prefecture": "福岡県",
+    "address": "福岡県福岡市",
+    "category": "犬連れOKの公園・自然スポット",
+    "description": "博多湾・那珂川のクルージング。受付カウンターで申請すれば、ペットを連れての乗船も可能です。",
+    "tags": [
+      "公園",
+      "福岡県"
+    ],
+    "features": [
+      "ペット同伴乗船可 (要申請)"
+    ],
+    "price": "要問い合わせ",
+    "dogSize": "制限なし",
+    "verified": true,
+    "source": "https://wankonowa.com/column/1693/"
+  },
+  {
+    "id": "fukuoka-2a41f5",
+    "name": "門司港レトロ",
+    "area": "福岡県北九州市門司区",
+    "prefecture": "福岡県",
+    "address": "福岡県北九州市門司区",
+    "category": "ペット可カフェ・レストラン",
+    "description": "明治から昭和にかけて発展したレトロな港町。犬を連れて利用できるカフェなどもあります。",
+    "tags": [
+      "カフェ",
+      "福岡県"
+    ],
+    "features": [
+      "一部店舗ペット同伴可",
+      "リード必須"
+    ],
+    "price": "無料",
+    "dogSize": "制限なし",
+    "verified": true,
+    "source": "https://wankonowa.com/column/1693/"
+  },
+  {
+    "id": "fukuoka-f8185b",
+    "name": "水沼の里2000年記念の森",
+    "area": "福岡県久留米市",
+    "prefecture": "福岡県",
+    "address": "福岡県久留米市",
+    "category": "犬連れOKの公園・自然スポット",
+    "description": "62,000平方メートルの敷地面積を誇る公園。ペットはリードをつけていれば入園可能です。",
+    "tags": [
+      "公園",
+      "福岡県"
+    ],
+    "features": [
+      "リード必須"
+    ],
+    "price": "無料",
+    "dogSize": "制限なし",
+    "verified": true,
+    "source": "https://wankonowa.com/column/1693/"
+  },
+  {
+    "id": "fukuoka-21a10e",
+    "name": "千仏鍾乳洞",
+    "area": "福岡県北九州市小倉南区",
+    "prefecture": "福岡県",
+    "address": "福岡県北九州市小倉南区",
+    "category": "犬連れOKの公園・自然スポット",
+    "description": "国定天然記念物に指定された鍾乳洞。キャリーバッグに入れてなら小型犬との入洞も可能です。",
+    "tags": [
+      "公園",
+      "福岡県"
+    ],
+    "features": [
+      "小型犬のみ同伴可",
+      "キャリーバッグ必須"
+    ],
+    "price": "要問い合わせ",
+    "dogSize": "小型犬",
+    "verified": true,
+    "source": "https://wankonowa.com/column/1693/"
+  },
+  {
+    "id": "fukuoka-6965cf",
+    "name": "THE OUTLETS KITAKYUSHU",
+    "area": "福岡県北九州市八幡東区",
+    "prefecture": "福岡県",
+    "address": "福岡県北九州市八幡東区",
+    "category": "不明",
+    "description": "自分だけの感動体験が味わえる場所",
+    "tags": [
+      "福岡県"
+    ],
+    "features": [
+      "駐車場あり",
+      "入場無料"
+    ],
+    "price": "要確認",
+    "dogSize": "制限なし (要確認)",
+    "verified": true,
+    "source": "https://www.walkerplus.com/spot_list/ar1040/sg0001/ss1007/"
+  },
+  {
+    "id": "fukuoka-d90707",
+    "name": "ABURAYAMA FUKUOKA 市民の森",
+    "area": "福岡県久留米市",
+    "prefecture": "福岡県",
+    "address": "福岡県久留米市",
+    "category": "犬連れOKの公園・自然スポット",
+    "description": "森林浴でリフレッシュ",
+    "tags": [
+      "公園",
+      "福岡県"
+    ],
+    "features": [
+      "駐車場あり",
+      "入場無料"
+    ],
+    "price": "要確認",
+    "dogSize": "制限なし (要確認)",
+    "verified": true,
+    "source": "https://www.walkerplus.com/spot_list/ar1040/sg0001/ss1007/"
+  },
+  {
+    "id": "fukuoka-e14e26",
+    "name": "久留米百年公園",
+    "area": "福岡県福岡市博多区",
+    "prefecture": "福岡県",
+    "address": "福岡県福岡市博多区",
+    "category": "犬連れOKの公園・自然スポット",
+    "description": "久留米市市制100周年を記念してできた公園",
+    "tags": [
+      "公園",
+      "福岡県"
+    ],
+    "features": [
+      "駐車場あり",
+      "入場無料"
+    ],
+    "price": "要確認",
+    "dogSize": "制限なし (要確認)",
+    "verified": true,
+    "source": "https://www.walkerplus.com/spot_list/ar1040/sg0001/ss1007/"
+  },
+  {
+    "id": "saga-fbfe36",
+    "name": "Dog Run HILLS",
+    "area": "佐賀県西松浦郡有田町広瀬甲1306-1",
+    "prefecture": "佐賀県",
+    "address": "佐賀県西松浦郡有田町広瀬甲1306-1",
+    "category": "ドッグラン",
+    "description": "敷地面積270坪の芝生ドッグラン。小型犬専用ゾーンと中型犬・大型犬も利用できるフリーゾーンがある。温水シャワー付きの洗い場も完備。",
+    "tags": [
+      "ドッグラン",
+      "佐賀県"
+    ],
+    "features": [
+      "小型犬専用ゾーンあり",
+      "中型犬・大型犬用フリーゾーンあり",
+      "温水シャワー付き洗い場",
+      "駐車場30台"
+    ],
+    "price": "ビジター1回1200円(大型犬2頭、小型犬3頭まで)",
+    "dogSize": "全犬種対応 (小型犬専用ゾーンあり)",
+    "verified": true,
+    "source": "https://doghuggy.com/media/7976, https://dogrunhills.jimdofree.com/"
+  },
+  {
+    "id": "saga-6f90f6",
+    "name": "カフェフクシア",
+    "area": "佐賀県佐賀市大和町尼寺3220−１",
+    "prefecture": "佐賀県",
+    "address": "佐賀県佐賀市大和町尼寺3220−１",
+    "category": "ペット可カフェ・ドッグラン",
+    "description": "わんこ同伴OKの店内はバリアフリーで、わんこ同士が過ごしやすいようにテーブル間隔を広くとっている。こだわりの食材を使った人用の食事と、ペット食育指導士のオーナーが手作りするわんこ用のごはんを提供。ドッグランも併設されており、夏にはドッグプールも設置される。",
+    "tags": [
+      "ドッグラン",
+      "カフェ",
+      "佐賀県"
+    ],
+    "features": [
+      "店内犬同伴可",
+      "バリアフリー",
+      "手作りわんこごはん",
+      "ドッグラン併設",
+      "ドッグプール (夏季)",
+      "駐車場7台"
+    ],
+    "price": "ドッグラン年間登録500円＋利用時に500円と要1オーダー",
+    "dogSize": "制限なし",
+    "verified": true,
+    "source": "https://cafefukusia.com/, https://doghuggy.com/media/7976"
+  },
+  {
+    "id": "saga-c1634a",
+    "name": "SECRET GARDEN",
+    "area": "佐賀市三瀬村藤原537-13",
+    "prefecture": "佐賀県",
+    "address": "佐賀市三瀬村藤原537-13",
+    "category": "ドッグラン",
+    "description": "佐賀の三瀬村にある貸し切りのプライベートドッグラン。背振山を背景に思いっきり遊べる。完全予約制。",
+    "tags": [
+      "ドッグラン",
+      "佐賀県"
+    ],
+    "features": [
+      "貸し切り",
+      "完全予約制"
+    ],
+    "price": "2匹まで 1時間：平日￥1,100 / 土日祝￥1,650 (グループ利用あり)",
+    "dogSize": "制限なし",
+    "verified": true,
+    "source": "https://www.momosecretgarden.com/, https://www.momosecretgarden.com/%E6%96%99%E9%87%91"
+  },
+  {
+    "id": "saga-320f00",
+    "name": "長崎自動車道 金立サービスエリア（上り）犬のひろば",
+    "area": "佐賀県佐賀市金立町大字金立1197-232",
+    "prefecture": "佐賀県",
+    "address": "佐賀県佐賀市金立町大字金立1197-232",
+    "category": "ドッグラン",
+    "description": "敷地面積約285平方メートルの芝生ドッグラン。日の出から日没まで利用可能。ハイウェイオアシス金立公園で散歩もできる。",
+    "tags": [
+      "ドッグラン",
+      "佐賀県"
+    ],
+    "features": [
+      "無料",
+      "芝生",
+      "日の出から日没まで利用可",
+      "ハイウェイオアシス金立公園隣接"
+    ],
+    "price": "無料",
+    "dogSize": "制限なし",
+    "verified": true,
+    "source": "https://doghuggy.com/media/7976, https://www.w-holdings.co.jp/sapa/2729.html"
+  },
+  {
+    "id": "saga-95a633",
+    "name": "長崎自動車道 金立サービスエリア（下り）犬のひろば",
+    "area": "佐賀県佐賀市金立町大字金立1197-228",
+    "prefecture": "佐賀県",
+    "address": "佐賀県佐賀市金立町大字金立1197-228",
+    "category": "ドッグラン",
+    "description": "敷地面積約420平方メートルの芝生ドッグラン。日の出から日没まで利用可能。ハイウェイオアシス金立公園で散歩もできる。",
+    "tags": [
+      "ドッグラン",
+      "佐賀県"
+    ],
+    "features": [
+      "無料",
+      "芝生",
+      "日の出から日没まで利用可",
+      "ハイウェイオアシス金立公園隣接"
+    ],
+    "price": "無料",
+    "dogSize": "制限なし",
+    "verified": true,
+    "source": "https://doghuggy.com/media/7976, https://www.w-holdings.co.jp/sapa/2736.html"
+  },
+  {
+    "id": "saga-6ff5e0",
+    "name": "森とリスの遊園地 メルヘン村 ドッグパーク",
+    "area": "佐賀県武雄市",
+    "prefecture": "佐賀県",
+    "address": "佐賀県武雄市",
+    "category": "ドッグラン",
+    "description": "メルヘン村の入園料を支払うと無料で利用できるドッグラン。トラブル防止のため1名につき2頭まで。狂犬病予防注射証明書が必要。",
+    "tags": [
+      "ドッグラン",
+      "佐賀県"
+    ],
+    "features": [
+      "入園料で利用可",
+      "狂犬病予防注射証明書必須",
+      "1名につき2頭まで",
+      "貸切不可"
+    ],
+    "price": "入村料のみで利用可",
+    "dogSize": "制限なし",
+    "verified": true,
+    "source": "https://www.marchen-mura.jp/dogpark/"
+  },
+  {
+    "id": "saga-0b8cf0",
+    "name": "たのしい農家 お百笑さん",
+    "area": "佐賀県武雄市若木町本部山中",
+    "prefecture": "佐賀県",
+    "address": "佐賀県武雄市若木町本部山中",
+    "category": "ペット可カフェ・ドッグラン",
+    "description": "自然の中で土鍋で炊いたご飯が楽しめる。テラス席はワンコ連れOKで、ドッグランも併設。ドッグラン利用には各種証明書が必要。",
+    "tags": [
+      "ドッグラン",
+      "カフェ",
+      "大型犬OK",
+      "佐賀県"
+    ],
+    "features": [
+      "テラス席犬同伴可",
+      "ドッグラン併設",
+      "土鍋ごはん",
+      "梅製品販売"
+    ],
+    "price": "要確認",
+    "dogSize": "大型犬OK",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3897/"
+  },
+  {
+    "id": "saga-fe6fe8",
+    "name": "JONAI SQUARE CAFE",
+    "area": "佐賀県佐賀市",
+    "prefecture": "佐賀県",
+    "address": "佐賀県佐賀市",
+    "category": "ペット可カフェ",
+    "description": "サガテレビ局1階にあるカフェ。野菜多めのヘルシーメニューやシシリアンライスが楽しめる。佐賀城跡・佐賀城公園の斜向かいにあり、テラス席は犬連れOK。",
+    "tags": [
+      "カフェ",
+      "佐賀県"
+    ],
+    "features": [
+      "テラス席犬同伴可",
+      "佐賀城跡・佐賀城公園近く",
+      "日よけパラソルあり"
+    ],
+    "price": "要確認",
+    "dogSize": "要確認",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3897/"
+  },
+  {
+    "id": "saga-5d4445",
+    "name": "Blue Couronne（ブルークローネ）",
+    "area": "佐賀県佐賀市",
+    "prefecture": "佐賀県",
+    "address": "佐賀県佐賀市",
+    "category": "ペット可カフェ",
+    "description": "600m越えの高地にある完全予約制のレストラン。鳥の声がBGMの自然豊かな環境で、森林浴を楽しみながら石窯で焼いたピザやチキンが楽しめる。テラス席は犬連れOKで、犬用のグリルメニューもある。",
+    "tags": [
+      "カフェ",
+      "大型犬OK",
+      "佐賀県"
+    ],
+    "features": [
+      "完全予約制",
+      "テラス席犬同伴可",
+      "犬用グリルメニューあり",
+      "石窯ピザ・チキン"
+    ],
+    "price": "要確認",
+    "dogSize": "大型犬OK",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3897/"
+  },
+  {
+    "id": "saga-374221",
+    "name": "T-1’s バーガーカフェ",
+    "area": "佐賀県佐賀市",
+    "prefecture": "佐賀県",
+    "address": "佐賀県佐賀市",
+    "category": "ペット可カフェ",
+    "description": "地元で30年以上愛されるバーガーカフェ。テラス席は犬連れOK。向かいにどんどんどんの森があり、テイクアウトして散歩も楽しめる。",
+    "tags": [
+      "カフェ",
+      "佐賀県"
+    ],
+    "features": [
+      "テラス席犬同伴可",
+      "テイクアウト可",
+      "どんどんどんの森近く"
+    ],
+    "price": "要確認",
+    "dogSize": "要確認",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3897/"
+  },
+  {
+    "id": "saga-485469",
+    "name": "1’s space ワンスペ",
+    "area": "佐賀県佐賀市",
+    "prefecture": "佐賀県",
+    "address": "佐賀県佐賀市",
+    "category": "ペット可カフェ・ミニドッグラン",
+    "description": "2023年8月オープンのカフェ＆居酒屋。動物優先のアットホームな理念で、店内はマナーウェア着用またはカート・キャリー利用で小型犬入店可。ミニドッグランも併設。",
+    "tags": [
+      "ドッグラン",
+      "カフェ",
+      "佐賀県"
+    ],
+    "features": [
+      "店内犬同伴可 (小型犬のみ)",
+      "ミニドッグラン併設",
+      "犬用メニューあり",
+      "カウンター席・半個室・個室あり"
+    ],
+    "price": "要確認",
+    "dogSize": "小型犬",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3897/"
+  },
+  {
+    "id": "saga-8f5cb9",
+    "name": "Mcafe＆M3（エムカフェアンドエムスリー）",
+    "area": "佐賀県佐賀市",
+    "prefecture": "佐賀県",
+    "address": "佐賀県佐賀市",
+    "category": "ペット可カフェ・ドッグラン・ペットホテル",
+    "description": "標高570メートルの山の上にあるカフェ。小型犬は店内・テラス席、中型・大型犬はテラス席のみ同伴可。小型犬専用ドッグラン併設。ペットホテルも運営。",
+    "tags": [
+      "ドッグラン",
+      "カフェ",
+      "大型犬OK",
+      "佐賀県"
+    ],
+    "features": [
+      "小型犬店内同伴可",
+      "テラス席犬同伴可",
+      "小型犬専用ドッグラン併設",
+      "ペットホテル",
+      "犬用メニューあり"
+    ],
+    "price": "要確認",
+    "dogSize": "小型犬は店内、中型・大型犬はテラス",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3897/"
+  },
+  {
+    "id": "saga-5c26d2",
+    "name": "ROUGH cafe dinning bar",
+    "area": "佐賀県佐賀市",
+    "prefecture": "佐賀県",
+    "address": "佐賀県佐賀市",
+    "category": "ペット可カフェ・レストラン",
+    "description": "JR佐賀駅からもアクセスが良いカフェダイニングバー。モーニング、ランチ、カフェ、ディナー、バーとして利用可能。テラス席は犬連れOK。",
+    "tags": [
+      "カフェ",
+      "大型犬OK",
+      "佐賀県"
+    ],
+    "features": [
+      "テラス席犬同伴可",
+      "オリジナルスイーツ",
+      "貸し切り利用可"
+    ],
+    "price": "要確認",
+    "dogSize": "大型犬OK",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3897/"
+  },
+  {
+    "id": "saga-fdb13b",
+    "name": "炭炎（たんえん）",
+    "area": "佐賀県佐賀市三瀬村",
+    "prefecture": "佐賀県",
+    "address": "佐賀県佐賀市三瀬村",
+    "category": "ペット可レストラン",
+    "description": "みつせ鶏を使ったBBQが楽しめる。敷地内の屋根付きオープンテーブルは犬連れ利用可能。真空パックの販売もあり。",
+    "tags": [
+      "大型犬OK",
+      "佐賀県"
+    ],
+    "features": [
+      "テラス席犬同伴可",
+      "みつせ鶏BBQ",
+      "屋根付き野外席"
+    ],
+    "price": "要確認",
+    "dogSize": "大型犬OK",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3897/"
+  },
+  {
+    "id": "saga-a5c29c",
+    "name": "ドッグカフェ＆ドッグラン レストランそよ風",
+    "area": "佐賀県武雄市",
+    "prefecture": "佐賀県",
+    "address": "佐賀県武雄市",
+    "category": "ペット可カフェ・ドッグラン",
+    "description": "高取山公園に併設されたレストラン。美味しいジビエ（猪肉）カレーが評判。併設のドッグランで待ち時間を過ごせる。",
+    "tags": [
+      "ドッグラン",
+      "カフェ",
+      "大型犬OK",
+      "佐賀県"
+    ],
+    "features": [
+      "店内犬同伴可",
+      "ドッグラン併設",
+      "ジビエカレー"
+    ],
+    "price": "要確認",
+    "dogSize": "大型犬OK",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3897/"
+  },
+  {
+    "id": "saga-b93345",
+    "name": "呼子 尾ノ上Ryokan",
+    "area": "佐賀県唐津市",
+    "prefecture": "佐賀県",
+    "address": "佐賀県唐津市",
+    "category": "ペット可宿・ホテル・ドッグラン",
+    "description": "玄界灘に面した宿。宿泊だけでなく、ペット同伴でのランチプランもあり、屋外・室内ドッグランも利用可能。",
+    "tags": [
+      "ドッグラン",
+      "大型犬OK",
+      "佐賀県"
+    ],
+    "features": [
+      "ペット同伴ランチプランあり",
+      "屋外ドッグラン",
+      "室内ドッグラン",
+      "イカ活き造り定食"
+    ],
+    "price": "要確認",
+    "dogSize": "大型犬OK (宿泊は20kgまで)",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3897/"
+  },
+  {
+    "id": "saga-d09449",
+    "name": "みはらしの宿 杉乃家",
+    "area": "佐賀県佐賀市古湯温泉",
+    "prefecture": "佐賀県",
+    "address": "佐賀県佐賀市古湯温泉",
+    "category": "ペット可宿・ホテル",
+    "description": "離れ露天風呂付き客室でお部屋食が楽しめる。福岡市内から車で60分。ペット専用旅館で、お部屋に半露天風呂とドッグランが付いている。",
+    "tags": [
+      "佐賀県"
+    ],
+    "features": [
+      "ペット専用旅館",
+      "半露天風呂付き客室",
+      "部屋食",
+      "ドッグラン併設"
+    ],
+    "price": "1泊 大人2名 合計55,000円〜",
+    "dogSize": "要確認",
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/saga/?distCd=05&ssc=57198&searchModeTab=1, https://www.furuyu-suginoya.com/dog/"
+  },
+  {
+    "id": "saga-3ac3d2",
+    "name": "嬉野 八十八",
+    "area": "佐賀県嬉野市",
+    "prefecture": "佐賀県",
+    "address": "佐賀県嬉野市",
+    "category": "ペット可宿・ホテル",
+    "description": "全室に100%源泉かけ流しの温泉を完備したホテル。専属茶師によるティーセレモニーや、料理長厳選の西九州の豊かな食が楽しめる。ワンちゃんOKのプランあり。",
+    "tags": [
+      "佐賀県"
+    ],
+    "features": [
+      "全室源泉かけ流し温泉",
+      "専属茶師によるティーセレモニー",
+      "西九州の豊かな食",
+      "ワンちゃんOKプラン"
+    ],
+    "price": "1泊 大人2名 合計140,910円〜",
+    "dogSize": "要確認",
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/saga/?distCd=05&ssc=57198&searchModeTab=1"
+  },
+  {
+    "id": "saga-48641e",
+    "name": "うらり 武雄 Garden Terrace Spa Resorts",
+    "area": "佐賀県武雄市",
+    "prefecture": "佐賀県",
+    "address": "佐賀県武雄市",
+    "category": "ペット可宿・ホテル",
+    "description": "Garden Terrace Hotels初の温泉旅館。全室武雄温泉付き。インフィニティ温泉や2種のサウナ、佐賀牛をメインとした創作和会席が楽しめる。",
+    "tags": [
+      "佐賀県"
+    ],
+    "features": [
+      "全室武雄温泉付き",
+      "インフィニティ温泉",
+      "2種のサウナ",
+      "創作和会席"
+    ],
+    "price": "1泊 大人2名 合計82,280円〜",
+    "dogSize": "要確認",
+    "verified": true,
+    "source": "https://www.jalan.net/theme/pet/saga/?distCd=05&ssc=57198&searchModeTab=1"
+  },
+  {
+    "id": "saga-6302e6",
+    "name": "虹の松原",
+    "area": "佐賀県唐津市",
+    "prefecture": "佐賀県",
+    "address": "佐賀県唐津市",
+    "category": "犬連れOKの公園・自然スポット",
+    "description": "日本三大松原の一つ。約4.5kmにわたる美しい松林で、犬もリードをつけて散策できる。海岸沿いの自然を楽しめる。",
+    "tags": [
+      "公園",
+      "佐賀県"
+    ],
+    "features": [
+      "リード着用で散策可",
+      "海岸沿い",
+      "日本三大松原"
+    ],
+    "price": "無料",
+    "dogSize": "制限なし",
+    "verified": true,
+    "source": "https://happyplace.pet/nansen/saga-nansen_odespot/"
+  },
+  {
+    "id": "saga-871561",
+    "name": "環境芸術の森",
+    "area": "佐賀県唐津市厳木町",
+    "prefecture": "佐賀県",
+    "address": "佐賀県唐津市厳木町",
+    "category": "犬連れOKの公園・自然スポット",
+    "description": "アートと自然が融合した公園。広い散策コースで四季折々の美しい風景を堪能できる。",
+    "tags": [
+      "公園",
+      "佐賀県"
+    ],
+    "features": [
+      "リード着用で散策可",
+      "四季折々の風景"
+    ],
+    "price": "要確認",
+    "dogSize": "制限なし",
+    "verified": true,
+    "source": "https://happyplace.pet/nansen/saga-nansen_odespot/"
+  },
+  {
+    "id": "nagasaki-38f89f",
+    "name": "水仙の丘公園",
+    "area": "長崎県長崎市野母町",
+    "prefecture": "長崎県",
+    "address": "長崎県長崎市野母町",
+    "category": "公園・自然スポット",
+    "description": "長崎のもざき恐竜パーク内にある、約1000万球の水仙が咲き誇る公園。環境省の「かおり風景100選」にも選定。北側展望所からは軍艦島や五島列島も一望できる。犬も一緒に散策可能。",
+    "tags": [
+      "公園",
+      "長崎県"
+    ],
+    "features": [
+      "犬同伴可（散策のみ）",
+      "絶景",
+      "四季折々の花"
+    ],
+    "price": "無料",
+    "dogSize": "全犬種",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3787/"
+  },
+  {
+    "id": "nagasaki-312cc4",
+    "name": "夫婦岩",
+    "area": "長崎県長崎市以下宿町",
+    "prefecture": "長崎県",
+    "address": "長崎県長崎市以下宿町",
+    "category": "公園・自然スポット",
+    "description": "長崎市中心部から野母崎方面へ向かう国道499号線沿いにある、しめ縄で結ばれた二つの大きな岩。パワースポットとしても人気で、岩の間から軍艦島が見える。犬同伴で散策可能。",
+    "tags": [
+      "公園",
+      "長崎県"
+    ],
+    "features": [
+      "犬同伴可（散策のみ）",
+      "パワースポット",
+      "軍艦島を望む絶景"
+    ],
+    "price": "無料",
+    "dogSize": "全犬種",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3787/"
+  },
+  {
+    "id": "nagasaki-1fc8e7",
+    "name": "脇岬のビーチロック",
+    "area": "長崎県長崎市脇岬町",
+    "prefecture": "長崎県",
+    "address": "長崎県長崎市脇岬町",
+    "category": "公園・自然スポット",
+    "description": "脇岬トンボロの西海岸に干潮時に現れる、海浜の小石や砂が固まってできた堆積岩。九州では北限で珍しい。潮だまりで海の生き物を観察でき、犬も安心して海の中を散策できる。",
+    "tags": [
+      "公園",
+      "ビーチ",
+      "長崎県"
+    ],
+    "features": [
+      "犬同伴可（散策のみ）",
+      "珍しい自然景観",
+      "海の生き物観察"
+    ],
+    "price": "無料",
+    "dogSize": "全犬種",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3787/"
+  },
+  {
+    "id": "nagasaki-29322b",
+    "name": "グラバー園",
+    "area": "長崎県長崎市南山手町",
+    "prefecture": "長崎県",
+    "address": "長崎県長崎市南山手町",
+    "category": "公園・自然スポット",
+    "description": "長崎港を一望できる高台にある、異国情緒あふれる洋風建築が並ぶ庭園。建物内は犬不可だが、庭園内はリード着用で散策可能。ハートストーン探しも楽しめる。",
+    "tags": [
+      "公園",
+      "長崎県"
+    ],
+    "features": [
+      "犬同伴可（庭園内リード着用）",
+      "世界遺産",
+      "絶景",
+      "歴史的建造物"
+    ],
+    "price": "不明（要確認）",
+    "dogSize": "全犬種",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3787/"
+  },
+  {
+    "id": "nagasaki-7cf9e5",
+    "name": "ハウステンボス",
+    "area": "長崎県佐世保市ハウステンボス町",
+    "prefecture": "長崎県",
+    "address": "長崎県佐世保市ハウステンボス町",
+    "category": "公園・自然スポット",
+    "description": "日本最大のテーマパーク。オランダの街並みを再現し、四季折々の花々やイルミネーションが楽しめる。ハーバーゾーンは無料で入場でき、犬同伴可能。",
+    "tags": [
+      "公園",
+      "長崎県"
+    ],
+    "features": [
+      "犬同伴可（一部エリア）",
+      "テーマパーク",
+      "絶景",
+      "四季折々の花"
+    ],
+    "price": "不明（要確認）",
+    "dogSize": "全犬種",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3787/"
+  },
+  {
+    "id": "nagasaki-68a062",
+    "name": "させぼシーサイドパーク",
+    "area": "長崎県佐世保市新港町",
+    "prefecture": "長崎県",
+    "address": "長崎県佐世保市新港町",
+    "category": "公園・自然スポット",
+    "description": "佐世保の海の玄関口にある公園。佐世保港を望むビュースポットで、海沿いの遊歩道を犬と散歩できる。鯨のモニュメントやいかりのオブジェがある。",
+    "tags": [
+      "公園",
+      "長崎県"
+    ],
+    "features": [
+      "犬同伴可（散策のみ）",
+      "港の景色",
+      "散歩コース"
+    ],
+    "price": "無料",
+    "dogSize": "全犬種",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3787/"
+  },
+  {
+    "id": "nagasaki-2eec89",
+    "name": "有明の森フラワー公園",
+    "area": "長崎県島原市有明町湯江乙",
+    "prefecture": "長崎県",
+    "address": "長崎県島原市有明町湯江乙",
+    "category": "公園・自然スポット",
+    "description": "舞岳のなだらかな丘陵地帯に位置し、有明海と平成新山を望む絶好のロケーション。四季折々の花々が咲き誇り、ヤギやうさぎなどの動物も飼育されている。犬同伴で散策可能。",
+    "tags": [
+      "公園",
+      "長崎県"
+    ],
+    "features": [
+      "犬同伴可（散策のみ）",
+      "絶景",
+      "四季折々の花",
+      "動物とのふれあい"
+    ],
+    "price": "不明（要確認）",
+    "dogSize": "全犬種",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3787/"
+  },
+  {
+    "id": "nagasaki-9f07f3",
+    "name": "島原城",
+    "area": "長崎県島原市城内",
+    "prefecture": "長崎県",
+    "address": "長崎県島原市城内",
+    "category": "公園・自然スポット",
+    "description": "「大坂夏の陣」で功績を挙げた松倉重政が築城した城。天守の高さは九州1位。城内は犬不可だが、敷地内の散策は可能。島原の乱の舞台となった歴史的な場所。",
+    "tags": [
+      "公園",
+      "長崎県"
+    ],
+    "features": [
+      "犬同伴可（敷地内散策のみ）",
+      "歴史的建造物",
+      "絶景"
+    ],
+    "price": "不明（要確認）",
+    "dogSize": "全犬種",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3787/"
+  },
+  {
+    "id": "nagasaki-dfacdc",
+    "name": "ほっとふっと105",
+    "area": "長崎県雲仙市小浜町北本町",
+    "prefecture": "長崎県",
+    "address": "長崎県雲仙市小浜町北本町",
+    "category": "アウトドアスポット",
+    "description": "小浜マリンパーク内にある日本一長い足湯（全長105メートル）。腰掛け足湯、ウォーキング足湯、ペット足湯があり、犬も一緒に楽しめる。橘湾に沈む夕日を眺めながら足湯に浸かれる。",
+    "tags": [
+      "長崎県"
+    ],
+    "features": [
+      "犬同伴可（ペット足湯）",
+      "足湯",
+      "絶景",
+      "温泉"
+    ],
+    "price": "無料",
+    "dogSize": "全犬種",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3787/"
+  },
+  {
+    "id": "nagasaki-c8c83d",
+    "name": "川内峠",
+    "area": "長崎県平戸市大野町",
+    "prefecture": "長崎県",
+    "address": "長崎県平戸市大野町",
+    "category": "公園・自然スポット",
+    "description": "平戸の絶景スポット。頂上からは九十九島、玄海灘、壱岐・対馬を望む360度の大パノラマが広がる。広大な草原で、四季折々の自然を楽しめる。犬同伴で散策可能。",
+    "tags": [
+      "公園",
+      "長崎県"
+    ],
+    "features": [
+      "犬同伴可（散策のみ）",
+      "絶景",
+      "大自然",
+      "ハイキング"
+    ],
+    "price": "無料",
+    "dogSize": "全犬種",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3787/"
+  },
+  {
+    "id": "nagasaki-0a98bc",
+    "name": "ガスパル様（クルスの丘公園）",
+    "area": "長崎県平戸市生月町山田免",
+    "prefecture": "長崎県",
+    "address": "長崎県平戸市生月町山田免",
+    "category": "公園・自然スポット",
+    "description": "生月島の海を見下ろす高台にある公園。フランシスコ・ザビエルが布教のために訪れた地で、キリシタンの歴史を感じられる。犬同伴で散策可能。",
+    "tags": [
+      "公園",
+      "長崎県"
+    ],
+    "features": [
+      "犬同伴可（散策のみ）",
+      "歴史的スポット",
+      "絶景"
+    ],
+    "price": "無料",
+    "dogSize": "全犬種",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3787/"
+  },
+  {
+    "id": "nagasaki-0a0da7",
+    "name": "九十九島観光公園",
+    "area": "長崎県佐世保市野崎町",
+    "prefecture": "長崎県",
+    "address": "長崎県佐世保市野崎町",
+    "category": "公園・自然スポット",
+    "description": "2021年にオープンした新しい絶景スポット。約4.7ヘクタールの広大な芝生広場「眺望の丘」からは九十九島の大パノラマを見渡せる。犬同伴で散策可能。",
+    "tags": [
+      "公園",
+      "長崎県"
+    ],
+    "features": [
+      "犬同伴可（散策のみ）",
+      "絶景",
+      "大自然"
+    ],
+    "price": "無料",
+    "dogSize": "全犬種",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3787/"
+  },
+  {
+    "id": "nagasaki-b6bb0b",
+    "name": "九十九島パールシーリゾート",
+    "area": "長崎県佐世保市鹿子前町",
+    "prefecture": "長崎県",
+    "address": "長崎県佐世保市鹿子前町",
+    "category": "公園・自然スポット",
+    "description": "佐世保市にあるマリンレジャーやクルージング、水族館などが体験できる施設。遊覧船やデッキでの散歩は犬同伴可能。カフェやレストランのテラス席も犬同伴OK。",
+    "tags": [
+      "公園",
+      "長崎県"
+    ],
+    "features": [
+      "犬同伴可（一部エリア、遊覧船はケージ必須）",
+      "マリンレジャー",
+      "カフェ・レストラン併設"
+    ],
+    "price": "不明（要確認）",
+    "dogSize": "全犬種",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3787/"
+  },
+  {
+    "id": "nagasaki-4dfd99",
+    "name": "大バエ灯台",
+    "area": "長崎県平戸市生月町御崎",
+    "prefecture": "長崎県",
+    "address": "長崎県平戸市生月町御崎",
+    "category": "公園・自然スポット",
+    "description": "平戸市生月島の最北端にある白亜の灯台。80mほど切り立つ大バエ断崖の上に立ち、360度パノラマの雄大な景色を楽しめる。犬同伴で散策可能。",
+    "tags": [
+      "公園",
+      "長崎県"
+    ],
+    "features": [
+      "犬同伴可（散策のみ）",
+      "絶景",
+      "大自然"
+    ],
+    "price": "無料",
+    "dogSize": "全犬種",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3787/"
+  },
+  {
+    "id": "nagasaki-70f4e1",
+    "name": "佐世保バーガーミュージアム",
+    "area": "長崎県佐世保市船越町",
+    "prefecture": "長崎県",
+    "address": "長崎県佐世保市船越町",
+    "category": "ペット可カフェ・レストラン",
+    "description": "九十九島の絶景を楽しみながら食べられるハンバーガーショップ。店内のテラス席は犬同伴OK。手作りにこだわった絶品佐世保バーガーが味わえる。",
+    "tags": [
+      "カフェ",
+      "長崎県"
+    ],
+    "features": [
+      "犬同伴可（テラス席）",
+      "佐世保バーガー",
+      "絶景"
+    ],
+    "price": "不明（要確認）",
+    "dogSize": "全犬種",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3787/"
+  },
+  {
+    "id": "nagasaki-06d195",
+    "name": "CHILDBOX",
+    "area": "長崎県長崎市旭町",
+    "prefecture": "長崎県",
+    "address": "長崎県長崎市旭町",
+    "category": "ペット可カフェ・レストラン",
+    "description": "長崎のソウルフードであるトルコライスが美味しいお店。店内も犬同伴OK。地元の素材を使った絶品料理も楽しめる。",
+    "tags": [
+      "カフェ",
+      "長崎県"
+    ],
+    "features": [
+      "犬同伴可（店内）",
+      "トルコライス",
+      "地元料理"
+    ],
+    "price": "不明（要確認）",
+    "dogSize": "全犬種",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3787/"
+  },
+  {
+    "id": "nagasaki-c9a3f2",
+    "name": "café mio（水脈）",
+    "area": "長崎県島原市万町",
+    "prefecture": "長崎県",
+    "address": "長崎県島原市万町",
+    "category": "ペット可カフェ・レストラン",
+    "description": "築170年を超える古民家を改装したカフェ。島原の湧水を使ったコーヒーやスイーツ、サンドイッチが楽しめる。犬はバッグインできれば店内同伴OK。",
+    "tags": [
+      "カフェ",
+      "長崎県"
+    ],
+    "features": [
+      "犬同伴可（バッグインで店内）",
+      "古民家カフェ",
+      "湧水",
+      "スイーツ"
+    ],
+    "price": "不明（要確認）",
+    "dogSize": "小型犬",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3787/"
+  },
+  {
+    "id": "nagasaki-d181ef",
+    "name": "Marco’s Cafe（マルコスカフェ）",
+    "area": "長崎県雲仙市小浜町雲仙",
+    "prefecture": "長崎県",
+    "address": "長崎県雲仙市小浜町雲仙",
+    "category": "ペット可カフェ・レストラン",
+    "description": "雲仙温泉街にあるグリーンテラス雲仙敷地内のテイクアウトカフェ。広い敷地にテラス席があり、犬同伴OK。イタリアンシェフ監修のスペシャルメニューやスイーツが自慢。源泉掛け流しの足湯も楽しめる。",
+    "tags": [
+      "カフェ",
+      "長崎県"
+    ],
+    "features": [
+      "犬同伴可（テラス席）",
+      "テイクアウトカフェ",
+      "スイーツ",
+      "足湯"
+    ],
+    "price": "不明（要確認）",
+    "dogSize": "全犬種",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3787/"
+  },
+  {
+    "id": "kumamoto-eda492",
+    "name": "ドッグラン&カフェ Hug me",
+    "area": "熊本県熊本市中央区",
+    "prefecture": "熊本県",
+    "address": "熊本県熊本市中央区",
+    "category": "ペット可カフェ・レストラン",
+    "description": "熊本市で唯一の室内ドッグランを備えた小型犬専用カフェ。スイーツや軽食、犬用メニューも充実。上通りから徒歩4分とアクセスも良好。",
+    "tags": [
+      "ドッグラン",
+      "カフェ",
+      "熊本県"
+    ],
+    "features": [
+      "室内ドッグラン併設",
+      "小型犬専用",
+      "犬用メニューあり"
+    ],
+    "price": "犬：1匹1時間800円、2匹目以降300円（フードかドリンクをひとり様1オーダー）",
+    "dogSize": "小型犬専用",
+    "verified": true,
+    "source": "https://petokoto.com/articles/2470"
+  },
+  {
+    "id": "kumamoto-fc892e",
+    "name": "ドッグランつきカフェ フラッペ×フラッペ",
+    "area": "熊本県熊本市北区",
+    "prefecture": "熊本県",
+    "address": "熊本県熊本市北区",
+    "category": "ペット可カフェ・レストラン",
+    "description": "無料で利用できるドッグランが併設されたカフェ。店内・テラス席ともに愛犬同伴OKで、地元のフルーツを使ったかき氷やスイーツ、手作りケーキなどを提供。犬用メニューも充実。",
+    "tags": [
+      "ドッグラン",
+      "カフェ",
+      "熊本県"
+    ],
+    "features": [
+      "ドッグラン併設",
+      "全犬種対応",
+      "店内・テラス席ペット同伴可",
+      "犬用メニューあり"
+    ],
+    "price": "ドッグラン無料（カフェ利用時）",
+    "dogSize": "全犬種",
+    "verified": true,
+    "source": "https://petokoto.com/articles/2470"
+  },
+  {
+    "id": "kumamoto-d2a7ab",
+    "name": "Little Garden",
+    "area": "熊本県熊本市東区",
+    "prefecture": "熊本県",
+    "address": "熊本県熊本市東区",
+    "category": "ペット可カフェ・レストラン",
+    "description": "木々に囲まれた隠れ家のような雰囲気のドッグカフェ。店内・テラス・グランピングテント・オールドバス内のすべてでペット同伴OK。犬用メニューも用意されており、貸切利用も可能。",
+    "tags": [
+      "カフェ",
+      "熊本県"
+    ],
+    "features": [
+      "店内・テラス席ペット同伴可",
+      "グランピングテント・オールドバス内ペット同伴可",
+      "犬用メニューあり",
+      "貸切利用可能"
+    ],
+    "price": "不明",
+    "dogSize": "全犬種",
+    "verified": true,
+    "source": "https://petokoto.com/articles/2470"
+  },
+  {
+    "id": "kumamoto-d5b87d",
+    "name": "阿蘇温泉御宿 小笠原",
+    "area": "熊本県阿蘇市",
+    "prefecture": "熊本県",
+    "address": "熊本県阿蘇市",
+    "category": "ペット可宿・ホテル",
+    "description": "全室離れ一戸建て形式の天然温泉付で、ペットと宿泊できる本格温泉宿。お客様が制御可能なペットであれば、犬種制限なく同伴可能。基本的なしつけができていること、予防接種を受けていることなどが条件。",
+    "tags": [
+      "温泉",
+      "熊本県"
+    ],
+    "features": [
+      "全室離れ一戸建て",
+      "天然温泉付",
+      "ドッグラン併設",
+      "犬用夕食メニューあり"
+    ],
+    "price": "宿泊料金はプランによる",
+    "dogSize": "全犬種",
+    "verified": true,
+    "source": "https://onyado-ogasawara.com/pet/"
+  },
+  {
+    "id": "kumamoto-efad99",
+    "name": "水前寺江津湖公園",
+    "area": "熊本県熊本市東区",
+    "prefecture": "熊本県",
+    "address": "熊本県熊本市東区",
+    "category": "犬連れOKの公園・自然スポット",
+    "description": "水と緑があふれる都心のオアシス。ピクニックに利用する人も多く見られる芝生エリアで、ペット同伴可能。",
+    "tags": [
+      "公園",
+      "熊本県"
+    ],
+    "features": [
+      "入場無料",
+      "駐車場あり"
+    ],
+    "price": "無料",
+    "dogSize": "全犬種",
+    "verified": true,
+    "source": "https://www.walkerplus.com/spot/ar1043s46519/"
+  },
+  {
+    "id": "kumamoto-2b0e4f",
+    "name": "PET RESORT BRAINS AMAKUSA",
+    "area": "熊本県天草市",
+    "prefecture": "熊本県",
+    "address": "熊本県天草市",
+    "category": "ペット可宿・ホテル",
+    "description": "全室オーシャンビューの客室で、ペットと一緒に静かな浜辺の散歩を楽しめるリゾートホテル。フロントからゲージなしでチェックイン可能。ペット用食事メニューも提供。",
+    "tags": [
+      "熊本県"
+    ],
+    "features": [
+      "全室オーシャンビュー",
+      "白い砂浜の散歩エリア",
+      "ゲージなしでチェックイン可能",
+      "ペット用食事メニューあり"
+    ],
+    "price": "宿泊料金はプランによる",
+    "dogSize": "全犬種",
+    "verified": true,
+    "source": "https://www.brains-amakusa.com/"
+  },
+  {
+    "id": "kumamoto-213ca7",
+    "name": "人吉城跡",
+    "area": "熊本県人吉市",
+    "prefecture": "熊本県",
+    "address": "熊本県人吉市",
+    "category": "犬連れOKの公園・自然スポット",
+    "description": "築城史上でも珍しい構造が楽しめる公園。犬連れでの散策が可能。",
+    "tags": [
+      "公園",
+      "熊本県"
+    ],
+    "features": [
+      "入場無料",
+      "駐車場あり",
+      "おむつ交換台あり"
+    ],
+    "price": "無料",
+    "dogSize": "全犬種",
+    "verified": true,
+    "source": "https://www.walkerplus.com/spot/ar1043s44732/"
+  },
+  {
+    "id": "kumamoto-5f51dd",
+    "name": "ペットと泊まれる宿 Wa！王国 狗の郷",
+    "area": "熊本県菊池市",
+    "prefecture": "熊本県",
+    "address": "熊本県菊池市",
+    "category": "ペット可宿・ホテル",
+    "description": "天然温泉、露天風呂、貸切風呂、マッサージサービスを備えたペット同伴可能な宿泊施設。フロントからゲージなしでチェックイン可能。",
+    "tags": [
+      "熊本県"
+    ],
+    "features": [
+      "天然温泉",
+      "露天風呂",
+      "貸切風呂",
+      "マッサージサービス"
+    ],
+    "price": "宿泊料金はプランによる",
+    "dogSize": "全犬種",
+    "verified": true,
+    "source": "https://onsensensei.com/en/kumamoto/kikuchi/pettototomareruyado-wa-oukokukunosato"
+  },
+  {
+    "id": "kumamoto-e59849",
+    "name": "Manly 熊本店",
+    "area": "熊本県熊本市中央区南坪井町",
+    "prefecture": "熊本県",
+    "address": "熊本県熊本市中央区南坪井町",
+    "category": "ペット可カフェ・レストラン",
+    "description": "ペット同伴OKのオーストラリア料理専門カフェ＆ダイニングバー。テラス席だけでなく店内でもわんちゃんと一緒に食事が楽しめる。珍しい肉料理も提供。",
+    "tags": [
+      "カフェ",
+      "熊本県"
+    ],
+    "features": [
+      "店内・テラス席ペット同伴可",
+      "オーストラリア料理",
+      "女子会・記念日対応"
+    ],
+    "price": "メニューによる",
+    "dogSize": "要確認",
+    "verified": true,
+    "source": "https://petokoto.com/articles/2470"
+  },
+  {
+    "id": "kumamoto-b800df",
+    "name": "Cafe du gui",
+    "area": "熊本県熊本市西区池上町",
+    "prefecture": "熊本県",
+    "address": "熊本県熊本市西区池上町",
+    "category": "ペット可カフェ・レストラン",
+    "description": "熊本駅近くで愛犬とゆっくり過ごせるカフェ。ビーフシチューやキッシュなどのランチセット、軽食が充実。ドッグラン併設。",
+    "tags": [
+      "カフェ",
+      "熊本県"
+    ],
+    "features": [
+      "店内ペット同伴可",
+      "ドッグラン併設",
+      "犬用メニューあり",
+      "マナーパンツ着用必須"
+    ],
+    "price": "メニューによる",
+    "dogSize": "要連絡",
+    "verified": true,
+    "source": "https://petokoto.com/articles/2470"
+  },
+  {
+    "id": "kumamoto-0e289d",
+    "name": "LANI GATE",
+    "area": "熊本県熊本市南区城南町",
+    "prefecture": "熊本県",
+    "address": "熊本県熊本市南区城南町",
+    "category": "ペット可カフェ・レストラン",
+    "description": "ハワイのリゾートをイメージしたカフェ＆ドッグラン。店内・テラス席ともに愛犬と一緒に過ごせる。ハワイアン料理のランチやオリジナルドリンクを提供。",
+    "tags": [
+      "カフェ",
+      "熊本県"
+    ],
+    "features": [
+      "店内・テラス席ペット同伴可",
+      "ドッグラン併設",
+      "ハワイアン料理",
+      "狂犬病・混合ワクチン接種証明書提示必須",
+      "マナーウェア・オムツ着用必須"
+    ],
+    "price": "メニューによる",
+    "dogSize": "全犬種",
+    "verified": true,
+    "source": "https://petokoto.com/articles/2470"
+  },
+  {
+    "id": "kumamoto-46d98c",
+    "name": "ドゥリーミン カントリー・インAso アンティークス カフェ",
+    "area": "熊本県阿蘇郡西原村",
+    "prefecture": "熊本県",
+    "address": "熊本県阿蘇郡西原村",
+    "category": "ペット可カフェ・レストラン",
+    "description": "築100年の古民家をアメリカンスタイルにリノベーションしたペット同伴可能なカフェ。湧水コーヒーや手作りクッキー、カントリーケーキなどを楽しめる。",
+    "tags": [
+      "カフェ",
+      "熊本県"
+    ],
+    "features": [
+      "店内・テラス席ペット同伴可",
+      "湧水コーヒーおかわり自由",
+      "お弁当持ち込みOK（ドリンク注文必須）"
+    ],
+    "price": "メニューによる",
+    "dogSize": "全犬種",
+    "verified": true,
+    "source": "https://petokoto.com/articles/2470"
+  },
+  {
+    "id": "kumamoto-6fc3b6",
+    "name": "フォレスタ阿蘇車帰",
+    "area": "熊本県阿蘇市車帰",
+    "prefecture": "熊本県",
+    "address": "熊本県阿蘇市車帰",
+    "category": "ペット可宿・ホテル",
+    "description": "阿蘇の雄大な自然を望むグランピングリゾート。全室天然温泉付きで、ペットと宿泊可能。専用ドッグランや貸切サウナも完備。",
+    "tags": [
+      "熊本県"
+    ],
+    "features": [
+      "天然温泉付き",
+      "専用ドッグランあり",
+      "貸切サウナあり",
+      "グランピングテント・コテージ・ログハウス"
+    ],
+    "price": "宿泊料金はプランによる",
+    "dogSize": "全犬種",
+    "verified": true,
+    "source": "https://foresta-aso.jp/"
+  },
+  {
+    "id": "kumamoto-1309ba",
+    "name": "HappyTail-ハッピーテイル-",
+    "area": "熊本県熊本市北区四方寄町",
+    "prefecture": "熊本県",
+    "address": "熊本県熊本市北区四方寄町",
+    "category": "ドッグラン",
+    "description": "総敷地面積約7,500㎡の県下最大級ドッグラン。公式大会が行われる陸上競技場と同じ芝を使用しており、ワンちゃんの足に優しい。小型・中型犬用と大型犬用で合計12室の個別ブースも完備。",
+    "tags": [
+      "ドッグラン",
+      "熊本県"
+    ],
+    "features": [
+      "県下最大級",
+      "陸上競技場と同じ芝を使用",
+      "小型・中型犬用個別ブースあり",
+      "大型犬用個別ブースあり",
+      "狂犬病・各種ワクチン接種証明書提示必須"
+    ],
+    "price": "小型犬600円〜、中型犬800円〜、大型犬1,000円〜（1頭目1日）、飼い主：大人500円〜（1人1日）",
+    "dogSize": "全犬種",
+    "verified": true,
+    "source": "https://happytail.jp/"
+  },
+  {
+    "id": "oita-5db228",
+    "name": "HONJIN",
+    "area": "大分県 九重町",
+    "prefecture": "大分県",
+    "address": "大分県 九重町",
+    "category": "ペット可宿・ホテル",
+    "description": "愛犬と片時も離れずに過ごせる宿です。部屋の中にはテーブルくらいの高さの段差が設えられており、緩やかにリビングと寝室が分けられいつでも愛犬と同じ目線で過ごせます。わんちゃんの食事は、無農薬で育てた...",
+    "tags": [
+      "大型犬OK",
+      "大分県"
+    ],
+    "features": [
+      "温泉あり"
+    ],
+    "price": "56,430円(税込)",
+    "dogSize": "超大型犬, 大型犬, 中型犬, 小型犬",
+    "verified": true,
+    "source": "https://kyuzitsu-inubu.com/hotel/search/?pref=1886"
+  },
+  {
+    "id": "oita-bad5a3",
+    "name": "由布院温泉 榎屋旅館",
+    "area": "大分県 由布市",
+    "prefecture": "大分県",
+    "address": "大分県 由布市",
+    "category": "ペット可宿・ホテル",
+    "description": "湯布院の町並みからほど近く、湯布院では数少ないペットと泊まれる旅館です。12畳の和室でペットと宿泊可能。源泉かけ流しの露天風呂や炭火焼が自慢の居酒屋も併設。ワンちゃんのマナーバンドは無料貸出して...",
+    "tags": [
+      "温泉",
+      "大型犬OK",
+      "大分県"
+    ],
+    "features": [
+      "多頭飼い可",
+      "レストラン同伴可",
+      "温泉あり"
+    ],
+    "price": "",
+    "dogSize": "大型犬, 中型犬, 小型犬",
+    "verified": true,
+    "source": "https://kyuzitsu-inubu.com/hotel/search/?pref=1886"
+  },
+  {
+    "id": "oita-f7a4e6",
+    "name": "別府温泉 ホテル好楽",
+    "area": "大分県 別府市",
+    "prefecture": "大分県",
+    "address": "大分県 別府市",
+    "category": "ペット可宿・ホテル",
+    "description": "ペットと泊まれるのは和室で、夕食は嬉しいお部屋食です。ペット専用の温泉「わんこの湯」があり、わんちゃん用のシャンプーやドライヤーなども完備されています。オーナー様は、大浴場や展望露天風呂で別府温...",
+    "tags": [
+      "温泉",
+      "大分県"
+    ],
+    "features": [
+      "ドッグランあり",
+      "全室ペット可",
+      "温泉あり"
+    ],
+    "price": "",
+    "dogSize": "小型犬",
+    "verified": true,
+    "source": "https://kyuzitsu-inubu.com/hotel/search/?pref=1886"
+  },
+  {
+    "id": "oita-a0aee4",
+    "name": "湯布院ガーデンホテル ドッグラン＆リゾート",
+    "area": "大分県 由布市",
+    "prefecture": "大分県",
+    "address": "大分県 由布市",
+    "category": "ペット可宿・ホテル",
+    "description": "九州最大級のドッグランが人気なペットと楽しめるリゾート。44×18メートルの屋外ドッグランは大型・中型・小型犬別に分かれている為安心です。由布岳を望みながらわんちゃんと思いっきり遊んで下さい。",
+    "tags": [
+      "ドッグラン",
+      "大型犬OK",
+      "大分県"
+    ],
+    "features": [
+      "ドッグランあり",
+      "多頭飼い可",
+      "全室ペット可",
+      "温泉あり"
+    ],
+    "price": "22,800円(税込)",
+    "dogSize": "大型犬, 中型犬, 小型犬",
+    "verified": true,
+    "source": "https://kyuzitsu-inubu.com/hotel/search/?pref=1886"
+  },
+  {
+    "id": "oita-6b7ddf",
+    "name": "別府温泉 わんこの宿ゆるり",
+    "area": "大分県 別府市",
+    "prefecture": "大分県",
+    "address": "大分県 別府市",
+    "category": "ペット可宿・ホテル",
+    "description": "全5室温泉露天風呂付き離れタイプのわんちゃんと泊まれる旅館。ワンフロアのフラットタイプでバリアフリーなので、シニア犬やパピーでも安心してご宿泊いただけます。食事は半個室のレストランで、お部屋には...",
+    "tags": [
+      "温泉",
+      "大分県"
+    ],
+    "features": [
+      "ドッグランあり",
+      "多頭飼い可",
+      "レストラン同伴可",
+      "添い寝可",
+      "全室ペット可",
+      "温泉あり"
+    ],
+    "price": "25,410円(税込)",
+    "dogSize": "中型犬, 小型犬",
+    "verified": true,
+    "source": "https://kyuzitsu-inubu.com/hotel/search/?pref=1886"
+  },
+  {
+    "id": "oita-4db707",
+    "name": "癒しの宿 鷹勝",
+    "area": "大分県 由布市",
+    "prefecture": "大分県",
+    "address": "大分県 由布市",
+    "category": "ペット可宿・ホテル",
+    "description": "湯布院・湯平に位置する「癒しの宿 鷹勝」。全4室のペット宿泊可の客室は、内湯付きの風情あるしつらいが自慢の客室で、大型犬まで宿泊いただけます。素材にこだわった自慢の料理や歴史ある温泉をゆったりと...",
+    "tags": [
+      "大型犬OK",
+      "大分県"
+    ],
+    "features": [
+      "多頭飼い可",
+      "猫同伴可",
+      "小動物同伴可",
+      "添い寝可",
+      "温泉あり"
+    ],
+    "price": "62,000円(税込)",
+    "dogSize": "大型犬, 中型犬, 小型犬",
+    "verified": true,
+    "source": "https://kyuzitsu-inubu.com/hotel/search/?pref=1886"
+  },
+  {
+    "id": "oita-2e7450",
+    "name": "旅籠彩くら",
+    "area": "大分県 九重町",
+    "prefecture": "大分県",
+    "address": "大分県 九重町",
+    "category": "ペット可宿・ホテル",
+    "description": "四季折々の彩りと故郷の懐かしい風景に、もう一度訪れたくなる全室離れの温泉旅館です。",
+    "tags": [
+      "大型犬OK",
+      "大分県"
+    ],
+    "features": [
+      "ドッグランあり",
+      "多頭飼い可",
+      "レストラン同伴可",
+      "温泉あり"
+    ],
+    "price": "59,400円(税込)",
+    "dogSize": "大型犬, 中型犬, 小型犬",
+    "verified": true,
+    "source": "https://kyuzitsu-inubu.com/hotel/search/?pref=1886"
+  },
+  {
+    "id": "oita-6b655b",
+    "name": "由布院オッポ",
+    "area": "大分県 由布市",
+    "prefecture": "大分県",
+    "address": "大分県 由布市",
+    "category": "ペット可宿・ホテル",
+    "description": "豊かな自然に囲まれた由布院の温泉付き別荘で、ペット同室可の一棟をご用意しています。由布院駅から徒歩5分、湯の坪街道から金鱗湖への散策など、由布院観光の拠点としてご利用いただけます。ペット用のアメ...",
+    "tags": [
+      "大型犬OK",
+      "大分県"
+    ],
+    "features": [
+      "ドッグランあり",
+      "多頭飼い可",
+      "添い寝可",
+      "温泉あり"
+    ],
+    "price": "44,000円(税込)",
+    "dogSize": "超大型犬, 大型犬, 中型犬, 小型犬",
+    "verified": true,
+    "source": "https://kyuzitsu-inubu.com/hotel/search/?pref=1886"
+  },
+  {
+    "id": "oita-79a2b5",
+    "name": "貸別荘 宝泉寺温泉ログハウスＡ",
+    "area": "大分県 九重町",
+    "prefecture": "大分県",
+    "address": "大分県 九重町",
+    "category": "ペット可宿・ホテル",
+    "description": "飯田や湯布院へも車で１時間圏内で便利な立地です。ご家族はもちろん、小グループのご旅行にもおすすめ。テラスでBBQができます。大型犬まで宿泊可能、ワンちゃん用グッズやご飯は全てご持参ください。",
+    "tags": [
+      "温泉",
+      "大型犬OK",
+      "大分県"
+    ],
+    "features": [
+      "多頭飼い可",
+      "全室ペット可",
+      "温泉あり"
+    ],
+    "price": "17,800円(税込)",
+    "dogSize": "超大型犬, 大型犬, 中型犬, 小型犬",
+    "verified": true,
+    "source": "https://kyuzitsu-inubu.com/hotel/search/?pref=1886"
+  },
+  {
+    "id": "oita-8a8a0c",
+    "name": "貸別荘 飯田ログハウスＴ",
+    "area": "大分県 九重町",
+    "prefecture": "大分県",
+    "address": "大分県 九重町",
+    "category": "ペット可宿・ホテル",
+    "description": "完全貸切制(別荘内には誰もいません)で、他のお客様と接触する事はありません。定員は8名様なので、ご家族はもちろんグループ旅行にも最適です。無料貸出のBBQコンロ完備。キッチンで自炊もできます。大...",
+    "tags": [
+      "大型犬OK",
+      "大分県"
+    ],
+    "features": [
+      "多頭飼い可",
+      "小動物同伴可",
+      "全室ペット可"
+    ],
+    "price": "20,600円(税込)",
+    "dogSize": "超大型犬, 大型犬, 中型犬, 小型犬",
+    "verified": true,
+    "source": "https://kyuzitsu-inubu.com/hotel/search/?pref=1886"
+  },
+  {
+    "id": "oita-3888ff",
+    "name": "ゆふいん温泉 御宿一禅",
+    "area": "大分県 由布市",
+    "prefecture": "大分県",
+    "address": "大分県 由布市",
+    "category": "ペット可宿・ホテル",
+    "description": "由布岳を眺めながら愛犬とゆったり過ごせる「ゆふいん温泉 御宿一禅」。湯布院にあるペットと泊まれる宿です。中型犬まで宿泊することが可能で、最大3頭まで同伴可能です。露天風呂付きの離れで癒しの時間を...",
+    "tags": [
+      "温泉",
+      "大分県"
+    ],
+    "features": [
+      "ドッグランあり",
+      "多頭飼い可",
+      "猫同伴可",
+      "温泉あり"
+    ],
+    "price": "84,200円(税込)",
+    "dogSize": "中型犬, 小型犬",
+    "verified": true,
+    "source": "https://kyuzitsu-inubu.com/hotel/search/?pref=1886"
+  },
+  {
+    "id": "oita-d0a19f",
+    "name": "由布院温泉 蓮輪ＩＮＮ",
+    "area": "大分県 由布市",
+    "prefecture": "大分県",
+    "address": "大分県 由布市",
+    "category": "ペット可宿・ホテル",
+    "description": "4つの貸切温泉風呂があり、24時間楽しめます。ペット同伴の方は離れのお部屋となります。10kg以下の小型犬 2頭まで宿泊可能。",
+    "tags": [
+      "温泉",
+      "大分県"
+    ],
+    "features": [
+      "多頭飼い可",
+      "小動物同伴可",
+      "温泉あり"
+    ],
+    "price": "",
+    "dogSize": "小型犬",
+    "verified": true,
+    "source": "https://kyuzitsu-inubu.com/hotel/search/?pref=1886"
+  },
+  {
+    "id": "oita-6b07ef",
+    "name": "由布院温泉 湯富里の宿 一壷天",
+    "area": "大分県 由布市",
+    "prefecture": "大分県",
+    "address": "大分県 由布市",
+    "category": "ペット可宿・ホテル",
+    "description": "一つの小天地。別世界。また、酒を飲んで俗世界を忘れる楽しみ。壺中の天・・・ 湯富里の宿 一壺天。",
+    "tags": [
+      "温泉",
+      "大型犬OK",
+      "大分県"
+    ],
+    "features": [
+      "ドッグランあり",
+      "多頭飼い可",
+      "レストラン同伴可"
+    ],
+    "price": "121,200円(税込)",
+    "dogSize": "大型犬, 中型犬, 小型犬",
+    "verified": true,
+    "source": "https://kyuzitsu-inubu.com/hotel/search/?pref=1886"
+  },
+  {
+    "id": "oita-214a76",
+    "name": "貸別荘「柊」",
+    "area": "大分県 九重町",
+    "prefecture": "大分県",
+    "address": "大分県 九重町",
+    "category": "ペット可宿・ホテル",
+    "description": "ワンちゃんとの宿泊はログハウス「花水季」・「花梨」の2棟。すべての棟に専用の露天風呂があり、源泉かけ流し温泉を堪能できます。同伴ワンちゃん１頭分の料金は含まれますが、1頭追加につき別途2,200...",
+    "tags": [
+      "大分県"
+    ],
+    "features": [
+      "多頭飼い可",
+      "猫同伴可",
+      "小動物同伴可",
+      "温泉あり"
+    ],
+    "price": "27,500円(税込)",
+    "dogSize": "小型犬",
+    "verified": true,
+    "source": "https://kyuzitsu-inubu.com/hotel/search/?pref=1886"
+  },
+  {
+    "id": "oita-7ac8a0",
+    "name": "【湯布院温泉郷】グランピング九州 COMOREBI",
+    "area": "大分県 由布市",
+    "prefecture": "大分県",
+    "address": "大分県 由布市",
+    "category": "ペット可宿・ホテル",
+    "description": "湯布院と別府の中間にあるグランピング施設「グランピング九州 COMOREBI」。自然溢れるロケーションで愛犬と贅沢な時間を過ごすことができます。プランには、犬の管理栄養士が開発したドッグフードが...",
+    "tags": [
+      "温泉",
+      "大型犬OK",
+      "大分県"
+    ],
+    "features": [
+      "ドッグランあり",
+      "多頭飼い可"
+    ],
+    "price": "",
+    "dogSize": "大型犬, 中型犬, 小型犬",
+    "verified": true,
+    "source": "https://kyuzitsu-inubu.com/hotel/search/?pref=1886"
+  },
+  {
+    "id": "oita-dc2caf",
+    "name": "天空の大地 久住高原ホテル",
+    "area": "大分県 竹田市",
+    "prefecture": "大分県",
+    "address": "大分県 竹田市",
+    "category": "ペット可宿・ホテル",
+    "description": "ペットと泊まれる宿です。",
+    "tags": [
+      "大分県"
+    ],
+    "features": [
+      "多頭飼い可"
+    ],
+    "price": "25,000円(税込)",
+    "dogSize": "中型犬, 小型犬",
+    "verified": true,
+    "source": "https://kyuzitsu-inubu.com/hotel/search/?pref=1886"
+  },
+  {
+    "id": "oita-de1a93",
+    "name": "貸別荘 天ヶ瀬ウッディハウスG",
+    "area": "大分県 九重町",
+    "prefecture": "大分県",
+    "address": "大分県 九重町",
+    "category": "ペット可宿・ホテル",
+    "description": "ペットと泊まれる宿です。",
+    "tags": [
+      "大型犬OK",
+      "大分県"
+    ],
+    "features": [
+      "全室ペット可"
+    ],
+    "price": "22,600円(税込)",
+    "dogSize": "超大型犬, 大型犬, 中型犬, 小型犬",
+    "verified": true,
+    "source": "https://kyuzitsu-inubu.com/hotel/search/?pref=1886"
+  },
+  {
+    "id": "oita-8e96a1",
+    "name": "別府市営ドッグラン",
+    "area": "大分県 別府市",
+    "prefecture": "大分県",
+    "address": "大分県 別府市",
+    "category": "ドッグラン",
+    "description": "別府市が運営する、鉄輪地獄地帯公園内にある総敷地面積約2,900m2のドッグランです。  約1,140m2の大型犬エリア、約880m2の小型犬エリア、そして約740m2のフリーエリアに分かれてい...",
+    "tags": [
+      "ドッグラン",
+      "大型犬OK",
+      "大分県"
+    ],
+    "features": [
+      "足湯あり",
+      "無料"
+    ],
+    "price": "登録料無料 1頭1回 320円 1頭1年 4,760円 利用登録 必要 公式サイトで登録方法をご確認ください。 利用に必要なもの  利用登録申請書兼誓約書  申請者の身分証明書  印鑑  飼い犬の鑑札（写し可）  直近の飼い犬の予防注射済票（写し可）  飼い犬の写真2枚（縦3.0cm×横2.5cm 顔・姿が鮮明なもの）",
+    "dogSize": "大型犬, 中型犬, 小型犬",
+    "verified": true,
+    "source": "https://wankonowa.com/column/2769/"
+  },
+  {
+    "id": "oita-c7c15a",
+    "name": "森のドッグラン枝瑠風",
+    "area": "大分県 由布市",
+    "prefecture": "大分県",
+    "address": "大分県 由布市",
+    "category": "ドッグラン",
+    "description": "森のドッグラン枝瑠風は、2022年9月にオープンした「ワンちゃんが笑顔になるドッグラン」です。  森の中にあるドッグランで、600坪のドッグランは自然がいっぱい！四季折々の季節を感じながら大型犬...",
+    "tags": [
+      "ドッグラン",
+      "大型犬OK",
+      "大分県"
+    ],
+    "features": [
+      "カフェ併設"
+    ],
+    "price": "1頭 500円 高校生以上1人 500円 利用登録 必要 公式サイトで登録方法をご確認ください。 利用に必要なもの  免許証  狂犬病予防注射証明書  3種以上の混合ワクチン接種証明書",
+    "dogSize": "大型犬, 中型犬, 小型犬",
+    "verified": true,
+    "source": "https://wankonowa.com/column/2769/"
+  },
+  {
+    "id": "oita-e68c89",
+    "name": "別府湾SAドッグラン（下り）",
+    "area": "大分県 別府市",
+    "prefecture": "大分県",
+    "address": "大分県 別府市",
+    "category": "ドッグラン",
+    "description": "別府湾SA（下り）にある無料のドッグランです。ドライブで疲れた愛犬をリフレッシュさせてあげることができます。  別府湾SAは由布院温泉山荘無量塔がプロデュースしていて、別府湾を臨む眺望は一見の価...",
+    "tags": [
+      "ドッグラン",
+      "大分県"
+    ],
+    "features": [
+      "無料"
+    ],
+    "price": "無料 利用登録 不要 公式サイトのドッグラン使用時の規約をお読みいただき、問題ないことをご確認のうえお出かけください。 利用に必要なもの ー",
+    "dogSize": "全犬種対応",
+    "verified": true,
+    "source": "https://wankonowa.com/column/2769/"
+  },
+  {
+    "id": "oita-698504",
+    "name": "みどりのドッグラン",
+    "area": "大分県 大分市",
+    "prefecture": "大分県",
+    "address": "大分県 大分市",
+    "category": "ドッグラン",
+    "description": "みどりのドッグランは、おおいた動物愛護センター内にあるドッグランです。  1時間300円とリーズナブルな価格でドッグランを使用することができ、貸切利用も可能です。ドッグランの登録は電子登録証にな...",
+    "tags": [
+      "ドッグラン",
+      "大分県"
+    ],
+    "features": [
+      "貸切可能"
+    ],
+    "price": "■ 共有ゾーン 300円（1頭・1時間あたり） ■ 専用利用（貸切）ゾーン 1,000円（5頭まで・1時間あたり） 利用登録 必要 公式サイトで登録方法をご確認ください。 利用に必要なもの  飼い犬登録及び狂犬病の予防注射（1年以内）を受けていること  鑑札及び狂犬病予防注射済票を必ず装着すること",
+    "dogSize": "全犬種対応",
+    "verified": true,
+    "source": "https://wankonowa.com/column/2769/"
+  },
+  {
+    "id": "oita-c8af19",
+    "name": "丸塚広場ドッグラン",
+    "area": "大分県 大分市",
+    "prefecture": "大分県",
+    "address": "大分県 大分市",
+    "category": "ドッグラン",
+    "description": "丸塚広場ドッグランは、県民の森にある無料のドッグランです。大自然あふれる広大なドッグランで、ワンコも思う存分走り回って遊べます。ワンコは一人に対して2頭まで同伴OK！リードを離せるのは1頭までと...",
+    "tags": [
+      "ドッグラン",
+      "大型犬OK",
+      "大分県"
+    ],
+    "features": [
+      "無料"
+    ],
+    "price": "無料 利用登録 必要 公式サイトで登録方法をご確認ください。 利用に必要なもの 1年以内の狂犬病・混合ワクチンの証明書",
+    "dogSize": "大型犬, 中型犬, 小型犬",
+    "verified": true,
+    "source": "https://wankonowa.com/column/2769/"
+  },
+  {
+    "id": "oita-4f5826",
+    "name": "ドッグサロン・コルン",
+    "area": "大分県 大分市",
+    "prefecture": "大分県",
+    "address": "大分県 大分市",
+    "category": "ドッグラン",
+    "description": "ドッグサロン・コルンはドッグラン併設のトリミングサロンです。当日トリミングをしたワンコは無料でドッグランを利用可能で、ドッグランのみの場合は犬種など関係なくワンコインで遊ばせてあげることができま...",
+    "tags": [
+      "ドッグラン",
+      "大分県"
+    ],
+    "features": [
+      "カフェ併設",
+      "室内ドッグランあり"
+    ],
+    "price": "500円 利用登録 不要 公式サイトのドッグラン使用時の規約をお読みいただき、問題ないことをご確認のうえお出かけください。 利用に必要なもの 狂犬病、ワクチン接種証明書",
+    "dogSize": "小型犬",
+    "verified": true,
+    "source": "https://wankonowa.com/column/2769/"
+  },
+  {
+    "id": "miyazaki-953b63",
+    "name": "ドッグラン＆カフェ ICOI",
+    "area": "宮崎県宮崎市大字本郷北方",
+    "prefecture": "宮崎県",
+    "address": "宮崎県宮崎市大字本郷北方",
+    "category": "ドッグラン、カフェ",
+    "description": "カフェ併設のドッグラン。室内ドッグランもあり、雨の日でも利用可能。",
+    "tags": [
+      "ドッグラン",
+      "カフェ",
+      "宮崎県"
+    ],
+    "features": [
+      "室内ドッグランあり",
+      "カフェ併設"
+    ],
+    "price": "有料",
+    "dogSize": "全犬種対応",
+    "verified": true,
+    "source": "https://icoi-201805.com/"
+  },
+  {
+    "id": "miyazaki-64b3cc",
+    "name": "ドッグラン ぶぶんち",
+    "area": "宮崎県宮崎市田野町乙",
+    "prefecture": "宮崎県",
+    "address": "宮崎県宮崎市田野町乙",
+    "category": "ドッグラン",
+    "description": "自然豊かな環境にあるドッグラン。",
+    "tags": [
+      "ドッグラン",
+      "宮崎県"
+    ],
+    "features": [],
+    "price": "有料",
+    "dogSize": "全犬種対応",
+    "verified": true,
+    "source": "https://bubunchi.com/"
+  },
+  {
+    "id": "miyazaki-f430d2",
+    "name": "The TERRACE",
+    "area": "宮崎県宮崎市",
+    "prefecture": "宮崎県",
+    "address": "宮崎県宮崎市",
+    "category": "カフェ・レストラン",
+    "description": "テラス席でペット同伴可能なカフェ。",
+    "tags": [
+      "カフェ",
+      "宮崎県"
+    ],
+    "features": [
+      "テラス席ペット可"
+    ],
+    "price": "メニューによる",
+    "dogSize": "要確認",
+    "verified": true,
+    "source": "https://odekake-wanko-bu.com/spot/the_terrace_miyazaki/"
+  },
+  {
+    "id": "miyazaki-94b884",
+    "name": "CHOU PORTE",
+    "area": "宮崎県宮崎市",
+    "prefecture": "宮崎県",
+    "address": "宮崎県宮崎市",
+    "category": "ペットサロン、ドッグラン",
+    "description": "トリミングサロン併設のドッグラン。",
+    "tags": [
+      "ドッグラン",
+      "宮崎県"
+    ],
+    "features": [
+      "トリミングサロン併設"
+    ],
+    "price": "有料",
+    "dogSize": "全犬種対応",
+    "verified": true,
+    "source": "https://chou-porte.com/"
+  },
+  {
+    "id": "miyazaki-fd553b",
+    "name": "CANVAS COFFEE KUCHIKI",
+    "area": "宮崎県宮崎市",
+    "prefecture": "宮崎県",
+    "address": "宮崎県宮崎市",
+    "category": "カフェ・レストラン",
+    "description": "ペット同伴可能なカフェ。",
+    "tags": [
+      "カフェ",
+      "宮崎県"
+    ],
+    "features": [],
+    "price": "メニューによる",
+    "dogSize": "要確認",
+    "verified": true,
+    "source": "https://www.umk.co.jp/mone/gourmet/14010/"
+  },
+  {
+    "id": "miyazaki-843669",
+    "name": "Green Tea Fields",
+    "area": "宮崎県宮崎市",
+    "prefecture": "宮崎県",
+    "address": "宮崎県宮崎市",
+    "category": "カフェ・レストラン",
+    "description": "ペット同伴可能なカフェ。",
+    "tags": [
+      "カフェ",
+      "宮崎県"
+    ],
+    "features": [],
+    "price": "メニューによる",
+    "dogSize": "要確認",
+    "verified": true,
+    "source": "https://odekake-wanko-bu.com/spot/guri-nti-fi-ruzu/"
+  },
+  {
+    "id": "miyazaki-8ee3d3",
+    "name": "cafe COCKAPOO",
+    "area": "宮崎県都城市",
+    "prefecture": "宮崎県",
+    "address": "宮崎県都城市",
+    "category": "カフェ・レストラン",
+    "description": "ペット同伴可能なカフェ。",
+    "tags": [
+      "カフェ",
+      "宮崎県"
+    ],
+    "features": [],
+    "price": "メニューによる",
+    "dogSize": "要確認",
+    "verified": true,
+    "source": "https://dognavi.com/review/cafe-cockapoo"
+  },
+  {
+    "id": "miyazaki-f3f446",
+    "name": "cafe chocora",
+    "area": "宮崎県都城市",
+    "prefecture": "宮崎県",
+    "address": "宮崎県都城市",
+    "category": "カフェ・レストラン",
+    "description": "人にもペットにも優しい居場所づくりをコンセプトにしたカフェ。霧島連山の麓、都城の大地で育まれた肉と野菜を使用したからだに優しいメニューを提供。店内でのペット同伴可能。",
+    "tags": [
+      "カフェ",
+      "宮崎県"
+    ],
+    "features": [
+      "店内ペット可",
+      "手作りわんご飯あり"
+    ],
+    "price": "メニューによる",
+    "dogSize": "全犬種対応",
+    "verified": true,
+    "source": "https://cafechocora.jimdofree.com/"
+  },
+  {
+    "id": "miyazaki-693c5c",
+    "name": "ウエストランド",
+    "area": "宮崎県延岡市三須町",
+    "prefecture": "宮崎県",
+    "address": "宮崎県延岡市三須町",
+    "category": "ドッグラン",
+    "description": "大瀬川沿いの開放的なレジャー施設内にある芝生のドッグラン。キャンプ場やショートゴルフ、バーベキュー場なども併設。",
+    "tags": [
+      "ドッグラン",
+      "宮崎県"
+    ],
+    "features": [
+      "屋外ドッグラン",
+      "キャンプ場併設",
+      "バーベキュー場併設"
+    ],
+    "price": "有料",
+    "dogSize": "要問い合わせ",
+    "verified": true,
+    "source": "https://odekake-wanko-bu.com/spot/uesutorando/"
+  },
+  {
+    "id": "miyazaki-a1077d",
+    "name": "SHIMOASO CAFE",
+    "area": "宮崎県延岡市北浦町古江",
+    "prefecture": "宮崎県",
+    "address": "宮崎県延岡市北浦町古江",
+    "category": "カフェ・レストラン、ドッグラン",
+    "description": "テラス席ペット同伴OKのカフェ。全席リードフック完備、ミニドッグラン併設。カフェ利用者はドッグラン無料。",
+    "tags": [
+      "ドッグラン",
+      "カフェ",
+      "宮崎県"
+    ],
+    "features": [
+      "テラス席ペット可",
+      "リードフック完備",
+      "ミニドッグラン併設",
+      "カフェ利用でドッグラン無料"
+    ],
+    "price": "メニューによる",
+    "dogSize": "全犬種対応 (狂犬病・混合ワクチン接種済、発情期でないメス犬、攻撃的でない犬)",
+    "verified": true,
+    "source": "https://shimoaso-cafe.com/dog/"
+  },
+  {
+    "id": "miyazaki-ad1f5b",
+    "name": "Dog Cafe+Run TATSUISHI",
+    "area": "宮崎県日南市風田",
+    "prefecture": "宮崎県",
+    "address": "宮崎県日南市風田",
+    "category": "ドッグラン、カフェ",
+    "description": "海の見えるドッグランとカフェ。",
+    "tags": [
+      "ドッグラン",
+      "カフェ",
+      "宮崎県"
+    ],
+    "features": [
+      "海の見えるドッグラン",
+      "カフェ併設"
+    ],
+    "price": "有料",
+    "dogSize": "要確認",
+    "verified": true,
+    "source": "https://www.umk.co.jp/tenpo/6535dc1772a65c3be8e33d2c95a2f2e32693215c.html"
+  },
+  {
+    "id": "miyazaki-ce3bb0",
+    "name": "宮﨑県日南市梅ヶ浜",
+    "area": "宮崎県日南市梅ケ浜",
+    "prefecture": "宮崎県",
+    "address": "宮崎県日南市梅ケ浜",
+    "category": "公園・自然スポット",
+    "description": "静かで穏やかな海岸。青い海と白い砂浜が広がる美しいビーチで、ペットとのお散歩に最適。",
+    "tags": [
+      "公園",
+      "宮崎県"
+    ],
+    "features": [
+      "無料",
+      "美しいビーチ",
+      "散歩コース"
+    ],
+    "price": "無料",
+    "dogSize": "全犬種対応",
+    "verified": true,
+    "source": "https://odekake-wanko-bu.com/spot/miyazakikennichinanshiumegahama/"
+  },
+  {
+    "id": "miyazaki-995c6c",
+    "name": "ゲストハウスぶどうの樹",
+    "area": "宮崎県西臼杵郡高千穂町三田井",
+    "prefecture": "宮崎県",
+    "address": "宮崎県西臼杵郡高千穂町三田井",
+    "category": "ペット可宿・ホテル",
+    "description": "1日1組限定1フロア貸し切りのゲストハウス。広々としたバルコニー、リビング、寝室、自由ルーム、トイレ、お風呂付き。ファミリーやグループ、ワンちゃん連れにおすすめ。",
+    "tags": [
+      "宮崎県"
+    ],
+    "features": [
+      "1日1組限定",
+      "1フロア貸し切り",
+      "バルコニーあり"
+    ],
+    "price": "素泊まり 2名利用時：19,800円/1名",
+    "dogSize": "全犬種対応",
+    "verified": true,
+    "source": "https://takachiho-kanko.info/stay/4/"
+  },
+  {
+    "id": "miyazaki-d6dee3",
+    "name": "ニッチードッグラン",
+    "area": "宮崎県えびの市榎田",
+    "prefecture": "宮崎県",
+    "address": "宮崎県えびの市榎田",
+    "category": "ドッグラン",
+    "description": "高等学校の敷地内にある広大な自然に囲まれた無料ドッグラン。",
+    "tags": [
+      "ドッグラン",
+      "宮崎県"
+    ],
+    "features": [
+      "無料",
+      "屋外ドッグラン"
+    ],
+    "price": "無料",
+    "dogSize": "全犬種対応",
+    "verified": true,
+    "source": "https://odekake-wanko-bu.com/spot/nicchi-dogguran/"
+  },
+  {
+    "id": "kagoshima-82d02d",
+    "name": "みなと大通り公園",
+    "area": "鹿児島県鹿児島市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県鹿児島市",
+    "category": "公園",
+    "description": "緑豊かな都会のオアシス空間。入場無料。",
+    "tags": [
+      "公園",
+      "鹿児島県"
+    ],
+    "features": [
+      "入場無料"
+    ],
+    "price": "無料",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://www.walkerplus.com/spot_list/ar1046201/kagoshima/ss1007/"
+  },
+  {
+    "id": "kagoshima-3aae5e",
+    "name": "グリーンファーム 鹿児島市観光農業公園",
+    "area": "鹿児島県鹿児島市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県鹿児島市",
+    "category": "観光農園",
+    "description": "収穫だけじゃない、調理や自然体験など多彩な体験ができる施設。入場無料、駐車場あり。",
+    "tags": [
+      "公園",
+      "鹿児島県"
+    ],
+    "features": [
+      "入場無料",
+      "駐車場あり",
+      "授乳室あり",
+      "おむつ交換台あり",
+      "ベビーカーあり",
+      "葉物野菜、ジャガイモ、サツマイモ、ピーマン、ナス、トマトなど季節の野菜の収穫体験"
+    ],
+    "price": "無料（収穫体験は別途料金）",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://www.walkerplus.com/spot_list/ar1046201/kagoshima/ss1007/"
+  },
+  {
+    "id": "kagoshima-037a23",
+    "name": "慈眼寺公園",
+    "area": "鹿児島県鹿児島市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県鹿児島市",
+    "category": "公園",
+    "description": "風光明媚な公園を散策。入場無料、駐車場あり。",
+    "tags": [
+      "公園",
+      "鹿児島県"
+    ],
+    "features": [
+      "入場無料",
+      "駐車場あり"
+    ],
+    "price": "無料",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://www.walkerplus.com/spot_list/ar1046201/kagoshima/ss1007/"
+  },
+  {
+    "id": "kagoshima-a338d9",
+    "name": "桜島溶岩なぎさ公園",
+    "area": "鹿児島県鹿児島市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県鹿児島市",
+    "category": "公園",
+    "description": "日本最大級の足湯が楽しめる。入場無料、駐車場あり。",
+    "tags": [
+      "公園",
+      "鹿児島県"
+    ],
+    "features": [
+      "入場無料",
+      "駐車場あり",
+      "足湯"
+    ],
+    "price": "無料",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://www.walkerplus.com/spot_list/ar1046201/kagoshima/ss1007/"
+  },
+  {
+    "id": "kagoshima-becd10",
+    "name": "吉原果樹園",
+    "area": "鹿児島県鹿児島市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県鹿児島市",
+    "category": "観光農園",
+    "description": "桜島を望む絶好のロケーションで味覚狩り。",
+    "tags": [
+      "鹿児島県"
+    ],
+    "features": [
+      "味覚狩り"
+    ],
+    "price": "記載なし",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://www.walkerplus.com/spot_list/ar1046201/kagoshima/ss1007/"
+  },
+  {
+    "id": "kagoshima-083a37",
+    "name": "道の駅 喜入",
+    "area": "鹿児島県鹿児島市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県鹿児島市",
+    "category": "道の駅",
+    "description": "全長53メートルのウォータースライダーを設置。",
+    "tags": [
+      "鹿児島県"
+    ],
+    "features": [
+      "ウォータースライダー"
+    ],
+    "price": "記載なし",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://www.walkerplus.com/spot_list/ar1046201/kagoshima/ss1007/"
+  },
+  {
+    "id": "kagoshima-19a991",
+    "name": "桜島自然恐竜公園",
+    "area": "鹿児島県鹿児島市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県鹿児島市",
+    "category": "公園",
+    "description": "恐竜や動物の遊具が充実。",
+    "tags": [
+      "公園",
+      "鹿児島県"
+    ],
+    "features": [
+      "恐竜や動物の遊具"
+    ],
+    "price": "記載なし",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://www.walkerplus.com/spot_list/ar1046201/kagoshima/ss1007/"
+  },
+  {
+    "id": "kagoshima-139748",
+    "name": "ハッピーポイント",
+    "area": "鹿児島県鹿児島市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県鹿児島市",
+    "category": "ペット可カフェ・レストラン",
+    "description": "桜島まで一望できるオーシャンビューのテラス席にリードフック設置。",
+    "tags": [
+      "カフェ",
+      "鹿児島県"
+    ],
+    "features": [
+      "テラス席ペット同伴可",
+      "リードフックあり",
+      "オーシャンビュー"
+    ],
+    "price": "記載なし",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://www.kagoshima-kankou.com/feature/pettourism"
+  },
+  {
+    "id": "kagoshima-ad2220",
+    "name": "平川マリーナマルシェ",
+    "area": "鹿児島県鹿児島市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県鹿児島市",
+    "category": "ペット可カフェ・レストラン",
+    "description": "海の見えるファストフードカフェ。広いテラス席はリードフックもありペット連れ大歓迎。",
+    "tags": [
+      "カフェ",
+      "鹿児島県"
+    ],
+    "features": [
+      "テラス席ペット同伴可",
+      "リードフックあり"
+    ],
+    "price": "記載なし",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://www.kagoshima-kankou.com/feature/pettourism"
+  },
+  {
+    "id": "kagoshima-1b3f32",
+    "name": "Black Smith",
+    "area": "鹿児島県鹿児島市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県鹿児島市",
+    "category": "ペット可カフェ・レストラン",
+    "description": "加治屋まちの杜公園内にある公園一体型レストランカフェ。テラス席は愛犬同伴OK。",
+    "tags": [
+      "カフェ",
+      "鹿児島県"
+    ],
+    "features": [
+      "テラス席ペット同伴可"
+    ],
+    "price": "記載なし",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://www.kagoshima-kankou.com/feature/pettourism"
+  },
+  {
+    "id": "kagoshima-339807",
+    "name": "風の丘のフィオレンティーナ",
+    "area": "鹿児島県鹿児島市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県鹿児島市",
+    "category": "ペット可カフェ・レストラン",
+    "description": "桜島を眺めながら絶品料理を楽しめるカフェ。テラス席はペット同伴OK。",
+    "tags": [
+      "カフェ",
+      "鹿児島県"
+    ],
+    "features": [
+      "テラス席ペット同伴可"
+    ],
+    "price": "記載なし",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://www.kagoshima-kankou.com/feature/pettourism"
+  },
+  {
+    "id": "kagoshima-9986c5",
+    "name": "くじらcafé",
+    "area": "鹿児島県鹿児島市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県鹿児島市",
+    "category": "ペット可カフェ・レストラン",
+    "description": "Dog friendlyなチーズスイーツカフェ。看板犬のあられ店長も時々出勤。",
+    "tags": [
+      "カフェ",
+      "鹿児島県"
+    ],
+    "features": [
+      "店内ペット同伴可"
+    ],
+    "price": "記載なし",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://www.kagoshima-kankou.com/feature/pettourism"
+  },
+  {
+    "id": "kagoshima-098a60",
+    "name": "Ora Cafe Salon 鹿児島",
+    "area": "鹿児島県鹿児島市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県鹿児島市",
+    "category": "ペット可カフェ・レストラン",
+    "description": "照国神社近くの半地下カフェ。奄美の自然をイメージした店内やテラス席は愛犬同伴OK！わんこ用フードメニューや無添加フリーズドライも販売。",
+    "tags": [
+      "カフェ",
+      "鹿児島県"
+    ],
+    "features": [
+      "店内ペット同伴可",
+      "テラス席ペット同伴可",
+      "犬用フードメニューあり"
+    ],
+    "price": "記載なし",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://www.kagoshima-kankou.com/feature/pettourism"
+  },
+  {
+    "id": "kagoshima-bf2368",
+    "name": "桜島サービスエリア (上り)",
+    "area": "鹿児島県姶良市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県姶良市",
+    "category": "ドッグラン",
+    "description": "九州最南端のサービスエリアにミニドッグランを設置。約60㎡の広さで全面芝生敷き、中・小型犬専用。",
+    "tags": [
+      "ドッグラン",
+      "鹿児島県"
+    ],
+    "features": [
+      "中・小型犬専用",
+      "芝生",
+      "ペット専用ゴミ箱",
+      "水飲み場"
+    ],
+    "price": "無料",
+    "dogSize": "中・小型犬",
+    "verified": true,
+    "source": "https://www.kagoshima-kankou.com/course/pet01"
+  },
+  {
+    "id": "kagoshima-33acbe",
+    "name": "有村溶岩展望所",
+    "area": "鹿児島県鹿児島市有村町",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県鹿児島市有村町",
+    "category": "公園・自然スポット",
+    "description": "桜島の噴火で流出した溶岩原の丘にある展望所。桜島を一望でき、遊歩道も整備されている。",
+    "tags": [
+      "公園",
+      "鹿児島県"
+    ],
+    "features": [
+      "入場無料",
+      "駐車場無料",
+      "遊歩道あり"
+    ],
+    "price": "無料",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3554/"
+  },
+  {
+    "id": "kagoshima-1737b6",
+    "name": "鹿児島県立吉野公園",
+    "area": "鹿児島県鹿児島市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県鹿児島市",
+    "category": "公園・自然スポット",
+    "description": "広い公園で、お子さま・愛犬と園内散策を楽しめる。駐車場も広くて無料。",
+    "tags": [
+      "公園",
+      "鹿児島県"
+    ],
+    "features": [
+      "入場無料",
+      "駐車場無料"
+    ],
+    "price": "無料",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3554/"
+  },
+  {
+    "id": "kagoshima-220758",
+    "name": "ラビスタ霧島ヒルズ",
+    "area": "鹿児島県霧島市牧園町高千穂",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県霧島市牧園町高千穂",
+    "category": "ペット可宿・ホテル",
+    "description": "愛犬専用のエントランスやロビーを備えた客室を併設。トイレ・食器・ケージなど基本的な設備・アメニティ、ショップ、ドッグラン完備。",
+    "tags": [
+      "鹿児島県"
+    ],
+    "features": [
+      "愛犬同伴可客室",
+      "ドッグラン併設",
+      "愛犬用アメニティ充実"
+    ],
+    "price": "記載なし",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://www.kagoshima-kankou.com/feature/pettourism"
+  },
+  {
+    "id": "kagoshima-3a5d27",
+    "name": "D+KIRISHIMA",
+    "area": "鹿児島県霧島市牧園町高千穂",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県霧島市牧園町高千穂",
+    "category": "ペット可宿・ホテル",
+    "description": "愛犬用の温泉露天風呂、会席料理を用意。専用ドッグラン完備。愛玩動物飼養管理士の資格を持ったスタッフ在籍。",
+    "tags": [
+      "鹿児島県"
+    ],
+    "features": [
+      "愛犬用露天風呂",
+      "愛犬用会席料理",
+      "ドッグラン併設",
+      "愛玩動物飼養管理士在籍"
+    ],
+    "price": "記載なし",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://www.kagoshima-kankou.com/feature/pettourism"
+  },
+  {
+    "id": "kagoshima-e6ac93",
+    "name": "美肌の湯 こしかの温泉",
+    "area": "鹿児島県霧島市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県霧島市",
+    "category": "ペット可宿・ホテル",
+    "description": "源泉かけ流しの露天風呂のグランピング。宿泊者無料のドッグランあり。",
+    "tags": [
+      "温泉",
+      "鹿児島県"
+    ],
+    "features": [
+      "グランピング",
+      "源泉かけ流し露天風呂",
+      "ドッグラン併設（宿泊者無料）"
+    ],
+    "price": "記載なし",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://www.kagoshima-kankou.com/feature/pettourism"
+  },
+  {
+    "id": "kagoshima-774ed1",
+    "name": "mijicafe",
+    "area": "鹿児島県霧島市隼人町真孝",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県霧島市隼人町真孝",
+    "category": "ペット可カフェ・レストラン",
+    "description": "ペットに優しい人気カフェ。店内にはペット用のリードフック、テラス席には小スペースのドッグランも完備。ペットシーツやマナーパンツ等のケアグッズ、犬や猫のおやつやグッズも販売。",
+    "tags": [
+      "カフェ",
+      "鹿児島県"
+    ],
+    "features": [
+      "店内ペット同伴可",
+      "テラス席ペット同伴可",
+      "小スペースドッグラン併設",
+      "ペット用ケアグッズ販売",
+      "犬猫用おやつ販売"
+    ],
+    "price": "記載なし",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://www.kagoshima-kankou.com/feature/pettourism"
+  },
+  {
+    "id": "kagoshima-2e3e91",
+    "name": "ベーカリー&カフェ ReeNo",
+    "area": "鹿児島県霧島市国分中央",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県霧島市国分中央",
+    "category": "ペット可カフェ・レストラン",
+    "description": "焼きたてパンを楽しめるベーカリーカフェ。テラス席3テーブルは愛犬の同伴もOK。リードフックあり。",
+    "tags": [
+      "カフェ",
+      "鹿児島県"
+    ],
+    "features": [
+      "テラス席ペット同伴可",
+      "リードフックあり"
+    ],
+    "price": "記載なし",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://www.kagoshima-kankou.com/feature/pettourism"
+  },
+  {
+    "id": "kagoshima-f186d5",
+    "name": "Camp&Cafe ワンだふるガーデン",
+    "area": "鹿児島県霧島市溝辺町崎森",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県霧島市溝辺町崎森",
+    "category": "ドッグラン、ペット可カフェ・レストラン",
+    "description": "小型犬・中型犬向けのドッグランカフェ。店内・テラス席ともに犬連れで利用でき、ドッグラン内にはアジリティも設置。",
+    "tags": [
+      "ドッグラン",
+      "カフェ",
+      "鹿児島県"
+    ],
+    "features": [
+      "小型犬・中型犬向け",
+      "店内ペット同伴可",
+      "テラス席ペット同伴可",
+      "ドッグラン併設",
+      "アジリティあり"
+    ],
+    "price": "記載なし",
+    "dogSize": "小型犬・中型犬",
+    "verified": true,
+    "source": "https://petokoto.com/articles/1898"
+  },
+  {
+    "id": "kagoshima-39dc62",
+    "name": "マテリア",
+    "area": "鹿児島県霧島市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県霧島市",
+    "category": "ペット可カフェ・レストラン",
+    "description": "霧島神宮入口近く。地元野菜・黒豚・伊佐米など厳選食材を使用。テラス席愛犬同伴OK。",
+    "tags": [
+      "カフェ",
+      "鹿児島県"
+    ],
+    "features": [
+      "テラス席ペット同伴可",
+      "地元食材"
+    ],
+    "price": "記載なし",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3554/"
+  },
+  {
+    "id": "kagoshima-897919",
+    "name": "丸岡公園",
+    "area": "鹿児島県霧島市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県霧島市",
+    "category": "公園・自然スポット",
+    "description": "記載なし",
+    "tags": [
+      "公園",
+      "鹿児島県"
+    ],
+    "features": [],
+    "price": "記載なし",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://iko-yo.net/facilities?prefecture_ids%5B%5D=46&tags%5B%5D=%E3%83%9A%E3%83%83%E3%83%88%E9%80%A3%E3%82%8COK"
+  },
+  {
+    "id": "kagoshima-ca2ed5",
+    "name": "霧島神話の里公園",
+    "area": "鹿児島県霧島市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県霧島市",
+    "category": "公園・自然スポット",
+    "description": "道の駅と公園が一体となった施設。リフト、スーパースライダー、パターゴルフ場、遊具のある広場、ウサギ小屋などがあり、霧島の雄大な山々と錦江湾と桜島を眺められる。",
+    "tags": [
+      "公園",
+      "鹿児島県"
+    ],
+    "features": [
+      "道の駅併設",
+      "リフト",
+      "スーパースライダー",
+      "パターゴルフ",
+      "遊具",
+      "ウサギ小屋"
+    ],
+    "price": "記載なし",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3554/"
+  },
+  {
+    "id": "kagoshima-6ae00a",
+    "name": "いやされの宿 田舎や",
+    "area": "鹿児島県指宿市山川",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県指宿市山川",
+    "category": "ペット可宿・ホテル",
+    "description": "オーナー自身が愛犬家で自然豊かなお宿。",
+    "tags": [
+      "鹿児島県"
+    ],
+    "features": [
+      "愛犬家オーナー",
+      "自然豊か"
+    ],
+    "price": "記載なし",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://www.kagoshima-kankou.com/feature/pettourism"
+  },
+  {
+    "id": "kagoshima-0b779c",
+    "name": "Mother (マザー)",
+    "area": "鹿児島県指宿市東方",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県指宿市東方",
+    "category": "ペット可カフェ・レストラン、ドッグラン",
+    "description": "石窯ピザとドライフルーツが楽しめる古民家カフェ。テラス席はペット可。ドッグランも完備。",
+    "tags": [
+      "ドッグラン",
+      "カフェ",
+      "鹿児島県"
+    ],
+    "features": [
+      "テラス席ペット同伴可",
+      "ドッグラン併設",
+      "石窯ピザ",
+      "ドライフルーツ"
+    ],
+    "price": "記載なし",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://www.kagoshima-kankou.com/feature/pettourism"
+  },
+  {
+    "id": "kagoshima-8c773e",
+    "name": "TENTEN CAMPFIELD",
+    "area": "鹿児島県薩摩川内市樋脇町",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県薩摩川内市樋脇町",
+    "category": "犬連れOKのアウトドアスポット",
+    "description": "丸山公園にあるキャンプ場。エリア毎に柵を設置しており、ペット同伴が可能。",
+    "tags": [
+      "鹿児島県"
+    ],
+    "features": [
+      "ペット同伴可",
+      "柵付きエリア"
+    ],
+    "price": "記載なし",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://www.tenten-campfield.com/"
+  },
+  {
+    "id": "kagoshima-8c308f",
+    "name": "ケンジーの森",
+    "area": "鹿児島県薩摩川内市入来町浦之名",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県薩摩川内市入来町浦之名",
+    "category": "ドッグラン、犬連れOKのアウトドアスポット、ペット可カフェ・レストラン",
+    "description": "予約不要のドッグラン、愛犬と泊まれるキャンプ場、カフェを併設。山の地形を生かした岩場や坂道、広い芝生で遊べる。",
+    "tags": [
+      "ドッグラン",
+      "カフェ",
+      "鹿児島県"
+    ],
+    "features": [
+      "ドッグラン併設",
+      "キャンプ場併設",
+      "カフェ併設",
+      "予約不要ドッグラン",
+      "芝生"
+    ],
+    "price": "ドッグラン：時間無制限1匹500円",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://kenjii-no-mori.com/"
+  },
+  {
+    "id": "kagoshima-f966e5",
+    "name": "みしょらんCAFE",
+    "area": "鹿児島県奄美市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県奄美市",
+    "category": "ペット可カフェ・レストラン",
+    "description": "空港から7分。星空のクリームソーダと塩豚バーガーが看板メニュー。テラス席は4席ほどあり、海も見えてワンコと気持ち良くカフェができる。",
+    "tags": [
+      "カフェ",
+      "鹿児島県"
+    ],
+    "features": [
+      "テラス席ペット同伴可",
+      "海が見える"
+    ],
+    "price": "記載なし",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://traveldog.jp/wanwanmap/amami/"
+  },
+  {
+    "id": "kagoshima-b3dc87",
+    "name": "あやまる岬観光公園",
+    "area": "鹿児島県奄美市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県奄美市",
+    "category": "公園・自然スポット",
+    "description": "海の中にコンクリートの道が見える。海水プール、滑り台やアスレチック的な遊具、乗り物や芝スキーなどがあり、子供も楽しめる。",
+    "tags": [
+      "公園",
+      "鹿児島県"
+    ],
+    "features": [
+      "海水プール",
+      "遊具",
+      "芝スキー"
+    ],
+    "price": "記載なし",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://traveldog.jp/wanwanmap/amami/"
+  },
+  {
+    "id": "kagoshima-ee5db0",
+    "name": "カメG Amami 島ダコ",
+    "area": "鹿児島県奄美市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県奄美市",
+    "category": "ペット可カフェ・レストラン",
+    "description": "空港に近いエリアにあるたこ焼きのお店。テラス席があるのでワンコ連れにも利用しやすい。",
+    "tags": [
+      "カフェ",
+      "鹿児島県"
+    ],
+    "features": [
+      "テラス席ペット同伴可"
+    ],
+    "price": "記載なし",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://traveldog.jp/wanwanmap/amami/"
+  },
+  {
+    "id": "kagoshima-fc1e5b",
+    "name": "打田原ビーチ",
+    "area": "鹿児島県奄美市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県奄美市",
+    "category": "公園・自然スポット",
+    "description": "日本海側に突き出た半島の先にあるビーチ。海も砂浜も綺麗。トイレ、シャワー完備。",
+    "tags": [
+      "公園",
+      "ビーチ",
+      "鹿児島県"
+    ],
+    "features": [
+      "美しいビーチ",
+      "トイレあり",
+      "シャワーあり"
+    ],
+    "price": "無料",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://traveldog.jp/wanwanmap/amami/"
+  },
+  {
+    "id": "kagoshima-3a7fcf",
+    "name": "ハートロック",
+    "area": "鹿児島県奄美市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県奄美市",
+    "category": "公園・自然スポット",
+    "description": "奄美大島の観光スポット。ジャングルっぽい小道を進むと海岸に出る。潮位80cm以下の干潮時、前後1時間で波が穏やかな時がきれいなハートの見頃。",
+    "tags": [
+      "公園",
+      "鹿児島県"
+    ],
+    "features": [
+      "自然景観",
+      "干潮時がおすすめ"
+    ],
+    "price": "無料",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://traveldog.jp/wanwanmap/amami/"
+  },
+  {
+    "id": "kagoshima-8a7598",
+    "name": "La Fonte",
+    "area": "鹿児島県奄美市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県奄美市",
+    "category": "ペット可カフェ・レストラン",
+    "description": "ハートロックの近くにある人気のジェラート屋さん。テラス席ペットOK。パッションフルーツや真塩、奄美黒糖など奄美っぽいジェラートが楽しめる。",
+    "tags": [
+      "カフェ",
+      "鹿児島県"
+    ],
+    "features": [
+      "テラス席ペット同伴可",
+      "ジェラート"
+    ],
+    "price": "記載なし",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://traveldog.jp/wanwanmap/amami/"
+  },
+  {
+    "id": "kagoshima-b8176b",
+    "name": "AMAネシア",
+    "area": "鹿児島県奄美市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県奄美市",
+    "category": "ペット可カフェ・レストラン",
+    "description": "テラス席3席とBBQエリア3席があり、テラス席ペットOK。鶏飯、刺身料理、豚角煮丼、奄美黒マグロ丼など奄美料理が楽しめる。",
+    "tags": [
+      "カフェ",
+      "鹿児島県"
+    ],
+    "features": [
+      "テラス席ペット同伴可",
+      "BBQエリアあり",
+      "奄美料理"
+    ],
+    "price": "記載なし",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://traveldog.jp/wanwanmap/amami/"
+  },
+  {
+    "id": "kagoshima-78b131",
+    "name": "奄美きょら海工房",
+    "area": "鹿児島県奄美市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県奄美市",
+    "category": "ペット可カフェ・レストラン",
+    "description": "AMAネシアと同じ道沿いにある人気のレストラン。テラス席ペットOK。ピザ、パスタなどご当地感のあるメニューが豊富。",
+    "tags": [
+      "カフェ",
+      "ビーチ",
+      "鹿児島県"
+    ],
+    "features": [
+      "テラス席ペット同伴可",
+      "ご当地メニュー"
+    ],
+    "price": "記載なし",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://traveldog.jp/wanwanmap/amami/"
+  },
+  {
+    "id": "kagoshima-b48188",
+    "name": "マダモ自生地",
+    "area": "鹿児島県奄美市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県奄美市",
+    "category": "公園・自然スポット",
+    "description": "ジャックと豆の木のモデルになっている世界最大の豆「マダモ」が見れるスポット。",
+    "tags": [
+      "公園",
+      "鹿児島県"
+    ],
+    "features": [
+      "自然景観",
+      "世界最大の豆"
+    ],
+    "price": "無料",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://traveldog.jp/wanwanmap/amami/"
+  },
+  {
+    "id": "kagoshima-b356e9",
+    "name": "ホノホシ海岸",
+    "area": "鹿児島県奄美市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県奄美市",
+    "category": "公園・自然スポット",
+    "description": "丸い石が沢山あり、波打際でコロコロガラガラと不思議な音色が楽しめるスポット。",
+    "tags": [
+      "公園",
+      "ビーチ",
+      "鹿児島県"
+    ],
+    "features": [
+      "丸い石",
+      "不思議な音色"
+    ],
+    "price": "無料",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://traveldog.jp/wanwanmap/amami/"
+  },
+  {
+    "id": "kagoshima-c32e7b",
+    "name": "ヤドリ浜",
+    "area": "鹿児島県奄美市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県奄美市",
+    "category": "公園・自然スポット",
+    "description": "ホノホシ海岸のちょっと先にあるビーチ。波も穏やかで、水も綺麗。マリンシューズ持参がおすすめ。",
+    "tags": [
+      "公園",
+      "鹿児島県"
+    ],
+    "features": [
+      "美しいビーチ",
+      "波穏やか"
+    ],
+    "price": "無料",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://traveldog.jp/wanwanmap/amami/"
+  },
+  {
+    "id": "kagoshima-304543",
+    "name": "楽暮-Luck 奄美大島",
+    "area": "鹿児島県奄美市名瀬和光町",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県奄美市名瀬和光町",
+    "category": "ペット可宿・ホテル",
+    "description": "最大15名まで宿泊可能。完全一棟貸切で、ペット連れでも安心。広い共用スペースで、みんな＋ペットでも窮屈にならない。",
+    "tags": [
+      "大型犬OK",
+      "鹿児島県"
+    ],
+    "features": [
+      "一棟貸し",
+      "大型犬可",
+      "最大15名宿泊可",
+      "40畳リビング"
+    ],
+    "price": "小型犬：1日 1,000円、中型犬／大型犬：1日 1,500円",
+    "dogSize": "小型犬・中型犬・大型犬",
+    "verified": true,
+    "source": "https://amamitabi.com/amami-accommodations-where-you-can-stay-with-your-pet/"
+  },
+  {
+    "id": "kagoshima-5176db",
+    "name": "奄美大島リゾートホテル コーラルパームス",
+    "area": "鹿児島県奄美市笠利町大字宇宿",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県奄美市笠利町大字宇宿",
+    "category": "ペット可宿・ホテル",
+    "description": "リゾート気分を満喫できるホテル。ペットと一緒にリゾートステイを楽しみたい方におすすめ。",
+    "tags": [
+      "鹿児島県"
+    ],
+    "features": [
+      "リゾートホテル",
+      "海近"
+    ],
+    "price": "要確認",
+    "dogSize": "要確認",
+    "verified": true,
+    "source": "https://amamitabi.com/amami-accommodations-where-you-can-stay-with-your-pet/"
+  },
+  {
+    "id": "kagoshima-062fec",
+    "name": "奄美一棟貸し-kise-",
+    "area": "鹿児島県奄美市笠利町大字喜瀬",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県奄美市笠利町大字喜瀬",
+    "category": "ペット可宿・ホテル",
+    "description": "プライベート空間でリラックス。家族全員で気兼ねなく過ごせる一棟貸しの宿。",
+    "tags": [
+      "鹿児島県"
+    ],
+    "features": [
+      "一棟貸し",
+      "プライベート空間"
+    ],
+    "price": "要確認",
+    "dogSize": "要確認",
+    "verified": true,
+    "source": "https://amamitabi.com/amami-accommodations-where-you-can-stay-with-your-pet/"
+  },
+  {
+    "id": "kagoshima-54f76e",
+    "name": "Amayadori 奄宿り",
+    "area": "鹿児島県奄美市笠利町大字中金久",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県奄美市笠利町大字中金久",
+    "category": "ペット可宿・ホテル",
+    "description": "静かな環境で愛犬と一緒に癒される時間を。プライベートな滞在にぴったり。",
+    "tags": [
+      "鹿児島県"
+    ],
+    "features": [
+      "一棟貸し",
+      "静かな環境"
+    ],
+    "price": "要確認",
+    "dogSize": "要確認",
+    "verified": true,
+    "source": "https://amamitabi.com/amami-accommodations-where-you-can-stay-with-your-pet/"
+  },
+  {
+    "id": "kagoshima-d13cf9",
+    "name": "Sol e Mar",
+    "area": "鹿児島県大島郡龍郷町戸口",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県大島郡龍郷町戸口",
+    "category": "ペット可宿・ホテル",
+    "description": "ビーチに近い宿で、愛犬と海辺の散歩を楽しめる。爽やかな潮風とともに贅沢なひとときを。",
+    "tags": [
+      "大型犬OK",
+      "鹿児島県"
+    ],
+    "features": [
+      "コテージ",
+      "ビーチ近",
+      "海辺散歩可"
+    ],
+    "price": "要確認",
+    "dogSize": "小型犬・中型犬・大型犬可",
+    "verified": true,
+    "source": "https://amamitabi.com/amami-accommodations-where-you-can-stay-with-your-pet/"
+  },
+  {
+    "id": "kagoshima-b3c98b",
+    "name": "一棟貸切の宿 AMALOG～アマログ～",
+    "area": "鹿児島県大島郡龍郷町赤尾木",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県大島郡龍郷町赤尾木",
+    "category": "ペット可宿・ホテル",
+    "description": "広々とした空間が特徴。周囲を気にせず愛犬とゆっくり過ごせる。",
+    "tags": [
+      "鹿児島県"
+    ],
+    "features": [
+      "一棟貸し",
+      "広々とした空間"
+    ],
+    "price": "要確認",
+    "dogSize": "要確認",
+    "verified": true,
+    "source": "https://amamitabi.com/amami-accommodations-where-you-can-stay-with-your-pet/"
+  },
+  {
+    "id": "kagoshima-6ce1f6",
+    "name": "Birdland Nature Resort",
+    "area": "鹿児島県大島郡龍郷町芦徳",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県大島郡龍郷町芦徳",
+    "category": "ペット可宿・ホテル",
+    "description": "自然に囲まれたリゾート施設。愛犬と共にアウトドア体験も楽しめる。",
+    "tags": [
+      "鹿児島県"
+    ],
+    "features": [
+      "リゾート",
+      "アウトドア体験"
+    ],
+    "price": "要確認",
+    "dogSize": "要確認",
+    "verified": true,
+    "source": "https://amamitabi.com/amami-accommodations-where-you-can-stay-with-your-pet/"
+  },
+  {
+    "id": "kagoshima-90a8fb",
+    "name": "民宿 さんご",
+    "area": "鹿児島県奄美市住用町大字和瀬",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県奄美市住用町大字和瀬",
+    "category": "ペット可宿・ホテル",
+    "description": "アットホームな民宿で、地元の温かさに触れられる。ペット連れでも安心して滞在できる。",
+    "tags": [
+      "鹿児島県"
+    ],
+    "features": [
+      "民宿",
+      "アットホーム"
+    ],
+    "price": "要確認",
+    "dogSize": "要確認",
+    "verified": true,
+    "source": "https://amamitabi.com/amami-accommodations-where-you-can-stay-with-your-pet/"
+  },
+  {
+    "id": "kagoshima-2da6cb",
+    "name": "古仁宿－KONIYADO－",
+    "area": "鹿児島県大島郡瀬戸内町古仁屋瀬久井西",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県大島郡瀬戸内町古仁屋瀬久井西",
+    "category": "ペット可宿・ホテル",
+    "description": "瀬戸内町の美しい風景を愛犬と堪能できる宿。落ち着いた環境で心も体も癒される。",
+    "tags": [
+      "鹿児島県"
+    ],
+    "features": [
+      "一棟貸し",
+      "美しい風景"
+    ],
+    "price": "要確認",
+    "dogSize": "要確認",
+    "verified": true,
+    "source": "https://amamitabi.com/amami-accommodations-where-you-can-stay-with-your-pet/"
+  },
+  {
+    "id": "kagoshima-28a79f",
+    "name": "奄美いんまや動物病院ドッグラン",
+    "area": "鹿児島県大島郡龍郷町大字 中勝字大水",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県大島郡龍郷町大字 中勝字大水",
+    "category": "ドッグラン",
+    "description": "動物病院併設のドッグラン。病院が休診の日でも利用可能。",
+    "tags": [
+      "ドッグラン",
+      "鹿児島県"
+    ],
+    "features": [
+      "動物病院併設",
+      "有料"
+    ],
+    "price": "300円/頭",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://mall.punipunipaw.com/dog_run/detail/858"
+  },
+  {
+    "id": "kagoshima-248214",
+    "name": "ワンちゃんの遊び場",
+    "area": "鹿児島県奄美市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県奄美市",
+    "category": "ドッグラン",
+    "description": "鹿児島県奄美市に初めて誕生したドッグラン。山や畑の地形を活かしたナチュラルなフィールドが魅力。",
+    "tags": [
+      "ドッグラン",
+      "鹿児島県"
+    ],
+    "features": [
+      "自然を活かしたドッグラン"
+    ],
+    "price": "入場料大人：620円、小・中学生：310円",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://www.nap-camp.com/mag/73145"
   }
 ]

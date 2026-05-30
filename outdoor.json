@@ -1220,5 +1220,410 @@
     "imageSource": "",
     "lastChecked": "2026-05-30",
     "memo": "世界自然遺産・屋久島のトレッキング。縄文杉コース以外の一部コースは愛犬と歩けます。"
+  },
+  {
+    "id": "fukuoka-b62238",
+    "name": "白糸の滝",
+    "area": "福岡県糸島市",
+    "prefecture": "福岡県",
+    "address": "福岡県糸島市",
+    "category": "犬連れOKの公園・自然スポット",
+    "description": "福岡県指定の名勝。山歩き・自然散策が楽しめます。",
+    "tags": [
+      "公園",
+      "福岡県"
+    ],
+    "features": [
+      "リード必須"
+    ],
+    "price": "無料",
+    "dogSize": "制限なし",
+    "verified": true,
+    "source": "https://wankonowa.com/column/1693/"
+  },
+  {
+    "id": "fukuoka-221a50",
+    "name": "ABURAYAMA FUKUOKA(油山牧場)",
+    "area": "福岡県福岡市南区",
+    "prefecture": "福岡県",
+    "address": "福岡県福岡市南区",
+    "category": "犬連れOKの公園・自然スポット",
+    "description": "人気ソフトクリームを堪能",
+    "tags": [
+      "公園",
+      "福岡県"
+    ],
+    "features": [
+      "駐車場あり",
+      "入場無料"
+    ],
+    "price": "要確認",
+    "dogSize": "制限なし (要確認)",
+    "verified": true,
+    "source": "https://www.walkerplus.com/spot_list/ar1040/sg0001/ss1007/"
+  },
+  {
+    "id": "saga-404563",
+    "name": "旬菜舎さと山",
+    "area": "佐賀県佐賀市",
+    "prefecture": "佐賀県",
+    "address": "佐賀県佐賀市",
+    "category": "ペット可カフェ",
+    "description": "直売所と食堂がセットになった物産館・道の駅のようなスポット。標高400mほどの高地にあり、涼しい。テラス席は犬連れOK。オリジナルソフトクリームが人気。",
+    "tags": [
+      "カフェ",
+      "大型犬OK",
+      "佐賀県"
+    ],
+    "features": [
+      "テラス席犬同伴可",
+      "直売所併設",
+      "天然水汲み場",
+      "オリジナルソフトクリーム"
+    ],
+    "price": "要確認",
+    "dogSize": "大型犬OK",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3897/"
+  },
+  {
+    "id": "saga-66b58e",
+    "name": "OND CAFE",
+    "area": "佐賀県嬉野市",
+    "prefecture": "佐賀県",
+    "address": "佐賀県嬉野市",
+    "category": "ペット可カフェ・キャンプ場",
+    "description": "OND PARK内にある開放的なカフェ。テラス席は犬連れOK。PARK内にはキャンプ場、ヨガスタジオ、サウナなどがあり、犬連れ利用可能なキャンプ場もある。",
+    "tags": [
+      "カフェ",
+      "キャンプ",
+      "大型犬OK",
+      "佐賀県"
+    ],
+    "features": [
+      "テラス席犬同伴可",
+      "キャンプ場併設 (犬連れ可)",
+      "ダッチパンケーキ",
+      "季節限定メニュー"
+    ],
+    "price": "要確認",
+    "dogSize": "大型犬OK",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3897/"
+  },
+  {
+    "id": "saga-23360c",
+    "name": "佐賀県立森林公園",
+    "area": "佐賀県佐賀市久保田町",
+    "prefecture": "佐賀県",
+    "address": "佐賀県佐賀市久保田町",
+    "category": "犬連れOKの公園・自然スポット",
+    "description": "広大な自然に囲まれた公園で、遊具や芝生広場が充実。犬もリードをつけて散策できる。一部ペット不可エリアあり。",
+    "tags": [
+      "公園",
+      "佐賀県"
+    ],
+    "features": [
+      "リード着用で散策可",
+      "遊具",
+      "芝生広場"
+    ],
+    "price": "無料",
+    "dogSize": "制限なし",
+    "verified": true,
+    "source": "https://happyplace.pet/nansen/saga-nansen_odespot/"
+  },
+  {
+    "id": "nagasaki-e68f6f",
+    "name": "長串山公園",
+    "area": "長崎県佐世保市鹿町町長串",
+    "prefecture": "長崎県",
+    "address": "長崎県佐世保市鹿町町長串",
+    "category": "公園・自然スポット",
+    "description": "北九十九島と平戸島を一望できる絶景スポット。広大な敷地内に約10万本のツツジが植えられており、4月から5月にかけて「ツツジまつり」が開催される。犬同伴で散策可能。",
+    "tags": [
+      "公園",
+      "長崎県"
+    ],
+    "features": [
+      "犬同伴可（散策のみ）",
+      "絶景",
+      "四季折々の花"
+    ],
+    "price": "不明（要確認）",
+    "dogSize": "全犬種",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3787/"
+  },
+  {
+    "id": "nagasaki-b05c7a",
+    "name": "上山公園（諫早公園）",
+    "area": "長崎県諫早市宇都町",
+    "prefecture": "長崎県",
+    "address": "長崎県諫早市宇都町",
+    "category": "公園・自然スポット",
+    "description": "諫早城本丸跡を整備した諫早公園を含む、面積120.3ヘクタールの公園。長崎県で唯一「日本の歴史公園100選」に選定。森林浴やハイキングに最適で、犬同伴で散歩可能。",
+    "tags": [
+      "公園",
+      "長崎県"
+    ],
+    "features": [
+      "犬同伴可（散策のみ）",
+      "歴史公園",
+      "森林浴",
+      "ハイキング"
+    ],
+    "price": "無料",
+    "dogSize": "全犬種",
+    "verified": true,
+    "source": "https://wankonowa.com/column/3787/"
+  },
+  {
+    "id": "kumamoto-d0a51c",
+    "name": "火の国ドッグラン オートキャンプ場",
+    "area": "熊本県阿蘇市",
+    "prefecture": "熊本県",
+    "address": "熊本県阿蘇市",
+    "category": "犬連れOKのアウトドアスポット",
+    "description": "阿蘇の雄大な自然に囲まれた小型犬専用のドッグランを併設したオートキャンプ場。愛犬同伴でキャンプサイト、ドッグラン、カフェが利用可能。水道や電源、キャンプ用品のレンタルも充実。",
+    "tags": [
+      "ドッグラン",
+      "キャンプ",
+      "熊本県"
+    ],
+    "features": [
+      "小型犬専用ドッグラン併設",
+      "カフェ併設",
+      "キャンプ用品レンタルあり",
+      "水道・電源設備あり"
+    ],
+    "price": "ドッグラン：1匹目550円、2匹目以降220円（税込）",
+    "dogSize": "小型犬",
+    "verified": true,
+    "source": "https://hinokunidogrun-autocamp.com/"
+  },
+  {
+    "id": "kumamoto-714a0b",
+    "name": "石神山公園ドッグラン",
+    "area": "熊本県熊本市西区島崎",
+    "prefecture": "熊本県",
+    "address": "熊本県熊本市西区島崎",
+    "category": "ドッグラン",
+    "description": "石神山公園内に設置された、熊本市が運営する無料の公営ドッグラン。小型犬専用と中・大型犬専用にエリアが分かれており、安心して利用できる。利用には事前の登録が必要。",
+    "tags": [
+      "ドッグラン",
+      "公園",
+      "熊本県"
+    ],
+    "features": [
+      "無料",
+      "公営ドッグラン",
+      "小型犬専用エリアあり",
+      "中・大型犬専用エリアあり",
+      "事前登録制"
+    ],
+    "price": "無料",
+    "dogSize": "全犬種",
+    "verified": true,
+    "source": "https://odekake-wanko-bu.com/spot/ishigamiyamakouendogguran/"
+  },
+  {
+    "id": "oita-68da2b",
+    "name": "宝泉寺温泉 季の郷 山の湯",
+    "area": "大分県 九重町",
+    "prefecture": "大分県",
+    "address": "大分県 九重町",
+    "category": "ペット可宿・ホテル",
+    "description": "源泉かけ流しの温泉や、九重の四季を盛り込んだお料理を堪能できる旅館です。大正ロマンの雰囲気感じる癒しの空間でゆっくりとしたひと時をお過ごしください。わんちゃんは中型犬まで宿泊可能、屋上にドッグラ...",
+    "tags": [
+      "温泉",
+      "大分県"
+    ],
+    "features": [
+      "ドッグランあり",
+      "多頭飼い可",
+      "猫同伴可",
+      "温泉あり"
+    ],
+    "price": "",
+    "dogSize": "中型犬, 小型犬",
+    "verified": true,
+    "source": "https://kyuzitsu-inubu.com/hotel/search/?pref=1886"
+  },
+  {
+    "id": "miyazaki-514c54",
+    "name": "県立阿波岐原森林公園ドッグラン",
+    "area": "宮崎県宮崎市山崎町浜山",
+    "prefecture": "宮崎県",
+    "address": "宮崎県宮崎市山崎町浜山",
+    "category": "ドッグラン",
+    "description": "広大な敷地を持つ無料のドッグラン。中・大型犬エリアと小型犬エリアに分かれており、安心して利用できる。木陰も多く、夏場でも比較的快適に過ごせる。",
+    "tags": [
+      "ドッグラン",
+      "公園",
+      "宮崎県"
+    ],
+    "features": [
+      "無料",
+      "中・大型犬エリアあり",
+      "小型犬エリアあり",
+      "木陰あり"
+    ],
+    "price": "無料",
+    "dogSize": "全犬種対応",
+    "verified": true,
+    "source": "https://mppf.or.jp/awaki/dogrun/"
+  },
+  {
+    "id": "miyazaki-5fde57",
+    "name": "延岡城跡・城山公園",
+    "area": "宮崎県延岡市東本小路",
+    "prefecture": "宮崎県",
+    "address": "宮崎県延岡市東本小路",
+    "category": "公園・自然スポット",
+    "description": "歴史と自然が調和した公園。春には桜、秋には紅葉が楽しめる。展望台からは延岡市街や日向灘を一望できる。ペットとのお散歩におすすめ。",
+    "tags": [
+      "公園",
+      "宮崎県"
+    ],
+    "features": [
+      "無料",
+      "桜の名所",
+      "紅葉スポット",
+      "展望台あり"
+    ],
+    "price": "無料",
+    "dogSize": "要問い合わせ",
+    "verified": true,
+    "source": "https://odekake-wanko-bu.com/spot/nobeokajouatoshiroyamakouen/"
+  },
+  {
+    "id": "miyazaki-d99717",
+    "name": "えびの高原キャンプ村",
+    "area": "宮崎県えびの市",
+    "prefecture": "宮崎県",
+    "address": "宮崎県えびの市",
+    "category": "アウトドアスポット",
+    "description": "ペット同伴可能なキャンプ場。",
+    "tags": [
+      "キャンプ",
+      "宮崎県"
+    ],
+    "features": [
+      "ペット同伴可"
+    ],
+    "price": "要確認",
+    "dogSize": "要確認",
+    "verified": true,
+    "source": "https://ebinospacamp.com/"
+  },
+  {
+    "id": "kagoshima-c0d879",
+    "name": "多賀山公園",
+    "area": "鹿児島県鹿児島市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県鹿児島市",
+    "category": "公園",
+    "description": "明治の元帥、東郷平八郎の像が建つ桜の名所。入場無料、駐車場あり。",
+    "tags": [
+      "公園",
+      "鹿児島県"
+    ],
+    "features": [
+      "入場無料",
+      "駐車場あり"
+    ],
+    "price": "無料",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://www.walkerplus.com/spot_list/ar1046201/kagoshima/ss1007/"
+  },
+  {
+    "id": "kagoshima-2260de",
+    "name": "城山公園城山展望台",
+    "area": "鹿児島県鹿児島市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県鹿児島市",
+    "category": "公園、展望台・タワー・橋",
+    "description": "600種以上の亜熱帯植物が自生する自然林。入場無料、駐車場あり。",
+    "tags": [
+      "公園",
+      "鹿児島県"
+    ],
+    "features": [
+      "入場無料",
+      "駐車場あり"
+    ],
+    "price": "無料",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://www.walkerplus.com/spot_list/ar1046201/kagoshima/ss1007/"
+  },
+  {
+    "id": "kagoshima-27b3e8",
+    "name": "国分キャンプ海水浴場",
+    "area": "鹿児島県霧島市国分下井洲崎",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県霧島市国分下井洲崎",
+    "category": "犬連れOKのアウトドアスポット",
+    "description": "キャンプ、海水浴、釣りが楽しめる。松原の緑と白い砂浜が美しい。ワンちゃんはリード着用で走り回れる。芝生の国分海浜公園はペットNG。",
+    "tags": [
+      "ビーチ",
+      "キャンプ",
+      "鹿児島県"
+    ],
+    "features": [
+      "キャンプ場",
+      "海水浴場",
+      "釣り",
+      "リード着用"
+    ],
+    "price": "記載なし",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://www.kagoshima-kankou.com/feature/pettourism"
+  },
+  {
+    "id": "kagoshima-9fc1d2",
+    "name": "黒石岳森林公園 ドッグラン",
+    "area": "鹿児島県霧島市国分川内",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県霧島市国分川内",
+    "category": "ドッグラン",
+    "description": "広めのドッグランで愛犬も伸び伸び。ペットボウル常備。",
+    "tags": [
+      "ドッグラン",
+      "公園",
+      "鹿児島県"
+    ],
+    "features": [
+      "広々としたドッグラン",
+      "ペットボウル常備"
+    ],
+    "price": "500円/90分（2頭目から300円）",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://www.nap-camp.com/mag/73145"
+  },
+  {
+    "id": "kagoshima-2dc1b4",
+    "name": "指宿エコキャンプ場",
+    "area": "鹿児島県指宿市",
+    "prefecture": "鹿児島県",
+    "address": "鹿児島県指宿市",
+    "category": "犬連れOKのアウトドアスポット",
+    "description": "錦江湾に面した開放感あふれるオートキャンプ場。",
+    "tags": [
+      "キャンプ",
+      "鹿児島県"
+    ],
+    "features": [
+      "オートキャンプ場",
+      "錦江湾に面する"
+    ],
+    "price": "記載なし",
+    "dogSize": "記載なし",
+    "verified": true,
+    "source": "https://hinata-spot.me/kyushu_okinawa/kagoshima/5102/list?features%5B0%5D=pets_allowed"
   }
 ]
