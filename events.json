@@ -1,15 +1,66 @@
 [
   {
+    "id": "kitakyushu-wannyan-fes-2026",
+    "title": "第2回 北九州わんにゃんフェス",
+    "name": "第2回 北九州わんにゃんフェス",
+    "area": "福岡県北九州市",
+    "venue": "勝山公園 大芝生広場",
+    "eventDate": "2026-05-30",
+    "date": "2026-05-30〜2026-05-31",
+    "officialUrl": "https://www.instagram.com/wan.nyan.fes/",
+    "snsUrl": "https://www.instagram.com/wan.nyan.fes/",
+    "mapQuery": "勝山公園 大芝生広場 北九州市小倉北区城内",
+    "category": "dog_festival",
+    "tags": [
+      "犬イベント",
+      "わんにゃんフェス",
+      "北九州",
+      "福岡",
+      "入場無料",
+      "ドッグラン",
+      "マルシェ"
+    ],
+    "dogPolicy": "特設ドッグラン（大型・中型・小型エリア分け）あり。利用料500円/匹。狂犬病予防接種証明書の提示が必要。",
+    "status": "ongoing",
+    "memo": "ペットグッズショップ約90店舗が集結。特設ドッグラン（500円/匹）、犬猫譲渡会も開催。入場無料。開催時間10:00〜17:00。",
+    "lastChecked": "2026-05-30"
+  },
+  {
+    "id": "mojiko-marche-wan-goods-2026-06",
+    "title": "門司港マルシェ＆WAN GOODS 2026",
+    "name": "門司港マルシェ＆WAN GOODS",
+    "area": "福岡県北九州市",
+    "venue": "門司港レトロ中央広場",
+    "eventDate": "2026-06-27",
+    "date": "2026-06-27〜2026-06-28",
+    "officialUrl": "https://www.instagram.com/mojiko_marche/",
+    "snsUrl": "https://www.instagram.com/mojiko_marche/",
+    "mapQuery": "門司港レトロ中央広場 北九州市門司区東港町",
+    "category": "dog_festival",
+    "tags": [
+      "犬イベント",
+      "門司港",
+      "北九州",
+      "福岡",
+      "マルシェ",
+      "WAN GOODS"
+    ],
+    "dogPolicy": "犬連れ参加可能。詳細は公式SNSで要確認。",
+    "status": "upcoming",
+    "memo": "門司港レトロ中央広場でのマルシェとWAN GOODSの同時開催。わんちゃんグッズも充実。開催時間10:00〜16:00。",
+    "lastChecked": "2026-05-30"
+  },
+  {
     "id": "dog-expo-fukuoka-2026",
     "title": "DOG EXPO FUKUOKA 2026",
     "name": "DOG EXPO FUKUOKA 2026",
     "area": "福岡県北九州市",
-    "venue": "西日本総合展示場・北九州メッセ",
+    "venue": "北九州メッセ A/B/Cホール",
     "eventDate": "2026-07-18",
     "date": "2026-07-18〜2026-07-20",
     "officialUrl": "https://www.wonderful-dogfes.com/dogexpofukuoka",
     "snsUrl": "https://www.instagram.com/wonderful.kyushu/",
-    "mapQuery": "西日本総合展示場 北九州市",
+    "mapQuery": "北九州メッセ 北九州市小倉北区浅野",
     "category": "dog_expo",
     "tags": [
       "犬イベント",
@@ -17,11 +68,12 @@
       "DOGEXPO",
       "福岡",
       "北九州",
-      "大型イベント"
+      "大型イベント",
+      "屋内"
     ],
-    "dogPolicy": "犬関連イベントとして確認。会場ルール・入場条件・リード条件は公式情報で確認してください。",
+    "dogPolicy": "犬同伴可能なイベント。詳細は公式サイトのVISITOR GUIDEで確認してください。",
     "status": "upcoming",
-    "memo": "九州最大級のドッグイベント。3日間開催。開催日・会場・犬同伴条件は変更される場合があります。来場前に必ず公式情報を確認してください。",
+    "memo": "九州・中四国最大級のアリーナ型DOGイベント。前売チケット：大人1,500円・子供700円・幼児無料。当日：大人2,000円・子供1,000円・幼児無料。開催時間10:00〜16:00。",
     "lastChecked": "2026-05-30"
   },
   {
@@ -47,52 +99,6 @@
     "dogPolicy": "犬関連イベントとして確認。会場ルール・入場条件・リード条件は公式情報で確認してください。",
     "status": "upcoming",
     "memo": "国内最大級のペット総合イベント。前売りチケット販売中（大人1,300円）。開催日・会場・条件は変更される場合があります。来場前に必ず公式情報を確認してください。",
-    "lastChecked": "2026-05-30"
-  },
-  {
-    "id": "jkc-kyushu-show-2026",
-    "name": "JKC 九州ブロック ドッグショー 2026",
-    "title": "JKC 九州ブロック ドッグショー 2026",
-    "area": "福岡県",
-    "venue": "福岡県内展示場",
-    "date": "2026-08-16",
-    "eventDate": "2026-08-16",
-    "category": "dog_show",
-    "status": "upcoming",
-    "tags": [
-      "ドッグショー",
-      "JKC",
-      "九州",
-      "競技"
-    ],
-    "dogPolicy": "出陳犬はJKC登録必要。観覧は一般入場可能。",
-    "memo": "JKC（ジャパンケネルクラブ）主催の九州ブロックドッグショー。純血種の犬たちの美しさを競います。",
-    "officialUrl": "https://www.jkc.or.jp/",
-    "snsUrl": "",
-    "mapQuery": "福岡県 展示場",
-    "lastChecked": "2026-05-30"
-  },
-  {
-    "id": "jkc-kyushu-agility-2026",
-    "name": "JKC 九州 アジリティ競技会 2026",
-    "title": "JKC 九州 アジリティ競技会 2026",
-    "area": "熊本県",
-    "venue": "熊本県内施設",
-    "date": "2026-09-20",
-    "eventDate": "2026-09-20",
-    "category": "competition",
-    "status": "upcoming",
-    "tags": [
-      "アジリティ",
-      "JKC",
-      "九州",
-      "競技"
-    ],
-    "dogPolicy": "競技参加はJKC登録必要。観覧は一般入場可能。",
-    "memo": "JKC主催のアジリティ競技会。障害物コースを愛犬と一緒に走る競技を観覧できます。",
-    "officialUrl": "https://www.jkc.or.jp/",
-    "snsUrl": "",
-    "mapQuery": "熊本県 競技場",
     "lastChecked": "2026-05-30"
   },
   {
@@ -141,5 +147,51 @@
     "lastChecked": "2026-05-30",
     "status": "upcoming",
     "memo": "開催日・会場・犬同伴ルールは変更される可能性があります。参加前に必ず公式サイト・公式SNSで最新情報をご確認ください。"
+  },
+  {
+    "id": "jkc-kyushu-show-2026",
+    "name": "JKC 九州ブロック ドッグショー 2026",
+    "title": "JKC 九州ブロック ドッグショー 2026",
+    "area": "福岡県",
+    "venue": "福岡県内展示場",
+    "date": "2026-08-16",
+    "eventDate": "2026-08-16",
+    "category": "dog_show",
+    "status": "upcoming",
+    "tags": [
+      "ドッグショー",
+      "JKC",
+      "九州",
+      "競技"
+    ],
+    "dogPolicy": "出陳犬はJKC登録必要。観覧は一般入場可能。",
+    "memo": "JKC（ジャパンケネルクラブ）主催の九州ブロックドッグショー。純血種の犬たちの美しさを競います。",
+    "officialUrl": "https://www.jkc.or.jp/",
+    "snsUrl": "",
+    "mapQuery": "福岡県 展示場",
+    "lastChecked": "2026-05-30"
+  },
+  {
+    "id": "jkc-kyushu-agility-2026",
+    "name": "JKC 九州 アジリティ競技会 2026",
+    "title": "JKC 九州 アジリティ競技会 2026",
+    "area": "熊本県",
+    "venue": "熊本県内施設",
+    "date": "2026-09-20",
+    "eventDate": "2026-09-20",
+    "category": "competition",
+    "status": "upcoming",
+    "tags": [
+      "アジリティ",
+      "JKC",
+      "九州",
+      "競技"
+    ],
+    "dogPolicy": "競技参加はJKC登録必要。観覧は一般入場可能。",
+    "memo": "JKC主催のアジリティ競技会。障害物コースを愛犬と一緒に走る競技を観覧できます。",
+    "officialUrl": "https://www.jkc.or.jp/",
+    "snsUrl": "",
+    "mapQuery": "熊本県 競技場",
+    "lastChecked": "2026-05-30"
   }
 ]
