@@ -23,7 +23,7 @@
     "dogPolicy": "特設ドッグラン（大型・中型・小型エリア分け）あり。利用料500円/匹。狂犬病予防接種証明書の提示が必要。",
     "status": "ongoing",
     "memo": "ペットグッズショップ約90店舗が集結。特設ドッグラン（500円/匹）、犬猫譲渡会も開催。入場無料。開催時間10:00〜17:00。",
-    "lastChecked": "2026-05-30"
+    "lastChecked": "2026-05-31"
   },
   {
     "id": "mojiko-marche-wan-goods-2026-06",
@@ -48,7 +48,7 @@
     "dogPolicy": "犬連れ参加可能。詳細は公式SNSで要確認。",
     "status": "upcoming",
     "memo": "門司港レトロ中央広場でのマルシェとWAN GOODSの同時開催。わんちゃんグッズも充実。開催時間10:00〜16:00。",
-    "lastChecked": "2026-05-30"
+    "lastChecked": "2026-05-31"
   },
   {
     "id": "dog-expo-fukuoka-2026",
@@ -74,7 +74,7 @@
     "dogPolicy": "犬同伴可能なイベント。詳細は公式サイトのVISITOR GUIDEで確認してください。",
     "status": "upcoming",
     "memo": "九州・中四国最大級のアリーナ型DOGイベント。前売チケット：大人1,500円・子供700円・幼児無料。当日：大人2,000円・子供1,000円・幼児無料。開催時間10:00〜16:00。",
-    "lastChecked": "2026-05-30"
+    "lastChecked": "2026-05-31"
   },
   {
     "id": "pet-haku-fukuoka-2026",
@@ -99,54 +99,7 @@
     "dogPolicy": "犬関連イベントとして確認。会場ルール・入場条件・リード条件は公式情報で確認してください。",
     "status": "upcoming",
     "memo": "国内最大級のペット総合イベント。前売りチケット販売中（大人1,300円）。開催日・会場・条件は変更される場合があります。来場前に必ず公式情報を確認してください。",
-    "lastChecked": "2026-05-30"
-  },
-  {
-    "id": "saga-balloon-pet-2026",
-    "name": "佐賀インターナショナルバルーンフェスタ 2026（ペット同伴エリア）",
-    "title": "佐賀インターナショナルバルーンフェスタ 2026",
-    "area": "佐賀県佐賀市",
-    "venue": "嘉瀬川河川敷",
-    "date": "2026-10-29〜2026-11-03",
-    "eventDate": "2026-10-29",
-    "category": "festival",
-    "status": "upcoming",
-    "tags": [
-      "バルーン",
-      "佐賀",
-      "フェスタ",
-      "ペット可エリア"
-    ],
-    "dogPolicy": "河川敷の一部エリアは愛犬同伴可能。詳細は公式情報を確認。",
-    "memo": "世界最大級のバルーンイベント。嘉瀬川河川敷の一部エリアは愛犬と一緒に楽しめます。",
-    "officialUrl": "https://www.sibf.jp/",
-    "snsUrl": "",
-    "mapQuery": "嘉瀬川河川敷 佐賀市",
-    "lastChecked": "2026-05-30"
-  },
-  {
-    "id": "oita-doggo-land-2026",
-    "title": "OITA DOGGO LAND 2026",
-    "name": "OITA DOGGO LAND",
-    "date": "2026-11-21〜2026-11-22",
-    "area": "大分県大分市",
-    "venue": "大分市内予定（公式SNS要確認）",
-    "eventDate": "2026-11-21",
-    "dogRules": "公式サイト・公式SNSで要確認",
-    "officialUrl": "https://oitabuhiland.com/",
-    "officialSnsUrl": "https://www.instagram.com/oita_doggoland/",
-    "snsUrl": "https://www.instagram.com/oita_doggoland/",
-    "mapQuery": "大分市 犬イベント",
-    "category": "dog_festival",
-    "tags": [
-      "犬イベント",
-      "ドッグフェス",
-      "大分",
-      "九州"
-    ],
-    "lastChecked": "2026-05-30",
-    "status": "upcoming",
-    "memo": "開催日・会場・犬同伴ルールは変更される可能性があります。参加前に必ず公式サイト・公式SNSで最新情報をご確認ください。"
+    "lastChecked": "2026-05-31"
   },
   {
     "id": "jkc-kyushu-show-2026",
@@ -169,7 +122,7 @@
     "officialUrl": "https://www.jkc.or.jp/",
     "snsUrl": "",
     "mapQuery": "福岡県 展示場",
-    "lastChecked": "2026-05-30"
+    "lastChecked": "2026-05-31"
   },
   {
     "id": "jkc-kyushu-agility-2026",
@@ -192,6 +145,53 @@
     "officialUrl": "https://www.jkc.or.jp/",
     "snsUrl": "",
     "mapQuery": "熊本県 競技場",
-    "lastChecked": "2026-05-30"
+    "lastChecked": "2026-05-31"
+  },
+  {
+    "id": "saga-balloon-pet-2026",
+    "name": "佐賀インターナショナルバルーンフェスタ 2026（ペット同伴エリア）",
+    "title": "佐賀インターナショナルバルーンフェスタ 2026",
+    "area": "佐賀県佐賀市",
+    "venue": "嘉瀬川河川敷",
+    "date": "2026-10-29〜2026-11-03",
+    "eventDate": "2026-10-29",
+    "category": "festival",
+    "status": "upcoming",
+    "tags": [
+      "バルーン",
+      "佐賀",
+      "フェスタ",
+      "ペット可エリア"
+    ],
+    "dogPolicy": "河川敷の一部エリアは愛犬同伴可能。詳細は公式情報を確認。",
+    "memo": "世界最大級のバルーンイベント。嘉瀬川河川敷の一部エリアは愛犬と一緒に楽しめます。",
+    "officialUrl": "https://www.sibf.jp/",
+    "snsUrl": "",
+    "mapQuery": "嘉瀬川河川敷 佐賀市",
+    "lastChecked": "2026-05-31"
+  },
+  {
+    "id": "oita-doggo-land-2026",
+    "title": "OITA DOGGO LAND 2026",
+    "name": "OITA DOGGO LAND",
+    "date": "2026-11-21〜2026-11-22",
+    "area": "大分県大分市",
+    "venue": "大分市内予定（公式SNS要確認）",
+    "eventDate": "2026-11-21",
+    "dogRules": "公式サイト・公式SNSで要確認",
+    "officialUrl": "https://oitabuhiland.com/",
+    "officialSnsUrl": "https://www.instagram.com/oita_doggoland/",
+    "snsUrl": "https://www.instagram.com/oita_doggoland/",
+    "mapQuery": "大分市 犬イベント",
+    "category": "dog_festival",
+    "tags": [
+      "犬イベント",
+      "ドッグフェス",
+      "大分",
+      "九州"
+    ],
+    "lastChecked": "2026-05-31",
+    "status": "upcoming",
+    "memo": "開催日・会場・犬同伴ルールは変更される可能性があります。参加前に必ず公式サイト・公式SNSで最新情報をご確認ください。"
   }
 ]
