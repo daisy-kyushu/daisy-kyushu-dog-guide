@@ -246,6 +246,41 @@ Constraints: 1:1 aspect ratio, Japanese text must be readable, professional Inst
 Avoid: blurry text, cluttered layout."""
 
 
+def generate_rakuten_room_post(theme, item, client):
+    """楽天Room用の投稿文を生成する"""
+    if theme != "product":
+        return None  # 商品テーマの時のみ生成
+    
+    product_name = item.get('productName', '')
+    category = item.get('category', '')
+    memo = item.get('memo', '')
+    rating = item.get('rating', '')
+    
+    prompt = f"""楽天ROOMの投稿コメントを作成してください。
+
+商品名: {product_name}
+カテゴリ: {category}
+メモ: {memo}
+評価: {rating}点
+
+【ルール】
+- 100文字以内
+- 大型犬・サモエドとの旅行に役立つ観点で紹介
+- 絵文字を1〜2個使う
+- 自然な口コミ風の文体
+- 「要確認」の情報は省く
+
+コメントのみ出力してください。"""
+    
+    response = client.chat.completions.create(
+        model="gpt-4.1-mini",
+        messages=[{"role": "user", "content": prompt}],
+        max_tokens=200,
+        temperature=0.7,
+    )
+    return response.choices[0].message.content.strip()
+
+
 def get_item_link(theme, item):
     if theme == "spot":
         spot_id = item.get('id', '')
@@ -290,6 +325,13 @@ def main():
     full_caption = f"{caption}\n\n{hashtags}"
     link = get_item_link(theme, item or {})
     image_prompt = build_image_prompt(theme, item or {})
+    
+    # 楽天Room用投稿文を生成（商品テーマの時のみ）
+    rakuten_room_comment = None
+    rakuten_room_url = None
+    if theme == "product" and item:
+        rakuten_room_comment = generate_rakuten_room_post(theme, item, client)
+        rakuten_room_url = item.get('rakutenAffiliateUrl') or item.get('normalUrl') or ''
 
     output = {
         "date": today.isoformat(),
@@ -303,6 +345,8 @@ def main():
         "link": link,
         "image_prompt": image_prompt,
         "image_path": str(OUTPUT_DIR / f"post_{today.isoformat()}.png"),
+        "rakuten_room_comment": rakuten_room_comment,
+        "rakuten_room_url": rakuten_room_url,
     }
 
     output_file = OUTPUT_DIR / f"post_{today.isoformat()}.json"

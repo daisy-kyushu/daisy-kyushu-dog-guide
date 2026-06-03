@@ -350,6 +350,8 @@
       <div class="modal-detail-grid" id="modal-detail-grid"></div>
       <div class="modal-daisy-comment" id="modal-daisy-comment"></div>
       <div class="modal-actions" id="modal-actions"></div>
+      <!-- 口コミセクション -->
+      <div id="modal-reviews" style="margin-top:24px;border-top:1px solid #f0f0f0;padding-top:20px;"></div>
     </div>
   </div>
 </div>
@@ -696,6 +698,13 @@ function openModal(jsonStr) {
 
   document.getElementById('modal-overlay').classList.add('open');
   document.body.style.overflow='hidden';
+  // 口コミ読み込み
+  if (data.id && typeof window.renderReviews === 'function') {
+    window.renderReviews(data.id);
+  } else {
+    const rev = document.getElementById('modal-reviews');
+    if (rev) rev.innerHTML = '';
+  }
 }
 
 function addToItineraryFromModal(spotId) {
@@ -841,5 +850,118 @@ setTimeout(updateFavBar, 500);
 })();
 </script>
 <!-- ▲ Affiliate Fixed Bottom Banner ▲ -->
+
+<!-- 口コミ機能 (Firebase Firestore) -->
+<script type="module">
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
+import { getFirestore, collection, addDoc, getDocs, query, where, orderBy, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDRVtANI251gyQjY-okPAzlSYXTGpslwnQ",
+  authDomain: "daisysamoyed-86dd8.firebaseapp.com",
+  projectId: "daisysamoyed-86dd8",
+  storageBucket: "daisysamoyed-86dd8.firebasestorage.app",
+  messagingSenderId: "1061044129374",
+  appId: "1:1061044129374:web:a117a6ed94a0eb6491aecf"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+let currentSpotId = null;
+
+// 口コミセクションをレンダリング
+window.renderReviews = async function(spotId) {
+  currentSpotId = spotId;
+  const container = document.getElementById('modal-reviews');
+  if (!container) return;
+  container.innerHTML = `
+    <h3 style="font-size:1rem;font-weight:900;color:#1a1a1a;margin-bottom:16px;">💬 口コミ・レビュー</h3>
+    <div id="review-list" style="margin-bottom:20px;"><p style="color:#aaa;font-size:0.85rem;">読み込み中...</p></div>
+    <div style="background:#f8f9fa;border-radius:14px;padding:16px;">
+      <p style="font-size:0.88rem;font-weight:700;color:#333;margin-bottom:10px;">このスポットに行った？口コミを投稿してね！</p>
+      <div style="display:flex;gap:6px;margin-bottom:12px;" id="star-selector">
+        ${[1,2,3,4,5].map(i => `<button onclick="selectStar(${i})" data-star="${i}" style="font-size:1.6rem;background:none;border:none;cursor:pointer;opacity:0.3;transition:opacity .15s;" aria-label="${i}星">★</button>`).join('')}
+      </div>
+      <input id="review-nickname" type="text" placeholder="ニックネーム（任意）" maxlength="20" style="width:100%;box-sizing:border-box;border:1px solid #ddd;border-radius:8px;padding:8px 12px;font-size:0.88rem;margin-bottom:8px;">
+      <textarea id="review-text" placeholder="大型犬との入場はどうでしたか？トイレや水の有無なども教えてください。" maxlength="200" rows="3" style="width:100%;box-sizing:border-box;border:1px solid #ddd;border-radius:8px;padding:8px 12px;font-size:0.88rem;resize:none;margin-bottom:10px;"></textarea>
+      <button onclick="submitReview()" style="width:100%;background:#2e7d32;color:#fff;border:none;border-radius:10px;padding:10px;font-weight:700;font-size:0.9rem;cursor:pointer;">🐾 口コミを投稿する</button>
+      <p id="review-msg" style="font-size:0.8rem;color:#888;margin-top:6px;text-align:center;"></p>
+    </div>
+  `;
+  await loadReviews(spotId);
+};
+
+let selectedStar = 0;
+window.selectStar = function(n) {
+  selectedStar = n;
+  document.querySelectorAll('#star-selector button').forEach((btn, i) => {
+    btn.style.opacity = i < n ? '1' : '0.3';
+  });
+};
+
+async function loadReviews(spotId) {
+  const list = document.getElementById('review-list');
+  if (!list) return;
+  try {
+    const q = query(collection(db, 'reviews'), where('spotId', '==', spotId), orderBy('createdAt', 'desc'));
+    const snap = await getDocs(q);
+    if (snap.empty) {
+      list.innerHTML = '<p style="color:#aaa;font-size:0.85rem;">まだ口コミがありません。最初の口コミを投稿してみましょう！</p>';
+      return;
+    }
+    const avgRating = snap.docs.reduce((s, d) => s + (d.data().rating || 0), 0) / snap.size;
+    list.innerHTML = `
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+        <span style="font-size:1.4rem;font-weight:900;color:#f57c00;">${avgRating.toFixed(1)}</span>
+        <span style="color:#f57c00;font-size:1rem;">${'★'.repeat(Math.round(avgRating))}☆'.repeat(5-Math.round(avgRating))}</span>
+        <span style="font-size:0.82rem;color:#888;">(${snap.size}件)</span>
+      </div>
+      ${snap.docs.map(d => {
+        const r = d.data();
+        const date = r.createdAt?.toDate ? r.createdAt.toDate().toLocaleDateString('ja-JP') : '';
+        return `<div style="background:#fff;border:1px solid #f0f0f0;border-radius:10px;padding:12px;margin-bottom:8px;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+            <span style="color:#f57c00;font-size:0.9rem;">${'★'.repeat(r.rating || 0)}☆'.repeat(5-(r.rating||0))}</span>
+            <span style="font-size:0.82rem;font-weight:700;color:#555;">${r.nickname || '匿名さん'}</span>
+            <span style="font-size:0.75rem;color:#bbb;margin-left:auto;">${date}</span>
+          </div>
+          <p style="font-size:0.85rem;color:#444;margin:0;line-height:1.6;">${r.text || ''}</p>
+        </div>`;
+      }).join('')}
+    `;
+  } catch(e) {
+    list.innerHTML = '<p style="color:#aaa;font-size:0.85rem;">口コミの読み込みに失敗しました。</p>';
+  }
+}
+
+window.submitReview = async function() {
+  const msg = document.getElementById('review-msg');
+  const text = document.getElementById('review-text')?.value?.trim();
+  const nickname = document.getElementById('review-nickname')?.value?.trim() || '匿名さん';
+  if (!selectedStar) { msg.textContent = '星評価を選んでください'; msg.style.color = '#e53935'; return; }
+  if (!text) { msg.textContent = 'コメントを入力してください'; msg.style.color = '#e53935'; return; }
+  if (text.length < 10) { msg.textContent = '10文字以上入力してください'; msg.style.color = '#e53935'; return; }
+  msg.textContent = '投稿中...'; msg.style.color = '#888';
+  try {
+    await addDoc(collection(db, 'reviews'), {
+      spotId: currentSpotId,
+      rating: selectedStar,
+      text: text,
+      nickname: nickname,
+      createdAt: serverTimestamp()
+    });
+    msg.textContent = '口コミを投稿しました！ありがとうございます。'; msg.style.color = '#2e7d32';
+    document.getElementById('review-text').value = '';
+    document.getElementById('review-nickname').value = '';
+    selectedStar = 0;
+    document.querySelectorAll('#star-selector button').forEach(b => b.style.opacity = '0.3');
+    await loadReviews(currentSpotId);
+  } catch(e) {
+    msg.textContent = '投稿に失敗しました。もう一度お試しください。'; msg.style.color = '#e53935';
+  }
+};
+</script>
+
 </body>
 </html>

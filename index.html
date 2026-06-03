@@ -282,8 +282,10 @@
       <div class="weather-info">
         <div class="weather-temp" id="weather-temp">--°C</div>
         <div class="weather-desc" id="weather-desc">天気情報を取得中です</div>
+        <div id="weather-info-extra"></div>
       </div>
     </div>
+    <div id="weather-forecast" style="display:flex;gap:8px;padding:10px 0 4px;border-top:1px solid rgba(255,255,255,0.2);margin-top:8px;"></div>
     <div class="weather-recommend">
       <div class="weather-recommend-title">🐾 Daisyのおすすめ</div>
       <div class="weather-spots" id="weather-spots">
@@ -604,16 +606,42 @@ async function loadWeather() {
     
     document.getElementById('weather-location').textContent = `📍 ${locationName}`;
     
-    const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,weathercode&timezone=Asia%2FTokyo`;
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,weathercode,relativehumidity_2m,apparent_temperature&daily=weathercode,temperature_2m_max,temperature_2m_min&forecast_days=3&timezone=Asia%2FTokyo`;
     const res = await fetch(url);
     const data = await res.json();
     
     const code = data.current.weathercode;
     const temp = Math.round(data.current.temperature_2m);
+    const feels = Math.round(data.current.apparent_temperature);
+    const humidity = data.current.relativehumidity_2m;
     
     document.getElementById('weather-icon').textContent = WEATHER_ICONS[code] || "🌤️";
     document.getElementById('weather-temp').textContent = `${temp}°C`;
     document.getElementById('weather-desc').textContent = WEATHER_DESCS[code] || "天気情報取得済み";
+    
+    // 体感温度・湿度を追加表示
+    const weatherInfo = document.getElementById('weather-info-extra');
+    if (weatherInfo) {
+      weatherInfo.innerHTML = `<span style="font-size:12px;color:#888;">体感 ${feels}°C ／ 湿度 ${humidity}%</span>`;
+    }
+    
+    // 翌日・翌々日の予報を表示
+    if (data.daily && data.daily.time) {
+      const forecastEl = document.getElementById('weather-forecast');
+      if (forecastEl) {
+        const days = ['今日', '明日', '明後日'];
+        forecastEl.innerHTML = data.daily.time.slice(0,3).map((d, i) => {
+          const fc = data.daily.weathercode[i];
+          const max = Math.round(data.daily.temperature_2m_max[i]);
+          const min = Math.round(data.daily.temperature_2m_min[i]);
+          return `<div style="text-align:center;flex:1;">
+            <div style="font-size:11px;color:#888;">${days[i]}</div>
+            <div style="font-size:1.3rem;">${WEATHER_ICONS[fc]||'🌤️'}</div>
+            <div style="font-size:11px;font-weight:700;">${max}° <span style="color:#aaa;font-weight:400">${min}°</span></div>
+          </div>`;
+        }).join('');
+      }
+    }
     
     // 天気に応じたおすすめスポットを選択
     let category;
@@ -629,17 +657,44 @@ async function loadWeather() {
       category = 'cloudy';
     }
     
-    const spots = WEATHER_SPOTS[category];
+    // spots.jsonから動的にスポットを選択
     const container = document.getElementById('weather-spots');
-    container.innerHTML = spots.map(s => `
-      <a href="${s.url}" class="weather-spot-item">
-        <span class="weather-spot-icon">${s.icon}</span>
-        <div>
-          <div style="font-weight:800">${s.name}</div>
-          <div style="font-size:12px;color:var(--muted);font-weight:400">${s.desc}</div>
-        </div>
-      </a>
-    `).join('');
+    try {
+      const spotsData = await fetch('spots.json').then(r => r.json());
+      let filtered;
+      if (category === 'rainy') {
+        filtered = spotsData.filter(s => s.indoorOk && s.indoorOk !== '不可' && s.indoorOk !== '要確認');
+      } else if (category === 'hot') {
+        filtered = spotsData.filter(s => s.type && (s.type.includes('川') || s.type.includes('海') || s.type.includes('キャンプ')));
+        if (filtered.length < 3) filtered = spotsData.filter(s => s.area && (s.area.includes('阿蘇') || s.area.includes('くじゅう') || s.area.includes('霧島')));
+      } else {
+        filtered = spotsData.filter(s => s.weekendRecommended === true);
+      }
+      if (filtered.length < 3) filtered = spotsData.filter(s => s.weekendRecommended === true);
+      if (filtered.length < 3) filtered = spotsData.slice(0, 3);
+      const selected = filtered.sort(() => Math.random() - 0.5).slice(0, 3);
+      container.innerHTML = selected.map(s => {
+        const typeIcon = s.type ? (s.type.includes('カフェ') ? '☕' : s.type.includes('ドッグラン') ? '🐕' : s.type.includes('キャンプ') ? '⛺' : s.type.includes('温泉') ? '♨️' : '🌿') : '🌿';
+        return `<a href="spots.html" class="weather-spot-item" onclick="sessionStorage.setItem('searchQuery','${(s.name||'').replace(/'/g,'\\'')}')">
+          <span class="weather-spot-icon">${typeIcon}</span>
+          <div>
+            <div style="font-weight:800">${s.name}</div>
+            <div style="font-size:12px;color:var(--muted);font-weight:400">${s.area || ''} ／ ${s.type || ''}</div>
+          </div>
+        </a>`;
+      }).join('');
+    } catch(e2) {
+      const spots = WEATHER_SPOTS[category];
+      container.innerHTML = spots.map(s => `
+        <a href="${s.url}" class="weather-spot-item">
+          <span class="weather-spot-icon">${s.icon}</span>
+          <div>
+            <div style="font-weight:800">${s.name}</div>
+            <div style="font-size:12px;color:var(--muted);font-weight:400">${s.desc}</div>
+          </div>
+        </a>
+      `).join('');
+    }
     
   } catch(e) {
     document.getElementById('weather-icon').textContent = "🌤️";
