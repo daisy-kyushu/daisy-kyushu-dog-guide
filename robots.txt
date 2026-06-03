@@ -5,5 +5,9 @@ Allow: /
 Disallow: /admin.html
 Disallow: /listing.html
 Disallow: /pr.html
+Disallow: /googled7021ecfa0977e28.html
+
+# クロール頻度の制御
+Crawl-delay: 1
 
 Sitemap: https://daisy-kyushu.github.io/daisy-kyushu-dog-guide/sitemap.xml
