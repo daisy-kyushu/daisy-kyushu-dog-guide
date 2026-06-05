@@ -645,6 +645,68 @@
     </div>
   </div>
 
+  <!-- ===== コース自動生成ツール ===== -->
+  <div id="course-generator" style="background:#fff;border-radius:20px;box-shadow:0 4px 20px rgba(0,0,0,.08);padding:28px 24px;margin-bottom:28px;">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
+      <img src="assets/daisy-itinerary-main.png" alt="Daisy" style="width:56px;height:56px;object-fit:contain;">
+      <div>
+        <h2 style="font-size:18px;font-weight:900;color:#1b5e20;margin:0 0 4px;">✨ AIコース自動生成</h2>
+        <p style="font-size:13px;color:#666;margin:0;">条件を選ぶだけでDaisyがおすすめコースを提案！</p>
+      </div>
+    </div>
+    <!-- 入力フォーム -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px;">
+      <div>
+        <label style="font-size:12px;font-weight:700;color:#555;display:block;margin-bottom:4px;">📍 エリア</label>
+        <select id="gen-area" style="width:100%;padding:10px 12px;border:1.5px solid #e0e0e0;border-radius:10px;font-size:14px;background:#f9f9f9;">
+          <option value="">エリアを選ぶ</option>
+          <option value="福岡">🌸 福岡</option>
+          <option value="大分">♨️ 大分</option>
+          <option value="熊本">🏯 熊本</option>
+          <option value="長崎">⛵ 長崎</option>
+          <option value="宮崎">🌊 宮崎</option>
+          <option value="鹿児島">🌋 鹿児島</option>
+          <option value="佐賀">🏺 佐賀</option>
+          <option value="">九州全域</option>
+        </select>
+      </div>
+      <div>
+        <label style="font-size:12px;font-weight:700;color:#555;display:block;margin-bottom:4px;">📅 日数</label>
+        <select id="gen-days" style="width:100%;padding:10px 12px;border:1.5px solid #e0e0e0;border-radius:10px;font-size:14px;background:#f9f9f9;">
+          <option value="1">日帰り</option>
+          <option value="2">1泊2日</option>
+          <option value="3">2泊3日</option>
+        </select>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px;">
+      <div>
+        <label style="font-size:12px;font-weight:700;color:#555;display:block;margin-bottom:4px;">🐕 犬のサイズ</label>
+        <select id="gen-dog-size" style="width:100%;padding:10px 12px;border:1.5px solid #e0e0e0;border-radius:10px;font-size:14px;background:#f9f9f9;">
+          <option value="all">すべて</option>
+          <option value="large">大型犬</option>
+          <option value="small">小型犬</option>
+        </select>
+      </div>
+      <div>
+        <label style="font-size:12px;font-weight:700;color:#555;display:block;margin-bottom:4px;">🌱 カテゴリ</label>
+        <select id="gen-category" style="width:100%;padding:10px 12px;border:1.5px solid #e0e0e0;border-radius:10px;font-size:14px;background:#f9f9f9;">
+          <option value="">すべて</option>
+          <option value="公園">🌳 公園・自然</option>
+          <option value="カフェ">☕ カフェ</option>
+          <option value="ドッグラン">🐾 ドッグラン</option>
+          <option value="海">🌊 海・湖</option>
+          <option value="温泉">♨️ 温泉地</option>
+        </select>
+      </div>
+    </div>
+    <button onclick="generateCourse()" style="width:100%;background:linear-gradient(135deg,#2e7d32,#43a047);color:#fff;border:none;padding:14px;border-radius:12px;font-size:15px;font-weight:900;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;">
+      ✨ Daisyにコースを提案してもらう
+    </button>
+    <!-- 生成結果 -->
+    <div id="generated-course" style="display:none;margin-top:20px;"></div>
+  </div>
+
   <!-- ===== 自分でしおりを作るCTA ===== -->
   <div class="make-own-cta">
     <img src="assets/daisy-itinerary-main.png" alt="Daisy" style="width:80px;height:80px;object-fit:contain;margin-bottom:12px;">
@@ -680,5 +742,120 @@
   <p class="footer-copy">© 2024 Daisy Kyushu Dog Guide. 本サイトはアフィリエイト広告を利用しています。</p>
 </footer>
 <script src="firebase-tracker.js"></script>
+<script>
+// ===== コース自動生成 =====
+async function generateCourse() {
+  const area = document.getElementById('gen-area').value;
+  const days = parseInt(document.getElementById('gen-days').value);
+  const dogSize = document.getElementById('gen-dog-size').value;
+  const category = document.getElementById('gen-category').value;
+  const resultEl = document.getElementById('generated-course');
+  const btn = document.querySelector('#course-generator button');
+
+  // ローディング表示
+  btn.disabled = true;
+  btn.textContent = '✨ Daisyが考中...';
+  resultEl.style.display = 'block';
+  resultEl.innerHTML = '<div style="text-align:center;padding:20px;color:#666;">🐾 Daisyがコースを考えています...<br><small>スポットデータを分析中</small></div>';
+
+  try {
+    // spots.jsonを取得
+    const res = await fetch('spots.json');
+    const allSpots = await res.json();
+
+    // フィルタリング
+    let filtered = allSpots.filter(s => {
+      if (area && !(s.area || '').includes(area)) return false;
+      if (dogSize === 'large') {
+        const ld = (s.large_dog || s.largeDog || '').toLowerCase();
+        if (!ld.includes('ok') && !ld.includes('大型犬ok') && !ld.includes('大型犬可')) return false;
+      }
+      if (category) {
+        const type = (s.type || s.category || '').toLowerCase();
+        const name = (s.name || '').toLowerCase();
+        const memo = (s.memo || s.description || '').toLowerCase();
+        if (!type.includes(category.toLowerCase()) && !name.includes(category.toLowerCase()) && !memo.includes(category.toLowerCase())) return false;
+      }
+      return true;
+    });
+
+    if (filtered.length === 0) {
+      resultEl.innerHTML = '<div style="background:#fff3e0;border-radius:12px;padding:16px;text-align:center;color:#e65100;">🐾 ごめんなさい、条件に合うスポットが見つかりませんでした。条件を変えてみてください！</div>';
+      btn.disabled = false;
+      btn.innerHTML = '✨ Daisyにコースを提案してもらう';
+      return;
+    }
+
+    // コースに必要なスポット数を決定
+    const spotsPerDay = 3;
+    const totalSpots = Math.min(days * spotsPerDay, filtered.length);
+
+    // ランダムにスポットを選択（シャッフル）
+    const shuffled = [...filtered].sort(() => Math.random() - 0.5);
+    const selected = shuffled.slice(0, totalSpots);
+
+    // コース名を生成
+    const areaLabel = area || '九州';
+    const daysLabel = days === 1 ? '日帰り' : days === 2 ? '1泊2日' : '2泊3日';
+    const dogLabel = dogSize === 'large' ? '大型犬' : dogSize === 'small' ? '小型犬' : '犬連れ';
+    const courseName = `${areaLabel} ${daysLabel} ${dogLabel}コース`;
+
+    // GooglemapルートURLを作成
+    const mapQuery = selected.map(s => s.mapQuery || (s.name + ' ' + (s.area || ''))).join('/');
+    const mapsUrl = `https://www.google.com/maps/dir/${encodeURIComponent(mapQuery)}`;
+
+    // HTML生成
+    let html = `
+      <div style="background:linear-gradient(135deg,#e8f5e9,#f1f8e9);border-radius:16px;padding:20px;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;">
+          <img src="assets/daisy-itinerary-wave.png" alt="Daisy" style="width:44px;height:44px;border-radius:50%;object-fit:contain;">
+          <div>
+            <div style="font-weight:900;font-size:16px;color:#1b5e20;">🐾 ${courseName}</div>
+            <div style="font-size:12px;color:#555;">${selected.length}件のスポットを提案！</div>
+          </div>
+        </div>
+    `;
+
+    selected.forEach((s, i) => {
+      const dayNum = Math.floor(i / spotsPerDay) + 1;
+      const spotNum = (i % spotsPerDay) + 1;
+      const isNewDay = i % spotsPerDay === 0 && days > 1;
+      if (isNewDay) {
+        html += `<div style="font-size:12px;font-weight:700;color:#2e7d32;background:#fff;border-radius:8px;padding:6px 12px;margin-bottom:8px;display:inline-block;">DAY ${dayNum}</div>`;
+      }
+      html += `
+        <div style="background:#fff;border-radius:12px;padding:12px 14px;margin-bottom:8px;display:flex;gap:10px;align-items:flex-start;">
+          <div style="width:28px;height:28px;border-radius:50%;background:#2e7d32;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:13px;flex-shrink:0;">${i + 1}</div>
+          <div style="flex:1;min-width:0;">
+            <div style="font-weight:700;font-size:14px;color:#1a1a1a;">${s.name}</div>
+            <div style="font-size:12px;color:#888;margin-top:2px;">${s.area || ''} ${s.type || s.category || ''}</div>
+            <div style="font-size:12px;color:#555;margin-top:4px;line-height:1.4;">${(s.memo || s.description || '').slice(0, 50)}${(s.memo || s.description || '').length > 50 ? '...' : ''}</div>
+          </div>
+          <a href="spot/${s.id}.html" style="font-size:11px;color:#2e7d32;text-decoration:none;border:1px solid #c8e6c9;border-radius:8px;padding:4px 8px;white-space:nowrap;flex-shrink:0;">詳細</a>
+        </div>
+      `;
+      if (i < selected.length - 1 && (i + 1) % spotsPerDay !== 0) {
+        html += `<div style="text-align:center;color:#aaa;font-size:12px;margin:2px 0;">↓ 移動</div>`;
+      }
+    });
+
+    html += `
+        <div style="display:flex;gap:8px;margin-top:16px;flex-wrap:wrap;">
+          <a href="${mapsUrl}" target="_blank" rel="noopener" style="flex:1;min-width:140px;background:#2e7d32;color:#fff;text-decoration:none;padding:12px;border-radius:10px;font-weight:700;font-size:13px;text-align:center;display:block;">🗺️ Googleマップでルート</a>
+          <a href="spots.html" style="flex:1;min-width:140px;background:#f5f5f5;color:#333;text-decoration:none;padding:12px;border-radius:10px;font-weight:700;font-size:13px;text-align:center;display:block;">📋 しおりを作る</a>
+        </div>
+        <div style="margin-top:12px;font-size:12px;color:#888;text-align:center;">🐾 再生成すると別のコースを提案します</div>
+      </div>
+    `;
+
+    resultEl.innerHTML = html;
+  } catch(e) {
+    resultEl.innerHTML = '<div style="color:#e53935;padding:12px;">エラーが発生しました。再度お試しください。</div>';
+  }
+
+  btn.disabled = false;
+  btn.innerHTML = '✨ Daisyにコースを提案してもらう';
+}
+</script>
 </body>
 </html>

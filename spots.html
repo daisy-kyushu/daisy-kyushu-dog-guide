@@ -281,16 +281,37 @@
   </div>
 
   <!-- フィルター -->
-  <div class="filter-bar" id="filter-bar">
-    <button class="filter-btn active" onclick="filterSpots('all',this)" data-filter="all">すべて</button>
-    <button class="filter-btn filter-btn-dog" onclick="filterSpots('large_dog_ok',this)" data-filter="large_dog_ok">🐕 大型犬OK</button>
-    <button class="filter-btn" onclick="filterSpots('福岡',this)" data-filter="福岡">🌸 福岡</button>
-    <button class="filter-btn" onclick="filterSpots('大分',this)" data-filter="大分">♨️ 大分</button>
-    <button class="filter-btn" onclick="filterSpots('熊本',this)" data-filter="熊本">🏯 熊本</button>
-    <button class="filter-btn" onclick="filterSpots('長崎',this)" data-filter="長崎">⛵ 長崎</button>
-    <button class="filter-btn" onclick="filterSpots('宮崎',this)" data-filter="宮崎">🌊 宮崎</button>
-    <button class="filter-btn" onclick="filterSpots('鹿児島',this)" data-filter="鹿児島">🌋 鹿児島</button>
-    <button class="filter-btn" onclick="filterSpots('佐賀',this)" data-filter="佐賀">🏺 佐賀</button>
+  <!-- 犬の条件フィルター -->
+  <div style="margin-bottom:10px;">
+    <div style="font-size:12px;font-weight:700;color:#555;margin-bottom:6px;display:flex;align-items:center;gap:6px;">🐕 犬のサイズ・条件で絞り込む</div>
+    <div class="filter-bar" id="dog-filter-bar" style="margin-bottom:0;">
+      <button class="filter-btn filter-btn-dog active" onclick="setDogFilter('all',this)" data-dog-filter="all">🐾 すべての犬</button>
+      <button class="filter-btn filter-btn-dog" onclick="setDogFilter('large_dog_ok',this)" data-dog-filter="large_dog_ok">🐕 大型犬OK</button>
+      <button class="filter-btn filter-btn-dog" onclick="setDogFilter('indoor_ok',this)" data-dog-filter="indoor_ok">🏠 室内・屋根あり</button>
+      <button class="filter-btn filter-btn-dog" onclick="setDogFilter('rainy_ok',this)" data-dog-filter="rainy_ok">☂️ 雨でもOK</button>
+      <button class="filter-btn filter-btn-dog" onclick="setDogFilter('parking_ok',this)" data-dog-filter="parking_ok">🚗 駐車場あり</button>
+      <button class="filter-btn filter-btn-dog" onclick="setDogFilter('weekend',this)" data-dog-filter="weekend">📅 週末おすすめ</button>
+    </div>
+  </div>
+  <!-- エリアフィルター -->
+  <div style="margin-bottom:10px;">
+    <div style="font-size:12px;font-weight:700;color:#555;margin-bottom:6px;display:flex;align-items:center;gap:6px;">📍 エリアで絞り込む</div>
+    <div class="filter-bar" id="filter-bar">
+      <button class="filter-btn active" onclick="filterSpots('all',this)" data-filter="all">すべて</button>
+      <button class="filter-btn" onclick="filterSpots('福岡',this)" data-filter="福岡">🌸 福岡</button>
+      <button class="filter-btn" onclick="filterSpots('北九州',this)" data-filter="北九州">🏭 北九州</button>
+      <button class="filter-btn" onclick="filterSpots('大分',this)" data-filter="大分">♨️ 大分</button>
+      <button class="filter-btn" onclick="filterSpots('熊本',this)" data-filter="熊本">🏯 熊本</button>
+      <button class="filter-btn" onclick="filterSpots('長崎',this)" data-filter="長崎">⛵ 長崎</button>
+      <button class="filter-btn" onclick="filterSpots('宮崎',this)" data-filter="宮崎">🌊 宮崎</button>
+      <button class="filter-btn" onclick="filterSpots('鹿児島',this)" data-filter="鹿児島">🌋 鹿児島</button>
+      <button class="filter-btn" onclick="filterSpots('佐賀',this)" data-filter="佐賀">🏺 佐賀</button>
+    </div>
+  </div>
+  <!-- 絞り込み結果カウント -->
+  <div id="filter-result-count" style="font-size:13px;color:#555;margin-bottom:12px;display:none;background:#f0faf4;border-radius:8px;padding:8px 14px;display:flex;align-items:center;justify-content:space-between;">
+    <span id="filter-count-text"></span>
+    <button onclick="resetAllFilters()" style="font-size:12px;color:#2e7d32;background:none;border:1px solid #2e7d32;border-radius:20px;padding:3px 10px;cursor:pointer;">✕ リセット</button>
   </div>
 
   <div class="search-box">
@@ -395,6 +416,7 @@
 <script>
 let allSpots = [];
 let currentFilter = 'all';
+let currentDogFilter = 'all';
 let currentSearch = '';
 let selectedSpots = [];
 let selectModeOn = false;
@@ -407,9 +429,60 @@ async function loadSpots() {
 
 function filterSpots(area, btn) {
   currentFilter = area;
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('#filter-bar .filter-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
+  updateFilterCount();
   renderSpots();
+}
+
+function setDogFilter(filter, btn) {
+  currentDogFilter = filter;
+  document.querySelectorAll('#dog-filter-bar .filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  updateFilterCount();
+  renderSpots();
+}
+
+function resetAllFilters() {
+  currentFilter = 'all';
+  currentDogFilter = 'all';
+  currentSearch = '';
+  document.getElementById('search-input').value = '';
+  document.querySelectorAll('#filter-bar .filter-btn').forEach(b => b.classList.remove('active'));
+  document.querySelector('#filter-bar .filter-btn[data-filter="all"]').classList.add('active');
+  document.querySelectorAll('#dog-filter-bar .filter-btn').forEach(b => b.classList.remove('active'));
+  document.querySelector('#dog-filter-bar .filter-btn[data-dog-filter="all"]').classList.add('active');
+  document.getElementById('filter-result-count').style.display = 'none';
+  renderSpots();
+}
+
+function updateFilterCount() {
+  const countEl = document.getElementById('filter-result-count');
+  const hasFilter = currentFilter !== 'all' || currentDogFilter !== 'all' || currentSearch;
+  if (hasFilter) {
+    countEl.style.display = 'flex';
+  } else {
+    countEl.style.display = 'none';
+  }
+}
+
+function isIndoorOk(s) {
+  const indoor = (s.indoorOk || '').toString().toLowerCase();
+  return indoor === 'true' || indoor.includes('可') || indoor.includes('カフェ') || indoor.includes('屋内') || indoor.includes('室内');
+}
+
+function isRainyOk(s) {
+  const rainy = (s.rainyOk || '').toString().toLowerCase();
+  return rainy.includes('可') || rainy.includes('屋内') || rainy.includes('室内') || rainy === 'true';
+}
+
+function isParkingOk(s) {
+  const parking = (s.parking || '').toString().toLowerCase();
+  return parking === 'true' || parking.includes('あり') || parking.includes('ok') || parking.includes('可');
+}
+
+function isWeekendOk(s) {
+  return s.weekendRecommended === true || s.weekendRecommended === 'true' || s.weekendRecommended === '◯';
 }
 
 function isLargeDogOk(s) {
@@ -424,9 +497,20 @@ function searchSpots(q) {
 
 function renderSpots() {
   let items = allSpots;
-  if (currentFilter === 'large_dog_ok') {
+  // 犬の条件フィルター
+  if (currentDogFilter === 'large_dog_ok') {
     items = items.filter(s => isLargeDogOk(s));
-  } else if (currentFilter !== 'all') {
+  } else if (currentDogFilter === 'indoor_ok') {
+    items = items.filter(s => isIndoorOk(s));
+  } else if (currentDogFilter === 'rainy_ok') {
+    items = items.filter(s => isRainyOk(s));
+  } else if (currentDogFilter === 'parking_ok') {
+    items = items.filter(s => isParkingOk(s));
+  } else if (currentDogFilter === 'weekend') {
+    items = items.filter(s => isWeekendOk(s));
+  }
+  // エリアフィルター
+  if (currentFilter !== 'all') {
     items = items.filter(s => (s.area||'').includes(currentFilter));
   }
   if (currentSearch) items = items.filter(s =>
@@ -434,6 +518,23 @@ function renderSpots() {
     (s.area||'').toLowerCase().includes(currentSearch) ||
     (s.memo||s.description||s.desc||'').toLowerCase().includes(currentSearch)
   );
+  // 絞り込み結果カウント表示
+  const countEl = document.getElementById('filter-result-count');
+  const countText = document.getElementById('filter-count-text');
+  const hasFilter = currentFilter !== 'all' || currentDogFilter !== 'all' || currentSearch;
+  if (hasFilter) {
+    countEl.style.display = 'flex';
+    let filterDesc = [];
+    if (currentDogFilter !== 'all') {
+      const dogFilterLabels = { 'large_dog_ok': '大型犬OK', 'indoor_ok': '室内・屋根あり', 'rainy_ok': '雨でもOK', 'parking_ok': '駐車場あり', 'weekend': '週末おすすめ' };
+      filterDesc.push(dogFilterLabels[currentDogFilter] || currentDogFilter);
+    }
+    if (currentFilter !== 'all') filterDesc.push(currentFilter);
+    if (currentSearch) filterDesc.push(`「${currentSearch}」`);
+    countText.textContent = `🔍 ${filterDesc.join(' + ')} → ${items.length}件該当`;
+  } else {
+    countEl.style.display = 'none';
+  }
   const grid = document.getElementById('spots-grid');
   if (!items.length) {
     grid.innerHTML = '<p class="text-muted" style="padding:20px">該当するスポットが見つかりませんでした</p>';

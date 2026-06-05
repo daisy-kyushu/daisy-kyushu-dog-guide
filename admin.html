@@ -7,11 +7,8 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-E1XSFE7LXG');
 </script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9409002778362752"
-     crossorigin="anonymous"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>管理画面 | Daisy Kyushu Dog Guide</title>
@@ -22,6 +19,8 @@
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Noto Sans JP', sans-serif; background: #0f172a; color: #e2e8f0; min-height: 100vh; }
+
+    /* ログイン画面 */
     #login-screen { display: flex; align-items: center; justify-content: center; min-height: 100vh; background: linear-gradient(135deg, #0f172a, #1e293b); }
     .login-box { background: #1e293b; border: 1px solid #334155; border-radius: 20px; padding: 40px 36px; width: 340px; text-align: center; }
     .login-logo { font-size: 40px; margin-bottom: 12px; }
@@ -31,23 +30,44 @@
     .login-input:focus { border-color: #22c55e; }
     .login-btn { width: 100%; padding: 13px; background: linear-gradient(135deg, #16a34a, #22c55e); border: none; border-radius: 10px; color: #fff; font-size: 15px; font-weight: 700; cursor: pointer; }
     .login-error { color: #f87171; font-size: 13px; margin-top: 10px; display: none; }
+
+    /* 管理画面全体 */
     #admin-screen { display: none; }
     .admin-header { background: #1e293b; border-bottom: 1px solid #334155; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 50; }
     .admin-brand { font-size: 16px; font-weight: 800; color: #22c55e; }
     .admin-brand span { color: #94a3b8; font-weight: 400; font-size: 13px; margin-left: 10px; }
-    .logout-btn { background: #334155; border: none; color: #94a3b8; padding: 7px 16px; border-radius: 8px; font-size: 13px; cursor: pointer; }
-    .refresh-btn { background: #334155; border: none; color: #94a3b8; padding: 7px 16px; border-radius: 8px; font-size: 13px; cursor: pointer; }
-    .admin-body { padding: 24px; max-width: 1200px; margin: 0 auto; }
+    .header-btns { display: flex; gap: 8px; align-items: center; }
+    .header-btn { background: #334155; border: none; color: #94a3b8; padding: 7px 14px; border-radius: 8px; font-size: 13px; cursor: pointer; transition: background 0.2s; }
+    .header-btn:hover { background: #475569; color: #e2e8f0; }
+    .header-btn.danger { color: #f87171; }
+    .header-btn.danger:hover { background: #7f1d1d; color: #fca5a5; }
+
+    /* タブナビゲーション */
+    .tab-nav { background: #1e293b; border-bottom: 1px solid #334155; padding: 0 24px; display: flex; gap: 0; overflow-x: auto; }
+    .tab-btn { padding: 14px 18px; font-size: 13px; font-weight: 600; color: #64748b; border: none; background: none; cursor: pointer; border-bottom: 3px solid transparent; white-space: nowrap; transition: color 0.2s; }
+    .tab-btn:hover { color: #94a3b8; }
+    .tab-btn.active { color: #22c55e; border-bottom-color: #22c55e; }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+
+    /* コンテンツエリア */
+    .admin-body { padding: 24px; max-width: 1400px; margin: 0 auto; }
+
+    /* KPIカード */
     .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px; }
     .kpi-card { background: #1e293b; border: 1px solid #334155; border-radius: 14px; padding: 20px; }
     .kpi-label { font-size: 12px; color: #64748b; margin-bottom: 6px; }
     .kpi-value { font-size: 32px; font-weight: 800; color: #f1f5f9; }
     .kpi-sub { font-size: 12px; color: #94a3b8; margin-top: 4px; }
     .kpi-icon { font-size: 22px; float: right; margin-top: -4px; }
+
+    /* チャート */
     .charts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
     .chart-card { background: #1e293b; border: 1px solid #334155; border-radius: 14px; padding: 20px; }
     .chart-title { font-size: 14px; font-weight: 700; color: #f1f5f9; margin-bottom: 16px; }
     .chart-wrap { position: relative; height: 200px; }
+
+    /* ランキング */
     .rank-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
     .rank-card { background: #1e293b; border: 1px solid #334155; border-radius: 14px; padding: 20px; }
     .rank-title { font-size: 14px; font-weight: 700; color: #f1f5f9; margin-bottom: 14px; }
@@ -60,22 +80,128 @@
     .rank-n { background: #334155; color: #94a3b8; }
     .rank-name { flex: 1; font-size: 13px; color: #e2e8f0; }
     .rank-count { font-size: 13px; font-weight: 700; color: #22c55e; }
+
+    /* テーブル */
     .table-card { background: #1e293b; border: 1px solid #334155; border-radius: 14px; padding: 20px; margin-bottom: 24px; }
-    .table-title { font-size: 14px; font-weight: 700; color: #f1f5f9; margin-bottom: 14px; }
+    .table-title { font-size: 14px; font-weight: 700; color: #f1f5f9; margin-bottom: 14px; display: flex; align-items: center; justify-content: space-between; }
     table { width: 100%; border-collapse: collapse; font-size: 13px; }
     th { text-align: left; padding: 8px 12px; color: #64748b; border-bottom: 1px solid #334155; font-weight: 500; }
-    td { padding: 10px 12px; border-bottom: 1px solid #1e293b; color: #e2e8f0; }
+    td { padding: 10px 12px; border-bottom: 1px solid #1e293b; color: #e2e8f0; vertical-align: middle; }
     tr:hover td { background: #0f172a; }
     .bar-bg { background: #334155; border-radius: 4px; height: 6px; margin-top: 4px; }
     .bar-fill { background: #22c55e; border-radius: 4px; height: 6px; }
+
+    /* ローディング */
     .loading { text-align: center; padding: 60px; color: #64748b; font-size: 14px; }
     .spinner { display: inline-block; width: 32px; height: 32px; border: 3px solid #334155; border-top-color: #22c55e; border-radius: 50%; animation: spin 1s linear infinite; margin-bottom: 12px; }
     @keyframes spin { to { transform: rotate(360deg); } }
-    @media (max-width: 768px) { .kpi-grid { grid-template-columns: 1fr 1fr; } .charts-grid, .rank-grid { grid-template-columns: 1fr; } .admin-body { padding: 16px; } }
+
+    /* フォーム */
+    .form-card { background: #1e293b; border: 1px solid #334155; border-radius: 14px; padding: 24px; margin-bottom: 24px; }
+    .form-title { font-size: 15px; font-weight: 700; color: #f1f5f9; margin-bottom: 18px; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .form-group { display: flex; flex-direction: column; gap: 6px; }
+    .form-group.full { grid-column: 1 / -1; }
+    .form-label { font-size: 12px; color: #64748b; font-weight: 500; }
+    .form-input, .form-select, .form-textarea { background: #0f172a; border: 1px solid #334155; border-radius: 8px; color: #e2e8f0; padding: 10px 12px; font-size: 13px; font-family: inherit; outline: none; transition: border-color 0.2s; }
+    .form-input:focus, .form-select:focus, .form-textarea:focus { border-color: #22c55e; }
+    .form-textarea { resize: vertical; min-height: 80px; }
+    .form-select option { background: #1e293b; }
+    .btn { padding: 10px 20px; border: none; border-radius: 8px; font-size: 13px; font-weight: 700; cursor: pointer; transition: opacity 0.2s; }
+    .btn:hover { opacity: 0.85; }
+    .btn-primary { background: linear-gradient(135deg, #16a34a, #22c55e); color: #fff; }
+    .btn-danger { background: #dc2626; color: #fff; }
+    .btn-secondary { background: #334155; color: #94a3b8; }
+    .btn-warning { background: #d97706; color: #fff; }
+    .btn-sm { padding: 6px 12px; font-size: 12px; }
+
+    /* バッジ */
+    .badge { display: inline-block; padding: 3px 8px; border-radius: 20px; font-size: 11px; font-weight: 600; }
+    .badge-green { background: #14532d; color: #4ade80; }
+    .badge-yellow { background: #713f12; color: #fbbf24; }
+    .badge-red { background: #7f1d1d; color: #f87171; }
+    .badge-blue { background: #1e3a5f; color: #60a5fa; }
+    .badge-gray { background: #334155; color: #94a3b8; }
+
+    /* アラート */
+    .alert { padding: 12px 16px; border-radius: 10px; font-size: 13px; margin-bottom: 16px; }
+    .alert-success { background: #14532d; color: #4ade80; border: 1px solid #166534; }
+    .alert-error { background: #7f1d1d; color: #f87171; border: 1px solid #991b1b; }
+    .alert-info { background: #1e3a5f; color: #60a5fa; border: 1px solid #1d4ed8; }
+
+    /* イベントリスト */
+    .event-list { display: flex; flex-direction: column; gap: 12px; }
+    .event-item { background: #0f172a; border: 1px solid #334155; border-radius: 10px; padding: 16px; display: flex; align-items: flex-start; gap: 16px; }
+    .event-info { flex: 1; }
+    .event-title { font-size: 14px; font-weight: 700; color: #f1f5f9; margin-bottom: 4px; }
+    .event-meta { font-size: 12px; color: #64748b; display: flex; gap: 12px; flex-wrap: wrap; }
+    .event-actions { display: flex; gap: 8px; flex-shrink: 0; }
+
+    /* ブログリスト */
+    .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .blog-card { background: #0f172a; border: 1px solid #334155; border-radius: 10px; padding: 16px; }
+    .blog-card-title { font-size: 13px; font-weight: 700; color: #f1f5f9; margin-bottom: 8px; line-height: 1.5; }
+    .blog-card-meta { font-size: 11px; color: #64748b; margin-bottom: 10px; }
+    .blog-card-links { display: flex; gap: 8px; }
+
+    /* 口コミリスト */
+    .review-item { background: #0f172a; border: 1px solid #334155; border-radius: 10px; padding: 16px; margin-bottom: 12px; }
+    .review-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+    .review-spot { font-size: 13px; font-weight: 700; color: #22c55e; }
+    .review-author { font-size: 12px; color: #64748b; }
+    .review-stars { color: #fbbf24; font-size: 14px; }
+    .review-text { font-size: 13px; color: #e2e8f0; line-height: 1.6; }
+    .review-date { font-size: 11px; color: #475569; margin-top: 6px; }
+
+    /* 投稿管理 */
+    .post-item { background: #0f172a; border: 1px solid #334155; border-radius: 10px; padding: 16px; margin-bottom: 12px; display: flex; gap: 16px; }
+    .post-thumb { width: 80px; height: 80px; border-radius: 8px; object-fit: cover; background: #334155; flex-shrink: 0; }
+    .post-info { flex: 1; }
+    .post-caption { font-size: 13px; color: #e2e8f0; line-height: 1.5; margin-bottom: 6px; }
+    .post-meta { font-size: 11px; color: #64748b; display: flex; gap: 12px; }
+
+    /* セクションヘッダー */
+    .section-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+    .section-title { font-size: 16px; font-weight: 800; color: #f1f5f9; }
+    .section-sub { font-size: 12px; color: #64748b; margin-top: 2px; }
+
+    /* スポット管理 */
+    .spot-search { display: flex; gap: 10px; margin-bottom: 16px; }
+    .spot-search input { flex: 1; }
+    .spot-filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+    .filter-chip { padding: 6px 14px; border-radius: 20px; font-size: 12px; font-weight: 600; border: 1px solid #334155; background: #0f172a; color: #64748b; cursor: pointer; transition: all 0.2s; }
+    .filter-chip.active { background: #14532d; color: #4ade80; border-color: #166534; }
+
+    /* ページネーション */
+    .pagination { display: flex; gap: 8px; justify-content: center; margin-top: 16px; }
+    .page-btn { padding: 6px 12px; border-radius: 6px; font-size: 12px; border: 1px solid #334155; background: #0f172a; color: #64748b; cursor: pointer; }
+    .page-btn.active { background: #22c55e; color: #fff; border-color: #22c55e; }
+
+    /* モーダル */
+    .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 100; align-items: center; justify-content: center; }
+    .modal-overlay.open { display: flex; }
+    .modal-box { background: #1e293b; border: 1px solid #334155; border-radius: 16px; padding: 28px; width: 90%; max-width: 560px; max-height: 90vh; overflow-y: auto; }
+    .modal-title { font-size: 16px; font-weight: 800; color: #f1f5f9; margin-bottom: 20px; }
+    .modal-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 20px; }
+
+    /* レスポンシブ */
+    @media (max-width: 900px) {
+      .kpi-grid { grid-template-columns: 1fr 1fr; }
+      .charts-grid, .rank-grid { grid-template-columns: 1fr; }
+      .form-grid { grid-template-columns: 1fr; }
+      .blog-grid { grid-template-columns: 1fr 1fr; }
+      .admin-body { padding: 16px; }
+    }
+    @media (max-width: 600px) {
+      .blog-grid { grid-template-columns: 1fr; }
+      .kpi-grid { grid-template-columns: 1fr 1fr; }
+      .tab-btn { padding: 12px 12px; font-size: 12px; }
+    }
   </style>
 </head>
 <body>
 
+<!-- ログイン画面 -->
 <div id="login-screen">
   <div class="login-box">
     <div class="login-logo">🐾</div>
@@ -87,44 +213,284 @@
   </div>
 </div>
 
+<!-- 管理画面 -->
 <div id="admin-screen">
   <header class="admin-header">
-    <div class="admin-brand">🐾 管理画面<span id="last-updated"></span></div>
-    <div style="display:flex;gap:10px;">
-      <button class="refresh-btn" onclick="loadDashboard()">🔄 更新</button>
-      <button class="logout-btn" onclick="doLogout()">ログアウト</button>
+    <div class="admin-brand">🐾 Daisy管理画面<span id="last-updated"></span></div>
+    <div class="header-btns">
+      <button class="header-btn" onclick="loadCurrentTab()">🔄 更新</button>
+      <a href="https://daisy-kyushu.github.io/daisy-kyushu-dog-guide/" target="_blank" class="header-btn" style="text-decoration:none;">🌐 サイト</a>
+      <button class="header-btn danger" onclick="doLogout()">ログアウト</button>
     </div>
   </header>
+
+  <!-- タブナビゲーション -->
+  <nav class="tab-nav">
+    <button class="tab-btn active" onclick="switchTab('dashboard')">📊 ダッシュボード</button>
+    <button class="tab-btn" onclick="switchTab('events')">📅 イベント管理</button>
+    <button class="tab-btn" onclick="switchTab('spots')">📍 スポット管理</button>
+    <button class="tab-btn" onclick="switchTab('blog')">✍️ ブログ管理</button>
+    <button class="tab-btn" onclick="switchTab('reviews')">💬 口コミ管理</button>
+    <button class="tab-btn" onclick="switchTab('posts')">📸 Instagram投稿</button>
+    <button class="tab-btn" onclick="switchTab('rakuten')">🛒 楽天クリック詳細</button>
+  </nav>
+
   <div class="admin-body">
-    <div id="loading-area" class="loading">
-      <div class="spinner"></div><br>データを読み込み中...
+
+    <!-- ダッシュボードタブ -->
+    <div id="tab-dashboard" class="tab-content active">
+      <div id="loading-area" class="loading">
+        <div class="spinner"></div><br>データを読み込み中...
+      </div>
+      <div id="dashboard" style="display:none;">
+        <div class="kpi-grid">
+          <div class="kpi-card"><div class="kpi-icon">👀</div><div class="kpi-label">総ページビュー</div><div class="kpi-value" id="kpi-total-pv">-</div><div class="kpi-sub">全期間累計</div></div>
+          <div class="kpi-card"><div class="kpi-icon">📅</div><div class="kpi-label">今日のPV</div><div class="kpi-value" id="kpi-today-pv">-</div><div class="kpi-sub" id="kpi-today-date">-</div></div>
+          <div class="kpi-card"><div class="kpi-icon">🛒</div><div class="kpi-label">楽天クリック総数</div><div class="kpi-value" id="kpi-total-clicks">-</div><div class="kpi-sub">全期間累計</div></div>
+          <div class="kpi-card"><div class="kpi-icon">📄</div><div class="kpi-label">計測ページ数</div><div class="kpi-value" id="kpi-page-count">-</div><div class="kpi-sub">アクセスあり</div></div>
+        </div>
+        <div class="charts-grid">
+          <div class="chart-card"><div class="chart-title">⏰ 時間帯別アクセス（全期間）</div><div class="chart-wrap"><canvas id="hourly-chart"></canvas></div></div>
+          <div class="chart-card"><div class="chart-title">📊 直近7日間のPV推移</div><div class="chart-wrap"><canvas id="daily-chart"></canvas></div></div>
+        </div>
+        <div class="rank-grid">
+          <div class="rank-card"><div class="rank-title">🏆 人気ページ TOP10（PV数）</div><div id="page-ranking"></div></div>
+          <div class="rank-card"><div class="rank-title">🛒 楽天クリック TOP10</div><div id="click-ranking"></div></div>
+        </div>
+        <div class="table-card">
+          <div class="table-title">📋 全ページ別アクセス詳細</div>
+          <table><thead><tr><th>#</th><th>ページ</th><th>PV数</th><th>楽天クリック</th><th>最終アクセス</th></tr></thead><tbody id="page-table"></tbody></table>
+        </div>
+      </div>
     </div>
-    <div id="dashboard" style="display:none;">
-      <div class="kpi-grid">
-        <div class="kpi-card"><div class="kpi-icon">👀</div><div class="kpi-label">総ページビュー</div><div class="kpi-value" id="kpi-total-pv">-</div><div class="kpi-sub">全期間累計</div></div>
-        <div class="kpi-card"><div class="kpi-icon">📅</div><div class="kpi-label">今日のPV</div><div class="kpi-value" id="kpi-today-pv">-</div><div class="kpi-sub" id="kpi-today-date">-</div></div>
-        <div class="kpi-card"><div class="kpi-icon">🛒</div><div class="kpi-label">楽天クリック総数</div><div class="kpi-value" id="kpi-total-clicks">-</div><div class="kpi-sub">全期間累計</div></div>
-        <div class="kpi-card"><div class="kpi-icon">📄</div><div class="kpi-label">計測ページ数</div><div class="kpi-value" id="kpi-page-count">-</div><div class="kpi-sub">アクセスあり</div></div>
+
+    <!-- イベント管理タブ -->
+    <div id="tab-events" class="tab-content">
+      <div class="section-header">
+        <div>
+          <div class="section-title">📅 イベント管理</div>
+          <div class="section-sub">events.jsonのデータを管理します（変更はGitHubプッシュが必要）</div>
+        </div>
+        <button class="btn btn-primary" onclick="openEventModal()">＋ 新規追加</button>
       </div>
-      <div class="charts-grid">
-        <div class="chart-card"><div class="chart-title">⏰ 時間帯別アクセス（全期間）</div><div class="chart-wrap"><canvas id="hourly-chart"></canvas></div></div>
-        <div class="chart-card"><div class="chart-title">📊 直近7日間のPV推移</div><div class="chart-wrap"><canvas id="daily-chart"></canvas></div></div>
+      <div id="events-alert"></div>
+      <div id="events-list" class="event-list">
+        <div class="loading"><div class="spinner"></div><br>読み込み中...</div>
       </div>
-      <div class="rank-grid">
-        <div class="rank-card"><div class="rank-title">🏆 人気ページ TOP10（PV数）</div><div id="page-ranking"></div></div>
-        <div class="rank-card"><div class="rank-title">🛒 楽天クリック TOP10</div><div id="click-ranking"></div></div>
+    </div>
+
+    <!-- スポット管理タブ -->
+    <div id="tab-spots" class="tab-content">
+      <div class="section-header">
+        <div>
+          <div class="section-title">📍 スポット管理</div>
+          <div class="section-sub" id="spots-count">読み込み中...</div>
+        </div>
+      </div>
+      <div class="spot-search">
+        <input type="text" id="spot-search-input" class="form-input" placeholder="スポット名・エリアで検索..." oninput="filterSpots()">
+        <select id="spot-area-filter" class="form-select" onchange="filterSpots()">
+          <option value="">全エリア</option>
+          <option value="福岡">福岡</option>
+          <option value="北九州">北九州</option>
+          <option value="大分">大分</option>
+          <option value="熊本">熊本</option>
+          <option value="長崎">長崎</option>
+          <option value="佐賀">佐賀</option>
+          <option value="宮崎">宮崎</option>
+          <option value="鹿児島">鹿児島</option>
+        </select>
+      </div>
+      <div class="spot-filters">
+        <div class="filter-chip active" onclick="toggleSpotFilter(this, 'all')">すべて</div>
+        <div class="filter-chip" onclick="toggleSpotFilter(this, 'largeDog')">大型犬OK</div>
+        <div class="filter-chip" onclick="toggleSpotFilter(this, 'rainyOk')">雨天OK</div>
+        <div class="filter-chip" onclick="toggleSpotFilter(this, 'indoorOk')">室内OK</div>
+        <div class="filter-chip" onclick="toggleSpotFilter(this, 'parking')">駐車場あり</div>
+        <div class="filter-chip" onclick="toggleSpotFilter(this, 'weekendRecommended')">週末おすすめ</div>
       </div>
       <div class="table-card">
-        <div class="table-title">📋 全ページ別アクセス詳細</div>
-        <table><thead><tr><th>#</th><th>ページ</th><th>PV数</th><th>楽天クリック</th><th>最終アクセス</th></tr></thead><tbody id="page-table"></tbody></table>
+        <div class="table-title">
+          <span id="spots-table-title">スポット一覧</span>
+          <span id="spots-showing" style="font-size:12px;color:#64748b;font-weight:400;"></span>
+        </div>
+        <table>
+          <thead><tr><th>#</th><th>スポット名</th><th>エリア</th><th>種別</th><th>大型犬</th><th>雨天</th><th>状態</th><th>操作</th></tr></thead>
+          <tbody id="spots-table"></tbody>
+        </table>
+        <div class="pagination" id="spots-pagination"></div>
       </div>
+    </div>
+
+    <!-- ブログ管理タブ -->
+    <div id="tab-blog" class="tab-content">
+      <div class="section-header">
+        <div>
+          <div class="section-title">✍️ ブログ記事管理</div>
+          <div class="section-sub">全17本のブログ記事一覧</div>
+        </div>
+      </div>
+      <div class="blog-grid" id="blog-grid">
+        <!-- JSで生成 -->
+      </div>
+    </div>
+
+    <!-- 口コミ管理タブ -->
+    <div id="tab-reviews" class="tab-content">
+      <div class="section-header">
+        <div>
+          <div class="section-title">💬 口コミ管理</div>
+          <div class="section-sub">Firestoreに保存された口コミを管理します</div>
+        </div>
+        <button class="btn btn-secondary" onclick="loadReviews()">🔄 再読み込み</button>
+      </div>
+      <div id="reviews-alert"></div>
+      <div id="reviews-loading" class="loading"><div class="spinner"></div><br>口コミを読み込み中...</div>
+      <div id="reviews-list"></div>
+    </div>
+
+    <!-- Instagram投稿タブ -->
+    <div id="tab-posts" class="tab-content">
+      <div class="section-header">
+        <div>
+          <div class="section-title">📸 Instagram投稿管理</div>
+          <div class="section-sub">投稿履歴とスケジュール確認</div>
+        </div>
+        <button class="btn btn-secondary" onclick="loadInstagramPosts()">🔄 再読み込み</button>
+      </div>
+      <div id="posts-loading" class="loading"><div class="spinner"></div><br>投稿データを読み込み中...</div>
+      <div id="posts-content" style="display:none;">
+        <div class="kpi-grid" style="margin-bottom:20px;">
+          <div class="kpi-card"><div class="kpi-icon">📸</div><div class="kpi-label">総投稿数</div><div class="kpi-value" id="ig-total-posts">-</div><div class="kpi-sub">Instagram</div></div>
+          <div class="kpi-card"><div class="kpi-icon">❤️</div><div class="kpi-label">総いいね数</div><div class="kpi-value" id="ig-total-likes">-</div><div class="kpi-sub">全投稿合計</div></div>
+          <div class="kpi-card"><div class="kpi-icon">💬</div><div class="kpi-label">総コメント数</div><div class="kpi-value" id="ig-total-comments">-</div><div class="kpi-sub">全投稿合計</div></div>
+          <div class="kpi-card"><div class="kpi-icon">📅</div><div class="kpi-label">次回投稿予定</div><div class="kpi-value" style="font-size:18px;" id="ig-next-post">毎朝8時</div><div class="kpi-sub">JST</div></div>
+        </div>
+        <div class="table-card">
+          <div class="table-title">最近の投稿一覧</div>
+          <div id="posts-list"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 楽天クリック詳細タブ -->
+    <div id="tab-rakuten" class="tab-content">
+      <div class="section-header">
+        <div>
+          <div class="section-title">🛒 楽天アフィリエイト詳細</div>
+          <div class="section-sub">商品別・ページ別クリック数の詳細分析</div>
+        </div>
+        <button class="btn btn-secondary" onclick="loadRakutenDetails()">🔄 再読み込み</button>
+      </div>
+      <div id="rakuten-loading" class="loading"><div class="spinner"></div><br>データを読み込み中...</div>
+      <div id="rakuten-content" style="display:none;">
+        <div class="charts-grid" style="margin-bottom:20px;">
+          <div class="chart-card"><div class="chart-title">🛒 ページ別楽天クリック数</div><div class="chart-wrap"><canvas id="rakuten-page-chart"></canvas></div></div>
+          <div class="chart-card"><div class="chart-title">📦 商品カテゴリ別クリック数</div><div class="chart-wrap"><canvas id="rakuten-category-chart"></canvas></div></div>
+        </div>
+        <div class="table-card">
+          <div class="table-title">商品別クリック数ランキング</div>
+          <table>
+            <thead><tr><th>#</th><th>商品名</th><th>ページ</th><th>クリック数</th><th>最終クリック</th></tr></thead>
+            <tbody id="rakuten-table"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /admin-body -->
+</div><!-- /admin-screen -->
+
+<!-- イベント追加モーダル -->
+<div class="modal-overlay" id="event-modal">
+  <div class="modal-box">
+    <div class="modal-title" id="event-modal-title">📅 イベント追加</div>
+    <div class="form-grid">
+      <div class="form-group">
+        <label class="form-label">イベント名 *</label>
+        <input type="text" id="ev-name" class="form-input" placeholder="例: 福岡ドッグフェスタ2025">
+      </div>
+      <div class="form-group">
+        <label class="form-label">エリア *</label>
+        <select id="ev-area" class="form-select">
+          <option value="福岡">福岡</option>
+          <option value="北九州">北九州</option>
+          <option value="大分">大分</option>
+          <option value="熊本">熊本</option>
+          <option value="長崎">長崎</option>
+          <option value="佐賀">佐賀</option>
+          <option value="宮崎">宮崎</option>
+          <option value="鹿児島">鹿児島</option>
+          <option value="九州全域">九州全域</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">開催日 *</label>
+        <input type="text" id="ev-date" class="form-input" placeholder="例: 2025年8月10日（日）">
+      </div>
+      <div class="form-group">
+        <label class="form-label">会場名</label>
+        <input type="text" id="ev-venue" class="form-input" placeholder="例: 海の中道海浜公園">
+      </div>
+      <div class="form-group full">
+        <label class="form-label">公式URL</label>
+        <input type="url" id="ev-url" class="form-input" placeholder="https://...">
+      </div>
+      <div class="form-group">
+        <label class="form-label">カテゴリ</label>
+        <select id="ev-category" class="form-select">
+          <option value="dogrun">ドッグラン</option>
+          <option value="festival">フェスティバル</option>
+          <option value="market">マルシェ</option>
+          <option value="expo">エキスポ</option>
+          <option value="training">しつけ教室</option>
+          <option value="other">その他</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">ステータス</label>
+        <select id="ev-status" class="form-select">
+          <option value="upcoming">開催予定</option>
+          <option value="ongoing">開催中</option>
+          <option value="ended">終了</option>
+        </select>
+      </div>
+      <div class="form-group full">
+        <label class="form-label">犬連れポリシー</label>
+        <input type="text" id="ev-policy" class="form-input" placeholder="例: リード必須、全犬種OK">
+      </div>
+      <div class="form-group full">
+        <label class="form-label">メモ</label>
+        <textarea id="ev-memo" class="form-textarea" placeholder="備考・注意事項など"></textarea>
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button class="btn btn-secondary" onclick="closeEventModal()">キャンセル</button>
+      <button class="btn btn-primary" onclick="saveEvent()">💾 保存（JSONコピー）</button>
+    </div>
+    <div id="event-json-output" style="display:none;margin-top:16px;">
+      <div class="alert alert-info">以下のJSONをevents.jsonに追加してGitHubにプッシュしてください：</div>
+      <textarea id="event-json-text" class="form-textarea" style="min-height:200px;font-family:monospace;font-size:12px;" readonly></textarea>
+      <button class="btn btn-secondary btn-sm" style="margin-top:8px;" onclick="copyEventJson()">📋 コピー</button>
+    </div>
+  </div>
+</div>
+
+<!-- スポット詳細モーダル -->
+<div class="modal-overlay" id="spot-modal">
+  <div class="modal-box">
+    <div class="modal-title" id="spot-modal-title">📍 スポット詳細</div>
+    <div id="spot-modal-content"></div>
+    <div class="modal-actions">
+      <button class="btn btn-secondary" onclick="closeSpotModal()">閉じる</button>
+      <a id="spot-modal-link" href="#" target="_blank" class="btn btn-primary" style="text-decoration:none;">🌐 公式サイト</a>
     </div>
   </div>
 </div>
 
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+import { getFirestore, collection, getDocs, doc, deleteDoc, query, orderBy, limit } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDRVtANI251gyQjY-okPAzlSYXTGpslwnQ",
@@ -138,8 +504,11 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const ADMIN_PASSWORD = "daisy2024admin";
-let hourlyChart = null, dailyChart = null;
+let hourlyChart = null, dailyChart = null, rakutenPageChart = null, rakutenCatChart = null;
+let allSpots = [], filteredSpots = [], currentSpotFilter = 'all', spotsPage = 1;
+const SPOTS_PER_PAGE = 20;
 
+// ========== ログイン ==========
 window.doLogin = function() {
   const pw = document.getElementById('pw-input').value;
   if (pw === ADMIN_PASSWORD) {
@@ -147,6 +516,9 @@ window.doLogin = function() {
     document.getElementById('login-screen').style.display = 'none';
     document.getElementById('admin-screen').style.display = 'block';
     loadDashboard();
+    loadEventsTab();
+    loadSpotsTab();
+    loadBlogTab();
   } else {
     document.getElementById('login-error').style.display = 'block';
   }
@@ -162,8 +534,37 @@ document.getElementById('pw-input').addEventListener('keydown', e => { if (e.key
 if (sessionStorage.getItem('admin_auth') === '1') {
   document.getElementById('login-screen').style.display = 'none';
   document.getElementById('admin-screen').style.display = 'block';
+  loadDashboard();
+  loadEventsTab();
+  loadSpotsTab();
+  loadBlogTab();
 }
 
+// ========== タブ切り替え ==========
+window.switchTab = function(tab) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+  document.querySelector(`[onclick="switchTab('${tab}')"]`).classList.add('active');
+  document.getElementById(`tab-${tab}`).classList.add('active');
+  if (tab === 'reviews') loadReviews();
+  if (tab === 'posts') loadInstagramPosts();
+  if (tab === 'rakuten') loadRakutenDetails();
+};
+
+window.loadCurrentTab = function() {
+  const activeTab = document.querySelector('.tab-btn.active');
+  if (activeTab) {
+    const tabName = activeTab.getAttribute('onclick').match(/'(\w+)'/)[1];
+    if (tabName === 'dashboard') loadDashboard();
+    else if (tabName === 'events') loadEventsTab();
+    else if (tabName === 'spots') loadSpotsTab();
+    else if (tabName === 'reviews') loadReviews();
+    else if (tabName === 'posts') loadInstagramPosts();
+    else if (tabName === 'rakuten') loadRakutenDetails();
+  }
+};
+
+// ========== ダッシュボード ==========
 window.loadDashboard = async function() {
   document.getElementById('loading-area').style.display = 'block';
   document.getElementById('dashboard').style.display = 'none';
@@ -215,7 +616,7 @@ window.loadDashboard = async function() {
       el.innerHTML = items.map((item,i) => {
         const nc = i===0?'rank-1':i===1?'rank-2':i===2?'rank-3':'rank-n';
         const name = (item.title||item.id).slice(0,22);
-        return '<div class="rank-item"><div class="rank-num '+nc+'">'+(i+1)+'</div><div class="rank-name">'+name+'</div><div class="rank-count">'+((item[key]||0).toLocaleString())+' '+unit+'</div></div>';
+        return `<div class="rank-item"><div class="rank-num ${nc}">${i+1}</div><div class="rank-name">${name}</div><div class="rank-count">${(item[key]||0).toLocaleString()} ${unit}</div></div>`;
       }).join('');
     }
     renderRanking('page-ranking', sortedPages.slice(0,10), 'totalViews', 'PV');
@@ -227,16 +628,487 @@ window.loadDashboard = async function() {
       const rc = Object.values(p.rakutenClicks||{}).reduce((s,v)=>s+v,0);
       const ls = p.lastSeen?.toDate?.()?.toLocaleDateString('ja-JP')||'-';
       const bw = Math.round((pv/maxPV)*100);
-      return '<tr><td style="color:#64748b;">'+(i+1)+'</td><td><div style="font-weight:500;">'+(p.title||p.id).slice(0,30)+'</div><div style="font-size:11px;color:#64748b;">'+p.id+'</div><div class="bar-bg"><div class="bar-fill" style="width:'+bw+'%"></div></div></td><td style="font-weight:700;color:#22c55e;">'+pv.toLocaleString()+'</td><td style="color:#f59e0b;">'+rc.toLocaleString()+'</td><td style="color:#64748b;font-size:12px;">'+ls+'</td></tr>';
+      return `<tr><td style="color:#64748b;">${i+1}</td><td><div style="font-weight:500;">${(p.title||p.id).slice(0,30)}</div><div style="font-size:11px;color:#64748b;">${p.id}</div><div class="bar-bg"><div class="bar-fill" style="width:${bw}%"></div></div></td><td style="font-weight:700;color:#22c55e;">${pv.toLocaleString()}</td><td style="color:#f59e0b;">${rc.toLocaleString()}</td><td style="color:#64748b;font-size:12px;">${ls}</td></tr>`;
     }).join('');
 
     document.getElementById('last-updated').textContent = ' · 更新: '+new Date().toLocaleTimeString('ja-JP');
     document.getElementById('loading-area').style.display = 'none';
     document.getElementById('dashboard').style.display = 'block';
   } catch(e) {
-    document.getElementById('loading-area').innerHTML = '<p style="color:#f87171;">エラー: '+e.message+'</p>';
+    document.getElementById('loading-area').innerHTML = `<p style="color:#f87171;">エラー: ${e.message}</p>`;
   }
 };
+
+// ========== イベント管理 ==========
+let eventsData = [];
+let editingEventId = null;
+
+async function loadEventsTab() {
+  try {
+    const res = await fetch('events.json?t=' + Date.now());
+    eventsData = await res.json();
+    renderEventsList();
+  } catch(e) {
+    document.getElementById('events-list').innerHTML = `<div class="alert alert-error">読み込みエラー: ${e.message}</div>`;
+  }
+}
+
+function renderEventsList() {
+  const list = document.getElementById('events-list');
+  if (!eventsData.length) {
+    list.innerHTML = '<p style="color:#64748b;padding:20px;">イベントがありません</p>';
+    return;
+  }
+  const statusMap = { upcoming: ['badge-green', '開催予定'], ongoing: ['badge-yellow', '開催中'], ended: ['badge-gray', '終了'] };
+  list.innerHTML = eventsData.map((ev, i) => {
+    const [bc, bl] = statusMap[ev.status] || ['badge-gray', ev.status || '-'];
+    return `<div class="event-item">
+      <div class="event-info">
+        <div class="event-title">${ev.name || ev.title || '-'}</div>
+        <div class="event-meta">
+          <span>📍 ${ev.area || '-'}</span>
+          <span>📅 ${ev.date || ev.eventDate || '-'}</span>
+          <span>🏛️ ${ev.venue || '-'}</span>
+          <span class="badge ${bc}">${bl}</span>
+        </div>
+        ${ev.dogPolicy ? `<div style="font-size:12px;color:#94a3b8;margin-top:4px;">🐕 ${ev.dogPolicy}</div>` : ''}
+      </div>
+      <div class="event-actions">
+        ${ev.officialUrl ? `<a href="${ev.officialUrl}" target="_blank" class="btn btn-secondary btn-sm" style="text-decoration:none;">🌐</a>` : ''}
+        <button class="btn btn-warning btn-sm" onclick="editEvent(${i})">編集</button>
+        <button class="btn btn-danger btn-sm" onclick="deleteEventConfirm(${i})">削除</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+window.openEventModal = function(index) {
+  editingEventId = null;
+  document.getElementById('event-modal-title').textContent = '📅 イベント追加';
+  document.getElementById('ev-name').value = '';
+  document.getElementById('ev-date').value = '';
+  document.getElementById('ev-venue').value = '';
+  document.getElementById('ev-url').value = '';
+  document.getElementById('ev-policy').value = '';
+  document.getElementById('ev-memo').value = '';
+  document.getElementById('event-json-output').style.display = 'none';
+  document.getElementById('event-modal').classList.add('open');
+};
+
+window.editEvent = function(index) {
+  editingEventId = index;
+  const ev = eventsData[index];
+  document.getElementById('event-modal-title').textContent = '📅 イベント編集';
+  document.getElementById('ev-name').value = ev.name || ev.title || '';
+  document.getElementById('ev-area').value = ev.area || '福岡';
+  document.getElementById('ev-date').value = ev.date || ev.eventDate || '';
+  document.getElementById('ev-venue').value = ev.venue || '';
+  document.getElementById('ev-url').value = ev.officialUrl || '';
+  document.getElementById('ev-category').value = ev.category || 'other';
+  document.getElementById('ev-status').value = ev.status || 'upcoming';
+  document.getElementById('ev-policy').value = ev.dogPolicy || '';
+  document.getElementById('ev-memo').value = ev.memo || '';
+  document.getElementById('event-json-output').style.display = 'none';
+  document.getElementById('event-modal').classList.add('open');
+};
+
+window.closeEventModal = function() {
+  document.getElementById('event-modal').classList.remove('open');
+};
+
+window.saveEvent = function() {
+  const name = document.getElementById('ev-name').value.trim();
+  const date = document.getElementById('ev-date').value.trim();
+  if (!name || !date) {
+    alert('イベント名と開催日は必須です');
+    return;
+  }
+  const today = new Date().toISOString().split('T')[0];
+  const newEvent = {
+    id: 'event-' + Date.now(),
+    title: name,
+    name: name,
+    area: document.getElementById('ev-area').value,
+    venue: document.getElementById('ev-venue').value,
+    eventDate: date,
+    date: date,
+    officialUrl: document.getElementById('ev-url').value,
+    snsUrl: '',
+    mapQuery: name + ' ' + document.getElementById('ev-area').value,
+    category: document.getElementById('ev-category').value,
+    tags: [document.getElementById('ev-area').value, '犬連れ'],
+    dogPolicy: document.getElementById('ev-policy').value,
+    status: document.getElementById('ev-status').value,
+    memo: document.getElementById('ev-memo').value,
+    lastChecked: today
+  };
+
+  let outputData;
+  if (editingEventId !== null) {
+    const updated = [...eventsData];
+    updated[editingEventId] = { ...updated[editingEventId], ...newEvent, id: updated[editingEventId].id };
+    outputData = updated;
+  } else {
+    outputData = [...eventsData, newEvent];
+  }
+
+  document.getElementById('event-json-text').value = JSON.stringify(outputData, null, 2);
+  document.getElementById('event-json-output').style.display = 'block';
+};
+
+window.copyEventJson = function() {
+  const text = document.getElementById('event-json-text').value;
+  navigator.clipboard.writeText(text).then(() => {
+    alert('JSONをクリップボードにコピーしました！\nevents.jsonに貼り付けてGitHubにプッシュしてください。');
+  });
+};
+
+window.deleteEventConfirm = function(index) {
+  const ev = eventsData[index];
+  if (confirm(`「${ev.name || ev.title}」を削除しますか？\n削除後はevents.jsonを更新してGitHubにプッシュしてください。`)) {
+    const updated = eventsData.filter((_, i) => i !== index);
+    const jsonText = JSON.stringify(updated, null, 2);
+    const textarea = document.createElement('textarea');
+    textarea.value = jsonText;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+    showAlert('events-alert', 'success', `削除後のJSONをクリップボードにコピーしました。events.jsonを更新してGitHubにプッシュしてください。`);
+    eventsData = updated;
+    renderEventsList();
+  }
+};
+
+// ========== スポット管理 ==========
+async function loadSpotsTab() {
+  try {
+    const res = await fetch('spots.json?t=' + Date.now());
+    allSpots = await res.json();
+    filteredSpots = [...allSpots];
+    document.getElementById('spots-count').textContent = `全${allSpots.length}件のスポット`;
+    renderSpotsTable();
+  } catch(e) {
+    document.getElementById('spots-table').innerHTML = `<tr><td colspan="8" style="color:#f87171;">読み込みエラー: ${e.message}</td></tr>`;
+  }
+}
+
+window.filterSpots = function() {
+  const search = document.getElementById('spot-search-input').value.toLowerCase();
+  const area = document.getElementById('spot-area-filter').value;
+  filteredSpots = allSpots.filter(s => {
+    const matchSearch = !search || (s.name||'').toLowerCase().includes(search) || (s.area||'').toLowerCase().includes(search);
+    const matchArea = !area || (s.area||'').includes(area);
+    const matchFilter = currentSpotFilter === 'all' || s[currentSpotFilter] === true || s[currentSpotFilter] === '◯' || s[currentSpotFilter] === 'true';
+    return matchSearch && matchArea && matchFilter;
+  });
+  spotsPage = 1;
+  renderSpotsTable();
+};
+
+window.toggleSpotFilter = function(el, filter) {
+  document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+  el.classList.add('active');
+  currentSpotFilter = filter;
+  filterSpots();
+};
+
+function renderSpotsTable() {
+  const start = (spotsPage - 1) * SPOTS_PER_PAGE;
+  const end = start + SPOTS_PER_PAGE;
+  const pageData = filteredSpots.slice(start, end);
+  const totalPages = Math.ceil(filteredSpots.length / SPOTS_PER_PAGE);
+
+  document.getElementById('spots-showing').textContent = `${filteredSpots.length}件中 ${start+1}〜${Math.min(end, filteredSpots.length)}件表示`;
+
+  const tbody = document.getElementById('spots-table');
+  if (!pageData.length) {
+    tbody.innerHTML = '<tr><td colspan="8" style="color:#64748b;text-align:center;padding:20px;">該当するスポットがありません</td></tr>';
+    document.getElementById('spots-pagination').innerHTML = '';
+    return;
+  }
+
+  tbody.innerHTML = pageData.map((s, i) => {
+    const statusBadge = s.status === 'active' ? '<span class="badge badge-green">営業中</span>' : s.status === 'closed' ? '<span class="badge badge-red">閉業</span>' : '<span class="badge badge-gray">不明</span>';
+    const largeDog = (s.largeDog === true || s.largeDog === '◯' || s.large_dog === '◯') ? '✅' : '—';
+    const rainy = (s.rainyOk === true || s.rainyOk === '◯') ? '✅' : '—';
+    return `<tr>
+      <td style="color:#64748b;">${start+i+1}</td>
+      <td><div style="font-weight:600;">${s.name||'-'}</div><div style="font-size:11px;color:#64748b;">${s.type||'-'}</div></td>
+      <td><span class="badge badge-blue">${s.area||'-'}</span></td>
+      <td style="font-size:12px;">${s.type||'-'}</td>
+      <td style="text-align:center;">${largeDog}</td>
+      <td style="text-align:center;">${rainy}</td>
+      <td>${statusBadge}</td>
+      <td><button class="btn btn-secondary btn-sm" onclick="openSpotDetail(${allSpots.indexOf(s)})">詳細</button></td>
+    </tr>`;
+  }).join('');
+
+  // ページネーション
+  const pag = document.getElementById('spots-pagination');
+  if (totalPages <= 1) { pag.innerHTML = ''; return; }
+  let pagHtml = '';
+  if (spotsPage > 1) pagHtml += `<button class="page-btn" onclick="goSpotsPage(${spotsPage-1})">←</button>`;
+  for (let p = Math.max(1, spotsPage-2); p <= Math.min(totalPages, spotsPage+2); p++) {
+    pagHtml += `<button class="page-btn ${p===spotsPage?'active':''}" onclick="goSpotsPage(${p})">${p}</button>`;
+  }
+  if (spotsPage < totalPages) pagHtml += `<button class="page-btn" onclick="goSpotsPage(${spotsPage+1})">→</button>`;
+  pag.innerHTML = pagHtml;
+}
+
+window.goSpotsPage = function(p) {
+  spotsPage = p;
+  renderSpotsTable();
+  document.getElementById('tab-spots').scrollIntoView({ behavior: 'smooth' });
+};
+
+window.openSpotDetail = function(index) {
+  const s = allSpots[index];
+  document.getElementById('spot-modal-title').textContent = `📍 ${s.name}`;
+  document.getElementById('spot-modal-link').href = s.officialUrl || s.url || '#';
+  document.getElementById('spot-modal-content').innerHTML = `
+    <table style="width:100%;">
+      <tr><th style="width:120px;">エリア</th><td>${s.area||'-'}</td></tr>
+      <tr><th>種別</th><td>${s.type||'-'}</td></tr>
+      <tr><th>大型犬</th><td>${s.largeDog||s.large_dog||'-'}</td></tr>
+      <tr><th>雨天OK</th><td>${s.rainyOk||'-'}</td></tr>
+      <tr><th>室内OK</th><td>${s.indoorOk||'-'}</td></tr>
+      <tr><th>駐車場</th><td>${s.parking||'-'}</td></tr>
+      <tr><th>営業時間</th><td>${s.hours||'-'}</td></tr>
+      <tr><th>料金</th><td>${s.fee||'-'}</td></tr>
+      <tr><th>アクセス</th><td>${s.access||'-'}</td></tr>
+      <tr><th>ステータス</th><td>${s.status||'-'}</td></tr>
+      <tr><th>メモ</th><td>${s.memo||'-'}</td></tr>
+      <tr><th>最終確認</th><td>${s.lastChecked||'-'}</td></tr>
+    </table>
+  `;
+  document.getElementById('spot-modal').classList.add('open');
+};
+
+window.closeSpotModal = function() {
+  document.getElementById('spot-modal').classList.remove('open');
+};
+
+// ========== ブログ管理 ==========
+function loadBlogTab() {
+  const blogs = [
+    { file: 'blog-aso-dog-hiking.html', title: '阿蘇で犬と登山！おすすめトレイルガイド', area: '熊本', date: '2025-01' },
+    { file: 'blog-aso-samoyed-trip.html', title: 'サモエドと行く阿蘇の旅', area: '熊本', date: '2025-06' },
+    { file: 'blog-dog-travel-checklist.html', title: '犬連れ旅行の持ち物チェックリスト完全版', area: '全国', date: '2025-01' },
+    { file: 'blog-fukuoka-dog-spots.html', title: '福岡の犬連れスポット完全ガイド', area: '福岡', date: '2025-01' },
+    { file: 'blog-itoshima-dog-cafe.html', title: '糸島の犬連れカフェ特集', area: '福岡', date: '2025-01' },
+    { file: 'blog-kagoshima-dog-travel.html', title: '鹿児島で犬と旅する完全ガイド', area: '鹿児島', date: '2025-01' },
+    { file: 'blog-kitakyushu-dog-spots.html', title: '北九州の犬連れスポット厳選ガイド', area: '北九州', date: '2025-06' },
+    { file: 'blog-kyushu-dog-beach.html', title: '九州の犬と行けるビーチ特集', area: '九州', date: '2025-01' },
+    { file: 'blog-kyushu-dogrun-etiquette.html', title: 'ドッグランのマナーと注意事項', area: '九州', date: '2025-01' },
+    { file: 'blog-kyushu-dogrun-top5.html', title: '九州ドッグランTOP5', area: '九州', date: '2025-01' },
+    { file: 'blog-kyushu-pet-hotels.html', title: '九州のペット可ホテル完全ガイド', area: '九州', date: '2025-01' },
+    { file: 'blog-nagasaki-dog-travel.html', title: '長崎で犬と旅する完全ガイド', area: '長崎', date: '2025-01' },
+    { file: 'blog-oita-yufuin-dog-cafe.html', title: '大分・由布院の犬連れカフェ特集', area: '大分', date: '2025-01' },
+    { file: 'blog-samoyed-care-summer.html', title: 'サモエドの夏のケアガイド', area: '全国', date: '2025-01' },
+    { file: 'blog-samoyed-introduction.html', title: 'サモエドってどんな犬？特徴と魅力', area: '全国', date: '2025-01' },
+    { file: 'blog-summer-heat-tips.html', title: '夏の犬連れ旅行・熱中症対策ガイド', area: '全国', date: '2025-06' },
+    { file: 'blog-yufuin-1night-course.html', title: '由布院1泊2日犬連れモデルコース', area: '大分', date: '2025-01' },
+  ];
+
+  const grid = document.getElementById('blog-grid');
+  grid.innerHTML = blogs.map(b => `
+    <div class="blog-card">
+      <div class="blog-card-title">${b.title}</div>
+      <div class="blog-card-meta">
+        <span class="badge badge-blue">${b.area}</span>
+        <span style="margin-left:8px;color:#475569;">${b.date}</span>
+      </div>
+      <div class="blog-card-links">
+        <a href="${b.file}" target="_blank" class="btn btn-secondary btn-sm" style="text-decoration:none;">👁️ 表示</a>
+        <a href="https://daisy-kyushu.github.io/daisy-kyushu-dog-guide/${b.file}" target="_blank" class="btn btn-primary btn-sm" style="text-decoration:none;">🌐 公開</a>
+      </div>
+    </div>
+  `).join('');
+}
+
+// ========== 口コミ管理 ==========
+window.loadReviews = async function() {
+  document.getElementById('reviews-loading').style.display = 'block';
+  document.getElementById('reviews-list').innerHTML = '';
+  try {
+    const q = query(collection(db, "reviews"), orderBy("createdAt", "desc"), limit(50));
+    const snap = await getDocs(q);
+    const reviews = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+    document.getElementById('reviews-loading').style.display = 'none';
+
+    if (!reviews.length) {
+      document.getElementById('reviews-list').innerHTML = '<p style="color:#64748b;padding:20px;">口コミがまだありません</p>';
+      return;
+    }
+
+    document.getElementById('reviews-list').innerHTML = reviews.map(r => {
+      const stars = '★'.repeat(r.rating||0) + '☆'.repeat(5-(r.rating||0));
+      const date = r.createdAt?.toDate?.()?.toLocaleDateString('ja-JP') || '-';
+      return `<div class="review-item">
+        <div class="review-header">
+          <div>
+            <div class="review-spot">📍 ${r.spotName || r.spotId || '-'}</div>
+            <div class="review-author">👤 ${r.author || '匿名'}</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;">
+            <span class="review-stars">${stars}</span>
+            <button class="btn btn-danger btn-sm" onclick="deleteReview('${r.id}', '${(r.spotName||'').replace(/'/g,"\\'")}')">削除</button>
+          </div>
+        </div>
+        <div class="review-text">${r.comment || r.text || '-'}</div>
+        <div class="review-date">投稿日: ${date} · ID: ${r.id}</div>
+      </div>`;
+    }).join('');
+  } catch(e) {
+    document.getElementById('reviews-loading').style.display = 'none';
+    document.getElementById('reviews-list').innerHTML = `<div class="alert alert-error">エラー: ${e.message}</div>`;
+  }
+};
+
+window.deleteReview = async function(reviewId, spotName) {
+  if (!confirm(`「${spotName}」の口コミを削除しますか？この操作は取り消せません。`)) return;
+  try {
+    await deleteDoc(doc(db, "reviews", reviewId));
+    showAlert('reviews-alert', 'success', '口コミを削除しました');
+    loadReviews();
+  } catch(e) {
+    showAlert('reviews-alert', 'error', `削除エラー: ${e.message}`);
+  }
+};
+
+// ========== Instagram投稿管理 ==========
+window.loadInstagramPosts = async function() {
+  document.getElementById('posts-loading').style.display = 'block';
+  document.getElementById('posts-content').style.display = 'none';
+  try {
+    const snap = await getDocs(query(collection(db, "instagramPosts"), orderBy("postedAt", "desc"), limit(20)));
+    const posts = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+
+    const totalLikes = posts.reduce((s, p) => s + (p.likeCount||0), 0);
+    const totalComments = posts.reduce((s, p) => s + (p.commentCount||0), 0);
+    document.getElementById('ig-total-posts').textContent = posts.length;
+    document.getElementById('ig-total-likes').textContent = totalLikes.toLocaleString();
+    document.getElementById('ig-total-comments').textContent = totalComments.toLocaleString();
+
+    const list = document.getElementById('posts-list');
+    if (!posts.length) {
+      list.innerHTML = '<p style="color:#64748b;padding:20px;">投稿データがまだありません</p>';
+    } else {
+      list.innerHTML = posts.map(p => {
+        const date = p.postedAt?.toDate?.()?.toLocaleDateString('ja-JP') || '-';
+        const caption = (p.caption||'').slice(0, 100);
+        return `<div class="post-item">
+          ${p.imageUrl ? `<img src="${p.imageUrl}" class="post-thumb" alt="投稿画像">` : '<div class="post-thumb" style="display:flex;align-items:center;justify-content:center;color:#475569;">📷</div>'}
+          <div class="post-info">
+            <div class="post-caption">${caption}${(p.caption||'').length > 100 ? '...' : ''}</div>
+            <div class="post-meta">
+              <span>📅 ${date}</span>
+              <span>❤️ ${p.likeCount||0}</span>
+              <span>💬 ${p.commentCount||0}</span>
+              ${p.theme ? `<span class="badge badge-blue">${p.theme}</span>` : ''}
+            </div>
+          </div>
+          ${p.permalink ? `<a href="${p.permalink}" target="_blank" class="btn btn-secondary btn-sm" style="text-decoration:none;align-self:flex-start;">Instagram</a>` : ''}
+        </div>`;
+      }).join('');
+    }
+
+    document.getElementById('posts-loading').style.display = 'none';
+    document.getElementById('posts-content').style.display = 'block';
+  } catch(e) {
+    document.getElementById('posts-loading').innerHTML = `<div class="alert alert-error">エラー: ${e.message}<br><small>Firestoreにinstagrampostsコレクションがない場合は正常です</small></div>`;
+  }
+};
+
+// ========== 楽天クリック詳細 ==========
+window.loadRakutenDetails = async function() {
+  document.getElementById('rakuten-loading').style.display = 'block';
+  document.getElementById('rakuten-content').style.display = 'none';
+  try {
+    const pageSnap = await getDocs(collection(db, "pageStats"));
+    const pages = pageSnap.docs.map(d => ({ id: d.id, ...d.data() }));
+    const clickSnap = await getDocs(collection(db, "clickStats"));
+    const clicks = clickSnap.docs.map(d => ({ id: d.id, ...d.data() }));
+
+    // ページ別楽天クリック
+    const pageClicks = pages.map(p => ({
+      name: (p.title||p.id).slice(0,20),
+      clicks: Object.values(p.rakutenClicks||{}).reduce((s,v)=>s+v,0)
+    })).filter(p=>p.clicks>0).sort((a,b)=>b.clicks-a.clicks).slice(0,10);
+
+    // カテゴリ別（商品名から推定）
+    const catMap = {};
+    clicks.forEach(c => {
+      const name = c.id || '';
+      let cat = 'その他';
+      if (name.includes('ハーネス') || name.includes('リード')) cat = 'ハーネス・リード';
+      else if (name.includes('ドッグフード') || name.includes('おやつ')) cat = 'フード・おやつ';
+      else if (name.includes('ケージ') || name.includes('クレート')) cat = 'ケージ・クレート';
+      else if (name.includes('シャンプー') || name.includes('ブラシ')) cat = 'グルーミング';
+      else if (name.includes('おもちゃ')) cat = 'おもちゃ';
+      else if (name.includes('ベッド') || name.includes('マット')) cat = 'ベッド・マット';
+      catMap[cat] = (catMap[cat]||0) + (c.totalClicks||0);
+    });
+
+    const ctx3 = document.getElementById('rakuten-page-chart').getContext('2d');
+    if (rakutenPageChart) rakutenPageChart.destroy();
+    rakutenPageChart = new Chart(ctx3, {
+      type: 'bar',
+      data: {
+        labels: pageClicks.map(p=>p.name),
+        datasets: [{ data: pageClicks.map(p=>p.clicks), backgroundColor: '#f59e0b', borderRadius: 4 }]
+      },
+      options: { responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}, scales:{ x:{ticks:{color:'#64748b',font:{size:10}},grid:{color:'#1e293b'}}, y:{ticks:{color:'#64748b',font:{size:10}},grid:{color:'#334155'}} }, indexAxis:'y' }
+    });
+
+    const ctx4 = document.getElementById('rakuten-category-chart').getContext('2d');
+    if (rakutenCatChart) rakutenCatChart.destroy();
+    const catLabels = Object.keys(catMap);
+    const catValues = Object.values(catMap);
+    rakutenCatChart = new Chart(ctx4, {
+      type: 'doughnut',
+      data: {
+        labels: catLabels,
+        datasets: [{ data: catValues, backgroundColor: ['#22c55e','#3b82f6','#f59e0b','#ec4899','#8b5cf6','#06b6d4','#f97316'] }]
+      },
+      options: { responsive:true, maintainAspectRatio:false, plugins:{ legend:{ position:'right', labels:{ color:'#94a3b8', font:{size:11} } } } }
+    });
+
+    const sortedClicks = [...clicks].sort((a,b)=>(b.totalClicks||0)-(a.totalClicks||0));
+    document.getElementById('rakuten-table').innerHTML = sortedClicks.slice(0,30).map((c,i) => {
+      const nc = i===0?'rank-1':i===1?'rank-2':i===2?'rank-3':'rank-n';
+      const ls = c.lastClicked?.toDate?.()?.toLocaleDateString('ja-JP')||'-';
+      return `<tr>
+        <td><div class="rank-num ${nc}" style="display:inline-flex;">${i+1}</div></td>
+        <td style="font-weight:500;">${(c.productName||c.id).slice(0,40)}</td>
+        <td style="font-size:12px;color:#64748b;">${c.page||'-'}</td>
+        <td style="font-weight:700;color:#f59e0b;">${(c.totalClicks||0).toLocaleString()}</td>
+        <td style="font-size:12px;color:#64748b;">${ls}</td>
+      </tr>`;
+    }).join('');
+
+    document.getElementById('rakuten-loading').style.display = 'none';
+    document.getElementById('rakuten-content').style.display = 'block';
+  } catch(e) {
+    document.getElementById('rakuten-loading').innerHTML = `<div class="alert alert-error">エラー: ${e.message}</div>`;
+  }
+};
+
+// ========== ユーティリティ ==========
+function showAlert(containerId, type, message) {
+  const el = document.getElementById(containerId);
+  if (!el) return;
+  el.innerHTML = `<div class="alert alert-${type}">${message}</div>`;
+  setTimeout(() => { el.innerHTML = ''; }, 5000);
+}
+
+// モーダルを閉じる（背景クリック）
+document.querySelectorAll('.modal-overlay').forEach(overlay => {
+  overlay.addEventListener('click', e => {
+    if (e.target === overlay) overlay.classList.remove('open');
+  });
+});
 
 if (sessionStorage.getItem('admin_auth') === '1') loadDashboard();
 </script>
