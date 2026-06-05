@@ -25,6 +25,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Zen+Maru+Gothic:wght@700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<!-- Leaflet.js -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV/XN/WLs=" crossorigin=""></script>
 <style>
   /* ========== 病院ページ専用スタイル ========== */
   .hospital-hero {
@@ -361,6 +364,87 @@
     color: #94a3b8;
   }
   .empty-state .empty-icon { font-size: 3rem; margin-bottom: 12px; }
+  /* 地図セクション */
+  .map-section {
+    padding: 24px 20px;
+    background: #f8fafc;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  .map-section h2 {
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: #1e293b;
+    margin-bottom: 14px;
+    text-align: center;
+  }
+  #hospital-map {
+    width: 100%;
+    height: 420px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,.12);
+    border: 2px solid #e2e8f0;
+    max-width: 900px;
+    margin: 0 auto;
+    display: block;
+  }
+  .map-legend {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 12px;
+    font-size: .82rem;
+    color: #475569;
+  }
+  .map-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .legend-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid rgba(0,0,0,.2);
+    flex-shrink: 0;
+  }
+  .map-area-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 8px;
+    max-width: 900px;
+    margin: 16px auto 0;
+  }
+  .area-stat-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 12px;
+    text-align: center;
+    box-shadow: 0 1px 6px rgba(0,0,0,.06);
+    cursor: pointer;
+    transition: all .2s;
+    border: 2px solid transparent;
+  }
+  .area-stat-card:hover {
+    border-color: #dc2626;
+    transform: translateY(-2px);
+  }
+  .area-stat-card .area-name {
+    font-size: .8rem;
+    font-weight: 700;
+    color: #64748b;
+    margin-bottom: 4px;
+  }
+  .area-stat-card .area-count {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: #dc2626;
+  }
+  .area-stat-card .area-sub {
+    font-size: .7rem;
+    color: #94a3b8;
+  }
   /* 統計バー */
   .stats-bar {
     background: #fff;
@@ -454,6 +538,20 @@
       </div>
     </div>
   </section>
+
+  <!-- 地図セクション -->
+  <div class="map-section">
+    <h2>🗺️ 九州 動物病院 分布マップ</h2>
+    <div id="hospital-map"></div>
+    <div class="map-legend">
+      <div class="map-legend-item"><div class="legend-dot" style="background:#dc2626"></div>夜間救急対応</div>
+      <div class="map-legend-item"><div class="legend-dot" style="background:#2563eb"></div>大学病院</div>
+      <div class="map-legend-item"><div class="legend-dot" style="background:#16a34a"></div>一般・総合病院</div>
+    </div>
+    <div class="map-area-stats" id="map-area-stats">
+      <!-- JavaScriptで動的に生成 -->
+    </div>
+  </div>
 
   <!-- フィルターバー -->
   <div class="filter-section" id="emergency-list">
@@ -698,12 +796,129 @@ function filterHospitals(filterType, value, btn) {
   renderHospitals(filtered);
 }
 
+// ========== Leaflet 地図初期化 ==========
+let map = null;
+let markers = [];
+
+function getMarkerColor(h) {
+  if (h.emergency) return '#dc2626';       // 赤：夜間救急
+  if (h.type.includes('大学')) return '#2563eb'; // 青：大学病院
+  return '#16a34a';                         // 緑：一般・総合
+}
+
+function createCustomIcon(color) {
+  return L.divIcon({
+    className: '',
+    html: `<div style="
+      width:28px;height:28px;
+      background:${color};
+      border:3px solid #fff;
+      border-radius:50% 50% 50% 0;
+      transform:rotate(-45deg);
+      box-shadow:0 2px 8px rgba(0,0,0,.3);
+    "></div>`,
+    iconSize: [28, 28],
+    iconAnchor: [14, 28],
+    popupAnchor: [0, -30]
+  });
+}
+
+function initMap(hospitals) {
+  if (map) {
+    map.remove();
+    map = null;
+  }
+  markers = [];
+
+  map = L.map('hospital-map', {
+    center: [32.8, 130.8],
+    zoom: 7,
+    zoomControl: true
+  });
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18
+  }).addTo(map);
+
+  hospitals.forEach(h => {
+    if (!h.lat || !h.lng) return;
+    const color = getMarkerColor(h);
+    const icon = createCustomIcon(color);
+    const typeLabel = h.emergency ? '🚨 夜間救急' : h.type.includes('大学') ? '🎓 大学病院' : '🏥 一般診療';
+    const popup = `
+      <div style="min-width:200px;font-family:'Noto Sans JP',sans-serif">
+        <div style="font-weight:900;font-size:.95rem;margin-bottom:6px;color:#1e293b">${h.name}</div>
+        <div style="font-size:.78rem;color:#dc2626;font-weight:700;margin-bottom:6px">${typeLabel}</div>
+        <div style="font-size:.8rem;color:#475569;margin-bottom:4px">📍 ${h.city}</div>
+        <div style="font-size:.8rem;color:#475569;margin-bottom:4px">🕐 ${h.hours}</div>
+        <div style="font-size:.8rem;color:#475569;margin-bottom:8px">📅 休診: ${h.holiday}</div>
+        <a href="tel:${h.tel.replace(/-/g,'')}" style="
+          display:block;background:#dc2626;color:#fff;
+          text-align:center;padding:7px;border-radius:8px;
+          font-size:.85rem;font-weight:700;text-decoration:none;
+          margin-bottom:6px;
+        ">📞 ${h.tel}</a>
+        <a href="${h.map_url}" target="_blank" style="
+          display:block;background:#f1f5f9;color:#1e293b;
+          text-align:center;padding:7px;border-radius:8px;
+          font-size:.82rem;font-weight:700;text-decoration:none;
+        ">🗺️ Googleマップで開く</a>
+      </div>`;
+    const marker = L.marker([h.lat, h.lng], { icon })
+      .addTo(map)
+      .bindPopup(popup, { maxWidth: 240 });
+    markers.push({ marker, hospital: h });
+  });
+}
+
+function renderAreaStats(hospitals) {
+  const areas = ['福岡','大分','熊本','長崎','宮崎','鹿児島','佐賀'];
+  const container = document.getElementById('map-area-stats');
+  if (!container) return;
+
+  const areaCounts = {};
+  const areaEmergency = {};
+  areas.forEach(a => { areaCounts[a] = 0; areaEmergency[a] = 0; });
+  hospitals.forEach(h => {
+    if (areaCounts[h.area] !== undefined) {
+      areaCounts[h.area]++;
+      if (h.emergency) areaEmergency[h.area]++;
+    }
+  });
+
+  container.innerHTML = areas.map(area => `
+    <div class="area-stat-card" onclick="focusArea('${area}')">
+      <div class="area-name">${area}</div>
+      <div class="area-count">${areaCounts[area]}</div>
+      <div class="area-sub">夜間救急 ${areaEmergency[area]}件</div>
+    </div>`).join('');
+}
+
+function focusArea(area) {
+  // エリアの中心座標
+  const areaCenters = {
+    '福岡': [33.6, 130.4], '大分': [33.2, 131.6],
+    '熊本': [32.8, 130.7], '長崎': [32.7, 129.9],
+    '宮崎': [31.9, 131.4], '鹿児島': [31.6, 130.6],
+    '佐賀': [33.2, 130.3]
+  };
+  if (map && areaCenters[area]) {
+    map.flyTo(areaCenters[area], 10, { duration: 1 });
+  }
+  // フィルターも連動
+  const btn = document.querySelector(`.filter-btn[onclick*="'${area}'"]`);
+  if (btn) filterHospitals('area', area, btn);
+}
+
 // データ読み込み
 fetch('hospitals.json')
   .then(r => r.json())
   .then(data => {
     allHospitals = data;
     renderHospitals(data);
+    initMap(data);
+    renderAreaStats(data);
   })
   .catch(err => {
     console.error('病院データ読み込みエラー:', err);
