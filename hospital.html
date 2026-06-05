@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E1XSFE7LXG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-E1XSFE7LXG');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9409002778362752"
+     crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>九州の動物病院ガイド【夜間救急・評判の良い病院】| Daisy Kyushu Dog Guide</title>
+<meta name="description" content="九州で犬連れ旅行中の緊急時に頼れる動物病院ガイド。夜間救急対応・評判の良い動物病院を福岡・大分・熊本・長崎・宮崎・鹿児島・佐賀のエリア別にまとめました。">
+<meta property="og:title" content="九州の動物病院ガイド【夜間救急・評判の良い病院】">
+<meta property="og:description" content="旅先での緊急時に頼れる九州の動物病院情報。夜間救急対応・大型犬OK・評判の良い病院をエリア別に紹介。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://daisy-kyushu.github.io/daisy-kyushu-dog-guide/hospital.html">
+<meta property="og:image" content="https://daisy-kyushu.github.io/daisy-kyushu-dog-guide/images/daisy/daisy-nemophila-close.jpg">
+<link rel="canonical" href="https://daisy-kyushu.github.io/daisy-kyushu-dog-guide/hospital.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Zen+Maru+Gothic:wght@700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  /* ========== 病院ページ専用スタイル ========== */
+  .hospital-hero {
+    background: linear-gradient(135deg, #fff1f2 0%, #ffe4e6 50%, #fecdd3 100%);
+    padding: 40px 20px 32px;
+    text-align: center;
+    border-bottom: 3px solid #fca5a5;
+  }
+  .hospital-hero h1 {
+    font-size: clamp(1.4rem, 4vw, 2rem);
+    font-weight: 900;
+    color: #991b1b;
+    margin: 8px 0;
+  }
+  .hospital-hero p {
+    color: #7f1d1d;
+    font-size: .95rem;
+    max-width: 600px;
+    margin: 0 auto 16px;
+  }
+  .emergency-banner {
+    background: #dc2626;
+    color: #fff;
+    padding: 14px 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: .95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .emergency-banner a {
+    color: #fef9c3;
+    text-decoration: underline;
+  }
+  .emergency-tel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin: 20px 0;
+  }
+  .emergency-tel-card {
+    background: #fff;
+    border: 2px solid #fca5a5;
+    border-radius: 12px;
+    padding: 14px 16px;
+    text-align: center;
+  }
+  .emergency-tel-card .area-label {
+    font-size: .75rem;
+    font-weight: 700;
+    color: #dc2626;
+    background: #fee2e2;
+    padding: 2px 8px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 6px;
+  }
+  .emergency-tel-card .tel-number {
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: #1e293b;
+    display: block;
+    margin: 4px 0;
+  }
+  .emergency-tel-card .tel-number a {
+    color: #dc2626;
+    text-decoration: none;
+  }
+  .emergency-tel-card .tel-hours {
+    font-size: .78rem;
+    color: #64748b;
+  }
+  /* フィルターバー */
+  .filter-section {
+    background: #fff;
+    padding: 16px 20px;
+    border-bottom: 1px solid #e2e8f0;
+    position: sticky;
+    top: 56px;
+    z-index: 90;
+  }
+  .filter-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .filter-label {
+    font-size: .8rem;
+    font-weight: 700;
+    color: #64748b;
+    white-space: nowrap;
+  }
+  .filter-btn {
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 2px solid #e2e8f0;
+    background: #fff;
+    font-size: .82rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .2s;
+    color: #475569;
+  }
+  .filter-btn:hover { background: #f1f5f9; }
+  .filter-btn.active {
+    background: #dc2626;
+    border-color: #dc2626;
+    color: #fff;
+  }
+  .filter-btn.active-area {
+    background: #2563eb;
+    border-color: #2563eb;
+    color: #fff;
+  }
+  /* 病院カード */
+  .hospital-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .hospital-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,.08);
+    overflow: hidden;
+    transition: transform .2s, box-shadow .2s;
+    border: 2px solid transparent;
+  }
+  .hospital-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,.12);
+  }
+  .hospital-card.emergency-card {
+    border-color: #fca5a5;
+  }
+  .card-header {
+    padding: 14px 16px 10px;
+    border-bottom: 1px solid #f1f5f9;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .card-icon {
+    font-size: 1.8rem;
+    flex-shrink: 0;
+  }
+  .card-title-area {
+    flex: 1;
+  }
+  .card-name {
+    font-size: 1rem;
+    font-weight: 900;
+    color: #1e293b;
+    margin: 0 0 4px;
+    line-height: 1.3;
+  }
+  .badge-row {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+  }
+  .badge {
+    font-size: .7rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 20px;
+  }
+  .badge-emergency { background: #fee2e2; color: #dc2626; }
+  .badge-large { background: #dbeafe; color: #1d4ed8; }
+  .badge-univ { background: #f0fdf4; color: #16a34a; }
+  .badge-night { background: #fef3c7; color: #d97706; }
+  .badge-general { background: #f1f5f9; color: #475569; }
+  .card-body {
+    padding: 12px 16px;
+  }
+  .info-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 7px;
+    font-size: .85rem;
+  }
+  .info-icon {
+    font-size: .9rem;
+    flex-shrink: 0;
+    width: 18px;
+    text-align: center;
+  }
+  .info-text {
+    color: #475569;
+    line-height: 1.4;
+  }
+  .info-text strong {
+    color: #1e293b;
+  }
+  .tel-link {
+    color: #dc2626;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: .95rem;
+  }
+  .tel-link:hover { text-decoration: underline; }
+  .card-comment {
+    background: #fff7ed;
+    border-left: 3px solid #fb923c;
+    padding: 8px 10px;
+    font-size: .8rem;
+    color: #7c3aed;
+    border-radius: 0 8px 8px 0;
+    margin: 10px 0 0;
+    line-height: 1.5;
+  }
+  .card-note {
+    background: #fef9c3;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: .78rem;
+    color: #92400e;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .card-footer {
+    padding: 10px 16px 14px;
+    display: flex;
+    gap: 8px;
+  }
+  .btn-tel {
+    flex: 1;
+    background: #dc2626;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 9px 12px;
+    font-size: .85rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+  }
+  .btn-map {
+    flex: 1;
+    background: #f1f5f9;
+    color: #1e293b;
+    border: none;
+    border-radius: 8px;
+    padding: 9px 12px;
+    font-size: .85rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+  }
+  .btn-tel:hover { background: #b91c1c; }
+  .btn-map:hover { background: #e2e8f0; }
+  .rating-stars {
+    color: #f59e0b;
+    font-size: .85rem;
+    margin-right: 4px;
+  }
+  /* 緊急チェックリスト */
+  .checklist-section {
+    background: linear-gradient(135deg, #fff7ed, #fef3c7);
+    border-top: 3px solid #fb923c;
+    padding: 32px 20px;
+    margin-top: 20px;
+  }
+  .checklist-section h2 {
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #92400e;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  .checklist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .checklist-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.06);
+  }
+  .checklist-card h3 {
+    font-size: .95rem;
+    font-weight: 900;
+    color: #1e293b;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .checklist-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .checklist-card li {
+    font-size: .85rem;
+    color: #475569;
+    padding: 4px 0;
+    border-bottom: 1px solid #f1f5f9;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .checklist-card li:last-child { border-bottom: none; }
+  .checklist-card li::before {
+    content: "✓";
+    color: #16a34a;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  /* 空表示 */
+  .empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #94a3b8;
+  }
+  .empty-state .empty-icon { font-size: 3rem; margin-bottom: 12px; }
+  /* 統計バー */
+  .stats-bar {
+    background: #fff;
+    padding: 12px 20px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: center;
+    font-size: .85rem;
+    color: #64748b;
+  }
+  .stats-bar strong { color: #dc2626; }
+</style>
+</head>
+<body>
+
+<!-- ヘッダー -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand" style="text-decoration:none">
+      <div class="brand-icon">🐾</div>
+      <span>Daisy<br><small style="font-size:10px;font-weight:700;color:var(--muted)">Kyushu Dog Guide</small></span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">ホーム</a>
+      <a href="spots.html">スポット</a>
+      <a href="outdoor.html">アウトドア</a>
+      <a href="hotels.html">宿</a>
+      <a href="hospital.html" class="active">🏥 病院</a>
+      <a href="checklist.html">持ち物</a>
+      <a href="events.html">イベント</a>
+      <a href="food.html">ご飯・おやつ</a>
+      <a href="favorites.html" id="nav-fav">❤️ お気に入り</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page-wrap">
+
+  <!-- 緊急バナー -->
+  <div class="emergency-banner">
+    <span>🚨 緊急の場合はまず電話！</span>
+    <span>福岡夜間: <a href="tel:0925048999">092-504-8999</a></span>
+    <span>北九州夜間: <a href="tel:0936618822">093-661-8822</a></span>
+    <span>熊本: <a href="tel:0963630033">096-363-0033</a></span>
+    <span>鹿児島: <a href="tel:0992585992">099-258-5992</a></span>
+  </div>
+
+  <!-- ヒーローセクション -->
+  <div class="hospital-hero">
+    <div style="font-size:2.5rem;margin-bottom:8px">🏥</div>
+    <h1>九州 動物病院ガイド</h1>
+    <p>旅先での急な体調不良に備えて。夜間救急対応・評判の良い動物病院をエリア別にまとめました。</p>
+    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+      <a href="#emergency-list" class="btn btn-primary" style="background:#dc2626;border-color:#dc2626">🚨 夜間救急を探す</a>
+      <a href="emergency.html" class="btn btn-secondary">📋 緊急時の対処法</a>
+    </div>
+  </div>
+
+  <!-- 緊急電話番号グリッド -->
+  <section style="padding:20px;max-width:900px;margin:0 auto">
+    <h2 style="font-size:1.1rem;font-weight:900;color:#dc2626;margin-bottom:14px;text-align:center">📞 夜間救急 緊急電話番号</h2>
+    <div class="emergency-tel-grid">
+      <div class="emergency-tel-card">
+        <span class="area-label">福岡市</span>
+        <span class="tel-number"><a href="tel:0925048999">092-504-8999</a></span>
+        <div class="tel-hours">福岡夜間救急動物病院<br>21:00〜翌5:00 年中無休</div>
+      </div>
+      <div class="emergency-tel-card">
+        <span class="area-label">北九州市</span>
+        <span class="tel-number"><a href="tel:0936618822">093-661-8822</a></span>
+        <div class="tel-hours">北九州夜間救急動物病院<br>21:00〜0:00 年中無休</div>
+      </div>
+      <div class="emergency-tel-card">
+        <span class="area-label">大分県</span>
+        <span class="tel-number"><a href="tel:09097853974">090-9785-3974</a></span>
+        <div class="tel-hours">大分動物夜間診療（往診）<br>19:00〜翌9:00 年中無休</div>
+      </div>
+      <div class="emergency-tel-card">
+        <span class="area-label">熊本市</span>
+        <span class="tel-number"><a href="tel:0963630033">096-363-0033</a></span>
+        <div class="tel-hours">竜之介動物病院<br>〜22:00 年中無休</div>
+      </div>
+      <div class="emergency-tel-card">
+        <span class="area-label">鹿児島（土日祝）</span>
+        <span class="tel-number"><a href="tel:0992585992">099-258-5992</a></span>
+        <div class="tel-hours">鹿児島県獣医師会 夜間当番<br>19:00〜22:30 土日祝のみ</div>
+      </div>
+      <div class="emergency-tel-card">
+        <span class="area-label">鹿児島（平日夜）</span>
+        <span class="tel-number"><a href="tel:0992858671">099-285-8671</a></span>
+        <div class="tel-hours">鹿児島大学附属動物病院<br>23:00〜翌6:00 平日のみ</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- フィルターバー -->
+  <div class="filter-section" id="emergency-list">
+    <div class="filter-row">
+      <span class="filter-label">タイプ：</span>
+      <button class="filter-btn active" onclick="filterHospitals('type','all',this)">すべて</button>
+      <button class="filter-btn" onclick="filterHospitals('type','emergency',this)">🚨 夜間救急</button>
+      <button class="filter-btn" onclick="filterHospitals('type','general',this)">🏥 一般診療</button>
+      <button class="filter-btn" onclick="filterHospitals('type','univ',this)">🎓 大学病院</button>
+      <span class="filter-label" style="margin-left:8px">エリア：</span>
+      <button class="filter-btn" onclick="filterHospitals('area','all',this)" id="area-all">全エリア</button>
+      <button class="filter-btn" onclick="filterHospitals('area','福岡',this)">福岡</button>
+      <button class="filter-btn" onclick="filterHospitals('area','大分',this)">大分</button>
+      <button class="filter-btn" onclick="filterHospitals('area','熊本',this)">熊本</button>
+      <button class="filter-btn" onclick="filterHospitals('area','長崎',this)">長崎</button>
+      <button class="filter-btn" onclick="filterHospitals('area','宮崎',this)">宮崎</button>
+      <button class="filter-btn" onclick="filterHospitals('area','鹿児島',this)">鹿児島</button>
+      <button class="filter-btn" onclick="filterHospitals('area','佐賀',this)">佐賀</button>
+    </div>
+  </div>
+
+  <!-- 統計バー -->
+  <div class="stats-bar" id="stats-bar">
+    <strong id="count-display">12</strong> 件の動物病院を掲載
+  </div>
+
+  <!-- 病院カードグリッド -->
+  <div class="hospital-grid" id="hospital-grid">
+    <!-- JavaScriptで動的に生成 -->
+    <div class="empty-state">
+      <div class="empty-icon">🏥</div>
+      <p>読み込み中...</p>
+    </div>
+  </div>
+
+  <!-- 緊急時チェックリスト -->
+  <div class="checklist-section">
+    <h2>🧳 旅行前に準備しておくこと</h2>
+    <div class="checklist-grid">
+      <div class="checklist-card">
+        <h3>📋 持ち物チェック</h3>
+        <ul>
+          <li>かかりつけ病院の連絡先メモ</li>
+          <li>ワクチン接種証明書（コピー）</li>
+          <li>常備薬・処方薬</li>
+          <li>ペット保険証書</li>
+          <li>診察券（かかりつけ）</li>
+          <li>犬の写真（迷子対策）</li>
+        </ul>
+      </div>
+      <div class="checklist-card">
+        <h3>📱 事前に調べておくこと</h3>
+        <ul>
+          <li>宿泊先近くの動物病院</li>
+          <li>夜間救急対応病院の電話番号</li>
+          <li>ペット保険の適用条件</li>
+          <li>かかりつけ医の時間外連絡先</li>
+          <li>旅行先の獣医師会の連絡先</li>
+        </ul>
+      </div>
+      <div class="checklist-card">
+        <h3>🚨 こんな症状はすぐ病院へ</h3>
+        <ul>
+          <li>ぐったりして動かない</li>
+          <li>呼吸が荒い・苦しそう</li>
+          <li>嘔吐・下痢が止まらない</li>
+          <li>異物を飲み込んだ</li>
+          <li>けいれん・意識がない</li>
+          <li>大量出血・骨折疑い</li>
+        </ul>
+      </div>
+      <div class="checklist-card">
+        <h3>☀️ 夏の熱中症に注意</h3>
+        <ul>
+          <li>ぐったり・よだれが多い</li>
+          <li>体温が39.5℃以上</li>
+          <li>すぐに涼しい場所へ移動</li>
+          <li>首・脇・足の付け根を冷やす</li>
+          <li>水を少量ずつ飲ませる</li>
+          <li>改善しなければ即病院へ</li>
+        </ul>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:20px">
+      <a href="emergency.html" class="btn btn-primary" style="background:#f97316;border-color:#f97316">📋 緊急時の詳しい対処法を見る</a>
+    </div>
+  </div>
+
+</main>
+
+<!-- フッター -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-brand">🐾 Daisy Kyushu Dog Guide</p>
+    <nav class="footer-nav">
+      <a href="index.html">ホーム</a>
+      <a href="spots.html">スポット</a>
+      <a href="hotels.html">宿</a>
+      <a href="hospital.html">病院</a>
+      <a href="emergency.html">緊急ガイド</a>
+      <a href="about.html">このサイトについて</a>
+    </nav>
+    <p class="footer-copy">© 2024 Daisy Kyushu Dog Guide. 病院情報は変更される場合があります。来院前に必ずお電話でご確認ください。</p>
+  </div>
+</footer>
+
+<script type="module" src="firebase-tracker.js"></script>
+<script>
+// ========== 病院データ読み込み・表示 ==========
+let allHospitals = [];
+let currentTypeFilter = 'all';
+let currentAreaFilter = 'all';
+
+const typeIcons = {
+  '夜間救急': '🚨',
+  '夜間救急・往診': '🚑',
+  '夜間対応': '🌙',
+  '大学病院': '🎓',
+  '大学病院・夜間救急': '🎓',
+  '総合病院': '🏥',
+  '一般診療': '🏥',
+  '救急案内': '📞'
+};
+
+function getRatingStars(rating) {
+  const full = Math.floor(rating);
+  const half = rating % 1 >= 0.5 ? 1 : 0;
+  const empty = 5 - full - half;
+  return '★'.repeat(full) + (half ? '☆' : '') + '☆'.repeat(empty);
+}
+
+function getBadges(h) {
+  let badges = '';
+  if (h.emergency) badges += '<span class="badge badge-emergency">🚨 夜間救急</span>';
+  if (h.large_dog) badges += '<span class="badge badge-large">大型犬OK</span>';
+  if (h.type.includes('大学')) badges += '<span class="badge badge-univ">大学病院</span>';
+  if (h.type.includes('夜間') && !h.emergency) badges += '<span class="badge badge-night">夜間対応</span>';
+  return badges;
+}
+
+function renderHospitals(hospitals) {
+  const grid = document.getElementById('hospital-grid');
+  const countEl = document.getElementById('count-display');
+  countEl.textContent = hospitals.length;
+
+  if (hospitals.length === 0) {
+    grid.innerHTML = `
+      <div class="empty-state" style="grid-column:1/-1">
+        <div class="empty-icon">🔍</div>
+        <p>条件に合う病院が見つかりませんでした</p>
+      </div>`;
+    return;
+  }
+
+  grid.innerHTML = hospitals.map(h => {
+    const icon = typeIcons[h.type] || '🏥';
+    const isEmergency = h.emergency;
+    const mapUrl = h.map_url || `https://maps.google.com/?q=${encodeURIComponent(h.name + ' ' + h.address)}`;
+
+    return `
+      <div class="hospital-card ${isEmergency ? 'emergency-card' : ''}" data-area="${h.area}" data-emergency="${h.emergency}" data-type="${h.type}">
+        <div class="card-header">
+          <div class="card-icon">${icon}</div>
+          <div class="card-title-area">
+            <div class="card-name">${h.name}</div>
+            <div class="badge-row">${getBadges(h)}</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="info-row">
+            <span class="info-icon">📍</span>
+            <span class="info-text">${h.city}</span>
+          </div>
+          <div class="info-row">
+            <span class="info-icon">📞</span>
+            <span class="info-text"><a href="tel:${h.tel.replace(/-/g,'')}" class="tel-link">${h.tel}</a></span>
+          </div>
+          <div class="info-row">
+            <span class="info-icon">🕐</span>
+            <span class="info-text"><strong>${h.hours}</strong></span>
+          </div>
+          <div class="info-row">
+            <span class="info-icon">📅</span>
+            <span class="info-text">休診: ${h.holiday}</span>
+          </div>
+          <div class="info-row">
+            <span class="info-icon">🐾</span>
+            <span class="info-text">${h.animals.join('・')}</span>
+          </div>
+          <div class="info-row">
+            <span class="info-icon">⭐</span>
+            <span class="info-text"><span class="rating-stars">${getRatingStars(h.rating)}</span>${h.rating}</span>
+          </div>
+          ${h.comment ? `<div class="card-comment">🐶 ${h.comment}</div>` : ''}
+          ${h.note ? `<div class="card-note">⚠️ ${h.note}</div>` : ''}
+        </div>
+        <div class="card-footer">
+          <a href="tel:${h.tel.replace(/-/g,'')}" class="btn-tel">📞 電話する</a>
+          <a href="${mapUrl}" target="_blank" rel="noopener" class="btn-map">🗺️ 地図を見る</a>
+        </div>
+      </div>`;
+  }).join('');
+}
+
+function filterHospitals(filterType, value, btn) {
+  // ボタンのアクティブ状態を更新
+  if (filterType === 'type') {
+    document.querySelectorAll('.filter-btn').forEach(b => {
+      if (['all','emergency','general','univ'].includes(b.getAttribute('onclick')?.match(/'([^']+)'/g)?.[1]?.replace(/'/g,''))) {
+        b.classList.remove('active');
+      }
+    });
+    btn.classList.add('active');
+    currentTypeFilter = value;
+  } else {
+    document.querySelectorAll('.filter-btn').forEach(b => {
+      const onclick = b.getAttribute('onclick') || '';
+      if (onclick.includes("'area'")) {
+        b.classList.remove('active', 'active-area');
+      }
+    });
+    btn.classList.add('active-area');
+    currentAreaFilter = value;
+  }
+
+  let filtered = allHospitals;
+
+  // タイプフィルター
+  if (currentTypeFilter === 'emergency') {
+    filtered = filtered.filter(h => h.emergency);
+  } else if (currentTypeFilter === 'univ') {
+    filtered = filtered.filter(h => h.type.includes('大学'));
+  } else if (currentTypeFilter === 'general') {
+    filtered = filtered.filter(h => !h.emergency && !h.type.includes('大学'));
+  }
+
+  // エリアフィルター
+  if (currentAreaFilter !== 'all') {
+    filtered = filtered.filter(h => h.area === currentAreaFilter);
+  }
+
+  renderHospitals(filtered);
+}
+
+// データ読み込み
+fetch('hospitals.json')
+  .then(r => r.json())
+  .then(data => {
+    allHospitals = data;
+    renderHospitals(data);
+  })
+  .catch(err => {
+    console.error('病院データ読み込みエラー:', err);
+    document.getElementById('hospital-grid').innerHTML = `
+      <div class="empty-state" style="grid-column:1/-1">
+        <div class="empty-icon">⚠️</div>
+        <p>データの読み込みに失敗しました</p>
+      </div>`;
+  });
+</script>
+
+</body>
+</html>
