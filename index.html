@@ -694,7 +694,8 @@ async function loadWeather() {
       const selected = filtered.sort(() => Math.random() - 0.5).slice(0, 3);
       container.innerHTML = selected.map(s => {
         const typeIcon = s.type ? (s.type.includes('カフェ') ? '☕' : s.type.includes('ドッグラン') ? '🐕' : s.type.includes('キャンプ') ? '⛺' : s.type.includes('温泉') ? '♨️' : '🌿') : '🌿';
-        return `<a href="spots.html" class="weather-spot-item" onclick="sessionStorage.setItem('searchQuery','${(s.name||'').replace(/'/g,'\\'')}')">
+        const safeName = (s.name || '').replace(/'/g, '&#39;');
+        return `<a href="spots.html" class="weather-spot-item" onclick="sessionStorage.setItem('searchQuery','${safeName}')">
           <span class="weather-spot-icon">${typeIcon}</span>
           <div>
             <div style="font-weight:800">${s.name}</div>
