@@ -744,6 +744,44 @@
 <script src="firebase-tracker.js"></script>
 <script>
 // ===== コース自動生成 =====
+
+// タイプに応じたアイコンと推奨時間帯
+const TYPE_META = {
+  'ドッグラン': { icon: '🐾', time: '10:00', duration: '1.5時間', cost: '500〜1,000円' },
+  'dogrun':    { icon: '🐾', time: '10:00', duration: '1.5時間', cost: '500〜1,000円' },
+  'walk':      { icon: '🚶', time: '09:00', duration: '1時間',   cost: '無料' },
+  '公園':       { icon: '🌳', time: '09:00', duration: '1時間',   cost: '無料〜有料' },
+  'カフェ':       { icon: '☕',   time: '11:00', duration: '1時間',   cost: '1,000〜2,000円' },
+  'ドッグカフェ':   { icon: '🐶☕', time: '11:00', duration: '1.5時間', cost: '1,500〜2,500円' },
+  '温泉':       { icon: '♨️',  time: '15:00', duration: '2時間',   cost: '1,000〜3,000円' },
+  'サービスエリア': { icon: '🚗', time: '12:00', duration: '30分',   cost: '無料' },
+  'ビーチ':     { icon: '🌊', time: '10:00', duration: '1.5時間', cost: '無料' },
+  '自然':       { icon: '🌱', time: '09:00', duration: '2時間',   cost: '無料〜有料' },
+  '観光':       { icon: '🏛️', time: '10:00', duration: '1.5時間', cost: '無料〜有料' },
+  'テーマパーク': { icon: '🎉', time: '10:00', duration: '3時間',   cost: '2,000〜5,000円' },
+  '宿':         { icon: '🏨', time: '15:00', duration: 'チェックイン', cost: '10,000〜30,000円' },
+};
+
+function getTypeMeta(type) {
+  const t = (type || '').split('/')[0].trim();
+  for (const [key, meta] of Object.entries(TYPE_META)) {
+    if (t.includes(key) || t.toLowerCase().includes(key.toLowerCase())) return meta;
+  }
+  return { icon: '📍', time: '10:00', duration: '1時間', cost: '要確認' };
+}
+
+// Daisyのコメントバリエーション
+const DAISY_COMMENTS = [
+  'ここ、Daisyが大好きなスポットの一つ！サモエドにとって最高の場所だよ🐾',
+  'ここは近くに行ったことがあるよ！山の空気が気持ちいい✨',
+  '大型犬にやさしいスポットだよ！小型犬の子たちと一緒に遊んだことも🐾',
+  '気候がいい日には必ず行ってみて！山の景色が素敵なんだ✨',
+  'サモエドの私にぴったりの気候だよ！涼びやかな場所だよ🐾',
+  'ここはスタッフの方がとても丘やかで、また行きたい場所✨',
+  'ドッグランの広さが最高！全力ダッシュできるよ🐾',
+  '季節の花がきれいで、写真を撃ったらとっても素敵な一枚になるよ✨',
+];
+
 async function generateCourse() {
   const area = document.getElementById('gen-area').value;
   const days = parseInt(document.getElementById('gen-days').value);
@@ -754,9 +792,12 @@ async function generateCourse() {
 
   // ローディング表示
   btn.disabled = true;
-  btn.textContent = '✨ Daisyが考中...';
+  btn.innerHTML = '<span style="animation:spin 1s linear infinite;display:inline-block;">✨</span> Daisyがコースを考中...';
   resultEl.style.display = 'block';
-  resultEl.innerHTML = '<div style="text-align:center;padding:20px;color:#666;">🐾 Daisyがコースを考えています...<br><small>スポットデータを分析中</small></div>';
+  resultEl.innerHTML = '<div style="text-align:center;padding:24px;color:#666;">🐾 Daisyがコースを考えています...<br><small style="color:#aaa;">スポットデータを分析中</small></div>';
+
+  // 少し遅延を入れて「考えている」感を演出
+  await new Promise(r => setTimeout(r, 600));
 
   try {
     // spots.jsonを取得
@@ -786,70 +827,137 @@ async function generateCourse() {
       return;
     }
 
-    // コースに必要なスポット数を決定
+    // コースに必要なスポット数を決定（1日あたり3スポット）
     const spotsPerDay = 3;
-    const totalSpots = Math.min(days * spotsPerDay, filtered.length);
+    let totalSpots = Math.min(days * spotsPerDay, filtered.length);
 
-    // ランダムにスポットを選択（シャッフル）
-    const shuffled = [...filtered].sort(() => Math.random() - 0.5);
-    const selected = shuffled.slice(0, totalSpots);
+    // タイプを分散させながらランダムに選択
+    let shuffled = [...filtered].sort(() => Math.random() - 0.5);
+    let selected = [];
+    let typeCount = {};
+    
+    for (let s of shuffled) {
+      if (selected.length >= totalSpots) break;
+      const t = (s.type || s.category || 'その他').split('/')[0].trim();
+      if ((typeCount[t] || 0) >= Math.ceil(days * 1.5)) continue;
+      selected.push(s);
+      typeCount[t] = (typeCount[t] || 0) + 1;
+    }
+    if (selected.length < totalSpots) {
+      for (let s of shuffled) {
+        if (selected.length >= totalSpots) break;
+        if (!selected.find(x => x.id === s.id)) selected.push(s);
+      }
+    }
 
-    // コース名を生成
+    // コース名とメタ情報
     const areaLabel = area || '九州';
     const daysLabel = days === 1 ? '日帰り' : days === 2 ? '1泊2日' : '2泊3日';
     const dogLabel = dogSize === 'large' ? '大型犬' : dogSize === 'small' ? '小型犬' : '犬連れ';
     const courseName = `${areaLabel} ${daysLabel} ${dogLabel}コース`;
+    const daisyComment = DAISY_COMMENTS[Math.floor(Math.random() * DAISY_COMMENTS.length)];
 
-    // GooglemapルートURLを作成
-    const mapQuery = selected.map(s => s.mapQuery || (s.name + ' ' + (s.area || ''))).join('/');
-    const mapsUrl = `https://www.google.com/maps/dir/${encodeURIComponent(mapQuery)}`;
+    // GoogleマップルートURL
+    const mapsUrl = 'https://www.google.com/maps/dir/' +
+      selected.map(s => encodeURIComponent(s.mapQuery || (s.name + ' ' + (s.area || '')))).join('/');
 
-    // HTML生成
+    // コースヘッダー
     let html = `
-      <div style="background:linear-gradient(135deg,#e8f5e9,#f1f8e9);border-radius:16px;padding:20px;">
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;">
-          <img src="assets/daisy-itinerary-wave.png" alt="Daisy" style="width:44px;height:44px;border-radius:50%;object-fit:contain;">
-          <div>
-            <div style="font-weight:900;font-size:16px;color:#1b5e20;">🐾 ${courseName}</div>
-            <div style="font-size:12px;color:#555;">${selected.length}件のスポットを提案！</div>
+      <div style="border-radius:16px;overflow:hidden;border:1.5px solid #c8e6c9;">
+        <div style="background:linear-gradient(135deg,#2e7d32,#43a047);padding:16px 20px;display:flex;align-items:center;gap:12px;">
+          <img src="assets/daisy-itinerary-wave.png" alt="Daisy" style="width:48px;height:48px;border-radius:50%;object-fit:contain;border:2px solid rgba(255,255,255,.5);">
+          <div style="flex:1;">
+            <div style="font-weight:900;font-size:17px;color:#fff;">🐾 ${courseName}</div>
+            <div style="font-size:12px;color:rgba(255,255,255,.8);margin-top:2px;">${selected.length}スポット ・ ${daysLabel}プラン</div>
+          </div>
+          <div style="text-align:right;">
+            <div style="font-size:11px;color:rgba(255,255,255,.7);">Daisyが提案</div>
+            <div style="font-size:18px;">✨</div>
           </div>
         </div>
+        <div style="background:#f9fbe7;padding:12px 16px;font-size:12px;color:#555;border-bottom:1px solid #e8f5e9;display:flex;gap:8px;align-items:flex-start;">
+          <img src="assets/daisy-itinerary-wave.png" alt="Daisy" style="width:28px;height:28px;border-radius:50%;object-fit:contain;flex-shrink:0;">
+          <span style="line-height:1.5;">${daisyComment}</span>
+        </div>
+        <div style="background:#fff;padding:16px;">
     `;
 
-    selected.forEach((s, i) => {
-      const dayNum = Math.floor(i / spotsPerDay) + 1;
-      const spotNum = (i % spotsPerDay) + 1;
-      const isNewDay = i % spotsPerDay === 0 && days > 1;
-      if (isNewDay) {
-        html += `<div style="font-size:12px;font-weight:700;color:#2e7d32;background:#fff;border-radius:8px;padding:6px 12px;margin-bottom:8px;display:inline-block;">DAY ${dayNum}</div>`;
+    // 日別タイムライン
+    for (let day = 1; day <= days; day++) {
+      const daySpots = selected.slice((day-1)*spotsPerDay, day*spotsPerDay);
+      if (days > 1) {
+        html += `<div style="font-size:12px;font-weight:900;color:#fff;background:#2e7d32;border-radius:20px;padding:4px 14px;display:inline-block;margin-bottom:12px;">DAY ${day}</div>`;
       }
-      html += `
-        <div style="background:#fff;border-radius:12px;padding:12px 14px;margin-bottom:8px;display:flex;gap:10px;align-items:flex-start;">
-          <div style="width:28px;height:28px;border-radius:50%;background:#2e7d32;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:13px;flex-shrink:0;">${i + 1}</div>
-          <div style="flex:1;min-width:0;">
-            <div style="font-weight:700;font-size:14px;color:#1a1a1a;">${s.name}</div>
-            <div style="font-size:12px;color:#888;margin-top:2px;">${s.area || ''} ${s.type || s.category || ''}</div>
-            <div style="font-size:12px;color:#555;margin-top:4px;line-height:1.4;">${(s.memo || s.description || '').slice(0, 50)}${(s.memo || s.description || '').length > 50 ? '...' : ''}</div>
+      daySpots.forEach((s, idx) => {
+        const meta = getTypeMeta(s.type || s.category || '');
+        const spotIdx = (day-1)*spotsPerDay + idx;
+        const memo = (s.memo || s.description || '').slice(0, 70);
+        const memoFull = (s.memo || s.description || '');
+        const largeDogOk = (s.large_dog || s.largeDog || '').toLowerCase().includes('ok');
+        const fee = s.fee || '';
+        const hours = s.hours || '';
+        html += `
+          <div style="display:flex;gap:10px;margin-bottom:12px;">
+            <div style="display:flex;flex-direction:column;align-items:center;">
+              <div style="width:32px;height:32px;border-radius:50%;background:#2e7d32;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:14px;flex-shrink:0;">${spotIdx+1}</div>
+              ${spotIdx < selected.length-1 ? '<div style="width:2px;flex:1;background:#e0e0e0;margin:4px 0;"></div>' : ''}
+            </div>
+            <div style="flex:1;min-width:0;background:#f9f9f9;border-radius:12px;padding:12px;margin-bottom:0;">
+              <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+                <span style="font-size:16px;">${meta.icon}</span>
+                <span style="font-weight:700;font-size:14px;color:#1a1a1a;">${s.name}</span>
+                ${largeDogOk ? '<span style="font-size:10px;background:#e8f5e9;color:#2e7d32;padding:2px 6px;border-radius:4px;font-weight:700;">大型犬OK</span>' : ''}
+              </div>
+              <div style="font-size:11px;color:#888;margin-bottom:6px;">${(s.type||'').split('/')[0]} • ${s.area||''}</div>
+              <div style="font-size:12px;color:#555;line-height:1.5;margin-bottom:8px;">${memo}${memoFull.length > 70 ? '...' : ''}</div>
+              <div style="display:flex;flex-wrap:wrap;gap:6px;font-size:11px;">
+                ${hours ? `<span style="background:#e3f2fd;color:#1565c0;padding:2px 8px;border-radius:4px;">⏰ ${hours.split('\n')[0].slice(0,20)}</span>` : ''}
+                ${fee ? `<span style="background:#fce4ec;color:#c62828;padding:2px 8px;border-radius:4px;">💰 ${fee.slice(0,20)}</span>` : `<span style="background:#f3e5f5;color:#6a1b9a;padding:2px 8px;border-radius:4px;">💰 ${meta.cost}</span>`}
+                <span style="background:#f1f8e9;color:#33691e;padding:2px 8px;border-radius:4px;">⏱ ${meta.duration}</span>
+                <a href="spot/${s.id}.html" target="_blank" style="background:#2e7d32;color:#fff;padding:2px 8px;border-radius:4px;text-decoration:none;">詳細を見る →</a>
+              </div>
+            </div>
           </div>
-          <a href="spot/${s.id}.html" style="font-size:11px;color:#2e7d32;text-decoration:none;border:1px solid #c8e6c9;border-radius:8px;padding:4px 8px;white-space:nowrap;flex-shrink:0;">詳細</a>
-        </div>
-      `;
-      if (i < selected.length - 1 && (i + 1) % spotsPerDay !== 0) {
-        html += `<div style="text-align:center;color:#aaa;font-size:12px;margin:2px 0;">↓ 移動</div>`;
+        `;
+        if (idx < daySpots.length - 1) {
+          html += `<div style="font-size:11px;color:#aaa;padding-left:42px;margin-bottom:8px;">🚗 移動（車で数分〜30分目安）</div>`;
+        }
+      });
+      if (day < days) {
+        html += `
+          <div style="background:#e8f5e9;border-radius:10px;padding:10px 14px;margin:12px 0;font-size:12px;color:#2e7d32;display:flex;align-items:center;gap:8px;">
+            <span style="font-size:18px;">🏨</span>
+            <div>
+              <div style="font-weight:700;">DAY ${day} 多に宿泊</div>
+              <div style="color:#555;margin-top:2px;">犬連れ対応の宿は<a href="hotels.html" style="color:#2e7d32;">hotels.html</a>で検索！楽天トラベルで予約がお得です。</div>
+            </div>
+          </div>
+        `;
       }
-    });
+    }
 
     html += `
-        <div style="display:flex;gap:8px;margin-top:16px;flex-wrap:wrap;">
-          <a href="${mapsUrl}" target="_blank" rel="noopener" style="flex:1;min-width:140px;background:#2e7d32;color:#fff;text-decoration:none;padding:12px;border-radius:10px;font-weight:700;font-size:13px;text-align:center;display:block;">🗺️ Googleマップでルート</a>
-          <a href="spots.html" style="flex:1;min-width:140px;background:#f5f5f5;color:#333;text-decoration:none;padding:12px;border-radius:10px;font-weight:700;font-size:13px;text-align:center;display:block;">📋 しおりを作る</a>
         </div>
-        <div style="margin-top:12px;font-size:12px;color:#888;text-align:center;">🐾 再生成すると別のコースを提案します</div>
+        <div style="background:#f9fbe7;padding:14px 16px;display:flex;gap:8px;flex-wrap:wrap;">
+          <a href="${mapsUrl}" target="_blank" rel="noopener"
+            style="flex:1;min-width:130px;background:#2e7d32;color:#fff;text-decoration:none;padding:11px;border-radius:10px;font-weight:700;font-size:13px;text-align:center;display:block;">
+            🗺️ Googleマップでルート
+          </a>
+          <a href="https://hb.afl.rakuten.co.jp/hgc/5420c596.0f96b703.5420c597.c7bd6fff/?pc=https%3A%2F%2Fkw.travel.rakuten.co.jp%2Fkeyword%2FEvent.do%3Ff_area%3D12%26f_su%3D2" target="_blank" rel="noopener"
+            style="flex:1;min-width:130px;background:#bf0000;color:#fff;text-decoration:none;padding:11px;border-radius:10px;font-weight:700;font-size:13px;text-align:center;display:block;">
+            🏨 宿を楽天で探す
+          </a>
+          <button onclick="generateCourse()"
+            style="flex:1;min-width:130px;background:#f5f5f5;color:#333;border:none;padding:11px;border-radius:10px;font-weight:700;font-size:13px;cursor:pointer;">
+            🔄 別のコースを提案
+          </button>
+        </div>
       </div>
     `;
 
     resultEl.innerHTML = html;
   } catch(e) {
+    console.error(e);
     resultEl.innerHTML = '<div style="color:#e53935;padding:12px;">エラーが発生しました。再度お試しください。</div>';
   }
 
