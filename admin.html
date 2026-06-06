@@ -321,6 +321,11 @@
         <div class="filter-chip" onclick="toggleSpotFilter(this, 'indoorOk')">室内OK</div>
         <div class="filter-chip" onclick="toggleSpotFilter(this, 'parking')">駐車場あり</div>
         <div class="filter-chip" onclick="toggleSpotFilter(this, 'weekendRecommended')">週末おすすめ</div>
+        <div class="filter-chip" onclick="toggleSpotFilter(this, 'noHours')" style="background:#7f1d1d;color:#fca5a5;border-color:#991b1b;">⚠️ 時間未設定</div>
+      </div>
+      <div id="spots-export-notice" style="display:none;background:#14532d;border:1px solid #166534;border-radius:10px;padding:14px 18px;margin-bottom:14px;align-items:center;justify-content:space-between;gap:12px;">
+        <span style="color:#4ade80;font-size:13px;font-weight:700;">✅ スポットデータを更新しました。変更をサイトに反映するにはspots.jsonをダウンロードしてリポジトリにアップロードしてください</span>
+        <button class="btn btn-primary btn-sm" onclick="exportSpotsJSON()">⬇️ spots.jsonをダウンロード</button>
       </div>
       <div class="table-card">
         <div class="table-title">
@@ -328,7 +333,7 @@
           <span id="spots-showing" style="font-size:12px;color:#64748b;font-weight:400;"></span>
         </div>
         <table>
-          <thead><tr><th>#</th><th>スポット名</th><th>エリア</th><th>種別</th><th>大型犬</th><th>雨天</th><th>状態</th><th>操作</th></tr></thead>
+          <thead><tr><th>#</th><th>スポット名</th><th>エリア</th><th>種別</th><th>開店</th><th>閉店</th><th>大型犬</th><th>雨天</th><th>状態</th><th>操作</th></tr></thead>
           <tbody id="spots-table"></tbody>
         </table>
         <div class="pagination" id="spots-pagination"></div>
@@ -497,6 +502,114 @@
     <div class="modal-actions">
       <button class="btn btn-secondary" onclick="closeSpotModal()">閉じる</button>
       <a id="spot-modal-link" href="#" target="_blank" class="btn btn-primary" style="text-decoration:none;">🌐 公式サイト</a>
+    </div>
+  </div>
+</div>
+
+<!-- スポット編集モーダル -->
+<div class="modal-overlay" id="spot-edit-modal">
+  <div class="modal-box" style="max-width:640px;">
+    <div class="modal-title" id="spot-edit-title">✏️ スポットを編集</div>
+    <div class="form-grid">
+      <div class="form-group full">
+        <label class="form-label">スポット名</label>
+        <input type="text" id="se-name" class="form-input">
+      </div>
+      <div class="form-group">
+        <label class="form-label">エリア</label>
+        <select id="se-area" class="form-select">
+          <option value="">選択</option>
+          <option>福岡</option><option>大分</option><option>熊本</option>
+          <option>長崎</option><option>宮崎</option><option>鹿児島</option><option>佐賀</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">カテゴリ</label>
+        <select id="se-type" class="form-select">
+          <option value="">選択</option>
+          <option>ドッグラン</option><option>カフェ</option><option>自然</option>
+          <option>ビーチ</option><option>観光</option><option>温泉</option>
+          <option>アウトドア</option><option>ショッピング</option><option>その他</option>
+        </select>
+      </div>
+
+      <div style="grid-column:1/-1;font-size:12px;font-weight:700;color:#22c55e;padding:8px 0 4px;border-bottom:1px solid #334155;">🕒 営業時間</div>
+
+      <div class="form-group">
+        <label class="form-label">開店時刻</label>
+        <input type="time" id="se-openTime" class="form-input">
+      </div>
+      <div class="form-group">
+        <label class="form-label">閉店時刻</label>
+        <input type="time" id="se-closeTime" class="form-input">
+      </div>
+      <div class="form-group">
+        <label class="form-label">定休日</label>
+        <input type="text" id="se-closed" class="form-input" placeholder="例：火曜日、年末年始">
+      </div>
+      <div class="form-group">
+        <label class="form-label">営業時間（テキスト）</label>
+        <input type="text" id="se-hours" class="form-input" placeholder="例：9:00〜18:00（火曜定休）">
+      </div>
+
+      <div style="grid-column:1/-1;font-size:12px;font-weight:700;color:#22c55e;padding:8px 0 4px;border-bottom:1px solid #334155;">🐾 犬の情報</div>
+
+      <div class="form-group">
+        <label class="form-label">大型犬</label>
+        <select id="se-largeDog" class="form-select">
+          <option value="">不明</option>
+          <option value="大型犬OK">大型犬OK</option>
+          <option value="要確認">要確認</option>
+          <option value="大型犬不可">大型犬不可</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">雨天時</label>
+        <select id="se-rainyOk" class="form-select">
+          <option value="">不明</option>
+          <option value="雨天可">雨天可</option>
+          <option value="屋内あり">屋内あり</option>
+          <option value="雨天不可">雨天不可</option>
+        </select>
+      </div>
+
+      <div style="grid-column:1/-1;font-size:12px;font-weight:700;color:#22c55e;padding:8px 0 4px;border-bottom:1px solid #334155;">📍 ロケーション</div>
+
+      <div class="form-group full">
+        <label class="form-label">住所</label>
+        <input type="text" id="se-address" class="form-input" placeholder="例：福岡県福岡市中央区...">
+      </div>
+      <div class="form-group">
+        <label class="form-label">緯度（lat）</label>
+        <input type="number" id="se-lat" class="form-input" step="0.0001">
+      </div>
+      <div class="form-group">
+        <label class="form-label">経度（lng）</label>
+        <input type="number" id="se-lng" class="form-input" step="0.0001">
+      </div>
+
+      <div style="grid-column:1/-1;font-size:12px;font-weight:700;color:#22c55e;padding:8px 0 4px;border-bottom:1px solid #334155;">📱 連絡先</div>
+
+      <div class="form-group">
+        <label class="form-label">料金</label>
+        <input type="text" id="se-fee" class="form-input" placeholder="例：無料、500円/時間">
+      </div>
+      <div class="form-group">
+        <label class="form-label">電話番号</label>
+        <input type="text" id="se-tel" class="form-input" placeholder="092-123-4567">
+      </div>
+      <div class="form-group full">
+        <label class="form-label">公式URL</label>
+        <input type="url" id="se-officialUrl" class="form-input" placeholder="https://...">
+      </div>
+      <div class="form-group full">
+        <label class="form-label">説明文</label>
+        <textarea id="se-description" class="form-textarea" rows="3"></textarea>
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button class="btn btn-secondary" onclick="closeSpotEditModal()">キャンセル</button>
+      <button class="btn btn-primary" onclick="saveSpotEdit()">💾 保存</button>
     </div>
   </div>
 </div>
@@ -831,17 +944,23 @@ window.filterSpots = function() {
   filteredSpots = allSpots.filter(s => {
     const matchSearch = !search || (s.name||'').toLowerCase().includes(search) || (s.area||'').toLowerCase().includes(search);
     const matchArea = !area || (s.area||'').includes(area);
-    const matchFilter = currentSpotFilter === 'all' || s[currentSpotFilter] === true || s[currentSpotFilter] === '◯' || s[currentSpotFilter] === 'true';
+    let matchFilter = true;
+    if (currentSpotFilter === 'noHours') {
+      const hasHours = s.openTime || s.closeTime || s.hours;
+      matchFilter = !hasHours;
+    } else if (currentSpotFilter !== 'all') {
+      matchFilter = s[currentSpotFilter] === true || s[currentSpotFilter] === '◯' || s[currentSpotFilter] === 'true' || s[currentSpotFilter] === '大型犬OK' || s[currentSpotFilter] === '雨天可';
+    }
     return matchSearch && matchArea && matchFilter;
   });
   spotsPage = 1;
   renderSpotsTable();
 };
 
-window.toggleSpotFilter = function(el, filter) {
+window.toggleSpotFilter = function(el, type) {
   document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
   el.classList.add('active');
-  currentSpotFilter = filter;
+  currentSpotFilter = type;
   filterSpots();
 };
 
@@ -862,17 +981,31 @@ function renderSpotsTable() {
 
   tbody.innerHTML = pageData.map((s, i) => {
     const statusBadge = s.status === 'active' ? '<span class="badge badge-green">営業中</span>' : s.status === 'closed' ? '<span class="badge badge-red">閉業</span>' : '<span class="badge badge-gray">不明</span>';
-    const largeDog = (s.largeDog === true || s.largeDog === '◯' || s.large_dog === '◯') ? '✅' : '—';
-    const rainy = (s.rainyOk === true || s.rainyOk === '◯') ? '✅' : '—';
+    const largeDog = (s.largeDog === true || s.largeDog === '◯' || s.large_dog === '◯' || s.largeDog === '大型犬OK') ? '✅' : '—';
+    const rainy = (s.rainyOk === true || s.rainyOk === '◯' || s.rainyOk === '雨天可') ? '✅' : '—';
+    // 開店・閉店時刻（openTime/closeTimeまたはhoursから推定）
+    let openT = s.openTime || '';
+    let closeT = s.closeTime || '';
+    if (!openT && s.hours) {
+      const m = s.hours.match(/(\d{1,2}):(\d{2})[\u301c~\-\u2013](\d{1,2}):(\d{2})/);
+      if (m) { openT = m[1].padStart(2,'0')+':'+m[2]; closeT = m[3].padStart(2,'0')+':'+m[4]; }
+    }
+    const openBadge = openT ? `<span class="badge badge-green">${openT}</span>` : '<span class="badge badge-red">未設定</span>';
+    const closeBadge = closeT ? `<span class="badge badge-green">${closeT}</span>` : '<span class="badge badge-red">未設定</span>';
     return `<tr>
       <td style="color:#64748b;">${start+i+1}</td>
       <td><div style="font-weight:600;">${s.name||'-'}</div><div style="font-size:11px;color:#64748b;">${s.type||'-'}</div></td>
       <td><span class="badge badge-blue">${s.area||'-'}</span></td>
       <td style="font-size:12px;">${s.type||'-'}</td>
+      <td>${openBadge}</td>
+      <td>${closeBadge}</td>
       <td style="text-align:center;">${largeDog}</td>
       <td style="text-align:center;">${rainy}</td>
       <td>${statusBadge}</td>
-      <td><button class="btn btn-secondary btn-sm" onclick="openSpotDetail(${allSpots.indexOf(s)})">詳細</button></td>
+      <td>
+        <button class="btn btn-secondary btn-sm" onclick="openSpotDetail(${allSpots.indexOf(s)})">詳細</button>
+        <button class="btn btn-warning btn-sm" style="margin-left:4px;" onclick="openSpotEdit(${allSpots.indexOf(s)})">✏️ 編集</button>
+      </td>
     </tr>`;
   }).join('');
 
@@ -921,7 +1054,86 @@ window.closeSpotModal = function() {
   document.getElementById('spot-modal').classList.remove('open');
 };
 
-// ========== ブログ管理 ==========
+// ========== スポット編集機能 ==========
+window.openSpotEdit = function(index) {
+  const s = allSpots[index];
+  // 開店・閉店時刻をhoursから推定
+  let openT = s.openTime || '';
+  let closeT = s.closeTime || '';
+  if (!openT && s.hours) {
+    const m = s.hours.match(/(\d{1,2}):(\d{2})[\u301c~\-\u2013](\d{1,2}):(\d{2})/);
+    if (m) { openT = m[1].padStart(2,'0')+':'+m[2]; closeT = m[3].padStart(2,'0')+':'+m[4]; }
+  }
+  document.getElementById('spot-edit-title').textContent = `✏️ ${s.name}`;
+  document.getElementById('se-name').value = s.name || '';
+  document.getElementById('se-area').value = s.area || '';
+  document.getElementById('se-type').value = s.type || '';
+  document.getElementById('se-openTime').value = openT;
+  document.getElementById('se-closeTime').value = closeT;
+  document.getElementById('se-closed').value = s.closed || '';
+  document.getElementById('se-hours').value = s.hours || '';
+  document.getElementById('se-largeDog').value = s.largeDog || '';
+  document.getElementById('se-rainyOk').value = s.rainyOk || '';
+  document.getElementById('se-fee').value = s.fee || '';
+  document.getElementById('se-tel').value = s.tel || '';
+  document.getElementById('se-address').value = s.address || '';
+  document.getElementById('se-lat').value = s.lat || '';
+  document.getElementById('se-lng').value = s.lng || '';
+  document.getElementById('se-officialUrl').value = s.officialUrl || s.url || '';
+  document.getElementById('se-description').value = s.description || s.memo || '';
+  document.getElementById('spot-edit-modal').dataset.index = index;
+  document.getElementById('spot-edit-modal').classList.add('open');
+};
+
+window.saveSpotEdit = function() {
+  const modal = document.getElementById('spot-edit-modal');
+  const index = parseInt(modal.dataset.index);
+  const s = allSpots[index];
+  const openT = document.getElementById('se-openTime').value;
+  const closeT = document.getElementById('se-closeTime').value;
+  // 元のスポットを更新
+  allSpots[index] = {
+    ...s,
+    name: document.getElementById('se-name').value,
+    area: document.getElementById('se-area').value,
+    type: document.getElementById('se-type').value,
+    openTime: openT,
+    closeTime: closeT,
+    closed: document.getElementById('se-closed').value,
+    hours: document.getElementById('se-hours').value,
+    largeDog: document.getElementById('se-largeDog').value,
+    rainyOk: document.getElementById('se-rainyOk').value,
+    fee: document.getElementById('se-fee').value,
+    tel: document.getElementById('se-tel').value,
+    address: document.getElementById('se-address').value,
+    lat: parseFloat(document.getElementById('se-lat').value) || s.lat,
+    lng: parseFloat(document.getElementById('se-lng').value) || s.lng,
+    officialUrl: document.getElementById('se-officialUrl').value,
+    description: document.getElementById('se-description').value,
+    lastChecked: new Date().toISOString().split('T')[0]
+  };
+  modal.classList.remove('open');
+  filterSpots();
+  // JSONダウンロードボタンを表示
+  document.getElementById('spots-export-notice').style.display = 'flex';
+};
+
+window.exportSpotsJSON = function() {
+  const json = JSON.stringify(allSpots, null, 2);
+  const blob = new Blob([json], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'spots.json';
+  a.click();
+  URL.revokeObjectURL(url);
+};
+
+window.closeSpotEditModal = function() {
+  document.getElementById('spot-edit-modal').classList.remove('open');
+};
+
+// ========== ブログ管理 ===========
 function loadBlogTab() {
   const blogs = [
     { file: 'blog-aso-dog-hiking.html', title: '阿蘇で犬と登山！おすすめトレイルガイド', area: '熊本', date: '2025-01' },

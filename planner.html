@@ -859,6 +859,44 @@ function filterSpots() {
   return spots;
 }
 
+// ===== 営業時間チェック =====
+// 指定時刻（分単位）にスポットが営業中かどうかを判定
+function isSpotOpenAt(spot, timeInMinutes) {
+  let openT = spot.openTime || '';
+  let closeT = spot.closeTime || '';
+  if (!openT && spot.hours) {
+    const m = spot.hours.match(/(\d{1,2}):(\d{2})[\u301c~\-\u2013](\d{1,2}):(\d{2})/);
+    if (m) {
+      openT = m[1].padStart(2,'0') + ':' + m[2];
+      closeT = m[3].padStart(2,'0') + ':' + m[4];
+    }
+  }
+  // 時間情報がない場合は「営業中」とみなす（除外しない）
+  if (!openT || !closeT) return true;
+  const [oh, om] = openT.split(':').map(Number);
+  const [ch, cm] = closeT.split(':').map(Number);
+  const openMin = oh * 60 + om;
+  const closeMin = ch * 60 + cm;
+  // 閉店時刻の30分前までに到着する必要がある
+  return timeInMinutes >= openMin && timeInMinutes <= closeMin - 30;
+}
+
+// スポットの営業時間を文字列で返す
+function getOpenTimeLabel(spot) {
+  let openT = spot.openTime || '';
+  let closeT = spot.closeTime || '';
+  if (!openT && spot.hours) {
+    const m = spot.hours.match(/(\d{1,2}):(\d{2})[\u301c~\-\u2013](\d{1,2}):(\d{2})/);
+    if (m) {
+      openT = m[1].padStart(2,'0') + ':' + m[2];
+      closeT = m[3].padStart(2,'0') + ':' + m[4];
+    }
+  }
+  if (openT && closeT) return `${openT}〜${closeT}`;
+  if (spot.hours) return spot.hours.substring(0, 25);
+  return null;
+}
+
 // ===== 座標取得（mapQueryから推定） =====
 function getCoords(spot) {
   if (spot.lat && spot.lng) return { lat: spot.lat, lng: spot.lng };
@@ -931,9 +969,48 @@ async function generatePlan() {
     const spotsPerDay = selectedDays === 1 ? 4 : 3;
     const totalSpots = selectedDays * spotsPerDay;
 
-    // ランダムに選択（重複なし）
-    const shuffled = spotsWithCoords.sort(() => Math.random() - 0.5);
-    const selected = shuffled.slice(0, Math.min(totalSpots, shuffled.length));
+    // ===== 営業時間を考慮したスポット選定 =====
+    // 出発時刻から順番にスポットを選び、到着時刻に営業しているかチェック
+    const shuffled = [...spotsWithCoords].sort(() => Math.random() - 0.5);
+    const selected = [];
+    let simTime = selectedStart * 60; // 分単位でシミュレーション
+    let prevCoords = null;
+    const maxEndTime = 21 * 60; // 21:00以降はスキップ
+
+    for (const spot of shuffled) {
+      if (selected.length >= totalSpots) break;
+      // 移動時間を加算
+      let arrivalTime = simTime;
+      if (prevCoords) {
+        const dist = calcDistance(prevCoords.lat, prevCoords.lng, spot.coords.lat, spot.coords.lng);
+        const travelMin = Math.round(dist * 3);
+        arrivalTime = simTime + travelMin;
+      }
+      // 営業時間チェック
+      if (!isSpotOpenAt(spot, arrivalTime)) {
+        // 営業時間外の場合はスキップ（時間情報がある場合のみ）
+        const hasTimeInfo = spot.openTime || spot.closeTime || (spot.hours && spot.hours.match(/(\d{1,2}):(\d{2})[\u301c~\-\u2013](\d{1,2}):(\d{2})/));
+        if (hasTimeInfo) continue; // 時間情報があり営業外ならスキップ
+      }
+      // 終了時刻チェック
+      if (arrivalTime > maxEndTime) continue;
+      // 選択
+      selected.push(spot);
+      const duration = estimateDuration(spot);
+      if (prevCoords) {
+        const dist = calcDistance(prevCoords.lat, prevCoords.lng, spot.coords.lat, spot.coords.lng);
+        simTime = arrivalTime + duration;
+      } else {
+        simTime = arrivalTime + duration;
+      }
+      prevCoords = spot.coords;
+    }
+
+    // 営業時間を考慮した結果が0件の場合はフォールバック（時間チェックなし）
+    if (selected.length === 0) {
+      const fallback = shuffled.slice(0, Math.min(totalSpots, shuffled.length));
+      selected.push(...fallback);
+    }
 
     // プラン表示
     renderPlan(selected);
@@ -1051,7 +1128,7 @@ function renderPlan(spots) {
             <div class="tc-duration">${duration}分</div>
           </div>
           <div class="tc-meta">📍 ${spot.area || spot.city || ''} &nbsp;|&nbsp; ${typeStr.substring(0,20)}</div>
-          ${spot.hours ? `<div class="tc-meta">🕐 ${spot.hours}</div>` : ''}
+          ${(() => { const label = getOpenTimeLabel(spot); return label ? `<div class="tc-meta">🕐 営業: ${label}</div>` : ''; })()}
           ${spot.fee ? `<div class="tc-meta">💴 ${spot.fee}</div>` : ''}
           ${tags ? `<div class="tc-tags">${tags}</div>` : ''}
           <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px">
