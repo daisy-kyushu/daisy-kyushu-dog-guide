@@ -861,39 +861,50 @@ function filterSpots() {
 
 // ===== 営業時間チェック =====
 // 指定時刻（分単位）にスポットが営業中かどうかを判定
+// 時間文字列から開店・閉店分を抽出（全角・半角区切り文字全対応）
+function parseHoursRange(hoursStr) {
+  if (!hoursStr) return null;
+  // 最初に登場する時間範囲を抽出（全角チルダU+FF5E、波ダッシュU+301C、エヌダッシュU+2013、ハイフンに対応）
+  const m = hoursStr.match(/(\d{1,2}):(\d{2})[\uff5e\u301c\u2013\-~](\d{1,2}):(\d{2})/);
+  if (!m) return null;
+  return {
+    openMin: parseInt(m[1]) * 60 + parseInt(m[2]),
+    closeMin: parseInt(m[3]) * 60 + parseInt(m[4])
+  };
+}
+
 function isSpotOpenAt(spot, timeInMinutes) {
-  let openT = spot.openTime || '';
-  let closeT = spot.closeTime || '';
-  if (!openT && spot.hours) {
-    const m = spot.hours.match(/(\d{1,2}):(\d{2})[\u301c~\-\u2013](\d{1,2}):(\d{2})/);
-    if (m) {
-      openT = m[1].padStart(2,'0') + ':' + m[2];
-      closeT = m[3].padStart(2,'0') + ':' + m[4];
-    }
+  let openMin = null, closeMin = null;
+  if (spot.openTime && spot.closeTime) {
+    const [oh, om] = spot.openTime.split(':').map(Number);
+    const [ch, cm] = spot.closeTime.split(':').map(Number);
+    openMin = oh * 60 + om;
+    closeMin = ch * 60 + cm;
+  } else if (spot.hours) {
+    const parsed = parseHoursRange(spot.hours);
+    if (parsed) { openMin = parsed.openMin; closeMin = parsed.closeMin; }
   }
   // 時間情報がない場合は「営業中」とみなす（除外しない）
-  if (!openT || !closeT) return true;
-  const [oh, om] = openT.split(':').map(Number);
-  const [ch, cm] = closeT.split(':').map(Number);
-  const openMin = oh * 60 + om;
-  const closeMin = ch * 60 + cm;
-  // 閉店時刻の30分前までに到着する必要がある
-  return timeInMinutes >= openMin && timeInMinutes <= closeMin - 30;
+  if (openMin === null || closeMin === null) return true;
+  // 開店時刻前に到着する場合→開店まで待てるのでOK（除外しない）
+  // 閉店時刻の30分前を超えた場合は除外
+  return timeInMinutes <= closeMin - 30;
 }
 
 // スポットの営業時間を文字列で返す
 function getOpenTimeLabel(spot) {
-  let openT = spot.openTime || '';
-  let closeT = spot.closeTime || '';
-  if (!openT && spot.hours) {
-    const m = spot.hours.match(/(\d{1,2}):(\d{2})[\u301c~\-\u2013](\d{1,2}):(\d{2})/);
-    if (m) {
-      openT = m[1].padStart(2,'0') + ':' + m[2];
-      closeT = m[3].padStart(2,'0') + ':' + m[4];
+  if (spot.openTime && spot.closeTime) return `${spot.openTime}〜${spot.closeTime}`;
+  if (spot.hours) {
+    const parsed = parseHoursRange(spot.hours);
+    if (parsed) {
+      const oh = String(Math.floor(parsed.openMin/60)).padStart(2,'0');
+      const om = String(parsed.openMin%60).padStart(2,'0');
+      const ch = String(Math.floor(parsed.closeMin/60)).padStart(2,'0');
+      const cm = String(parsed.closeMin%60).padStart(2,'0');
+      return `${oh}:${om}〜${ch}:${cm}`;
     }
+    return spot.hours.substring(0, 25);
   }
-  if (openT && closeT) return `${openT}〜${closeT}`;
-  if (spot.hours) return spot.hours.substring(0, 25);
   return null;
 }
 
@@ -987,22 +998,23 @@ async function generatePlan() {
         arrivalTime = simTime + travelMin;
       }
       // 営業時間チェック
-      if (!isSpotOpenAt(spot, arrivalTime)) {
-        // 営業時間外の場合はスキップ（時間情報がある場合のみ）
-        const hasTimeInfo = spot.openTime || spot.closeTime || (spot.hours && spot.hours.match(/(\d{1,2}):(\d{2})[\u301c~\-\u2013](\d{1,2}):(\d{2})/));
-        if (hasTimeInfo) continue; // 時間情報があり営業外ならスキップ
+      const parsed = parseHoursRange(spot.hours);
+      let effectiveArrival = arrivalTime;
+      if (spot.openTime && spot.closeTime) {
+        const [oh, om] = spot.openTime.split(':').map(Number);
+        const openMin = oh * 60 + om;
+        if (arrivalTime < openMin) effectiveArrival = openMin; // 開店まで待機
+      } else if (parsed) {
+        if (arrivalTime < parsed.openMin) effectiveArrival = parsed.openMin; // 開店まで待機
       }
+      // 閉店時刻の30分前を超える場合はスキップ
+      if (!isSpotOpenAt(spot, effectiveArrival)) continue;
       // 終了時刻チェック
-      if (arrivalTime > maxEndTime) continue;
+      if (effectiveArrival > maxEndTime) continue;
       // 選択
       selected.push(spot);
       const duration = estimateDuration(spot);
-      if (prevCoords) {
-        const dist = calcDistance(prevCoords.lat, prevCoords.lng, spot.coords.lat, spot.coords.lng);
-        simTime = arrivalTime + duration;
-      } else {
-        simTime = arrivalTime + duration;
-      }
+      simTime = effectiveArrival + duration;
       prevCoords = spot.coords;
     }
 
@@ -1089,6 +1101,35 @@ function renderPlan(spots) {
         </div>
       `;
       timeline.appendChild(travelItem);
+    }
+
+    // 開店待機チェック（到着時刻が開店前の場合は待機カードを表示）
+    const spotParsed = parseHoursRange(spot.hours);
+    let waitMin = 0;
+    if (spot.openTime) {
+      const [oh, om] = spot.openTime.split(':').map(Number);
+      const openMin = oh * 60 + om;
+      if (currentTime < openMin) { waitMin = openMin - currentTime; currentTime = openMin; }
+    } else if (spotParsed && currentTime < spotParsed.openMin) {
+      waitMin = spotParsed.openMin - currentTime;
+      currentTime = spotParsed.openMin;
+    }
+    if (waitMin > 0) {
+      const waitItem = document.createElement('div');
+      waitItem.className = 'timeline-item';
+      waitItem.innerHTML = `
+        <div class="timeline-left">
+          <div class="timeline-time">${formatTime(currentTime - waitMin)}</div>
+          <div class="timeline-dot travel"></div>
+          <div class="timeline-line"></div>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-card travel-card">
+            <div class="travel-info">⏳ 開店待機 約${waitMin}分（${formatTime(currentTime)}開店）</div>
+          </div>
+        </div>
+      `;
+      timeline.appendChild(waitItem);
     }
 
     // スポットカード
