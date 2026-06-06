@@ -12,320 +12,467 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9409002778362752" crossorigin="anonymous"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>犬連れ旅プランナーAI【九州旅程を自動生成】| Daisy Kyushu Dog Guide</title>
-<meta name="description" content="4つの質問に答えるだけで、九州409件のスポットから最適な犬連れ旅行プランを自動生成。大型犬OK・カフェ・ドッグラン・自然など希望に合わせたルートを提案します。">
+<title>犬連れ旅プランナー【天候連動・地図付き】| Daisy Kyushu Dog Guide</title>
+<meta name="description" content="行きたい日の天気予報に合わせて九州の犬連れスポットを自動選定。地図でルート確認・所要時間計算付きの本格プランナー。">
 <link rel="canonical" href="https://daisy-kyushu.github.io/daisy-kyushu-dog-guide/planner.html">
-<meta property="og:title" content="犬連れ旅プランナーAI | Daisy Kyushu Dog Guide">
-<meta property="og:description" content="4問に答えるだけで九州犬連れ旅のプランを自動生成！">
+<meta property="og:title" content="犬連れ旅プランナー | Daisy Kyushu Dog Guide">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Zen+Maru+Gothic:wght@700;900&display=swap" rel="stylesheet">
+<!-- Leaflet.js -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <link rel="stylesheet" href="style.css">
 <style>
-  .planner-hero {
-    background: linear-gradient(135deg, #1e3a5f 0%, #1a6b4a 60%, #3d8b6e 100%);
-    color: #fff;
-    padding: 40px 20px 32px;
-    text-align: center;
-    border-radius: 0 0 32px 32px;
-  }
-  .planner-hero h1 {
-    font-size: clamp(1.4rem, 4vw, 2rem);
-    font-weight: 900;
-    margin-bottom: 8px;
-    font-family: 'Zen Maru Gothic', sans-serif;
-  }
-  .planner-hero p { font-size: 0.9rem; opacity: 0.9; }
+/* ========== HERO ========== */
+.planner-hero {
+  background: linear-gradient(135deg, #1e3a5f 0%, #1a6b4a 60%, #3d8b6e 100%);
+  color: #fff;
+  padding: 40px 20px 32px;
+  text-align: center;
+  border-radius: 0 0 32px 32px;
+}
+.planner-hero h1 {
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  font-weight: 900;
+  margin-bottom: 8px;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+.planner-hero p { font-size: 0.9rem; opacity: 0.9; margin: 0; }
 
-  /* ステップUI */
-  .step-indicator {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    padding: 16px;
-    align-items: center;
-  }
-  .step-dot {
-    width: 10px; height: 10px;
-    border-radius: 50%;
-    background: var(--line);
-    transition: all 0.3s;
-  }
-  .step-dot.active { background: var(--green); transform: scale(1.3); }
-  .step-dot.done { background: var(--green); opacity: 0.5; }
-  .step-line { width: 24px; height: 2px; background: var(--line); }
-  .step-line.done { background: var(--green); }
+/* ========== FORM CARD ========== */
+.form-card {
+  margin: 20px 16px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  border: 1px solid #e5e7eb;
+}
+.form-section-title {
+  font-size: 0.8rem;
+  font-weight: 900;
+  color: #1a6b4a;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.form-section-title::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 14px;
+  background: #1a6b4a;
+  border-radius: 2px;
+}
 
-  /* 質問カード */
-  .question-card {
-    margin: 0 16px 16px;
-    background: #fff;
-    border-radius: 20px;
-    padding: 24px;
-    box-shadow: var(--shadow-card);
-    border: 1px solid var(--line);
-    display: none;
-    animation: fadeSlide 0.4s ease;
-  }
-  .question-card.active { display: block; }
-  @keyframes fadeSlide { from { opacity: 0; transform: translateX(20px); } to { opacity: 1; transform: translateX(0); } }
+/* ========== AREA SELECT ========== */
+.area-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 0;
+}
+@media (max-width: 480px) {
+  .area-grid { grid-template-columns: repeat(3, 1fr); }
+}
+.area-btn {
+  padding: 10px 4px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  background: #f9fafb;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s;
+  line-height: 1.3;
+}
+.area-btn:hover { border-color: #1a6b4a; background: #f0fdf4; }
+.area-btn.selected { border-color: #1a6b4a; background: #dcfce7; color: #166534; }
 
-  .question-num {
-    font-size: 0.75rem;
-    font-weight: 900;
-    color: var(--green);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin-bottom: 6px;
-  }
-  .question-title {
-    font-size: 1.15rem;
-    font-weight: 900;
-    color: var(--brown);
-    margin-bottom: 4px;
-    font-family: 'Zen Maru Gothic', sans-serif;
-  }
-  .question-sub { font-size: 0.82rem; color: var(--muted); margin-bottom: 16px; }
+/* ========== DATE ========== */
+.date-input-wrap {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.date-input {
+  flex: 1;
+  min-width: 160px;
+  padding: 12px 16px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.date-input:focus { border-color: #1a6b4a; }
+.weather-preview {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: #f0fdf4;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #166534;
+  min-width: 140px;
+  border: 1px solid #86efac;
+}
+.weather-preview.rain { background: #eff6ff; color: #1e40af; border-color: #93c5fd; }
+.weather-preview.hot { background: #fff7ed; color: #c2410c; border-color: #fdba74; }
+.weather-preview.loading { color: #6b7280; background: #f3f4f6; border-color: #e5e7eb; }
 
-  /* 選択肢グリッド */
-  .choice-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    gap: 10px;
-    margin-bottom: 16px;
-  }
-  .choice-btn {
-    padding: 14px 12px;
-    border-radius: 14px;
-    border: 2px solid var(--line);
-    background: #fff;
-    font-size: 0.85rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: all 0.15s;
-    color: #374151;
-    text-align: center;
-    line-height: 1.4;
-  }
-  .choice-btn .choice-icon { font-size: 1.5rem; display: block; margin-bottom: 4px; }
-  .choice-btn:hover { border-color: var(--green); color: var(--green); background: #f0fdf4; }
-  .choice-btn.selected { background: var(--green); border-color: var(--green); color: #fff; }
+/* ========== CATEGORY TAGS ========== */
+.category-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.cat-tag {
+  padding: 8px 14px;
+  border: 2px solid #e5e7eb;
+  border-radius: 20px;
+  background: #f9fafb;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  user-select: none;
+}
+.cat-tag:hover { border-color: #1a6b4a; background: #f0fdf4; }
+.cat-tag.selected { border-color: #1a6b4a; background: #1a6b4a; color: #fff; }
+.cat-tag.weather-recommended {
+  border-color: #f59e0b;
+  background: #fef3c7;
+  color: #92400e;
+}
+.cat-tag.weather-recommended.selected {
+  background: #f59e0b;
+  border-color: #f59e0b;
+  color: #fff;
+}
 
-  /* マルチ選択 */
-  .multi-hint { font-size: 0.78rem; color: var(--muted); margin-bottom: 10px; }
+/* ========== DURATION & SIZE ========== */
+.option-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.option-btn {
+  padding: 10px 18px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  background: #f9fafb;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.option-btn:hover { border-color: #1a6b4a; background: #f0fdf4; }
+.option-btn.selected { border-color: #1a6b4a; background: #1a6b4a; color: #fff; }
 
-  /* 次へボタン */
-  .next-btn {
-    width: 100%;
-    padding: 14px;
-    background: var(--green);
-    color: #fff;
-    border: none;
-    border-radius: 12px;
-    font-size: 1rem;
-    font-weight: 900;
-    cursor: pointer;
-    transition: opacity 0.2s;
-    font-family: 'Zen Maru Gothic', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-  }
-  .next-btn:disabled { opacity: 0.4; cursor: not-allowed; }
-  .next-btn:not(:disabled):hover { opacity: 0.9; }
+/* ========== GENERATE BUTTON ========== */
+.generate-btn {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #1a6b4a, #2d9b6e);
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  font-size: 1.05rem;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 8px;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.generate-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(26,107,74,0.3); }
+.generate-btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
 
-  /* 生成中アニメーション */
-  .generating-card {
-    margin: 0 16px 16px;
-    background: linear-gradient(135deg, #f0fdf4, #dcfce7);
-    border-radius: 20px;
-    padding: 40px 24px;
-    text-align: center;
-    border: 2px solid #86efac;
-    display: none;
-  }
-  .generating-card.show { display: block; }
-  .gen-spinner {
-    width: 48px; height: 48px;
-    border: 5px solid #86efac;
-    border-top-color: var(--green);
-    border-radius: 50%;
-    animation: spin 0.8s linear infinite;
-    margin: 0 auto 16px;
-  }
-  @keyframes spin { to { transform: rotate(360deg); } }
-  .gen-steps { font-size: 0.85rem; color: #065f46; margin-top: 8px; }
+/* ========== WEATHER NOTICE ========== */
+.weather-notice {
+  display: none;
+  margin: 0 16px 16px;
+  padding: 14px 18px;
+  border-radius: 14px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.weather-notice.rain { background: #eff6ff; color: #1e40af; border: 1px solid #93c5fd; }
+.weather-notice.hot { background: #fff7ed; color: #c2410c; border: 1px solid #fdba74; }
+.weather-notice.fine { background: #f0fdf4; color: #166534; border: 1px solid #86efac; }
 
-  /* 結果プラン */
-  .plan-result {
-    margin: 0 16px 24px;
-    display: none;
-  }
-  .plan-result.show { display: block; }
-  .plan-header {
-    background: linear-gradient(135deg, #1e3a5f, #1a6b4a);
-    color: #fff;
-    border-radius: 20px 20px 0 0;
-    padding: 20px 24px;
-  }
-  .plan-header h2 {
-    font-size: 1.2rem;
-    font-weight: 900;
-    font-family: 'Zen Maru Gothic', sans-serif;
-    margin-bottom: 4px;
-  }
-  .plan-header p { font-size: 0.82rem; opacity: 0.85; }
-  .plan-body {
-    background: #fff;
-    border-radius: 0 0 20px 20px;
-    border: 1px solid var(--line);
-    border-top: none;
-    overflow: hidden;
-  }
+/* ========== RESULT SECTION ========== */
+.result-section {
+  display: none;
+  margin: 0 16px 24px;
+}
+.result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.result-title {
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: #1a6b4a;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+.result-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.action-btn {
+  padding: 8px 14px;
+  border: 2px solid #1a6b4a;
+  border-radius: 10px;
+  background: #fff;
+  color: #1a6b4a;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+.action-btn:hover { background: #1a6b4a; color: #fff; }
 
-  /* タイムライン */
-  .timeline { padding: 0; }
-  .timeline-day {
-    padding: 16px 20px 8px;
-    background: var(--surface-2);
-    font-size: 0.85rem;
-    font-weight: 900;
-    color: var(--green);
-    border-bottom: 1px solid var(--line);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .timeline-item {
-    display: flex;
-    gap: 16px;
-    padding: 16px 20px;
-    border-bottom: 1px solid var(--line);
-    align-items: flex-start;
-    transition: background 0.15s;
-  }
-  .timeline-item:hover { background: #f9fafb; }
-  .timeline-item:last-child { border-bottom: none; }
-  .timeline-time {
-    font-size: 0.78rem;
-    font-weight: 700;
-    color: var(--muted);
-    min-width: 48px;
-    padding-top: 2px;
-  }
-  .timeline-dot {
-    width: 12px; height: 12px;
-    border-radius: 50%;
-    background: var(--green);
-    margin-top: 4px;
-    flex-shrink: 0;
-    box-shadow: 0 0 0 3px #dcfce7;
-  }
-  .timeline-content { flex: 1; }
-  .timeline-spot-name {
-    font-size: 0.95rem;
-    font-weight: 900;
-    color: var(--brown);
-    margin-bottom: 2px;
-  }
-  .timeline-spot-type {
-    font-size: 0.75rem;
-    color: var(--muted);
-    margin-bottom: 6px;
-  }
-  .timeline-spot-memo {
-    font-size: 0.82rem;
-    color: #555;
-    line-height: 1.5;
-  }
-  .timeline-badges {
-    display: flex;
-    gap: 6px;
-    flex-wrap: wrap;
-    margin-top: 8px;
-  }
-  .badge-small {
-    font-size: 0.7rem;
-    padding: 2px 8px;
-    border-radius: 999px;
-    font-weight: 700;
-  }
-  .badge-large { background: #dcfce7; color: #065f46; }
-  .badge-indoor { background: #dbeafe; color: #1e40af; }
-  .badge-parking { background: #fef3c7; color: #92400e; }
+/* ========== MAP ========== */
+#planner-map {
+  width: 100%;
+  height: 320px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  border: 2px solid #e5e7eb;
+  z-index: 1;
+}
 
-  /* プランアクション */
-  .plan-actions {
-    display: flex;
-    gap: 10px;
-    padding: 16px 20px;
-    background: var(--surface-2);
-    flex-wrap: wrap;
-  }
-  .action-btn {
-    flex: 1;
-    padding: 12px;
-    border-radius: 12px;
-    font-size: 0.85rem;
-    font-weight: 700;
-    cursor: pointer;
-    border: none;
-    transition: opacity 0.2s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    min-width: 120px;
-    text-decoration: none;
-  }
-  .action-btn-primary { background: var(--green); color: #fff; }
-  .action-btn-secondary { background: #fff; color: var(--brown); border: 2px solid var(--line); }
-  .action-btn-x { background: #000; color: #fff; }
-  .action-btn:hover { opacity: 0.85; }
+/* ========== TIMELINE ========== */
+.timeline {
+  position: relative;
+  padding-left: 0;
+}
+.timeline-item {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  animation: fadeIn 0.4s ease both;
+}
+.timeline-item:nth-child(1) { animation-delay: 0.05s; }
+.timeline-item:nth-child(2) { animation-delay: 0.1s; }
+.timeline-item:nth-child(3) { animation-delay: 0.15s; }
+.timeline-item:nth-child(4) { animation-delay: 0.2s; }
+.timeline-item:nth-child(5) { animation-delay: 0.25s; }
+.timeline-item:nth-child(6) { animation-delay: 0.3s; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
-  /* Daisyコメント */
-  .daisy-plan-comment {
-    margin: 0 16px 16px;
-    padding: 16px;
-    background: linear-gradient(135deg, #f0fdf4, #dcfce7);
-    border-radius: 16px;
-    border: 1px solid #86efac;
-    font-size: 0.85rem;
-    color: #374151;
-    line-height: 1.6;
-    display: none;
-  }
-  .daisy-plan-comment.show { display: block; }
-  .daisy-plan-comment strong { color: var(--green); }
+.timeline-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 52px;
+}
+.timeline-time {
+  font-size: 0.8rem;
+  font-weight: 900;
+  color: #1a6b4a;
+  white-space: nowrap;
+}
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #1a6b4a;
+  margin: 4px 0;
+  flex-shrink: 0;
+}
+.timeline-dot.travel { background: #94a3b8; }
+.timeline-line {
+  width: 2px;
+  flex: 1;
+  background: #d1fae5;
+  min-height: 20px;
+}
+.timeline-content {
+  flex: 1;
+  padding-bottom: 4px;
+}
+.timeline-card {
+  background: #fff;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 14px 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: all 0.2s;
+}
+.timeline-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.timeline-card.travel-card {
+  background: #f8fafc;
+  border-style: dashed;
+  border-color: #cbd5e1;
+  padding: 10px 16px;
+}
+.tc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.tc-name {
+  font-size: 0.95rem;
+  font-weight: 900;
+  color: #1a1a1a;
+  line-height: 1.3;
+}
+.tc-duration {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #fff;
+  background: #1a6b4a;
+  padding: 2px 8px;
+  border-radius: 8px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.tc-meta {
+  font-size: 0.78rem;
+  color: #6b7280;
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+.tc-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 6px;
+}
+.tc-tag {
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 8px;
+  background: #f0fdf4;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+  font-weight: 700;
+}
+.tc-tag.warn { background: #fff7ed; color: #c2410c; border-color: #fed7aa; }
+.tc-tag.rain { background: #eff6ff; color: #1e40af; border-color: #bfdbfe; }
+.tc-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+  color: #1a6b4a;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 6px;
+}
+.tc-link:hover { text-decoration: underline; }
+.travel-info {
+  font-size: 0.82rem;
+  color: #64748b;
+  font-weight: 700;
+}
 
-  /* 再生成ボタン */
-  .retry-btn {
-    display: block;
-    margin: 0 16px 16px;
-    padding: 12px;
-    background: #fff;
-    border: 2px solid var(--green);
-    border-radius: 12px;
-    color: var(--green);
-    font-size: 0.9rem;
-    font-weight: 700;
-    cursor: pointer;
-    text-align: center;
-    transition: all 0.2s;
-    display: none;
-  }
-  .retry-btn.show { display: block; }
-  .retry-btn:hover { background: var(--green); color: #fff; }
+/* ========== SUMMARY BAR ========== */
+.summary-bar {
+  display: flex;
+  gap: 16px;
+  padding: 14px 18px;
+  background: #f0fdf4;
+  border-radius: 14px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  border: 1px solid #86efac;
+}
+.summary-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.summary-label {
+  font-size: 0.7rem;
+  color: #6b7280;
+  font-weight: 700;
+}
+.summary-value {
+  font-size: 0.95rem;
+  font-weight: 900;
+  color: #166534;
+}
 
-  @media (max-width: 600px) {
-    .choice-grid { grid-template-columns: repeat(2, 1fr); }
-  }
+/* ========== LOADING ========== */
+.loading-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(255,255,255,0.85);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+.loading-overlay.active { display: flex; }
+.loading-spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid #d1fae5;
+  border-top-color: #1a6b4a;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.loading-text { font-size: 0.95rem; font-weight: 700; color: #1a6b4a; }
+
+/* ========== MISC ========== */
+.section-divider {
+  height: 1px;
+  background: #f3f4f6;
+  margin: 20px 0;
+}
+.no-spots-msg {
+  text-align: center;
+  padding: 32px 16px;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+.weather-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 8px;
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fcd34d;
+}
 </style>
 </head>
 <body>
+
+<!-- ヘッダー -->
 <header class="site-header">
   <div class="header-inner">
     <a href="index.html" class="brand" style="text-decoration:none">
@@ -335,429 +482,721 @@
     <nav class="site-nav">
       <a href="index.html">ホーム</a>
       <a href="spots.html">スポット</a>
-      <a href="weather.html">天気</a>
-      <a href="heatstroke.html">熱中症</a>
-      <a href="planner.html" class="active">旅プランナー</a>
+      <a href="weather.html">☀️ 天気</a>
+      <a href="heatstroke.html">🌡️ 熱中症</a>
+      <a href="planner.html" class="active">🗺️ プランナー</a>
+      <a href="outdoor.html">アウトドア</a>
+      <a href="hotels.html">宿</a>
       <a href="hospital.html">🏥 病院</a>
       <a href="checklist.html">持ち物</a>
+      <a href="events.html">イベント</a>
+      <a href="food.html">ご飯・おやつ</a>
+      <a href="favorites.html" id="nav-fav">❤️ お気に入り</a>
     </nav>
   </div>
 </header>
 
+<main class="page-wrap" style="padding-bottom:40px">
+
+<!-- ヒーロー -->
 <div class="planner-hero">
-  <div style="font-size:2.5rem;margin-bottom:8px">🗺️🐾</div>
-  <h1>犬連れ旅プランナーAI</h1>
-  <p>4つの質問に答えるだけで<br>九州409件から最適な旅程を自動生成します</p>
+  <div style="font-size:2rem;margin-bottom:8px">🗺️</div>
+  <h1>犬連れ旅プランナー</h1>
+  <p>行きたい日の天気予報に合わせて最適なスポットを自動選定<br>地図でルート確認・所要時間計算付き</p>
 </div>
 
-<!-- ステップインジケーター -->
-<div class="step-indicator" id="step-indicator">
-  <div class="step-dot active" id="dot-1"></div>
-  <div class="step-line" id="line-1"></div>
-  <div class="step-dot" id="dot-2"></div>
-  <div class="step-line" id="line-2"></div>
-  <div class="step-dot" id="dot-3"></div>
-  <div class="step-line" id="line-3"></div>
-  <div class="step-dot" id="dot-4"></div>
-</div>
+<!-- フォームカード -->
+<div class="form-card" style="margin-top:20px">
 
-<!-- Q1: エリア -->
-<div class="question-card active" id="q1">
-  <div class="question-num">Question 1 / 4</div>
-  <div class="question-title">どのエリアに行きたいですか？</div>
-  <div class="question-sub">複数選択OK。まだ決めていない場合は「おまかせ」を選んでください。</div>
-  <div class="multi-hint">複数選択できます</div>
-  <div class="choice-grid" id="area-choices">
-    <button class="choice-btn" onclick="toggleMulti('area','福岡',this)"><span class="choice-icon">🌆</span>福岡</button>
-    <button class="choice-btn" onclick="toggleMulti('area','大分',this)"><span class="choice-icon">♨️</span>大分・湯布院</button>
-    <button class="choice-btn" onclick="toggleMulti('area','熊本',this)"><span class="choice-icon">🌋</span>熊本・阿蘇</button>
-    <button class="choice-btn" onclick="toggleMulti('area','長崎',this)"><span class="choice-icon">⛵</span>長崎</button>
-    <button class="choice-btn" onclick="toggleMulti('area','宮崎',this)"><span class="choice-icon">🌊</span>宮崎</button>
-    <button class="choice-btn" onclick="toggleMulti('area','鹿児島',this)"><span class="choice-icon">🌺</span>鹿児島</button>
-    <button class="choice-btn" onclick="toggleMulti('area','佐賀',this)"><span class="choice-icon">🏯</span>佐賀</button>
-    <button class="choice-btn" onclick="selectAll('area',this)"><span class="choice-icon">🗾</span>おまかせ</button>
+  <!-- STEP 1: エリア -->
+  <div class="form-section-title">STEP 1 &nbsp; エリアを選ぶ</div>
+  <div class="area-grid" id="area-grid">
+    <button class="area-btn" data-area="福岡" data-lat="33.59" data-lng="130.42">🌸<br>福岡</button>
+    <button class="area-btn" data-area="大分" data-lat="33.24" data-lng="131.61">♨️<br>大分</button>
+    <button class="area-btn" data-area="熊本" data-lat="32.79" data-lng="130.74">🏯<br>熊本</button>
+    <button class="area-btn" data-area="長崎" data-lat="32.75" data-lng="129.87">⛪<br>長崎</button>
+    <button class="area-btn" data-area="宮崎" data-lat="31.91" data-lng="131.42">🌴<br>宮崎</button>
+    <button class="area-btn" data-area="鹿児島" data-lat="31.56" data-lng="130.56">🌋<br>鹿児島</button>
+    <button class="area-btn" data-area="佐賀" data-lat="33.24" data-lng="130.30">🏺<br>佐賀</button>
+    <button class="area-btn" data-area="全域" data-lat="32.89" data-lng="130.90">🗾<br>全域</button>
   </div>
-  <button class="next-btn" id="next-q1" onclick="goNext(2)" disabled>次の質問へ →</button>
-</div>
 
-<!-- Q2: 泊数 -->
-<div class="question-card" id="q2">
-  <div class="question-num">Question 2 / 4</div>
-  <div class="question-title">何泊の旅行ですか？</div>
-  <div class="question-sub">日帰りから複数泊まで対応します。</div>
-  <div class="choice-grid">
-    <button class="choice-btn" onclick="selectSingle('nights','0',this)"><span class="choice-icon">🌅</span>日帰り</button>
-    <button class="choice-btn" onclick="selectSingle('nights','1',this)"><span class="choice-icon">🌙</span>1泊2日</button>
-    <button class="choice-btn" onclick="selectSingle('nights','2',this)"><span class="choice-icon">🌙🌙</span>2泊3日</button>
-    <button class="choice-btn" onclick="selectSingle('nights','3',this)"><span class="choice-icon">✨</span>3泊以上</button>
-  </div>
-  <button class="next-btn" id="next-q2" onclick="goNext(3)" disabled>次の質問へ →</button>
-</div>
+  <div class="section-divider"></div>
 
-<!-- Q3: 犬のサイズ -->
-<div class="question-card" id="q3">
-  <div class="question-num">Question 3 / 4</div>
-  <div class="question-title">犬のサイズは？</div>
-  <div class="question-sub">大型犬OKのスポットのみに絞り込むことができます。</div>
-  <div class="choice-grid">
-    <button class="choice-btn" onclick="selectSingle('size','small',this)"><span class="choice-icon">🐩</span>小型犬<br><small style="font-size:0.7rem;opacity:0.7">〜10kg</small></button>
-    <button class="choice-btn" onclick="selectSingle('size','medium',this)"><span class="choice-icon">🐕</span>中型犬<br><small style="font-size:0.7rem;opacity:0.7">10〜25kg</small></button>
-    <button class="choice-btn" onclick="selectSingle('size','large',this)"><span class="choice-icon">🐕‍🦺</span>大型犬<br><small style="font-size:0.7rem;opacity:0.7">25kg〜</small></button>
-    <button class="choice-btn" onclick="selectSingle('size','any',this)"><span class="choice-icon">🐾</span>どのサイズでも<br><small style="font-size:0.7rem;opacity:0.7">全スポット対象</small></button>
-  </div>
-  <button class="next-btn" id="next-q3" onclick="goNext(4)" disabled>次の質問へ →</button>
-</div>
-
-<!-- Q4: 好みのジャンル -->
-<div class="question-card" id="q4">
-  <div class="question-num">Question 4 / 4</div>
-  <div class="question-title">どんなスポットが好きですか？</div>
-  <div class="question-sub">複数選択OK。好みに合わせてスポットを優先します。</div>
-  <div class="multi-hint">複数選択できます</div>
-  <div class="choice-grid" id="genre-choices">
-    <button class="choice-btn" onclick="toggleMulti('genre','cafe',this)"><span class="choice-icon">☕</span>カフェ・グルメ</button>
-    <button class="choice-btn" onclick="toggleMulti('genre','dogrun',this)"><span class="choice-icon">🏃</span>ドッグラン</button>
-    <button class="choice-btn" onclick="toggleMulti('genre','nature',this)"><span class="choice-icon">🌿</span>自然・公園</button>
-    <button class="choice-btn" onclick="toggleMulti('genre','outdoor',this)"><span class="choice-icon">⛺</span>アウトドア・ハイキング</button>
-    <button class="choice-btn" onclick="toggleMulti('genre','sightseeing',this)"><span class="choice-icon">🏯</span>観光・文化</button>
-    <button class="choice-btn" onclick="toggleMulti('genre','hotel',this)"><span class="choice-icon">🏨</span>ペット可宿</button>
-    <button class="choice-btn" onclick="toggleMulti('genre','beach',this)"><span class="choice-icon">🏖️</span>海・ビーチ</button>
-    <button class="choice-btn" onclick="selectAll('genre',this)"><span class="choice-icon">🎲</span>おまかせ</button>
-  </div>
-  <button class="next-btn" id="next-q4" onclick="generatePlan()" disabled>🗺️ プランを生成する！</button>
-</div>
-
-<!-- 生成中 -->
-<div class="generating-card" id="generating-card">
-  <div class="gen-spinner"></div>
-  <div style="font-size:1.1rem;font-weight:900;color:#065f46;font-family:'Zen Maru Gothic',sans-serif">プランを作成中...</div>
-  <div class="gen-steps" id="gen-step-text">スポットデータを読み込んでいます...</div>
-</div>
-
-<!-- 結果プラン -->
-<div class="plan-result" id="plan-result">
-  <div class="plan-header">
-    <h2 id="plan-title">あなたの九州犬連れ旅プラン</h2>
-    <p id="plan-summary">1泊2日・福岡・大型犬OK・カフェ＆ドッグラン中心</p>
-  </div>
-  <div class="plan-body">
-    <div class="timeline" id="plan-timeline"></div>
-    <div class="plan-actions">
-      <button class="action-btn action-btn-secondary" onclick="printPlan()">🖨️ 印刷・PDF保存</button>
-      <a href="spots.html" class="action-btn action-btn-secondary">🔍 スポット一覧へ</a>
-      <a href="#" id="share-plan-x" class="action-btn action-btn-x" target="_blank" rel="noopener">𝕏 シェア</a>
+  <!-- STEP 2: 日付 -->
+  <div class="form-section-title">STEP 2 &nbsp; 行きたい日を選ぶ</div>
+  <div class="date-input-wrap">
+    <input type="date" class="date-input" id="trip-date" />
+    <div class="weather-preview loading" id="weather-preview">
+      <span id="weather-icon">📅</span>
+      <span id="weather-text">日付を選択</span>
     </div>
   </div>
+
+  <div class="section-divider"></div>
+
+  <!-- STEP 3: カテゴリ複数選択 -->
+  <div class="form-section-title">STEP 3 &nbsp; 行きたい場所（複数選択OK）</div>
+  <div id="weather-recommend-note" style="display:none;font-size:0.78rem;color:#92400e;background:#fef3c7;padding:8px 12px;border-radius:8px;margin-bottom:10px;font-weight:700;">
+    ⭐ 天気に合わせたおすすめカテゴリを強調表示しています
+  </div>
+  <div class="category-tags" id="category-tags">
+    <button class="cat-tag" data-cat="ドッグラン">🏃 ドッグラン</button>
+    <button class="cat-tag" data-cat="カフェ">☕ カフェ</button>
+    <button class="cat-tag" data-cat="自然">🌿 自然・公園</button>
+    <button class="cat-tag" data-cat="ビーチ">🏖️ ビーチ・海</button>
+    <button class="cat-tag" data-cat="観光">🏯 観光地</button>
+    <button class="cat-tag" data-cat="温泉">♨️ 温泉</button>
+    <button class="cat-tag" data-cat="アウトドア">⛺ アウトドア</button>
+    <button class="cat-tag" data-cat="ショッピング">🛍️ ショッピング</button>
+    <button class="cat-tag" data-cat="屋内">🏠 屋内スポット</button>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- STEP 4: 泊数 -->
+  <div class="form-section-title">STEP 4 &nbsp; 旅の日数</div>
+  <div class="option-row" id="duration-options">
+    <button class="option-btn selected" data-days="1">日帰り</button>
+    <button class="option-btn" data-days="2">1泊2日</button>
+    <button class="option-btn" data-days="3">2泊3日</button>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- STEP 5: 犬のサイズ -->
+  <div class="form-section-title">STEP 5 &nbsp; 犬のサイズ</div>
+  <div class="option-row" id="size-options">
+    <button class="option-btn" data-size="small">小型犬</button>
+    <button class="option-btn selected" data-size="large">大型犬</button>
+    <button class="option-btn" data-size="any">どちらでも</button>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- STEP 6: 出発時刻 -->
+  <div class="form-section-title">STEP 6 &nbsp; 出発時刻</div>
+  <div class="option-row" id="start-options">
+    <button class="option-btn" data-start="8">8:00</button>
+    <button class="option-btn selected" data-start="9">9:00</button>
+    <button class="option-btn" data-start="10">10:00</button>
+    <button class="option-btn" data-start="11">11:00</button>
+  </div>
+
+  <button class="generate-btn" id="generate-btn" onclick="generatePlan()">
+    <span>🗺️</span> プランを生成する
+  </button>
 </div>
 
-<!-- Daisyコメント -->
-<div class="daisy-plan-comment" id="daisy-plan-comment"></div>
+<!-- 天候通知 -->
+<div class="weather-notice" id="weather-notice"></div>
 
-<!-- 再生成ボタン -->
-<button class="retry-btn" id="retry-btn" onclick="resetPlanner()">🔄 条件を変えてもう一度作る</button>
-
-<footer class="site-footer">
-  <div class="footer-inner">
-    <p>© 2025 Daisy Kyushu Dog Guide</p>
-    <nav class="footer-nav">
-      <a href="privacy.html">プライバシーポリシー</a>
-      <a href="ad-policy.html">広告について</a>
-      <a href="contact.html">お問い合わせ</a>
-    </nav>
+<!-- 結果セクション -->
+<div class="result-section" id="result-section">
+  <div class="result-header">
+    <div class="result-title" id="result-title">📋 旅程プラン</div>
+    <div class="result-actions">
+      <button class="action-btn" onclick="printPlan()">🖨️ 印刷</button>
+      <button class="action-btn" onclick="sharePlan()">𝕏 シェア</button>
+      <button class="action-btn" onclick="resetPlan()">🔄 やり直す</button>
+    </div>
   </div>
-</footer>
+
+  <!-- サマリーバー -->
+  <div class="summary-bar" id="summary-bar"></div>
+
+  <!-- 地図 -->
+  <div id="planner-map"></div>
+
+  <!-- タイムライン -->
+  <div class="timeline" id="timeline"></div>
+</div>
+
+</main>
+
+<!-- ローディング -->
+<div class="loading-overlay" id="loading-overlay">
+  <div class="loading-spinner"></div>
+  <div class="loading-text">🐾 Daisyが旅程を考え中...</div>
+</div>
 
 <script>
-// 選択状態
-const answers = {
-  area: [],
-  nights: null,
-  size: null,
-  genre: [],
-};
+// ===== STATE =====
+let selectedArea = null;
+let selectedAreaLat = 33.59;
+let selectedAreaLng = 130.42;
+let selectedCategories = [];
+let selectedDays = 1;
+let selectedSize = 'large';
+let selectedStart = 9;
+let weatherData = null;
+let allSpots = [];
+let plannerMap = null;
 
-// スポットデータ
-let ALL_SPOTS = [];
+// ===== INIT =====
+document.addEventListener('DOMContentLoaded', async () => {
+  // 今日の日付をデフォルトに
+  const today = new Date();
+  const yyyy = today.getFullYear();
+  const mm = String(today.getMonth()+1).padStart(2,'0');
+  const dd = String(today.getDate()).padStart(2,'0');
+  document.getElementById('trip-date').value = `${yyyy}-${mm}-${dd}`;
+  document.getElementById('trip-date').min = `${yyyy}-${mm}-${dd}`;
+  // 最大14日後まで
+  const max = new Date(today.getTime() + 14*24*60*60*1000);
+  const maxYYYY = max.getFullYear();
+  const maxMM = String(max.getMonth()+1).padStart(2,'0');
+  const maxDD = String(max.getDate()).padStart(2,'0');
+  document.getElementById('trip-date').max = `${maxYYYY}-${maxMM}-${maxDD}`;
 
-// データ読み込み
-fetch('spots.json')
-  .then(r => r.json())
-  .then(data => { ALL_SPOTS = data; })
-  .catch(() => { ALL_SPOTS = []; });
+  // spots.jsonを読み込む
+  try {
+    const res = await fetch('spots.json');
+    allSpots = await res.json();
+    if (!Array.isArray(allSpots)) allSpots = allSpots.spots || allSpots.data || [];
+  } catch(e) {
+    console.error('spots.json読み込み失敗', e);
+  }
 
-// マルチ選択
-function toggleMulti(key, value, el) {
-  const idx = answers[key].indexOf(value);
-  if (idx >= 0) {
-    answers[key].splice(idx, 1);
-    el.classList.remove('selected');
+  // エリアボタン
+  document.querySelectorAll('.area-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.area-btn').forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+      selectedArea = btn.dataset.area;
+      selectedAreaLat = parseFloat(btn.dataset.lat);
+      selectedAreaLng = parseFloat(btn.dataset.lng);
+      fetchWeather();
+    });
+  });
+
+  // 日付変更
+  document.getElementById('trip-date').addEventListener('change', fetchWeather);
+
+  // カテゴリタグ
+  document.querySelectorAll('.cat-tag').forEach(tag => {
+    tag.addEventListener('click', () => {
+      tag.classList.toggle('selected');
+      const cat = tag.dataset.cat;
+      if (selectedCategories.includes(cat)) {
+        selectedCategories = selectedCategories.filter(c => c !== cat);
+      } else {
+        selectedCategories.push(cat);
+      }
+    });
+  });
+
+  // 泊数
+  document.querySelectorAll('#duration-options .option-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#duration-options .option-btn').forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+      selectedDays = parseInt(btn.dataset.days);
+    });
+  });
+
+  // サイズ
+  document.querySelectorAll('#size-options .option-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#size-options .option-btn').forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+      selectedSize = btn.dataset.size;
+    });
+  });
+
+  // 出発時刻
+  document.querySelectorAll('#start-options .option-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#start-options .option-btn').forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+      selectedStart = parseInt(btn.dataset.start);
+    });
+  });
+
+  // 初回天気取得（デフォルトエリアなし）
+});
+
+// ===== 天気取得 =====
+async function fetchWeather() {
+  const dateVal = document.getElementById('trip-date').value;
+  if (!dateVal) return;
+
+  const lat = selectedAreaLat;
+  const lng = selectedAreaLng;
+
+  const preview = document.getElementById('weather-preview');
+  preview.className = 'weather-preview loading';
+  document.getElementById('weather-icon').textContent = '⏳';
+  document.getElementById('weather-text').textContent = '取得中...';
+
+  try {
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_sum&timezone=Asia%2FTokyo&start_date=${dateVal}&end_date=${dateVal}`;
+    const res = await fetch(url);
+    const data = await res.json();
+    const daily = data.daily;
+    if (!daily || !daily.weathercode || daily.weathercode.length === 0) throw new Error('no data');
+
+    const code = daily.weathercode[0];
+    const tmax = daily.temperature_2m_max[0];
+    const tmin = daily.temperature_2m_min[0];
+    const rain = daily.precipitation_sum[0];
+
+    weatherData = { code, tmax, tmin, rain };
+
+    const { icon, label, type } = getWeatherInfo(code, tmax, rain);
+    preview.className = `weather-preview ${type}`;
+    document.getElementById('weather-icon').textContent = icon;
+    document.getElementById('weather-text').textContent = `${label} ${Math.round(tmin)}〜${Math.round(tmax)}℃`;
+
+    // カテゴリ推奨を更新
+    updateCategoryRecommendations(type, tmax);
+
+  } catch(e) {
+    preview.className = 'weather-preview loading';
+    document.getElementById('weather-icon').textContent = '❓';
+    document.getElementById('weather-text').textContent = '取得できません';
+    weatherData = null;
+  }
+}
+
+function getWeatherInfo(code, tmax, rain) {
+  if (code >= 80 || rain > 5) return { icon: '🌧️', label: '雨', type: 'rain' };
+  if (code >= 61) return { icon: '🌦️', label: '小雨', type: 'rain' };
+  if (code >= 45) return { icon: '🌫️', label: '霧・曇', type: '' };
+  if (code >= 3) return { icon: '☁️', label: '曇り', type: '' };
+  if (tmax >= 30) return { icon: '🌞', label: '晴れ・猛暑', type: 'hot' };
+  if (tmax >= 25) return { icon: '☀️', label: '晴れ・暑め', type: 'hot' };
+  return { icon: '🌤️', label: '晴れ', type: 'fine' };
+}
+
+function updateCategoryRecommendations(weatherType, tmax) {
+  const noteEl = document.getElementById('weather-recommend-note');
+  document.querySelectorAll('.cat-tag').forEach(tag => {
+    tag.classList.remove('weather-recommended');
+  });
+
+  if (weatherType === 'rain') {
+    // 雨 → 屋内・カフェ推奨
+    highlightCat(['カフェ', '屋内', 'ショッピング']);
+    noteEl.innerHTML = '☔ 雨予報のため <strong>屋内スポット・カフェ</strong> を強調表示しています';
+    noteEl.style.display = 'block';
+  } else if (weatherType === 'hot') {
+    // 猛暑 → 早朝ドッグラン・屋内推奨
+    highlightCat(['カフェ', '屋内', 'ドッグラン']);
+    noteEl.innerHTML = `🌡️ 気温${Math.round(tmax)}℃予報のため <strong>屋内・早朝ドッグラン</strong> を推奨しています`;
+    noteEl.style.display = 'block';
+  } else if (weatherType === 'fine') {
+    // 晴れ → 自然・ビーチ推奨
+    highlightCat(['自然', 'ビーチ', 'ドッグラン', 'アウトドア']);
+    noteEl.innerHTML = '🌤️ 晴れ予報のため <strong>自然・ビーチ・ドッグラン</strong> がおすすめです';
+    noteEl.style.display = 'block';
   } else {
-    answers[key].push(value);
-    el.classList.add('selected');
+    noteEl.style.display = 'none';
   }
-  updateNextBtn(key);
 }
 
-// 全選択（おまかせ）
-function selectAll(key, el) {
-  const allValues = {
-    area: ['福岡','大分','熊本','長崎','宮崎','鹿児島','佐賀'],
-    genre: ['cafe','dogrun','nature','outdoor','sightseeing','hotel','beach'],
-  };
-  answers[key] = [...allValues[key]];
-  document.querySelectorAll(`#${key === 'area' ? 'area' : 'genre'}-choices .choice-btn`).forEach(b => b.classList.remove('selected'));
-  el.classList.add('selected');
-  updateNextBtn(key);
-}
-
-// シングル選択
-function selectSingle(key, value, el) {
-  answers[key] = value;
-  const parent = el.closest('.question-card');
-  parent.querySelectorAll('.choice-btn').forEach(b => b.classList.remove('selected'));
-  el.classList.add('selected');
-  updateNextBtn(key);
-}
-
-function updateNextBtn(key) {
-  const map = { area: 'next-q1', nights: 'next-q2', size: 'next-q3', genre: 'next-q4' };
-  const btnId = map[key];
-  if (!btnId) return;
-  const btn = document.getElementById(btnId);
-  const hasValue = Array.isArray(answers[key]) ? answers[key].length > 0 : answers[key] !== null;
-  btn.disabled = !hasValue;
-}
-
-// 次の質問へ
-function goNext(step) {
-  // 現在の質問を非表示
-  document.querySelectorAll('.question-card').forEach(c => c.classList.remove('active'));
-  document.getElementById(`q${step}`).classList.add('active');
-
-  // ステップインジケーター更新
-  for (let i = 1; i <= 4; i++) {
-    const dot = document.getElementById(`dot-${i}`);
-    dot.classList.remove('active', 'done');
-    if (i < step) dot.classList.add('done');
-    else if (i === step) dot.classList.add('active');
-    if (i < 4) {
-      const line = document.getElementById(`line-${i}`);
-      line.classList.toggle('done', i < step);
+function highlightCat(cats) {
+  document.querySelectorAll('.cat-tag').forEach(tag => {
+    if (cats.includes(tag.dataset.cat)) {
+      tag.classList.add('weather-recommended');
     }
-  }
-
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 }
 
-// スポットフィルタリング
+// ===== スポットフィルタリング =====
 function filterSpots() {
-  let spots = [...ALL_SPOTS];
+  let spots = [...allSpots];
 
-  // エリアフィルター
-  if (answers.area.length > 0 && !answers.area.includes('all')) {
+  // エリアフィルタ
+  if (selectedArea && selectedArea !== '全域') {
     spots = spots.filter(s => {
-      const area = (s.area || '') + (s.prefecture || '');
-      return answers.area.some(a => area.includes(a));
+      const area = (s.area || '') + (s.city || '') + (s.prefecture || '');
+      return area.includes(selectedArea);
     });
   }
 
-  // 大型犬フィルター
-  if (answers.size === 'large') {
+  // 大型犬フィルタ
+  if (selectedSize === 'large') {
     spots = spots.filter(s => {
-      const lg = s.largeDog || s.large_dog || '';
-      return lg === '大型犬OK' || lg === 'OK' || lg === true || lg === '○';
+      const ld = String(s.largeDog || s.large_dog || s.dogSize || '');
+      return ld.includes('大型') || ld.includes('OK') || ld.includes('要確認');
     });
   }
 
-  // ジャンルフィルター
-  if (answers.genre.length > 0 && !answers.genre.includes('all')) {
-    const genreKeywords = {
-      cafe: ['カフェ', 'レストラン', 'グルメ', 'cafe', 'restaurant'],
-      dogrun: ['ドッグラン', 'dogrun'],
-      nature: ['公園', '自然', '海浜', '散策', '植物'],
-      outdoor: ['アウトドア', 'ハイキング', 'キャンプ', 'walk', '登山'],
-      sightseeing: ['観光', '温泉', '文化', '歴史', '城'],
-      hotel: ['宿', 'ホテル', 'hotel'],
-      beach: ['海', 'ビーチ', '海浜', '海岸'],
-    };
+  // カテゴリフィルタ（複数選択 OR 条件）
+  if (selectedCategories.length > 0) {
     spots = spots.filter(s => {
-      const text = ((s.type || '') + (s.category || '') + (s.name || '')).toLowerCase();
-      return answers.genre.some(g => {
-        const kws = genreKeywords[g] || [];
-        return kws.some(kw => text.includes(kw.toLowerCase()));
+      const typeStr = String(s.type || s.category || '').toLowerCase();
+      const tags = (s.tags || []).join(' ');
+      const combined = typeStr + ' ' + tags;
+      return selectedCategories.some(cat => {
+        const catMap = {
+          'ドッグラン': ['ドッグラン', 'dogrun'],
+          'カフェ': ['カフェ', 'cafe', 'レストラン', '飲食'],
+          '自然': ['自然', '公園', '景勝', 'walk', 'ハイキング', '散策', '渓谷'],
+          'ビーチ': ['ビーチ', '海', '海浜'],
+          '観光': ['観光', 'テーマパーク', '世界遺産', '庭園'],
+          '温泉': ['温泉'],
+          'アウトドア': ['アウトドア', 'キャンプ', 'ハイキング'],
+          'ショッピング': ['ショッピング'],
+          '屋内': ['屋内', 'indoor', 'カフェ', 'cafe', 'ショッピング']
+        };
+        const keywords = catMap[cat] || [cat];
+        return keywords.some(kw => combined.includes(kw));
       });
     });
   }
 
-  // ランダムシャッフル（多様性確保）
-  spots = spots.sort(() => Math.random() - 0.5);
+  // 天候フィルタ（雨の場合は屋外のみのスポットを除外）
+  if (weatherData && (weatherData.code >= 61 || weatherData.rain > 5)) {
+    const outdoorOnly = spots.filter(s => {
+      const rainy = String(s.rainyOk || '');
+      return rainy.includes('可') || rainy.includes('屋内') || rainy.includes('カフェ') || rainy === '';
+    });
+    if (outdoorOnly.length >= 3) spots = outdoorOnly;
+  }
 
   return spots;
 }
 
-// 時間スロット生成
-function getTimeSlots(nights) {
-  const n = parseInt(nights) || 0;
-  const days = n + 1;
-  const slots = [];
-  const times = ['09:00', '11:00', '12:30', '14:30', '16:30', '18:00'];
-  const timeLabels = ['午前の散策', 'ランチ', '午後の観光①', '午後の観光②', '夕方の散歩', '夕食・チェックイン'];
-
-  for (let d = 0; d < days; d++) {
-    const dayLabel = d === 0 ? '1日目' : d === days - 1 ? `${d + 1}日目（最終日）` : `${d + 1}日目`;
-    const daySlots = d === 0 ? times.slice(0, 4) : (d === days - 1 ? times.slice(0, 3) : times.slice(0, 5));
-    slots.push({ day: dayLabel, times: daySlots, labels: timeLabels });
+// ===== 座標取得（mapQueryから推定） =====
+function getCoords(spot) {
+  if (spot.lat && spot.lng) return { lat: spot.lat, lng: spot.lng };
+  // エリアから大まかな座標を割り当て
+  const areaCoords = {
+    '福岡': { lat: 33.59 + (Math.random()-0.5)*0.3, lng: 130.42 + (Math.random()-0.5)*0.3 },
+    '大分': { lat: 33.24 + (Math.random()-0.5)*0.3, lng: 131.61 + (Math.random()-0.5)*0.3 },
+    '熊本': { lat: 32.79 + (Math.random()-0.5)*0.3, lng: 130.74 + (Math.random()-0.5)*0.3 },
+    '長崎': { lat: 32.75 + (Math.random()-0.5)*0.3, lng: 129.87 + (Math.random()-0.5)*0.3 },
+    '宮崎': { lat: 31.91 + (Math.random()-0.5)*0.3, lng: 131.42 + (Math.random()-0.5)*0.3 },
+    '鹿児島': { lat: 31.56 + (Math.random()-0.5)*0.3, lng: 130.56 + (Math.random()-0.5)*0.3 },
+    '佐賀': { lat: 33.24 + (Math.random()-0.5)*0.3, lng: 130.30 + (Math.random()-0.5)*0.3 },
+  };
+  const area = spot.area || spot.city || '';
+  for (const [key, coords] of Object.entries(areaCoords)) {
+    if (area.includes(key)) return coords;
   }
-  return slots;
+  return { lat: selectedAreaLat + (Math.random()-0.5)*0.4, lng: selectedAreaLng + (Math.random()-0.5)*0.4 };
 }
 
-// プラン生成
+// ===== 距離計算（ハーバーサイン） =====
+function calcDistance(lat1, lng1, lat2, lng2) {
+  const R = 6371;
+  const dLat = (lat2-lat1) * Math.PI/180;
+  const dLng = (lng2-lng1) * Math.PI/180;
+  const a = Math.sin(dLat/2)**2 + Math.cos(lat1*Math.PI/180)*Math.cos(lat2*Math.PI/180)*Math.sin(dLng/2)**2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+}
+
+// ===== 所要時間推定 =====
+function estimateDuration(spot) {
+  const type = String(spot.type || spot.category || '');
+  if (type.includes('ドッグラン')) return 90;
+  if (type.includes('カフェ') || type.includes('cafe')) return 60;
+  if (type.includes('ビーチ') || type.includes('海')) return 90;
+  if (type.includes('観光') || type.includes('テーマパーク')) return 120;
+  if (type.includes('温泉')) return 90;
+  if (type.includes('アウトドア') || type.includes('ハイキング')) return 120;
+  if (type.includes('自然') || type.includes('公園')) return 60;
+  return 60;
+}
+
+// ===== プラン生成 =====
 async function generatePlan() {
-  // 質問カードを非表示
-  document.querySelectorAll('.question-card').forEach(c => c.classList.remove('active'));
-  document.getElementById('step-indicator').style.display = 'none';
+  if (!selectedArea) {
+    alert('エリアを選択してください');
+    return;
+  }
 
-  // 生成中表示
-  const genCard = document.getElementById('generating-card');
-  genCard.classList.add('show');
+  document.getElementById('loading-overlay').classList.add('active');
+  document.getElementById('generate-btn').disabled = true;
 
-  const steps = [
-    'スポットデータを読み込んでいます...',
-    'エリア・犬種条件でフィルタリング中...',
-    '最適なルートを計算しています...',
-    'Daisyがおすすめスポットを選んでいます...',
-    'プランを完成させています...',
-  ];
-  let si = 0;
-  const stepEl = document.getElementById('gen-step-text');
-  const stepInterval = setInterval(() => {
-    stepEl.textContent = steps[Math.min(si++, steps.length - 1)];
-  }, 600);
+  // 少し待機（UX）
+  await new Promise(r => setTimeout(r, 800));
 
-  // 少し待機（UX向上）
-  await new Promise(r => setTimeout(r, 3000));
-  clearInterval(stepInterval);
+  try {
+    const filtered = filterSpots();
 
-  // スポットフィルタリング
-  const filtered = filterSpots();
-  const slots = getTimeSlots(answers.nights || '0');
+    if (filtered.length === 0) {
+      document.getElementById('loading-overlay').classList.remove('active');
+      document.getElementById('generate-btn').disabled = false;
+      alert('条件に合うスポットが見つかりませんでした。条件を変えてお試しください。');
+      return;
+    }
 
-  // プラン構築
-  let spotIdx = 0;
-  const timeline = document.getElementById('plan-timeline');
+    // スポットを座標付きに変換
+    const spotsWithCoords = filtered.map(s => ({ ...s, coords: getCoords(s) }));
+
+    // 1日あたりのスポット数
+    const spotsPerDay = selectedDays === 1 ? 4 : 3;
+    const totalSpots = selectedDays * spotsPerDay;
+
+    // ランダムに選択（重複なし）
+    const shuffled = spotsWithCoords.sort(() => Math.random() - 0.5);
+    const selected = shuffled.slice(0, Math.min(totalSpots, shuffled.length));
+
+    // プラン表示
+    renderPlan(selected);
+
+  } catch(e) {
+    console.error(e);
+    alert('プラン生成中にエラーが発生しました');
+  }
+
+  document.getElementById('loading-overlay').classList.remove('active');
+  document.getElementById('generate-btn').disabled = false;
+}
+
+// ===== プラン描画 =====
+function renderPlan(spots) {
+  const dateVal = document.getElementById('trip-date').value;
+  const dateStr = dateVal ? new Date(dateVal).toLocaleDateString('ja-JP', { month:'long', day:'numeric', weekday:'short' }) : '';
+
+  // 天候通知
+  const notice = document.getElementById('weather-notice');
+  if (weatherData) {
+    const { icon, label, type } = getWeatherInfo(weatherData.code, weatherData.tmax, weatherData.rain);
+    if (type === 'rain') {
+      notice.className = 'weather-notice rain';
+      notice.innerHTML = `${icon} <strong>${dateStr}は雨予報</strong>（降水量${weatherData.rain}mm）のため、屋内・カフェ中心のプランを提案しています。`;
+      notice.style.display = 'block';
+    } else if (type === 'hot') {
+      notice.className = 'weather-notice hot';
+      notice.innerHTML = `${icon} <strong>${dateStr}は暑い予報</strong>（最高${Math.round(weatherData.tmax)}℃）のため、熱中症対策として朝早めのスタートをおすすめします。`;
+      notice.style.display = 'block';
+    } else if (type === 'fine') {
+      notice.className = 'weather-notice fine';
+      notice.innerHTML = `${icon} <strong>${dateStr}は晴れ予報</strong>（${Math.round(weatherData.tmin)}〜${Math.round(weatherData.tmax)}℃）！お散歩・ドッグランに最高のコンディションです。`;
+      notice.style.display = 'block';
+    } else {
+      notice.style.display = 'none';
+    }
+  } else {
+    notice.style.display = 'none';
+  }
+
+  // タイムライン生成
+  const timeline = document.getElementById('timeline');
   timeline.innerHTML = '';
+  const mapPoints = [];
+  let currentTime = selectedStart * 60; // 分単位
+  let totalDistance = 0;
+  let totalSpotTime = 0;
 
-  // ホテルスポットを別に確保
-  const hotelSpots = ALL_SPOTS.filter(s => {
-    const text = (s.type || '') + (s.category || '') + (s.name || '');
-    return text.includes('宿') || text.includes('ホテル') || text.includes('hotel');
-  }).sort(() => Math.random() - 0.5);
+  for (let i = 0; i < spots.length; i++) {
+    const spot = spots[i];
+    const duration = estimateDuration(spot);
+    totalSpotTime += duration;
 
-  let hotelIdx = 0;
+    // 移動時間（前のスポットから）
+    if (i > 0) {
+      const prev = spots[i-1];
+      const dist = calcDistance(prev.coords.lat, prev.coords.lng, spot.coords.lat, spot.coords.lng);
+      totalDistance += dist;
+      const travelMin = Math.round(dist * 3); // 約20km/h想定（観光道路）
+      currentTime += travelMin;
 
-  slots.forEach(({ day, times, labels }) => {
-    // 日付ヘッダー
-    const dayEl = document.createElement('div');
-    dayEl.className = 'timeline-day';
-    dayEl.innerHTML = `📅 ${day}`;
-    timeline.appendChild(dayEl);
-
-    times.forEach((time, ti) => {
-      const isHotel = labels[ti] === '夕食・チェックイン' && parseInt(answers.nights) > 0;
-      let spot;
-
-      if (isHotel && hotelSpots.length > hotelIdx) {
-        spot = hotelSpots[hotelIdx++];
-      } else if (filtered.length > spotIdx) {
-        spot = filtered[spotIdx++];
-      } else {
-        spot = ALL_SPOTS[Math.floor(Math.random() * ALL_SPOTS.length)];
-      }
-
-      if (!spot) return;
-
-      const largeDogOk = spot.largeDog === '大型犬OK' || spot.large_dog === 'OK' || spot.largeDog === true;
-      const indoorOk = spot.indoorOk === true || spot.indoorOk === '○';
-      const parkingOk = spot.parking === true || spot.parking === '○' || spot.parking === 'あり';
-
-      const item = document.createElement('div');
-      item.className = 'timeline-item';
-      item.innerHTML = `
-        <div class="timeline-time">${time}</div>
-        <div class="timeline-dot"></div>
+      // 移動カード
+      const travelItem = document.createElement('div');
+      travelItem.className = 'timeline-item';
+      travelItem.innerHTML = `
+        <div class="timeline-left">
+          <div class="timeline-time">${formatTime(currentTime - travelMin)}</div>
+          <div class="timeline-dot travel"></div>
+          <div class="timeline-line"></div>
+        </div>
         <div class="timeline-content">
-          <div class="timeline-spot-name">${spot.name || '名称未設定'}</div>
-          <div class="timeline-spot-type">${spot.type || spot.category || 'スポット'} ｜ ${(spot.area || '').substring(0, 15)}</div>
-          <div class="timeline-spot-memo">${spot.memo || spot.description || 'Daisyと一緒に楽しめるスポットです。'}</div>
-          <div class="timeline-badges">
-            ${largeDogOk ? '<span class="badge-small badge-large">大型犬OK</span>' : ''}
-            ${indoorOk ? '<span class="badge-small badge-indoor">室内OK</span>' : ''}
-            ${parkingOk ? '<span class="badge-small badge-parking">駐車場あり</span>' : ''}
+          <div class="timeline-card travel-card">
+            <div class="travel-info">🚗 移動 約${travelMin}分（${dist.toFixed(1)}km）</div>
           </div>
-          ${spot.officialUrl || spot.url ? `<a href="${spot.officialUrl || spot.url}" target="_blank" rel="noopener" style="font-size:0.78rem;color:var(--green);font-weight:700;margin-top:6px;display:inline-block">公式サイトを見る →</a>` : ''}
         </div>
       `;
-      timeline.appendChild(item);
+      timeline.appendChild(travelItem);
+    }
+
+    // スポットカード
+    const startTimeStr = formatTime(currentTime);
+    const endTimeStr = formatTime(currentTime + duration);
+    const item = document.createElement('div');
+    item.className = 'timeline-item';
+
+    const typeStr = String(spot.type || spot.category || '');
+    const isRainyOk = String(spot.rainyOk || '').includes('可') || String(spot.rainyOk || '').includes('屋内');
+    const isHot = weatherData && weatherData.tmax >= 28;
+    const mapQuery = spot.mapQuery || spot.name + ' ' + (spot.area || '');
+    const mapUrl = `https://maps.google.com/?q=${encodeURIComponent(mapQuery)}`;
+    const officialUrl = spot.officialUrl || spot.website || spot.url || '';
+
+    let tags = '';
+    if (isRainyOk && weatherData && (weatherData.code >= 61 || weatherData.rain > 5)) {
+      tags += '<span class="tc-tag rain">☔ 雨でもOK</span>';
+    }
+    if (spot.largeDog && String(spot.largeDog).includes('OK')) {
+      tags += '<span class="tc-tag">🐕 大型犬OK</span>';
+    }
+    if (isHot && typeStr.includes('カフェ')) {
+      tags += '<span class="tc-tag warn">🌡️ 暑い日に◎</span>';
+    }
+
+    item.innerHTML = `
+      <div class="timeline-left">
+        <div class="timeline-time">${startTimeStr}</div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-line"></div>
+      </div>
+      <div class="timeline-content">
+        <div class="timeline-card">
+          <div class="tc-header">
+            <div class="tc-name">${spot.name}</div>
+            <div class="tc-duration">${duration}分</div>
+          </div>
+          <div class="tc-meta">📍 ${spot.area || spot.city || ''} &nbsp;|&nbsp; ${typeStr.substring(0,20)}</div>
+          ${spot.hours ? `<div class="tc-meta">🕐 ${spot.hours}</div>` : ''}
+          ${spot.fee ? `<div class="tc-meta">💴 ${spot.fee}</div>` : ''}
+          ${tags ? `<div class="tc-tags">${tags}</div>` : ''}
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px">
+            <a href="${mapUrl}" target="_blank" class="tc-link">🗺️ Googleマップで開く</a>
+            ${officialUrl ? `<a href="${officialUrl}" target="_blank" class="tc-link">🔗 公式サイト</a>` : ''}
+          </div>
+        </div>
+      </div>
+    `;
+    timeline.appendChild(item);
+    mapPoints.push({ ...spot.coords, name: spot.name, type: typeStr });
+    currentTime += duration;
+  }
+
+  // 終了時刻
+  const endItem = document.createElement('div');
+  endItem.className = 'timeline-item';
+  endItem.innerHTML = `
+    <div class="timeline-left">
+      <div class="timeline-time">${formatTime(currentTime)}</div>
+      <div class="timeline-dot" style="background:#94a3b8"></div>
+    </div>
+    <div class="timeline-content">
+      <div class="timeline-card travel-card">
+        <div class="travel-info">🏁 終了予定時刻</div>
+      </div>
+    </div>
+  `;
+  timeline.appendChild(endItem);
+
+  // サマリーバー
+  const summaryBar = document.getElementById('summary-bar');
+  const totalMin = currentTime - selectedStart * 60;
+  summaryBar.innerHTML = `
+    <div class="summary-item">
+      <div class="summary-label">スポット数</div>
+      <div class="summary-value">${spots.length}件</div>
+    </div>
+    <div class="summary-item">
+      <div class="summary-label">総移動距離</div>
+      <div class="summary-value">${totalDistance.toFixed(0)}km</div>
+    </div>
+    <div class="summary-item">
+      <div class="summary-label">観光時間</div>
+      <div class="summary-value">${Math.floor(totalSpotTime/60)}h${totalSpotTime%60}m</div>
+    </div>
+    <div class="summary-item">
+      <div class="summary-label">終了予定</div>
+      <div class="summary-value">${formatTime(currentTime)}</div>
+    </div>
+    ${weatherData ? `
+    <div class="summary-item">
+      <div class="summary-label">当日天気</div>
+      <div class="summary-value">${getWeatherInfo(weatherData.code, weatherData.tmax, weatherData.rain).icon} ${Math.round(weatherData.tmax)}℃</div>
+    </div>` : ''}
+  `;
+
+  // 結果セクション表示
+  document.getElementById('result-title').textContent = `📋 ${dateStr || '旅程'}プラン（${selectedArea}）`;
+  document.getElementById('result-section').style.display = 'block';
+
+  // 地図描画
+  renderMap(mapPoints);
+
+  // スクロール
+  setTimeout(() => {
+    document.getElementById('result-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 200);
+}
+
+// ===== 地図描画 =====
+function renderMap(points) {
+  if (plannerMap) {
+    plannerMap.remove();
+    plannerMap = null;
+  }
+
+  const centerLat = points.reduce((s,p) => s+p.lat, 0) / points.length;
+  const centerLng = points.reduce((s,p) => s+p.lng, 0) / points.length;
+
+  plannerMap = L.map('planner-map').setView([centerLat, centerLng], 10);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18
+  }).addTo(plannerMap);
+
+  // マーカー
+  const colors = ['#1a6b4a','#2563eb','#dc2626','#d97706','#7c3aed','#0891b2'];
+  points.forEach((p, i) => {
+    const color = colors[i % colors.length];
+    const icon = L.divIcon({
+      html: `<div style="background:${color};color:#fff;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:13px;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,0.3)">${i+1}</div>`,
+      className: '',
+      iconSize: [28, 28],
+      iconAnchor: [14, 14]
     });
+    L.marker([p.lat, p.lng], { icon })
+      .addTo(plannerMap)
+      .bindPopup(`<strong>${i+1}. ${p.name}</strong><br><small>${p.type}</small>`);
   });
 
-  // プランサマリー
-  const areaText = answers.area.length >= 7 ? '九州全域' : answers.area.join('・');
-  const nightsText = answers.nights === '0' ? '日帰り' : `${answers.nights}泊${parseInt(answers.nights)+1}日`;
-  const sizeText = { small: '小型犬', medium: '中型犬', large: '大型犬', any: '全サイズ' }[answers.size] || '';
-  const genreText = answers.genre.slice(0, 3).map(g => ({
-    cafe: 'カフェ', dogrun: 'ドッグラン', nature: '自然', outdoor: 'アウトドア',
-    sightseeing: '観光', hotel: '宿泊', beach: 'ビーチ'
-  }[g])).filter(Boolean).join('・');
+  // ルートライン
+  if (points.length >= 2) {
+    const latlngs = points.map(p => [p.lat, p.lng]);
+    L.polyline(latlngs, {
+      color: '#1a6b4a',
+      weight: 3,
+      opacity: 0.7,
+      dashArray: '8, 6'
+    }).addTo(plannerMap);
+  }
 
-  document.getElementById('plan-title').textContent = `${areaText}の犬連れ旅プラン`;
-  document.getElementById('plan-summary').textContent = `${nightsText} ｜ ${sizeText} ｜ ${genreText || 'バランス型'}`;
+  // 全マーカーが見えるようにフィット
+  if (points.length > 1) {
+    const bounds = L.latLngBounds(points.map(p => [p.lat, p.lng]));
+    plannerMap.fitBounds(bounds, { padding: [30, 30] });
+  }
+}
 
-  // Daisyコメント
-  const daisyComments = [
-    `${areaText}の旅、私も一緒に行きたい！このプランなら${sizeText}でも楽しめるスポットばかりだよ🐾 水分補給と休憩を忘れずにね💧`,
-    `わあ、${nightsText}の旅だね！${areaText}には私のお気に入りスポットがたくさんあるよ。このプランを参考に、楽しい旅になりますように🌿`,
-    `${genreText || 'いろんなジャンル'}を楽しむプランができたよ！旅の前に天気チェックと持ち物チェックも忘れずにね🎒`,
-  ];
-  const daisyEl = document.getElementById('daisy-plan-comment');
-  daisyEl.innerHTML = `<strong>🐾 Daisyより：</strong>${daisyComments[Math.floor(Math.random() * daisyComments.length)]}`;
-  daisyEl.classList.add('show');
+// ===== ユーティリティ =====
+function formatTime(minutes) {
+  const h = Math.floor(minutes / 60);
+  const m = minutes % 60;
+  return `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}`;
+}
 
-  // シェアボタン
-  const shareText = `九州犬連れ旅プランを自動生成しました！\n${nightsText}・${areaText}・${sizeText}\n#犬連れ旅行 #九州 #サモエド\nhttps://daisy-kyushu.github.io/daisy-kyushu-dog-guide/planner.html`;
-  document.getElementById('share-plan-x').href = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}`;
-
-  // 表示切り替え
-  genCard.classList.remove('show');
-  document.getElementById('plan-result').classList.add('show');
-  document.getElementById('retry-btn').classList.add('show');
-
+function resetPlan() {
+  document.getElementById('result-section').style.display = 'none';
+  document.getElementById('weather-notice').style.display = 'none';
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// 印刷
 function printPlan() {
   window.print();
 }
 
-// リセット
-function resetPlanner() {
-  answers.area = [];
-  answers.nights = null;
-  answers.size = null;
-  answers.genre = [];
-
-  document.querySelectorAll('.choice-btn').forEach(b => b.classList.remove('selected'));
-  document.querySelectorAll('.next-btn').forEach(b => b.disabled = true);
-  document.getElementById('plan-result').classList.remove('show');
-  document.getElementById('daisy-plan-comment').classList.remove('show');
-  document.getElementById('retry-btn').classList.remove('show');
-  document.getElementById('step-indicator').style.display = 'flex';
-
-  goNext(1);
-  document.getElementById('q1').classList.add('active');
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+function sharePlan() {
+  const dateVal = document.getElementById('trip-date').value;
+  const dateStr = dateVal ? new Date(dateVal).toLocaleDateString('ja-JP', { month:'long', day:'numeric' }) : '';
+  const text = `${dateStr}の九州犬連れ旅プランを作りました🐾\n${selectedArea}エリア・${selectedCategories.join('・') || '全カテゴリ'}\n\n#犬連れ旅行 #九州 #サモエド\nhttps://daisy-kyushu.github.io/daisy-kyushu-dog-guide/planner.html`;
+  const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`;
+  window.open(url, '_blank');
 }
 </script>
+
 </body>
 </html>
