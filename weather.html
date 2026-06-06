@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E1XSFE7LXG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-E1XSFE7LXG');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9409002778362752" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今日の天気×犬快適度チェッカー【九州7県リアルタイム】| Daisy Kyushu Dog Guide</title>
+<meta name="description" content="九州7県の今日の天気と気温から、犬連れおでかけの快適度をリアルタイム判定。サモエドなど大型犬・暑さに弱い犬種向けの独自スコアで「今日は行ける？」を即チェック。">
+<link rel="canonical" href="https://daisy-kyushu.github.io/daisy-kyushu-dog-guide/weather.html">
+<meta property="og:title" content="今日の天気×犬快適度チェッカー | Daisy Kyushu Dog Guide">
+<meta property="og:description" content="九州7県の天気から犬連れおでかけの快適度をリアルタイム判定。今日は行ける？">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://daisy-kyushu.github.io/daisy-kyushu-dog-guide/weather.html">
+<meta property="og:image" content="https://daisy-kyushu.github.io/daisy-kyushu-dog-guide/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Zen+Maru+Gothic:wght@700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .weather-hero {
+    background: linear-gradient(135deg, #1a6b4a 0%, #3d8b6e 50%, #5aab8a 100%);
+    color: #fff;
+    padding: 40px 20px 32px;
+    text-align: center;
+    border-radius: 0 0 32px 32px;
+  }
+  .weather-hero h1 {
+    font-size: clamp(1.4rem, 4vw, 2rem);
+    font-weight: 900;
+    margin-bottom: 8px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+  }
+  .weather-hero p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+  }
+  .area-tabs {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 16px 16px 0;
+    scrollbar-width: none;
+  }
+  .area-tabs::-webkit-scrollbar { display: none; }
+  .area-tab {
+    flex-shrink: 0;
+    padding: 8px 16px;
+    border-radius: 999px;
+    border: 2px solid var(--green);
+    background: #fff;
+    color: var(--green);
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+  .area-tab.active, .area-tab:hover {
+    background: var(--green);
+    color: #fff;
+  }
+  .weather-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+    padding: 16px;
+  }
+  .weather-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--line);
+    transition: transform 0.2s;
+  }
+  .weather-card:hover { transform: translateY(-2px); }
+  .weather-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  .city-name {
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: var(--brown);
+  }
+  .city-pref {
+    font-size: 0.75rem;
+    color: var(--muted);
+    font-weight: 400;
+  }
+  .weather-icon-big {
+    font-size: 2.5rem;
+  }
+  .temp-row {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  .temp-now {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: var(--brown);
+    font-family: 'Zen Maru Gothic', sans-serif;
+  }
+  .temp-unit { font-size: 1rem; color: var(--muted); }
+  .temp-range { font-size: 0.8rem; color: var(--muted); }
+  .weather-details {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+  .weather-detail-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.8rem;
+    color: var(--muted);
+    background: var(--surface-2);
+    padding: 4px 10px;
+    border-radius: 999px;
+  }
+  /* 快適度スコア */
+  .comfort-score {
+    border-radius: 14px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .comfort-score.great {
+    background: linear-gradient(135deg, #d1fae5, #a7f3d0);
+    border: 2px solid #34d399;
+  }
+  .comfort-score.good {
+    background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+    border: 2px solid #60a5fa;
+  }
+  .comfort-score.caution {
+    background: linear-gradient(135deg, #fef3c7, #fde68a);
+    border: 2px solid #fbbf24;
+  }
+  .comfort-score.warning {
+    background: linear-gradient(135deg, #fee2e2, #fecaca);
+    border: 2px solid #f87171;
+  }
+  .comfort-score.danger {
+    background: linear-gradient(135deg, #fce7f3, #fbcfe8);
+    border: 2px solid #f472b6;
+  }
+  .score-emoji { font-size: 2rem; }
+  .score-info { flex: 1; }
+  .score-label {
+    font-size: 1rem;
+    font-weight: 900;
+    margin-bottom: 2px;
+  }
+  .score-label.great { color: #065f46; }
+  .score-label.good { color: #1e40af; }
+  .score-label.caution { color: #92400e; }
+  .score-label.warning { color: #991b1b; }
+  .score-label.danger { color: #831843; }
+  .score-desc { font-size: 0.78rem; color: #555; line-height: 1.4; }
+  .score-bar-wrap {
+    height: 6px;
+    background: rgba(0,0,0,0.1);
+    border-radius: 999px;
+    margin-top: 8px;
+    overflow: hidden;
+  }
+  .score-bar {
+    height: 100%;
+    border-radius: 999px;
+    transition: width 0.8s ease;
+  }
+  .daisy-comment {
+    margin-top: 12px;
+    padding: 10px 14px;
+    background: #f0fdf4;
+    border-left: 3px solid var(--green);
+    border-radius: 0 10px 10px 0;
+    font-size: 0.8rem;
+    color: #374151;
+    line-height: 1.5;
+  }
+  .daisy-comment::before {
+    content: "🐾 Daisy: ";
+    font-weight: 700;
+    color: var(--green);
+  }
+  /* ローディング */
+  .loading-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--line);
+  }
+  .loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid var(--green-light);
+    border-top-color: var(--green);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin: 0 auto 12px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  /* 更新時刻 */
+  .update-bar {
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--muted);
+    padding: 8px 16px;
+  }
+  /* 凡例 */
+  .legend-section {
+    margin: 0 16px 16px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--line);
+  }
+  .legend-section h3 {
+    font-size: 0.9rem;
+    font-weight: 900;
+    color: var(--brown);
+    margin-bottom: 12px;
+  }
+  .legend-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 8px;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.78rem;
+  }
+  .legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  /* 犬種別アドバイス */
+  .breed-advice {
+    margin: 0 16px 16px;
+    background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+    border-radius: 16px;
+    padding: 16px;
+    border: 1px solid #86efac;
+  }
+  .breed-advice h3 {
+    font-size: 0.9rem;
+    font-weight: 900;
+    color: #065f46;
+    margin-bottom: 10px;
+  }
+  .breed-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .breed-tag {
+    background: #fff;
+    border: 1px solid #86efac;
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-size: 0.78rem;
+    color: #065f46;
+    font-weight: 700;
+  }
+  /* SNSシェアボタン */
+  .share-section {
+    margin: 0 16px 24px;
+    text-align: center;
+  }
+  .share-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+  .share-btn:hover { opacity: 0.8; }
+  @media (max-width: 600px) {
+    .weather-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand" style="text-decoration:none">
+      <div class="brand-icon">🐾</div>
+      <span>Daisy<br><small style="font-size:10px;font-weight:700;color:var(--muted)">Kyushu Dog Guide</small></span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">ホーム</a>
+      <a href="spots.html">スポット</a>
+      <a href="weather.html" class="active">天気</a>
+      <a href="heatstroke.html">熱中症</a>
+      <a href="planner.html">旅プランナー</a>
+      <a href="hospital.html">🏥 病院</a>
+      <a href="checklist.html">持ち物</a>
+    </nav>
+  </div>
+</header>
+
+<div class="weather-hero">
+  <div style="font-size:2.5rem;margin-bottom:8px">🌤️🐾</div>
+  <h1>今日の天気×犬快適度</h1>
+  <p>九州7県のリアルタイム天気から<br>「今日Daisyと出かけられるか」を判定します</p>
+</div>
+
+<div class="update-bar" id="update-bar">データ取得中...</div>
+
+<!-- 犬種別アドバイス -->
+<div class="breed-advice">
+  <h3>🐕 暑さに弱い犬種は特に注意！</h3>
+  <div class="breed-list">
+    <span class="breed-tag">サモエド</span>
+    <span class="breed-tag">ハスキー</span>
+    <span class="breed-tag">マラミュート</span>
+    <span class="breed-tag">ゴールデン</span>
+    <span class="breed-tag">バーニーズ</span>
+    <span class="breed-tag">短頭種全般</span>
+    <span class="breed-tag">老犬・子犬</span>
+  </div>
+  <p style="font-size:0.78rem;color:#065f46;margin-top:10px;line-height:1.5">
+    ⚠️ 上記犬種は「注意」判定でも早朝・夕方以降の時間帯を選ぶことをおすすめします。アスファルトの地表温度は気温+10〜20℃になることも。
+  </p>
+</div>
+
+<!-- エリアタブ -->
+<div class="area-tabs" id="area-tabs">
+  <button class="area-tab active" onclick="filterArea('all')">全エリア</button>
+  <button class="area-tab" onclick="filterArea('福岡')">福岡</button>
+  <button class="area-tab" onclick="filterArea('大分')">大分</button>
+  <button class="area-tab" onclick="filterArea('熊本')">熊本</button>
+  <button class="area-tab" onclick="filterArea('長崎')">長崎</button>
+  <button class="area-tab" onclick="filterArea('宮崎')">宮崎</button>
+  <button class="area-tab" onclick="filterArea('鹿児島')">鹿児島</button>
+  <button class="area-tab" onclick="filterArea('佐賀')">佐賀</button>
+</div>
+
+<!-- 天気カードグリッド -->
+<div class="weather-grid" id="weather-grid">
+  <!-- ローディング表示 -->
+  <div class="loading-card" id="loading-indicator" style="grid-column:1/-1">
+    <div class="loading-spinner"></div>
+    <p style="color:var(--muted);font-size:0.9rem">天気データを取得中...</p>
+  </div>
+</div>
+
+<!-- 凡例 -->
+<div class="legend-section">
+  <h3>📊 快適度の判定基準</h3>
+  <div class="legend-grid">
+    <div class="legend-item">
+      <div class="legend-dot" style="background:#34d399"></div>
+      <span><strong>最高！</strong> 気温〜22℃・湿度低め</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-dot" style="background:#60a5fa"></div>
+      <span><strong>快適</strong> 気温〜25℃・過ごしやすい</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-dot" style="background:#fbbf24"></div>
+      <span><strong>注意</strong> 気温26〜29℃・こまめに休憩</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-dot" style="background:#f87171"></div>
+      <span><strong>危険</strong> 気温30〜33℃・短時間のみ</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-dot" style="background:#f472b6"></div>
+      <span><strong>外出NG</strong> 気温34℃超・熱中症リスク大</span>
+    </div>
+  </div>
+</div>
+
+<!-- SNSシェア -->
+<div class="share-section">
+  <a href="#" id="share-x-btn" class="share-btn" target="_blank" rel="noopener">
+    𝕏 今日の快適度をシェア
+  </a>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>© 2025 Daisy Kyushu Dog Guide</p>
+    <nav class="footer-nav">
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="ad-policy.html">広告について</a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+// 九州主要都市データ（緯度・経度）
+const CITIES = [
+  { name: '福岡市', pref: '福岡県', lat: 33.5902, lon: 130.4017, area: '福岡' },
+  { name: '北九州市', pref: '福岡県', lat: 33.8834, lon: 130.8752, area: '福岡' },
+  { name: '久留米市', pref: '福岡県', lat: 33.3192, lon: 130.5081, area: '福岡' },
+  { name: '大分市', pref: '大分県', lat: 33.2382, lon: 131.6126, area: '大分' },
+  { name: '別府市', pref: '大分県', lat: 33.2847, lon: 131.4913, area: '大分' },
+  { name: '由布市（湯布院）', pref: '大分県', lat: 33.2581, lon: 131.3636, area: '大分' },
+  { name: '熊本市', pref: '熊本県', lat: 32.8031, lon: 130.7079, area: '熊本' },
+  { name: '阿蘇市', pref: '熊本県', lat: 32.9492, lon: 131.1236, area: '熊本' },
+  { name: '長崎市', pref: '長崎県', lat: 32.7503, lon: 129.8779, area: '長崎' },
+  { name: '佐世保市', pref: '長崎県', lat: 33.1795, lon: 129.7156, area: '長崎' },
+  { name: '宮崎市', pref: '宮崎県', lat: 31.9077, lon: 131.4202, area: '宮崎' },
+  { name: '都城市', pref: '宮崎県', lat: 31.7234, lon: 131.0631, area: '宮崎' },
+  { name: '鹿児島市', pref: '鹿児島県', lat: 31.5966, lon: 130.5571, area: '鹿児島' },
+  { name: '霧島市', pref: '鹿児島県', lat: 31.7303, lon: 130.7630, area: '鹿児島' },
+  { name: '佐賀市', pref: '佐賀県', lat: 33.2635, lon: 130.3009, area: '佐賀' },
+  { name: '唐津市', pref: '佐賀県', lat: 33.4490, lon: 129.9686, area: '佐賀' },
+];
+
+// 天気コード → 絵文字・説明
+function getWeatherInfo(code) {
+  if (code === 0) return { emoji: '☀️', desc: '快晴' };
+  if (code <= 2) return { emoji: '⛅', desc: '晴れ時々曇り' };
+  if (code === 3) return { emoji: '☁️', desc: '曇り' };
+  if (code <= 49) return { emoji: '🌫️', desc: '霧' };
+  if (code <= 59) return { emoji: '🌦️', desc: '霧雨' };
+  if (code <= 69) return { emoji: '🌧️', desc: '雨' };
+  if (code <= 79) return { emoji: '🌨️', desc: '雪' };
+  if (code <= 82) return { emoji: '🌧️', desc: 'にわか雨' };
+  if (code <= 99) return { emoji: '⛈️', desc: '雷雨' };
+  return { emoji: '🌡️', desc: '不明' };
+}
+
+// 快適度スコア計算（犬目線・サモエド基準）
+function calcComfort(temp, humidity, windspeed, weatherCode) {
+  let score = 100;
+  // 気温による減点
+  if (temp > 34) score -= 70;
+  else if (temp > 30) score -= 45;
+  else if (temp > 27) score -= 25;
+  else if (temp > 24) score -= 10;
+  else if (temp < 5) score -= 30;
+  else if (temp < 10) score -= 15;
+  // 湿度による減点
+  if (humidity > 85) score -= 20;
+  else if (humidity > 75) score -= 10;
+  else if (humidity > 65) score -= 5;
+  // 雨・雷による減点
+  if (weatherCode >= 80) score -= 25;
+  else if (weatherCode >= 60) score -= 15;
+  else if (weatherCode >= 50) score -= 5;
+  // 強風による減点
+  if (windspeed > 30) score -= 15;
+  else if (windspeed > 20) score -= 5;
+
+  score = Math.max(0, Math.min(100, score));
+
+  if (score >= 80) return { level: 'great', label: '最高の散歩日和！', emoji: '🟢', barColor: '#34d399', barWidth: score };
+  if (score >= 60) return { level: 'good', label: '快適におでかけできます', emoji: '🔵', barColor: '#60a5fa', barWidth: score };
+  if (score >= 40) return { level: 'caution', label: '注意しながらおでかけを', emoji: '🟡', barColor: '#fbbf24', barWidth: score };
+  if (score >= 20) return { level: 'warning', label: '短時間・早朝のみ推奨', emoji: '🔴', barColor: '#f87171', barWidth: score };
+  return { level: 'danger', label: '外出はNG！熱中症危険', emoji: '🚨', barColor: '#f472b6', barWidth: score };
+}
+
+// Daisyのコメント生成
+function getDaisyComment(comfort, temp, humidity) {
+  const comments = {
+    great: [
+      `気温${temp}℃、最高のお散歩日和だよ！今すぐ出発しよう🐾`,
+      `こんな気持ちいい日は長めのお散歩でも大丈夫！水は忘れずにね💧`,
+      `サモエドの私でもこの気温は最高！毛並みもふわふわになるよ✨`,
+    ],
+    good: [
+      `気温${temp}℃、気持ちよくおでかけできるよ！こまめに水分補給してね🐾`,
+      `いい天気！ドッグランや公園に行くのにぴったりの日だよ🌿`,
+      `少し暖かいけど、日陰を選べば快適に過ごせるよ☁️`,
+    ],
+    caution: [
+      `気温${temp}℃…少し暑いかも。早朝か夕方にしてね⚠️`,
+      `湿度も${humidity}%あるから、アスファルトの上は特に注意！芝生を選んでね🌿`,
+      `サモエドの私には少しつらい気温…。短めのお散歩にしようね🙏`,
+    ],
+    warning: [
+      `気温${temp}℃は危険ゾーン！もし出かけるなら早朝6時前か夜7時以降にして😰`,
+      `アスファルトの温度は${temp + 12}℃くらいになってるかも。肉球が焼けちゃう！🐾`,
+      `こんな日は室内ドッグランか、涼しい施設でおでかけしてね🏠`,
+    ],
+    danger: [
+      `気温${temp}℃！今日は外出NG！熱中症で倒れちゃうよ🚨`,
+      `こんな日は家でゆっくり過ごすのが一番。エアコンの効いた部屋で休もうね❄️`,
+      `サモエドの私には絶対無理な気温…。お家でまったりしよう🏠`,
+    ],
+  };
+  const arr = comments[comfort.level];
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+
+// 天気カードHTML生成
+function buildCard(city, weather) {
+  const wInfo = getWeatherInfo(weather.weathercode);
+  const comfort = calcComfort(weather.temperature_2m, weather.relativehumidity_2m, weather.windspeed_10m, weather.weathercode);
+  const comment = getDaisyComment(comfort, Math.round(weather.temperature_2m), Math.round(weather.relativehumidity_2m));
+
+  return `
+    <div class="weather-card" data-area="${city.area}">
+      <div class="weather-card-header">
+        <div>
+          <div class="city-name">${city.name}</div>
+          <div class="city-pref">${city.pref}</div>
+        </div>
+        <div class="weather-icon-big">${wInfo.emoji}</div>
+      </div>
+      <div class="temp-row">
+        <span class="temp-now">${Math.round(weather.temperature_2m)}</span>
+        <span class="temp-unit">℃</span>
+        <span class="temp-range">${wInfo.desc}</span>
+      </div>
+      <div class="weather-details">
+        <div class="weather-detail-item">💧 湿度 ${Math.round(weather.relativehumidity_2m)}%</div>
+        <div class="weather-detail-item">💨 風速 ${Math.round(weather.windspeed_10m)}km/h</div>
+        <div class="weather-detail-item">🌡️ 体感 ${Math.round(weather.apparent_temperature)}℃</div>
+      </div>
+      <div class="comfort-score ${comfort.level}">
+        <div class="score-emoji">${comfort.emoji}</div>
+        <div class="score-info">
+          <div class="score-label ${comfort.level}">${comfort.label}</div>
+          <div class="score-bar-wrap">
+            <div class="score-bar" style="width:${comfort.barWidth}%;background:${comfort.barColor}"></div>
+          </div>
+        </div>
+      </div>
+      <div class="daisy-comment">${comment}</div>
+    </div>
+  `;
+}
+
+// 全都市の天気を並列取得
+async function fetchAllWeather() {
+  const grid = document.getElementById('weather-grid');
+  const loading = document.getElementById('loading-indicator');
+
+  try {
+    const results = await Promise.all(CITIES.map(async (city) => {
+      const url = `https://api.open-meteo.com/v1/forecast?latitude=${city.lat}&longitude=${city.lon}&current_weather=true&current=temperature_2m,relativehumidity_2m,apparent_temperature,weathercode,windspeed_10m&timezone=Asia%2FTokyo`;
+      const res = await fetch(url);
+      const data = await res.json();
+      return { city, weather: data.current };
+    }));
+
+    loading.remove();
+
+    results.forEach(({ city, weather }) => {
+      grid.insertAdjacentHTML('beforeend', buildCard(city, weather));
+    });
+
+    // 更新時刻
+    const now = new Date();
+    document.getElementById('update-bar').textContent = `最終更新: ${now.getHours()}:${String(now.getMinutes()).padStart(2,'0')} ｜ データ提供: Open-Meteo（無料天気API）`;
+
+    // シェアボタン設定
+    const greatCount = results.filter(r => calcComfort(r.weather.temperature_2m, r.weather.relativehumidity_2m, r.weather.windspeed_10m, r.weather.weathercode).level === 'great').length;
+    const shareText = `今日の九州、犬連れおでかけに最高な場所が${greatCount}都市あるよ🐾\n#犬連れ旅行 #九州 #サモエド\nhttps://daisy-kyushu.github.io/daisy-kyushu-dog-guide/weather.html`;
+    document.getElementById('share-x-btn').href = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}`;
+
+  } catch (e) {
+    loading.innerHTML = `<p style="color:#ef4444">天気データの取得に失敗しました。<br>しばらく待ってから再読み込みしてください。</p>`;
+  }
+}
+
+// エリアフィルター
+function filterArea(area) {
+  document.querySelectorAll('.area-tab').forEach(t => t.classList.remove('active'));
+  event.target.classList.add('active');
+  document.querySelectorAll('.weather-card').forEach(card => {
+    if (area === 'all' || card.dataset.area === area) {
+      card.style.display = '';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+
+// 初期化
+fetchAllWeather();
+</script>
+</body>
+</html>

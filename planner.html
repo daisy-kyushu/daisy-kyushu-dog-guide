@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E1XSFE7LXG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-E1XSFE7LXG');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9409002778362752" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>犬連れ旅プランナーAI【九州旅程を自動生成】| Daisy Kyushu Dog Guide</title>
+<meta name="description" content="4つの質問に答えるだけで、九州409件のスポットから最適な犬連れ旅行プランを自動生成。大型犬OK・カフェ・ドッグラン・自然など希望に合わせたルートを提案します。">
+<link rel="canonical" href="https://daisy-kyushu.github.io/daisy-kyushu-dog-guide/planner.html">
+<meta property="og:title" content="犬連れ旅プランナーAI | Daisy Kyushu Dog Guide">
+<meta property="og:description" content="4問に答えるだけで九州犬連れ旅のプランを自動生成！">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Zen+Maru+Gothic:wght@700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .planner-hero {
+    background: linear-gradient(135deg, #1e3a5f 0%, #1a6b4a 60%, #3d8b6e 100%);
+    color: #fff;
+    padding: 40px 20px 32px;
+    text-align: center;
+    border-radius: 0 0 32px 32px;
+  }
+  .planner-hero h1 {
+    font-size: clamp(1.4rem, 4vw, 2rem);
+    font-weight: 900;
+    margin-bottom: 8px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+  }
+  .planner-hero p { font-size: 0.9rem; opacity: 0.9; }
+
+  /* ステップUI */
+  .step-indicator {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px;
+    align-items: center;
+  }
+  .step-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: var(--line);
+    transition: all 0.3s;
+  }
+  .step-dot.active { background: var(--green); transform: scale(1.3); }
+  .step-dot.done { background: var(--green); opacity: 0.5; }
+  .step-line { width: 24px; height: 2px; background: var(--line); }
+  .step-line.done { background: var(--green); }
+
+  /* 質問カード */
+  .question-card {
+    margin: 0 16px 16px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--line);
+    display: none;
+    animation: fadeSlide 0.4s ease;
+  }
+  .question-card.active { display: block; }
+  @keyframes fadeSlide { from { opacity: 0; transform: translateX(20px); } to { opacity: 1; transform: translateX(0); } }
+
+  .question-num {
+    font-size: 0.75rem;
+    font-weight: 900;
+    color: var(--green);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 6px;
+  }
+  .question-title {
+    font-size: 1.15rem;
+    font-weight: 900;
+    color: var(--brown);
+    margin-bottom: 4px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+  }
+  .question-sub { font-size: 0.82rem; color: var(--muted); margin-bottom: 16px; }
+
+  /* 選択肢グリッド */
+  .choice-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+  .choice-btn {
+    padding: 14px 12px;
+    border-radius: 14px;
+    border: 2px solid var(--line);
+    background: #fff;
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.15s;
+    color: #374151;
+    text-align: center;
+    line-height: 1.4;
+  }
+  .choice-btn .choice-icon { font-size: 1.5rem; display: block; margin-bottom: 4px; }
+  .choice-btn:hover { border-color: var(--green); color: var(--green); background: #f0fdf4; }
+  .choice-btn.selected { background: var(--green); border-color: var(--green); color: #fff; }
+
+  /* マルチ選択 */
+  .multi-hint { font-size: 0.78rem; color: var(--muted); margin-bottom: 10px; }
+
+  /* 次へボタン */
+  .next-btn {
+    width: 100%;
+    padding: 14px;
+    background: var(--green);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 900;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+  .next-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+  .next-btn:not(:disabled):hover { opacity: 0.9; }
+
+  /* 生成中アニメーション */
+  .generating-card {
+    margin: 0 16px 16px;
+    background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+    border-radius: 20px;
+    padding: 40px 24px;
+    text-align: center;
+    border: 2px solid #86efac;
+    display: none;
+  }
+  .generating-card.show { display: block; }
+  .gen-spinner {
+    width: 48px; height: 48px;
+    border: 5px solid #86efac;
+    border-top-color: var(--green);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin: 0 auto 16px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .gen-steps { font-size: 0.85rem; color: #065f46; margin-top: 8px; }
+
+  /* 結果プラン */
+  .plan-result {
+    margin: 0 16px 24px;
+    display: none;
+  }
+  .plan-result.show { display: block; }
+  .plan-header {
+    background: linear-gradient(135deg, #1e3a5f, #1a6b4a);
+    color: #fff;
+    border-radius: 20px 20px 0 0;
+    padding: 20px 24px;
+  }
+  .plan-header h2 {
+    font-size: 1.2rem;
+    font-weight: 900;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    margin-bottom: 4px;
+  }
+  .plan-header p { font-size: 0.82rem; opacity: 0.85; }
+  .plan-body {
+    background: #fff;
+    border-radius: 0 0 20px 20px;
+    border: 1px solid var(--line);
+    border-top: none;
+    overflow: hidden;
+  }
+
+  /* タイムライン */
+  .timeline { padding: 0; }
+  .timeline-day {
+    padding: 16px 20px 8px;
+    background: var(--surface-2);
+    font-size: 0.85rem;
+    font-weight: 900;
+    color: var(--green);
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .timeline-item {
+    display: flex;
+    gap: 16px;
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--line);
+    align-items: flex-start;
+    transition: background 0.15s;
+  }
+  .timeline-item:hover { background: #f9fafb; }
+  .timeline-item:last-child { border-bottom: none; }
+  .timeline-time {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--muted);
+    min-width: 48px;
+    padding-top: 2px;
+  }
+  .timeline-dot {
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    background: var(--green);
+    margin-top: 4px;
+    flex-shrink: 0;
+    box-shadow: 0 0 0 3px #dcfce7;
+  }
+  .timeline-content { flex: 1; }
+  .timeline-spot-name {
+    font-size: 0.95rem;
+    font-weight: 900;
+    color: var(--brown);
+    margin-bottom: 2px;
+  }
+  .timeline-spot-type {
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  .timeline-spot-memo {
+    font-size: 0.82rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  .timeline-badges {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+  }
+  .badge-small {
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-weight: 700;
+  }
+  .badge-large { background: #dcfce7; color: #065f46; }
+  .badge-indoor { background: #dbeafe; color: #1e40af; }
+  .badge-parking { background: #fef3c7; color: #92400e; }
+
+  /* プランアクション */
+  .plan-actions {
+    display: flex;
+    gap: 10px;
+    padding: 16px 20px;
+    background: var(--surface-2);
+    flex-wrap: wrap;
+  }
+  .action-btn {
+    flex: 1;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    transition: opacity 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    min-width: 120px;
+    text-decoration: none;
+  }
+  .action-btn-primary { background: var(--green); color: #fff; }
+  .action-btn-secondary { background: #fff; color: var(--brown); border: 2px solid var(--line); }
+  .action-btn-x { background: #000; color: #fff; }
+  .action-btn:hover { opacity: 0.85; }
+
+  /* Daisyコメント */
+  .daisy-plan-comment {
+    margin: 0 16px 16px;
+    padding: 16px;
+    background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+    border-radius: 16px;
+    border: 1px solid #86efac;
+    font-size: 0.85rem;
+    color: #374151;
+    line-height: 1.6;
+    display: none;
+  }
+  .daisy-plan-comment.show { display: block; }
+  .daisy-plan-comment strong { color: var(--green); }
+
+  /* 再生成ボタン */
+  .retry-btn {
+    display: block;
+    margin: 0 16px 16px;
+    padding: 12px;
+    background: #fff;
+    border: 2px solid var(--green);
+    border-radius: 12px;
+    color: var(--green);
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s;
+    display: none;
+  }
+  .retry-btn.show { display: block; }
+  .retry-btn:hover { background: var(--green); color: #fff; }
+
+  @media (max-width: 600px) {
+    .choice-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand" style="text-decoration:none">
+      <div class="brand-icon">🐾</div>
+      <span>Daisy<br><small style="font-size:10px;font-weight:700;color:var(--muted)">Kyushu Dog Guide</small></span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">ホーム</a>
+      <a href="spots.html">スポット</a>
+      <a href="weather.html">天気</a>
+      <a href="heatstroke.html">熱中症</a>
+      <a href="planner.html" class="active">旅プランナー</a>
+      <a href="hospital.html">🏥 病院</a>
+      <a href="checklist.html">持ち物</a>
+    </nav>
+  </div>
+</header>
+
+<div class="planner-hero">
+  <div style="font-size:2.5rem;margin-bottom:8px">🗺️🐾</div>
+  <h1>犬連れ旅プランナーAI</h1>
+  <p>4つの質問に答えるだけで<br>九州409件から最適な旅程を自動生成します</p>
+</div>
+
+<!-- ステップインジケーター -->
+<div class="step-indicator" id="step-indicator">
+  <div class="step-dot active" id="dot-1"></div>
+  <div class="step-line" id="line-1"></div>
+  <div class="step-dot" id="dot-2"></div>
+  <div class="step-line" id="line-2"></div>
+  <div class="step-dot" id="dot-3"></div>
+  <div class="step-line" id="line-3"></div>
+  <div class="step-dot" id="dot-4"></div>
+</div>
+
+<!-- Q1: エリア -->
+<div class="question-card active" id="q1">
+  <div class="question-num">Question 1 / 4</div>
+  <div class="question-title">どのエリアに行きたいですか？</div>
+  <div class="question-sub">複数選択OK。まだ決めていない場合は「おまかせ」を選んでください。</div>
+  <div class="multi-hint">複数選択できます</div>
+  <div class="choice-grid" id="area-choices">
+    <button class="choice-btn" onclick="toggleMulti('area','福岡',this)"><span class="choice-icon">🌆</span>福岡</button>
+    <button class="choice-btn" onclick="toggleMulti('area','大分',this)"><span class="choice-icon">♨️</span>大分・湯布院</button>
+    <button class="choice-btn" onclick="toggleMulti('area','熊本',this)"><span class="choice-icon">🌋</span>熊本・阿蘇</button>
+    <button class="choice-btn" onclick="toggleMulti('area','長崎',this)"><span class="choice-icon">⛵</span>長崎</button>
+    <button class="choice-btn" onclick="toggleMulti('area','宮崎',this)"><span class="choice-icon">🌊</span>宮崎</button>
+    <button class="choice-btn" onclick="toggleMulti('area','鹿児島',this)"><span class="choice-icon">🌺</span>鹿児島</button>
+    <button class="choice-btn" onclick="toggleMulti('area','佐賀',this)"><span class="choice-icon">🏯</span>佐賀</button>
+    <button class="choice-btn" onclick="selectAll('area',this)"><span class="choice-icon">🗾</span>おまかせ</button>
+  </div>
+  <button class="next-btn" id="next-q1" onclick="goNext(2)" disabled>次の質問へ →</button>
+</div>
+
+<!-- Q2: 泊数 -->
+<div class="question-card" id="q2">
+  <div class="question-num">Question 2 / 4</div>
+  <div class="question-title">何泊の旅行ですか？</div>
+  <div class="question-sub">日帰りから複数泊まで対応します。</div>
+  <div class="choice-grid">
+    <button class="choice-btn" onclick="selectSingle('nights','0',this)"><span class="choice-icon">🌅</span>日帰り</button>
+    <button class="choice-btn" onclick="selectSingle('nights','1',this)"><span class="choice-icon">🌙</span>1泊2日</button>
+    <button class="choice-btn" onclick="selectSingle('nights','2',this)"><span class="choice-icon">🌙🌙</span>2泊3日</button>
+    <button class="choice-btn" onclick="selectSingle('nights','3',this)"><span class="choice-icon">✨</span>3泊以上</button>
+  </div>
+  <button class="next-btn" id="next-q2" onclick="goNext(3)" disabled>次の質問へ →</button>
+</div>
+
+<!-- Q3: 犬のサイズ -->
+<div class="question-card" id="q3">
+  <div class="question-num">Question 3 / 4</div>
+  <div class="question-title">犬のサイズは？</div>
+  <div class="question-sub">大型犬OKのスポットのみに絞り込むことができます。</div>
+  <div class="choice-grid">
+    <button class="choice-btn" onclick="selectSingle('size','small',this)"><span class="choice-icon">🐩</span>小型犬<br><small style="font-size:0.7rem;opacity:0.7">〜10kg</small></button>
+    <button class="choice-btn" onclick="selectSingle('size','medium',this)"><span class="choice-icon">🐕</span>中型犬<br><small style="font-size:0.7rem;opacity:0.7">10〜25kg</small></button>
+    <button class="choice-btn" onclick="selectSingle('size','large',this)"><span class="choice-icon">🐕‍🦺</span>大型犬<br><small style="font-size:0.7rem;opacity:0.7">25kg〜</small></button>
+    <button class="choice-btn" onclick="selectSingle('size','any',this)"><span class="choice-icon">🐾</span>どのサイズでも<br><small style="font-size:0.7rem;opacity:0.7">全スポット対象</small></button>
+  </div>
+  <button class="next-btn" id="next-q3" onclick="goNext(4)" disabled>次の質問へ →</button>
+</div>
+
+<!-- Q4: 好みのジャンル -->
+<div class="question-card" id="q4">
+  <div class="question-num">Question 4 / 4</div>
+  <div class="question-title">どんなスポットが好きですか？</div>
+  <div class="question-sub">複数選択OK。好みに合わせてスポットを優先します。</div>
+  <div class="multi-hint">複数選択できます</div>
+  <div class="choice-grid" id="genre-choices">
+    <button class="choice-btn" onclick="toggleMulti('genre','cafe',this)"><span class="choice-icon">☕</span>カフェ・グルメ</button>
+    <button class="choice-btn" onclick="toggleMulti('genre','dogrun',this)"><span class="choice-icon">🏃</span>ドッグラン</button>
+    <button class="choice-btn" onclick="toggleMulti('genre','nature',this)"><span class="choice-icon">🌿</span>自然・公園</button>
+    <button class="choice-btn" onclick="toggleMulti('genre','outdoor',this)"><span class="choice-icon">⛺</span>アウトドア・ハイキング</button>
+    <button class="choice-btn" onclick="toggleMulti('genre','sightseeing',this)"><span class="choice-icon">🏯</span>観光・文化</button>
+    <button class="choice-btn" onclick="toggleMulti('genre','hotel',this)"><span class="choice-icon">🏨</span>ペット可宿</button>
+    <button class="choice-btn" onclick="toggleMulti('genre','beach',this)"><span class="choice-icon">🏖️</span>海・ビーチ</button>
+    <button class="choice-btn" onclick="selectAll('genre',this)"><span class="choice-icon">🎲</span>おまかせ</button>
+  </div>
+  <button class="next-btn" id="next-q4" onclick="generatePlan()" disabled>🗺️ プランを生成する！</button>
+</div>
+
+<!-- 生成中 -->
+<div class="generating-card" id="generating-card">
+  <div class="gen-spinner"></div>
+  <div style="font-size:1.1rem;font-weight:900;color:#065f46;font-family:'Zen Maru Gothic',sans-serif">プランを作成中...</div>
+  <div class="gen-steps" id="gen-step-text">スポットデータを読み込んでいます...</div>
+</div>
+
+<!-- 結果プラン -->
+<div class="plan-result" id="plan-result">
+  <div class="plan-header">
+    <h2 id="plan-title">あなたの九州犬連れ旅プラン</h2>
+    <p id="plan-summary">1泊2日・福岡・大型犬OK・カフェ＆ドッグラン中心</p>
+  </div>
+  <div class="plan-body">
+    <div class="timeline" id="plan-timeline"></div>
+    <div class="plan-actions">
+      <button class="action-btn action-btn-secondary" onclick="printPlan()">🖨️ 印刷・PDF保存</button>
+      <a href="spots.html" class="action-btn action-btn-secondary">🔍 スポット一覧へ</a>
+      <a href="#" id="share-plan-x" class="action-btn action-btn-x" target="_blank" rel="noopener">𝕏 シェア</a>
+    </div>
+  </div>
+</div>
+
+<!-- Daisyコメント -->
+<div class="daisy-plan-comment" id="daisy-plan-comment"></div>
+
+<!-- 再生成ボタン -->
+<button class="retry-btn" id="retry-btn" onclick="resetPlanner()">🔄 条件を変えてもう一度作る</button>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>© 2025 Daisy Kyushu Dog Guide</p>
+    <nav class="footer-nav">
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="ad-policy.html">広告について</a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+// 選択状態
+const answers = {
+  area: [],
+  nights: null,
+  size: null,
+  genre: [],
+};
+
+// スポットデータ
+let ALL_SPOTS = [];
+
+// データ読み込み
+fetch('spots.json')
+  .then(r => r.json())
+  .then(data => { ALL_SPOTS = data; })
+  .catch(() => { ALL_SPOTS = []; });
+
+// マルチ選択
+function toggleMulti(key, value, el) {
+  const idx = answers[key].indexOf(value);
+  if (idx >= 0) {
+    answers[key].splice(idx, 1);
+    el.classList.remove('selected');
+  } else {
+    answers[key].push(value);
+    el.classList.add('selected');
+  }
+  updateNextBtn(key);
+}
+
+// 全選択（おまかせ）
+function selectAll(key, el) {
+  const allValues = {
+    area: ['福岡','大分','熊本','長崎','宮崎','鹿児島','佐賀'],
+    genre: ['cafe','dogrun','nature','outdoor','sightseeing','hotel','beach'],
+  };
+  answers[key] = [...allValues[key]];
+  document.querySelectorAll(`#${key === 'area' ? 'area' : 'genre'}-choices .choice-btn`).forEach(b => b.classList.remove('selected'));
+  el.classList.add('selected');
+  updateNextBtn(key);
+}
+
+// シングル選択
+function selectSingle(key, value, el) {
+  answers[key] = value;
+  const parent = el.closest('.question-card');
+  parent.querySelectorAll('.choice-btn').forEach(b => b.classList.remove('selected'));
+  el.classList.add('selected');
+  updateNextBtn(key);
+}
+
+function updateNextBtn(key) {
+  const map = { area: 'next-q1', nights: 'next-q2', size: 'next-q3', genre: 'next-q4' };
+  const btnId = map[key];
+  if (!btnId) return;
+  const btn = document.getElementById(btnId);
+  const hasValue = Array.isArray(answers[key]) ? answers[key].length > 0 : answers[key] !== null;
+  btn.disabled = !hasValue;
+}
+
+// 次の質問へ
+function goNext(step) {
+  // 現在の質問を非表示
+  document.querySelectorAll('.question-card').forEach(c => c.classList.remove('active'));
+  document.getElementById(`q${step}`).classList.add('active');
+
+  // ステップインジケーター更新
+  for (let i = 1; i <= 4; i++) {
+    const dot = document.getElementById(`dot-${i}`);
+    dot.classList.remove('active', 'done');
+    if (i < step) dot.classList.add('done');
+    else if (i === step) dot.classList.add('active');
+    if (i < 4) {
+      const line = document.getElementById(`line-${i}`);
+      line.classList.toggle('done', i < step);
+    }
+  }
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// スポットフィルタリング
+function filterSpots() {
+  let spots = [...ALL_SPOTS];
+
+  // エリアフィルター
+  if (answers.area.length > 0 && !answers.area.includes('all')) {
+    spots = spots.filter(s => {
+      const area = (s.area || '') + (s.prefecture || '');
+      return answers.area.some(a => area.includes(a));
+    });
+  }
+
+  // 大型犬フィルター
+  if (answers.size === 'large') {
+    spots = spots.filter(s => {
+      const lg = s.largeDog || s.large_dog || '';
+      return lg === '大型犬OK' || lg === 'OK' || lg === true || lg === '○';
+    });
+  }
+
+  // ジャンルフィルター
+  if (answers.genre.length > 0 && !answers.genre.includes('all')) {
+    const genreKeywords = {
+      cafe: ['カフェ', 'レストラン', 'グルメ', 'cafe', 'restaurant'],
+      dogrun: ['ドッグラン', 'dogrun'],
+      nature: ['公園', '自然', '海浜', '散策', '植物'],
+      outdoor: ['アウトドア', 'ハイキング', 'キャンプ', 'walk', '登山'],
+      sightseeing: ['観光', '温泉', '文化', '歴史', '城'],
+      hotel: ['宿', 'ホテル', 'hotel'],
+      beach: ['海', 'ビーチ', '海浜', '海岸'],
+    };
+    spots = spots.filter(s => {
+      const text = ((s.type || '') + (s.category || '') + (s.name || '')).toLowerCase();
+      return answers.genre.some(g => {
+        const kws = genreKeywords[g] || [];
+        return kws.some(kw => text.includes(kw.toLowerCase()));
+      });
+    });
+  }
+
+  // ランダムシャッフル（多様性確保）
+  spots = spots.sort(() => Math.random() - 0.5);
+
+  return spots;
+}
+
+// 時間スロット生成
+function getTimeSlots(nights) {
+  const n = parseInt(nights) || 0;
+  const days = n + 1;
+  const slots = [];
+  const times = ['09:00', '11:00', '12:30', '14:30', '16:30', '18:00'];
+  const timeLabels = ['午前の散策', 'ランチ', '午後の観光①', '午後の観光②', '夕方の散歩', '夕食・チェックイン'];
+
+  for (let d = 0; d < days; d++) {
+    const dayLabel = d === 0 ? '1日目' : d === days - 1 ? `${d + 1}日目（最終日）` : `${d + 1}日目`;
+    const daySlots = d === 0 ? times.slice(0, 4) : (d === days - 1 ? times.slice(0, 3) : times.slice(0, 5));
+    slots.push({ day: dayLabel, times: daySlots, labels: timeLabels });
+  }
+  return slots;
+}
+
+// プラン生成
+async function generatePlan() {
+  // 質問カードを非表示
+  document.querySelectorAll('.question-card').forEach(c => c.classList.remove('active'));
+  document.getElementById('step-indicator').style.display = 'none';
+
+  // 生成中表示
+  const genCard = document.getElementById('generating-card');
+  genCard.classList.add('show');
+
+  const steps = [
+    'スポットデータを読み込んでいます...',
+    'エリア・犬種条件でフィルタリング中...',
+    '最適なルートを計算しています...',
+    'Daisyがおすすめスポットを選んでいます...',
+    'プランを完成させています...',
+  ];
+  let si = 0;
+  const stepEl = document.getElementById('gen-step-text');
+  const stepInterval = setInterval(() => {
+    stepEl.textContent = steps[Math.min(si++, steps.length - 1)];
+  }, 600);
+
+  // 少し待機（UX向上）
+  await new Promise(r => setTimeout(r, 3000));
+  clearInterval(stepInterval);
+
+  // スポットフィルタリング
+  const filtered = filterSpots();
+  const slots = getTimeSlots(answers.nights || '0');
+
+  // プラン構築
+  let spotIdx = 0;
+  const timeline = document.getElementById('plan-timeline');
+  timeline.innerHTML = '';
+
+  // ホテルスポットを別に確保
+  const hotelSpots = ALL_SPOTS.filter(s => {
+    const text = (s.type || '') + (s.category || '') + (s.name || '');
+    return text.includes('宿') || text.includes('ホテル') || text.includes('hotel');
+  }).sort(() => Math.random() - 0.5);
+
+  let hotelIdx = 0;
+
+  slots.forEach(({ day, times, labels }) => {
+    // 日付ヘッダー
+    const dayEl = document.createElement('div');
+    dayEl.className = 'timeline-day';
+    dayEl.innerHTML = `📅 ${day}`;
+    timeline.appendChild(dayEl);
+
+    times.forEach((time, ti) => {
+      const isHotel = labels[ti] === '夕食・チェックイン' && parseInt(answers.nights) > 0;
+      let spot;
+
+      if (isHotel && hotelSpots.length > hotelIdx) {
+        spot = hotelSpots[hotelIdx++];
+      } else if (filtered.length > spotIdx) {
+        spot = filtered[spotIdx++];
+      } else {
+        spot = ALL_SPOTS[Math.floor(Math.random() * ALL_SPOTS.length)];
+      }
+
+      if (!spot) return;
+
+      const largeDogOk = spot.largeDog === '大型犬OK' || spot.large_dog === 'OK' || spot.largeDog === true;
+      const indoorOk = spot.indoorOk === true || spot.indoorOk === '○';
+      const parkingOk = spot.parking === true || spot.parking === '○' || spot.parking === 'あり';
+
+      const item = document.createElement('div');
+      item.className = 'timeline-item';
+      item.innerHTML = `
+        <div class="timeline-time">${time}</div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-spot-name">${spot.name || '名称未設定'}</div>
+          <div class="timeline-spot-type">${spot.type || spot.category || 'スポット'} ｜ ${(spot.area || '').substring(0, 15)}</div>
+          <div class="timeline-spot-memo">${spot.memo || spot.description || 'Daisyと一緒に楽しめるスポットです。'}</div>
+          <div class="timeline-badges">
+            ${largeDogOk ? '<span class="badge-small badge-large">大型犬OK</span>' : ''}
+            ${indoorOk ? '<span class="badge-small badge-indoor">室内OK</span>' : ''}
+            ${parkingOk ? '<span class="badge-small badge-parking">駐車場あり</span>' : ''}
+          </div>
+          ${spot.officialUrl || spot.url ? `<a href="${spot.officialUrl || spot.url}" target="_blank" rel="noopener" style="font-size:0.78rem;color:var(--green);font-weight:700;margin-top:6px;display:inline-block">公式サイトを見る →</a>` : ''}
+        </div>
+      `;
+      timeline.appendChild(item);
+    });
+  });
+
+  // プランサマリー
+  const areaText = answers.area.length >= 7 ? '九州全域' : answers.area.join('・');
+  const nightsText = answers.nights === '0' ? '日帰り' : `${answers.nights}泊${parseInt(answers.nights)+1}日`;
+  const sizeText = { small: '小型犬', medium: '中型犬', large: '大型犬', any: '全サイズ' }[answers.size] || '';
+  const genreText = answers.genre.slice(0, 3).map(g => ({
+    cafe: 'カフェ', dogrun: 'ドッグラン', nature: '自然', outdoor: 'アウトドア',
+    sightseeing: '観光', hotel: '宿泊', beach: 'ビーチ'
+  }[g])).filter(Boolean).join('・');
+
+  document.getElementById('plan-title').textContent = `${areaText}の犬連れ旅プラン`;
+  document.getElementById('plan-summary').textContent = `${nightsText} ｜ ${sizeText} ｜ ${genreText || 'バランス型'}`;
+
+  // Daisyコメント
+  const daisyComments = [
+    `${areaText}の旅、私も一緒に行きたい！このプランなら${sizeText}でも楽しめるスポットばかりだよ🐾 水分補給と休憩を忘れずにね💧`,
+    `わあ、${nightsText}の旅だね！${areaText}には私のお気に入りスポットがたくさんあるよ。このプランを参考に、楽しい旅になりますように🌿`,
+    `${genreText || 'いろんなジャンル'}を楽しむプランができたよ！旅の前に天気チェックと持ち物チェックも忘れずにね🎒`,
+  ];
+  const daisyEl = document.getElementById('daisy-plan-comment');
+  daisyEl.innerHTML = `<strong>🐾 Daisyより：</strong>${daisyComments[Math.floor(Math.random() * daisyComments.length)]}`;
+  daisyEl.classList.add('show');
+
+  // シェアボタン
+  const shareText = `九州犬連れ旅プランを自動生成しました！\n${nightsText}・${areaText}・${sizeText}\n#犬連れ旅行 #九州 #サモエド\nhttps://daisy-kyushu.github.io/daisy-kyushu-dog-guide/planner.html`;
+  document.getElementById('share-plan-x').href = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}`;
+
+  // 表示切り替え
+  genCard.classList.remove('show');
+  document.getElementById('plan-result').classList.add('show');
+  document.getElementById('retry-btn').classList.add('show');
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// 印刷
+function printPlan() {
+  window.print();
+}
+
+// リセット
+function resetPlanner() {
+  answers.area = [];
+  answers.nights = null;
+  answers.size = null;
+  answers.genre = [];
+
+  document.querySelectorAll('.choice-btn').forEach(b => b.classList.remove('selected'));
+  document.querySelectorAll('.next-btn').forEach(b => b.disabled = true);
+  document.getElementById('plan-result').classList.remove('show');
+  document.getElementById('daisy-plan-comment').classList.remove('show');
+  document.getElementById('retry-btn').classList.remove('show');
+  document.getElementById('step-indicator').style.display = 'flex';
+
+  goNext(1);
+  document.getElementById('q1').classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+</body>
+</html>

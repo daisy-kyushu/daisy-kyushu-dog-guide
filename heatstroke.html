@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E1XSFE7LXG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-E1XSFE7LXG');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9409002778362752" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>犬の熱中症リスクチェッカー【今すぐ判定】| Daisy Kyushu Dog Guide</title>
+<meta name="description" content="犬種・気温・地面の種類・運動量を入力するだけで熱中症リスクをリアルタイム判定。サモエドなど暑さに弱い犬種向けの具体的なアドバイスも。旅先でも使えます。">
+<link rel="canonical" href="https://daisy-kyushu.github.io/daisy-kyushu-dog-guide/heatstroke.html">
+<meta property="og:title" content="犬の熱中症リスクチェッカー | Daisy Kyushu Dog Guide">
+<meta property="og:description" content="犬種・気温・地面の種類・運動量を入力するだけで熱中症リスクをリアルタイム判定。">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Zen+Maru+Gothic:wght@700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .hs-hero {
+    background: linear-gradient(135deg, #7f1d1d 0%, #b91c1c 50%, #ef4444 100%);
+    color: #fff;
+    padding: 40px 20px 32px;
+    text-align: center;
+    border-radius: 0 0 32px 32px;
+  }
+  .hs-hero h1 {
+    font-size: clamp(1.4rem, 4vw, 2rem);
+    font-weight: 900;
+    margin-bottom: 8px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+  }
+  .hs-hero p { font-size: 0.9rem; opacity: 0.9; }
+
+  /* フォームカード */
+  .checker-form {
+    margin: 20px 16px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--line);
+  }
+  .form-section-title {
+    font-size: 0.85rem;
+    font-weight: 900;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+    margin-top: 20px;
+  }
+  .form-section-title:first-child { margin-top: 0; }
+
+  /* 温度スライダー */
+  .temp-display {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  .temp-big {
+    font-size: 3.5rem;
+    font-weight: 900;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    line-height: 1;
+    transition: color 0.3s;
+  }
+  .temp-label { font-size: 0.85rem; color: var(--muted); margin-top: 4px; }
+  input[type="range"] {
+    width: 100%;
+    height: 8px;
+    border-radius: 999px;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    background: linear-gradient(to right, #60a5fa 0%, #fbbf24 50%, #ef4444 100%);
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #fff;
+    border: 3px solid #374151;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
+  .range-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+
+  /* 選択ボタングループ */
+  .btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 4px;
+  }
+  .btn-choice {
+    padding: 10px 16px;
+    border-radius: 12px;
+    border: 2px solid var(--line);
+    background: #fff;
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.15s;
+    color: #374151;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .btn-choice:hover { border-color: var(--green); color: var(--green); }
+  .btn-choice.selected {
+    background: var(--green);
+    border-color: var(--green);
+    color: #fff;
+  }
+  .btn-choice.selected-red {
+    background: #ef4444;
+    border-color: #ef4444;
+    color: #fff;
+  }
+
+  /* 判定ボタン */
+  .check-btn {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, #b91c1c, #ef4444);
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    font-size: 1.1rem;
+    font-weight: 900;
+    cursor: pointer;
+    margin-top: 24px;
+    transition: opacity 0.2s, transform 0.1s;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .check-btn:hover { opacity: 0.9; transform: translateY(-1px); }
+  .check-btn:active { transform: translateY(0); }
+
+  /* 結果カード */
+  .result-card {
+    margin: 0 16px 20px;
+    border-radius: 20px;
+    padding: 24px;
+    display: none;
+    animation: fadeIn 0.4s ease;
+  }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+  .result-card.show { display: block; }
+  .result-card.level-safe { background: linear-gradient(135deg, #d1fae5, #a7f3d0); border: 2px solid #34d399; }
+  .result-card.level-caution { background: linear-gradient(135deg, #fef3c7, #fde68a); border: 2px solid #fbbf24; }
+  .result-card.level-danger { background: linear-gradient(135deg, #fee2e2, #fecaca); border: 2px solid #f87171; }
+  .result-card.level-critical { background: linear-gradient(135deg, #fce7f3, #fbcfe8); border: 2px solid #f472b6; }
+
+  .result-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .result-emoji { font-size: 3.5rem; }
+  .result-title {
+    font-size: 1.4rem;
+    font-weight: 900;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    line-height: 1.2;
+  }
+  .result-subtitle { font-size: 0.85rem; color: #555; margin-top: 4px; }
+
+  /* リスクメーター */
+  .risk-meter {
+    margin-bottom: 20px;
+  }
+  .risk-meter-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #555;
+    margin-bottom: 6px;
+  }
+  .risk-meter-bar {
+    height: 14px;
+    background: rgba(0,0,0,0.1);
+    border-radius: 999px;
+    overflow: hidden;
+  }
+  .risk-meter-fill {
+    height: 100%;
+    border-radius: 999px;
+    transition: width 1s ease;
+  }
+
+  /* アドバイスリスト */
+  .advice-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .advice-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 12px;
+    padding: 12px 14px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+  .advice-icon { font-size: 1.2rem; flex-shrink: 0; }
+
+  /* Daisyコメント */
+  .daisy-result-comment {
+    margin-top: 16px;
+    padding: 14px 16px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 14px;
+    font-size: 0.85rem;
+    color: #374151;
+    line-height: 1.6;
+    border-left: 4px solid var(--green);
+  }
+  .daisy-result-comment strong { color: var(--green); }
+
+  /* 肉球温度計算 */
+  .paw-calc {
+    margin: 0 16px 20px;
+    background: linear-gradient(135deg, #fff7ed, #fed7aa);
+    border-radius: 16px;
+    padding: 16px;
+    border: 1px solid #fb923c;
+  }
+  .paw-calc h3 { font-size: 0.9rem; font-weight: 900; color: #9a3412; margin-bottom: 10px; }
+  .paw-temp-display {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .paw-temp-item {
+    flex: 1;
+    min-width: 120px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #fed7aa;
+  }
+  .paw-temp-label { font-size: 0.75rem; color: var(--muted); margin-bottom: 4px; }
+  .paw-temp-value { font-size: 1.5rem; font-weight: 900; font-family: 'Zen Maru Gothic', sans-serif; }
+
+  /* シェアボタン */
+  .share-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+  }
+  .share-btn-x {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background: #000;
+    color: #fff;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: opacity 0.2s;
+    min-width: 140px;
+  }
+  .share-btn-x:hover { opacity: 0.8; }
+
+  /* 豆知識セクション */
+  .tips-section {
+    margin: 0 16px 24px;
+  }
+  .tips-section h2 {
+    font-size: 1rem;
+    font-weight: 900;
+    color: var(--brown);
+    margin-bottom: 12px;
+  }
+  .tip-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--line);
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+  .tip-card strong { color: var(--green); }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand" style="text-decoration:none">
+      <div class="brand-icon">🐾</div>
+      <span>Daisy<br><small style="font-size:10px;font-weight:700;color:var(--muted)">Kyushu Dog Guide</small></span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">ホーム</a>
+      <a href="spots.html">スポット</a>
+      <a href="weather.html">天気</a>
+      <a href="heatstroke.html" class="active">熱中症</a>
+      <a href="planner.html">旅プランナー</a>
+      <a href="hospital.html">🏥 病院</a>
+      <a href="checklist.html">持ち物</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hs-hero">
+  <div style="font-size:2.5rem;margin-bottom:8px">🌡️🐾</div>
+  <h1>犬の熱中症リスクチェッカー</h1>
+  <p>犬種・気温・地面・運動量を入力するだけで<br>今すぐリスクを判定します</p>
+</div>
+
+<!-- 入力フォーム -->
+<div class="checker-form">
+
+  <!-- 気温スライダー -->
+  <div class="form-section-title">現在の気温</div>
+  <div class="temp-display">
+    <div class="temp-big" id="temp-display">25℃</div>
+    <div class="temp-label" id="temp-feel-label">過ごしやすい気温です</div>
+  </div>
+  <input type="range" id="temp-slider" min="0" max="45" value="25" step="1" oninput="updateTemp(this.value)">
+  <div class="range-labels"><span>0℃</span><span>15℃</span><span>30℃</span><span>45℃</span></div>
+
+  <!-- 地面の種類 -->
+  <div class="form-section-title" style="margin-top:24px">地面の種類</div>
+  <div class="btn-group" id="surface-group">
+    <button class="btn-choice selected" onclick="selectChoice('surface', 'asphalt', this)">🛣️ アスファルト</button>
+    <button class="btn-choice" onclick="selectChoice('surface', 'concrete', this)">🏙️ コンクリート</button>
+    <button class="btn-choice" onclick="selectChoice('surface', 'grass', this)">🌿 芝生・草地</button>
+    <button class="btn-choice" onclick="selectChoice('surface', 'soil', this)">🌱 土・砂</button>
+    <button class="btn-choice" onclick="selectChoice('surface', 'indoor', this)">🏠 室内・施設内</button>
+  </div>
+
+  <!-- 犬種タイプ -->
+  <div class="form-section-title">犬種・体質</div>
+  <div class="btn-group" id="breed-group">
+    <button class="btn-choice selected" onclick="selectChoice('breed', 'double-coat-large', this)">🐕 ダブルコート大型（サモエド・ハスキー等）</button>
+    <button class="btn-choice" onclick="selectChoice('breed', 'double-coat-small', this)">🐩 ダブルコート小型（ポメ・コーギー等）</button>
+    <button class="btn-choice" onclick="selectChoice('breed', 'short-nose', this)">🐶 短頭種（フレブル・パグ・ブルドッグ等）</button>
+    <button class="btn-choice" onclick="selectChoice('breed', 'single-coat', this)">🦮 シングルコート（トイプー・チワワ等）</button>
+    <button class="btn-choice" onclick="selectChoice('breed', 'senior', this)">👴 老犬・子犬・持病あり</button>
+  </div>
+
+  <!-- 運動量 -->
+  <div class="form-section-title">運動量・活動レベル</div>
+  <div class="btn-group" id="activity-group">
+    <button class="btn-choice selected" onclick="selectChoice('activity', 'light', this)">🚶 軽い散歩（30分以内）</button>
+    <button class="btn-choice" onclick="selectChoice('activity', 'moderate', this)">🏃 普通の散歩（30〜60分）</button>
+    <button class="btn-choice" onclick="selectChoice('activity', 'heavy', this)">⚡ 激しい運動・ドッグラン</button>
+    <button class="btn-choice" onclick="selectChoice('activity', 'rest', this)">😴 ほぼ安静・移動のみ</button>
+  </div>
+
+  <!-- 日差し -->
+  <div class="form-section-title">日差し・日陰</div>
+  <div class="btn-group" id="sun-group">
+    <button class="btn-choice selected" onclick="selectChoice('sun', 'full', this)">☀️ 直射日光あり</button>
+    <button class="btn-choice" onclick="selectChoice('sun', 'partial', this)">⛅ 日陰あり・曇り</button>
+    <button class="btn-choice" onclick="selectChoice('sun', 'shade', this)">🌫️ ほぼ日陰・室内</button>
+  </div>
+
+  <button class="check-btn" onclick="calcRisk()">
+    🌡️ 今すぐリスクを判定する
+  </button>
+</div>
+
+<!-- 結果カード（初期非表示） -->
+<div class="result-card" id="result-card">
+  <div class="result-header">
+    <div class="result-emoji" id="result-emoji">🟢</div>
+    <div>
+      <div class="result-title" id="result-title">安全</div>
+      <div class="result-subtitle" id="result-subtitle">今日は安心しておでかけできます</div>
+    </div>
+  </div>
+  <div class="risk-meter">
+    <div class="risk-meter-label">
+      <span>リスクレベル</span>
+      <span id="risk-score-text">0 / 100</span>
+    </div>
+    <div class="risk-meter-bar">
+      <div class="risk-meter-fill" id="risk-meter-fill" style="width:0%;background:#34d399"></div>
+    </div>
+  </div>
+  <ul class="advice-list" id="advice-list"></ul>
+  <div class="daisy-result-comment" id="daisy-comment"></div>
+  <div class="share-row">
+    <a href="#" id="share-x-result" class="share-btn-x" target="_blank" rel="noopener">
+      𝕏 結果をシェア
+    </a>
+  </div>
+</div>
+
+<!-- 肉球温度計算機 -->
+<div class="paw-calc" id="paw-calc" style="display:none">
+  <h3>🐾 肉球やけどリスク（アスファルト温度の目安）</h3>
+  <div class="paw-temp-display">
+    <div class="paw-temp-item">
+      <div class="paw-temp-label">現在の気温</div>
+      <div class="paw-temp-value" id="paw-air-temp" style="color:var(--brown)">—℃</div>
+    </div>
+    <div style="font-size:1.5rem;color:var(--muted)">→</div>
+    <div class="paw-temp-item">
+      <div class="paw-temp-label">アスファルト表面温度</div>
+      <div class="paw-temp-value" id="paw-surface-temp" style="color:#ef4444">—℃</div>
+    </div>
+    <div style="font-size:1.5rem;color:var(--muted)">→</div>
+    <div class="paw-temp-item">
+      <div class="paw-temp-label">やけどリスク</div>
+      <div class="paw-temp-value" id="paw-burn-risk" style="font-size:1.1rem">—</div>
+    </div>
+  </div>
+  <p style="font-size:0.75rem;color:#9a3412;margin-top:10px">※ アスファルト表面温度は気温+10〜17℃が目安（晴天・直射日光下）。5秒以上手を当てていられない温度（約60℃）で肉球やけどのリスクがあります。</p>
+</div>
+
+<!-- 豆知識 -->
+<div class="tips-section">
+  <h2>🐾 犬の熱中症・豆知識</h2>
+  <div class="tip-card">
+    <strong>アスファルトの温度は気温+10〜17℃</strong><br>
+    晴天の日、アスファルトの表面温度は気温より10〜17℃高くなります。気温30℃なら地面は40〜47℃！肉球は人間の足裏より薄く、やけどしやすいので注意が必要です。
+  </div>
+  <div class="tip-card">
+    <strong>サモエドは30℃超えたら要注意</strong><br>
+    サモエドなどのダブルコート犬種は、本来シベリアなどの寒冷地出身。体温調節が苦手で、気温30℃を超えると熱中症リスクが急上昇します。夏の九州旅行は早朝・夕方以降に限定するのがベストです。
+  </div>
+  <div class="tip-card">
+    <strong>熱中症の初期サイン</strong><br>
+    ・激しいパンティング（口を大きく開けてハアハア）<br>
+    ・よだれが多い・粘り気がある<br>
+    ・ぐったりしている・歩きたがらない<br>
+    ・歯茎が赤くなっている<br>
+    これらのサインが見られたら、すぐに涼しい場所へ移動し、水で体を冷やしてください。
+  </div>
+  <div class="tip-card">
+    <strong>応急処置：熱中症になったら</strong><br>
+    ①涼しい場所（エアコンの効いた車内・建物内）に移動<br>
+    ②濡れタオルや保冷剤（タオルで包む）を首・脇・内股に当てる<br>
+    ③意識がある場合は少量の水を飲ませる<br>
+    ④すぐに動物病院へ！熱中症は命に関わります
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>© 2025 Daisy Kyushu Dog Guide</p>
+    <nav class="footer-nav">
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="ad-policy.html">広告について</a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+// 選択状態管理
+const selections = {
+  surface: 'asphalt',
+  breed: 'double-coat-large',
+  activity: 'light',
+  sun: 'full',
+};
+
+function selectChoice(group, value, el) {
+  selections[group] = value;
+  document.querySelectorAll(`#${group}-group .btn-choice`).forEach(b => b.classList.remove('selected'));
+  el.classList.add('selected');
+}
+
+function updateTemp(val) {
+  document.getElementById('temp-display').textContent = val + '℃';
+  const labels = {
+    0: '極寒！防寒対策を', 5: '寒い日です', 10: '肌寒い気温', 15: '過ごしやすい', 20: '快適な気温',
+    25: '過ごしやすい気温です', 28: 'やや暑くなってきました', 30: '暑い！注意が必要', 33: 'かなり危険な暑さ', 35: '危険な暑さ', 40: '命に関わる暑さ', 45: '極限の暑さ'
+  };
+  const keys = Object.keys(labels).map(Number).sort((a,b)=>a-b);
+  let label = labels[0];
+  for (const k of keys) { if (val >= k) label = labels[k]; }
+  document.getElementById('temp-feel-label').textContent = label;
+
+  // 色変化
+  const tempEl = document.getElementById('temp-display');
+  if (val <= 20) tempEl.style.color = '#3b82f6';
+  else if (val <= 27) tempEl.style.color = '#16a34a';
+  else if (val <= 32) tempEl.style.color = '#f59e0b';
+  else tempEl.style.color = '#ef4444';
+}
+
+function calcRisk() {
+  const temp = parseInt(document.getElementById('temp-slider').value);
+
+  // リスクスコア計算（0〜100）
+  let score = 0;
+
+  // 気温ベーススコア
+  if (temp >= 40) score += 60;
+  else if (temp >= 35) score += 50;
+  else if (temp >= 32) score += 40;
+  else if (temp >= 30) score += 30;
+  else if (temp >= 27) score += 20;
+  else if (temp >= 24) score += 10;
+  else score += 0;
+
+  // 地面補正
+  const surfaceBonus = { asphalt: 20, concrete: 15, grass: 0, soil: 5, indoor: -10 };
+  score += surfaceBonus[selections.surface] || 0;
+
+  // 犬種補正
+  const breedBonus = { 'double-coat-large': 20, 'double-coat-small': 10, 'short-nose': 25, 'single-coat': 5, 'senior': 20 };
+  score += breedBonus[selections.breed] || 0;
+
+  // 運動量補正
+  const activityBonus = { light: 0, moderate: 10, heavy: 20, rest: -5 };
+  score += activityBonus[selections.activity] || 0;
+
+  // 日差し補正
+  const sunBonus = { full: 10, partial: 0, shade: -10 };
+  score += sunBonus[selections.sun] || 0;
+
+  score = Math.max(0, Math.min(100, score));
+
+  // 判定
+  let level, emoji, title, subtitle, color;
+  if (score < 20) {
+    level = 'safe'; emoji = '🟢'; title = '安全！'; subtitle = '今日は安心しておでかけできます';
+    color = '#34d399';
+  } else if (score < 40) {
+    level = 'caution'; emoji = '🟡'; title = '注意が必要'; subtitle = 'こまめな水分補給と休憩を忘れずに';
+    color = '#fbbf24';
+  } else if (score < 65) {
+    level = 'danger'; emoji = '🔴'; title = '危険！'; subtitle = '短時間のみ・早朝夕方に限定してください';
+    color = '#f87171';
+  } else {
+    level = 'critical'; emoji = '🚨'; title = '外出NG！'; subtitle = '熱中症リスクが非常に高い状態です';
+    color = '#f472b6';
+  }
+
+  // アドバイス生成
+  const advices = [];
+  if (temp >= 28) advices.push({ icon: '💧', text: '10〜15分ごとに水を飲ませてください。旅先では折りたたみ水入れを必ず持参しましょう。' });
+  if (selections.surface === 'asphalt' || selections.surface === 'concrete') {
+    const surfaceTemp = temp + 12;
+    advices.push({ icon: '🐾', text: `アスファルト表面温度は約${surfaceTemp}℃の可能性があります。芝生や土の上を歩かせるか、犬用シューズを検討してください。` });
+  }
+  if (selections.breed === 'double-coat-large') advices.push({ icon: '✂️', text: 'ダブルコート犬種は夏でも絶対にサマーカットしないでください。アンダーコートが断熱材の役割を果たしています。' });
+  if (selections.breed === 'short-nose') advices.push({ icon: '😮‍💨', text: '短頭種は気道が狭く体温調節が苦手です。少しのパンティングでも無理をさせないでください。' });
+  if (selections.activity === 'heavy') advices.push({ icon: '⏱️', text: 'ドッグランや激しい運動は気温25℃以下の日・時間帯に限定することをおすすめします。' });
+  if (score >= 40) advices.push({ icon: '🏥', text: '旅先の動物病院の場所を事前に確認しておきましょう。', link: 'hospital.html' });
+  if (score >= 65) advices.push({ icon: '❄️', text: '今日は外出を控え、エアコンの効いた室内で過ごしてください。室内ドッグランや犬連れOKのカフェがおすすめです。' });
+  if (advices.length === 0) advices.push({ icon: '🌿', text: '今日は安全に楽しめます！水分補給だけ忘れずに。' });
+
+  // Daisyコメント
+  const daisyComments = {
+    safe: `気温${temp}℃、私も一緒に行きたい！今日は最高のお散歩日和だよ🐾 水は忘れずにね💧`,
+    caution: `気温${temp}℃…少し暑いかも。日陰を選んで、こまめに休憩しながら行こうね。私は${temp}℃超えると少しつらいよ😅`,
+    danger: `気温${temp}℃は私には危険ゾーン…。もし行くなら早朝6時前か夜7時以降にして！アスファルトの上は特に注意してね🙏`,
+    critical: `気温${temp}℃！今日は絶対外出NG！熱中症で倒れちゃうよ🚨 お家でエアコンの前でまったりしよう❄️`,
+  };
+
+  // 結果カード表示
+  const card = document.getElementById('result-card');
+  card.className = `result-card show level-${level}`;
+  document.getElementById('result-emoji').textContent = emoji;
+  document.getElementById('result-title').textContent = title;
+  document.getElementById('result-subtitle').textContent = subtitle;
+  document.getElementById('risk-score-text').textContent = `${score} / 100`;
+  const fill = document.getElementById('risk-meter-fill');
+  fill.style.width = score + '%';
+  fill.style.background = color;
+
+  const adviceList = document.getElementById('advice-list');
+  adviceList.innerHTML = advices.map(a => `
+    <li class="advice-item">
+      <span class="advice-icon">${a.icon}</span>
+      <span>${a.text}${a.link ? ` <a href="${a.link}" style="color:var(--green);font-weight:700">→ 病院を探す</a>` : ''}</span>
+    </li>
+  `).join('');
+
+  document.getElementById('daisy-comment').innerHTML = `<strong>🐾 Daisyより：</strong>${daisyComments[level]}`;
+
+  // 肉球温度計算（アスファルト時のみ表示）
+  const pawCalc = document.getElementById('paw-calc');
+  if (selections.surface === 'asphalt' || selections.surface === 'concrete') {
+    pawCalc.style.display = 'block';
+    const surfaceTemp = temp + (selections.sun === 'full' ? 15 : 8);
+    document.getElementById('paw-air-temp').textContent = temp + '℃';
+    document.getElementById('paw-surface-temp').textContent = surfaceTemp + '℃';
+    let burnRisk = '低い';
+    let burnColor = '#16a34a';
+    if (surfaceTemp >= 60) { burnRisk = '🚨 非常に高い'; burnColor = '#dc2626'; }
+    else if (surfaceTemp >= 50) { burnRisk = '🔴 高い'; burnColor = '#ef4444'; }
+    else if (surfaceTemp >= 40) { burnRisk = '🟡 中程度'; burnColor = '#f59e0b'; }
+    document.getElementById('paw-burn-risk').textContent = burnRisk;
+    document.getElementById('paw-burn-risk').style.color = burnColor;
+  } else {
+    pawCalc.style.display = 'none';
+  }
+
+  // シェアボタン
+  const shareText = `犬の熱中症リスクチェッカーで判定！\n気温${temp}℃・${selections.breed === 'double-coat-large' ? 'サモエド等大型犬' : ''}の結果：${title}\n${subtitle}\n#犬連れ旅行 #熱中症対策 #九州\nhttps://daisy-kyushu.github.io/daisy-kyushu-dog-guide/heatstroke.html`;
+  document.getElementById('share-x-result').href = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}`;
+
+  // スクロール
+  card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+</script>
+</body>
+</html>
