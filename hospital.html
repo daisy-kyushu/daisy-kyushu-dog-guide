@@ -677,6 +677,7 @@ const typeIcons = {
 };
 
 function getRatingStars(rating) {
+  if (!rating) return '☆☆☆☆☆';
   const full = Math.floor(rating);
   const half = rating % 1 >= 0.5 ? 1 : 0;
   const empty = 5 - full - half;
@@ -727,7 +728,7 @@ function renderHospitals(hospitals) {
           </div>
           <div class="info-row">
             <span class="info-icon">📞</span>
-            <span class="info-text"><a href="tel:${h.tel.replace(/-/g,'')}" class="tel-link">${h.tel}</a></span>
+            <span class="info-text">${h.tel ? `<a href="tel:${h.tel.replace(/-/g,'')}" class="tel-link">${h.tel}</a>` : '要確認'}</span>
           </div>
           <div class="info-row">
             <span class="info-icon">🕐</span>
@@ -739,17 +740,17 @@ function renderHospitals(hospitals) {
           </div>
           <div class="info-row">
             <span class="info-icon">🐾</span>
-            <span class="info-text">${h.animals.join('・')}</span>
+            <span class="info-text">${(h.animals||['犬','猫']).join('・')}</span>
           </div>
           <div class="info-row">
             <span class="info-icon">⭐</span>
-            <span class="info-text"><span class="rating-stars">${getRatingStars(h.rating)}</span>${h.rating}</span>
+            <span class="info-text"><span class="rating-stars">${getRatingStars(h.rating)}</span>${h.rating || '未評価'}</span>
           </div>
           ${h.comment ? `<div class="card-comment">🐶 ${h.comment}</div>` : ''}
           ${h.note ? `<div class="card-note">⚠️ ${h.note}</div>` : ''}
         </div>
         <div class="card-footer">
-          <a href="tel:${h.tel.replace(/-/g,'')}" class="btn-tel">📞 電話する</a>
+          ${h.tel ? `<a href="tel:${h.tel.replace(/-/g,'')}" class="btn-tel">📞 電話する</a>` : '<span class="btn-tel" style="opacity:.5;cursor:default">📞 要確認</span>'}
           <a href="${mapUrl}" target="_blank" rel="noopener" class="btn-map">🗺️ 地図を見る</a>
         </div>
       </div>`;
@@ -853,12 +854,12 @@ function initMap(hospitals) {
         <div style="font-size:.8rem;color:#475569;margin-bottom:4px">📍 ${h.city}</div>
         <div style="font-size:.8rem;color:#475569;margin-bottom:4px">🕐 ${h.hours}</div>
         <div style="font-size:.8rem;color:#475569;margin-bottom:8px">📅 休診: ${h.holiday}</div>
-        <a href="tel:${h.tel.replace(/-/g,'')}" style="
+        ${h.tel ? `<a href="tel:${h.tel.replace(/-/g,'')}" style="
           display:block;background:#dc2626;color:#fff;
           text-align:center;padding:7px;border-radius:8px;
           font-size:.85rem;font-weight:700;text-decoration:none;
           margin-bottom:6px;
-        ">📞 ${h.tel}</a>
+        ">📞 ${h.tel}</a>` : '<div style="font-size:.8rem;color:#94a3b8;text-align:center;padding:4px">電話番号要確認</div>'}
         <a href="${h.map_url}" target="_blank" style="
           display:block;background:#f1f5f9;color:#1e293b;
           text-align:center;padding:7px;border-radius:8px;

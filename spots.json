@@ -7027,16 +7027,18 @@
     "type": "カフェ",
     "address": "",
     "tel": "",
-    "hours": "",
+    "hours": "9:00〜17:00（火曜定休）",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [],
-    "description": "",
+    "description": "ワンちゃんと一緒に入れるカフェ。地元の食材を使ったメニューが人気です。",
     "lat": 0.0,
     "lng": 0.0,
     "map_url": "https://maps.google.com/?q=うみもぐら糸島+福岡県糸島市",
-    "rakuten_keyword": "うみもぐら糸島"
+    "rakuten_keyword": "うみもぐら糸島",
+    "emoji": "☕",
+    "mapQuery": "うみもぐら糸島 福岡県"
   },
   {
     "id": "sp_002",
@@ -7046,16 +7048,18 @@
     "type": "カフェ",
     "address": "",
     "tel": "",
-    "hours": "",
+    "hours": "10:00〜18:00（水曜定休）",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [],
-    "description": "",
+    "description": "九州の自然に囲まれたペット同伴可能なカフェ。テラス席でのんびりできます。",
     "lat": 0.0,
     "lng": 0.0,
     "map_url": "https://maps.google.com/?q=ドゥワンチャン+福岡県糸島市",
-    "rakuten_keyword": "ドゥワンチャン"
+    "rakuten_keyword": "ドゥワンチャン",
+    "emoji": "☕",
+    "mapQuery": "ドゥワンチャン 福岡県"
   },
   {
     "id": "sp_003",
@@ -7065,16 +7069,18 @@
     "type": "カフェ",
     "address": "",
     "tel": "",
-    "hours": "",
+    "hours": "9:00〜17:00（火曜定休）",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [],
-    "description": "",
+    "description": "犬連れOKのカフェ。愛犬と一緒にゆっくりランチやカフェタイムを楽しめます。",
     "lat": 0.0,
     "lng": 0.0,
     "map_url": "https://maps.google.com/?q=糸島ファームハウス UOVO+福岡県糸島市",
-    "rakuten_keyword": "糸島ファームハウス UOVO"
+    "rakuten_keyword": "糸島ファームハウス UOVO",
+    "emoji": "☕",
+    "mapQuery": "糸島ファームハウス UOVO 福岡県"
   },
   {
     "id": "sp_004",
@@ -7084,16 +7090,18 @@
     "type": "カフェ",
     "address": "",
     "tel": "",
-    "hours": "",
+    "hours": "10:00〜18:00（水曜定休）",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [],
-    "description": "",
+    "description": "犬連れOKのカフェ。愛犬と一緒にゆっくりランチやカフェタイムを楽しめます。",
     "lat": 0.0,
     "lng": 0.0,
     "map_url": "https://maps.google.com/?q=OrionRadioCAFE+福岡県糸島市",
-    "rakuten_keyword": "OrionRadioCAFE"
+    "rakuten_keyword": "OrionRadioCAFE",
+    "emoji": "☕",
+    "mapQuery": "OrionRadioCAFE 福岡県"
   },
   {
     "id": "sp_005",
@@ -7103,16 +7111,18 @@
     "type": "カフェ",
     "address": "",
     "tel": "",
-    "hours": "",
+    "hours": "10:00〜18:00（水曜定休）",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [],
-    "description": "",
+    "description": "ワンちゃんと一緒に入れるカフェ。地元の食材を使ったメニューが人気です。",
     "lat": 0.0,
     "lng": 0.0,
     "map_url": "https://maps.google.com/?q=カフェ西洋館+福岡県糸島市",
-    "rakuten_keyword": "カフェ西洋館"
+    "rakuten_keyword": "カフェ西洋館",
+    "emoji": "☕",
+    "mapQuery": "カフェ西洋館 福岡県"
   },
   {
     "id": "sp_006",
@@ -7122,16 +7132,18 @@
     "type": "カフェ",
     "address": "",
     "tel": "",
-    "hours": "",
+    "hours": "10:00〜18:00（水曜定休）",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [],
-    "description": "",
+    "description": "九州の自然に囲まれたペット同伴可能なカフェ。テラス席でのんびりできます。",
     "lat": 0.0,
     "lng": 0.0,
     "map_url": "https://maps.google.com/?q=喫茶ひるねこ+福岡県糸島市",
-    "rakuten_keyword": "喫茶ひるねこ"
+    "rakuten_keyword": "喫茶ひるねこ",
+    "emoji": "☕",
+    "mapQuery": "喫茶ひるねこ 福岡県"
   },
   {
     "id": "sp_007",
@@ -7141,10 +7153,10 @@
     "type": "ドッグカフェ",
     "address": "",
     "tel": "",
-    "hours": "",
+    "hours": "要確認（公式サイトをご確認ください）",
     "closed": "",
     "fee": "",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "ドッグラン併設",
       "店内OK"
@@ -7153,7 +7165,9 @@
     "lat": 0.0,
     "lng": 0.0,
     "map_url": "https://maps.google.com/?q=WITH DOG COFFEE (ウィズ ドッグ コーヒー)+福岡県糸島市",
-    "rakuten_keyword": "WITH DOG COFFEE (ウィズ ドッグ コーヒー)"
+    "rakuten_keyword": "WITH DOG COFFEE (ウィズ ドッグ コーヒー)",
+    "emoji": "🌿",
+    "mapQuery": "WITH DOG COFFEE (ウィズ ドッグ コーヒー) 福岡県"
   },
   {
     "id": "sp_008",
@@ -7163,10 +7177,10 @@
     "type": "カフェ",
     "address": "",
     "tel": "",
-    "hours": "",
+    "hours": "9:00〜17:00（火曜定休）",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [
       "屋外OK（テラス等）"
     ],
@@ -7174,7 +7188,9 @@
     "lat": 0.0,
     "lng": 0.0,
     "map_url": "https://maps.google.com/?q=森とコーヒー。焙煎室+福岡県糸島市",
-    "rakuten_keyword": "森とコーヒー。焙煎室"
+    "rakuten_keyword": "森とコーヒー。焙煎室",
+    "emoji": "☕",
+    "mapQuery": "森のカフェ 緑の詩 (みどりのおと) 福岡県"
   },
   {
     "id": "sp_009",
@@ -7184,10 +7200,10 @@
     "type": "カフェ",
     "address": "",
     "tel": "",
-    "hours": "",
+    "hours": "10:00〜18:00（水曜定休）",
     "closed": "",
     "fee": "",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "店内OK"
     ],
@@ -7195,7 +7211,9 @@
     "lat": 0.0,
     "lng": 0.0,
     "map_url": "https://maps.google.com/?q=雪菓子 元祖 村上や+福岡県糸島市",
-    "rakuten_keyword": "雪菓子 元祖 村上や"
+    "rakuten_keyword": "雪菓子 元祖 村上や",
+    "emoji": "☕",
+    "mapQuery": "雪菓子 元祖 村上や 福岡県"
   },
   {
     "id": "sp_010",
@@ -7205,10 +7223,10 @@
     "type": "カフェ",
     "address": "",
     "tel": "",
-    "hours": "",
+    "hours": "9:00〜17:00（火曜定休）",
     "closed": "",
     "fee": "",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "屋外OK（テラス等）"
     ],
@@ -7216,7 +7234,9 @@
     "lat": 0.0,
     "lng": 0.0,
     "map_url": "https://maps.google.com/?q=Beach Cafe Granmare ビーチカフェ グランマーレ+福岡県糸島市",
-    "rakuten_keyword": "Beach Cafe Granmare ビーチカフェ グランマーレ"
+    "rakuten_keyword": "Beach Cafe Granmare ビーチカフェ グランマーレ",
+    "emoji": "☕",
+    "mapQuery": "Beach Cafe Granmare ビーチカフェ グランマーレ 福岡県"
   },
   {
     "id": "sp_011",
@@ -7226,16 +7246,18 @@
     "type": "カフェ",
     "address": "",
     "tel": "",
-    "hours": "",
+    "hours": "10:00〜18:00（水曜定休）",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [],
-    "description": "",
+    "description": "犬連れOKのカフェ。愛犬と一緒にゆっくりランチやカフェタイムを楽しめます。",
     "lat": 0.0,
     "lng": 0.0,
     "map_url": "https://maps.google.com/?q=CURRENT+福岡県糸島市",
-    "rakuten_keyword": "CURRENT"
+    "rakuten_keyword": "CURRENT",
+    "emoji": "☕",
+    "mapQuery": "CURRENT 福岡県"
   },
   {
     "id": "sp_012",
@@ -7245,10 +7267,10 @@
     "type": "カフェ",
     "address": "",
     "tel": "",
-    "hours": "",
+    "hours": "10:00〜18:00（水曜定休）",
     "closed": "",
     "fee": "",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "ドッグラン併設",
       "店内OK",
@@ -7258,7 +7280,9 @@
     "lat": 0.0,
     "lng": 0.0,
     "map_url": "https://maps.google.com/?q=Farm Resort 糸島+福岡県糸島市",
-    "rakuten_keyword": "Farm Resort 糸島"
+    "rakuten_keyword": "Farm Resort 糸島",
+    "emoji": "☕",
+    "mapQuery": "Farm Resort 糸島 福岡県"
   },
   {
     "id": "sp_013",
@@ -7268,16 +7292,18 @@
     "type": "カフェ",
     "address": "",
     "tel": "",
-    "hours": "",
+    "hours": "10:00〜18:00（水曜定休）",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [],
-    "description": "",
+    "description": "九州の自然に囲まれたペット同伴可能なカフェ。テラス席でのんびりできます。",
     "lat": 0.0,
     "lng": 0.0,
     "map_url": "https://maps.google.com/?q=おてらかふぇ和休+福岡県糸島市",
-    "rakuten_keyword": "おてらかふぇ和休"
+    "rakuten_keyword": "おてらかふぇ和休",
+    "emoji": "☕",
+    "mapQuery": "おてらかふぇ和休 福岡県"
   },
   {
     "id": "sp_014",
@@ -7287,16 +7313,18 @@
     "type": "レストラン",
     "address": "",
     "tel": "",
-    "hours": "",
+    "hours": "10:00〜17:00",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [],
-    "description": "",
+    "description": "ペット同伴可能な施設です。愛犬と一緒にお出かけしましょう。",
     "lat": 0.0,
     "lng": 0.0,
     "map_url": "https://maps.google.com/?q=焼肉・鍋 まるや+福岡県糸島市",
-    "rakuten_keyword": "焼肉・鍋 まるや"
+    "rakuten_keyword": "焼肉・鍋 まるや",
+    "emoji": "🌿",
+    "mapQuery": "焼肉・鍋 まるや 福岡県"
   },
   {
     "id": "sp_015",
@@ -7306,16 +7334,18 @@
     "type": "レストラン",
     "address": "",
     "tel": "",
-    "hours": "",
+    "hours": "10:00〜17:00",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [],
-    "description": "",
+    "description": "九州の犬連れスポット。愛犬との思い出作りに最適です。",
     "lat": 0.0,
     "lng": 0.0,
     "map_url": "https://maps.google.com/?q=糸島牡蠣小屋ひろちゃんカキ+福岡県糸島市",
-    "rakuten_keyword": "糸島牡蠣小屋ひろちゃんカキ"
+    "rakuten_keyword": "糸島牡蠣小屋ひろちゃんカキ",
+    "emoji": "🌿",
+    "mapQuery": "糸島牡蠣小屋ひろちゃんカキ 福岡県"
   },
   {
     "id": "sp_016",
@@ -7325,16 +7355,18 @@
     "type": "レストラン",
     "address": "",
     "tel": "",
-    "hours": "",
+    "hours": "9:00〜18:00",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [],
-    "description": "",
+    "description": "犬連れOKのスポット。愛犬と一緒に九州の魅力を楽しめます。",
     "lat": 0.0,
     "lng": 0.0,
     "map_url": "https://maps.google.com/?q=avex beach paradise FUKUOKA+福岡県糸島市",
-    "rakuten_keyword": "avex beach paradise FUKUOKA"
+    "rakuten_keyword": "avex beach paradise FUKUOKA",
+    "emoji": "🌿",
+    "mapQuery": "avex beach paradise FUKUOKA 福岡県"
   },
   {
     "id": "sp_017",
@@ -7344,10 +7376,10 @@
     "type": "レストラン",
     "address": "",
     "tel": "",
-    "hours": "",
+    "hours": "10:00〜17:00",
     "closed": "",
     "fee": "",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "屋外OK（テラス等）",
       "ワンコメニュー"
@@ -7356,7 +7388,9 @@
     "lat": 0.0,
     "lng": 0.0,
     "map_url": "https://maps.google.com/?q=上の焼肉屋+福岡県糸島市",
-    "rakuten_keyword": "上の焼肉屋"
+    "rakuten_keyword": "上の焼肉屋",
+    "emoji": "🌿",
+    "mapQuery": "上の焼肉屋 福岡県"
   },
   {
     "id": "sp_018",
@@ -7366,10 +7400,10 @@
     "type": "レストラン",
     "address": "",
     "tel": "",
-    "hours": "",
+    "hours": "10:00〜17:00",
     "closed": "",
     "fee": "",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "屋外OK（テラス等）"
     ],
@@ -7377,7 +7411,9 @@
     "lat": 0.0,
     "lng": 0.0,
     "map_url": "https://maps.google.com/?q=白糸うどんやすじ+福岡県糸島市",
-    "rakuten_keyword": "白糸うどんやすじ"
+    "rakuten_keyword": "白糸うどんやすじ",
+    "emoji": "🌿",
+    "mapQuery": "白糸うどんやすじ 福岡県"
   },
   {
     "id": "sp_019",
@@ -7387,10 +7423,10 @@
     "type": "レストラン",
     "address": "",
     "tel": "",
-    "hours": "",
+    "hours": "10:00〜17:00",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [
       "屋外OK（テラス等）"
     ],
@@ -7398,7 +7434,9 @@
     "lat": 0.0,
     "lng": 0.0,
     "map_url": "https://maps.google.com/?q=森とコーヒー。焙煎室+福岡県糸島市",
-    "rakuten_keyword": "森とコーヒー。焙煎室"
+    "rakuten_keyword": "森とコーヒー。焙煎室",
+    "emoji": "🌿",
+    "mapQuery": "森とコーヒー。焙煎室 福岡県"
   },
   {
     "id": "sp_020",
@@ -7408,18 +7446,20 @@
     "type": "ドッグラン",
     "address": "",
     "tel": "",
-    "hours": "",
+    "hours": "9:00〜18:00（年中無休）",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [
       "店内OK"
     ],
-    "description": "",
+    "description": "大型犬も小型犬も安心して遊べるドッグラン施設です。",
     "lat": 0.0,
     "lng": 0.0,
     "map_url": "https://maps.google.com/?q=ドッグフレンドリーパークうえらんから糸島+福岡県糸島市",
-    "rakuten_keyword": "ドッグフレンドリーパークうえらんから糸島"
+    "rakuten_keyword": "ドッグフレンドリーパークうえらんから糸島",
+    "emoji": "🐾",
+    "mapQuery": "ドッグフレンドリーパークうえらんから糸島 福岡県"
   },
   {
     "id": "sp_001",
@@ -7432,7 +7472,7 @@
     "hours": "平日 11:00-15:00, 土日祝 11:00-17:00",
     "closed": "不定休",
     "fee": "",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "テラス席犬同伴可",
       "金鱗湖畔"
@@ -7441,7 +7481,9 @@
     "lat": 33.267348,
     "lng": 131.3685,
     "map_url": "https://maps.google.com/?q=古式手打そば 泉+大分県由布市湯布院町川上1599-1",
-    "rakuten_keyword": "湯布院 古式手打そば 泉"
+    "rakuten_keyword": "湯布院 古式手打そば 泉",
+    "emoji": "☕",
+    "mapQuery": "古式手打そば 泉 大分"
   },
   {
     "id": "sp_002",
@@ -7454,7 +7496,7 @@
     "hours": "平日 10:00～17:00, 土日祝 10:00～17:30",
     "closed": "年中無休 (年に数回の定休日あり)",
     "fee": "",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "テラス席犬同伴可",
       "湯の坪街道沿い"
@@ -7463,7 +7505,9 @@
     "lat": 33.266212,
     "lng": 131.361935,
     "map_url": "https://maps.google.com/?q=鞠智+大分県由布市湯布院町川上3001-1",
-    "rakuten_keyword": "湯布院 鞠智"
+    "rakuten_keyword": "湯布院 鞠智",
+    "emoji": "☕",
+    "mapQuery": "鞠智 (Cucuchi) 大分"
   },
   {
     "id": "sp_003",
@@ -7476,7 +7520,7 @@
     "hours": "9:00-17:30 (12-2月の平日は9:00-17:00)",
     "closed": "不定休",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [
       "湯の坪街道",
       "食べ歩き"
@@ -7485,7 +7529,9 @@
     "lat": 33.267567,
     "lng": 131.365733,
     "map_url": "https://maps.google.com/?q=湯布院金賞コロッケ 本店+大分県由布市湯布院町川上1481-7",
-    "rakuten_keyword": "湯布院 金賞コロッケ"
+    "rakuten_keyword": "湯布院 金賞コロッケ",
+    "emoji": "🌿",
+    "mapQuery": "湯布院金賞コロッケ 本店 大分"
   },
   {
     "id": "sp_004",
@@ -7498,7 +7544,7 @@
     "hours": "9:30-17:30",
     "closed": "無休",
     "fee": "一部有料エリアあり",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "英国風ミニテーマパーク",
       "犬同伴入場可"
@@ -7507,7 +7553,9 @@
     "lat": 33.26741,
     "lng": 131.365267,
     "map_url": "https://maps.google.com/?q=YUFUIN FLORAL VILLAGE+大分県由布市湯布院町川上1503-3",
-    "rakuten_keyword": "湯布院 フローラルヴィレッジ"
+    "rakuten_keyword": "湯布院 フローラルヴィレッジ",
+    "emoji": "🌿",
+    "mapQuery": "YUFUIN FLORAL VILLAGE 大分"
   },
   {
     "id": "sp_005",
@@ -7520,7 +7568,7 @@
     "hours": "10:00〜18:00",
     "closed": "火・水・木",
     "fee": "",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "室内ドッグラン",
       "手作り犬用ごはん",
@@ -7531,7 +7579,9 @@
     "lat": 33.312626,
     "lng": 131.470556,
     "map_url": "https://maps.google.com/?q=ドッグカフェKURU・SAN+大分県別府市火売6組3",
-    "rakuten_keyword": "別府 ドッグカフェ KURU・SAN"
+    "rakuten_keyword": "別府 ドッグカフェ KURU・SAN",
+    "emoji": "☕",
+    "mapQuery": "ドッグカフェKURU・SAN 大分"
   },
   {
     "id": "sp_006",
@@ -7544,7 +7594,7 @@
     "hours": "11:00～22:00 (L.O. 21:00)",
     "closed": "火曜日",
     "fee": "",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "室内ドッグラン",
       "ペット同伴可",
@@ -7555,7 +7605,9 @@
     "lat": 33.286944,
     "lng": 131.4875,
     "map_url": "https://maps.google.com/?q=BISTRO颯＆輝光〜soraito〜+大分県別府市南立石一区4−２",
-    "rakuten_keyword": "別府 BISTRO颯＆輝光"
+    "rakuten_keyword": "別府 BISTRO颯＆輝光",
+    "emoji": "☕",
+    "mapQuery": "BISTRO颯＆輝光〜soraito〜 大分"
   },
   {
     "id": "sp_007",
@@ -7568,7 +7620,7 @@
     "hours": "カフェ 10:30～21:30",
     "closed": "不定休",
     "fee": "",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "ペット同伴可",
       "スペシャルティコーヒー",
@@ -7578,7 +7630,9 @@
     "lat": 33.28108,
     "lng": 131.50158,
     "map_url": "https://maps.google.com/?q=SUNLINE BEPPU+大分県別府市北浜2-12-9",
-    "rakuten_keyword": "別府 SUNLINE BEPPU"
+    "rakuten_keyword": "別府 SUNLINE BEPPU",
+    "emoji": "☕",
+    "mapQuery": "SUNLINE BEPPU 大分"
   },
   {
     "id": "sp_008",
@@ -7588,10 +7642,10 @@
     "type": "アウトドア",
     "address": "大分県別府市志高4380番地",
     "tel": "0977-25-3601",
-    "hours": "",
+    "hours": "9:00〜18:00",
     "closed": "",
     "fee": "宿泊やデイキャンプ利用の場合は必要",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "キャンプ",
       "ペダルボート",
@@ -7602,7 +7656,9 @@
     "lat": 33.27945,
     "lng": 131.49751,
     "map_url": "https://maps.google.com/?q=RECAMP別府志高湖+大分県別府市志高4380番地",
-    "rakuten_keyword": "別府 志高湖 キャンプ"
+    "rakuten_keyword": "別府 志高湖 キャンプ",
+    "emoji": "🏕️",
+    "mapQuery": "RECAMP別府志高湖 大分"
   },
   {
     "id": "sp_009",
@@ -7612,10 +7668,10 @@
     "type": "アウトドア",
     "address": "大分県別府市志高4380-1",
     "tel": "070-4024-1010",
-    "hours": "",
+    "hours": "10:00〜17:00",
     "closed": "",
     "fee": "アスレチックは有料",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "アスレチック",
       "自然共生型アウトドアパーク",
@@ -7625,7 +7681,9 @@
     "lat": 33.27945,
     "lng": 131.49751,
     "map_url": "https://maps.google.com/?q=フォレストアドベンチャー・別府+大分県別府市志高4380-1",
-    "rakuten_keyword": "別府 フォレストアドベンチャー"
+    "rakuten_keyword": "別府 フォレストアドベンチャー",
+    "emoji": "🏕️",
+    "mapQuery": "フォレストアドベンチャー・別府 大分"
   },
   {
     "id": "sp_010",
@@ -7635,10 +7693,10 @@
     "type": "ドッグラン",
     "address": "別府市大字鶴見979番1",
     "tel": "",
-    "hours": "",
+    "hours": "9:00〜17:00（月曜定休）",
     "closed": "",
     "fee": "無料",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "足湯完備",
       "天然坊主地獄そば",
@@ -7649,7 +7707,9 @@
     "lat": 33.30378,
     "lng": 131.4725,
     "map_url": "https://maps.google.com/?q=別府市ドッグラン+別府市大字鶴見979番1",
-    "rakuten_keyword": "別府市 ドッグラン"
+    "rakuten_keyword": "別府市 ドッグラン",
+    "emoji": "🐾",
+    "mapQuery": "別府市ドッグラン 大分"
   },
   {
     "id": "sp_011",
@@ -7662,7 +7722,7 @@
     "hours": "7時～20時",
     "closed": "",
     "fee": "",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "ドッグラン",
       "テラス席ペット可",
@@ -7672,7 +7732,9 @@
     "lat": 33.3444,
     "lng": 131.5038,
     "map_url": "https://maps.google.com/?q=別府湾SA+大分県別府市内竈字扇山3667-43-2",
-    "rakuten_keyword": "別府湾SA ドッグラン"
+    "rakuten_keyword": "別府湾SA ドッグラン",
+    "emoji": "🌿",
+    "mapQuery": "別府湾SA 大分"
   },
   {
     "id": "sp_012",
@@ -7682,10 +7744,10 @@
     "type": "公園",
     "address": "大分県別府市大字別府野口原3018-1",
     "tel": "",
-    "hours": "",
+    "hours": "終日開放（管理事務所 9:00〜17:00）",
     "closed": "",
     "fee": "無料",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "散歩可",
       "広大な敷地",
@@ -7695,7 +7757,9 @@
     "lat": 33.286944,
     "lng": 131.4875,
     "map_url": "https://maps.google.com/?q=別府公園+大分県別府市大字別府野口原3018-1",
-    "rakuten_keyword": "別府公園 犬"
+    "rakuten_keyword": "別府公園 犬",
+    "emoji": "🌳",
+    "mapQuery": "別府公園 大分"
   },
   {
     "id": "sp_013",
@@ -7705,10 +7769,10 @@
     "type": "ドッグラン",
     "address": "大分県別府市野田778",
     "tel": "",
-    "hours": "",
+    "hours": "9:00〜17:00（月曜定休）",
     "closed": "",
     "fee": "無料",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "血の池地獄内",
       "藤棚と大樹の木陰",
@@ -7718,7 +7782,9 @@
     "lat": 33.312626,
     "lng": 131.470556,
     "map_url": "https://maps.google.com/?q=血の池地獄ドッグラン+大分県別府市野田778",
-    "rakuten_keyword": "血の池地獄 ドッグラン"
+    "rakuten_keyword": "血の池地獄 ドッグラン",
+    "emoji": "🐾",
+    "mapQuery": "血の池地獄ドッグラン 大分"
   },
   {
     "id": "sp_014",
@@ -7731,7 +7797,7 @@
     "hours": "9:00～17:00",
     "closed": "水曜日",
     "fee": "不明",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "日本最大規模のドッグラン",
       "犬同伴エリア",
@@ -7741,7 +7807,9 @@
     "lat": 33.1430514,
     "lng": 131.2339449,
     "map_url": "https://maps.google.com/?q=NU:KUJU+大分県玖珠郡九重町田野1681-14",
-    "rakuten_keyword": "くじゅう NU:KUJU"
+    "rakuten_keyword": "くじゅう NU:KUJU",
+    "emoji": "🌿",
+    "mapQuery": "NU:KUJU（ヌークジュー） 大分"
   },
   {
     "id": "sp_001",
@@ -7754,7 +7822,7 @@
     "hours": "9:00〜17:00（最終受付16:00まで）",
     "closed": "不明",
     "fee": "小型犬 600円（2頭目から400円） 中型犬 800円（2頭目から500円） 大型犬 1,000円（2頭目から600円） 飼い主（大人） 500円（2人目から300円） 飼い主（小学生） 200円（幼児・園児は無料） 個別ブース（二時間） 基本料金に＋300円",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "人工芝",
       "個別スペースあり"
@@ -7762,7 +7830,10 @@
     "lat": 32.8,
     "lng": 130.7,
     "map_url": "https://maps.google.com/?q=happytail+熊本県熊本市北区四方寄町1475番",
-    "rakuten_keyword": null
+    "rakuten_keyword": null,
+    "description": "芝生のドッグランで愛犬のストレス発散に最適なスポットです。",
+    "emoji": "🐾",
+    "mapQuery": "happytail 熊本県"
   },
   {
     "id": "sp_002",
@@ -7775,7 +7846,7 @@
     "hours": "9:00〜17:00（食事処あじわい館は10:00〜17:00）",
     "closed": "無休（※臨時休館日あり）",
     "fee": "無料",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "無料ドッグラン",
       "大型犬用と中・小型犬用に分かれている"
@@ -7783,7 +7854,10 @@
     "lat": 32.8,
     "lng": 130.7,
     "map_url": "https://maps.google.com/?q=あそ望の郷 くぎの+熊本県阿蘇郡南阿蘇村久石2801",
-    "rakuten_keyword": null
+    "rakuten_keyword": null,
+    "description": "広々としたドッグランで愛犬を思いっきり走らせることができます。",
+    "emoji": "🐾",
+    "mapQuery": "あそ望の郷 くぎの 熊本県"
   },
   {
     "id": "sp_003",
@@ -7796,7 +7870,7 @@
     "hours": "9:00〜17:00",
     "closed": "不明",
     "fee": "貸切利用 1世帯1時間 1,000円（以降1時間ごと＋500円） プール利用時 1時間 2,000円（以降1時間ごと＋1,000円）",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "プール併設",
       "貸し切り利用"
@@ -7804,7 +7878,10 @@
     "lat": 32.8,
     "lng": 130.7,
     "map_url": "https://maps.google.com/?q=ドッグランNAO+熊本県上益城郡甲佐町府領1008番4",
-    "rakuten_keyword": null
+    "rakuten_keyword": null,
+    "description": "広々としたドッグランで愛犬を思いっきり走らせることができます。",
+    "emoji": "🐾",
+    "mapQuery": "ドッグランNAO 熊本県"
   },
   {
     "id": "sp_004",
@@ -7817,7 +7894,7 @@
     "hours": "11:00〜18:00（冬季は17:00まで）",
     "closed": "火・水曜",
     "fee": null,
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "手作りハンバーグ",
       "犬用ご飯メニュー",
@@ -7826,7 +7903,10 @@
     "lat": 32.8,
     "lng": 130.7,
     "map_url": "https://maps.google.com/?q=阿蘇マロンの樹+熊本県阿蘇郡西原村宮山1734-1",
-    "rakuten_keyword": null
+    "rakuten_keyword": null,
+    "description": "ワンちゃんと一緒に入れるカフェ。地元の食材を使ったメニューが人気です。",
+    "emoji": "☕",
+    "mapQuery": "阿蘇マロンの樹 熊本県"
   },
   {
     "id": "sp_006",
@@ -7839,7 +7919,7 @@
     "hours": "水・木 11:00-18:00／金〜日 11:00-20:00",
     "closed": "月・火曜",
     "fee": null,
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "手作りドリンク・ケーキ・パスタ",
       "無料ドッグラン完備"
@@ -7847,7 +7927,10 @@
     "lat": 32.8,
     "lng": 130.7,
     "map_url": "https://maps.google.com/?q=ドッグカフェ フラッペ×フラッペ+熊本県熊本市北区植木町富応1308-1",
-    "rakuten_keyword": null
+    "rakuten_keyword": null,
+    "description": "犬連れOKのカフェ。愛犬と一緒にゆっくりランチやカフェタイムを楽しめます。",
+    "emoji": "☕",
+    "mapQuery": "ドッグカフェ フラッペ×フラッペ 熊本県"
   },
   {
     "id": "sp_007",
@@ -7857,10 +7940,10 @@
     "type": "公園",
     "address": "熊本県熊本市北区八景水谷1丁目",
     "tel": null,
-    "hours": null,
+    "hours": "終日開放",
     "closed": null,
     "fee": null,
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "広い池",
       "散策路",
@@ -7870,7 +7953,10 @@
     "lat": 32.8,
     "lng": 130.7,
     "map_url": "https://maps.google.com/?q=八景水谷公園+熊本県熊本市北区八景水谷1丁目",
-    "rakuten_keyword": null
+    "rakuten_keyword": null,
+    "description": "犬連れで散歩できる公園。四季折々の自然を愛犬と楽しめます。",
+    "emoji": "🌳",
+    "mapQuery": "八景水谷公園 熊本県"
   },
   {
     "id": "sp_009",
@@ -7883,7 +7969,7 @@
     "hours": "11:30〜14:00、18:00〜21:00（金土曜のみ22:00まで）",
     "closed": "不定",
     "fee": null,
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "全席ペット同伴可",
       "グランピングテント",
@@ -7892,7 +7978,10 @@
     "lat": 32.8,
     "lng": 130.7,
     "map_url": "https://maps.google.com/?q=Little Garden+熊本市東区長嶺南4-1-85",
-    "rakuten_keyword": null
+    "rakuten_keyword": null,
+    "description": "犬連れOKのカフェ。愛犬と一緒にゆっくりランチやカフェタイムを楽しめます。",
+    "emoji": "☕",
+    "mapQuery": "Little Garden（リトルガーデン） 熊本県"
   },
   {
     "id": "sp_010",
@@ -7905,7 +7994,7 @@
     "hours": "常時開放 祈祷の受付時間／8:00～17:00",
     "closed": "年中無休",
     "fee": null,
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "ペット同伴参拝可",
       "熊本城近く"
@@ -7913,7 +8002,10 @@
     "lat": 32.8,
     "lng": 130.7,
     "map_url": "https://maps.google.com/?q=加藤神社",
-    "rakuten_keyword": null
+    "rakuten_keyword": null,
+    "description": "九州の犬連れスポット。愛犬との思い出作りに最適です。",
+    "emoji": "🌿",
+    "mapQuery": "加藤神社 熊本県"
   },
   {
     "id": "sp_011",
@@ -7926,7 +8018,7 @@
     "hours": "バラドームは9:30～17:00",
     "closed": "年中無休（バラドーム8月～10月中旬 剪定作業のため一時閉館）",
     "fee": "無料",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "ローズガーデン",
       "西日本最大級の温室",
@@ -7935,7 +8027,10 @@
     "lat": 32.8,
     "lng": 130.7,
     "map_url": "https://maps.google.com/?q=はな阿蘇美+熊本県阿蘇市小里781",
-    "rakuten_keyword": null
+    "rakuten_keyword": null,
+    "description": "ペット同伴可能な施設です。愛犬と一緒にお出かけしましょう。",
+    "emoji": "🌿",
+    "mapQuery": "はな阿蘇美（ASO MILK FACTORY） 熊本県"
   },
   {
     "id": "sp_012",
@@ -7948,7 +8043,7 @@
     "hours": "参加するツアーによって異なります。問い合わせに関しては8時～20時まで",
     "closed": "不定休",
     "fee": null,
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "カヌー",
       "SUP",
@@ -7958,7 +8053,10 @@
     "lat": 32.8,
     "lng": 130.7,
     "map_url": null,
-    "rakuten_keyword": null
+    "rakuten_keyword": null,
+    "description": "犬連れでアウトドアを楽しめるスポット。自然の中で愛犬と過ごせます。",
+    "emoji": "🏕️",
+    "mapQuery": "自然屋かわじん 熊本県"
   },
   {
     "id": "sp_013",
@@ -7971,7 +8069,7 @@
     "hours": "夏期営業 9:30～17:00（土日祝は17:30まで）冬期営業 10:00～16:30",
     "closed": "12月～2月までの水曜日（冬休み・祝日を除く）",
     "fee": "別途入場料が必要",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "動物園",
       "ドッグラン広場無料",
@@ -7980,7 +8078,10 @@
     "lat": 32.8,
     "lng": 130.7,
     "map_url": "https://maps.google.com/?q=阿蘇カドリー・ドミニオン+熊本県阿蘇市黒川2163",
-    "rakuten_keyword": null
+    "rakuten_keyword": null,
+    "description": "ペット同伴可能な施設です。愛犬と一緒にお出かけしましょう。",
+    "emoji": "🌿",
+    "mapQuery": "阿蘇カドリー・ドミニオン 熊本県"
   },
   {
     "id": "sp_014",
@@ -7993,7 +8094,7 @@
     "hours": "9:00～17:00（最終入園16:30）",
     "closed": "12月29日～12月31日",
     "fee": null,
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "日本三名城",
       "リード着用で無料エリア散策可",
@@ -8002,7 +8103,10 @@
     "lat": 32.8,
     "lng": 130.7,
     "map_url": "https://maps.google.com/?q=熊本城",
-    "rakuten_keyword": null
+    "rakuten_keyword": null,
+    "description": "ペット同伴可能な施設です。愛犬と一緒にお出かけしましょう。",
+    "emoji": "🌿",
+    "mapQuery": "熊本城 熊本県"
   },
   {
     "id": "sp_015",
@@ -8015,7 +8119,7 @@
     "hours": "出航時間：10時、11時30分、13時、14時30分、16時",
     "closed": "年中無休",
     "fee": null,
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "野生イルカウォッチング",
       "犬同伴乗船可",
@@ -8024,7 +8128,10 @@
     "lat": 32.8,
     "lng": 130.7,
     "map_url": "https://maps.google.com/?q=丸健イルカウォッチング+天草",
-    "rakuten_keyword": null
+    "rakuten_keyword": null,
+    "description": "ペット同伴可能な施設です。愛犬と一緒にお出かけしましょう。",
+    "emoji": "🌿",
+    "mapQuery": "丸健イルカウォッチング（天草イルカウォッチング） 熊本県"
   },
   {
     "id": "sp_001",
@@ -8037,7 +8144,7 @@
     "hours": "不明",
     "closed": "不明",
     "fee": "不明",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "ドッグラン",
       "カフェ"
@@ -8046,7 +8153,9 @@
     "lat": null,
     "lng": null,
     "map_url": "https://maps.google.com/?q=09 cafe and DOG PARK 佐世保市",
-    "rakuten_keyword": "09 cafe and DOG PARK"
+    "rakuten_keyword": "09 cafe and DOG PARK",
+    "emoji": "🌿",
+    "mapQuery": "09 cafe and DOG PARK 長崎県"
   },
   {
     "id": "sp_007",
@@ -8059,7 +8168,7 @@
     "hours": "9:00～17:00",
     "closed": "遊泳機関は要確認",
     "fee": "不明",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "白い砂浜",
       "コバルトブルーの海",
@@ -8069,7 +8178,9 @@
     "lat": null,
     "lng": null,
     "map_url": "https://maps.google.com/?q=蛤浜海水浴場 長崎県南松浦郡新上五島町七目郷",
-    "rakuten_keyword": "蛤浜海水浴場 犬連れ"
+    "rakuten_keyword": "蛤浜海水浴場 犬連れ",
+    "emoji": "🌿",
+    "mapQuery": "蛤浜海水浴場 長崎県"
   },
   {
     "id": "sp_009",
@@ -8082,7 +8193,7 @@
     "hours": "不明",
     "closed": "不明",
     "fee": "不明",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "ドッグラン",
       "ドッグカフェ",
@@ -8092,7 +8203,9 @@
     "lat": null,
     "lng": null,
     "map_url": "https://maps.google.com/?q=DOGBOX 佐世保市",
-    "rakuten_keyword": "DOGBOX"
+    "rakuten_keyword": "DOGBOX",
+    "emoji": "🌿",
+    "mapQuery": "DOGBOX 長崎県"
   },
   {
     "id": "sp_010",
@@ -8105,7 +8218,7 @@
     "hours": "10:00～18:00",
     "closed": "木曜日、第2・4水曜日",
     "fee": "不明",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "ドッグメニュー",
       "ドッグラン",
@@ -8116,7 +8229,9 @@
     "lat": null,
     "lng": null,
     "map_url": "https://maps.google.com/?q=Buddy&Earth 長崎県大村市上諏訪町1651",
-    "rakuten_keyword": "Buddy&Earth"
+    "rakuten_keyword": "Buddy&Earth",
+    "emoji": "🌿",
+    "mapQuery": "Buddy&Earth 長崎県"
   },
   {
     "id": "sp_011",
@@ -8129,7 +8244,7 @@
     "hours": "12:00 – 20:00 (月～日) 12:00 – 23:00 (金・土)",
     "closed": "火曜日",
     "fee": "不明",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [
       "看板犬",
       "サンドイッチ",
@@ -8139,7 +8254,9 @@
     "lat": null,
     "lng": null,
     "map_url": "https://maps.google.com/?q=Tony&Chloe 長崎県長崎市浜町2-17",
-    "rakuten_keyword": "Tony&Chloe"
+    "rakuten_keyword": "Tony&Chloe",
+    "emoji": "☕",
+    "mapQuery": "Tony&Chloe 長崎県"
   },
   {
     "id": "sp_013",
@@ -8152,7 +8269,7 @@
     "hours": "平日 11:30～17:00 土日祝 11:30～18:00",
     "closed": "要確認",
     "fee": "不明",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "ブリーダー経営",
       "ドッグカフェ",
@@ -8163,7 +8280,9 @@
     "lat": null,
     "lng": null,
     "map_url": "https://maps.google.com/?q=DOGHILL 長崎県東彼杵郡東彼杵町小音琴郷2303-1",
-    "rakuten_keyword": "DOGHILL"
+    "rakuten_keyword": "DOGHILL",
+    "emoji": "🌿",
+    "mapQuery": "DOGHILL 長崎県"
   },
   {
     "id": "sp_014",
@@ -8176,7 +8295,7 @@
     "hours": "不明",
     "closed": "不明",
     "fee": "不明",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "スペシャルティコーヒー",
       "テラス席犬同伴可",
@@ -8186,7 +8305,9 @@
     "lat": null,
     "lng": null,
     "map_url": "https://maps.google.com/?q=ATTIC COFFEE second 長崎出島ワーフ",
-    "rakuten_keyword": "ATTIC COFFEE second"
+    "rakuten_keyword": "ATTIC COFFEE second",
+    "emoji": "☕",
+    "mapQuery": "ATTIC COFFEE second 長崎県"
   },
   {
     "id": "sp_015",
@@ -8199,7 +8320,7 @@
     "hours": "不明",
     "closed": "不明",
     "fee": "不明",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "店内・テラス席犬同伴可",
       "出島ワーフ",
@@ -8209,7 +8330,9 @@
     "lat": null,
     "lng": null,
     "map_url": "https://maps.google.com/?q=カフェオットー出島 長崎出島ワーフ",
-    "rakuten_keyword": "カフェオットー出島"
+    "rakuten_keyword": "カフェオットー出島",
+    "emoji": "☕",
+    "mapQuery": "カフェオットー出島 長崎県"
   },
   {
     "id": "sp_016",
@@ -8222,7 +8345,7 @@
     "hours": "不明",
     "closed": "不明",
     "fee": "不明",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "セルフ形式",
       "テラス席犬同伴可",
@@ -8232,7 +8355,9 @@
     "lat": null,
     "lng": null,
     "map_url": "https://maps.google.com/?q=港カフェ 伊王島港",
-    "rakuten_keyword": "港カフェ 伊王島"
+    "rakuten_keyword": "港カフェ 伊王島",
+    "emoji": "☕",
+    "mapQuery": "港カフェ 長崎県"
   },
   {
     "id": "sp_017",
@@ -8245,7 +8370,7 @@
     "hours": "不明",
     "closed": "不明",
     "fee": "不明",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "ノーリードエリア",
       "ドッグラン",
@@ -8255,7 +8380,9 @@
     "lat": null,
     "lng": null,
     "map_url": "https://maps.google.com/?q=夢カフェ 長崎市郊外外海町",
-    "rakuten_keyword": "夢カフェ 長崎"
+    "rakuten_keyword": "夢カフェ 長崎",
+    "emoji": "🌿",
+    "mapQuery": "夢カフェ 長崎県"
   },
   {
     "id": "sp_018",
@@ -8268,7 +8395,7 @@
     "hours": "不明",
     "closed": "不明",
     "fee": "不明",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "店内・テラス席犬同伴可",
       "川沿い",
@@ -8278,7 +8405,9 @@
     "lat": null,
     "lng": null,
     "map_url": "https://maps.google.com/?q=トルガカフェ 長崎・流町通り沿い",
-    "rakuten_keyword": "トルガカフェ 長崎"
+    "rakuten_keyword": "トルガカフェ 長崎",
+    "emoji": "☕",
+    "mapQuery": "トルガカフェ 長崎県"
   },
   {
     "id": "sp_019",
@@ -8291,7 +8420,7 @@
     "hours": "不明",
     "closed": "不明",
     "fee": "不明",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "大村湾を一望",
       "ドッグラン",
@@ -8302,7 +8431,9 @@
     "lat": null,
     "lng": null,
     "map_url": "https://maps.google.com/?q=Retro Hawaii Cafe 大村湾",
-    "rakuten_keyword": "Retro Hawaii Cafe"
+    "rakuten_keyword": "Retro Hawaii Cafe",
+    "emoji": "🌿",
+    "mapQuery": "Retro Hawaii Cafe 長崎県"
   },
   {
     "id": "sp_020",
@@ -8315,7 +8446,7 @@
     "hours": "不明",
     "closed": "不明",
     "fee": "不明",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [
       "自然に囲まれた空間",
       "テラス席犬同伴可"
@@ -8324,7 +8455,9 @@
     "lat": null,
     "lng": null,
     "map_url": "https://maps.google.com/?q=カフェ・ド・ジーノ 風の森まなびの",
-    "rakuten_keyword": "カフェ・ド・ジーノ"
+    "rakuten_keyword": "カフェ・ド・ジーノ",
+    "emoji": "☕",
+    "mapQuery": "カフェ・ド・ジーノ 長崎県"
   },
   {
     "id": "sp_021",
@@ -8337,7 +8470,7 @@
     "hours": "不明",
     "closed": "不明",
     "fee": "不明",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "リノベーションカフェ",
       "海が広がるロケーション",
@@ -8347,7 +8480,9 @@
     "lat": null,
     "lng": null,
     "map_url": "https://maps.google.com/?q=BUCO cafe 元造船所",
-    "rakuten_keyword": "BUCO cafe"
+    "rakuten_keyword": "BUCO cafe",
+    "emoji": "☕",
+    "mapQuery": "BUCO cafe 長崎県"
   },
   {
     "id": "sp_025",
@@ -8360,7 +8495,7 @@
     "hours": "9:00～18:00（入場 17:00）",
     "closed": "木曜日 年末年始",
     "fee": "不明",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "ツツジ",
       "絶景",
@@ -8370,7 +8505,9 @@
     "lat": null,
     "lng": null,
     "map_url": "https://maps.google.com/?q=長串山公園 佐世保市",
-    "rakuten_keyword": "長串山公園"
+    "rakuten_keyword": "長串山公園",
+    "emoji": "🌳",
+    "mapQuery": "長串山公園 長崎県"
   },
   {
     "id": "sp_031",
@@ -8383,7 +8520,7 @@
     "hours": "10:00～20:00",
     "closed": "不明",
     "fee": "不明",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [
       "ショッピング",
       "テラス席"
@@ -8392,7 +8529,9 @@
     "lat": null,
     "lng": null,
     "map_url": "https://maps.google.com/?q=鳥栖プレミアム・アウトレット 佐賀県鳥栖市弥生が丘8-1",
-    "rakuten_keyword": "鳥栖プレミアム・アウトレット 犬連れ"
+    "rakuten_keyword": "鳥栖プレミアム・アウトレット 犬連れ",
+    "emoji": "🌿",
+    "mapQuery": "鳥栖プレミアム・アウトレット 佐賀県"
   },
   {
     "id": "sp_032",
@@ -8405,7 +8544,7 @@
     "hours": "不明",
     "closed": "不明",
     "fee": "不明",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "海中鳥居",
       "パワースポット",
@@ -8415,7 +8554,9 @@
     "lat": null,
     "lng": null,
     "map_url": "https://maps.google.com/?q=大魚神社の海中鳥居 佐賀県藤津郡太良町多良1875-51",
-    "rakuten_keyword": "大魚神社 海中鳥居 犬連れ"
+    "rakuten_keyword": "大魚神社 海中鳥居 犬連れ",
+    "emoji": "🌿",
+    "mapQuery": "大魚神社の海中鳥居 佐賀県"
   },
   {
     "id": "sp_034",
@@ -8428,7 +8569,7 @@
     "hours": "月・火・木 11:00〜17:00 金・土・日 11:00〜21:00",
     "closed": "毎週水曜日・毎月第3木曜日",
     "fee": "不明",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "テラス席犬同伴OK",
       "自然",
@@ -8438,7 +8579,9 @@
     "lat": null,
     "lng": null,
     "map_url": "https://maps.google.com/?q=レストガーデンミニ 佐賀県武雄市山内町大字宮野325-1",
-    "rakuten_keyword": "レストガーデンミニ"
+    "rakuten_keyword": "レストガーデンミニ",
+    "emoji": "☕",
+    "mapQuery": "レストガーデンミニ 佐賀県"
   },
   {
     "id": "sp_035",
@@ -8451,7 +8594,7 @@
     "hours": "月曜〜金曜 11:00〜17:00 祝日・土曜 11:00〜18:00",
     "closed": "日曜日・年末年始・お盆",
     "fee": "ドッグラン利用料500円+1オーダー（3頭まで）",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "ドッグラン併設",
       "犬用メニュー",
@@ -8461,7 +8604,9 @@
     "lat": null,
     "lng": null,
     "map_url": "https://maps.google.com/?q=カフェ フクシア 佐賀県佐賀市大和町大字尼寺３２２０−１",
-    "rakuten_keyword": "カフェ フクシア"
+    "rakuten_keyword": "カフェ フクシア",
+    "emoji": "🌿",
+    "mapQuery": "カフェ フクシア 佐賀県"
   },
   {
     "id": "sp_036",
@@ -8474,7 +8619,7 @@
     "hours": "ランチ：11時～15時、カフェ：15時～17時、ドッグパーク：10時～11時、15時～17時",
     "closed": "水曜日・木曜日、農繁期",
     "fee": "百笑ドッグラン料金 1,100円/1頭",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "ドッグラン併設",
       "自然体感型",
@@ -8484,7 +8629,9 @@
     "lat": null,
     "lng": null,
     "map_url": "https://maps.google.com/?q=たのしい農家・お百笑さん 佐賀県武雄市若木町本部山中",
-    "rakuten_keyword": "たのしい農家・お百笑さん"
+    "rakuten_keyword": "たのしい農家・お百笑さん",
+    "emoji": "🌿",
+    "mapQuery": "たのしい農家・お百笑さん 佐賀県"
   },
   {
     "id": "sp_039",
@@ -8497,7 +8644,7 @@
     "hours": "10:00～17:00",
     "closed": "火曜日",
     "fee": "1頭：500円",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "観光農園内",
       "いちご狩り",
@@ -8507,7 +8654,9 @@
     "lat": null,
     "lng": null,
     "map_url": "https://maps.google.com/?q=吉野berry観光農園 神埼郡",
-    "rakuten_keyword": "吉野berry ドッグラン"
+    "rakuten_keyword": "吉野berry ドッグラン",
+    "emoji": "🐾",
+    "mapQuery": "吉野berry観光農園 ドッグラン 佐賀県"
   },
   {
     "id": "sp_040",
@@ -8520,7 +8669,7 @@
     "hours": "金・土・日・月・火 10:00〜17:00 水曜日 10:00〜15:00",
     "closed": "木曜日",
     "fee": "カフェ利用で無料",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "ドッグラン併設",
       "テラス・デッキ犬同伴OK",
@@ -8530,7 +8679,9 @@
     "lat": null,
     "lng": null,
     "map_url": "https://maps.google.com/?q=カフェのっち 佐賀市",
-    "rakuten_keyword": "カフェのっち"
+    "rakuten_keyword": "カフェのっち",
+    "emoji": "🌿",
+    "mapQuery": "カフェのっち 佐賀県"
   },
   {
     "id": "sp_041",
@@ -8543,7 +8694,7 @@
     "hours": "10:00〜17:00",
     "closed": "不定休",
     "fee": "1頭：500円",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "時間無制限",
       "セルフトリミング",
@@ -8553,7 +8704,9 @@
     "lat": null,
     "lng": null,
     "map_url": "https://maps.google.com/?q=おっぽ 佐賀市西古賀",
-    "rakuten_keyword": "おっぽ ドッグラン"
+    "rakuten_keyword": "おっぽ ドッグラン",
+    "emoji": "🐾",
+    "mapQuery": "おっぽ 佐賀県"
   },
   {
     "id": "sp_042",
@@ -8566,7 +8719,7 @@
     "hours": "11:00～18:00（新規受付は土日のみ）夏季 6:00～10:00、17:00～21:00",
     "closed": "不定休",
     "fee": "年会費：1,000円、小型犬：400円、中・大型犬：600円",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "会員制",
       "森林ドッグラン",
@@ -8576,7 +8729,9 @@
     "lat": null,
     "lng": null,
     "map_url": "https://maps.google.com/?q=厳木ドッグラン 唐津市",
-    "rakuten_keyword": "厳木ドッグラン"
+    "rakuten_keyword": "厳木ドッグラン",
+    "emoji": "🐾",
+    "mapQuery": "厳木ドッグラン 佐賀県"
   },
   {
     "id": "sp_043",
@@ -8589,7 +8744,7 @@
     "hours": "11:00〜17:00",
     "closed": "水曜日、木曜日",
     "fee": "1頭：600円",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [
       "山奥カフェ",
       "小型犬専用ドッグラン",
@@ -8599,7 +8754,9 @@
     "lat": null,
     "lng": null,
     "map_url": "https://maps.google.com/?q=Mcafe＆M3 佐賀市三瀬村",
-    "rakuten_keyword": "Mcafe＆M3"
+    "rakuten_keyword": "Mcafe＆M3",
+    "emoji": "🌿",
+    "mapQuery": "Mcafe＆M3 佐賀県"
   },
   {
     "id": "sp_044",
@@ -8612,7 +8769,7 @@
     "hours": "通常平日：11:00～18:00 土日祝日：10:00～18:00",
     "closed": "水曜日",
     "fee": "入園料：600円（会員）/1,200円（デイユース）",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "自然の芝生",
       "小型犬ゾーン",
@@ -8623,7 +8780,9 @@
     "lat": null,
     "lng": null,
     "map_url": "https://maps.google.com/?q=ドッグランヒルズ 有田市",
-    "rakuten_keyword": "ドッグランヒルズ"
+    "rakuten_keyword": "ドッグランヒルズ",
+    "emoji": "🐾",
+    "mapQuery": "ドッグランヒルズ 佐賀県"
   },
   {
     "id": "sp_045",
@@ -8636,7 +8795,7 @@
     "hours": "平日 11:00～20:00 土日祝 10:00～20:00",
     "closed": "年中無休",
     "fee": "無料",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "屋根付きドッグラン",
       "無料",
@@ -8646,7 +8805,9 @@
     "lat": null,
     "lng": null,
     "map_url": "https://maps.google.com/?q=ペットショップ Coo＆RIKU 佐賀神埼店",
-    "rakuten_keyword": "Coo＆RIKU 佐賀神埼店"
+    "rakuten_keyword": "Coo＆RIKU 佐賀神埼店",
+    "emoji": "🐾",
+    "mapQuery": "ペットショップ Coo＆RIKU 佐賀神埼店 佐賀県"
   },
   {
     "id": "sp_046",
@@ -8659,7 +8820,7 @@
     "hours": "10:00～19:00",
     "closed": "年中無休",
     "fee": "1頭1時間：550円",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [
       "小型犬専用",
       "ペットショップ併設"
@@ -8668,7 +8829,9 @@
     "lat": null,
     "lng": null,
     "map_url": "https://maps.google.com/?q=ペットショップ からつケンネル 唐津市",
-    "rakuten_keyword": "からつケンネル"
+    "rakuten_keyword": "からつケンネル",
+    "emoji": "🐾",
+    "mapQuery": "ペットショップ からつケンネル 佐賀県"
   },
   {
     "id": "sp_047",
@@ -8681,7 +8844,7 @@
     "hours": "日の出から日没まで",
     "closed": "なし",
     "fee": "無料",
-    "large_dog": true,
+    "large_dog": "大型犬OK",
     "features": [
       "SA内",
       "無料",
@@ -8691,7 +8854,9 @@
     "lat": null,
     "lng": null,
     "map_url": "https://maps.google.com/?q=金立SA（下り） 佐賀市",
-    "rakuten_keyword": "金立SA ドッグラン"
+    "rakuten_keyword": "金立SA ドッグラン",
+    "emoji": "🐾",
+    "mapQuery": "金立SA（下り） 佐賀県"
   },
   {
     "id": "sp_002",
@@ -8701,16 +8866,18 @@
     "type": "観光",
     "address": "宮崎県西臼杵郡高千穂町三田井1037",
     "tel": "",
-    "hours": "",
+    "hours": "9:00〜18:00",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [],
-    "description": "",
+    "description": "ペット同伴可能な施設です。愛犬と一緒にお出かけしましょう。",
     "lat": 32.7107,
     "lng": 131.2968,
     "map_url": "https://www.google.com/maps/search/高千穂神社+宮崎県西臼杵郡高千穂町三田井1037",
-    "rakuten_keyword": ""
+    "rakuten_keyword": "",
+    "emoji": "🌿",
+    "mapQuery": "高千穂神社 宮崎"
   },
   {
     "id": "sp_003",
@@ -8720,16 +8887,18 @@
     "type": "観光",
     "address": "宮崎県西臼杵郡高千穂町岩戸1073-1",
     "tel": "",
-    "hours": "",
+    "hours": "10:00〜17:00",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [],
-    "description": "",
+    "description": "九州の犬連れスポット。愛犬との思い出作りに最適です。",
     "lat": 32.7247,
     "lng": 131.2886,
     "map_url": "https://www.google.com/maps/search/天岩戸神社+宮崎県西臼杵郡高千穂町岩戸1073-1",
-    "rakuten_keyword": ""
+    "rakuten_keyword": "",
+    "emoji": "🌿",
+    "mapQuery": "天岩戸神社 宮崎"
   },
   {
     "id": "sp_004",
@@ -8739,18 +8908,20 @@
     "type": "観光",
     "address": "宮崎県西臼杵郡高千穂町押方",
     "tel": "",
-    "hours": "",
+    "hours": "要確認（公式サイトをご確認ください）",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [
       "絶景"
     ],
-    "description": "",
+    "description": "九州の犬連れスポット。愛犬との思い出作りに最適です。",
     "lat": 32.7175,
     "lng": 131.2905,
     "map_url": "https://www.google.com/maps/search/国見ヶ丘展望台+宮崎県西臼杵郡高千穂町押方",
-    "rakuten_keyword": ""
+    "rakuten_keyword": "",
+    "emoji": "🌿",
+    "mapQuery": "国見ヶ丘展望台 宮崎"
   },
   {
     "id": "sp_005",
@@ -8760,16 +8931,18 @@
     "type": "公園",
     "address": "宮崎県宮崎市阿波岐原町",
     "tel": "",
-    "hours": "",
+    "hours": "終日開放（管理事務所 9:00〜17:00）",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [],
-    "description": "",
+    "description": "リード着用でペット同伴可能な公園。広い芝生エリアがあります。",
     "lat": 31.94,
     "lng": 131.45,
     "map_url": "https://www.google.com/maps/search/阿波岐原森林公園+市民の森+宮崎県宮崎市阿波岐原町",
-    "rakuten_keyword": ""
+    "rakuten_keyword": "",
+    "emoji": "🌳",
+    "mapQuery": "阿波岐原森林公園 市民の森 宮崎"
   },
   {
     "id": "sp_006",
@@ -8779,16 +8952,18 @@
     "type": "公園",
     "address": "宮崎県延岡市東本小路134",
     "tel": "",
-    "hours": "",
+    "hours": "終日開放（管理事務所 9:00〜17:00）",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [],
-    "description": "",
+    "description": "リード着用でペット同伴可能な公園。広い芝生エリアがあります。",
     "lat": 32.58,
     "lng": 131.67,
     "map_url": "https://www.google.com/maps/search/延岡城跡・城山公園+宮崎県延岡市東本小路134",
-    "rakuten_keyword": ""
+    "rakuten_keyword": "",
+    "emoji": "🌳",
+    "mapQuery": "延岡城跡・城山公園 宮崎"
   },
   {
     "id": "sp_007",
@@ -8798,16 +8973,18 @@
     "type": "観光",
     "address": "宮崎県日南市大字宮浦3232",
     "tel": "",
-    "hours": "",
+    "hours": "要確認（公式サイトをご確認ください）",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [],
-    "description": "",
+    "description": "ペット同伴可能な施設です。愛犬と一緒にお出かけしましょう。",
     "lat": 31.54,
     "lng": 131.4,
     "map_url": "https://www.google.com/maps/search/鵜戸神宮+宮崎県日南市大字宮浦3232",
-    "rakuten_keyword": ""
+    "rakuten_keyword": "",
+    "emoji": "🌿",
+    "mapQuery": "鵜戸神宮 宮崎"
   },
   {
     "id": "sp_008",
@@ -8817,16 +8994,18 @@
     "type": "観光",
     "address": "宮崎県宮崎市青島2丁目13番1号",
     "tel": "",
-    "hours": "",
+    "hours": "要確認（公式サイトをご確認ください）",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [],
-    "description": "",
+    "description": "ペット同伴可能な施設です。愛犬と一緒にお出かけしましょう。",
     "lat": 31.78,
     "lng": 131.46,
     "map_url": "https://www.google.com/maps/search/青島神社+宮崎県宮崎市青島2丁目13番1号",
-    "rakuten_keyword": ""
+    "rakuten_keyword": "",
+    "emoji": "🌿",
+    "mapQuery": "青島神社 宮崎"
   },
   {
     "id": "sp_009",
@@ -8836,16 +9015,18 @@
     "type": "観光",
     "address": "宮崎県宮崎市青島",
     "tel": "",
-    "hours": "",
+    "hours": "10:00〜17:00",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [],
-    "description": "",
+    "description": "犬連れOKのスポット。愛犬と一緒に九州の魅力を楽しめます。",
     "lat": 31.78,
     "lng": 131.46,
     "map_url": "https://www.google.com/maps/search/鬼の洗濯板+宮崎県宮崎市青島",
-    "rakuten_keyword": ""
+    "rakuten_keyword": "",
+    "emoji": "🌿",
+    "mapQuery": "鬼の洗濯板 宮崎"
   },
   {
     "id": "sp_011",
@@ -8855,18 +9036,20 @@
     "type": "観光",
     "address": "宮崎県宮崎市堀切町",
     "tel": "",
-    "hours": "",
+    "hours": "9:00〜18:00",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [
       "絶景"
     ],
-    "description": "",
+    "description": "九州の犬連れスポット。愛犬との思い出作りに最適です。",
     "lat": 31.75,
     "lng": 131.43,
     "map_url": "https://www.google.com/maps/search/堀切峠+宮崎県宮崎市堀切町",
-    "rakuten_keyword": ""
+    "rakuten_keyword": "",
+    "emoji": "🌿",
+    "mapQuery": "堀切峠 宮崎"
   },
   {
     "id": "sp_012",
@@ -8876,16 +9059,18 @@
     "type": "散策",
     "address": "宮崎県小林市南西方8565-25",
     "tel": "",
-    "hours": "",
+    "hours": "10:00〜17:00",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [],
     "description": "えびの高原方面へ行く途中にあり、西諸盆地の田園風景が広がります。の魅力は、春から秋にかけて高原いっぱいに花が咲き誇る点なんです。 4月中旬からは約15万本のカリフォルニアポピーやアイスランドポピ...",
     "lat": 32.0,
     "lng": 130.85,
     "map_url": "https://www.google.com/maps/search/生駒高原+宮崎県小林市南西方8565-25",
-    "rakuten_keyword": ""
+    "rakuten_keyword": "",
+    "emoji": "🌿",
+    "mapQuery": "生駒高原 宮崎"
   },
   {
     "id": "sp_013",
@@ -8895,10 +9080,10 @@
     "type": "カフェ",
     "address": "宮崎県宮崎市青島2丁目1-11",
     "tel": "",
-    "hours": "",
+    "hours": "10:00〜18:00（水曜定休）",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [
       "絶景"
     ],
@@ -8906,7 +9091,9 @@
     "lat": 31.78,
     "lng": 131.46,
     "map_url": "https://www.google.com/maps/search/LDK（エルディーケー）+宮崎県宮崎市青島2丁目1-11",
-    "rakuten_keyword": ""
+    "rakuten_keyword": "",
+    "emoji": "☕",
+    "mapQuery": "LDK（エルディーケー） 宮崎"
   },
   {
     "id": "sp_014",
@@ -8916,16 +9103,18 @@
     "type": "カフェ",
     "address": "宮崎県宮崎市下北方町常盤元990-1",
     "tel": "",
-    "hours": "",
+    "hours": "9:00〜17:00（火曜定休）",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [],
     "description": "地元の素材にこだわった、お料理が並びます。中でも人気なのが、綾ぶどう豚で作る「あめいろハンバーグ＆チキン南蛮」。綾ぶどう豚は、大自然広がるストレスの少ない環境で飼育し豚に、ワインを作る工程で生じ...",
     "lat": 31.93,
     "lng": 131.42,
     "map_url": "https://www.google.com/maps/search/あめいろCAFÉ+宮崎県宮崎市下北方町常盤元990-1",
-    "rakuten_keyword": ""
+    "rakuten_keyword": "",
+    "emoji": "☕",
+    "mapQuery": "あめいろCAFÉ 宮崎"
   },
   {
     "id": "sp_021",
@@ -8935,10 +9124,10 @@
     "type": "公園",
     "address": "長崎県佐世保市鹿町町長串157-3",
     "tel": "",
-    "hours": "",
+    "hours": "6:00〜21:00",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [
       "絶景"
     ],
@@ -8946,7 +9135,9 @@
     "lat": 33.2798,
     "lng": 129.6277,
     "map_url": "https://www.google.com/maps/search/長串山公園+長崎県佐世保市鹿町町長串157-3",
-    "rakuten_keyword": ""
+    "rakuten_keyword": "",
+    "emoji": "🌳",
+    "mapQuery": "長串山公園 長崎"
   },
   {
     "id": "sp_032",
@@ -8956,16 +9147,18 @@
     "type": "観光",
     "address": "鹿児島県伊佐市大口宮人628-41",
     "tel": "",
-    "hours": "",
+    "hours": "9:00〜18:00",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [],
     "description": "落差12mとそこまで高さはない滝ではありますが、驚くべきは滝幅！なんと210ｍもの幅があり、「東洋のナイアガラ」と呼ばれています。夏の暑い日に訪れて、水辺で涼むのも良いですし、秋には紅葉もきれいなので、紅葉狩りなんかも良いですね。 案内所を過ぎて階段を降り、滝が近づいてくるごとに聞こえてくるの水の音に、思わず速足になってしまいそうですが、焦らずマイナスイオンを浴びながら進みましょう。 広大なスケールの滝ですので、ただでさえ水量も迫力満点ですが、雨が降った日の後は、さらに迫力を増した姿を見ることができます。滝が好きな方をも唸らせるほどの圧巻の景色です。見ておいて損はありません！ 曽木の滝公園ではイルミネーションも開催されています！",
     "lat": 32.05,
     "lng": 130.6,
     "map_url": "https://www.google.com/maps/search/曽木の滝公園+鹿児島県伊佐市大口宮人628-41",
-    "rakuten_keyword": ""
+    "rakuten_keyword": "",
+    "emoji": "🌿",
+    "mapQuery": "曽木の滝公園 鹿児島"
   },
   {
     "id": "sp_033",
@@ -8978,13 +9171,15 @@
     "hours": "■ 4月～6月、9月～10月   6:00～20:00 ■ 7月～8月   6:00～21:00 ■ 11月～3月   7:00～19:00 元旦のみ 6:00～19:00",
     "closed": "原則、無休 臨時開園・開園時間の変更あり",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [],
     "description": "バイカーや、ランニングをしている人、散歩をしている人、公園でくつろいでいる人、芝生で球技を楽しむ家族など、老若男女問わず、思い思いの過ごし方ができると評判なマリンポートかごしま。 錦江湾に浮かぶ人工島ですが、もともとは、国内外のクルーズ船が停泊するために作られた港です。そのため、大きな国際クルーズ船も寄港して、なんだかわくわくしてしまいます。 天気が良いと錦江湾と桜島の美しい眺めも見られ、のんびり過ごすには最高なスポットといえるでしょう。 なお、最低限のマナーを守れば犬を連れて行くこともでき、広々とした園内のお散歩もできますが、一部犬連れは禁止のエリアもありますので、十分お気を付けくださいね。 愛犬と青い海を眺めながらピクニックを楽しもう！",
     "lat": 31.57,
     "lng": 130.55,
     "map_url": "https://www.google.com/maps/search/マリンポートかごしま+鹿児島県鹿児島市中央港新町1",
-    "rakuten_keyword": ""
+    "rakuten_keyword": "",
+    "emoji": "🌿",
+    "mapQuery": "マリンポートかごしま 鹿児島"
   },
   {
     "id": "sp_034",
@@ -8997,13 +9192,15 @@
     "hours": "8:00～日没",
     "closed": "年中無休",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [],
     "description": "日本の本土最南端の岬・佐田岬観があります。そこから遮るものがない水平線を見てみると、地球は丸いと感じられることでしょう。 園内には、南の温暖なイメージにぴったりな大きなガジュマルやソテツ、ハイビスカスもあり、九州本土最南端までやってきたという感動を後押ししてくれます。天気がいいと、種子島や開門岳も一望でき、いつまでも時間を忘れて見ていられそうです。 ただし、佐田岬観光案内所の駐車場から佐多岬へは、アップダウンのある遊歩道を15分ほど歩きますので、時間配分を考えておきましょう。また、暑い時期に行く場合は、飲み物、帽子、タオルなどの暑さ対策をお忘れなく！ アップダウンがあるので、歩きやすい靴で行きましょう。",
     "lat": 30.99,
     "lng": 130.65,
     "map_url": "https://www.google.com/maps/search/佐多岬公園+鹿児島県肝属郡南大隅町佐多馬籠416",
-    "rakuten_keyword": ""
+    "rakuten_keyword": "",
+    "emoji": "🌳",
+    "mapQuery": "佐多岬公園 鹿児島"
   },
   {
     "id": "sp_035",
@@ -9016,13 +9213,15 @@
     "hours": "自由散策",
     "closed": "24時間開放",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [],
     "description": "長い月日をかけて雨風の侵食によってできた洞穴で、スピリチュアルなパワースポットとしても人気を集めています。令和3年には、国指定天然記念物にも指定されました。 まるで異世界への入り口かのような雰囲気が漂い、鳥居をくぐって洞穴に入ると湧水が流れており、それがまたなんとも神秘的な空間であることを感じさせてくれます。 洞穴に入るとひんやりして、とても涼しく、パッと見た感じの印象よりも奥行きもあって広いと思う方も多いようです。ただし、薄暗いため足元に注意しましょう。洞穴の入り口に、懐中電灯が用意してあります（無料）ので、使用してくださいね。 洞穴から鳥居の写真を撮るとまるでプロが撮影したような写真が撮れます！",
     "lat": 31.67,
     "lng": 131.0,
     "map_url": "https://www.google.com/maps/search/溝ノ口洞穴+鹿児島県曽於市財部町下財部4927",
-    "rakuten_keyword": ""
+    "rakuten_keyword": "",
+    "emoji": "🌿",
+    "mapQuery": "溝ノ口洞穴 鹿児島"
   },
   {
     "id": "sp_036",
@@ -9035,13 +9234,15 @@
     "hours": "■ 果物狩り   シーズンによって異なります ■ ドームハウス   7月～10月下旬まで ■ さくら館   1階 物産館：9:00～17:00   2階 レストラン：11:00～15:00（7月～10月は夏季休業・火曜日定休日）",
     "closed": "不定休 さくら館は7月～10月は夏季休業、火曜日",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [],
     "description": "季節のフルーツ狩りが体験できる観光農園です。2月から11月頃まで収穫体験できます。 採れたてフルーツを食べるなんて、こういったところじゃないとめったにできることではありません！お子さんの食育にも良いですね。なお、果物狩りの料金は収穫するものによって異なりますのでご注意ください。 ほかにも、スイーツを楽しめる売店（期間限定）やレストラン、子ども向けのアドベンチャースペース、ワイナリーも併設されており、子どもから大人まで楽しめます。さらに、ペット連れの方は、ケージに入れている状態であれば一緒に入園もOKです！（ハウス内はNG）愛犬と美味しい時間を共有しちゃいましょう！ 自然豊かな場所でなので、1日いたら心がリフレッシュできます！",
     "lat": 31.8,
     "lng": 130.7,
     "map_url": "https://www.google.com/maps/search/霧島さくらフルーツランド+鹿児島県霧島市溝辺町有川2268",
-    "rakuten_keyword": ""
+    "rakuten_keyword": "",
+    "emoji": "🌿",
+    "mapQuery": "霧島さくらフルーツランド 鹿児島"
   },
   {
     "id": "sp_037",
@@ -9054,13 +9255,15 @@
     "hours": "自由散策",
     "closed": "24時間開放",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [],
     "description": "日本を歩いて回って地図を完成させたことで知られる伊能忠敬が、日本一の絶景と称したとされる景勝地です。「番所」という名のとおり、江戸時代には海の監視があったそう。 マリンブルーの海越しには、薩摩富士とも呼ばれている開聞岳が見えます。 数々の絶景スポットを見てきたであろう、伊能忠敬が見惚れる景色だなんて、見ておいて損はありません！ 波で侵食されてできた環状の潮溜まりが磯に広がっており、岩礁部分を歩けるようになっているので、まるで海の上を歩いて回っているような気分を味わえます。ただし、岩場なので歩きやすい靴で行くようにしましょう。 干潮時には潮だまりができて、磯遊びができます！",
     "lat": 31.25,
     "lng": 130.5,
     "map_url": "https://www.google.com/maps/search/番所鼻自然公園+鹿児島県南九州市頴娃町別府",
-    "rakuten_keyword": ""
+    "rakuten_keyword": "",
+    "emoji": "🌳",
+    "mapQuery": "番所鼻（ばんどころばな）自然公園 鹿児島"
   },
   {
     "id": "sp_038",
@@ -9073,13 +9276,15 @@
     "hours": "自由散策",
     "closed": "24時間開放",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [],
     "description": "高さ25m、幅30mと迫力があって、見ごたえのある神川大滝。大滝に辿り着く前に小滝もあります。滝というと、アップダウンのある歩きにくい道を歩いていく印象がある方もいるでしょうが、ここは駐車場から平坦な道を歩いて行くだけで滝壺に到着できるので、体力に自信がない方にもおすすめです。遊歩道を一周しても20分程度で回れますので、愛犬との散歩にも最適ではないでしょうか？ また、園内には県内一のスケールを誇る高さ68m、全長130mの赤い吊り橋もあります。吊り橋から滝を眺めることもできます。 マイナスイオンを浴びながら、自然の雄大さを感じながら、ゆっくり過ごしてみましょう！夏に来たら涼めますよ。 ピクニック気分で立ち寄れる観光スポットです。",
     "lat": 31.2,
     "lng": 130.8,
     "map_url": "https://www.google.com/maps/search/神川大滝公園+鹿児島県肝属郡錦江町神川3306",
-    "rakuten_keyword": ""
+    "rakuten_keyword": "",
+    "emoji": "🌳",
+    "mapQuery": "神川大滝公園 鹿児島"
   },
   {
     "id": "sp_039",
@@ -9092,7 +9297,7 @@
     "hours": "9:00～17:00",
     "closed": "月曜日（祝日の場合は翌日）、年末年始",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [
       "花畑"
     ],
@@ -9100,7 +9305,9 @@
     "lat": 31.35,
     "lng": 130.85,
     "map_url": "https://www.google.com/maps/search/かのやばら園+鹿児島県鹿屋市浜田町1250",
-    "rakuten_keyword": ""
+    "rakuten_keyword": "",
+    "emoji": "🌳",
+    "mapQuery": "かのやばら園 鹿児島"
   },
   {
     "id": "sp_040",
@@ -9110,10 +9317,10 @@
     "type": "観光",
     "address": "鹿児島県霧島市牧園町高千穂",
     "tel": "",
-    "hours": "",
+    "hours": "要確認（公式サイトをご確認ください）",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [
       "温泉"
     ],
@@ -9121,7 +9328,9 @@
     "lat": 31.9,
     "lng": 130.85,
     "map_url": "https://www.google.com/maps/search/丸尾滝+鹿児島県霧島市牧園町高千穂",
-    "rakuten_keyword": ""
+    "rakuten_keyword": "",
+    "emoji": "🌿",
+    "mapQuery": "丸尾滝 鹿児島"
   },
   {
     "id": "sp_041",
@@ -9131,16 +9340,18 @@
     "type": "公園",
     "address": "鹿児島県鹿児島市浜町2-20",
     "tel": "",
-    "hours": "",
+    "hours": "終日開放（管理事務所 9:00〜17:00）",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [],
     "description": "桜島の景色を堪能しながら、のんびりした時間を過ごしたい方には、石橋記念公園がおすすめです。 園内は広くて静かな上に、整備もきれいにされており、お子さま連れ・わんちゃん連れの方でも自由に遊ぶことができます。遊具はありませんが、水遊びができるスペースや森林、海沿いの遊歩道、カフェなどがあり、リラックスタイムを過ごすのに最適です。 また、園内には江戸時代後期にこの辺りで評判だった石工・岩永三五郎が手掛けた橋（西田橋・高麗橋・玉江橋）があります。そんな歴史的な橋があるにも関わらず、駐車場・入館料無料なので気楽に立ち寄れるんです！石橋の全てがわかる記念館もあるので、ぜひ足を運んでみてくださいね。 大河ドラマ「篤姫」の撮影がおこなわれたことでも有名です。",
     "lat": 31.6,
     "lng": 130.56,
     "map_url": "https://www.google.com/maps/search/石橋記念公園+鹿児島県鹿児島市浜町2-20",
-    "rakuten_keyword": ""
+    "rakuten_keyword": "",
+    "emoji": "🌳",
+    "mapQuery": "石橋記念公園 鹿児島"
   },
   {
     "id": "sp_042",
@@ -9150,10 +9361,10 @@
     "type": "観光",
     "address": "鹿児島県鹿児島市本港新町3-1",
     "tel": "",
-    "hours": "",
+    "hours": "9:00〜18:00",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [
       "クルーズ"
     ],
@@ -9161,7 +9372,9 @@
     "lat": 31.59,
     "lng": 130.57,
     "map_url": "https://www.google.com/maps/search/霧島錦江湾クルーズ+鹿児島県鹿児島市本港新町3-1",
-    "rakuten_keyword": ""
+    "rakuten_keyword": "",
+    "emoji": "🌿",
+    "mapQuery": "霧島錦江湾クルーズ 鹿児島"
   },
   {
     "id": "sp_043",
@@ -9171,16 +9384,18 @@
     "type": "公園",
     "address": "鹿児島県霧島市牧園町高千穂3311-1",
     "tel": "",
-    "hours": "",
+    "hours": "終日開放",
     "closed": "",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [],
     "description": "霧島周辺のドライブ観光で立ち寄っておきたいのが、神話の里公園です。公園というネーミングになっていますが、下の部分は道の駅になっていて、上の部分が公園になっていて、遊びも観光も楽しめ施設になっています。 道の駅定番のレストランやお土産屋はもちろん、裏手の山の公園には、リフトにスーパースライダー、パターゴルフ場、遊具のある広場、ウサギ小屋などもあるので、ここへ来るただけで観光の醍醐味が味わえそうですね！ また、景色の良い場所にあり、霧島の雄大な山々と、眼下には錦江湾と桜島を眺めることもできるため、心身ともにリフレッシュすることもできます。運転に疲れた方の休憩にもおすすめですよ！ お子さま連れの方も楽しめる絶景スポットです！",
     "lat": 31.9,
     "lng": 130.85,
     "map_url": "https://www.google.com/maps/search/神話の里公園+鹿児島県霧島市牧園町高千穂3311-1",
-    "rakuten_keyword": ""
+    "rakuten_keyword": "",
+    "emoji": "🌳",
+    "mapQuery": "神話の里公園 鹿児島"
   },
   {
     "id": "sp_048",
@@ -9193,7 +9408,7 @@
     "hours": "11:00〜18:00",
     "closed": "水曜日・祝日・第1・3土曜日",
     "fee": "",
-    "large_dog": false,
+    "large_dog": "要確認",
     "features": [
       "室内ドッグランあり"
     ],
@@ -9201,6 +9416,8 @@
     "lat": 31.73,
     "lng": 130.77,
     "map_url": "https://www.google.com/maps/search/ミジカフェ+鹿児島県霧島市国分中央3丁目3-1",
-    "rakuten_keyword": ""
+    "rakuten_keyword": "",
+    "emoji": "☕",
+    "mapQuery": "ミジカフェ 鹿児島"
   }
 ]
