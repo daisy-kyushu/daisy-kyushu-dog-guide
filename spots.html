@@ -495,6 +495,26 @@ function searchSpots(q) {
   renderSpots();
 }
 
+/* ===== 楽天トラベルURL生成 ===== */
+function getRakutenTravelUrl(area) {
+  const affId = '5420c596.0f96b703.5420c597.c7bd6fff';
+  const areaMap = {
+    '福岡': 'fukuoka', '北九州': 'fukuoka', '久留米': 'fukuoka', '糸島': 'fukuoka', '太宰府': 'fukuoka',
+    '大分': 'oita', '別府': 'oita', '湯布院': 'oita', '由布院': 'oita', '日田': 'oita',
+    '熊本': 'kumamoto', '阿蘇': 'kumamoto', '天草': 'kumamoto', '人吉': 'kumamoto',
+    '長崎': 'nagasaki', '佐世保': 'nagasaki', '雲仙': 'nagasaki', '五島': 'nagasaki',
+    '佐賀': 'saga', '唐津': 'saga', '嬉野': 'saga', '武雄': 'saga',
+    '宮崎': 'miyazaki', '日南': 'miyazaki', '高千穂': 'miyazaki',
+    '鹿児島': 'kagoshima', '指宿': 'kagoshima', '霧島': 'kagoshima', '奄美': 'kagoshima',
+  };
+  let areaCode = 'kyushu';
+  for (const [key, code] of Object.entries(areaMap)) {
+    if (area && area.includes(key)) { areaCode = code; break; }
+  }
+  const destUrl = encodeURIComponent('https://travel.rakuten.co.jp/yado/' + areaCode + '/?l-id=dog_guide_spot');
+  return 'https://hb.afl.rakuten.co.jp/hgc/' + affId + '/?pc=' + destUrl + '&link_type=text&ut=eyJwYWdlIjoic2VhcmNoIiwidHlwZSI6InRleHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjAsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowfQ%3D%3D';
+}
+
 function renderSpots() {
   let items = allSpots;
   // 犬の条件フィルター
@@ -568,6 +588,7 @@ function renderSpots() {
         <div class="card-actions">
           <a href="spot/${esc(s.id)}.html" class="card-map-btn" style="background:#e3f2fd;color:#1565c0;border-color:#bbdefb;" onclick="event.stopPropagation()">📄 詳細</a>
           <a href="https://maps.google.com/?q=${encodeURIComponent(s.mapQuery||(s.name+' '+(s.area||'')))}" target="_blank" rel="noopener" class="card-map-btn" onclick="event.stopPropagation()">🗺️ 地図</a>
+          <a href="${getRakutenTravelUrl(s.area||s.prefecture||'九州')}" target="_blank" rel="noopener" class="card-map-btn" style="background:#fff0f0;color:#c0392b;border-color:#f5c6c6;" onclick="event.stopPropagation()">🏨 近くの宿</a>
           <button class="card-fav-btn${isFav(s.id)?' faved':''}" onclick="event.stopPropagation();toggleFav('${esc(s.id)}',this)" title="お気に入り">${isFav(s.id)?'❤️':'🤍'}</button>
         </div>
       </div>
@@ -793,6 +814,9 @@ function openModal(jsonStr) {
     const isSelected = selectedSpots.some(s => s.id === data.id);
     btns += `<button onclick="addToItineraryFromModal('${esc(data.id)}')" id="modal-add-btn" style="background:${isSelected?'#e8f5e9':'#2e7d32'};color:${isSelected?'#2e7d32':'#fff'};border:${isSelected?'2px solid #2e7d32':'none'};padding:10px 16px;border-radius:10px;font-weight:700;font-size:14px;cursor:pointer;">${isSelected?'✓ しおりに追加済':'📋 しおりに追加'}</button>`;
   }
+
+  // 楽天トラベル近隣宿リンク
+  btns += `<a href="${getRakutenTravelUrl(data.area||data.prefecture||'九州')}" target="_blank" rel="noopener" class="btn" style="background:#fff0f0;color:#c0392b;border:1px solid #f5c6c6;">🏨 近くの宿を楽天で探す</a>`;
 
   if (!btns) btns = `<a href="index.html" class="btn btn-secondary">ホームへ</a>`;
   document.getElementById('modal-actions').innerHTML = btns;

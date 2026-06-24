@@ -21,7 +21,9 @@
     "fee": "ドッグラン1頭600円（1日利用可）",
     "access": "大分県大分市葛木1069 / 大分ICから車で約30分",
     "large_dog": "大型犬OK・リード必須",
-    "url": "https://www.instagram.com/moricafewan.love/"
+    "url": "https://www.instagram.com/moricafewan.love/",
+    "openTime": "09:00",
+    "closeTime": "18:00"
   },
   {
     "id": "dogrun-elf",
@@ -45,7 +47,9 @@
     "fee": "ワンちゃん一匹500円・高校生以上一人500円",
     "access": "大分県由布市湯布院町川西 字山口1750番116 / 要確認",
     "large_dog": "大型犬OK・リード必須・体重制限なし",
-    "url": "https://www.instagram.com/dogrun_elf/?hl=ja"
+    "url": "https://www.instagram.com/dogrun_elf/?hl=ja",
+    "openTime": "11:00",
+    "closeTime": "16:00"
   },
   {
     "id": "beppuwan-sa",
@@ -113,7 +117,9 @@
     "fee": "ドッグラン：愛犬1頭＋大人2名まで700円（1時間）、愛犬1頭追加＋700円、大人1名追加＋300円、貸切10,000円（1時間）。セルフウォッシュ：60分2,400円、90分3,600円。ペット専用コインランドリー：洗濯機1回45分600円、乾燥機1回10分100円。",
     "access": "鹿児島県鹿児島市新栄町22-26 / JR南鹿児島駅から徒歩約15分、鹿児島市街地中心部から車で約10分",
     "large_dog": "要確認",
-    "url": "https://doghealth-mozemoze.com/"
+    "url": "https://doghealth-mozemoze.com/",
+    "openTime": "10:00",
+    "closeTime": "14:00"
   },
   {
     "id": "koga-sa-down-dogrun",
@@ -137,7 +143,9 @@
     "fee": "無料",
     "access": "福岡県古賀市 / 九州自動車道 古賀サービスエリア（下り）",
     "large_dog": "要確認",
-    "url": "https://www.w-holdings.co.jp/sapa/25060/"
+    "url": "https://www.w-holdings.co.jp/sapa/25060/",
+    "lat": 33.728578,
+    "lng": 130.470173
   },
   {
     "id": "hirokawa-sa-down-dogrun",
@@ -209,7 +217,9 @@
     "fee": "平日: 220円(税込) / 10分、土日祝: 250円(税込) / 10分、ドリンク飲み放題: 385円(税込)",
     "access": "福岡県糟屋郡粕屋町大字酒殿字老ノ木192-1 イオンモール福岡1階 / 酒殿駅から徒歩12分",
     "large_dog": "要確認",
-    "url": "https://rio-corp.jp/shops/fukuoka/"
+    "url": "https://rio-corp.jp/shops/fukuoka/",
+    "openTime": "10:00",
+    "closeTime": "20:00"
   },
   {
     "id": "dogcafe-cocohouse-kumamoto",
@@ -261,7 +271,9 @@
     "fee": "要確認",
     "access": "長崎県東彼杵郡東彼杵町小音琴郷2303-1 / 国道205号線沿い",
     "large_dog": "犬同伴可（コーギーは牧畜犬のため、興奮させる行為は控えるよう注意書きあり）。大型犬の可否、リード、体重制限については明記なし。",
-    "url": "https://www.dog-hill.net/cafe.html"
+    "url": "https://www.dog-hill.net/cafe.html",
+    "openTime": "11:30",
+    "closeTime": "17:00"
   },
   {
     "id": "teo-one-kumamoto",
@@ -309,7 +321,9 @@
     "fee": "会員（年間登録料5000円）貸し切り30分500円〜、非会員貸し切り30分2000円〜",
     "access": "鹿児島県鹿児島市小野町3284番",
     "large_dog": "犬種条件：要問い合わせ・接種証明書および事前会員登録必須",
-    "url": "https://dogforesta.com/"
+    "url": "https://dogforesta.com/",
+    "openTime": "05:00",
+    "closeTime": "23:00"
   },
   {
     "id": "uminonakamichi-dogrun-fukuoka",
@@ -334,7 +348,9 @@
     "access": "福岡県福岡市東区大字西戸崎18-25 / 海ノ中道駅",
     "large_dog": "大型犬OK（フリーエリア、くつろぎエリア）。フリーエリアはノーリード可、くつろぎエリアはリード必須。飼い主の指示を守れる犬以外はリードを放さないこと。犬鑑札と狂犬病予防注射済票のプレート装着必須。",
     "url": "https://uminaka-park.jp/facility/dogrun/",
-    "daisy_comment": "ネモフィラが一面に広がってて、走り回りたくなっちゃった！"
+    "daisy_comment": "ネモフィラが一面に広がってて、走り回りたくなっちゃった！",
+    "openTime": "09:30",
+    "closeTime": "17:30"
   },
   {
     "id": "nishi-koen-dogrun-fukuoka",
@@ -358,7 +374,9 @@
     "fee": "登録料500円/年、利用料200円/回（イエローリボンイベントタイムは別途1,000円）",
     "access": "福岡県福岡市中央区西公園13−13 / 市営地下鉄「大濠公園」駅より徒歩約15分、福岡都市高速道路「西公園」ICより約5分",
     "large_dog": "大型犬は通常時間不可、大型犬タイム（11:00～13:00）に事前申込（3日前まで）で利用可能。リード必須の記載なし、体重制限の記載なし。",
-    "url": "https://nishikouen.jp/map/dogrun/"
+    "url": "https://nishikouen.jp/map/dogrun/",
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "ohori-park-walk-fukuoka",
@@ -382,7 +400,11 @@
     "fee": "公園入場無料（日本庭園：大人250円、高校生120円、中学生以下無料 / 貸ボート：白鳥ボート小30分1200円、白鳥ボート大30分1800円、手こぎボート30分800円）",
     "access": "福岡県福岡市中央区大濠公園1番2号 / 福岡市営地下鉄（空港線）大濠公園駅",
     "large_dog": "大型犬OK・リード必須・フンの処理必須・体重制限なし",
-    "url": "https://www.ohorikouen.jp/"
+    "url": "https://www.ohorikouen.jp/",
+    "lat": 33.590042,
+    "lng": 130.38551,
+    "openTime": "05:00",
+    "closeTime": "23:00"
   },
   {
     "id": "itoshima-shiraiwa-walk",
@@ -406,7 +428,11 @@
     "fee": "要確認",
     "access": "福岡県糸島市白糸460-6 / 前原インターから車約20分 / JR筑前前原駅からコミュニティバス（白糸線）約25分、その後遊歩道を徒歩25分",
     "large_dog": "要確認",
-    "url": "https://shiraitonotaki.jp/"
+    "url": "https://shiraitonotaki.jp/",
+    "lat": 33.480083,
+    "lng": 130.175488,
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "farm-resort-itoshima-dogrun",
@@ -430,7 +456,9 @@
     "fee": "大型・中型犬：1頭 800円、小型犬：1匹 600円",
     "access": "福岡県糸島市志摩小金丸1738 / 西九州道前原ICから車20分、JR筑肥線美咲ヶ丘駅から5.6km",
     "large_dog": "大型犬OK・ドッグラン内はリード不要、ドッグラン以外はリード必須・体重制限なし",
-    "url": "https://www.farmresort-itoshima.com/"
+    "url": "https://www.farmresort-itoshima.com/",
+    "openTime": "11:00",
+    "closeTime": "21:00"
   },
   {
     "id": "kannawa-jigoku-dogrun-beppu",
@@ -454,7 +482,9 @@
     "fee": "一時利用 320円（1頭・1回）、年間利用 4,760円（1頭・1年）",
     "access": "大分県別府市小倉町979番1 / 別府ICから車で5分、JR別府駅から車で15分",
     "large_dog": "大型犬エリアあり、小型犬エリア（体高40cmまで）、フリーエリアあり",
-    "url": "https://www.city.beppu.oita.jp/sisetu/kouen_tyuusyajyou/03kouen_03-07dogrun.html"
+    "url": "https://www.city.beppu.oita.jp/sisetu/kouen_tyuusyajyou/03kouen_03-07dogrun.html",
+    "openTime": "10:00",
+    "closeTime": "18:00"
   },
   {
     "id": "yufuin-yutopo-walk",
@@ -479,7 +509,9 @@
     "fee": "要確認",
     "access": "大分県由布市湯布院町川上 / JR由布院駅から徒歩約5分",
     "large_dog": "街道は大型犬OK・リード必須。店舗により異なるため要確認",
-    "url": "https://yunotubo.com/"
+    "url": "https://yunotubo.com/",
+    "lat": 33.275252,
+    "lng": 131.362608
   },
   {
     "id": "kuju-hana-koen-walk",
@@ -504,7 +536,11 @@
     "fee": "大人（高校生以上）1,300円、こども（5歳以上）500円（変動料金制あり）",
     "access": "大分県竹田市久住町大字久住4050 / 公共交通機関での直接の来園は不可、車またはタクシーでの来園を推奨",
     "large_dog": "大型犬OK・リード必須・糞は持ち帰り・オシッコは水を掛けて流す・ショップ入店不可・無料ドッグランあり（小型・中型・大型犬用）",
-    "url": "https://kuju-flower-park.com/"
+    "url": "https://kuju-flower-park.com/",
+    "lat": 33.047202,
+    "lng": 131.244903,
+    "openTime": "08:30",
+    "closeTime": "17:30"
   },
   {
     "id": "morinomiyako-dogrun-kumamoto",
@@ -528,7 +564,9 @@
     "fee": "ワンちゃん：小型犬600円（2頭目から400円）、中型犬800円（2頭目から500円）、大型犬1,000円（2頭目から600円）。飼い主様：大人（中学生以上）500円（2人目から300円）、小学生200円、幼児無料。",
     "access": "熊本県熊本市南区良町5-25-8 / バス停中の瀬車庫入口から徒歩約4分",
     "large_dog": "大型犬OK・リード必須・闘犬及び攻撃的、噛み付き等危険な行動をする犬は入場不可",
-    "url": "https://www.dogrunmorinomiyako.jp/"
+    "url": "https://www.dogrunmorinomiyako.jp/",
+    "openTime": "09:00",
+    "closeTime": "18:00"
   },
   {
     "id": "happytail-dogrun-kumamoto",
@@ -552,7 +590,9 @@
     "fee": "犬：小型犬600円（2頭目から400円）、中型犬800円（2頭目から500円）、大型犬1,000円（2頭目から600円）。飼い主：大人（中学生以上）500円（2人目から300円）、小学生200円（幼児・園児無料）。個別ブース（2時間）は基本料金にプラス300円。",
     "access": "熊本県熊本市北区四方寄町1475番 / 西里駅出口から徒歩約27分",
     "large_dog": "大型犬OK・高さ180cmフェンスあり・狂犬病および各種ワクチン接種証明書必須（1年以内）",
-    "url": "https://happytail.jp/"
+    "url": "https://happytail.jp/",
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "kusasenri-aso-walk",
@@ -577,7 +617,9 @@
     "access": "熊本県阿蘇市草千里ヶ浜 / 九州道熊本ICから国道57号経由60分1時間20分",
     "large_dog": "要確認",
     "url": "要確認",
-    "daisy_comment": "阿蘇の大自然、最高すぎた！風が気持ちよかったよ🌿"
+    "daisy_comment": "阿蘇の大自然、最高すぎた！風が気持ちよかったよ🌿",
+    "lat": 32.880714,
+    "lng": 131.053843
   },
   {
     "id": "inasayama-dogrun-nagasaki",
@@ -649,7 +691,9 @@
     "fee": "ドッグラン無料（ハウステンボス入場料別途）",
     "access": "長崎県佐世保市ハウステンボス町1-1 / ハウステンボス駅",
     "large_dog": "大型犬OK・リード必須・小型犬エリアと中・大型犬エリアに分かれている",
-    "url": "https://www.huistenbosch.co.jp/service/pet.html"
+    "url": "https://www.huistenbosch.co.jp/service/pet.html",
+    "openTime": "09:00",
+    "closeTime": "21:00"
   },
   {
     "id": "cafe-fuchsia-dogrun-saga",
@@ -673,7 +717,9 @@
     "fee": "ドッグラン利用料：1頭500円（時間無制限）、2頭目以降300円",
     "access": "佐賀県佐賀市大和町尼寺3220-1",
     "large_dog": "大型犬OK・リード必須・ワクチン接種証明書、狂犬病予防接種証明書必須",
-    "url": "https://cafefukusia.com/"
+    "url": "https://cafefukusia.com/",
+    "openTime": "11:00",
+    "closeTime": "17:00"
   },
   {
     "id": "secret-garden-dogrun-saga",
@@ -697,7 +743,9 @@
     "fee": "ビジター2匹まで1時間: 平日￥1,100 / 土日祝￥1,650、3匹1時間: 平日￥1,430 / 土日祝￥1,980、4匹1時間: 平日￥1,760 / 土日祝￥2,310、5匹1時間: 平日￥2,090 / 土日祝￥2,640、追加1匹につき1時間: 平日・土日祝プラス￥330。グループ利用2時間: 平日￥6,600 / 土日祝￥8,800、延長1時間: 平日￥3,300 / 土日祝￥4,400（1グループ15匹まで）",
     "access": "佐賀県佐賀市三瀬村藤原537-13",
     "large_dog": "大型犬OK（リード必須の記載なし、体重制限の記載なし）",
-    "url": "https://www.momosecretgarden.com/"
+    "url": "https://www.momosecretgarden.com/",
+    "openTime": "09:00",
+    "closeTime": "22:00"
   },
   {
     "id": "yoshinogari-walk-saga",
@@ -721,7 +769,11 @@
     "fee": "入場料：中学生以下無料、大人460円、シルバー（65歳以上）200円。駐車場料金：普通車310円、二輪車100円、大型車1,050円（2027年3月31日まで普通車・二輪車無料キャンペーン中）",
     "access": "佐賀県神埼郡吉野ヶ里町田手1843 / 長崎自動車道東脊振ICから車で5分、JR吉野ヶ里公園駅から徒歩約15分、JR神埼駅から徒歩約15分",
     "large_dog": "大型犬OK・リード必須・建物内への同伴不可。ドッグランあり（小型・中型犬エリアと大型犬エリアがそれぞれ400平方メートル）",
-    "url": "https://www.yoshinogari.jp/"
+    "url": "https://www.yoshinogari.jp/",
+    "lat": 33.327092,
+    "lng": 130.384264,
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "miyazaki-sports-park-dogrun",
@@ -745,7 +797,9 @@
     "fee": "無料",
     "access": "〒889-2151 宮崎県宮崎市大字熊野2206-1 / JR宮崎駅から木花駅及び運動公園駅まで約20分（日南線）、JR宮崎駅から運動公園前まで約35分（青島線）、JR宮崎駅から車で約25分、宮崎自動車道で宮崎インターチェンジから車で約10分、宮崎空港から車で約10分",
     "large_dog": "大型犬OK",
-    "url": "http://www.miyazaki-spokyo.jp/sougou/"
+    "url": "http://www.miyazaki-spokyo.jp/sougou/",
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "takachiho-kyo-walk",
@@ -771,7 +825,9 @@
     "large_dog": "遊歩道は大型犬OK・リード必須。貸しボートはペット乗船不可。",
     "url": "https://takachiho-kanko.info/",
     "lat": 32.7017851,
-    "lng": 131.300939
+    "lng": 131.300939,
+    "openTime": "08:30",
+    "closeTime": "17:00"
   },
   {
     "id": "aoshima-jinja-walk-miyazaki",
@@ -795,7 +851,11 @@
     "fee": "参拝無料、日向神話館: 大人600円・中高生400円・小学生300円・幼児無料",
     "access": "宮崎県宮崎市青島2丁目13番1号 / JR日南線青島駅より徒歩約10分",
     "large_dog": "青島神社は犬連れ可能の可能性あり（リード・体重制限は要確認）、青島海水浴場は要確認",
-    "url": "https://aoshima-jinja.jp/"
+    "url": "https://aoshima-jinja.jp/",
+    "lat": 31.804413,
+    "lng": 131.475092,
+    "openTime": "08:00",
+    "closeTime": "17:00"
   },
   {
     "id": "dogcom-park-kagoshima",
@@ -819,7 +879,9 @@
     "fee": "会員：大人200円・子供100円、一般：大人300円・子供200円。わんこ入園料：会員300円（2頭目からプラス150円）、一般500円（2頭目からプラス300円）",
     "access": "鹿児島県鹿児島市西別府町130-1 / 南九州自動車道 鹿児島西ICより5km・松元ICより1km、JR鹿児島本線 上伊集院駅より徒歩25分",
     "large_dog": "大型犬OK・生後5か月以上・狂犬病ワクチン＆混合ワクチン接種済（ワクチン証明書が必要）",
-    "url": "http://www.dogcom.jp/dogrun/"
+    "url": "http://www.dogcom.jp/dogrun/",
+    "openTime": "15:00",
+    "closeTime": "19:00"
   },
   {
     "id": "wanpark-toride-ibusuki",
@@ -843,7 +905,9 @@
     "fee": "ワンちゃん1匹 700円（3時間） / 追加1匹ごとに 400円 / 同伴者1人 100円（幼児無料）",
     "access": "鹿児島県指宿市新西方2913",
     "large_dog": "大型犬OK・リード必須・体重制限なし（大型犬用広場あり）",
-    "url": "https://pjm.synapse-site.jp/sub2.html"
+    "url": "https://pjm.synapse-site.jp/sub2.html",
+    "openTime": "09:00",
+    "closeTime": "19:00"
   },
   {
     "id": "kirishima-jingu-walk-kagoshima",
@@ -867,7 +931,11 @@
     "fee": "無料",
     "access": "鹿児島県霧島市霧島田口2608-5 / JR霧島神宮駅から車10分 / 宮崎道高原ICから",
     "large_dog": "霧島神宮の境内はペット同伴禁止。周辺散策コースも同様に不可。",
-    "url": "https://kirishimajingu.or.jp/"
+    "url": "https://kirishimajingu.or.jp/",
+    "lat": 31.858368,
+    "lng": 130.871127,
+    "openTime": "08:00",
+    "closeTime": "17:00"
   },
   {
     "id": "marinoa-city-dogrun-fukuoka",
@@ -889,7 +957,11 @@
     "status": "公式要確認",
     "lastChecked": "2026-05-01",
     "weekendRecommended": true,
-    "vaccineRequired": "要確認"
+    "vaccineRequired": "要確認",
+    "lat": 33.594854,
+    "lng": 130.31793,
+    "openTime": "10:00",
+    "closeTime": "20:00"
   },
   {
     "id": "nokonoshima-walk-fukuoka",
@@ -910,7 +982,9 @@
     "memo": "博多湾に浮かぶ小島のフラワーパーク。季節の花々と海の景色が美しく、愛犬との散歩に最適。フェリーで渡る非日常感も魅力。",
     "status": "公式要確認",
     "lastChecked": "2026-05-01",
-    "weekendRecommended": true
+    "weekendRecommended": true,
+    "openTime": "09:00",
+    "closeTime": "17:30"
   },
   {
     "id": "uminonakamichi-park-walk-fukuoka",
@@ -931,7 +1005,11 @@
     "memo": "広大な国営公園。ドッグランだけでなく、芝生広場や海辺の散策も楽しめます。季節の花も見事で、Daisyも大喜びのスポット。",
     "status": "公式要確認",
     "lastChecked": "2026-05-01",
-    "weekendRecommended": true
+    "weekendRecommended": true,
+    "lat": 33.662627,
+    "lng": 130.355711,
+    "openTime": "09:30",
+    "closeTime": "17:30"
   },
   {
     "id": "maizuru-park-walk-fukuoka",
@@ -952,7 +1030,9 @@
     "memo": "福岡城跡を中心とした歴史ある公園。桜の名所としても有名で、大濠公園と合わせて散歩するコースが人気。",
     "status": "公式要確認",
     "lastChecked": "2026-05-01",
-    "weekendRecommended": true
+    "weekendRecommended": true,
+    "lat": 33.584599,
+    "lng": 130.382678
   },
   {
     "id": "itoshima-beach-walk",
@@ -973,7 +1053,9 @@
     "memo": "糸島を代表する絶景スポット。夕日に染まる夫婦岩と愛犬の写真は最高の思い出に。周辺のオシャレカフェも犬連れOKが多い。",
     "status": "公式要確認",
     "lastChecked": "2026-05-01",
-    "weekendRecommended": true
+    "weekendRecommended": true,
+    "lat": 33.640157,
+    "lng": 130.196691
   },
   {
     "id": "kawachi-wisteria-walk-kitakyushu",
@@ -996,7 +1078,9 @@
     "lastChecked": "2026-05-01",
     "weekendRecommended": true,
     "lat": 33.8321967,
-    "lng": 130.792632
+    "lng": 130.792632,
+    "openTime": "08:00",
+    "closeTime": "18:00"
   },
   {
     "id": "yufuin-kinrinko-walk",
@@ -1017,7 +1101,9 @@
     "memo": "湯布院観光の定番スポット。朝霧に包まれた金鱗湖は幻想的な美しさ。湯の坪街道と合わせて愛犬とのんびり散策を楽しめます。",
     "status": "公式要確認",
     "lastChecked": "2026-05-01",
-    "weekendRecommended": true
+    "weekendRecommended": true,
+    "lat": 33.26672,
+    "lng": 131.369039
   },
   {
     "id": "beppu-ropeway-dogrun",
@@ -1059,7 +1145,9 @@
     "memo": "活火山の雄大な景色を愛犬と一緒に楽しめる。草千里ヶ浜との組み合わせで半日コースが人気。火山活動状況の事前確認必須。",
     "status": "公式要確認",
     "lastChecked": "2026-05-01",
-    "weekendRecommended": true
+    "weekendRecommended": true,
+    "openTime": "08:00",
+    "closeTime": "18:00"
   },
   {
     "id": "kuju-mountain-walk",
@@ -1101,7 +1189,11 @@
     "memo": "長崎の歴史的観光地。グラバー園周辺の坂道散策は愛犬と一緒に楽しめます。長崎港の眺めも絶景。",
     "status": "公式要確認",
     "lastChecked": "2026-05-01",
-    "weekendRecommended": true
+    "weekendRecommended": true,
+    "lat": 32.733367,
+    "lng": 129.869055,
+    "openTime": "08:00",
+    "closeTime": "18:00"
   },
   {
     "id": "unzen-walk-nagasaki",
@@ -1143,7 +1235,9 @@
     "memo": "弥生時代の遺跡を有する国営公園内のドッグラン。歴史的な雰囲気の中で愛犬を遊ばせられる珍しいスポット。",
     "status": "公式要確認",
     "lastChecked": "2026-05-01",
-    "weekendRecommended": true
+    "weekendRecommended": true,
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "karatsu-beach-walk-saga",
@@ -1164,7 +1258,9 @@
     "memo": "日本三大松原の一つ。松林の中を愛犬と散策できる絶好のコース。唐津城や唐津湾の景色も楽しめます。",
     "status": "公式要確認",
     "lastChecked": "2026-05-01",
-    "weekendRecommended": true
+    "weekendRecommended": true,
+    "lat": 33.441043,
+    "lng": 130.016466
   },
   {
     "id": "miyazaki-aoshima-beach-walk",
@@ -1248,7 +1344,9 @@
     "memo": "薩摩半島の最南端。開聞岳を背景に広がる海岸線は絶景。愛犬と一緒に南国の雰囲気を満喫できます。",
     "status": "公式要確認",
     "lastChecked": "2026-05-01",
-    "weekendRecommended": true
+    "weekendRecommended": true,
+    "lat": 31.155767,
+    "lng": 130.586662
   },
   {
     "id": "takachiho-gorge-walk",
@@ -1269,7 +1367,9 @@
     "memo": "神話の里・高千穂の絶景渓谷。遊歩道は愛犬と一緒に歩けます（ボートは犬不可）。真名井の滝の迫力は圧巻。",
     "status": "公式要確認",
     "lastChecked": "2026-05-01",
-    "weekendRecommended": true
+    "weekendRecommended": true,
+    "lat": 32.702703,
+    "lng": 131.300867
   },
   {
     "id": "fukuoka-dogcafe-wan",
@@ -1290,7 +1390,9 @@
     "memo": "愛犬と一緒にゆっくりできるカフェ。大型犬の場合は事前に確認が必要ですが、テラス席があるカフェは比較的大型犬OKが多いです。",
     "status": "公式要確認",
     "lastChecked": "2026-05-01",
-    "weekendRecommended": true
+    "weekendRecommended": true,
+    "openTime": "11:00",
+    "closeTime": "20:00"
   },
   {
     "id": "kumamoto-castle-walk",
@@ -1334,7 +1436,9 @@
     "lastChecked": "2026-05-01",
     "weekendRecommended": false,
     "lat": 32.7907442,
-    "lng": 130.7348991
+    "lng": 130.7348991,
+    "openTime": "08:30",
+    "closeTime": "17:00"
   },
   {
     "id": "oita-beppu-umi-tamago",
@@ -1355,7 +1459,9 @@
     "memo": "別府湾沿いの水族館周辺の海岸散策。海を眺めながら愛犬と歩けます。水族館内は犬不可ですが、外の景色だけでも十分楽しめます。",
     "status": "公式要確認",
     "lastChecked": "2026-05-01",
-    "weekendRecommended": true
+    "weekendRecommended": true,
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "greenheart-chikushino-fukuoka",
@@ -1376,7 +1482,9 @@
     "hours": "10:00～18:00",
     "fee": "ドッグラン：1頭目 500円（時間無制限）、2頭目以降 300円",
     "access": "福岡県筑紫野市大字筑紫83-1",
-    "large_dog": "大型犬OK"
+    "large_dog": "大型犬OK",
+    "openTime": "10:00",
+    "closeTime": "18:00"
   },
   {
     "id": "calme-dogrun-miyazaki",
@@ -1397,7 +1505,9 @@
     "hours": "10:00～17:00（L.O.16:30）",
     "fee": "ドッグラン：1頭 500円（時間無制限）",
     "access": "宮崎県児湯郡川南町大字川南13675-29",
-    "large_dog": "大型犬OK"
+    "large_dog": "大型犬OK",
+    "openTime": "10:00",
+    "closeTime": "17:00"
   },
   {
     "id": "icoi-dogrun-miyazaki",
@@ -1418,7 +1528,9 @@
     "hours": "10:00～18:00（火曜定休）",
     "fee": "ドッグラン：1頭 500円",
     "access": "宮崎県宮崎市大島町原ノ前1445-69",
-    "large_dog": "大型犬OK"
+    "large_dog": "大型犬OK",
+    "openTime": "10:00",
+    "closeTime": "18:00"
   },
   {
     "id": "fukuoka-marinoa-dogrun",
@@ -1440,7 +1552,9 @@
     "fee": "無料",
     "access": "福岡県福岡市西区小戸2-12-30 / 姪浜駅からバスで約10分",
     "large_dog": "大型犬OK（エリア分け）",
-    "url": "https://www.marinoacity.com/"
+    "url": "https://www.marinoacity.com/",
+    "openTime": "10:00",
+    "closeTime": "20:00"
   },
   {
     "id": "fukuoka-nokonoshima-park",
@@ -1462,7 +1576,11 @@
     "fee": "大人1,200円・小人600円（犬無料）",
     "access": "福岡県福岡市西区能古島 / 姪浜渡船場からフェリー10分",
     "large_dog": "大型犬OK",
-    "url": "https://nokonoshima.com/"
+    "url": "https://nokonoshima.com/",
+    "lat": 33.611985,
+    "lng": 130.310697,
+    "openTime": "09:00",
+    "closeTime": "17:30"
   },
   {
     "id": "fukuoka-uminonakamichi-park",
@@ -1486,7 +1604,9 @@
     "large_dog": "大型犬OK",
     "url": "https://uminaka-park.jp/",
     "lat": 33.664476,
-    "lng": 130.365643
+    "lng": 130.365643,
+    "openTime": "09:30",
+    "closeTime": "17:30"
   },
   {
     "id": "fukuoka-itoshima-beach-cafe",
@@ -1508,7 +1628,9 @@
     "fee": "ドリンク500円〜",
     "access": "福岡県糸島市志摩芥屋 / 筑前前原駅からバスで約20分",
     "large_dog": "大型犬OK",
-    "url": ""
+    "url": "",
+    "lat": 33.58041,
+    "lng": 130.104763
   },
   {
     "id": "fukuoka-itoshima-dogrun-villa",
@@ -1530,7 +1652,11 @@
     "fee": "日帰りドッグラン1,000円〜",
     "access": "福岡県糸島市二丈深江 / 筑前深江駅から車で約10分",
     "large_dog": "大型犬OK",
-    "url": "https://dogrun-villa.com/"
+    "url": "https://dogrun-villa.com/",
+    "lat": 33.506658,
+    "lng": 130.135552,
+    "openTime": "10:00",
+    "closeTime": "17:00"
   },
   {
     "id": "fukuoka-dazaifu-walk",
@@ -1552,7 +1678,11 @@
     "fee": "無料（境内外散策）",
     "access": "福岡県太宰府市宰府4-7-1 / 太宰府駅から徒歩5分",
     "large_dog": "大型犬OK（参道のみ）",
-    "url": "https://www.dazaifutenmangu.or.jp/"
+    "url": "https://www.dazaifutenmangu.or.jp/",
+    "lat": 33.519539,
+    "lng": 130.533487,
+    "openTime": "06:00",
+    "closeTime": "19:00"
   },
   {
     "id": "fukuoka-kitakyushu-dogrun",
@@ -1574,7 +1704,9 @@
     "fee": "入園料大人200円・小人100円 / ドッグラン無料",
     "access": "福岡県北九州市若松区大字竹並1528 / 若松駅からバスで約20分",
     "large_dog": "大型犬OK",
-    "url": "https://www.greenpark-kitakyushu.com/"
+    "url": "https://www.greenpark-kitakyushu.com/",
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "fukuoka-kurume-dogcafe",
@@ -1596,7 +1728,11 @@
     "fee": "ドリンク500円〜",
     "access": "福岡県久留米市 / 久留米駅から車で約10分",
     "large_dog": "要確認",
-    "url": ""
+    "url": "",
+    "lat": 33.319654,
+    "lng": 130.508062,
+    "openTime": "10:00",
+    "closeTime": "18:00"
   },
   {
     "id": "fukuoka-munakata-beach",
@@ -1618,7 +1754,9 @@
     "fee": "フェリー往復大人1,300円（犬別途）",
     "access": "福岡県宗像市大島 / 神湊波止場からフェリー約25分",
     "large_dog": "大型犬OK",
-    "url": "https://www.oshima-navi.com/"
+    "url": "https://www.oshima-navi.com/",
+    "lat": 33.901233,
+    "lng": 130.422616
   },
   {
     "id": "fukuoka-asakura-dogrun",
@@ -1640,7 +1778,9 @@
     "fee": "無料",
     "access": "福岡県朝倉市秋月 / 甘木駅からバスで約20分",
     "large_dog": "大型犬OK",
-    "url": "https://www.asakura-kankou.jp/"
+    "url": "https://www.asakura-kankou.jp/",
+    "lat": 33.465497,
+    "lng": 130.69501
   },
   {
     "id": "oita-beppu-beach",
@@ -1662,7 +1802,11 @@
     "fee": "500円/頭",
     "access": "大分県別府市扇山 / 別府駅から車で約15分",
     "large_dog": "大型犬OK",
-    "url": ""
+    "url": "",
+    "lat": 33.296573,
+    "lng": 131.467195,
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "oita-yufuin-kinrinko",
@@ -1684,7 +1828,9 @@
     "fee": "無料",
     "access": "大分県由布市湯布院町川上1561-1 / 由布院駅から徒歩15分",
     "large_dog": "大型犬OK",
-    "url": "https://www.yufuin.gr.jp/"
+    "url": "https://www.yufuin.gr.jp/",
+    "lat": 33.26672,
+    "lng": 131.369039
   },
   {
     "id": "oita-yufuin-floral-village",
@@ -1706,7 +1852,11 @@
     "fee": "無料（各店舗で購入）",
     "access": "大分県由布市湯布院町川上3040-2 / 由布院駅から徒歩20分",
     "large_dog": "大型犬OK（屋外エリア）",
-    "url": "https://www.floral-village.com/"
+    "url": "https://www.floral-village.com/",
+    "lat": 33.267514,
+    "lng": 131.365641,
+    "openTime": "09:30",
+    "closeTime": "17:30"
   },
   {
     "id": "oita-kuju-dogrun",
@@ -1728,7 +1878,9 @@
     "fee": "大人1,000円〜（季節により変動）/ ドッグラン別途",
     "access": "大分県竹田市久住町大字久住4050 / 豊後竹田駅から車で約30分",
     "large_dog": "大型犬OK",
-    "url": "https://www.hanakoen.com/"
+    "url": "https://www.hanakoen.com/",
+    "openTime": "08:30",
+    "closeTime": "17:30"
   },
   {
     "id": "oita-kokonoe-yume-bridge",
@@ -1750,7 +1902,11 @@
     "fee": "大人500円・小人200円",
     "access": "大分県玖珠郡九重町大字田野1208 / 九重ICから車で約15分",
     "large_dog": "大型犬OK（リード必須）",
-    "url": "https://www.yumeooturihashi.com/"
+    "url": "https://www.yumeooturihashi.com/",
+    "lat": 33.174177,
+    "lng": 131.227066,
+    "openTime": "08:30",
+    "closeTime": "17:00"
   },
   {
     "id": "oita-usa-jingu-walk",
@@ -1772,7 +1928,9 @@
     "fee": "無料",
     "access": "大分県宇佐市南宇佐2859 / 宇佐駅から車で約10分",
     "large_dog": "大型犬OK（参道のみ）",
-    "url": "https://www.usajinguu.com/"
+    "url": "https://www.usajinguu.com/",
+    "lat": 33.525433,
+    "lng": 131.375199
   },
   {
     "id": "oita-beppu-hells-tour",
@@ -1794,7 +1952,11 @@
     "fee": "共通観覧券大人2,200円",
     "access": "大分県別府市鉄輪559-1 / 別府駅からバスで約20分",
     "large_dog": "大型犬OK（屋外のみ）",
-    "url": "https://www.beppu-jigoku.com/"
+    "url": "https://www.beppu-jigoku.com/",
+    "lat": 33.316021,
+    "lng": 131.469093,
+    "openTime": "08:00",
+    "closeTime": "17:00"
   },
   {
     "id": "oita-nakatsu-castle",
@@ -1816,7 +1978,11 @@
     "fee": "城内入場400円（城外無料）",
     "access": "大分県中津市二ノ丁本丸 / 中津駅から徒歩15分",
     "large_dog": "大型犬OK（城外）",
-    "url": "https://www.nakatsu-castle.jp/"
+    "url": "https://www.nakatsu-castle.jp/",
+    "lat": 33.606648,
+    "lng": 131.18638,
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "kumamoto-aso-dogrun",
@@ -1838,7 +2004,9 @@
     "fee": "入場無料 / ドッグラン別途",
     "access": "熊本県阿蘇郡南阿蘇村河陽5579-3 / 南阿蘇鉄道 阿蘇下田城ふれあい温泉駅から車で約5分",
     "large_dog": "大型犬OK",
-    "url": "https://www.asofarmland.co.jp/"
+    "url": "https://www.asofarmland.co.jp/",
+    "openTime": "10:00",
+    "closeTime": "17:00"
   },
   {
     "id": "kumamoto-aso-naka-dake",
@@ -1860,7 +2028,9 @@
     "fee": "駐車場500円",
     "access": "熊本県阿蘇市草千里ヶ浜 / 阿蘇駅から車で約30分",
     "large_dog": "大型犬OK",
-    "url": "https://www.aso.ne.jp/"
+    "url": "https://www.aso.ne.jp/",
+    "lat": 32.881466,
+    "lng": 131.053547
   },
   {
     "id": "kumamoto-minamiaso-railroad",
@@ -1882,7 +2052,9 @@
     "fee": "無料",
     "access": "熊本県阿蘇郡南阿蘇村 / 高森駅から各スポットへ",
     "large_dog": "大型犬OK",
-    "url": "https://www.mt-aso.jp/"
+    "url": "https://www.mt-aso.jp/",
+    "lat": 32.822202,
+    "lng": 131.091615
   },
   {
     "id": "kumamoto-amakusa-beach",
@@ -1904,7 +2076,9 @@
     "fee": "無料",
     "access": "熊本県天草市 / 本渡バスセンターから各海岸へ",
     "large_dog": "大型犬OK",
-    "url": "https://www.amakusa-web.jp/"
+    "url": "https://www.amakusa-web.jp/",
+    "lat": 32.458513,
+    "lng": 130.193049
   },
   {
     "id": "kumamoto-suizenji-park",
@@ -1926,7 +2100,11 @@
     "fee": "大人400円（公園外無料）",
     "access": "熊本県熊本市中央区水前寺公園8-1 / 水前寺公園駅から徒歩3分",
     "large_dog": "大型犬OK（公園外）",
-    "url": "https://www.suizenji.or.jp/"
+    "url": "https://www.suizenji.or.jp/",
+    "lat": 32.790744,
+    "lng": 130.734899,
+    "openTime": "07:30",
+    "closeTime": "18:00"
   },
   {
     "id": "nagasaki-huis-ten-bosch",
@@ -1948,7 +2126,9 @@
     "fee": "入場料大人7,000円〜（ペット同伴エリアは無料）",
     "access": "長崎県佐世保市ハウステンボス町1-1 / ハウステンボス駅から徒歩5分",
     "large_dog": "大型犬OK",
-    "url": "https://www.huistenbosch.co.jp/"
+    "url": "https://www.huistenbosch.co.jp/",
+    "openTime": "09:00",
+    "closeTime": "21:00"
   },
   {
     "id": "nagasaki-glover-garden",
@@ -1970,7 +2150,11 @@
     "fee": "大人620円",
     "access": "長崎県長崎市南山手町8-1 / 大浦天主堂電停から徒歩5分",
     "large_dog": "大型犬OK（屋外）",
-    "url": "https://www.glover-garden.jp/"
+    "url": "https://www.glover-garden.jp/",
+    "lat": 32.733367,
+    "lng": 129.869055,
+    "openTime": "08:00",
+    "closeTime": "18:00"
   },
   {
     "id": "nagasaki-unzen-onsen",
@@ -1992,7 +2176,9 @@
     "fee": "無料",
     "access": "長崎県雲仙市小浜町雲仙 / 島原鉄道 島原駅からバスで約60分",
     "large_dog": "大型犬OK",
-    "url": "https://www.unzen.org/"
+    "url": "https://www.unzen.org/",
+    "lat": 32.740493,
+    "lng": 130.263388
   },
   {
     "id": "nagasaki-saikai-park",
@@ -2036,7 +2222,11 @@
     "fee": "城外無料 / 城内大人550円",
     "access": "長崎県島原市城内1-1183-1 / 島原駅から徒歩5分",
     "large_dog": "大型犬OK（城外）",
-    "url": "https://www.shimabarajou.com/"
+    "url": "https://www.shimabarajou.com/",
+    "lat": 32.966499,
+    "lng": 132.546798,
+    "openTime": "09:00",
+    "closeTime": "17:30"
   },
   {
     "id": "miyazaki-aoshima-beach",
@@ -2080,7 +2270,11 @@
     "fee": "無料（ボートは別途2,000円/30分）",
     "access": "宮崎県西臼杵郡高千穂町三田井御塩井 / 高千穂バスセンターから徒歩30分",
     "large_dog": "大型犬OK（遊歩道）",
-    "url": "https://takachiho-kanko.info/"
+    "url": "https://takachiho-kanko.info/",
+    "lat": 32.701785,
+    "lng": 131.300939,
+    "openTime": "08:30",
+    "closeTime": "17:00"
   },
   {
     "id": "miyazaki-nichinan-coast",
@@ -2102,7 +2296,9 @@
     "fee": "無料",
     "access": "宮崎県日南市 / 宮崎駅から車で約40分",
     "large_dog": "大型犬OK",
-    "url": "https://www.kanko-miyazaki.jp/"
+    "url": "https://www.kanko-miyazaki.jp/",
+    "lat": 31.601922,
+    "lng": 131.378877
   },
   {
     "id": "miyazaki-ebino-plateau",
@@ -2124,7 +2320,9 @@
     "fee": "駐車場500円",
     "access": "宮崎県えびの市大字末永1495 / えびのICから車で約30分",
     "large_dog": "大型犬OK",
-    "url": "https://www.ebino-kogen.com/"
+    "url": "https://www.ebino-kogen.com/",
+    "lat": 32.042299,
+    "lng": 130.815927
   },
   {
     "id": "kagoshima-ibusuki-sand-bath",
@@ -2146,7 +2344,9 @@
     "fee": "無料",
     "access": "鹿児島県指宿市山川岡児ケ水 / 山川駅から車で約10分",
     "large_dog": "大型犬OK",
-    "url": "https://www.ibusuki.or.jp/"
+    "url": "https://www.ibusuki.or.jp/",
+    "lat": 31.155767,
+    "lng": 130.586662
   },
   {
     "id": "kagoshima-kirishima-dogrun",
@@ -2168,7 +2368,9 @@
     "fee": "無料",
     "access": "鹿児島県霧島市霧島田口2608-5 / 霧島神宮駅から車で約10分",
     "large_dog": "大型犬OK（参道外）",
-    "url": "https://kirishimajingu.or.jp/"
+    "url": "https://kirishimajingu.or.jp/",
+    "lat": 31.858368,
+    "lng": 130.871127
   },
   {
     "id": "kagoshima-amami-beach",
@@ -2212,7 +2414,11 @@
     "fee": "大人530円",
     "access": "鹿児島県南九州市知覧町郡13731 / 鹿児島中央駅からバスで約60分",
     "large_dog": "大型犬OK（屋外）",
-    "url": "https://www.chiran-bukeyashiki.com/"
+    "url": "https://www.chiran-bukeyashiki.com/",
+    "lat": 31.379665,
+    "lng": 130.448118,
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "saga-yoshinogari-park",
@@ -2234,7 +2440,9 @@
     "fee": "大人460円 / ドッグラン無料",
     "access": "佐賀県神埼郡吉野ヶ里町田手1843 / 吉野ヶ里公園駅から徒歩15分",
     "large_dog": "大型犬OK",
-    "url": "https://www.yoshinogari.jp/"
+    "url": "https://www.yoshinogari.jp/",
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "saga-karatsu-castle",
@@ -2256,7 +2464,11 @@
     "fee": "城外無料 / 城内大人500円",
     "access": "佐賀県唐津市東城内8-1 / 唐津駅から徒歩15分",
     "large_dog": "大型犬OK（城外）",
-    "url": "https://www.karatsu-kankou.jp/"
+    "url": "https://www.karatsu-kankou.jp/",
+    "lat": 33.453513,
+    "lng": 129.978193,
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "saga-arita-pottery-walk",
@@ -2278,7 +2490,9 @@
     "fee": "無料",
     "access": "佐賀県西松浦郡有田町 / 有田駅から徒歩5分",
     "large_dog": "大型犬OK（屋外）",
-    "url": "https://www.arita.jp/"
+    "url": "https://www.arita.jp/",
+    "lat": 33.195228,
+    "lng": 129.911299
   },
   {
     "id": "saga-mitsuse-dogrun",
@@ -2300,7 +2514,11 @@
     "fee": "ドッグラン500円〜",
     "access": "佐賀県佐賀市三瀬村 / 福岡市内から車で約50分",
     "large_dog": "大型犬OK",
-    "url": ""
+    "url": "",
+    "lat": 33.43499,
+    "lng": 130.280538,
+    "openTime": "10:00",
+    "closeTime": "17:00"
   },
   {
     "id": "fukuoka-otomodachi-dogrun",
@@ -2322,7 +2540,11 @@
     "fee": "500円/頭",
     "access": "福岡県福岡市博多区 / 博多駅から車で約15分",
     "large_dog": "大型犬OK",
-    "url": ""
+    "url": "",
+    "lat": 33.590826,
+    "lng": 130.414272,
+    "openTime": "09:00",
+    "closeTime": "19:00"
   },
   {
     "id": "oita-yufuin-dogcafe-komorebi",
@@ -2344,7 +2566,11 @@
     "fee": "ドリンク600円〜",
     "access": "大分県由布市湯布院町川上 / 由布院駅から徒歩20分",
     "large_dog": "大型犬OK",
-    "url": ""
+    "url": "",
+    "lat": 33.275252,
+    "lng": 131.362608,
+    "openTime": "10:00",
+    "closeTime": "17:00"
   },
   {
     "id": "kumamoto-kikuchi-gorge",
@@ -2366,7 +2592,11 @@
     "fee": "大人300円",
     "access": "熊本県菊池市原 / 菊池バスセンターから車で約30分",
     "large_dog": "大型犬OK",
-    "url": "https://www.city.kikuchi.lg.jp/"
+    "url": "https://www.city.kikuchi.lg.jp/",
+    "lat": 33.000859,
+    "lng": 130.951277,
+    "openTime": "08:00",
+    "closeTime": "17:00"
   },
   {
     "id": "nagasaki-goto-islands",
@@ -2388,7 +2618,9 @@
     "fee": "無料（フェリー別途）",
     "access": "長崎県五島市 / 長崎港からフェリーで約3時間",
     "large_dog": "大型犬OK",
-    "url": "https://www.goto-islands.jp/"
+    "url": "https://www.goto-islands.jp/",
+    "lat": 32.695142,
+    "lng": 128.84081
   },
   {
     "id": "miyazaki-nango-beach",
@@ -2410,7 +2642,9 @@
     "fee": "無料",
     "access": "宮崎県日南市南郷町 / 南郷駅から徒歩15分",
     "large_dog": "大型犬OK",
-    "url": ""
+    "url": "",
+    "lat": 31.537703,
+    "lng": 131.367407
   },
   {
     "id": "kagoshima-senganen-garden",
@@ -2432,7 +2666,11 @@
     "fee": "大人1,600円",
     "access": "鹿児島県鹿児島市吉野町9700-1 / 鹿児島中央駅からバスで約25分",
     "large_dog": "要確認",
-    "url": "https://www.senganen.jp/"
+    "url": "https://www.senganen.jp/",
+    "lat": 31.616622,
+    "lng": 130.576625,
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "saga-takeo-onsen",
@@ -2454,7 +2692,9 @@
     "fee": "無料（温泉入浴は別途）",
     "access": "佐賀県武雄市武雄町大字武雄7425 / 武雄温泉駅から徒歩5分",
     "large_dog": "大型犬OK",
-    "url": "https://www.takeo-kk.net/"
+    "url": "https://www.takeo-kk.net/",
+    "lat": 33.19647,
+    "lng": 130.023004
   },
   {
     "id": "fukuoka-yanagawa-canal",
@@ -2476,7 +2716,9 @@
     "fee": "無料（川下りは別途2,000円〜）",
     "access": "福岡県柳川市 / 西鉄柳川駅から徒歩10分",
     "large_dog": "大型犬OK（川岸）",
-    "url": "https://www.yanagawa-net.com/"
+    "url": "https://www.yanagawa-net.com/",
+    "lat": 33.163097,
+    "lng": 130.405809
   },
   {
     "id": "oita-himeshima-island",
@@ -2498,7 +2740,9 @@
     "fee": "フェリー往復大人1,200円（犬別途）",
     "access": "大分県東国東郡姫島村 / 伊美港からフェリー約20分",
     "large_dog": "大型犬OK",
-    "url": "https://www.himeshima.jp/"
+    "url": "https://www.himeshima.jp/",
+    "lat": 33.723941,
+    "lng": 131.645732
   },
   {
     "id": "kumamoto-hitoyoshi-castle",
@@ -2520,7 +2764,9 @@
     "fee": "無料",
     "access": "熊本県人吉市麓町18-4 / 人吉駅から徒歩15分",
     "large_dog": "大型犬OK",
-    "url": "https://www.hitoyoshi-kanko.jp/"
+    "url": "https://www.hitoyoshi-kanko.jp/",
+    "lat": 32.220416,
+    "lng": 130.768295
   },
   {
     "id": "miyazaki-kirishima-onsen",
@@ -2542,7 +2788,9 @@
     "fee": "無料（温泉入浴は別途）",
     "access": "宮崎県小林市野尻町 / 小林ICから車で約30分",
     "large_dog": "大型犬OK",
-    "url": ""
+    "url": "",
+    "lat": 31.958046,
+    "lng": 131.104384
   },
   {
     "id": "kagoshima-yakushima-walk",
@@ -2564,7 +2812,11 @@
     "fee": "大人500円",
     "access": "鹿児島県熊毛郡屋久島町 / 宮之浦港から車で約30分",
     "large_dog": "大型犬OK",
-    "url": "https://www.yakushima.or.jp/"
+    "url": "https://www.yakushima.or.jp/",
+    "lat": 30.380581,
+    "lng": 130.574998,
+    "openTime": "08:00",
+    "closeTime": "17:00"
   },
   {
     "id": "saga-nijinomatsubara",
@@ -2586,7 +2838,9 @@
     "fee": "無料",
     "access": "佐賀県唐津市浜玉町 / 虹ノ松原駅から徒歩すぐ",
     "large_dog": "大型犬OK",
-    "url": "https://www.karatsu-kankou.jp/"
+    "url": "https://www.karatsu-kankou.jp/",
+    "lat": 33.441043,
+    "lng": 130.016466
   },
   {
     "id": "fukuoka-otomodachi-park-dogrun2",
@@ -2608,7 +2862,9 @@
     "fee": "無料",
     "access": "福岡県福岡市中央区大濠公園1-2 / 大濠公園駅から徒歩3分",
     "large_dog": "大型犬OK",
-    "url": "https://www.ohorikouen.jp/"
+    "url": "https://www.ohorikouen.jp/",
+    "openTime": "09:00",
+    "closeTime": "21:00"
   },
   {
     "id": "oita-taketa-castle",
@@ -2630,7 +2886,11 @@
     "fee": "大人300円",
     "access": "大分県竹田市竹田2761 / 豊後竹田駅から徒歩20分",
     "large_dog": "大型犬OK",
-    "url": "https://www.city.taketa.oita.jp/"
+    "url": "https://www.city.taketa.oita.jp/",
+    "lat": 32.969426,
+    "lng": 131.408676,
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "kumamoto-reihoku-beach",
@@ -2652,7 +2912,9 @@
     "fee": "無料",
     "access": "熊本県天草郡苓北町 / 本渡バスセンターから車で約30分",
     "large_dog": "大型犬OK",
-    "url": ""
+    "url": "",
+    "lat": 32.513271,
+    "lng": 130.054807
   },
   {
     "id": "nagasaki-hirado-castle",
@@ -2674,7 +2936,11 @@
     "fee": "城外無料 / 城内大人520円",
     "access": "長崎県平戸市岩の上町1458 / 平戸口駅からバスで約30分",
     "large_dog": "大型犬OK（城外）",
-    "url": "https://www.hirado-castle.jp/"
+    "url": "https://www.hirado-castle.jp/",
+    "lat": 33.36859,
+    "lng": 129.557548,
+    "openTime": "08:30",
+    "closeTime": "17:30"
   },
   {
     "id": "miyazaki-udo-jingu",
@@ -2696,7 +2962,11 @@
     "fee": "無料",
     "access": "宮崎県日南市宮浦3232 / 宮崎駅から車で約60分",
     "large_dog": "大型犬OK（参道外）",
-    "url": "https://www.udojingu.com/"
+    "url": "https://www.udojingu.com/",
+    "lat": 31.649165,
+    "lng": 131.466117,
+    "openTime": "06:00",
+    "closeTime": "18:00"
   },
   {
     "id": "kagoshima-kagoshima-city-dogrun",
@@ -2718,7 +2988,9 @@
     "fee": "公園外無料",
     "access": "鹿児島県鹿児島市平川町5669-1 / 鹿児島中央駅からバスで約40分",
     "large_dog": "大型犬OK（公園外）",
-    "url": "https://www.hirakawazoo.jp/"
+    "url": "https://www.hirakawazoo.jp/",
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "miyazaki-takachiho-gorge-walk",
@@ -7014,7 +7286,9 @@
     "dogSize": "記載なし",
     "verified": true,
     "source": "https://traveldog.jp/wanwanmap/amami/",
-    "type": "観光・散策"
+    "type": "観光・散策",
+    "lat": 28.473426,
+    "lng": 129.717421
   },
   {
     "id": "kagoshima-ee5db0",
@@ -7081,7 +7355,9 @@
     "dogSize": "記載なし",
     "verified": true,
     "source": "https://traveldog.jp/wanwanmap/amami/",
-    "type": "観光・散策"
+    "type": "観光・散策",
+    "lat": 28.40681,
+    "lng": 129.628531
   },
   {
     "id": "kagoshima-8a7598",
@@ -7103,7 +7379,9 @@
     "dogSize": "記載なし",
     "verified": true,
     "source": "https://traveldog.jp/wanwanmap/amami/",
-    "type": "観光・散策"
+    "type": "観光・散策",
+    "lat": 28.410689,
+    "lng": 129.63008
   },
   {
     "id": "kagoshima-b8176b",
@@ -7149,7 +7427,9 @@
     "dogSize": "記載なし",
     "verified": true,
     "source": "https://traveldog.jp/wanwanmap/amami/",
-    "type": "観光・散策"
+    "type": "観光・散策",
+    "lat": 28.403607,
+    "lng": 129.645984
   },
   {
     "id": "kagoshima-b48188",
@@ -7194,7 +7474,9 @@
     "dogSize": "記載なし",
     "verified": true,
     "source": "https://traveldog.jp/wanwanmap/amami/",
-    "type": "観光・散策"
+    "type": "観光・散策",
+    "lat": 28.130678,
+    "lng": 129.371257
   },
   {
     "id": "kagoshima-c32e7b",
@@ -7216,7 +7498,9 @@
     "dogSize": "記載なし",
     "verified": true,
     "source": "https://traveldog.jp/wanwanmap/amami/",
-    "type": "観光・散策"
+    "type": "観光・散策",
+    "lat": 28.124421,
+    "lng": 129.363054
   },
   {
     "id": "kagoshima-304543",
@@ -7474,7 +7758,9 @@
     "map_url": "https://maps.google.com/?q=うみもぐら糸島+福岡県糸島市",
     "rakuten_keyword": "うみもぐら糸島",
     "emoji": "☕",
-    "mapQuery": "うみもぐら糸島 福岡県"
+    "mapQuery": "うみもぐら糸島 福岡県",
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_002",
@@ -7495,7 +7781,9 @@
     "map_url": "https://maps.google.com/?q=ドゥワンチャン+福岡県糸島市",
     "rakuten_keyword": "ドゥワンチャン",
     "emoji": "☕",
-    "mapQuery": "ドゥワンチャン 福岡県"
+    "mapQuery": "ドゥワンチャン 福岡県",
+    "openTime": "10:00",
+    "closeTime": "18:00"
   },
   {
     "id": "sp_003",
@@ -7516,7 +7804,9 @@
     "map_url": "https://maps.google.com/?q=糸島ファームハウス UOVO+福岡県糸島市",
     "rakuten_keyword": "糸島ファームハウス UOVO",
     "emoji": "☕",
-    "mapQuery": "糸島ファームハウス UOVO 福岡県"
+    "mapQuery": "糸島ファームハウス UOVO 福岡県",
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_004",
@@ -7537,7 +7827,9 @@
     "map_url": "https://maps.google.com/?q=OrionRadioCAFE+福岡県糸島市",
     "rakuten_keyword": "OrionRadioCAFE",
     "emoji": "☕",
-    "mapQuery": "OrionRadioCAFE 福岡県"
+    "mapQuery": "OrionRadioCAFE 福岡県",
+    "openTime": "10:00",
+    "closeTime": "18:00"
   },
   {
     "id": "sp_005",
@@ -7558,7 +7850,9 @@
     "map_url": "https://maps.google.com/?q=カフェ西洋館+福岡県糸島市",
     "rakuten_keyword": "カフェ西洋館",
     "emoji": "☕",
-    "mapQuery": "カフェ西洋館 福岡県"
+    "mapQuery": "カフェ西洋館 福岡県",
+    "openTime": "10:00",
+    "closeTime": "18:00"
   },
   {
     "id": "sp_006",
@@ -7579,7 +7873,9 @@
     "map_url": "https://maps.google.com/?q=喫茶ひるねこ+福岡県糸島市",
     "rakuten_keyword": "喫茶ひるねこ",
     "emoji": "☕",
-    "mapQuery": "喫茶ひるねこ 福岡県"
+    "mapQuery": "喫茶ひるねこ 福岡県",
+    "openTime": "10:00",
+    "closeTime": "18:00"
   },
   {
     "id": "sp_007",
@@ -7626,7 +7922,9 @@
     "map_url": "https://maps.google.com/?q=森とコーヒー。焙煎室+福岡県糸島市",
     "rakuten_keyword": "森とコーヒー。焙煎室",
     "emoji": "☕",
-    "mapQuery": "森のカフェ 緑の詩 (みどりのおと) 福岡県"
+    "mapQuery": "森のカフェ 緑の詩 (みどりのおと) 福岡県",
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_009",
@@ -7649,7 +7947,9 @@
     "map_url": "https://maps.google.com/?q=雪菓子 元祖 村上や+福岡県糸島市",
     "rakuten_keyword": "雪菓子 元祖 村上や",
     "emoji": "☕",
-    "mapQuery": "雪菓子 元祖 村上や 福岡県"
+    "mapQuery": "雪菓子 元祖 村上や 福岡県",
+    "openTime": "10:00",
+    "closeTime": "18:00"
   },
   {
     "id": "sp_010",
@@ -7672,7 +7972,9 @@
     "map_url": "https://maps.google.com/?q=Beach Cafe Granmare ビーチカフェ グランマーレ+福岡県糸島市",
     "rakuten_keyword": "Beach Cafe Granmare ビーチカフェ グランマーレ",
     "emoji": "☕",
-    "mapQuery": "Beach Cafe Granmare ビーチカフェ グランマーレ 福岡県"
+    "mapQuery": "Beach Cafe Granmare ビーチカフェ グランマーレ 福岡県",
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_011",
@@ -7693,7 +7995,9 @@
     "map_url": "https://maps.google.com/?q=CURRENT+福岡県糸島市",
     "rakuten_keyword": "CURRENT",
     "emoji": "☕",
-    "mapQuery": "CURRENT 福岡県"
+    "mapQuery": "CURRENT 福岡県",
+    "openTime": "10:00",
+    "closeTime": "18:00"
   },
   {
     "id": "sp_012",
@@ -7718,7 +8022,9 @@
     "map_url": "https://maps.google.com/?q=Farm Resort 糸島+福岡県糸島市",
     "rakuten_keyword": "Farm Resort 糸島",
     "emoji": "☕",
-    "mapQuery": "Farm Resort 糸島 福岡県"
+    "mapQuery": "Farm Resort 糸島 福岡県",
+    "openTime": "10:00",
+    "closeTime": "18:00"
   },
   {
     "id": "sp_013",
@@ -7739,7 +8045,9 @@
     "map_url": "https://maps.google.com/?q=おてらかふぇ和休+福岡県糸島市",
     "rakuten_keyword": "おてらかふぇ和休",
     "emoji": "☕",
-    "mapQuery": "おてらかふぇ和休 福岡県"
+    "mapQuery": "おてらかふぇ和休 福岡県",
+    "openTime": "10:00",
+    "closeTime": "18:00"
   },
   {
     "id": "sp_014",
@@ -7760,7 +8068,9 @@
     "map_url": "https://maps.google.com/?q=焼肉・鍋 まるや+福岡県糸島市",
     "rakuten_keyword": "焼肉・鍋 まるや",
     "emoji": "🌿",
-    "mapQuery": "焼肉・鍋 まるや 福岡県"
+    "mapQuery": "焼肉・鍋 まるや 福岡県",
+    "openTime": "10:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_015",
@@ -7781,7 +8091,9 @@
     "map_url": "https://maps.google.com/?q=糸島牡蠣小屋ひろちゃんカキ+福岡県糸島市",
     "rakuten_keyword": "糸島牡蠣小屋ひろちゃんカキ",
     "emoji": "🌿",
-    "mapQuery": "糸島牡蠣小屋ひろちゃんカキ 福岡県"
+    "mapQuery": "糸島牡蠣小屋ひろちゃんカキ 福岡県",
+    "openTime": "10:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_016",
@@ -7802,7 +8114,9 @@
     "map_url": "https://maps.google.com/?q=avex beach paradise FUKUOKA+福岡県糸島市",
     "rakuten_keyword": "avex beach paradise FUKUOKA",
     "emoji": "🌿",
-    "mapQuery": "avex beach paradise FUKUOKA 福岡県"
+    "mapQuery": "avex beach paradise FUKUOKA 福岡県",
+    "openTime": "09:00",
+    "closeTime": "18:00"
   },
   {
     "id": "sp_017",
@@ -7826,7 +8140,9 @@
     "map_url": "https://maps.google.com/?q=上の焼肉屋+福岡県糸島市",
     "rakuten_keyword": "上の焼肉屋",
     "emoji": "🌿",
-    "mapQuery": "上の焼肉屋 福岡県"
+    "mapQuery": "上の焼肉屋 福岡県",
+    "openTime": "10:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_018",
@@ -7849,7 +8165,9 @@
     "map_url": "https://maps.google.com/?q=白糸うどんやすじ+福岡県糸島市",
     "rakuten_keyword": "白糸うどんやすじ",
     "emoji": "🌿",
-    "mapQuery": "白糸うどんやすじ 福岡県"
+    "mapQuery": "白糸うどんやすじ 福岡県",
+    "openTime": "10:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_019",
@@ -7872,7 +8190,9 @@
     "map_url": "https://maps.google.com/?q=森とコーヒー。焙煎室+福岡県糸島市",
     "rakuten_keyword": "森とコーヒー。焙煎室",
     "emoji": "🌿",
-    "mapQuery": "森とコーヒー。焙煎室 福岡県"
+    "mapQuery": "森とコーヒー。焙煎室 福岡県",
+    "openTime": "10:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_020",
@@ -7895,7 +8215,9 @@
     "map_url": "https://maps.google.com/?q=ドッグフレンドリーパークうえらんから糸島+福岡県糸島市",
     "rakuten_keyword": "ドッグフレンドリーパークうえらんから糸島",
     "emoji": "🐾",
-    "mapQuery": "ドッグフレンドリーパークうえらんから糸島 福岡県"
+    "mapQuery": "ドッグフレンドリーパークうえらんから糸島 福岡県",
+    "openTime": "09:00",
+    "closeTime": "18:00"
   },
   {
     "id": "sp_001",
@@ -7919,7 +8241,9 @@
     "map_url": "https://maps.google.com/?q=古式手打そば 泉+大分県由布市湯布院町川上1599-1",
     "rakuten_keyword": "湯布院 古式手打そば 泉",
     "emoji": "☕",
-    "mapQuery": "古式手打そば 泉 大分"
+    "mapQuery": "古式手打そば 泉 大分",
+    "openTime": "11:00",
+    "closeTime": "15:00"
   },
   {
     "id": "sp_002",
@@ -7943,7 +8267,9 @@
     "map_url": "https://maps.google.com/?q=鞠智+大分県由布市湯布院町川上3001-1",
     "rakuten_keyword": "湯布院 鞠智",
     "emoji": "☕",
-    "mapQuery": "鞠智 (Cucuchi) 大分"
+    "mapQuery": "鞠智 (Cucuchi) 大分",
+    "openTime": "10:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_003",
@@ -7967,7 +8293,9 @@
     "map_url": "https://maps.google.com/?q=湯布院金賞コロッケ 本店+大分県由布市湯布院町川上1481-7",
     "rakuten_keyword": "湯布院 金賞コロッケ",
     "emoji": "🌿",
-    "mapQuery": "湯布院金賞コロッケ 本店 大分"
+    "mapQuery": "湯布院金賞コロッケ 本店 大分",
+    "openTime": "09:00",
+    "closeTime": "17:30"
   },
   {
     "id": "sp_004",
@@ -7991,7 +8319,9 @@
     "map_url": "https://maps.google.com/?q=YUFUIN FLORAL VILLAGE+大分県由布市湯布院町川上1503-3",
     "rakuten_keyword": "湯布院 フローラルヴィレッジ",
     "emoji": "🌿",
-    "mapQuery": "YUFUIN FLORAL VILLAGE 大分"
+    "mapQuery": "YUFUIN FLORAL VILLAGE 大分",
+    "openTime": "09:30",
+    "closeTime": "17:30"
   },
   {
     "id": "sp_005",
@@ -8017,7 +8347,9 @@
     "map_url": "https://maps.google.com/?q=ドッグカフェKURU・SAN+大分県別府市火売6組3",
     "rakuten_keyword": "別府 ドッグカフェ KURU・SAN",
     "emoji": "☕",
-    "mapQuery": "ドッグカフェKURU・SAN 大分"
+    "mapQuery": "ドッグカフェKURU・SAN 大分",
+    "openTime": "10:00",
+    "closeTime": "18:00"
   },
   {
     "id": "sp_006",
@@ -8043,7 +8375,9 @@
     "map_url": "https://maps.google.com/?q=BISTRO颯＆輝光〜soraito〜+大分県別府市南立石一区4−２",
     "rakuten_keyword": "別府 BISTRO颯＆輝光",
     "emoji": "☕",
-    "mapQuery": "BISTRO颯＆輝光〜soraito〜 大分"
+    "mapQuery": "BISTRO颯＆輝光〜soraito〜 大分",
+    "openTime": "11:00",
+    "closeTime": "22:00"
   },
   {
     "id": "sp_007",
@@ -8068,7 +8402,9 @@
     "map_url": "https://maps.google.com/?q=SUNLINE BEPPU+大分県別府市北浜2-12-9",
     "rakuten_keyword": "別府 SUNLINE BEPPU",
     "emoji": "☕",
-    "mapQuery": "SUNLINE BEPPU 大分"
+    "mapQuery": "SUNLINE BEPPU 大分",
+    "openTime": "10:30",
+    "closeTime": "21:30"
   },
   {
     "id": "sp_008",
@@ -8094,7 +8430,9 @@
     "map_url": "https://maps.google.com/?q=RECAMP別府志高湖+大分県別府市志高4380番地",
     "rakuten_keyword": "別府 志高湖 キャンプ",
     "emoji": "🏕️",
-    "mapQuery": "RECAMP別府志高湖 大分"
+    "mapQuery": "RECAMP別府志高湖 大分",
+    "openTime": "09:00",
+    "closeTime": "18:00"
   },
   {
     "id": "sp_009",
@@ -8119,7 +8457,9 @@
     "map_url": "https://maps.google.com/?q=フォレストアドベンチャー・別府+大分県別府市志高4380-1",
     "rakuten_keyword": "別府 フォレストアドベンチャー",
     "emoji": "🏕️",
-    "mapQuery": "フォレストアドベンチャー・別府 大分"
+    "mapQuery": "フォレストアドベンチャー・別府 大分",
+    "openTime": "10:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_010",
@@ -8145,7 +8485,9 @@
     "map_url": "https://maps.google.com/?q=別府市ドッグラン+別府市大字鶴見979番1",
     "rakuten_keyword": "別府市 ドッグラン",
     "emoji": "🐾",
-    "mapQuery": "別府市ドッグラン 大分"
+    "mapQuery": "別府市ドッグラン 大分",
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_011",
@@ -8170,7 +8512,9 @@
     "map_url": "https://maps.google.com/?q=別府湾SA+大分県別府市内竈字扇山3667-43-2",
     "rakuten_keyword": "別府湾SA ドッグラン",
     "emoji": "🌿",
-    "mapQuery": "別府湾SA 大分"
+    "mapQuery": "別府湾SA 大分",
+    "openTime": "07:00",
+    "closeTime": "20:00"
   },
   {
     "id": "sp_012",
@@ -8195,7 +8539,9 @@
     "map_url": "https://maps.google.com/?q=別府公園+大分県別府市大字別府野口原3018-1",
     "rakuten_keyword": "別府公園 犬",
     "emoji": "🌳",
-    "mapQuery": "別府公園 大分"
+    "mapQuery": "別府公園 大分",
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_013",
@@ -8220,7 +8566,9 @@
     "map_url": "https://maps.google.com/?q=血の池地獄ドッグラン+大分県別府市野田778",
     "rakuten_keyword": "血の池地獄 ドッグラン",
     "emoji": "🐾",
-    "mapQuery": "血の池地獄ドッグラン 大分"
+    "mapQuery": "血の池地獄ドッグラン 大分",
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_014",
@@ -8245,7 +8593,9 @@
     "map_url": "https://maps.google.com/?q=NU:KUJU+大分県玖珠郡九重町田野1681-14",
     "rakuten_keyword": "くじゅう NU:KUJU",
     "emoji": "🌿",
-    "mapQuery": "NU:KUJU（ヌークジュー） 大分"
+    "mapQuery": "NU:KUJU（ヌークジュー） 大分",
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_001",
@@ -8269,7 +8619,9 @@
     "rakuten_keyword": null,
     "description": "芝生のドッグランで愛犬のストレス発散に最適なスポットです。",
     "emoji": "🐾",
-    "mapQuery": "happytail 熊本県"
+    "mapQuery": "happytail 熊本県",
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_002",
@@ -8293,7 +8645,9 @@
     "rakuten_keyword": null,
     "description": "広々としたドッグランで愛犬を思いっきり走らせることができます。",
     "emoji": "🐾",
-    "mapQuery": "あそ望の郷 くぎの 熊本県"
+    "mapQuery": "あそ望の郷 くぎの 熊本県",
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_003",
@@ -8317,7 +8671,9 @@
     "rakuten_keyword": null,
     "description": "広々としたドッグランで愛犬を思いっきり走らせることができます。",
     "emoji": "🐾",
-    "mapQuery": "ドッグランNAO 熊本県"
+    "mapQuery": "ドッグランNAO 熊本県",
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_004",
@@ -8342,7 +8698,9 @@
     "rakuten_keyword": null,
     "description": "ワンちゃんと一緒に入れるカフェ。地元の食材を使ったメニューが人気です。",
     "emoji": "☕",
-    "mapQuery": "阿蘇マロンの樹 熊本県"
+    "mapQuery": "阿蘇マロンの樹 熊本県",
+    "openTime": "11:00",
+    "closeTime": "18:00"
   },
   {
     "id": "sp_006",
@@ -8366,7 +8724,9 @@
     "rakuten_keyword": null,
     "description": "犬連れOKのカフェ。愛犬と一緒にゆっくりランチやカフェタイムを楽しめます。",
     "emoji": "☕",
-    "mapQuery": "ドッグカフェ フラッペ×フラッペ 熊本県"
+    "mapQuery": "ドッグカフェ フラッペ×フラッペ 熊本県",
+    "openTime": "11:00",
+    "closeTime": "18:00"
   },
   {
     "id": "sp_007",
@@ -8417,7 +8777,9 @@
     "rakuten_keyword": null,
     "description": "犬連れOKのカフェ。愛犬と一緒にゆっくりランチやカフェタイムを楽しめます。",
     "emoji": "☕",
-    "mapQuery": "Little Garden（リトルガーデン） 熊本県"
+    "mapQuery": "Little Garden（リトルガーデン） 熊本県",
+    "openTime": "11:30",
+    "closeTime": "14:00"
   },
   {
     "id": "sp_010",
@@ -8441,7 +8803,9 @@
     "rakuten_keyword": null,
     "description": "九州の犬連れスポット。愛犬との思い出作りに最適です。",
     "emoji": "🌿",
-    "mapQuery": "加藤神社 熊本県"
+    "mapQuery": "加藤神社 熊本県",
+    "openTime": "08:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_011",
@@ -8466,7 +8830,9 @@
     "rakuten_keyword": null,
     "description": "ペット同伴可能な施設です。愛犬と一緒にお出かけしましょう。",
     "emoji": "🌿",
-    "mapQuery": "はな阿蘇美（ASO MILK FACTORY） 熊本県"
+    "mapQuery": "はな阿蘇美（ASO MILK FACTORY） 熊本県",
+    "openTime": "09:30",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_012",
@@ -8492,7 +8858,9 @@
     "rakuten_keyword": null,
     "description": "犬連れでアウトドアを楽しめるスポット。自然の中で愛犬と過ごせます。",
     "emoji": "🏕️",
-    "mapQuery": "自然屋かわじん 熊本県"
+    "mapQuery": "自然屋かわじん 熊本県",
+    "openTime": "08:00",
+    "closeTime": "20:00"
   },
   {
     "id": "sp_013",
@@ -8517,7 +8885,9 @@
     "rakuten_keyword": null,
     "description": "ペット同伴可能な施設です。愛犬と一緒にお出かけしましょう。",
     "emoji": "🌿",
-    "mapQuery": "阿蘇カドリー・ドミニオン 熊本県"
+    "mapQuery": "阿蘇カドリー・ドミニオン 熊本県",
+    "openTime": "09:30",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_014",
@@ -8542,7 +8912,9 @@
     "rakuten_keyword": null,
     "description": "ペット同伴可能な施設です。愛犬と一緒にお出かけしましょう。",
     "emoji": "🌿",
-    "mapQuery": "熊本城 熊本県"
+    "mapQuery": "熊本城 熊本県",
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_015",
@@ -8616,7 +8988,9 @@
     "map_url": "https://maps.google.com/?q=蛤浜海水浴場 長崎県南松浦郡新上五島町七目郷",
     "rakuten_keyword": "蛤浜海水浴場 犬連れ",
     "emoji": "🌿",
-    "mapQuery": "蛤浜海水浴場 長崎県"
+    "mapQuery": "蛤浜海水浴場 長崎県",
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_009",
@@ -8667,7 +9041,9 @@
     "map_url": "https://maps.google.com/?q=Buddy&Earth 長崎県大村市上諏訪町1651",
     "rakuten_keyword": "Buddy&Earth",
     "emoji": "🌿",
-    "mapQuery": "Buddy&Earth 長崎県"
+    "mapQuery": "Buddy&Earth 長崎県",
+    "openTime": "10:00",
+    "closeTime": "18:00"
   },
   {
     "id": "sp_011",
@@ -8718,7 +9094,9 @@
     "map_url": "https://maps.google.com/?q=DOGHILL 長崎県東彼杵郡東彼杵町小音琴郷2303-1",
     "rakuten_keyword": "DOGHILL",
     "emoji": "🌿",
-    "mapQuery": "DOGHILL 長崎県"
+    "mapQuery": "DOGHILL 長崎県",
+    "openTime": "11:30",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_014",
@@ -8943,7 +9321,9 @@
     "map_url": "https://maps.google.com/?q=長串山公園 佐世保市",
     "rakuten_keyword": "長串山公園",
     "emoji": "🌳",
-    "mapQuery": "長串山公園 長崎県"
+    "mapQuery": "長串山公園 長崎県",
+    "openTime": "09:00",
+    "closeTime": "18:00"
   },
   {
     "id": "sp_031",
@@ -8967,7 +9347,9 @@
     "map_url": "https://maps.google.com/?q=鳥栖プレミアム・アウトレット 佐賀県鳥栖市弥生が丘8-1",
     "rakuten_keyword": "鳥栖プレミアム・アウトレット 犬連れ",
     "emoji": "🌿",
-    "mapQuery": "鳥栖プレミアム・アウトレット 佐賀県"
+    "mapQuery": "鳥栖プレミアム・アウトレット 佐賀県",
+    "openTime": "10:00",
+    "closeTime": "20:00"
   },
   {
     "id": "sp_032",
@@ -9017,7 +9399,9 @@
     "map_url": "https://maps.google.com/?q=レストガーデンミニ 佐賀県武雄市山内町大字宮野325-1",
     "rakuten_keyword": "レストガーデンミニ",
     "emoji": "☕",
-    "mapQuery": "レストガーデンミニ 佐賀県"
+    "mapQuery": "レストガーデンミニ 佐賀県",
+    "openTime": "11:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_035",
@@ -9042,7 +9426,9 @@
     "map_url": "https://maps.google.com/?q=カフェ フクシア 佐賀県佐賀市大和町大字尼寺３２２０−１",
     "rakuten_keyword": "カフェ フクシア",
     "emoji": "🌿",
-    "mapQuery": "カフェ フクシア 佐賀県"
+    "mapQuery": "カフェ フクシア 佐賀県",
+    "openTime": "11:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_036",
@@ -9067,7 +9453,9 @@
     "map_url": "https://maps.google.com/?q=たのしい農家・お百笑さん 佐賀県武雄市若木町本部山中",
     "rakuten_keyword": "たのしい農家・お百笑さん",
     "emoji": "🌿",
-    "mapQuery": "たのしい農家・お百笑さん 佐賀県"
+    "mapQuery": "たのしい農家・お百笑さん 佐賀県",
+    "openTime": "11:00",
+    "closeTime": "15:00"
   },
   {
     "id": "sp_039",
@@ -9092,7 +9480,9 @@
     "map_url": "https://maps.google.com/?q=吉野berry観光農園 神埼郡",
     "rakuten_keyword": "吉野berry ドッグラン",
     "emoji": "🐾",
-    "mapQuery": "吉野berry観光農園 ドッグラン 佐賀県"
+    "mapQuery": "吉野berry観光農園 ドッグラン 佐賀県",
+    "openTime": "10:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_040",
@@ -9117,7 +9507,9 @@
     "map_url": "https://maps.google.com/?q=カフェのっち 佐賀市",
     "rakuten_keyword": "カフェのっち",
     "emoji": "🌿",
-    "mapQuery": "カフェのっち 佐賀県"
+    "mapQuery": "カフェのっち 佐賀県",
+    "openTime": "10:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_041",
@@ -9142,7 +9534,9 @@
     "map_url": "https://maps.google.com/?q=おっぽ 佐賀市西古賀",
     "rakuten_keyword": "おっぽ ドッグラン",
     "emoji": "🐾",
-    "mapQuery": "おっぽ 佐賀県"
+    "mapQuery": "おっぽ 佐賀県",
+    "openTime": "10:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_042",
@@ -9167,7 +9561,9 @@
     "map_url": "https://maps.google.com/?q=厳木ドッグラン 唐津市",
     "rakuten_keyword": "厳木ドッグラン",
     "emoji": "🐾",
-    "mapQuery": "厳木ドッグラン 佐賀県"
+    "mapQuery": "厳木ドッグラン 佐賀県",
+    "openTime": "11:00",
+    "closeTime": "18:00"
   },
   {
     "id": "sp_043",
@@ -9192,7 +9588,9 @@
     "map_url": "https://maps.google.com/?q=Mcafe＆M3 佐賀市三瀬村",
     "rakuten_keyword": "Mcafe＆M3",
     "emoji": "🌿",
-    "mapQuery": "Mcafe＆M3 佐賀県"
+    "mapQuery": "Mcafe＆M3 佐賀県",
+    "openTime": "11:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_044",
@@ -9218,7 +9616,9 @@
     "map_url": "https://maps.google.com/?q=ドッグランヒルズ 有田市",
     "rakuten_keyword": "ドッグランヒルズ",
     "emoji": "🐾",
-    "mapQuery": "ドッグランヒルズ 佐賀県"
+    "mapQuery": "ドッグランヒルズ 佐賀県",
+    "openTime": "11:00",
+    "closeTime": "18:00"
   },
   {
     "id": "sp_045",
@@ -9243,7 +9643,9 @@
     "map_url": "https://maps.google.com/?q=ペットショップ Coo＆RIKU 佐賀神埼店",
     "rakuten_keyword": "Coo＆RIKU 佐賀神埼店",
     "emoji": "🐾",
-    "mapQuery": "ペットショップ Coo＆RIKU 佐賀神埼店 佐賀県"
+    "mapQuery": "ペットショップ Coo＆RIKU 佐賀神埼店 佐賀県",
+    "openTime": "11:00",
+    "closeTime": "20:00"
   },
   {
     "id": "sp_046",
@@ -9267,7 +9669,9 @@
     "map_url": "https://maps.google.com/?q=ペットショップ からつケンネル 唐津市",
     "rakuten_keyword": "からつケンネル",
     "emoji": "🐾",
-    "mapQuery": "ペットショップ からつケンネル 佐賀県"
+    "mapQuery": "ペットショップ からつケンネル 佐賀県",
+    "openTime": "10:00",
+    "closeTime": "19:00"
   },
   {
     "id": "sp_047",
@@ -9313,7 +9717,9 @@
     "map_url": "https://www.google.com/maps/search/高千穂神社+宮崎県西臼杵郡高千穂町三田井1037",
     "rakuten_keyword": "",
     "emoji": "🌿",
-    "mapQuery": "高千穂神社 宮崎"
+    "mapQuery": "高千穂神社 宮崎",
+    "openTime": "09:00",
+    "closeTime": "18:00"
   },
   {
     "id": "sp_003",
@@ -9334,7 +9740,9 @@
     "map_url": "https://www.google.com/maps/search/天岩戸神社+宮崎県西臼杵郡高千穂町岩戸1073-1",
     "rakuten_keyword": "",
     "emoji": "🌿",
-    "mapQuery": "天岩戸神社 宮崎"
+    "mapQuery": "天岩戸神社 宮崎",
+    "openTime": "10:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_004",
@@ -9378,7 +9786,9 @@
     "map_url": "https://www.google.com/maps/search/阿波岐原森林公園+市民の森+宮崎県宮崎市阿波岐原町",
     "rakuten_keyword": "",
     "emoji": "🌳",
-    "mapQuery": "阿波岐原森林公園 市民の森 宮崎"
+    "mapQuery": "阿波岐原森林公園 市民の森 宮崎",
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_006",
@@ -9399,7 +9809,9 @@
     "map_url": "https://www.google.com/maps/search/延岡城跡・城山公園+宮崎県延岡市東本小路134",
     "rakuten_keyword": "",
     "emoji": "🌳",
-    "mapQuery": "延岡城跡・城山公園 宮崎"
+    "mapQuery": "延岡城跡・城山公園 宮崎",
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_007",
@@ -9462,7 +9874,9 @@
     "map_url": "https://www.google.com/maps/search/鬼の洗濯板+宮崎県宮崎市青島",
     "rakuten_keyword": "",
     "emoji": "🌿",
-    "mapQuery": "鬼の洗濯板 宮崎"
+    "mapQuery": "鬼の洗濯板 宮崎",
+    "openTime": "10:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_011",
@@ -9485,7 +9899,9 @@
     "map_url": "https://www.google.com/maps/search/堀切峠+宮崎県宮崎市堀切町",
     "rakuten_keyword": "",
     "emoji": "🌿",
-    "mapQuery": "堀切峠 宮崎"
+    "mapQuery": "堀切峠 宮崎",
+    "openTime": "09:00",
+    "closeTime": "18:00"
   },
   {
     "id": "sp_012",
@@ -9506,7 +9922,9 @@
     "map_url": "https://www.google.com/maps/search/生駒高原+宮崎県小林市南西方8565-25",
     "rakuten_keyword": "",
     "emoji": "🌿",
-    "mapQuery": "生駒高原 宮崎"
+    "mapQuery": "生駒高原 宮崎",
+    "openTime": "10:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_013",
@@ -9529,7 +9947,9 @@
     "map_url": "https://www.google.com/maps/search/LDK（エルディーケー）+宮崎県宮崎市青島2丁目1-11",
     "rakuten_keyword": "",
     "emoji": "☕",
-    "mapQuery": "LDK（エルディーケー） 宮崎"
+    "mapQuery": "LDK（エルディーケー） 宮崎",
+    "openTime": "10:00",
+    "closeTime": "18:00"
   },
   {
     "id": "sp_014",
@@ -9550,7 +9970,9 @@
     "map_url": "https://www.google.com/maps/search/あめいろCAFÉ+宮崎県宮崎市下北方町常盤元990-1",
     "rakuten_keyword": "",
     "emoji": "☕",
-    "mapQuery": "あめいろCAFÉ 宮崎"
+    "mapQuery": "あめいろCAFÉ 宮崎",
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_021",
@@ -9573,7 +9995,9 @@
     "map_url": "https://www.google.com/maps/search/長串山公園+長崎県佐世保市鹿町町長串157-3",
     "rakuten_keyword": "",
     "emoji": "🌳",
-    "mapQuery": "長串山公園 長崎"
+    "mapQuery": "長串山公園 長崎",
+    "openTime": "06:00",
+    "closeTime": "21:00"
   },
   {
     "id": "sp_032",
@@ -9594,7 +10018,9 @@
     "map_url": "https://www.google.com/maps/search/曽木の滝公園+鹿児島県伊佐市大口宮人628-41",
     "rakuten_keyword": "",
     "emoji": "🌿",
-    "mapQuery": "曽木の滝公園 鹿児島"
+    "mapQuery": "曽木の滝公園 鹿児島",
+    "openTime": "09:00",
+    "closeTime": "18:00"
   },
   {
     "id": "sp_033",
@@ -9615,7 +10041,9 @@
     "map_url": "https://www.google.com/maps/search/マリンポートかごしま+鹿児島県鹿児島市中央港新町1",
     "rakuten_keyword": "",
     "emoji": "🌿",
-    "mapQuery": "マリンポートかごしま 鹿児島"
+    "mapQuery": "マリンポートかごしま 鹿児島",
+    "openTime": "06:00",
+    "closeTime": "20:00"
   },
   {
     "id": "sp_034",
@@ -9678,7 +10106,9 @@
     "map_url": "https://www.google.com/maps/search/霧島さくらフルーツランド+鹿児島県霧島市溝辺町有川2268",
     "rakuten_keyword": "",
     "emoji": "🌿",
-    "mapQuery": "霧島さくらフルーツランド 鹿児島"
+    "mapQuery": "霧島さくらフルーツランド 鹿児島",
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_037",
@@ -9743,7 +10173,9 @@
     "map_url": "https://www.google.com/maps/search/かのやばら園+鹿児島県鹿屋市浜田町1250",
     "rakuten_keyword": "",
     "emoji": "🌳",
-    "mapQuery": "かのやばら園 鹿児島"
+    "mapQuery": "かのやばら園 鹿児島",
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_040",
@@ -9787,7 +10219,9 @@
     "map_url": "https://www.google.com/maps/search/石橋記念公園+鹿児島県鹿児島市浜町2-20",
     "rakuten_keyword": "",
     "emoji": "🌳",
-    "mapQuery": "石橋記念公園 鹿児島"
+    "mapQuery": "石橋記念公園 鹿児島",
+    "openTime": "09:00",
+    "closeTime": "17:00"
   },
   {
     "id": "sp_042",
@@ -9810,7 +10244,9 @@
     "map_url": "https://www.google.com/maps/search/霧島錦江湾クルーズ+鹿児島県鹿児島市本港新町3-1",
     "rakuten_keyword": "",
     "emoji": "🌿",
-    "mapQuery": "霧島錦江湾クルーズ 鹿児島"
+    "mapQuery": "霧島錦江湾クルーズ 鹿児島",
+    "openTime": "09:00",
+    "closeTime": "18:00"
   },
   {
     "id": "sp_043",
@@ -9854,6 +10290,8 @@
     "map_url": "https://www.google.com/maps/search/ミジカフェ+鹿児島県霧島市国分中央3丁目3-1",
     "rakuten_keyword": "",
     "emoji": "☕",
-    "mapQuery": "ミジカフェ 鹿児島"
+    "mapQuery": "ミジカフェ 鹿児島",
+    "openTime": "11:00",
+    "closeTime": "18:00"
   }
 ]
