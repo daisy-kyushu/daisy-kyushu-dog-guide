@@ -617,7 +617,7 @@
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getFirestore, collection, getDocs, doc, deleteDoc, query, orderBy, limit } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
-import { getAuth, GoogleAuthProvider, signInWithPopup, signInWithRedirect, getRedirectResult, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDRVtANI251gyQjY-okPAzlSYXTGpslwnQ",
@@ -639,22 +639,30 @@ const ALLOWED_EMAIL = "satoukatuya0118@gmail.com";
 let hourlyChart = null, dailyChart = null, rakutenPageChart = null, rakutenCatChart = null;
 let allSpots = [], filteredSpots = [], currentSpotFilter = 'all', spotsPage = 1;
 const SPOTS_PER_PAGE = 20;
+let adminLoaded = false;
+let signingOut = false;
 
 // ========== 認証状態の監視 ==========
 onAuthStateChanged(auth, (user) => {
+  if (signingOut) return; // ログアウト処理中はスキップ
   if (user && user.email === ALLOWED_EMAIL) {
     // 認証成功：管理画面を表示
     document.getElementById('login-screen').style.display = 'none';
     document.getElementById('admin-screen').style.display = 'block';
     document.getElementById('admin-user-email').textContent = user.email;
-    loadDashboard();
-    loadEventsTab();
-    loadSpotsTab();
-    loadBlogTab();
+    if (!adminLoaded) {
+      adminLoaded = true;
+      loadDashboard();
+      loadEventsTab();
+      loadSpotsTab();
+      loadBlogTab();
+    }
   } else if (user && user.email !== ALLOWED_EMAIL) {
     // 許可されていないアカウント
-    signOut(auth);
+    signingOut = true;
+    signOut(auth).then(() => { signingOut = false; });
     document.getElementById('login-error').style.display = 'block';
+    document.getElementById('login-error').textContent = 'アクセス権限がありません。satoukatuya0118@gmail.com でログインしてください。';
     document.getElementById('login-loading').style.display = 'none';
   } else {
     // 未ログイン
@@ -664,42 +672,34 @@ onAuthStateChanged(auth, (user) => {
 });
 
 // ========== Googleログイン ==========
-// iOS Safariはポップアップをブロックするため、リダイレクト方式を使用
-const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
-// リダイレクト後の結果を取得
-getRedirectResult(auth).then((result) => {
-  if (result && result.user) {
-    // onAuthStateChangedが引き継ぎ処理する
-  }
-}).catch((e) => {
-  console.error('redirect result error:', e);
-});
-
 window.doGoogleLogin = async function() {
-  document.getElementById('login-loading').style.display = 'block';
-  document.getElementById('login-error').style.display = 'none';
+  const loadingEl = document.getElementById('login-loading');
+  const errorEl = document.getElementById('login-error');
+  loadingEl.style.display = 'block';
+  errorEl.style.display = 'none';
   try {
-    if (isIOS || isSafari) {
-      // iOS/Safariはリダイレクト方式
-      await signInWithRedirect(auth, provider);
-    } else {
-      // その他はポップアップ方式
-      await signInWithPopup(auth, provider);
-    }
+    provider.setCustomParameters({ prompt: 'select_account' });
+    const result = await signInWithPopup(auth, provider);
+    // onAuthStateChangedが引き継ぎ処理する
   } catch(e) {
-    document.getElementById('login-loading').style.display = 'none';
-    if (e.code !== 'auth/popup-closed-by-user') {
-      document.getElementById('login-error').style.display = 'block';
-      document.getElementById('login-error').textContent = 'ログインに失敗しました。再度お試しください。';
+    loadingEl.style.display = 'none';
+    if (e.code === 'auth/popup-blocked') {
+      // ポップアップがブロックされた場合のフォールバック
+      errorEl.style.display = 'block';
+      errorEl.textContent = 'ポップアップがブロックされました。ブラウザの設定でポップアップを許可してください。';
+    } else if (e.code !== 'auth/popup-closed-by-user' && e.code !== 'auth/cancelled-popup-request') {
+      errorEl.style.display = 'block';
+      errorEl.textContent = 'ログインに失敗しました（' + e.code + '）。再度お試しください。';
     }
   }
 };
 
 // ========== ログアウト ==========
 window.doLogout = async function() {
+  signingOut = true;
+  adminLoaded = false;
   await signOut(auth);
+  signingOut = false;
   location.reload();
 };
 
