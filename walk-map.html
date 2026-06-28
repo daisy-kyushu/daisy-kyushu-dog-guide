@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E1XSFE7LXG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-E1XSFE7LXG');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>みんなの散歩コース | Daisy Kyushu Dog Guide</title>
+  <meta name="description" content="九州の犬連れ散歩コースをみんなで共有！リアルタイムで更新される散歩マップ。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    :root {
+      --green: #16a34a;
+      --green-light: #22c55e;
+      --bg: #f0fdf4;
+      --card-bg: #fff;
+      --text: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+    }
+
+    body { background: var(--bg); color: var(--text); font-family: 'Noto Sans JP', sans-serif; }
+
+    /* ページヘッダー */
+    .page-hero {
+      background: linear-gradient(135deg, #14532d, #16a34a);
+      color: #fff;
+      padding: 32px 20px 24px;
+      text-align: center;
+    }
+    .page-hero h1 { font-size: 24px; font-weight: 800; margin-bottom: 6px; }
+    .page-hero p { font-size: 14px; opacity: 0.85; }
+    .live-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(255,255,255,0.2); border-radius: 20px;
+      padding: 4px 12px; font-size: 12px; font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .live-dot {
+      width: 8px; height: 8px; background: #4ade80;
+      border-radius: 50%; animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.3); }
+    }
+
+    /* レイアウト */
+    .walk-layout {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 0;
+      height: calc(100vh - 180px);
+      min-height: 500px;
+    }
+    @media (max-width: 768px) {
+      .walk-layout { grid-template-columns: 1fr; height: auto; }
+    }
+
+    /* マップ */
+    #walk-map {
+      height: 100%;
+      min-height: 400px;
+      z-index: 1;
+    }
+    @media (max-width: 768px) {
+      #walk-map { height: 55vw; min-height: 280px; }
+    }
+
+    /* サイドパネル */
+    .side-panel {
+      background: var(--card-bg);
+      border-left: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    @media (max-width: 768px) {
+      .side-panel { border-left: none; border-top: 1px solid var(--border); }
+    }
+
+    /* 投稿フォーム */
+    .post-form {
+      padding: 16px;
+      border-bottom: 1px solid var(--border);
+      background: #f8fafc;
+    }
+    .post-form h3 {
+      font-size: 14px; font-weight: 800; color: var(--text);
+      margin-bottom: 12px; display: flex; align-items: center; gap: 6px;
+    }
+    .form-row { margin-bottom: 10px; }
+    .form-row label { display: block; font-size: 12px; font-weight: 700; color: var(--muted); margin-bottom: 4px; }
+    .form-row input, .form-row textarea, .form-row select {
+      width: 100%; padding: 8px 10px;
+      border: 1.5px solid var(--border); border-radius: 8px;
+      font-size: 13px; font-family: inherit; color: var(--text);
+      background: #fff; outline: none; transition: border-color 0.2s;
+    }
+    .form-row input:focus, .form-row textarea:focus, .form-row select:focus {
+      border-color: var(--green);
+    }
+    .form-row textarea { resize: vertical; min-height: 60px; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+
+    /* 地図クリック案内 */
+    .map-hint {
+      background: #dcfce7; border: 1.5px solid #86efac; border-radius: 8px;
+      padding: 8px 10px; font-size: 12px; color: #15803d;
+      margin-bottom: 10px; display: flex; align-items: center; gap: 6px;
+    }
+    .map-hint.active { background: #fef9c3; border-color: #fde047; color: #854d0e; }
+
+    .btn-post {
+      width: 100%; padding: 10px;
+      background: linear-gradient(135deg, var(--green), var(--green-light));
+      border: none; border-radius: 10px; color: #fff;
+      font-size: 14px; font-weight: 700; cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    .btn-post:hover { opacity: 0.9; }
+    .btn-post:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    /* コース一覧 */
+    .course-list {
+      flex: 1; overflow-y: auto; padding: 12px;
+    }
+    .course-list h3 {
+      font-size: 13px; font-weight: 800; color: var(--muted);
+      margin-bottom: 10px; display: flex; align-items: center; justify-content: space-between;
+    }
+    .course-count {
+      background: var(--green); color: #fff;
+      border-radius: 20px; padding: 2px 8px; font-size: 11px;
+    }
+    .course-card {
+      background: #fff; border: 1.5px solid var(--border);
+      border-radius: 12px; padding: 12px; margin-bottom: 8px;
+      cursor: pointer; transition: all 0.2s;
+    }
+    .course-card:hover { border-color: var(--green); box-shadow: 0 2px 8px rgba(22,163,74,0.15); }
+    .course-card.active { border-color: var(--green); background: #f0fdf4; }
+    .course-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 6px; }
+    .course-name { font-size: 14px; font-weight: 700; color: var(--text); }
+    .course-dog { font-size: 11px; color: var(--green); font-weight: 700; background: #dcfce7; padding: 2px 8px; border-radius: 10px; }
+    .course-meta { font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+    .course-meta span { margin-right: 8px; }
+    .course-comment { font-size: 12px; color: #475569; line-height: 1.5; }
+    .course-time { font-size: 11px; color: #94a3b8; margin-top: 4px; }
+    .course-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+    .tag { background: #f1f5f9; color: var(--muted); font-size: 11px; padding: 2px 8px; border-radius: 10px; }
+
+    /* 空状態 */
+    .empty-state {
+      text-align: center; padding: 32px 16px; color: var(--muted);
+    }
+    .empty-state .icon { font-size: 36px; margin-bottom: 8px; }
+    .empty-state p { font-size: 13px; }
+
+    /* ローディング */
+    .loading { text-align: center; padding: 20px; color: var(--muted); font-size: 13px; }
+
+    /* 成功メッセージ */
+    .toast {
+      position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
+      background: #16a34a; color: #fff; padding: 12px 24px;
+      border-radius: 12px; font-size: 14px; font-weight: 700;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+      z-index: 9999; opacity: 0; transition: opacity 0.3s;
+      pointer-events: none;
+    }
+    .toast.show { opacity: 1; }
+
+    /* マップ上のコースポップアップ */
+    .leaflet-popup-content { font-family: 'Noto Sans JP', sans-serif; }
+    .popup-name { font-size: 14px; font-weight: 800; color: #1e293b; margin-bottom: 4px; }
+    .popup-dog { color: #16a34a; font-size: 12px; font-weight: 700; }
+    .popup-comment { font-size: 12px; color: #475569; margin-top: 4px; }
+
+    /* スマホ用フォーム切り替え */
+    .mobile-toggle {
+      display: none;
+      background: var(--green); color: #fff;
+      border: none; border-radius: 12px; padding: 10px 20px;
+      font-size: 14px; font-weight: 700; cursor: pointer;
+      margin: 12px auto; display: none;
+    }
+    @media (max-width: 768px) {
+      .mobile-toggle { display: block; }
+      .post-form { display: none; }
+      .post-form.open { display: block; }
+    }
+
+    /* 統計バー */
+    .stats-bar {
+      background: #fff; border-bottom: 1px solid var(--border);
+      padding: 10px 16px; display: flex; gap: 16px; flex-wrap: wrap;
+    }
+    .stat-item { font-size: 12px; color: var(--muted); }
+    .stat-item strong { color: var(--green); font-size: 16px; font-weight: 800; }
+  </style>
+</head>
+<body>
+
+<!-- ヘッダー -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand" style="text-decoration:none">
+      <div class="brand-icon">🐾</div>
+      <span>Daisy<br><small style="font-size:10px;font-weight:700;color:var(--muted)">Kyushu Dog Guide</small></span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">ホーム</a>
+      <a href="spots.html">スポット</a>
+      <a href="walk-map.html" class="active">🐕 散歩コース</a>
+      <a href="planner.html">🗺️ プランナー</a>
+      <a href="hotels.html">宿</a>
+      <a href="events.html">イベント</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ページヒーロー -->
+<div class="page-hero">
+  <div class="live-badge">
+    <span class="live-dot"></span>
+    LIVE
+  </div>
+  <h1>🐕 みんなの散歩コース</h1>
+  <p>九州の犬連れ散歩コースをみんなで共有しよう！<br>マップをクリックしてコースを投稿できます。</p>
+</div>
+
+<!-- 統計バー -->
+<div class="stats-bar" id="stats-bar">
+  <div class="stat-item">投稿数 <strong id="stat-count">-</strong></div>
+  <div class="stat-item">参加ワンコ <strong id="stat-dogs">-</strong></div>
+  <div class="stat-item">最終更新 <strong id="stat-last">-</strong></div>
+</div>
+
+<!-- スマホ用フォームトグル -->
+<button class="mobile-toggle" id="mobile-toggle-btn" onclick="toggleMobileForm()">
+  ＋ 散歩コースを投稿する
+</button>
+
+<!-- メインレイアウト -->
+<div class="walk-layout">
+  <!-- マップ -->
+  <div id="walk-map"></div>
+
+  <!-- サイドパネル -->
+  <div class="side-panel">
+    <!-- 投稿フォーム -->
+    <div class="post-form" id="post-form">
+      <h3>📍 散歩コースを投稿</h3>
+      <div class="map-hint" id="map-hint">
+        🗺️ マップをクリックして出発地点を選んでください
+      </div>
+      <div class="form-row">
+        <label>コース名 *</label>
+        <input type="text" id="f-name" placeholder="例：海の中道海浜公園コース" maxlength="40">
+      </div>
+      <div class="form-row">
+        <label>ワンコの名前</label>
+        <input type="text" id="f-dog" placeholder="例：Daisy（サモエド）" maxlength="30">
+      </div>
+      <div class="form-grid">
+        <div class="form-row">
+          <label>距離（km）</label>
+          <input type="number" id="f-dist" placeholder="3.5" step="0.1" min="0" max="50">
+        </div>
+        <div class="form-row">
+          <label>所要時間（分）</label>
+          <input type="number" id="f-time" placeholder="60" min="0" max="600">
+        </div>
+      </div>
+      <div class="form-row">
+        <label>難易度</label>
+        <select id="f-level">
+          <option value="">選択してください</option>
+          <option value="easy">🟢 らくらく</option>
+          <option value="normal">🟡 ふつう</option>
+          <option value="hard">🔴 ハード</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label>コメント・おすすめポイント</label>
+        <textarea id="f-comment" placeholder="水飲み場あり、日陰多め、大型犬でも余裕など..." maxlength="200"></textarea>
+      </div>
+      <button class="btn-post" id="btn-post" onclick="submitCourse()">
+        📍 投稿する
+      </button>
+    </div>
+
+    <!-- コース一覧 -->
+    <div class="course-list" id="course-list">
+      <h3>
+        最近の散歩コース
+        <span class="course-count" id="list-count">0</span>
+      </h3>
+      <div id="course-items">
+        <div class="loading">読み込み中...</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- トースト -->
+<div class="toast" id="toast"></div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- Firebase -->
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+import { getFirestore, collection, addDoc, onSnapshot, query, orderBy, limit, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDRVtANI251gyQjY-okPAzlSYXTGpslwnQ",
+  authDomain: "daisysamoyed-86dd8.firebaseapp.com",
+  projectId: "daisysamoyed-86dd8",
+  storageBucket: "daisysamoyed-86dd8.firebasestorage.app",
+  messagingSenderId: "1061044129374",
+  appId: "1:1061044129374:web:walk-map"
+};
+
+const app = initializeApp(firebaseConfig, 'walk-map');
+const db = getFirestore(app);
+
+// ========== マップ初期化 ==========
+const map = L.map('walk-map', {
+  center: [33.0, 130.5],
+  zoom: 8,
+  zoomControl: true
+});
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+  maxZoom: 18
+}).addTo(map);
+
+// マーカーアイコン
+const dogIcon = L.divIcon({
+  html: '<div style="font-size:24px;line-height:1;filter:drop-shadow(0 2px 4px rgba(0,0,0,0.3))">🐾</div>',
+  className: '',
+  iconSize: [28, 28],
+  iconAnchor: [14, 28],
+  popupAnchor: [0, -28]
+});
+
+const clickIcon = L.divIcon({
+  html: '<div style="font-size:24px;line-height:1;animation:bounce 0.5s infinite alternate">📍</div>',
+  className: '',
+  iconSize: [28, 28],
+  iconAnchor: [14, 28],
+  popupAnchor: [0, -28]
+});
+
+// ========== 状態管理 ==========
+let selectedLat = null;
+let selectedLng = null;
+let tempMarker = null;
+let allMarkers = [];
+let courses = [];
+
+// ========== マップクリックで地点選択 ==========
+map.on('click', function(e) {
+  selectedLat = e.latlng.lat;
+  selectedLng = e.latlng.lng;
+
+  if (tempMarker) map.removeLayer(tempMarker);
+  tempMarker = L.marker([selectedLat, selectedLng], { icon: clickIcon }).addTo(map);
+  tempMarker.bindPopup('<b>📍 出発地点を選択中</b>').openPopup();
+
+  const hint = document.getElementById('map-hint');
+  hint.className = 'map-hint active';
+  hint.innerHTML = `✅ 地点を選択しました（${selectedLat.toFixed(4)}, ${selectedLng.toFixed(4)}）<br>下のフォームを入力して投稿してください`;
+});
+
+// ========== 投稿処理 ==========
+window.submitCourse = async function() {
+  const name = document.getElementById('f-name').value.trim();
+  const dog = document.getElementById('f-dog').value.trim();
+  const dist = parseFloat(document.getElementById('f-dist').value) || null;
+  const time = parseInt(document.getElementById('f-time').value) || null;
+  const level = document.getElementById('f-level').value;
+  const comment = document.getElementById('f-comment').value.trim();
+
+  if (!name) { showToast('⚠️ コース名を入力してください', '#dc2626'); return; }
+  if (!selectedLat) { showToast('⚠️ マップをクリックして地点を選んでください', '#dc2626'); return; }
+
+  const btn = document.getElementById('btn-post');
+  btn.disabled = true;
+  btn.textContent = '投稿中...';
+
+  try {
+    await addDoc(collection(db, 'walkCourses'), {
+      name,
+      dog: dog || '名無しのワンコ',
+      dist,
+      time,
+      level: level || 'normal',
+      comment,
+      lat: selectedLat,
+      lng: selectedLng,
+      createdAt: serverTimestamp(),
+      likes: 0
+    });
+
+    // フォームリセット
+    document.getElementById('f-name').value = '';
+    document.getElementById('f-dog').value = '';
+    document.getElementById('f-dist').value = '';
+    document.getElementById('f-time').value = '';
+    document.getElementById('f-level').value = '';
+    document.getElementById('f-comment').value = '';
+    if (tempMarker) { map.removeLayer(tempMarker); tempMarker = null; }
+    selectedLat = null; selectedLng = null;
+    document.getElementById('map-hint').className = 'map-hint';
+    document.getElementById('map-hint').innerHTML = '🗺️ マップをクリックして出発地点を選んでください';
+
+    showToast('🐾 散歩コースを投稿しました！');
+  } catch (e) {
+    console.error(e);
+    showToast('❌ 投稿に失敗しました', '#dc2626');
+  }
+
+  btn.disabled = false;
+  btn.textContent = '📍 投稿する';
+};
+
+// ========== リアルタイム取得 ==========
+const q = query(collection(db, 'walkCourses'), orderBy('createdAt', 'desc'), limit(50));
+
+onSnapshot(q, (snapshot) => {
+  courses = [];
+  allMarkers.forEach(m => map.removeLayer(m));
+  allMarkers = [];
+
+  snapshot.forEach(doc => {
+    const d = { id: doc.id, ...doc.data() };
+    courses.push(d);
+
+    // マーカー追加
+    if (d.lat && d.lng) {
+      const marker = L.marker([d.lat, d.lng], { icon: dogIcon }).addTo(map);
+      marker.bindPopup(`
+        <div class="popup-name">${d.name}</div>
+        <div class="popup-dog">🐕 ${d.dog}</div>
+        ${d.dist ? `<div style="font-size:12px;margin-top:4px">📏 ${d.dist}km${d.time ? ` / ⏱️ ${d.time}分` : ''}</div>` : ''}
+        ${d.comment ? `<div class="popup-comment">${d.comment}</div>` : ''}
+      `);
+      allMarkers.push(marker);
+    }
+  });
+
+  renderList();
+  updateStats();
+});
+
+// ========== リスト描画 ==========
+function renderList() {
+  const container = document.getElementById('course-items');
+  document.getElementById('list-count').textContent = courses.length;
+
+  if (courses.length === 0) {
+    container.innerHTML = `
+      <div class="empty-state">
+        <div class="icon">🐾</div>
+        <p>まだ投稿がありません<br>最初の散歩コースを投稿してみよう！</p>
+      </div>`;
+    return;
+  }
+
+  const levelLabel = { easy: '🟢 らくらく', normal: '🟡 ふつう', hard: '🔴 ハード' };
+
+  container.innerHTML = courses.map((c, i) => `
+    <div class="course-card" onclick="focusCourse(${i})">
+      <div class="course-header">
+        <div class="course-name">${escHtml(c.name)}</div>
+        <div class="course-dog">🐕 ${escHtml(c.dog)}</div>
+      </div>
+      <div class="course-meta">
+        ${c.dist ? `<span>📏 ${c.dist}km</span>` : ''}
+        ${c.time ? `<span>⏱️ ${c.time}分</span>` : ''}
+        ${c.level ? `<span>${levelLabel[c.level] || ''}</span>` : ''}
+      </div>
+      ${c.comment ? `<div class="course-comment">${escHtml(c.comment)}</div>` : ''}
+      <div class="course-time">${formatTime(c.createdAt)}</div>
+    </div>
+  `).join('');
+}
+
+// ========== コースにフォーカス ==========
+window.focusCourse = function(i) {
+  const c = courses[i];
+  if (c.lat && c.lng) {
+    map.setView([c.lat, c.lng], 14, { animate: true });
+    allMarkers[i]?.openPopup();
+  }
+  document.querySelectorAll('.course-card').forEach((el, idx) => {
+    el.classList.toggle('active', idx === i);
+  });
+};
+
+// ========== 統計更新 ==========
+function updateStats() {
+  document.getElementById('stat-count').textContent = courses.length;
+  const dogs = new Set(courses.map(c => c.dog).filter(Boolean)).size;
+  document.getElementById('stat-dogs').textContent = dogs;
+  if (courses.length > 0 && courses[0].createdAt) {
+    const d = courses[0].createdAt.toDate();
+    document.getElementById('stat-last').textContent = `${d.getMonth()+1}/${d.getDate()} ${d.getHours()}:${String(d.getMinutes()).padStart(2,'0')}`;
+  }
+}
+
+// ========== ユーティリティ ==========
+function showToast(msg, color = '#16a34a') {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.style.background = color;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 3000);
+}
+
+function escHtml(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function formatTime(ts) {
+  if (!ts) return '';
+  try {
+    const d = ts.toDate();
+    const now = new Date();
+    const diff = Math.floor((now - d) / 1000);
+    if (diff < 60) return 'たった今';
+    if (diff < 3600) return `${Math.floor(diff/60)}分前`;
+    if (diff < 86400) return `${Math.floor(diff/3600)}時間前`;
+    return `${d.getMonth()+1}/${d.getDate()}`;
+  } catch { return ''; }
+}
+
+// スマホ用フォームトグル
+window.toggleMobileForm = function() {
+  const form = document.getElementById('post-form');
+  const btn = document.getElementById('mobile-toggle-btn');
+  form.classList.toggle('open');
+  btn.textContent = form.classList.contains('open') ? '✕ 閉じる' : '＋ 散歩コースを投稿する';
+};
+
+</script>
+
+</body>
+</html>
