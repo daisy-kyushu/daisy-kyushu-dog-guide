@@ -23,7 +23,7 @@
     "dogPolicy": "犬同伴可能なイベント。詳細は公式サイトのVISITOR GUIDEで確認してください。",
     "status": "upcoming",
     "memo": "九州・中四国最大級のアリーナ型DOGイベント。前売チケット：大人1,500円・子供700円・幼児無料。当日：大人2,000円・子供1,000円・幼児無料。開催時間10:00〜16:00。",
-    "lastChecked": "2026-07-03"
+    "lastChecked": "2026-07-04"
   },
   {
     "id": "pet-haku-fukuoka-2026",
@@ -48,7 +48,7 @@
     "dogPolicy": "犬関連イベントとして確認。会場ルール・入場条件・リード条件は公式情報で確認してください。",
     "status": "upcoming",
     "memo": "国内最大級のペット総合イベント。前売りチケット販売中（大人1,300円）。開催日・会場・条件は変更される場合があります。来場前に必ず公式情報を確認してください。",
-    "lastChecked": "2026-07-03"
+    "lastChecked": "2026-07-04"
   },
   {
     "id": "jkc-kyushu-show-2026",
@@ -71,7 +71,7 @@
     "officialUrl": "https://www.jkc.or.jp/",
     "snsUrl": "",
     "mapQuery": "福岡県 展示場",
-    "lastChecked": "2026-07-03"
+    "lastChecked": "2026-07-04"
   },
   {
     "id": "jkc-kyushu-agility-2026",
@@ -94,7 +94,7 @@
     "officialUrl": "https://www.jkc.or.jp/",
     "snsUrl": "",
     "mapQuery": "熊本県 競技場",
-    "lastChecked": "2026-07-03"
+    "lastChecked": "2026-07-04"
   },
   {
     "id": "saga-balloon-pet-2026",
@@ -117,7 +117,7 @@
     "officialUrl": "https://www.sibf.jp/",
     "snsUrl": "",
     "mapQuery": "嘉瀬川河川敷 佐賀市",
-    "lastChecked": "2026-07-03"
+    "lastChecked": "2026-07-04"
   },
   {
     "id": "oita-doggo-land-2026",
@@ -139,7 +139,7 @@
       "大分",
       "九州"
     ],
-    "lastChecked": "2026-07-03",
+    "lastChecked": "2026-07-04",
     "status": "upcoming",
     "memo": "開催日・会場・犬同伴ルールは変更される可能性があります。参加前に必ず公式サイト・公式SNSで最新情報をご確認ください。"
   }
