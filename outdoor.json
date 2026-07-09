@@ -14,7 +14,9 @@
     "memo": "大分・くじゅうの広大な高原は、Daisyにとって最高のアウトドアフィールド。涼しい風を感じながら、どこまでも続く緑の中を一緒にドライブするのが大好きです。",
     "image": "https://oita-tourism.com/lsc/upfile/spot/0000/1043/1043_1_l.jpg",
     "imageSource": "公式サイト",
-    "instagramUrl": "https://www.instagram.com/reel/DJy-dGsTvZI/"
+    "instagramUrl": "https://www.instagram.com/reel/DJy-dGsTvZI/",
+    "prefecture": "大分県",
+    "category": "アウトドア"
   },
   {
     "id": "yufuin-outdoor",
@@ -31,7 +33,9 @@
     "memo": "湯布院の街並みと雄大な由布岳。自然の中をお散歩した後は、犬連れOKのカフェで一休み。Daisyも湯布院ののんびりした雰囲気がお気に入りです。",
     "image": "https://oita-tourism.com/lsc/upfile/spot/0000/1065/1065_1_l.jpg",
     "imageSource": "公式サイト",
-    "instagramUrl": "https://www.instagram.com/reel/DJRUXIEz2-b/"
+    "instagramUrl": "https://www.instagram.com/reel/DJRUXIEz2-b/",
+    "prefecture": "大分県",
+    "category": "アウトドア"
   },
   {
     "id": "beppu-outdoor",
@@ -47,7 +51,9 @@
     "lastChecked": "2026-05-17",
     "memo": "別府湾の美しい景色を眺めながらの海沿いドライブ。途中のSAでDaisyをドッグランで遊ばせつつ、のんびりと景色を楽しむのが定番のコースです。",
     "image": "https://beppu-tourism.com/wp-content/uploads/2023/01/小ぶりな公園とイングリッシュローズ-1.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "prefecture": "大分県",
+    "category": "アウトドア"
   },
   {
     "id": "kuju-flower-park-candidate",
@@ -66,7 +72,9 @@
     "memo": "季節ごとに違うお花が咲き誇る絶景スポット。Daisyの真っ白な毛並みが、色鮮やかなお花畑にとてもよく映えて、素敵な写真がたくさん撮れます。",
     "image": "https://oita-tourism.com/lsc/upfile/spot/0000/1041/1041_1_l.jpg",
     "imageSource": "公式サイト",
-    "instagramUrl": "https://www.instagram.com/reel/DKFE4FPzIN9/"
+    "instagramUrl": "https://www.instagram.com/reel/DKFE4FPzIN9/",
+    "prefecture": "大分県",
+    "category": "公園・自然"
   },
   {
     "id": "uminonakamichi-seaside-park",
@@ -82,7 +90,9 @@
     "lastChecked": "2026-05-17",
     "memo": "福岡市内からすぐに行ける広大な海浜公園。海風を感じながらのロング散歩は、Daisyにとって最高のリフレッシュになります。",
     "image": "https://uminaka-park.jp/images/4159d405df115208b8d296c8bd0b5b1739224241.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "prefecture": "福岡県",
+    "category": "公園・自然"
   },
   {
     "id": "yoshinogari-historical-park",
@@ -98,7 +108,9 @@
     "lastChecked": "2026-05-17",
     "memo": "古代のロマンを感じる吉野ヶ里歴史公園。広大な敷地は、Daisyの運動不足解消にぴったり。歴史ある風景とサモエドの組み合わせも新鮮です。",
     "image": "https://www.yoshinogari.jp/en/.assets/R3_spring_01_en.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "prefecture": "佐賀県",
+    "category": "公園・自然"
   },
   {
     "id": "kirishima-jingu-area-walk",
@@ -114,14 +126,16 @@
     "lastChecked": "2026-05-17",
     "memo": "神聖な空気が漂う霧島神宮周辺。深い森の中をDaisyと一緒に歩くと、心が洗われるような清々しい気持ちになります。",
     "image": "https://kirishimajingu.or.jp/wp/wp-content/uploads/gengu-i.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "prefecture": "鹿児島県",
+    "category": "アウトドア"
   },
   {
     "id": "hoshino-star-fukuoka",
     "name": "ほしのスター",
     "area": "福岡県八女市星野村",
     "type": "グランピング / キャンプ / ドッグラン",
-    "category": "キャンプ",
+    "category": "キャンプ場",
     "dogAllowed": "公式サイトでペット同伴設備ありと案内あり",
     "largeDog": "要確認",
     "rainyOk": "グランピングテント利用時は要確認",
@@ -135,14 +149,15 @@
     "memo": "星野村の美しい星空の下、Daisyと一緒に過ごすグランピングは特別な体験。自然に囲まれて、家族みんなでリラックスできました。",
     "weekendRecommended": true,
     "image": "https://cafe-glamping-hoshino.com/_astro/hero-bg.Cz-8dJje_ZXYOAJ.webp",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "prefecture": "福岡県"
   },
   {
     "id": "ume-camp-mura-oita",
     "name": "うめキャンプ村",
     "area": "大分県佐伯市宇目",
     "type": "キャンプ場 / コテージ / オートサイト",
-    "category": "キャンプ",
+    "category": "キャンプ場",
     "dogAllowed": "大分県公式観光ページでペット同伴可能エリアありと案内",
     "largeDog": "要確認",
     "rainyOk": "コテージ利用時は要確認",
@@ -156,14 +171,15 @@
     "memo": "大自然に囲まれたうめキャンプ村。川遊びをしたり、森の中を探検したり、Daisyの野生の血が騒ぐ最高のアウトドアスポットです。",
     "weekendRecommended": true,
     "image": "https://storage.googleapis.com/studio-design-asset-files/projects/1YWj8R3Zqm/s-512x400_webp_e22a223f-8fe3-43b5-a67e-0731fbaa59f6.webp",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "prefecture": "大分県"
   },
   {
     "id": "aoshima-shirahama-camp-miyazaki",
     "name": "宮崎白浜キャンプ場",
     "area": "宮崎県宮崎市",
     "type": "キャンプ場 / テントサイト",
-    "category": "キャンプ",
+    "category": "キャンプ場",
     "dogAllowed": "公式案内でテントサイトはペット同伴可の記載あり",
     "largeDog": "要確認",
     "rainyOk": "雨天時利用は要確認",
@@ -177,14 +193,15 @@
     "memo": "宮崎の海沿いにあるキャンプ場。波の音を聞きながら、Daisyと一緒にビーチをのんびりお散歩するのが至福の時間です。",
     "weekendRecommended": true,
     "image": "https://aoshima-camp.com/img/about/about_2025.webp",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "prefecture": "宮崎県"
   },
   {
     "id": "tenten-campfield-kagoshima",
     "name": "TEN TEN CAMP FIELD",
     "area": "鹿児島県薩摩川内市",
     "type": "キャンプ場 / ドッグラン / ドッグフリーサイト",
-    "category": "キャンプ",
+    "category": "キャンプ場",
     "dogAllowed": "公式サイトでペット同伴可を掲示",
     "largeDog": "要確認",
     "rainyOk": "要確認",
@@ -198,7 +215,8 @@
     "memo": "鹿児島の大自然を満喫できるキャンプ場。ドッグランも併設されていて、Daisyも他のワンちゃんと楽しく遊んでいました。",
     "weekendRecommended": true,
     "image": "https://static.wixstatic.com/media/ee4934_4f90d8cdeab44cb49f4ea94aefeaa534~mv2.jpg/v1/fill/w_1280,h_615,al_c,q_85,enc_avif,quality_auto/ee4934_4f90d8cdeab44cb49f4ea94aefeaa534~mv2.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "prefecture": "鹿児島県"
   },
   {
     "id": "chojabaru-walk-oita",
@@ -225,7 +243,8 @@
     "toilet": "ビジターセンター等で要確認",
     "caution": "湿原・木道・自然保護エリアは犬の立ち入り可能範囲を必ず公式情報で確認してください。",
     "image": "https://kujufanclub.com/wp/wp-content/themes/kuju/img/contents/photo_chojabaru_vc.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "prefecture": "大分県"
   },
   {
     "id": "tadewara-walk-oita",
@@ -252,14 +271,15 @@
     "toilet": "周辺施設で要確認",
     "caution": "湿原・木道・自然保護エリアは犬の立ち入り可能範囲を必ず公式情報で確認してください。",
     "image": "https://www.visit-oita.jp/files/cache/845cb6a1328e5791704cd126eb8d4972_1727314028.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "prefecture": "大分県"
   },
   {
     "id": "uminonakamichi-park-fukuoka",
     "name": "海の中道海浜公園 散歩コース候補",
     "area": "福岡県福岡市東区",
     "type": "公園散策 / 海沿い散歩 / 大型犬向け候補",
-    "category": "公園散策",
+    "category": "公園・自然",
     "dogAllowed": "公式サイトFAQで同伴条件を要確認",
     "largeDog": "要確認",
     "rainyOk": "雨天時は要確認",
@@ -279,14 +299,15 @@
     "toilet": "園内施設あり / 要確認",
     "caution": "イベント開催時やエリア別ルールにより同伴条件が変わる場合があります。",
     "image": "https://uminaka-park.jp/images/dog.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "prefecture": "福岡県"
   },
   {
     "id": "yoshinogari-park-saga",
     "name": "吉野ヶ里歴史公園 周辺散歩コース候補",
     "area": "佐賀県神埼郡吉野ヶ里町",
     "type": "公園散策 / 散歩コース / 大型犬向け候補",
-    "category": "公園散策",
+    "category": "公園・自然",
     "dogAllowed": "公式FAQでペット持込可の案内あり（詳細条件は要確認）",
     "largeDog": "要確認",
     "rainyOk": "雨天時は要確認",
@@ -306,14 +327,15 @@
     "toilet": "園内施設あり / 要確認",
     "caution": "保護区域・イベント時の立入制限は公式案内を必ず確認してください。",
     "image": "https://www.yoshinogari.jp/mainvisual/.assets/R4_autumn_02.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "prefecture": "佐賀県"
   },
   {
     "id": "snowpeak-okuhita-campfield",
     "name": "スノーピーク奥日田キャンプフィールド",
     "area": "大分県日田市前津江町",
     "type": "キャンプ場 / オートサイト / ドッグランサイト",
-    "category": "キャンプ",
+    "category": "キャンプ場",
     "dogAllowed": "公式利用規約でペット同伴可能の案内あり（予約時入力必要）",
     "largeDog": "要確認",
     "rainyOk": "雨天時利用は要確認",
@@ -326,14 +348,15 @@
     "status": "掲載中",
     "memo": "スノーピークが運営する奥日田のキャンプフィールド。大自然の中で、Daisyと一緒に本格的なキャンプ体験ができました。",
     "image": "https://www.snowpeak.co.jp/assets/images/campfield/okuhita_ph_freesite.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "prefecture": "大分県"
   },
   {
     "id": "ikenoyama-camp-fukuoka",
     "name": "池の山キャンプ場",
     "area": "福岡県八女市星野村",
     "type": "キャンプ場 / ロッジ / バンガロー / フリーサイト",
-    "category": "キャンプ",
+    "category": "キャンプ場",
     "dogAllowed": "要確認",
     "largeDog": "要確認",
     "rainyOk": "ロッジ利用時は要確認",
@@ -346,7 +369,8 @@
     "status": "掲載中",
     "memo": "八女市星野村にある池の山キャンプ場。湖畔の静かな環境で、Daisyと一緒に自然の音に耳を傾けながらリラックスできました。",
     "image": "https://cdn.r-corona.jp/prd.jln.r-corona.jp/assets/site_files/dxtmkqnq/930848/x499_bw480h360.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "prefecture": "福岡県"
   },
   {
     "id": "shikajima-walk-fukuoka",
@@ -362,7 +386,9 @@
     "lastChecked": "2026-05-20",
     "memo": "志賀島の海岸線をぐるっと一周。潮風が心地よく、Daisyも波打ち際を歩くのが大好き。福岡市近郊の定番ドライブ＆お散歩コースです。",
     "image": "https://www.city.fukuoka.lg.jp/higashi/miryoku-ibento/images/shikanoshima_drive_w680.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "prefecture": "福岡県",
+    "category": "アウトドア"
   },
   {
     "id": "hikosan-hiking-fukuoka",
@@ -378,7 +404,8 @@
     "lastChecked": "2026-05-20",
     "memo": "九州を代表する霊山、英彦山。初心者向けのコースをDaisyと一緒にゆっくり登りました。山頂からの景色は格別です。",
     "image": "https://www.town.soeda.fukuoka.jp/uploaded/image/3422.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "category": "公園・自然"
   },
   {
     "id": "kokonoe-bridge-walk-oita",
@@ -395,7 +422,8 @@
     "memo": "日本一の高さを誇る九重夢大吊橋。最初は少し怖がっていたDaisyも、一緒に渡りきった後は誇らしげな顔をしていました。",
     "image": "https://oita-tourism.com/lsc/upfile/spot/0000/1084/1084_1_l.jpg",
     "imageSource": "公式サイト",
-    "instagramUrl": "https://www.instagram.com/p/DXiAtG7lVa9/"
+    "instagramUrl": "https://www.instagram.com/p/DXiAtG7lVa9/",
+    "category": "アウトドア"
   },
   {
     "id": "amakusa-gokyo-walk",
@@ -411,7 +439,9 @@
     "lastChecked": "2026-05-20",
     "memo": "天草の美しい海と島々を繋ぐ五橋。絶景を眺めながら、Daisyと一緒に海風を感じるサイクリング＆お散歩は最高に気持ちいいです。",
     "image": "https://kumamoto.guide/files/2782a46e-2b99-4967-b6ec-2b9b66d85ac_m.jpg",
-    "imageSource": "熊本県観光サイト"
+    "imageSource": "熊本県観光サイト",
+    "prefecture": "熊本県",
+    "category": "アウトドア"
   },
   {
     "id": "goto-fukuejima-walk",
@@ -427,7 +457,8 @@
     "lastChecked": "2026-05-20",
     "memo": "世界遺産の教会群が点在する五島列島・福江島。フェリーにDaisyと一緒に乗り込み、島の豊かな自然と歴史ある風景を満喫しました。",
     "image": "https://goto.nagasaki-tabinet.com/storage/special_features/123/responsive_images/WV4ZQzOKWWFo6jt8LVbKKtn0TmnPUJk1uBjyeIkU__1673_1115.jpeg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "category": "アウトドア"
   },
   {
     "id": "niji-matsubara-walk-saga",
@@ -443,7 +474,9 @@
     "lastChecked": "2026-05-20",
     "memo": "唐津湾沿いに続く広大な虹の松原。松林の中は涼しく、暑がりなDaisyにとって快適なお散歩コース。海にもすぐ出られます。",
     "image": "https://www.jalan.net/news/img/1/000/006/914/20190705153646_1_640x480.jpg",
-    "imageSource": "じゃらんnet"
+    "imageSource": "じゃらんnet",
+    "prefecture": "佐賀県",
+    "category": "アウトドア"
   },
   {
     "id": "toi-misaki-walk-miyazaki",
@@ -459,7 +492,8 @@
     "lastChecked": "2026-05-20",
     "memo": "野生の馬が生息する都井岬。大自然の中で草を食む馬たちを遠くから眺めながら、Daisyと一緒に壮大な景色の中を散策しました。",
     "image": "https://kushima-city.jp/toi/img/main2022.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "category": "アウトドア"
   },
   {
     "id": "kaimondake-hiking-kagoshima",
@@ -475,7 +509,9 @@
     "lastChecked": "2026-05-20",
     "memo": "薩摩富士と呼ばれる美しい開聞岳。Daisyと一緒に自然のパワーを感じながら、ゆっくりと登山を楽しみました。",
     "image": "https://www.ibusuki.or.jp/tourism/assets_c/2024/06/%E9%96%8B%E8%81%9E%E5%B2%B3%E3%81%A8%E3%83%92%E3%83%9E%E3%83%AF%E3%83%AA%EF%BC%91-thumb-420xauto-55998.jpeg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "prefecture": "鹿児島県",
+    "category": "公園・自然"
   },
   {
     "id": "sakurajima-lava-trail",
@@ -495,7 +531,9 @@
     "memo": "溶岩が広がる独特の景観を愛犬と散策できる全長3kmの遊歩道。活火山の迫力と錦江湾の美しさが同時に楽しめる九州ならではのスポット。",
     "lastChecked": "2026-05-01",
     "image": "https://www.sakurajima.gr.jp/wp-content/uploads/2019/08/nagisa.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "prefecture": "鹿児島県",
+    "category": "アウトドア"
   },
   {
     "id": "ebino-kogen-trail",
@@ -515,7 +553,9 @@
     "memo": "霧島連山の中に広がる高原の池めぐりコース（約2時間）。不動池・白紫池・六観音御池の3つの火口湖を巡ります。秋の紅葉は絶景。",
     "lastChecked": "2026-05-01",
     "image": "https://www.ebino-kogen.com/wp-content/uploads/2021/10/ikemeguri.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "prefecture": "宮崎県",
+    "category": "アウトドア"
   },
   {
     "id": "nokonoshima-island-park",
@@ -535,7 +575,9 @@
     "memo": "博多湾に浮かぶ小島のフラワーパーク。春はコスモス、夏はひまわり、秋はコスモスと四季折々の花が咲き誇ります。フェリーで渡る非日常感も魅力。",
     "lastChecked": "2026-05-01",
     "image": "https://noko.jp/wp-content/uploads/2021/03/top_img01.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "prefecture": "福岡県",
+    "category": "アウトドア"
   },
   {
     "id": "takachiho-gorge-walk",
@@ -555,7 +597,9 @@
     "memo": "神話の里・高千穂の絶景渓谷。遊歩道は愛犬と一緒に歩けます（ボートは犬不可）。真名井の滝の迫力は圧巻。朝の霧の中の景色は特に幻想的。",
     "lastChecked": "2026-05-01",
     "image": "https://takachiho-kanko.info/wp-content/uploads/2019/06/takachiho_gorge.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "prefecture": "宮崎県",
+    "category": "アウトドア"
   },
   {
     "id": "unzen-jigoku-walk",
@@ -575,7 +619,9 @@
     "memo": "硫黄の香りが漂う雲仙地獄を愛犬と散策。30か所以上の地獄が点在する独特の景観。温泉街の風情ある街並みも魅力。",
     "lastChecked": "2026-05-01",
     "image": "https://www.unzen.org/wp-content/uploads/2019/06/jigoku.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "prefecture": "長崎県",
+    "category": "アウトドア"
   },
   {
     "id": "itoshima-beach-walk",
@@ -595,7 +641,9 @@
     "memo": "糸島を代表する絶景スポット。夕日に染まる夫婦岩と愛犬の写真は最高の思い出に。周辺のオシャレカフェも犬連れOKが多い。",
     "lastChecked": "2026-05-01",
     "image": "https://www.itoshima-kanko.net/wp-content/uploads/2019/06/futamigaura.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "prefecture": "福岡県",
+    "category": "アウトドア"
   },
   {
     "id": "kuju-nakadake-trail",
@@ -615,7 +663,9 @@
     "memo": "九州本土最高峰（1,791m）への登山コース。牧ノ戸峠からの往復約5時間。体力のある大型犬との登山は最高の達成感。秋の紅葉は絶景。",
     "lastChecked": "2026-05-01",
     "image": "https://www.kujukanko.com/wp-content/uploads/2019/06/nakadake.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "prefecture": "大分県",
+    "category": "公園・自然"
   },
   {
     "id": "karatsu-beach-walk",
@@ -635,7 +685,9 @@
     "memo": "日本三大松原の一つ。全長約4.5kmの松林の中を愛犬と散策できる絶好のコース。唐津城や唐津湾の景色も楽しめます。",
     "lastChecked": "2026-05-01",
     "image": "https://www.karatsu-kankou.jp/wp-content/uploads/2019/06/nijinomatsubara.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "prefecture": "佐賀県",
+    "category": "海・ビーチ"
   },
   {
     "id": "amakusa-sea-kayak",
@@ -655,7 +707,9 @@
     "memo": "透明度の高い天草の海でシーカヤック体験。ツアーによっては愛犬同乗可能なものも。イルカウォッチングと組み合わせるプランも人気。",
     "lastChecked": "2026-05-01",
     "image": "https://www.t-amakusa.com/wp-content/uploads/2019/06/kayak.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "prefecture": "熊本県",
+    "category": "アウトドア"
   },
   {
     "id": "miyazaki-sunmesse-walk",
@@ -675,7 +729,9 @@
     "memo": "モアイ像が立ち並ぶ宮崎の絶景スポット。施設外の海岸沿いは愛犬と散策可能。日向灘の青い海と空が広がる絶景を愛犬と一緒に。",
     "lastChecked": "2026-05-01",
     "image": "https://www.sun-messe.co.jp/wp-content/uploads/2019/06/moai.jpg",
-    "imageSource": "公式サイト"
+    "imageSource": "公式サイト",
+    "prefecture": "宮崎県",
+    "category": "アウトドア"
   },
   {
     "id": "fukuoka-itoshima-outdoor",
@@ -692,7 +748,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "糸島半島の美しい海岸線は愛犬との散策に最適。夕日スポットとしても人気の二見ヶ浦周辺は特におすすめです。"
+    "memo": "糸島半島の美しい海岸線は愛犬との散策に最適。夕日スポットとしても人気の二見ヶ浦周辺は特におすすめです。",
+    "prefecture": "福岡県",
+    "category": "海・ビーチ"
   },
   {
     "id": "fukuoka-uminonakamichi-outdoor",
@@ -709,7 +767,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "博多湾と玄界灘に挟まれた広大な海浜公園。ドッグランや広い芝生エリアで愛犬を思いっきり走らせることができます。"
+    "memo": "博多湾と玄界灘に挟まれた広大な海浜公園。ドッグランや広い芝生エリアで愛犬を思いっきり走らせることができます。",
+    "prefecture": "福岡県",
+    "category": "公園・自然"
   },
   {
     "id": "fukuoka-keya-outdoor",
@@ -726,7 +786,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "玄武岩の断崖が続く芥屋海岸。透明度の高い海でシーカヤックも楽しめます。愛犬と磯遊びも可能。"
+    "memo": "玄武岩の断崖が続く芥屋海岸。透明度の高い海でシーカヤックも楽しめます。愛犬と磯遊びも可能。",
+    "prefecture": "福岡県",
+    "category": "海・ビーチ"
   },
   {
     "id": "fukuoka-hikosan-hiking",
@@ -743,7 +805,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "九州の霊山・英彦山。中岳（1199m）への登山道は愛犬と一緒に歩けます。新緑と紅葉の季節が特におすすめ。"
+    "memo": "九州の霊山・英彦山。中岳（1199m）への登山道は愛犬と一緒に歩けます。新緑と紅葉の季節が特におすすめ。",
+    "prefecture": "福岡県",
+    "category": "公園・自然"
   },
   {
     "id": "fukuoka-noogata-river",
@@ -760,7 +824,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "遠賀川沿いの広大な河川敷。サイクリングロードも整備されており、愛犬と一緒に気持ちよく走れます。"
+    "memo": "遠賀川沿いの広大な河川敷。サイクリングロードも整備されており、愛犬と一緒に気持ちよく走れます。",
+    "prefecture": "福岡県",
+    "category": "川・渓谷"
   },
   {
     "id": "fukuoka-soeda-camp",
@@ -777,7 +843,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "英彦山の麓にある添田公園のキャンプ場。愛犬同伴でキャンプが楽しめます。"
+    "memo": "英彦山の麓にある添田公園のキャンプ場。愛犬同伴でキャンプが楽しめます。",
+    "prefecture": "福岡県",
+    "category": "キャンプ場"
   },
   {
     "id": "oita-yufuin-cycling",
@@ -794,7 +862,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "由布岳を望む由布院盆地をサイクリング。のどかな田園風景の中を愛犬と一緒に走れます。"
+    "memo": "由布岳を望む由布院盆地をサイクリング。のどかな田園風景の中を愛犬と一緒に走れます。",
+    "prefecture": "大分県",
+    "category": "アウトドア"
   },
   {
     "id": "oita-beppu-beach",
@@ -811,7 +881,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "別府湾に面した亀川海岸。温泉地・別府の海岸を愛犬と散策できます。"
+    "memo": "別府湾に面した亀川海岸。温泉地・別府の海岸を愛犬と散策できます。",
+    "prefecture": "大分県",
+    "category": "海・ビーチ"
   },
   {
     "id": "oita-kunisaki-cycling",
@@ -828,7 +900,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "仏教文化が息づく国東半島をサイクリング。石仏や磨崖仏を巡りながら愛犬と走れます。"
+    "memo": "仏教文化が息づく国東半島をサイクリング。石仏や磨崖仏を巡りながら愛犬と走れます。",
+    "prefecture": "大分県",
+    "category": "アウトドア"
   },
   {
     "id": "oita-nakatsu-river",
@@ -845,7 +919,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "中津市を流れる山国川の河川敷。広大な河川敷を愛犬とのびのび散歩できます。"
+    "memo": "中津市を流れる山国川の河川敷。広大な河川敷を愛犬とのびのび散歩できます。",
+    "prefecture": "大分県",
+    "category": "公園・自然"
   },
   {
     "id": "oita-usuki-outdoor",
@@ -862,7 +938,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "国宝の石仏が並ぶ臼杵石仏。周辺の自然の中を愛犬と散策できます。"
+    "memo": "国宝の石仏が並ぶ臼杵石仏。周辺の自然の中を愛犬と散策できます。",
+    "prefecture": "大分県",
+    "category": "アウトドア"
   },
   {
     "id": "kumamoto-aso-cycling",
@@ -879,7 +957,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "阿蘇の雄大な草原をサイクリング。草千里周辺の絶景ルートを愛犬と一緒に走れます。"
+    "memo": "阿蘇の雄大な草原をサイクリング。草千里周辺の絶景ルートを愛犬と一緒に走れます。",
+    "prefecture": "熊本県",
+    "category": "アウトドア"
   },
   {
     "id": "kumamoto-amakusa-kayak",
@@ -896,7 +976,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "天草の美しい海でシーカヤック体験。イルカが生息する海域を愛犬と一緒に楽しめます。"
+    "memo": "天草の美しい海でシーカヤック体験。イルカが生息する海域を愛犬と一緒に楽しめます。",
+    "prefecture": "熊本県",
+    "category": "アウトドア"
   },
   {
     "id": "kumamoto-kuma-river",
@@ -913,7 +995,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "日本三大急流の一つ・球磨川。川岸での散策は愛犬と楽しめます。"
+    "memo": "日本三大急流の一つ・球磨川。川岸での散策は愛犬と楽しめます。",
+    "prefecture": "熊本県",
+    "category": "川・渓谷"
   },
   {
     "id": "kumamoto-hitoyoshi-camp",
@@ -930,7 +1014,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "人吉盆地の自然の中でキャンプ。球磨川沿いのキャンプ場は愛犬同伴可能。"
+    "memo": "人吉盆地の自然の中でキャンプ。球磨川沿いのキャンプ場は愛犬同伴可能。",
+    "prefecture": "熊本県",
+    "category": "キャンプ場"
   },
   {
     "id": "kumamoto-aso-horse-riding",
@@ -947,7 +1033,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "阿蘇の草原で乗馬体験。愛犬と一緒に参加できる施設もあります。"
+    "memo": "阿蘇の草原で乗馬体験。愛犬と一緒に参加できる施設もあります。",
+    "prefecture": "熊本県",
+    "category": "アウトドア"
   },
   {
     "id": "nagasaki-unzen-hiking",
@@ -964,7 +1052,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "雲仙普賢岳周辺のハイキングコース。仁田峠からの眺望は絶景で、愛犬と一緒に楽しめます。"
+    "memo": "雲仙普賢岳周辺のハイキングコース。仁田峠からの眺望は絶景で、愛犬と一緒に楽しめます。",
+    "prefecture": "長崎県",
+    "category": "アウトドア"
   },
   {
     "id": "nagasaki-goto-kayak",
@@ -981,7 +1071,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "五島列島の透明な海でシーカヤック。美しいビーチで愛犬と遊べます。"
+    "memo": "五島列島の透明な海でシーカヤック。美しいビーチで愛犬と遊べます。",
+    "prefecture": "長崎県",
+    "category": "アウトドア"
   },
   {
     "id": "nagasaki-sasebo-kujukushima",
@@ -998,7 +1090,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "208の島々が点在する九十九島でシーカヤック。愛犬と一緒に島々を巡れます。"
+    "memo": "208の島々が点在する九十九島でシーカヤック。愛犬と一緒に島々を巡れます。",
+    "prefecture": "長崎県",
+    "category": "アウトドア"
   },
   {
     "id": "nagasaki-tsushima-outdoor",
@@ -1015,7 +1109,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "対馬の豊かな自然の中でトレッキング。ツシマヤマネコの生息地でもある島を愛犬と探索。"
+    "memo": "対馬の豊かな自然の中でトレッキング。ツシマヤマネコの生息地でもある島を愛犬と探索。",
+    "prefecture": "長崎県",
+    "category": "アウトドア"
   },
   {
     "id": "saga-karatsu-surfing",
@@ -1032,7 +1128,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "日本三大松原の一つ・虹の松原の海岸。サーフィンのメッカでもあり、愛犬と砂浜散歩も楽しめます。"
+    "memo": "日本三大松原の一つ・虹の松原の海岸。サーフィンのメッカでもあり、愛犬と砂浜散歩も楽しめます。",
+    "prefecture": "佐賀県",
+    "category": "アウトドア"
   },
   {
     "id": "saga-yoshinogari-cycling",
@@ -1049,7 +1147,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "吉野ヶ里歴史公園周辺をサイクリング。弥生時代の遺跡を見ながら愛犬と走れます。"
+    "memo": "吉野ヶ里歴史公園周辺をサイクリング。弥生時代の遺跡を見ながら愛犬と走れます。",
+    "prefecture": "佐賀県",
+    "category": "アウトドア"
   },
   {
     "id": "saga-arita-hiking",
@@ -1066,7 +1166,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "有田焼の産地・有田町近くの黒髪山。愛犬と一緒にハイキングが楽しめます。"
+    "memo": "有田焼の産地・有田町近くの黒髪山。愛犬と一緒にハイキングが楽しめます。",
+    "prefecture": "佐賀県",
+    "category": "公園・自然"
   },
   {
     "id": "miyazaki-nichinan-coast",
@@ -1083,7 +1185,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "南国ムード漂う日南海岸をサイクリング。フェニックスが並ぶ絶景ルートを愛犬と走れます。"
+    "memo": "南国ムード漂う日南海岸をサイクリング。フェニックスが並ぶ絶景ルートを愛犬と走れます。",
+    "prefecture": "宮崎県",
+    "category": "海・ビーチ"
   },
   {
     "id": "miyazaki-takachiho-hiking",
@@ -1100,7 +1204,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "神話の里・高千穂でトレッキング。高千穂峡周辺の遊歩道を愛犬と歩けます。"
+    "memo": "神話の里・高千穂でトレッキング。高千穂峡周辺の遊歩道を愛犬と歩けます。",
+    "prefecture": "宮崎県",
+    "category": "アウトドア"
   },
   {
     "id": "miyazaki-ebino-hiking",
@@ -1117,7 +1223,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "霧島連山の麓・えびの高原でハイキング。池めぐりコースは愛犬と一緒に歩けます。"
+    "memo": "霧島連山の麓・えびの高原でハイキング。池めぐりコースは愛犬と一緒に歩けます。",
+    "prefecture": "宮崎県",
+    "category": "アウトドア"
   },
   {
     "id": "miyazaki-kirishima-camp",
@@ -1134,7 +1242,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "霧島の自然の中でキャンプ。愛犬と一緒に星空の下でアウトドアを楽しめます。"
+    "memo": "霧島の自然の中でキャンプ。愛犬と一緒に星空の下でアウトドアを楽しめます。",
+    "prefecture": "宮崎県",
+    "category": "キャンプ場"
   },
   {
     "id": "kagoshima-sakurajima-cycling",
@@ -1151,7 +1261,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "活火山・桜島を一周するサイクリング（約36km）。雄大な桜島を間近に感じながら愛犬と走れます。"
+    "memo": "活火山・桜島を一周するサイクリング（約36km）。雄大な桜島を間近に感じながら愛犬と走れます。",
+    "prefecture": "鹿児島県",
+    "category": "アウトドア"
   },
   {
     "id": "kagoshima-ibusuki-horse",
@@ -1168,7 +1280,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "開聞岳を望む指宿で乗馬体験。海岸沿いを馬で走る体験は格別です。"
+    "memo": "開聞岳を望む指宿で乗馬体験。海岸沿いを馬で走る体験は格別です。",
+    "prefecture": "鹿児島県",
+    "category": "アウトドア"
   },
   {
     "id": "kagoshima-kirishima-hiking",
@@ -1185,7 +1299,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "霧島連山の最高峰・韓国岳（1700m）への登山道は愛犬と歩けます。下山後は霧島温泉でリフレッシュ。"
+    "memo": "霧島連山の最高峰・韓国岳（1700m）への登山道は愛犬と歩けます。下山後は霧島温泉でリフレッシュ。",
+    "prefecture": "鹿児島県",
+    "category": "公園・自然"
   },
   {
     "id": "kagoshima-amami-snorkel",
@@ -1202,7 +1318,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "世界自然遺産・奄美大島の美しいビーチ。透明度抜群の海で愛犬と遊べます。"
+    "memo": "世界自然遺産・奄美大島の美しいビーチ。透明度抜群の海で愛犬と遊べます。",
+    "prefecture": "鹿児島県",
+    "category": "アウトドア"
   },
   {
     "id": "kagoshima-yakushima-hiking",
@@ -1219,7 +1337,9 @@
     "image": "",
     "imageSource": "",
     "lastChecked": "2026-05-30",
-    "memo": "世界自然遺産・屋久島のトレッキング。縄文杉コース以外の一部コースは愛犬と歩けます。"
+    "memo": "世界自然遺産・屋久島のトレッキング。縄文杉コース以外の一部コースは愛犬と歩けます。",
+    "prefecture": "鹿児島県",
+    "category": "アウトドア"
   },
   {
     "id": "fukuoka-b62238",
@@ -1227,7 +1347,7 @@
     "area": "福岡県糸島市",
     "prefecture": "福岡県",
     "address": "福岡県糸島市",
-    "category": "犬連れOKの公園・自然スポット",
+    "category": "公園・自然",
     "description": "福岡県指定の名勝。山歩き・自然散策が楽しめます。",
     "tags": [
       "公園",
@@ -1247,7 +1367,7 @@
     "area": "福岡県福岡市南区",
     "prefecture": "福岡県",
     "address": "福岡県福岡市南区",
-    "category": "犬連れOKの公園・自然スポット",
+    "category": "公園・自然",
     "description": "人気ソフトクリームを堪能",
     "tags": [
       "公園",
@@ -1292,7 +1412,7 @@
     "area": "佐賀県嬉野市",
     "prefecture": "佐賀県",
     "address": "佐賀県嬉野市",
-    "category": "ペット可カフェ・キャンプ場",
+    "category": "キャンプ場",
     "description": "OND PARK内にある開放的なカフェ。テラス席は犬連れOK。PARK内にはキャンプ場、ヨガスタジオ、サウナなどがあり、犬連れ利用可能なキャンプ場もある。",
     "tags": [
       "カフェ",
@@ -1317,7 +1437,7 @@
     "area": "佐賀県佐賀市久保田町",
     "prefecture": "佐賀県",
     "address": "佐賀県佐賀市久保田町",
-    "category": "犬連れOKの公園・自然スポット",
+    "category": "公園・自然",
     "description": "広大な自然に囲まれた公園で、遊具や芝生広場が充実。犬もリードをつけて散策できる。一部ペット不可エリアあり。",
     "tags": [
       "公園",
@@ -1339,7 +1459,7 @@
     "area": "長崎県佐世保市鹿町町長串",
     "prefecture": "長崎県",
     "address": "長崎県佐世保市鹿町町長串",
-    "category": "公園・自然スポット",
+    "category": "公園・自然",
     "description": "北九十九島と平戸島を一望できる絶景スポット。広大な敷地内に約10万本のツツジが植えられており、4月から5月にかけて「ツツジまつり」が開催される。犬同伴で散策可能。",
     "tags": [
       "公園",
@@ -1361,7 +1481,7 @@
     "area": "長崎県諫早市宇都町",
     "prefecture": "長崎県",
     "address": "長崎県諫早市宇都町",
-    "category": "公園・自然スポット",
+    "category": "公園・自然",
     "description": "諫早城本丸跡を整備した諫早公園を含む、面積120.3ヘクタールの公園。長崎県で唯一「日本の歴史公園100選」に選定。森林浴やハイキングに最適で、犬同伴で散歩可能。",
     "tags": [
       "公園",
@@ -1384,7 +1504,7 @@
     "area": "熊本県阿蘇市",
     "prefecture": "熊本県",
     "address": "熊本県阿蘇市",
-    "category": "犬連れOKのアウトドアスポット",
+    "category": "ドッグラン",
     "description": "阿蘇の雄大な自然に囲まれた小型犬専用のドッグランを併設したオートキャンプ場。愛犬同伴でキャンプサイト、ドッグラン、カフェが利用可能。水道や電源、キャンプ用品のレンタルも充実。",
     "tags": [
       "ドッグラン",
@@ -1480,7 +1600,7 @@
     "area": "宮崎県延岡市東本小路",
     "prefecture": "宮崎県",
     "address": "宮崎県延岡市東本小路",
-    "category": "公園・自然スポット",
+    "category": "公園・自然",
     "description": "歴史と自然が調和した公園。春には桜、秋には紅葉が楽しめる。展望台からは延岡市街や日向灘を一望できる。ペットとのお散歩におすすめ。",
     "tags": [
       "公園",
@@ -1503,7 +1623,7 @@
     "area": "宮崎県えびの市",
     "prefecture": "宮崎県",
     "address": "宮崎県えびの市",
-    "category": "アウトドアスポット",
+    "category": "キャンプ場",
     "description": "ペット同伴可能なキャンプ場。",
     "tags": [
       "キャンプ",
@@ -1523,7 +1643,7 @@
     "area": "鹿児島県鹿児島市",
     "prefecture": "鹿児島県",
     "address": "鹿児島県鹿児島市",
-    "category": "公園",
+    "category": "公園・自然",
     "description": "明治の元帥、東郷平八郎の像が建つ桜の名所。入場無料、駐車場あり。",
     "tags": [
       "公園",
@@ -1544,7 +1664,7 @@
     "area": "鹿児島県鹿児島市",
     "prefecture": "鹿児島県",
     "address": "鹿児島県鹿児島市",
-    "category": "公園、展望台・タワー・橋",
+    "category": "公園・自然",
     "description": "600種以上の亜熱帯植物が自生する自然林。入場無料、駐車場あり。",
     "tags": [
       "公園",
@@ -1565,7 +1685,7 @@
     "area": "鹿児島県霧島市国分下井洲崎",
     "prefecture": "鹿児島県",
     "address": "鹿児島県霧島市国分下井洲崎",
-    "category": "犬連れOKのアウトドアスポット",
+    "category": "キャンプ場",
     "description": "キャンプ、海水浴、釣りが楽しめる。松原の緑と白い砂浜が美しい。ワンちゃんはリード着用で走り回れる。芝生の国分海浜公園はペットNG。",
     "tags": [
       "ビーチ",
@@ -1611,7 +1731,7 @@
     "area": "鹿児島県指宿市",
     "prefecture": "鹿児島県",
     "address": "鹿児島県指宿市",
-    "category": "犬連れOKのアウトドアスポット",
+    "category": "キャンプ場",
     "description": "錦江湾に面した開放感あふれるオートキャンプ場。",
     "tags": [
       "キャンプ",
@@ -1648,7 +1768,8 @@
     "season": "通年",
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=奥八女焚火の森キャンプフィールド+福岡県八女市黒木町笠原9512番地"
+    "map_url": "https://maps.google.com/?q=奥八女焚火の森キャンプフィールド+福岡県八女市黒木町笠原9512番地",
+    "category": "キャンプ場"
   },
   {
     "id": "out_fukuoka_002",
@@ -1670,7 +1791,9 @@
     "season": "通年",
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=油山市民の森+福岡市"
+    "map_url": "https://maps.google.com/?q=油山市民の森+福岡市",
+    "prefecture": "福岡県",
+    "category": "公園・自然"
   },
   {
     "id": "out_fukuoka_003",
@@ -1691,7 +1814,9 @@
     "season": "通年",
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=金山+福岡市西区"
+    "map_url": "https://maps.google.com/?q=金山+福岡市西区",
+    "prefecture": "福岡県",
+    "category": "公園・自然"
   },
   {
     "id": "out_fukuoka_004",
@@ -1712,7 +1837,9 @@
     "season": "通年",
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=柑子岳+福岡市西区"
+    "map_url": "https://maps.google.com/?q=柑子岳+福岡市西区",
+    "prefecture": "福岡県",
+    "category": "アウトドア"
   },
   {
     "id": "out_fukuoka_005",
@@ -1733,7 +1860,9 @@
     "season": "通年",
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=背振+福岡市早良区"
+    "map_url": "https://maps.google.com/?q=背振+福岡市早良区",
+    "prefecture": "福岡県",
+    "category": "アウトドア"
   },
   {
     "id": "out_fukuoka_006",
@@ -1754,7 +1883,9 @@
     "season": "通年",
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=姫島+糸島市"
+    "map_url": "https://maps.google.com/?q=姫島+糸島市",
+    "prefecture": "福岡県",
+    "category": "アウトドア"
   },
   {
     "id": "out_fukuoka_007",
@@ -1775,7 +1906,9 @@
     "season": "春〜秋",
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=羽金山+白糸の滝ルート+糸島市"
+    "map_url": "https://maps.google.com/?q=羽金山+白糸の滝ルート+糸島市",
+    "prefecture": "福岡県",
+    "category": "公園・自然"
   },
   {
     "id": "out_fukuoka_008",
@@ -1796,7 +1929,9 @@
     "season": "通年",
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=二丈岳+糸島市"
+    "map_url": "https://maps.google.com/?q=二丈岳+糸島市",
+    "prefecture": "福岡県",
+    "category": "アウトドア"
   },
   {
     "id": "out_fukuoka_009",
@@ -1816,7 +1951,8 @@
     "season": "通年",
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=難所ヶ滝+宇美町"
+    "map_url": "https://maps.google.com/?q=難所ヶ滝+宇美町",
+    "category": "アウトドア"
   },
   {
     "id": "out_fukuoka_010",
@@ -1837,7 +1973,8 @@
     "season": "通年",
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=立花山・三日月山+新宮町"
+    "map_url": "https://maps.google.com/?q=立花山・三日月山+新宮町",
+    "category": "公園・自然"
   },
   {
     "id": "out_fukuoka_011",
@@ -1858,7 +1995,8 @@
     "season": "通年",
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=目配山+筑前町"
+    "map_url": "https://maps.google.com/?q=目配山+筑前町",
+    "category": "公園・自然"
   },
   {
     "id": "out_fukuoka_012",
@@ -1879,7 +2017,8 @@
     "season": "通年",
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=英彦山+添田町"
+    "map_url": "https://maps.google.com/?q=英彦山+添田町",
+    "category": "公園・自然"
   },
   {
     "id": "out_fukuoka_013",
@@ -1900,7 +2039,8 @@
     "season": "通年",
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=宝満山+太宰府市"
+    "map_url": "https://maps.google.com/?q=宝満山+太宰府市",
+    "category": "公園・自然"
   },
   {
     "id": "out_fukuoka_014",
@@ -1921,7 +2061,9 @@
     "season": "通年",
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=皿倉山+北九州市"
+    "map_url": "https://maps.google.com/?q=皿倉山+北九州市",
+    "prefecture": "福岡県",
+    "category": "公園・自然"
   },
   {
     "id": "out_fukuoka_015",
@@ -1942,7 +2084,9 @@
     "season": "通年",
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=発心山+久留米市"
+    "map_url": "https://maps.google.com/?q=発心山+久留米市",
+    "prefecture": "福岡県",
+    "category": "公園・自然"
   },
   {
     "id": "out_fukuoka_016",
@@ -1965,7 +2109,8 @@
     "season": "通年",
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=若杉楽園キャンプ場+糟屋郡篠栗町"
+    "map_url": "https://maps.google.com/?q=若杉楽園キャンプ場+糟屋郡篠栗町",
+    "category": "キャンプ場"
   },
   {
     "id": "out_fukuoka_017",
@@ -1986,7 +2131,8 @@
     "season": "通年",
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=じゃぶち森のビレッジ+みやこ町"
+    "map_url": "https://maps.google.com/?q=じゃぶち森のビレッジ+みやこ町",
+    "category": "公園・自然"
   },
   {
     "id": "out_oita_001",
@@ -2006,7 +2152,8 @@
     "season": "通年",
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=るるパークキャンプ場+大分県杵築市山香町大字日指1-1"
+    "map_url": "https://maps.google.com/?q=るるパークキャンプ場+大分県杵築市山香町大字日指1-1",
+    "category": "キャンプ場"
   },
   {
     "id": "out_oita_002",
@@ -2026,7 +2173,8 @@
     "season": "通年",
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=長崎鼻リゾートキャンプ場+豊後高田市"
+    "map_url": "https://maps.google.com/?q=長崎鼻リゾートキャンプ場+豊後高田市",
+    "category": "キャンプ場"
   },
   {
     "id": "out_oita_003",
@@ -2046,7 +2194,8 @@
     "season": "通年",
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=西谷温泉キャンピングパーク+中津市"
+    "map_url": "https://maps.google.com/?q=西谷温泉キャンピングパーク+中津市",
+    "category": "アウトドア"
   },
   {
     "id": "out_oita_004",
@@ -2066,7 +2215,8 @@
     "season": "通年",
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=久住山荘南登山口キャンプ場+竹田市"
+    "map_url": "https://maps.google.com/?q=久住山荘南登山口キャンプ場+竹田市",
+    "category": "キャンプ場"
   },
   {
     "id": "out_oita_005",
@@ -2087,7 +2237,8 @@
     "season": "通年",
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=リバーパーク犬飼+豊後大野市"
+    "map_url": "https://maps.google.com/?q=リバーパーク犬飼+豊後大野市",
+    "category": "アウトドア"
   },
   {
     "id": "out_oita_006",
@@ -2108,7 +2259,8 @@
     "season": "通年",
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=ボイボイキャンプ場+竹田市"
+    "map_url": "https://maps.google.com/?q=ボイボイキャンプ場+竹田市",
+    "category": "キャンプ場"
   },
   {
     "id": "out_oita_007",
@@ -2129,7 +2281,8 @@
     "season": "通年",
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=長者原+タデ原湿原+玖珠郡九重町"
+    "map_url": "https://maps.google.com/?q=長者原+タデ原湿原+玖珠郡九重町",
+    "category": "アウトドア"
   },
   {
     "id": "out_oita_008",
@@ -2150,7 +2303,9 @@
     "season": "通年",
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=由布岳+由布市"
+    "map_url": "https://maps.google.com/?q=由布岳+由布市",
+    "prefecture": "大分県",
+    "category": "アウトドア"
   },
   {
     "id": "out_oita_009",
@@ -2171,7 +2326,9 @@
     "season": "通年",
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=鶴見岳+別府市"
+    "map_url": "https://maps.google.com/?q=鶴見岳+別府市",
+    "prefecture": "大分県",
+    "category": "アウトドア"
   },
   {
     "id": "out_001",
@@ -2196,7 +2353,9 @@
     "season": null,
     "lat": 32.831338,
     "lng": 130.923673,
-    "map_url": "https://maps.google.com/?q=阿蘇マロンの樹+熊本県阿蘇郡西原村宮山1734-1"
+    "map_url": "https://maps.google.com/?q=阿蘇マロンの樹+熊本県阿蘇郡西原村宮山1734-1",
+    "prefecture": "熊本県",
+    "category": "アウトドア"
   },
   {
     "id": "out_002",
@@ -2220,7 +2379,8 @@
     "season": "通年",
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=奥矢谷渓谷マザーネイチャーきらり+熊本県玉名市奥矢谷"
+    "map_url": "https://maps.google.com/?q=奥矢谷渓谷マザーネイチャーきらり+熊本県玉名市奥矢谷",
+    "category": "川・渓谷"
   },
   {
     "id": "out_003",
@@ -2246,7 +2406,9 @@
     "season": "通年",
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=歌瀬キャンプ場+熊本県阿蘇市"
+    "map_url": "https://maps.google.com/?q=歌瀬キャンプ場+熊本県阿蘇市",
+    "prefecture": "熊本県",
+    "category": "キャンプ場"
   },
   {
     "id": "out_004",
@@ -2268,7 +2430,9 @@
     "season": null,
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=古代の里キャンプ村+熊本県阿蘇市"
+    "map_url": "https://maps.google.com/?q=古代の里キャンプ村+熊本県阿蘇市",
+    "prefecture": "熊本県",
+    "category": "キャンプ場"
   },
   {
     "id": "out_005",
@@ -2291,7 +2455,9 @@
     "season": "通年",
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=吉原ごんべえ村+熊本県阿蘇市"
+    "map_url": "https://maps.google.com/?q=吉原ごんべえ村+熊本県阿蘇市",
+    "prefecture": "熊本県",
+    "category": "アウトドア"
   },
   {
     "id": "out_006",
@@ -2314,7 +2480,8 @@
     "season": null,
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=端海野キャンプ場+熊本県球磨郡人吉市"
+    "map_url": "https://maps.google.com/?q=端海野キャンプ場+熊本県球磨郡人吉市",
+    "category": "キャンプ場"
   },
   {
     "id": "out_007",
@@ -2336,7 +2503,9 @@
     "season": null,
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=小島公園キャンプ場+熊本県天草市三角町"
+    "map_url": "https://maps.google.com/?q=小島公園キャンプ場+熊本県天草市三角町",
+    "prefecture": "熊本県",
+    "category": "キャンプ場"
   },
   {
     "id": "out_008",
@@ -2360,7 +2529,9 @@
     "season": null,
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=エコ・パーク論所原+長崎県"
+    "map_url": "https://maps.google.com/?q=エコ・パーク論所原+長崎県",
+    "prefecture": "長崎県",
+    "category": "アウトドア"
   },
   {
     "id": "out_009",
@@ -2385,7 +2556,8 @@
     "season": null,
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=島の小さなキャンプ場「toto・ん・トコ」+長崎県松浦市"
+    "map_url": "https://maps.google.com/?q=島の小さなキャンプ場「toto・ん・トコ」+長崎県松浦市",
+    "category": "キャンプ場"
   },
   {
     "id": "out_010",
@@ -2410,7 +2582,8 @@
     "season": null,
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=グランビーチ+長崎県壱岐・対馬"
+    "map_url": "https://maps.google.com/?q=グランビーチ+長崎県壱岐・対馬",
+    "category": "海・ビーチ"
   },
   {
     "id": "out_011",
@@ -2434,7 +2607,8 @@
     "season": null,
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=中瀬草原キャンプ場+長崎県平戸市"
+    "map_url": "https://maps.google.com/?q=中瀬草原キャンプ場+長崎県平戸市",
+    "category": "キャンプ場"
   },
   {
     "id": "out_012",
@@ -2458,7 +2632,9 @@
     "season": null,
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=futatucoroautocampsite+長崎県"
+    "map_url": "https://maps.google.com/?q=futatucoroautocampsite+長崎県",
+    "prefecture": "長崎県",
+    "category": "アウトドア"
   },
   {
     "id": "out_013",
@@ -2480,7 +2656,9 @@
     "season": null,
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=グランピングひみつきち+長崎県"
+    "map_url": "https://maps.google.com/?q=グランピングひみつきち+長崎県",
+    "prefecture": "長崎県",
+    "category": "アウトドア"
   },
   {
     "id": "out_014",
@@ -2504,7 +2682,9 @@
     "season": null,
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=森の中の星空キャンプ場〜BASE.5〜+長崎県"
+    "map_url": "https://maps.google.com/?q=森の中の星空キャンプ場〜BASE.5〜+長崎県",
+    "prefecture": "長崎県",
+    "category": "キャンプ場"
   },
   {
     "id": "out_015",
@@ -2528,7 +2708,9 @@
     "season": null,
     "lat": null,
     "lng": null,
-    "map_url": "https://maps.google.com/?q=ヴィラそのぎグランピング・オートキャンプ+長崎県"
+    "map_url": "https://maps.google.com/?q=ヴィラそのぎグランピング・オートキャンプ+長崎県",
+    "prefecture": "長崎県",
+    "category": "キャンプ場"
   },
   {
     "id": "out_1",
@@ -2547,7 +2729,9 @@
     "season": "",
     "lat": 31.825282,
     "lng": 131.137158,
-    "map_url": "https://maps.google.com/?q=観音池公園オートキャンプ場+都城市"
+    "map_url": "https://maps.google.com/?q=観音池公園オートキャンプ場+都城市",
+    "prefecture": "宮崎県",
+    "category": "キャンプ場"
   },
   {
     "id": "out_2",
@@ -2566,7 +2750,8 @@
     "season": "",
     "lat": 32.327857,
     "lng": 131.602129,
-    "map_url": "https://maps.google.com/?q=日向ヴィレッジ+日向市"
+    "map_url": "https://maps.google.com/?q=日向ヴィレッジ+日向市",
+    "category": "アウトドア"
   },
   {
     "id": "out_3",
@@ -2585,7 +2770,9 @@
     "season": "",
     "lat": 31.762194,
     "lng": 130.985632,
-    "map_url": "https://maps.google.com/?q=スノーピーク都城キャンプフィールド+都城市"
+    "map_url": "https://maps.google.com/?q=スノーピーク都城キャンプフィールド+都城市",
+    "prefecture": "宮崎県",
+    "category": "キャンプ場"
   },
   {
     "id": "out_4",
@@ -2604,7 +2791,8 @@
     "season": "",
     "lat": 31.927071,
     "lng": 130.941238,
-    "map_url": "https://maps.google.com/?q=ひなもりオートキャンプ場+小林市"
+    "map_url": "https://maps.google.com/?q=ひなもりオートキャンプ場+小林市",
+    "category": "キャンプ場"
   },
   {
     "id": "out_5",
@@ -2623,7 +2811,8 @@
     "season": "春〜秋",
     "lat": 32.053889,
     "lng": 130.835833,
-    "map_url": "https://maps.google.com/?q=えびの高原温泉キャンプ村+えびの市"
+    "map_url": "https://maps.google.com/?q=えびの高原温泉キャンプ村+えびの市",
+    "category": "キャンプ場"
   },
   {
     "id": "out_6",
@@ -2642,7 +2831,8 @@
     "season": "通年",
     "lat": 32.118276,
     "lng": 131.533718,
-    "map_url": "https://maps.google.com/?q=蚊口海浜公園キャンプ場+児湯郡高鍋町"
+    "map_url": "https://maps.google.com/?q=蚊口海浜公園キャンプ場+児湯郡高鍋町",
+    "category": "キャンプ場"
   },
   {
     "id": "out_7",
@@ -2661,7 +2851,9 @@
     "season": "",
     "lat": 31.790104,
     "lng": 131.477391,
-    "map_url": "https://maps.google.com/?q=宮崎白浜オートキャンプ場+宮崎市"
+    "map_url": "https://maps.google.com/?q=宮崎白浜オートキャンプ場+宮崎市",
+    "prefecture": "宮崎県",
+    "category": "キャンプ場"
   },
   {
     "id": "out_8",
@@ -2680,7 +2872,8 @@
     "season": "",
     "lat": 32.043762,
     "lng": 131.258684,
-    "map_url": "https://maps.google.com/?q=法華嶽公園キャンプ場+東諸県郡国富町"
+    "map_url": "https://maps.google.com/?q=法華嶽公園キャンプ場+東諸県郡国富町",
+    "category": "キャンプ場"
   },
   {
     "id": "out_9",
@@ -2699,7 +2892,8 @@
     "season": "春〜秋",
     "lat": 32.351262,
     "lng": 131.094637,
-    "map_url": "https://maps.google.com/?q=矢立高原キャンプ場+東臼杵郡椎葉村"
+    "map_url": "https://maps.google.com/?q=矢立高原キャンプ場+東臼杵郡椎葉村",
+    "category": "キャンプ場"
   },
   {
     "id": "out_10",
@@ -2718,7 +2912,8 @@
     "season": "",
     "lat": 31.983333,
     "lng": 130.983333,
-    "map_url": "https://maps.google.com/?q=御池野鳥の森公園キャンプ村+西諸県郡高原町"
+    "map_url": "https://maps.google.com/?q=御池野鳥の森公園キャンプ村+西諸県郡高原町",
+    "category": "キャンプ場"
   },
   {
     "id": "out_11",
@@ -2741,7 +2936,9 @@
     "season": "通年",
     "lat": 31.833333,
     "lng": 131.366667,
-    "map_url": "https://maps.google.com/?q=加江田渓谷遊歩道+宮崎市"
+    "map_url": "https://maps.google.com/?q=加江田渓谷遊歩道+宮崎市",
+    "prefecture": "宮崎県",
+    "category": "川・渓谷"
   },
   {
     "id": "out_12",
@@ -2764,7 +2961,8 @@
     "season": "通年",
     "lat": 31.543333,
     "lng": 131.438333,
-    "map_url": "https://maps.google.com/?q=日南海岸ドライブコース+宮崎県日南市"
+    "map_url": "https://maps.google.com/?q=日南海岸ドライブコース+宮崎県日南市",
+    "category": "海・ビーチ"
   },
   {
     "id": "out_13",
@@ -2787,7 +2985,8 @@
     "season": "通年",
     "lat": 31.633333,
     "lng": 131.366667,
-    "map_url": "https://maps.google.com/?q=猪八重渓谷ウォーキングコース+宮崎県日南市"
+    "map_url": "https://maps.google.com/?q=猪八重渓谷ウォーキングコース+宮崎県日南市",
+    "category": "川・渓谷"
   },
   {
     "id": "out_14",
@@ -2806,7 +3005,8 @@
     "season": "",
     "lat": 31.396869,
     "lng": 130.494747,
-    "map_url": "https://maps.google.com/?q=オートキャンプ森のかわなべ+南薩"
+    "map_url": "https://maps.google.com/?q=オートキャンプ森のかわなべ+南薩",
+    "category": "キャンプ場"
   },
   {
     "id": "out_15",
@@ -2825,7 +3025,9 @@
     "season": "通年",
     "lat": 31.667778,
     "lng": 130.567778,
-    "map_url": "https://maps.google.com/?q=銀の湯 CAMP FIELD+鹿児島"
+    "map_url": "https://maps.google.com/?q=銀の湯 CAMP FIELD+鹿児島",
+    "prefecture": "鹿児島県",
+    "category": "アウトドア"
   },
   {
     "id": "out_16",
@@ -2844,7 +3046,8 @@
     "season": "",
     "lat": 31.396869,
     "lng": 130.494747,
-    "map_url": "https://maps.google.com/?q=YUKUSA OUTDOOR FIELD+垂水"
+    "map_url": "https://maps.google.com/?q=YUKUSA OUTDOOR FIELD+垂水",
+    "category": "アウトドア"
   },
   {
     "id": "out_18",
@@ -2863,7 +3066,8 @@
     "season": "",
     "lat": 30.366667,
     "lng": 130.533333,
-    "map_url": "https://maps.google.com/?q=【R7/5閉鎖】もりときランタン+屋久島"
+    "map_url": "https://maps.google.com/?q=【R7/5閉鎖】もりときランタン+屋久島",
+    "category": "アウトドア"
   },
   {
     "id": "out_19",
@@ -2882,7 +3086,9 @@
     "season": "",
     "lat": 31.258611,
     "lng": 130.638889,
-    "map_url": "https://maps.google.com/?q=【R4/3現在休業中】指宿ベイヒルズHOTEL＆SPAキャンプ場+南薩"
+    "map_url": "https://maps.google.com/?q=【R4/3現在休業中】指宿ベイヒルズHOTEL＆SPAキャンプ場+南薩",
+    "prefecture": "鹿児島県",
+    "category": "キャンプ場"
   },
   {
     "id": "out_20",
@@ -2901,7 +3107,8 @@
     "season": "",
     "lat": 31.5,
     "lng": 130.333333,
-    "map_url": "https://maps.google.com/?q=グッドラックスタービーチ+南薩"
+    "map_url": "https://maps.google.com/?q=グッドラックスタービーチ+南薩",
+    "category": "海・ビーチ"
   },
   {
     "id": "out_21",
@@ -2920,7 +3127,9 @@
     "season": "",
     "lat": 31.629167,
     "lng": 130.542222,
-    "map_url": "https://maps.google.com/?q=【R7/2 閉鎖】HANANO CAMP FIELD+鹿児島"
+    "map_url": "https://maps.google.com/?q=【R7/2 閉鎖】HANANO CAMP FIELD+鹿児島",
+    "prefecture": "鹿児島県",
+    "category": "アウトドア"
   },
   {
     "id": "out_22",
@@ -2939,7 +3148,9 @@
     "season": "",
     "lat": 31.882742,
     "lng": 130.808195,
-    "map_url": "https://maps.google.com/?q=霧島高原国民休養地+霧島"
+    "map_url": "https://maps.google.com/?q=霧島高原国民休養地+霧島",
+    "prefecture": "鹿児島県",
+    "category": "アウトドア"
   },
   {
     "id": "out_23",
@@ -2961,6 +3172,606 @@
     "season": "通年",
     "lat": 31.196111,
     "lng": 130.553333,
-    "map_url": "https://maps.google.com/?q=開聞岳+指宿市"
+    "map_url": "https://maps.google.com/?q=開聞岳+指宿市",
+    "prefecture": "鹿児島県",
+    "category": "アウトドア"
+  },
+  {
+    "id": "out-fukuoka-itoshima-beach",
+    "name": "糸島・二見ヶ浦海岸",
+    "prefecture": "福岡県",
+    "area": "糸島",
+    "city": "福岡県糸島市",
+    "address": "福岡県糸島市二丈福井2976",
+    "category": "海・ビーチ",
+    "dogLeash": "リード必須",
+    "features": [
+      "犬連れOK",
+      "夕日スポット",
+      "白い鳥居",
+      "インスタ映え"
+    ],
+    "season": "通年",
+    "fee": "無料",
+    "hours": "24時間",
+    "parking": "あり（無料）",
+    "lat": 33.5512,
+    "lng": 130.1234,
+    "url": "https://itoshima-kanko.net/",
+    "description": "糸島の絶景スポット。白い鳥居と夕日が美しく、犬連れでの散歩が楽しめる人気ビーチ。"
+  },
+  {
+    "id": "out-fukuoka-uminonakamichi-dogrun",
+    "name": "海の中道海浜公園 ドッグラン",
+    "prefecture": "福岡県",
+    "area": "福岡",
+    "city": "福岡県福岡市東区",
+    "address": "福岡県福岡市東区西戸崎18-25",
+    "category": "ドッグラン",
+    "features": [
+      "ドッグラン",
+      "大型犬エリア",
+      "小型犬エリア",
+      "海が見える"
+    ],
+    "season": "通年",
+    "fee": "入園料：大人450円（ドッグラン利用無料）",
+    "hours": "9:30〜17:30（季節変動あり）",
+    "parking": "あり（有料）",
+    "lat": 33.6234,
+    "lng": 130.4012,
+    "url": "https://uminaka-park.jp/",
+    "description": "九州最大級の国営公園内にあるドッグラン。大型・小型犬エリアに分かれており安心。"
+  },
+  {
+    "id": "out-fukuoka-nokonoshima-nature",
+    "name": "能古島自然散策コース",
+    "prefecture": "福岡県",
+    "area": "福岡",
+    "city": "福岡県福岡市西区",
+    "address": "福岡県福岡市西区能古",
+    "category": "公園・自然",
+    "features": [
+      "犬連れOK",
+      "フェリーで行ける離島",
+      "花の名所",
+      "自然散策"
+    ],
+    "season": "通年（春・秋がおすすめ）",
+    "fee": "フェリー往復：大人500円",
+    "hours": "日の出〜日没",
+    "parking": "フェリー乗り場に駐車場あり",
+    "lat": 33.6456,
+    "lng": 130.3234,
+    "url": "https://nokonoshima.com/",
+    "description": "博多湾に浮かぶ離島。フェリーで10分でアクセスでき、犬と一緒に島内を散策できる。"
+  },
+  {
+    "id": "out-fukuoka-kitakyushu-dogrun",
+    "name": "北九州市響灘ドッグラン",
+    "prefecture": "福岡県",
+    "area": "北九州",
+    "city": "福岡県北九州市若松区",
+    "address": "福岡県北九州市若松区響町1-105",
+    "category": "ドッグラン",
+    "features": [
+      "ドッグラン",
+      "広大な敷地",
+      "海が見える",
+      "無料"
+    ],
+    "season": "通年",
+    "fee": "無料",
+    "hours": "9:00〜17:00",
+    "parking": "あり（無料）",
+    "lat": 33.9234,
+    "lng": 130.7678,
+    "url": "",
+    "description": "響灘緑地内の広大なドッグラン。海を眺めながら犬を思いっきり走らせることができる。"
+  },
+  {
+    "id": "out-oita-yufuin-dogwalk",
+    "name": "由布岳登山道（犬連れ可）",
+    "prefecture": "大分県",
+    "area": "湯布院",
+    "city": "大分県由布市湯布院町",
+    "address": "大分県由布市湯布院町川上1539-1（正面登山口）",
+    "category": "登山・ハイキング",
+    "features": [
+      "犬連れOK",
+      "リード必須",
+      "絶景",
+      "登山"
+    ],
+    "season": "4月〜11月",
+    "fee": "無料",
+    "hours": "日の出〜日没",
+    "parking": "あり（無料）",
+    "lat": 33.2678,
+    "lng": 131.3912,
+    "url": "https://www.yufuin.gr.jp/",
+    "description": "標高1583mの由布岳。犬連れで登山可能（リード必須）。山頂からの眺望は絶景。"
+  },
+  {
+    "id": "out-oita-beppu-dogrun",
+    "name": "別府公園ドッグラン",
+    "prefecture": "大分県",
+    "area": "別府",
+    "city": "大分県別府市",
+    "address": "大分県別府市野口元町",
+    "category": "ドッグラン",
+    "features": [
+      "ドッグラン",
+      "無料",
+      "広大な芝生"
+    ],
+    "season": "通年",
+    "fee": "無料",
+    "hours": "9:00〜17:00",
+    "parking": "あり（無料）",
+    "lat": 33.2912,
+    "lng": 131.5012,
+    "url": "",
+    "description": "別府市内の大型公園内にあるドッグラン。無料で利用でき、地元の犬連れ家族に人気。"
+  },
+  {
+    "id": "out-oita-kunisaki-nature",
+    "name": "国東半島 富貴寺周辺散策",
+    "prefecture": "大分県",
+    "area": "国東",
+    "city": "大分県豊後高田市",
+    "address": "大分県豊後高田市田染蕗2395",
+    "category": "公園・自然",
+    "features": [
+      "犬連れOK",
+      "歴史散策",
+      "紅葉",
+      "田園風景"
+    ],
+    "season": "通年（秋の紅葉が絶景）",
+    "fee": "拝観料：大人200円",
+    "hours": "9:00〜17:00",
+    "parking": "あり（無料）",
+    "lat": 33.5234,
+    "lng": 131.5678,
+    "url": "https://www.kunisaki.jp/",
+    "description": "国東半島の歴史的景観の中を犬と散策できる。秋の紅葉シーズンが特に美しい。"
+  },
+  {
+    "id": "out-kumamoto-aso-dogrun",
+    "name": "阿蘇くじゅう国立公園 草千里ドッグウォーク",
+    "prefecture": "熊本県",
+    "area": "阿蘇",
+    "city": "熊本県阿蘇市",
+    "address": "熊本県阿蘇市草千里ヶ浜",
+    "category": "公園・自然",
+    "features": [
+      "犬連れOK",
+      "広大な草原",
+      "絶景",
+      "リード必須"
+    ],
+    "season": "4月〜11月",
+    "fee": "無料（駐車料金：普通車500円）",
+    "hours": "24時間（駐車場は8:00〜18:00）",
+    "parking": "あり（有料）",
+    "lat": 32.8834,
+    "lng": 131.0678,
+    "url": "https://www.aso.ne.jp/",
+    "description": "阿蘇の広大な草原を犬と一緒に歩ける絶景スポット。馬も放牧されており、雄大な自然を満喫できる。"
+  },
+  {
+    "id": "out-kumamoto-amakusa-beach",
+    "name": "天草・御所浦島 犬連れビーチ",
+    "prefecture": "熊本県",
+    "area": "天草",
+    "city": "熊本県天草市御所浦町",
+    "address": "熊本県天草市御所浦町御所浦",
+    "category": "海・ビーチ",
+    "features": [
+      "犬連れOK",
+      "離島",
+      "化石の島",
+      "シュノーケリング"
+    ],
+    "season": "5月〜10月",
+    "fee": "フェリー往復：大人1,500円程度",
+    "hours": "日の出〜日没",
+    "parking": "フェリー乗り場に駐車場あり",
+    "lat": 32.4234,
+    "lng": 130.1456,
+    "url": "https://www.amakusa-web.jp/",
+    "description": "恐竜の化石が発見された離島。透明度の高い海で犬と一緒に過ごせる。"
+  },
+  {
+    "id": "out-kumamoto-kikuchi-gorge",
+    "name": "菊池渓谷 犬連れ散策",
+    "prefecture": "熊本県",
+    "area": "菊池",
+    "city": "熊本県菊池市",
+    "address": "熊本県菊池市原",
+    "category": "川・渓谷",
+    "features": [
+      "犬連れOK",
+      "清流",
+      "マイナスイオン",
+      "新緑・紅葉"
+    ],
+    "season": "通年（夏・秋がおすすめ）",
+    "fee": "入場料：大人300円",
+    "hours": "8:30〜17:00",
+    "parking": "あり（有料）",
+    "lat": 33.0234,
+    "lng": 130.9678,
+    "url": "https://www.kikuchi-kanko.com/",
+    "description": "日本名水百選に選ばれた清流沿いを犬と散策できる。夏は涼しく、秋は紅葉が美しい。"
+  },
+  {
+    "id": "out-nagasaki-unzen-dogwalk",
+    "name": "雲仙地獄周辺 犬連れ散策",
+    "prefecture": "長崎県",
+    "area": "雲仙",
+    "city": "長崎県雲仙市",
+    "address": "長崎県雲仙市小浜町雲仙",
+    "category": "公園・自然",
+    "features": [
+      "犬連れOK",
+      "地獄めぐり",
+      "温泉地",
+      "リード必須"
+    ],
+    "season": "通年",
+    "fee": "無料（駐車料金別途）",
+    "hours": "24時間（地獄は日中）",
+    "parking": "あり（有料）",
+    "lat": 32.7512,
+    "lng": 130.1912,
+    "url": "https://www.unzen.org/",
+    "description": "雲仙の地獄地帯周辺を犬と散策できる。硫黄の香りと湯けむりが立ち込める独特の景観。"
+  },
+  {
+    "id": "out-nagasaki-saikai-park",
+    "name": "西海国立公園 九十九島 犬連れ散策",
+    "prefecture": "長崎県",
+    "area": "佐世保",
+    "city": "長崎県佐世保市",
+    "address": "長崎県佐世保市鹿子前町1008",
+    "category": "公園・自然",
+    "features": [
+      "犬連れOK",
+      "島々の絶景",
+      "カヤック",
+      "展望台"
+    ],
+    "season": "通年",
+    "fee": "展望台：無料",
+    "hours": "9:00〜17:00",
+    "parking": "あり（無料）",
+    "lat": 33.1678,
+    "lng": 129.6912,
+    "url": "https://www.pearlsea.jp/",
+    "description": "208の島々が点在する九十九島を一望できる展望台。犬連れで散策しながら絶景を楽しめる。"
+  },
+  {
+    "id": "out-nagasaki-goto-beach",
+    "name": "五島列島 高浜海水浴場",
+    "prefecture": "長崎県",
+    "area": "五島",
+    "city": "長崎県五島市",
+    "address": "長崎県五島市玉之浦町荒川",
+    "category": "海・ビーチ",
+    "features": [
+      "犬連れOK",
+      "透明度抜群",
+      "日本の快水浴場100選",
+      "離島"
+    ],
+    "season": "7月〜9月",
+    "fee": "無料",
+    "hours": "日の出〜日没",
+    "parking": "あり（無料）",
+    "lat": 32.5678,
+    "lng": 128.7234,
+    "url": "https://www.nagasaki-tabinet.com/",
+    "description": "日本の快水浴場100選に選ばれた透明度抜群のビーチ。犬連れでの海水浴が楽しめる。"
+  },
+  {
+    "id": "out-saga-karatsu-beach",
+    "name": "虹の松原・唐津海岸 犬連れ散策",
+    "prefecture": "佐賀県",
+    "area": "唐津",
+    "city": "佐賀県唐津市",
+    "address": "佐賀県唐津市東唐津",
+    "category": "海・ビーチ",
+    "features": [
+      "犬連れOK",
+      "日本三大松原",
+      "砂浜散歩",
+      "絶景"
+    ],
+    "season": "通年",
+    "fee": "無料",
+    "hours": "24時間",
+    "parking": "あり（無料）",
+    "lat": 33.4678,
+    "lng": 129.9012,
+    "url": "https://www.karatsu-kankou.jp/",
+    "description": "日本三大松原の一つ。約100万本の松林と白砂のビーチを犬と一緒に散策できる。"
+  },
+  {
+    "id": "out-saga-yoshinogari-camp",
+    "name": "吉野ヶ里歴史公園 犬連れ散策",
+    "prefecture": "佐賀県",
+    "area": "佐賀",
+    "city": "佐賀県神埼郡吉野ヶ里町",
+    "address": "佐賀県神埼郡吉野ヶ里町田手1843",
+    "category": "公園・自然",
+    "features": [
+      "犬連れOK（一部エリア）",
+      "弥生時代の遺跡",
+      "広大な公園",
+      "歴史体験"
+    ],
+    "season": "通年",
+    "fee": "入園料：大人460円",
+    "hours": "9:00〜17:00（季節変動あり）",
+    "parking": "あり（有料）",
+    "lat": 33.3234,
+    "lng": 130.3912,
+    "url": "https://www.yoshinogari.jp/",
+    "description": "弥生時代の大規模集落跡。広大な公園内を犬連れで散策できる（一部エリアのみ）。"
+  },
+  {
+    "id": "out-miyazaki-takachiho-gorge",
+    "name": "高千穂峡 犬連れ散策",
+    "prefecture": "宮崎県",
+    "area": "高千穂",
+    "city": "宮崎県西臼杵郡高千穂町",
+    "address": "宮崎県西臼杵郡高千穂町三田井御塩井",
+    "category": "川・渓谷",
+    "features": [
+      "犬連れOK",
+      "ボート遊び",
+      "滝",
+      "絶景"
+    ],
+    "season": "通年（春・秋がおすすめ）",
+    "fee": "無料（ボート：1,500円/30分）",
+    "hours": "8:30〜17:00",
+    "parking": "あり（有料）",
+    "lat": 32.7012,
+    "lng": 131.3012,
+    "url": "https://takachiho-kanko.info/",
+    "description": "柱状節理の断崖と真名井の滝が美しい峡谷。犬連れでボートに乗ることも可能。"
+  },
+  {
+    "id": "out-miyazaki-nichinan-beach",
+    "name": "日南海岸 犬連れビーチ",
+    "prefecture": "宮崎県",
+    "area": "日南",
+    "city": "宮崎県日南市",
+    "address": "宮崎県日南市油津",
+    "category": "海・ビーチ",
+    "features": [
+      "犬連れOK",
+      "サーフィン",
+      "青島",
+      "南国ムード"
+    ],
+    "season": "通年（夏がおすすめ）",
+    "fee": "無料",
+    "hours": "24時間",
+    "parking": "あり（無料）",
+    "lat": 31.5678,
+    "lng": 131.3678,
+    "url": "https://www.kankou-miyazaki.jp/",
+    "description": "南国ムード漂う日南海岸。犬連れで砂浜を散歩しながら宮崎の海を満喫できる。"
+  },
+  {
+    "id": "out-miyazaki-ebino-highland",
+    "name": "えびの高原 犬連れ散策",
+    "prefecture": "宮崎県",
+    "area": "えびの",
+    "city": "宮崎県えびの市",
+    "address": "宮崎県えびの市末永1495",
+    "category": "登山・ハイキング",
+    "features": [
+      "犬連れOK",
+      "高原散策",
+      "火山湖",
+      "絶景"
+    ],
+    "season": "4月〜11月",
+    "fee": "無料（駐車料金：普通車500円）",
+    "hours": "日の出〜日没",
+    "parking": "あり（有料）",
+    "lat": 31.9234,
+    "lng": 130.8234,
+    "url": "https://ebino-kogen.com/",
+    "description": "霧島連山の高原。犬連れで火山湖や高原を散策できる。秋の紅葉が特に美しい。"
+  },
+  {
+    "id": "out-kagoshima-ibusuki-beach",
+    "name": "指宿・長崎鼻 犬連れ散策",
+    "prefecture": "鹿児島県",
+    "area": "指宿",
+    "city": "鹿児島県指宿市",
+    "address": "鹿児島県指宿市山川岡児ヶ水1581",
+    "category": "海・ビーチ",
+    "features": [
+      "犬連れOK",
+      "開聞岳の絶景",
+      "砂浜散歩",
+      "南国ムード"
+    ],
+    "season": "通年",
+    "fee": "無料",
+    "hours": "24時間",
+    "parking": "あり（無料）",
+    "lat": 31.0456,
+    "lng": 130.6012,
+    "url": "https://www.ibusuki.or.jp/",
+    "description": "薩摩半島最南端の岬。開聞岳を背景に犬と一緒に砂浜を散歩できる絶景スポット。"
+  },
+  {
+    "id": "out-kagoshima-kirishima-dogwalk",
+    "name": "霧島神宮周辺 犬連れ散策",
+    "prefecture": "鹿児島県",
+    "area": "霧島",
+    "city": "鹿児島県霧島市",
+    "address": "鹿児島県霧島市霧島田口2608-5",
+    "category": "公園・自然",
+    "features": [
+      "犬連れOK（境内は不可）",
+      "森林散策",
+      "パワースポット",
+      "紅葉"
+    ],
+    "season": "通年",
+    "fee": "無料",
+    "hours": "日の出〜日没",
+    "parking": "あり（無料）",
+    "lat": 31.8912,
+    "lng": 130.8678,
+    "url": "https://kirishimajingu.or.jp/",
+    "description": "霧島神宮周辺の森林を犬と散策できる。境内への犬の入場は不可だが、周辺の自然道を楽しめる。"
+  },
+  {
+    "id": "out-kagoshima-amami-beach",
+    "name": "奄美大島 土盛海岸",
+    "prefecture": "鹿児島県",
+    "area": "奄美",
+    "city": "鹿児島県奄美市",
+    "address": "鹿児島県奄美市笠利町土盛",
+    "category": "海・ビーチ",
+    "features": [
+      "犬連れOK",
+      "透明度抜群",
+      "珊瑚礁",
+      "南国ムード"
+    ],
+    "season": "通年（夏がおすすめ）",
+    "fee": "無料",
+    "hours": "24時間",
+    "parking": "あり（無料）",
+    "lat": 28.4234,
+    "lng": 129.7012,
+    "url": "https://www.amami-tourism.jp/",
+    "description": "奄美大島随一の透明度を誇るビーチ。珊瑚礁の海で犬と一緒に南国の海を満喫できる。"
+  },
+  {
+    "id": "out-fukuoka-itoshima-camp",
+    "name": "芥屋キャンプ場（糸島）",
+    "prefecture": "福岡県",
+    "area": "糸島",
+    "city": "福岡県糸島市",
+    "address": "福岡県糸島市志摩芥屋878",
+    "category": "キャンプ場",
+    "features": [
+      "ペット同伴可",
+      "海が見える",
+      "オートキャンプ",
+      "コテージあり"
+    ],
+    "season": "4月〜10月",
+    "fee": "テントサイト：3,000円〜",
+    "hours": "チェックイン14:00〜 / チェックアウト〜11:00",
+    "parking": "あり（無料）",
+    "lat": 33.5678,
+    "lng": 130.1012,
+    "url": "",
+    "description": "糸島の海を眺めながらキャンプできるペット同伴可のキャンプ場。"
+  },
+  {
+    "id": "out-oita-kuju-camp",
+    "name": "くじゅう花公園 隣接キャンプ場",
+    "prefecture": "大分県",
+    "area": "くじゅう",
+    "city": "大分県竹田市久住町",
+    "address": "大分県竹田市久住町大字久住4050",
+    "category": "キャンプ場",
+    "features": [
+      "ペット同伴可",
+      "花の絶景",
+      "高原キャンプ",
+      "星空観察"
+    ],
+    "season": "4月〜11月",
+    "fee": "テントサイト：2,500円〜",
+    "hours": "チェックイン13:00〜 / チェックアウト〜11:00",
+    "parking": "あり（無料）",
+    "lat": 33.0234,
+    "lng": 131.2234,
+    "url": "https://www.hanakoen.com/",
+    "description": "くじゅう連山を望む高原のキャンプ場。ペット同伴可で、花の絶景と星空を楽しめる。"
+  },
+  {
+    "id": "out-kumamoto-aso-camp",
+    "name": "阿蘇ファームランド キャンプエリア",
+    "prefecture": "熊本県",
+    "area": "阿蘇",
+    "city": "熊本県阿蘇郡南阿蘇村",
+    "address": "熊本県阿蘇郡南阿蘇村河陽5579-3",
+    "category": "キャンプ場",
+    "features": [
+      "ペット同伴可",
+      "阿蘇の絶景",
+      "温泉あり",
+      "グランピング"
+    ],
+    "season": "通年",
+    "fee": "テントサイト：3,500円〜 / グランピング：20,000円〜",
+    "hours": "チェックイン14:00〜 / チェックアウト〜11:00",
+    "parking": "あり（無料）",
+    "lat": 32.8234,
+    "lng": 131.0012,
+    "url": "https://www.asofarmland.co.jp/",
+    "description": "阿蘇の大自然の中でペットと一緒にキャンプ・グランピングが楽しめる施設。"
+  },
+  {
+    "id": "out-miyazaki-takachiho-camp",
+    "name": "高千穂峡 キャンプ村",
+    "prefecture": "宮崎県",
+    "area": "高千穂",
+    "city": "宮崎県西臼杵郡高千穂町",
+    "address": "宮崎県西臼杵郡高千穂町三田井1099",
+    "category": "キャンプ場",
+    "features": [
+      "ペット同伴可",
+      "高千穂峡に近い",
+      "川遊び",
+      "星空観察"
+    ],
+    "season": "4月〜11月",
+    "fee": "テントサイト：2,000円〜",
+    "hours": "チェックイン13:00〜 / チェックアウト〜11:00",
+    "parking": "あり（無料）",
+    "lat": 32.7234,
+    "lng": 131.3234,
+    "url": "",
+    "description": "高千穂峡に近いキャンプ場。ペット同伴可で、神話の里の自然を満喫できる。"
+  },
+  {
+    "id": "out-kagoshima-kirishima-camp",
+    "name": "霧島高原国民休養地 キャンプ場",
+    "prefecture": "鹿児島県",
+    "area": "霧島",
+    "city": "鹿児島県霧島市牧園町",
+    "address": "鹿児島県霧島市牧園町高千穂3948",
+    "category": "キャンプ場",
+    "features": [
+      "ペット同伴可",
+      "霧島の自然",
+      "温泉近い",
+      "バンガローあり"
+    ],
+    "season": "通年",
+    "fee": "テントサイト：1,000円〜",
+    "hours": "チェックイン14:00〜 / チェックアウト〜11:00",
+    "parking": "あり（無料）",
+    "lat": 31.9456,
+    "lng": 130.8456,
+    "url": "",
+    "description": "霧島連山の麓にあるキャンプ場。ペット同伴可で、温泉も近く充実した滞在が楽しめる。"
   }
 ]

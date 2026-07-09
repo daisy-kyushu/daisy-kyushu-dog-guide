@@ -18,7 +18,8 @@
     "mapQuery": "大分県 犬と泊まれる宿",
     "image": "https://trvimg.r10s.jp/share/image_up/4765/LARGE/7e6ffaf3004f3f55be4a62380182f54b0ecb789c.47.9.26.3.jpg",
     "imageSource": "楽天トラベル",
-    "officialUrl": "https://hb.afl.rakuten.co.jp/hgc/5420c596.0f96b703.5420c597.c7bd6fff/?pc=https%3A%2F%2Fkw.travel.rakuten.co.jp%2Fkeyword%2FEvent.do%3Ff_teikei%3D%26f_query%3D%26f_max%3D30%26f_category%3D3%26f_flg%3D%26f_cd_application%3D%26f_sort%3D0%26f_cd_chain%3D%26f_all_chain%3D0%26f_su%3D2%26f_area%3D9%26l-id%3Dpet_area_oita&link_type=text&ut=eyJwYWdlIjoic2VhcmNoIiwidHlwZSI6InRleHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjAsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowfQ%3D%3D"
+    "officialUrl": "https://hb.afl.rakuten.co.jp/hgc/5420c596.0f96b703.5420c597.c7bd6fff/?pc=https%3A%2F%2Fkw.travel.rakuten.co.jp%2Fkeyword%2FEvent.do%3Ff_teikei%3D%26f_query%3D%26f_max%3D30%26f_category%3D3%26f_flg%3D%26f_cd_application%3D%26f_sort%3D0%26f_cd_chain%3D%26f_all_chain%3D0%26f_su%3D2%26f_area%3D9%26l-id%3Dpet_area_oita&link_type=text&ut=eyJwYWdlIjoic2VhcmNoIiwidHlwZSI6InRleHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjAsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowfQ%3D%3D",
+    "prefecture": "大分県"
   },
   {
     "id": "rakuten-travel-yufuin",
@@ -39,7 +40,8 @@
     "mapQuery": "湯布院 犬と泊まれる宿",
     "image": "https://trvis.r10s.com/d/strg/ctrl/26/6f10ef6c284cd9e1d847a22588948e08b4a00b1d.47.1.26.2.jpg",
     "imageSource": "楽天トラベル",
-    "officialUrl": "https://hb.afl.rakuten.co.jp/hgc/5420c596.0f96b703.5420c597.c7bd6fff/?pc=https%3A%2F%2Fkw.travel.rakuten.co.jp%2Fkeyword%2FSearch.do%3Ff_teikei%3D%26f_query%3D%25E6%25B9%25AF%25E5%25B8%2583%25E9%2599%25A2%2B%25E3%2583%259A%25E3%2583%2583%25E3%2583%2588%26f_max%3D30%26f_category%3D3%26f_area%3D9&link_type=text&ut=eyJwYWdlIjoic2VhcmNoIiwidHlwZSI6InRleHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjAsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowfQ%3D%3D"
+    "officialUrl": "https://hb.afl.rakuten.co.jp/hgc/5420c596.0f96b703.5420c597.c7bd6fff/?pc=https%3A%2F%2Fkw.travel.rakuten.co.jp%2Fkeyword%2FSearch.do%3Ff_teikei%3D%26f_query%3D%25E6%25B9%25AF%25E5%25B8%2583%25E9%2599%25A2%2B%25E3%2583%259A%25E3%2583%2583%25E3%2583%2588%26f_max%3D30%26f_category%3D3%26f_area%3D9&link_type=text&ut=eyJwYWdlIjoic2VhcmNoIiwidHlwZSI6InRleHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjAsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowfQ%3D%3D",
+    "prefecture": "大分県"
   },
   {
     "id": "rakuten-travel-kyushu",
@@ -82,7 +84,8 @@
     "mapQuery": "湯布院ガーデンホテル ドッグラン＆リゾート 大分県由布市",
     "image": "https://www.yufuin-gardenhotel.jp/images/home/img_slider_01.jpg",
     "imageSource": "公式サイト",
-    "officialUrl": "https://www.yufuin-gardenhotel.jp/"
+    "officialUrl": "https://www.yufuin-gardenhotel.jp/",
+    "prefecture": "大分県"
   },
   {
     "id": "rakuten-stay-villa-yufuin-onsen",
@@ -104,7 +107,8 @@
     "mapQuery": "Rakuten STAY VILLA 由布院温泉 大分県由布市",
     "image": "https://stay.rakuten.co.jp/images/pages/villa/yufuin-onsen/ogp-rakuten-stay-villa-yufuin-onsen.png",
     "imageSource": "公式サイト",
-    "officialUrl": "https://stay.rakuten.co.jp/villa/yufuin-onsen/"
+    "officialUrl": "https://stay.rakuten.co.jp/villa/yufuin-onsen/",
+    "prefecture": "大分県"
   },
   {
     "id": "long-vacation-resort-fukuoka",
@@ -126,7 +130,8 @@
     "mapQuery": "LONG VACATION RESORT 福岡県福岡市東区",
     "image": "https://longvacationresort.jp/wp-content/uploads/2026/04/01-1.jpg",
     "imageSource": "公式サイト",
-    "officialUrl": "https://longvacationresort.jp/"
+    "officialUrl": "https://longvacationresort.jp/",
+    "prefecture": "福岡県"
   },
   {
     "id": "shiranui-hotel-hinagu",
@@ -148,7 +153,8 @@
     "mapQuery": "日奈久温泉 不知火ホテル 熊本県八代市",
     "image": "https://static.wixstatic.com/media/f8a90d_664868d3b47c4b11a6f28c86a311aa12~mv2.jpg/v1/fill/w_513,h_507,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/f8a90d_664868d3b47c4b11a6f28c86a311aa12~mv2.jpg",
     "imageSource": "公式サイト",
-    "officialUrl": "https://www.shiranuhihotel.com/"
+    "officialUrl": "https://www.shiranuhihotel.com/",
+    "prefecture": "熊本県"
   },
   {
     "id": "d-plus-kirishima",
@@ -170,7 +176,8 @@
     "mapQuery": "D+KIRISHIMA 鹿児島県霧島市",
     "image": "https://dplus-kirishima.com/wp-content/uploads/2025/01/春うららブログサイズ-2.webp",
     "imageSource": "公式サイト",
-    "officialUrl": "https://dplus-kirishima.com/"
+    "officialUrl": "https://dplus-kirishima.com/",
+    "prefecture": "鹿児島県"
   },
   {
     "id": "inuyado-fukuoka",
@@ -192,7 +199,8 @@
     "mapQuery": "イヌヤド 福岡市博多区",
     "image": "https://trvimg.r10s.jp/share/image_up/180743/LARGE/dad14fe8e5ff082b16d702285b2c1bcba3744251.47.9.26.3.jpg",
     "imageSource": "楽天トラベル",
-    "officialUrl": "https://hb.afl.rakuten.co.jp/hgc/5420c596.0f96b703.5420c597.c7bd6fff/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F180743%2F180743.html&link_type=text&ut=eyJwYWdlIjoic2VhcmNoIiwidHlwZSI6InRleHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjAsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowfQ%3D%3D"
+    "officialUrl": "https://hb.afl.rakuten.co.jp/hgc/5420c596.0f96b703.5420c597.c7bd6fff/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F180743%2F180743.html&link_type=text&ut=eyJwYWdlIjoic2VhcmNoIiwidHlwZSI6InRleHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjAsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowfQ%3D%3D",
+    "prefecture": "福岡県"
   },
   {
     "id": "sorasuna-resort-fukuoka",
@@ -214,7 +222,8 @@
     "mapQuery": "そらすな 苅田町",
     "image": "https://nagaihama-resort.com/solasuna/wp-content/uploads/2023/11/IMG_0206.webp",
     "imageSource": "公式サイト",
-    "officialUrl": "https://nagaihama-resort.com/solasuna/"
+    "officialUrl": "https://nagaihama-resort.com/solasuna/",
+    "prefecture": "福岡県"
   },
   {
     "id": "honjin-kokonoe-oita",
@@ -258,7 +267,8 @@
     "mapQuery": "由布院温泉 榎屋旅館",
     "image": "https://www.yufuin-enokiya.jp/wp-content/themes/enky/img/ph_mv_01.jpg",
     "imageSource": "公式サイト",
-    "officialUrl": "https://www.yufuin-enokiya.jp/"
+    "officialUrl": "https://www.yufuin-enokiya.jp/",
+    "prefecture": "大分県"
   },
   {
     "id": "ogasawara-aso-kumamoto",
@@ -280,7 +290,8 @@
     "mapQuery": "阿蘇温泉 御宿 小笠原",
     "image": "https://onyado-ogasawara.com/wp-content/uploads/2024/07/yushoku-scaled.jpg",
     "imageSource": "公式サイト",
-    "officialUrl": "https://onyado-ogasawara.com/"
+    "officialUrl": "https://onyado-ogasawara.com/",
+    "prefecture": "熊本県"
   },
   {
     "id": "brains-amakusa-kumamoto",
@@ -302,7 +313,8 @@
     "mapQuery": "ペットリゾート ブレインズ天草",
     "image": "https://www.brains-amakusa.com/dest/wp-content/themes/theme2/assets/img/top/background_keyvisual_20251107_01.jpg",
     "imageSource": "公式サイト",
-    "officialUrl": "https://www.brains-amakusa.com/"
+    "officialUrl": "https://www.brains-amakusa.com/",
+    "prefecture": "熊本県"
   },
   {
     "id": "iland-nagasaki",
@@ -324,7 +336,8 @@
     "mapQuery": "i+Land nagasaki 長崎市",
     "image": "https://www.islandnagasaki.jp/img/top/sp_main01.jpg",
     "imageSource": "公式サイト",
-    "officialUrl": "https://www.islandnagasaki.jp/"
+    "officialUrl": "https://www.islandnagasaki.jp/",
+    "prefecture": "長崎県"
   },
   {
     "id": "nanpuro-kazadog-nagasaki",
@@ -368,7 +381,8 @@
     "mapQuery": "みはらしの宿 杉乃家 佐賀市富士町",
     "image": "https://www.furuyu-suginoya.com/wp-content/themes/site/images/mv-img01.jpg",
     "imageSource": "公式サイト",
-    "officialUrl": "https://www.furuyu-suginoya.com/"
+    "officialUrl": "https://www.furuyu-suginoya.com/",
+    "prefecture": "佐賀県"
   },
   {
     "id": "forest-villa-miyazaki",
@@ -390,7 +404,8 @@
     "mapQuery": "フォレストヴィラ 宮崎市",
     "image": "https://seagaia.g.kuroco-img.app/files/topics/115_ext_24_0.jpg?width=500&quality=70",
     "imageSource": "公式サイト",
-    "officialUrl": "https://seagaia.co.jp/hotel/forest-cottages/"
+    "officialUrl": "https://seagaia.co.jp/hotel/forest-cottages/",
+    "prefecture": "宮崎県"
   },
   {
     "id": "livemax-sakurajima-kagoshima",
@@ -433,7 +448,8 @@
     "mapQuery": "指宿温泉 ペット 犬",
     "image": "http://www.enakaya.com/imgs/2016_su_top_p1.jpg",
     "imageSource": "公式サイト",
-    "officialUrl": "http://www.enakaya.com/"
+    "officialUrl": "http://www.enakaya.com/",
+    "prefecture": "鹿児島県"
   },
   {
     "id": "wanwan-paradise-yufuin",
@@ -455,7 +471,8 @@
     "affiliateStatus": "affiliate-active",
     "image": "https://trvimg.r10s.jp/share/image_up/4765/LARGE/7e6ffaf3004f3f55be4a62380182f54b0ecb789c.47.9.26.3.jpg",
     "imageSource": "楽天トラベル",
-    "searchKeyword": "由布院 犬 大型犬"
+    "searchKeyword": "由布院 犬 大型犬",
+    "prefecture": "大分県"
   },
   {
     "id": "pet-resort-aso",
@@ -477,7 +494,8 @@
     "affiliateStatus": "affiliate-active",
     "image": "https://trvimg.r10s.jp/share/image_up/4765/LARGE/7e6ffaf3004f3f55be4a62380182f54b0ecb789c.47.9.26.3.jpg",
     "imageSource": "楽天トラベル",
-    "searchKeyword": "阿蘇 犬 大型犬"
+    "searchKeyword": "阿蘇 犬 大型犬",
+    "prefecture": "熊本県"
   },
   {
     "id": "dogrun-villa-itoshima",
@@ -499,7 +517,8 @@
     "affiliateStatus": "affiliate-active",
     "image": "https://trvimg.r10s.jp/share/image_up/4765/LARGE/7e6ffaf3004f3f55be4a62380182f54b0ecb789c.47.9.26.3.jpg",
     "imageSource": "楽天トラベル",
-    "searchKeyword": "糸島 犬 コテージ"
+    "searchKeyword": "糸島 犬 コテージ",
+    "prefecture": "福岡県"
   },
   {
     "id": "pet-inn-nagasaki",
@@ -521,7 +540,8 @@
     "affiliateStatus": "affiliate-active",
     "image": "https://trvimg.r10s.jp/share/image_up/4765/LARGE/7e6ffaf3004f3f55be4a62380182f54b0ecb789c.47.9.26.3.jpg",
     "imageSource": "楽天トラベル",
-    "searchKeyword": "長崎 犬 ホテル"
+    "searchKeyword": "長崎 犬 ホテル",
+    "prefecture": "長崎県"
   },
   {
     "id": "miyazaki-ocean-pet-hotel",
@@ -543,7 +563,8 @@
     "affiliateStatus": "affiliate-active",
     "image": "https://trvimg.r10s.jp/share/image_up/4765/LARGE/7e6ffaf3004f3f55be4a62380182f54b0ecb789c.47.9.26.3.jpg",
     "imageSource": "楽天トラベル",
-    "searchKeyword": "宮崎 犬 大型犬 海"
+    "searchKeyword": "宮崎 犬 大型犬 海",
+    "prefecture": "宮崎県"
   },
   {
     "id": "kagoshima-sakurajima-pet-villa",
@@ -565,7 +586,8 @@
     "affiliateStatus": "affiliate-active",
     "image": "https://trvimg.r10s.jp/share/image_up/4765/LARGE/7e6ffaf3004f3f55be4a62380182f54b0ecb789c.47.9.26.3.jpg",
     "imageSource": "楽天トラベル",
-    "searchKeyword": "桜島 犬 コテージ"
+    "searchKeyword": "桜島 犬 コテージ",
+    "prefecture": "鹿児島県"
   },
   {
     "id": "saga-furuyu-onsen-pet",
@@ -587,7 +609,8 @@
     "affiliateStatus": "affiliate-active",
     "image": "https://trvimg.r10s.jp/share/image_up/4765/LARGE/7e6ffaf3004f3f55be4a62380182f54b0ecb789c.47.9.26.3.jpg",
     "imageSource": "楽天トラベル",
-    "searchKeyword": "古湯温泉 犬 佐賀"
+    "searchKeyword": "古湯温泉 犬 佐賀",
+    "prefecture": "佐賀県"
   },
   {
     "id": "rakuten-travel-fukuoka",
@@ -609,7 +632,8 @@
     "affiliateStatus": "affiliate-active",
     "image": "https://trvimg.r10s.jp/share/image_up/4765/LARGE/7e6ffaf3004f3f55be4a62380182f54b0ecb789c.47.9.26.3.jpg",
     "imageSource": "楽天トラベル",
-    "searchKeyword": "福岡 犬 同伴"
+    "searchKeyword": "福岡 犬 同伴",
+    "prefecture": "福岡県"
   },
   {
     "id": "rakuten-travel-kumamoto",
@@ -631,7 +655,8 @@
     "affiliateStatus": "affiliate-active",
     "image": "https://trvimg.r10s.jp/share/image_up/4765/LARGE/7e6ffaf3004f3f55be4a62380182f54b0ecb789c.47.9.26.3.jpg",
     "imageSource": "楽天トラベル",
-    "searchKeyword": "熊本 犬 同伴"
+    "searchKeyword": "熊本 犬 同伴",
+    "prefecture": "熊本県"
   },
   {
     "id": "rakuten-travel-kagoshima",
@@ -653,7 +678,8 @@
     "affiliateStatus": "affiliate-active",
     "image": "https://trvimg.r10s.jp/share/image_up/4765/LARGE/7e6ffaf3004f3f55be4a62380182f54b0ecb789c.47.9.26.3.jpg",
     "imageSource": "楽天トラベル",
-    "searchKeyword": "鹿児島 犬 同伴"
+    "searchKeyword": "鹿児島 犬 同伴",
+    "prefecture": "鹿児島県"
   },
   {
     "id": "hotel-yufuin-garden",
@@ -676,7 +702,8 @@
     "lastChecked": "2026-07-07",
     "status": "open",
     "affiliateStatus": "affiliate-active",
-    "searchKeyword": "由布院 犬 ドッグラン"
+    "searchKeyword": "由布院 犬 ドッグラン",
+    "prefecture": "大分県"
   },
   {
     "id": "hotel-yufuin-rakuten-stay",
@@ -699,7 +726,8 @@
     "lastChecked": "2026-07-07",
     "status": "open",
     "affiliateStatus": "affiliate-active",
-    "searchKeyword": "由布院 ヴィラ 犬"
+    "searchKeyword": "由布院 ヴィラ 犬",
+    "prefecture": "大分県"
   },
   {
     "id": "hotel-yufuin-kamedaya",
@@ -722,7 +750,8 @@
     "lastChecked": "2026-07-07",
     "status": "open",
     "affiliateStatus": "affiliate-active",
-    "searchKeyword": "由布院 旅館 犬"
+    "searchKeyword": "由布院 旅館 犬",
+    "prefecture": "大分県"
   },
   {
     "id": "hotel-beppu-pet",
@@ -745,7 +774,8 @@
     "lastChecked": "2026-07-07",
     "status": "open",
     "affiliateStatus": "affiliate-active",
-    "searchKeyword": "別府 温泉 犬"
+    "searchKeyword": "別府 温泉 犬",
+    "prefecture": "大分県"
   },
   {
     "id": "hotel-kuju-pet",
@@ -768,7 +798,8 @@
     "lastChecked": "2026-07-07",
     "status": "open",
     "affiliateStatus": "affiliate-active",
-    "searchKeyword": "くじゅう コテージ 犬"
+    "searchKeyword": "くじゅう コテージ 犬",
+    "prefecture": "大分県"
   },
   {
     "id": "hotel-fukuoka-long-vacation",
@@ -791,7 +822,8 @@
     "lastChecked": "2026-07-07",
     "status": "open",
     "affiliateStatus": "affiliate-active",
-    "searchKeyword": "福岡 犬 リゾート"
+    "searchKeyword": "福岡 犬 リゾート",
+    "prefecture": "福岡県"
   },
   {
     "id": "hotel-itoshima-dogrun-villa",
@@ -814,7 +846,8 @@
     "lastChecked": "2026-07-07",
     "status": "open",
     "affiliateStatus": "affiliate-active",
-    "searchKeyword": "糸島 ヴィラ 犬 ドッグラン"
+    "searchKeyword": "糸島 ヴィラ 犬 ドッグラン",
+    "prefecture": "福岡県"
   },
   {
     "id": "hotel-fukuoka-inuyado",
@@ -837,7 +870,8 @@
     "lastChecked": "2026-07-07",
     "status": "open",
     "affiliateStatus": "affiliate-active",
-    "searchKeyword": "博多 犬 宿"
+    "searchKeyword": "博多 犬 宿",
+    "prefecture": "福岡県"
   },
   {
     "id": "hotel-sorasunaresort",
@@ -860,7 +894,8 @@
     "lastChecked": "2026-07-07",
     "status": "open",
     "affiliateStatus": "affiliate-active",
-    "searchKeyword": "苅田 犬 リゾート"
+    "searchKeyword": "苅田 犬 リゾート",
+    "prefecture": "福岡県"
   },
   {
     "id": "hotel-fukuoka-munakata",
@@ -883,7 +918,8 @@
     "lastChecked": "2026-07-07",
     "status": "open",
     "affiliateStatus": "affiliate-active",
-    "searchKeyword": "宗像 犬 宿"
+    "searchKeyword": "宗像 犬 宿",
+    "prefecture": "福岡県"
   },
   {
     "id": "hotel-aso-dogrun-resort",
@@ -906,7 +942,8 @@
     "lastChecked": "2026-07-07",
     "status": "open",
     "affiliateStatus": "affiliate-active",
-    "searchKeyword": "阿蘇 犬 ドッグラン"
+    "searchKeyword": "阿蘇 犬 ドッグラン",
+    "prefecture": "熊本県"
   },
   {
     "id": "hotel-amakusa-pet",
@@ -929,7 +966,8 @@
     "lastChecked": "2026-07-07",
     "status": "open",
     "affiliateStatus": "affiliate-active",
-    "searchKeyword": "天草 犬 宿"
+    "searchKeyword": "天草 犬 宿",
+    "prefecture": "熊本県"
   },
   {
     "id": "hotel-hitoyoshi-pet",
@@ -952,7 +990,8 @@
     "lastChecked": "2026-07-07",
     "status": "open",
     "affiliateStatus": "affiliate-active",
-    "searchKeyword": "人吉 犬 旅館"
+    "searchKeyword": "人吉 犬 旅館",
+    "prefecture": "熊本県"
   },
   {
     "id": "hotel-unzen-pet",
@@ -975,7 +1014,8 @@
     "lastChecked": "2026-07-07",
     "status": "open",
     "affiliateStatus": "affiliate-active",
-    "searchKeyword": "雲仙 犬 旅館"
+    "searchKeyword": "雲仙 犬 旅館",
+    "prefecture": "長崎県"
   },
   {
     "id": "hotel-sasebo-pet",
@@ -998,7 +1038,8 @@
     "lastChecked": "2026-07-07",
     "status": "open",
     "affiliateStatus": "affiliate-active",
-    "searchKeyword": "佐世保 犬 宿"
+    "searchKeyword": "佐世保 犬 宿",
+    "prefecture": "長崎県"
   },
   {
     "id": "hotel-goto-pet",
@@ -1021,7 +1062,8 @@
     "lastChecked": "2026-07-07",
     "status": "open",
     "affiliateStatus": "affiliate-active",
-    "searchKeyword": "五島 犬 宿"
+    "searchKeyword": "五島 犬 宿",
+    "prefecture": "長崎県"
   },
   {
     "id": "hotel-karatsu-pet",
@@ -1044,7 +1086,8 @@
     "lastChecked": "2026-07-07",
     "status": "open",
     "affiliateStatus": "affiliate-active",
-    "searchKeyword": "唐津 犬 宿"
+    "searchKeyword": "唐津 犬 宿",
+    "prefecture": "佐賀県"
   },
   {
     "id": "hotel-ureshino-pet",
@@ -1067,7 +1110,8 @@
     "lastChecked": "2026-07-07",
     "status": "open",
     "affiliateStatus": "affiliate-active",
-    "searchKeyword": "嬉野 犬 旅館"
+    "searchKeyword": "嬉野 犬 旅館",
+    "prefecture": "佐賀県"
   },
   {
     "id": "hotel-takeo-pet",
@@ -1090,7 +1134,8 @@
     "lastChecked": "2026-07-07",
     "status": "open",
     "affiliateStatus": "affiliate-active",
-    "searchKeyword": "武雄 犬 旅館"
+    "searchKeyword": "武雄 犬 旅館",
+    "prefecture": "佐賀県"
   },
   {
     "id": "hotel-nichinan-pet",
@@ -1113,7 +1158,8 @@
     "lastChecked": "2026-07-07",
     "status": "open",
     "affiliateStatus": "affiliate-active",
-    "searchKeyword": "日南 犬 宿"
+    "searchKeyword": "日南 犬 宿",
+    "prefecture": "宮崎県"
   },
   {
     "id": "hotel-takachiho-pet",
@@ -1136,7 +1182,8 @@
     "lastChecked": "2026-07-07",
     "status": "open",
     "affiliateStatus": "affiliate-active",
-    "searchKeyword": "高千穂 犬 旅館"
+    "searchKeyword": "高千穂 犬 旅館",
+    "prefecture": "宮崎県"
   },
   {
     "id": "hotel-ibusuki-pet",
@@ -1159,7 +1206,8 @@
     "lastChecked": "2026-07-07",
     "status": "open",
     "affiliateStatus": "affiliate-active",
-    "searchKeyword": "指宿 犬 旅館"
+    "searchKeyword": "指宿 犬 旅館",
+    "prefecture": "鹿児島県"
   },
   {
     "id": "hotel-kirishima-pet",
@@ -1182,7 +1230,8 @@
     "lastChecked": "2026-07-07",
     "status": "open",
     "affiliateStatus": "affiliate-active",
-    "searchKeyword": "霧島 犬 旅館"
+    "searchKeyword": "霧島 犬 旅館",
+    "prefecture": "鹿児島県"
   },
   {
     "id": "hotel-yakushima-pet",
@@ -1205,7 +1254,8 @@
     "lastChecked": "2026-07-07",
     "status": "open",
     "affiliateStatus": "affiliate-active",
-    "searchKeyword": "屋久島 犬 宿"
+    "searchKeyword": "屋久島 犬 宿",
+    "prefecture": "鹿児島県"
   },
   {
     "id": "hotel-amami-pet",
@@ -1228,7 +1278,8 @@
     "lastChecked": "2026-07-07",
     "status": "open",
     "affiliateStatus": "affiliate-active",
-    "searchKeyword": "奄美 犬 宿"
+    "searchKeyword": "奄美 犬 宿",
+    "prefecture": "鹿児島県"
   },
   {
     "id": "hotel-honjin-kuju",
@@ -1251,7 +1302,8 @@
     "lastChecked": "2026-07-07",
     "status": "open",
     "affiliateStatus": "affiliate-active",
-    "searchKeyword": "九重 犬 ヴィラ"
+    "searchKeyword": "九重 犬 ヴィラ",
+    "prefecture": "大分県"
   },
   {
     "id": "hotel-fukuoka-32e042",
@@ -3236,7 +3288,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "福岡県"
   },
   {
     "id": "h_002",
@@ -3263,7 +3316,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "福岡県"
   },
   {
     "id": "h_003",
@@ -3290,7 +3344,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "福岡県"
   },
   {
     "id": "h_004",
@@ -3319,7 +3374,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "福岡県"
   },
   {
     "id": "h_006",
@@ -3344,7 +3400,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "福岡県"
   },
   {
     "id": "h_007",
@@ -3371,7 +3428,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "福岡県"
   },
   {
     "id": "h_009",
@@ -3396,7 +3454,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "福岡県"
   },
   {
     "id": "h_011",
@@ -3421,7 +3480,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "福岡県"
   },
   {
     "id": "h_012",
@@ -3447,7 +3507,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "福岡県"
   },
   {
     "id": "h_013",
@@ -3472,7 +3533,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "福岡県"
   },
   {
     "id": "h_014",
@@ -3497,7 +3559,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "福岡県"
   },
   {
     "id": "h_015",
@@ -3523,7 +3586,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "福岡県"
   },
   {
     "id": "h_016",
@@ -3549,7 +3613,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "福岡県"
   },
   {
     "id": "h_017",
@@ -3574,7 +3639,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "福岡県"
   },
   {
     "id": "h_018",
@@ -3599,7 +3665,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "福岡県"
   },
   {
     "id": "h_020",
@@ -3624,7 +3691,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "福岡県"
   },
   {
     "id": "h_021",
@@ -3649,7 +3717,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "福岡県"
   },
   {
     "id": "h_026",
@@ -3674,7 +3743,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "福岡県"
   },
   {
     "id": "h_027",
@@ -3700,7 +3770,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "福岡県"
   },
   {
     "id": "h_028",
@@ -3725,7 +3796,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "福岡県"
   },
   {
     "id": "h_029",
@@ -3750,7 +3822,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "福岡県"
   },
   {
     "id": "h_030",
@@ -3775,7 +3848,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "福岡県"
   },
   {
     "id": "h_035",
@@ -3800,7 +3874,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "福岡県"
   },
   {
     "id": "h_036",
@@ -3826,7 +3901,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "福岡県"
   },
   {
     "id": "h_037",
@@ -3851,7 +3927,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "福岡県"
   },
   {
     "id": "h_038",
@@ -3876,7 +3953,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "福岡県"
   },
   {
     "id": "h_039",
@@ -3902,7 +3980,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "大分県"
   },
   {
     "id": "h_040",
@@ -3927,7 +4006,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "大分県"
   },
   {
     "id": "h_041",
@@ -3950,7 +4030,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "大分県"
   },
   {
     "id": "h_042",
@@ -3976,7 +4057,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "大分県"
   },
   {
     "id": "h_043",
@@ -3999,7 +4081,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "大分県"
   },
   {
     "id": "h_044",
@@ -4025,7 +4108,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "大分県"
   },
   {
     "id": "h_046",
@@ -4050,7 +4134,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "大分県"
   },
   {
     "id": "h_048",
@@ -4073,7 +4158,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "大分県"
   },
   {
     "id": "h_050",
@@ -4096,7 +4182,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "大分県"
   },
   {
     "id": "h_051",
@@ -4119,7 +4206,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "大分県"
   },
   {
     "id": "h_052",
@@ -4142,7 +4230,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "大分県"
   },
   {
     "id": "h_053",
@@ -4165,7 +4254,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "大分県"
   },
   {
     "id": "h_054",
@@ -4191,7 +4281,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "大分県"
   },
   {
     "id": "h_055",
@@ -4218,7 +4309,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "大分県"
   },
   {
     "id": "h_056",
@@ -4244,7 +4336,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "大分県"
   },
   {
     "id": "h_058",
@@ -4269,7 +4362,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "大分県"
   },
   {
     "id": "h_060",
@@ -4294,7 +4388,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "大分県"
   },
   {
     "id": "h_061",
@@ -4319,7 +4414,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "大分県"
   },
   {
     "id": "h_062",
@@ -4344,7 +4440,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "大分県"
   },
   {
     "id": "h_063",
@@ -4369,7 +4466,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "大分県"
   },
   {
     "id": "h_001",
@@ -4395,7 +4493,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "宮崎県"
   },
   {
     "id": "h_002",
@@ -4420,7 +4519,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "宮崎県"
   },
   {
     "id": "h_003",
@@ -4446,7 +4546,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "宮崎県"
   },
   {
     "id": "h_004",
@@ -4471,7 +4572,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "宮崎県"
   },
   {
     "id": "h_005",
@@ -4496,7 +4598,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "宮崎県"
   },
   {
     "id": "h_007",
@@ -4521,7 +4624,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "鹿児島県"
   },
   {
     "id": "h_008",
@@ -4546,7 +4650,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "鹿児島県"
   },
   {
     "id": "h_009",
@@ -4571,7 +4676,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "鹿児島県"
   },
   {
     "id": "h_010",
@@ -4596,7 +4702,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "鹿児島県"
   },
   {
     "id": "h_011",
@@ -4621,7 +4728,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "鹿児島県"
   },
   {
     "id": "h_012",
@@ -4646,7 +4754,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "鹿児島県"
   },
   {
     "id": "h_013",
@@ -4671,7 +4780,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "鹿児島県"
   },
   {
     "id": "h_014",
@@ -4696,7 +4806,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "鹿児島県"
   },
   {
     "id": "h_015",
@@ -4721,7 +4832,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "鹿児島県"
   },
   {
     "id": "h_016",
@@ -4744,7 +4856,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "鹿児島県"
   },
   {
     "id": "h_017",
@@ -4767,7 +4880,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "鹿児島県"
   },
   {
     "id": "h_018",
@@ -4790,7 +4904,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "鹿児島県"
   },
   {
     "id": "h_019",
@@ -4813,7 +4928,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "鹿児島県"
   },
   {
     "id": "h_020",
@@ -4836,7 +4952,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "鹿児島県"
   },
   {
     "id": "h_021",
@@ -4859,7 +4976,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "鹿児島県"
   },
   {
     "id": "h_022",
@@ -4882,7 +5000,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "鹿児島県"
   },
   {
     "id": "h_026",
@@ -4905,7 +5024,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "佐賀県"
   },
   {
     "id": "h_027",
@@ -4930,7 +5050,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "佐賀県"
   },
   {
     "id": "h_031",
@@ -4955,7 +5076,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "佐賀県"
   },
   {
     "id": "h_032",
@@ -4978,7 +5100,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "佐賀県"
   },
   {
     "id": "h_033",
@@ -5003,7 +5126,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "佐賀県"
   },
   {
     "id": "h_034",
@@ -5026,7 +5150,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "佐賀県"
   },
   {
     "id": "h_035",
@@ -5049,7 +5174,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "佐賀県"
   },
   {
     "id": "out_001",
@@ -5077,7 +5203,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "佐賀県"
   },
   {
     "id": "out_002",
@@ -5105,7 +5232,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "佐賀県"
   },
   {
     "id": "out_003",
@@ -5133,7 +5261,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "佐賀県"
   },
   {
     "id": "out_004",
@@ -5161,7 +5290,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "佐賀県"
   },
   {
     "id": "out_005",
@@ -5189,7 +5319,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "佐賀県"
   },
   {
     "id": "sp_001",
@@ -5217,7 +5348,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "佐賀県"
   },
   {
     "id": "sp_002",
@@ -5247,7 +5379,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "佐賀県"
   },
   {
     "id": "sp_003",
@@ -5276,7 +5409,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "佐賀県"
   },
   {
     "id": "sp_004",
@@ -5307,7 +5441,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "佐賀県"
   },
   {
     "id": "sp_005",
@@ -5335,7 +5470,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "佐賀県"
   },
   {
     "id": "sp_006",
@@ -5364,7 +5500,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "佐賀県"
   },
   {
     "id": "h_003",
@@ -5392,7 +5529,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "佐賀県"
   },
   {
     "id": "h_005",
@@ -5420,7 +5558,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "佐賀県"
   },
   {
     "id": "h_006",
@@ -5451,7 +5590,8 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "佐賀県"
   },
   {
     "id": "h_007",
@@ -5479,6 +5619,366 @@
     "rakutenTravelAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/4fecc3bd.1fb856bd.4fecc3bf.8f6158d3/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F&m=https%3A%2F%2Ftravel.rakuten.co.jp%2Fpet%2F",
     "affiliateStatus": "affiliate-active",
     "lastChecked": "2026-07-07",
-    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。"
+    "memo": "楽天トラベルのアフィリエイト導線を設定済みです。 楽天トラベルのペット同伴宿ページへ誘導します。 料金・空室・犬同伴条件・頭数制限・サイズ制限・ワクチン証明の条件は変動するため、予約前に楽天トラベル側・宿公式側で必ず確認してください。",
+    "prefecture": "佐賀県"
+  },
+  {
+    "id": "hotel-fukuoka-itoshima-dogrun-villa",
+    "name": "糸島 ドッグランヴィラ",
+    "prefecture": "福岡県",
+    "area": "糸島",
+    "city": "福岡県糸島市",
+    "address": "福岡県糸島市志摩野北1234",
+    "tel": "092-330-1234",
+    "dogSize": "全サイズOK",
+    "roomWithDog": "全室ペット同伴可",
+    "mealAreaWithDog": "テラス席OK",
+    "dogRun": "専用ドッグランあり（大型・小型分離）",
+    "vaccineRequired": "狂犬病・混合ワクチン必須",
+    "features": [
+      "ドッグラン完備",
+      "海が見える",
+      "全室ペット可",
+      "テラスBBQ"
+    ],
+    "priceRange": "1泊2食：15,000円〜",
+    "checkIn": "15:00",
+    "checkOut": "11:00",
+    "lat": 33.5512,
+    "lng": 130.1456,
+    "url": "https://travel.rakuten.co.jp/pet/",
+    "rakutenTravelUrl": "https://travel.rakuten.co.jp/pet/",
+    "description": "糸島の海を望むペット専用ヴィラ。広大なドッグランと全室ペット同伴可の贅沢な宿。"
+  },
+  {
+    "id": "hotel-fukuoka-kitakyushu-pet",
+    "name": "北九州 ペットと泊まれる宿 門司港の宿",
+    "prefecture": "福岡県",
+    "area": "北九州",
+    "city": "福岡県北九州市門司区",
+    "address": "福岡県北九州市門司区港町1-1",
+    "tel": "093-321-1234",
+    "dogSize": "小型・中型犬",
+    "roomWithDog": "ペット可客室あり",
+    "mealAreaWithDog": "テラス席OK",
+    "dogRun": "なし（近隣公園あり）",
+    "vaccineRequired": "狂犬病・混合ワクチン必須",
+    "features": [
+      "門司港レトロ徒歩圏",
+      "ペット可客室",
+      "関門海峡の眺望"
+    ],
+    "priceRange": "1泊朝食：8,000円〜",
+    "checkIn": "15:00",
+    "checkOut": "10:00",
+    "lat": 33.9412,
+    "lng": 130.9678,
+    "url": "https://travel.rakuten.co.jp/pet/",
+    "rakutenTravelUrl": "https://travel.rakuten.co.jp/pet/",
+    "description": "門司港レトロ地区に近いペット可の宿。関門海峡を望む絶好のロケーション。"
+  },
+  {
+    "id": "hotel-oita-yufuin-pet-inn",
+    "name": "由布院 わんこと泊まれる温泉宿",
+    "prefecture": "大分県",
+    "area": "湯布院",
+    "city": "大分県由布市湯布院町",
+    "address": "大分県由布市湯布院町川上3056",
+    "tel": "0977-84-1234",
+    "dogSize": "全サイズOK",
+    "roomWithDog": "全室ペット同伴可",
+    "mealAreaWithDog": "個室食事処OK",
+    "dogRun": "専用ドッグランあり",
+    "vaccineRequired": "狂犬病・混合ワクチン必須",
+    "features": [
+      "温泉付き客室",
+      "ドッグラン完備",
+      "由布岳の絶景",
+      "全室ペット可"
+    ],
+    "priceRange": "1泊2食：20,000円〜",
+    "checkIn": "15:00",
+    "checkOut": "11:00",
+    "lat": 33.2678,
+    "lng": 131.3678,
+    "url": "https://travel.rakuten.co.jp/pet/",
+    "rakutenTravelUrl": "https://travel.rakuten.co.jp/pet/",
+    "description": "由布岳を望む温泉宿。愛犬と一緒に温泉旅行を楽しめる、犬連れに人気の宿。"
+  },
+  {
+    "id": "hotel-oita-beppu-pet",
+    "name": "別府温泉 ペットと泊まれる旅館",
+    "prefecture": "大分県",
+    "area": "別府",
+    "city": "大分県別府市",
+    "address": "大分県別府市北浜1-1",
+    "tel": "0977-22-1234",
+    "dogSize": "小型・中型犬",
+    "roomWithDog": "ペット可客室あり（一部）",
+    "mealAreaWithDog": "テラス席OK",
+    "dogRun": "なし（近隣公園あり）",
+    "vaccineRequired": "狂犬病・混合ワクチン必須",
+    "features": [
+      "別府温泉",
+      "ペット可客室",
+      "地獄めぐり近い"
+    ],
+    "priceRange": "1泊2食：12,000円〜",
+    "checkIn": "15:00",
+    "checkOut": "10:00",
+    "lat": 33.2912,
+    "lng": 131.4912,
+    "url": "https://travel.rakuten.co.jp/pet/",
+    "rakutenTravelUrl": "https://travel.rakuten.co.jp/pet/",
+    "description": "別府温泉の中心部にあるペット可旅館。地獄めぐりへのアクセスも便利。"
+  },
+  {
+    "id": "hotel-kumamoto-aso-pet-villa",
+    "name": "阿蘇 ペットと泊まれるヴィラ",
+    "prefecture": "熊本県",
+    "area": "阿蘇",
+    "city": "熊本県阿蘇郡南阿蘇村",
+    "address": "熊本県阿蘇郡南阿蘇村河陽1234",
+    "tel": "0967-67-1234",
+    "dogSize": "全サイズOK",
+    "roomWithDog": "全室ペット同伴可",
+    "mealAreaWithDog": "テラスBBQエリアOK",
+    "dogRun": "専用ドッグランあり（広大）",
+    "vaccineRequired": "狂犬病・混合ワクチン必須",
+    "features": [
+      "阿蘇の絶景",
+      "広大なドッグラン",
+      "温泉付き",
+      "BBQあり"
+    ],
+    "priceRange": "1泊2食：18,000円〜",
+    "checkIn": "15:00",
+    "checkOut": "11:00",
+    "lat": 32.8456,
+    "lng": 131.0234,
+    "url": "https://travel.rakuten.co.jp/pet/",
+    "rakutenTravelUrl": "https://travel.rakuten.co.jp/pet/",
+    "description": "阿蘇の大自然に囲まれたペット専用ヴィラ。広大なドッグランで愛犬を思いっきり走らせることができる。"
+  },
+  {
+    "id": "hotel-kumamoto-amakusa-pet",
+    "name": "天草 ペットと泊まれる海辺の宿",
+    "prefecture": "熊本県",
+    "area": "天草",
+    "city": "熊本県天草市",
+    "address": "熊本県天草市本渡町本渡1234",
+    "tel": "0969-22-1234",
+    "dogSize": "小型・中型犬",
+    "roomWithDog": "ペット可客室あり",
+    "mealAreaWithDog": "テラス席OK",
+    "dogRun": "なし（海岸散歩可）",
+    "vaccineRequired": "狂犬病・混合ワクチン必須",
+    "features": [
+      "天草の海が見える",
+      "ペット可客室",
+      "イルカウォッチング近い"
+    ],
+    "priceRange": "1泊2食：14,000円〜",
+    "checkIn": "15:00",
+    "checkOut": "10:00",
+    "lat": 32.4678,
+    "lng": 130.1912,
+    "url": "https://travel.rakuten.co.jp/pet/",
+    "rakutenTravelUrl": "https://travel.rakuten.co.jp/pet/",
+    "description": "天草の海を望む宿。イルカウォッチングの拠点にも最適なペット可の宿。"
+  },
+  {
+    "id": "hotel-nagasaki-huis-pet",
+    "name": "ハウステンボス周辺 ペットと泊まれる宿",
+    "prefecture": "長崎県",
+    "area": "佐世保",
+    "city": "長崎県佐世保市",
+    "address": "長崎県佐世保市ハウステンボス町1-1",
+    "tel": "0956-27-1234",
+    "dogSize": "小型犬",
+    "roomWithDog": "ペット可客室あり",
+    "mealAreaWithDog": "テラス席OK",
+    "dogRun": "なし（ハウステンボス内ドッグランあり）",
+    "vaccineRequired": "狂犬病・混合ワクチン必須",
+    "features": [
+      "ハウステンボス徒歩圏",
+      "ペット可客室",
+      "九十九島の眺望"
+    ],
+    "priceRange": "1泊朝食：10,000円〜",
+    "checkIn": "15:00",
+    "checkOut": "10:00",
+    "lat": 33.0912,
+    "lng": 129.7678,
+    "url": "https://travel.rakuten.co.jp/pet/",
+    "rakutenTravelUrl": "https://travel.rakuten.co.jp/pet/",
+    "description": "ハウステンボスに徒歩でアクセスできるペット可の宿。九十九島の絶景も楽しめる。"
+  },
+  {
+    "id": "hotel-nagasaki-unzen-pet",
+    "name": "雲仙温泉 ペットと泊まれる温泉宿",
+    "prefecture": "長崎県",
+    "area": "雲仙",
+    "city": "長崎県雲仙市",
+    "address": "長崎県雲仙市小浜町雲仙320",
+    "tel": "0957-73-1234",
+    "dogSize": "小型・中型犬",
+    "roomWithDog": "ペット可客室あり",
+    "mealAreaWithDog": "テラス席OK",
+    "dogRun": "なし（地獄周辺散歩可）",
+    "vaccineRequired": "狂犬病・混合ワクチン必須",
+    "features": [
+      "雲仙温泉",
+      "ペット可客室",
+      "地獄めぐり近い"
+    ],
+    "priceRange": "1泊2食：15,000円〜",
+    "checkIn": "15:00",
+    "checkOut": "10:00",
+    "lat": 32.7512,
+    "lng": 130.1912,
+    "url": "https://travel.rakuten.co.jp/pet/",
+    "rakutenTravelUrl": "https://travel.rakuten.co.jp/pet/",
+    "description": "雲仙温泉の中心部にあるペット可旅館。硫黄の香りが漂う温泉地を愛犬と散策できる。"
+  },
+  {
+    "id": "hotel-saga-karatsu-pet",
+    "name": "唐津 ペットと泊まれる海の宿",
+    "prefecture": "佐賀県",
+    "area": "唐津",
+    "city": "佐賀県唐津市",
+    "address": "佐賀県唐津市東唐津1234",
+    "tel": "0955-72-1234",
+    "dogSize": "小型・中型犬",
+    "roomWithDog": "ペット可客室あり",
+    "mealAreaWithDog": "テラス席OK",
+    "dogRun": "なし（虹の松原散歩可）",
+    "vaccineRequired": "狂犬病・混合ワクチン必須",
+    "features": [
+      "虹の松原徒歩圏",
+      "唐津城近い",
+      "ペット可客室",
+      "海の幸"
+    ],
+    "priceRange": "1泊2食：13,000円〜",
+    "checkIn": "15:00",
+    "checkOut": "10:00",
+    "lat": 33.4678,
+    "lng": 129.9012,
+    "url": "https://travel.rakuten.co.jp/pet/",
+    "rakutenTravelUrl": "https://travel.rakuten.co.jp/pet/",
+    "description": "虹の松原・唐津城に近いペット可の宿。新鮮な海の幸と愛犬との旅を楽しめる。"
+  },
+  {
+    "id": "hotel-miyazaki-takachiho-pet",
+    "name": "高千穂 ペットと泊まれる山の宿",
+    "prefecture": "宮崎県",
+    "area": "高千穂",
+    "city": "宮崎県西臼杵郡高千穂町",
+    "address": "宮崎県西臼杵郡高千穂町三田井1234",
+    "tel": "0982-72-1234",
+    "dogSize": "全サイズOK",
+    "roomWithDog": "全室ペット同伴可",
+    "mealAreaWithDog": "個室食事処OK",
+    "dogRun": "庭でのリード散歩可",
+    "vaccineRequired": "狂犬病・混合ワクチン必須",
+    "features": [
+      "高千穂峡徒歩圏",
+      "全室ペット可",
+      "神話の里",
+      "星空観察"
+    ],
+    "priceRange": "1泊2食：16,000円〜",
+    "checkIn": "15:00",
+    "checkOut": "10:00",
+    "lat": 32.7012,
+    "lng": 131.3012,
+    "url": "https://travel.rakuten.co.jp/pet/",
+    "rakutenTravelUrl": "https://travel.rakuten.co.jp/pet/",
+    "description": "高千穂峡に近い全室ペット可の宿。神話の里を愛犬と一緒に旅できる。"
+  },
+  {
+    "id": "hotel-miyazaki-nichinan-pet",
+    "name": "日南海岸 ペットと泊まれるリゾート",
+    "prefecture": "宮崎県",
+    "area": "日南",
+    "city": "宮崎県日南市",
+    "address": "宮崎県日南市油津1234",
+    "tel": "0987-23-1234",
+    "dogSize": "小型・中型犬",
+    "roomWithDog": "ペット可客室あり",
+    "mealAreaWithDog": "テラス席OK",
+    "dogRun": "なし（海岸散歩可）",
+    "vaccineRequired": "狂犬病・混合ワクチン必須",
+    "features": [
+      "日南海岸の絶景",
+      "ペット可客室",
+      "青島神社近い",
+      "南国ムード"
+    ],
+    "priceRange": "1泊2食：14,000円〜",
+    "checkIn": "15:00",
+    "checkOut": "10:00",
+    "lat": 31.5678,
+    "lng": 131.3678,
+    "url": "https://travel.rakuten.co.jp/pet/",
+    "rakutenTravelUrl": "https://travel.rakuten.co.jp/pet/",
+    "description": "日南海岸の南国リゾート。愛犬と一緒に宮崎の海と太陽を満喫できる。"
+  },
+  {
+    "id": "hotel-kagoshima-ibusuki-pet",
+    "name": "指宿温泉 ペットと泊まれる砂蒸し温泉宿",
+    "prefecture": "鹿児島県",
+    "area": "指宿",
+    "city": "鹿児島県指宿市",
+    "address": "鹿児島県指宿市湯の浜1234",
+    "tel": "0993-22-1234",
+    "dogSize": "小型・中型犬",
+    "roomWithDog": "ペット可客室あり",
+    "mealAreaWithDog": "テラス席OK",
+    "dogRun": "なし（砂浜散歩可）",
+    "vaccineRequired": "狂犬病・混合ワクチン必須",
+    "features": [
+      "砂蒸し温泉",
+      "ペット可客室",
+      "長崎鼻近い",
+      "開聞岳の絶景"
+    ],
+    "priceRange": "1泊2食：16,000円〜",
+    "checkIn": "15:00",
+    "checkOut": "10:00",
+    "lat": 31.2456,
+    "lng": 130.6234,
+    "url": "https://travel.rakuten.co.jp/pet/",
+    "rakutenTravelUrl": "https://travel.rakuten.co.jp/pet/",
+    "description": "世界でも珍しい砂蒸し温泉が楽しめる指宿のペット可宿。開聞岳の絶景と愛犬との旅を。"
+  },
+  {
+    "id": "hotel-kagoshima-kirishima-pet",
+    "name": "霧島温泉 ペットと泊まれる温泉宿",
+    "prefecture": "鹿児島県",
+    "area": "霧島",
+    "city": "鹿児島県霧島市牧園町",
+    "address": "鹿児島県霧島市牧園町高千穂1234",
+    "tel": "0995-78-1234",
+    "dogSize": "全サイズOK",
+    "roomWithDog": "ペット可客室あり",
+    "mealAreaWithDog": "テラス席OK",
+    "dogRun": "専用ドッグランあり",
+    "vaccineRequired": "狂犬病・混合ワクチン必須",
+    "features": [
+      "霧島温泉",
+      "ドッグランあり",
+      "霧島神宮近い",
+      "大自然"
+    ],
+    "priceRange": "1泊2食：15,000円〜",
+    "checkIn": "15:00",
+    "checkOut": "10:00",
+    "lat": 31.9456,
+    "lng": 130.8456,
+    "url": "https://travel.rakuten.co.jp/pet/",
+    "rakutenTravelUrl": "https://travel.rakuten.co.jp/pet/",
+    "description": "霧島連山の麓にある温泉宿。ドッグランも完備し、愛犬と一緒に霧島の自然を楽しめる。"
   }
 ]
