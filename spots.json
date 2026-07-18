@@ -458,7 +458,8 @@
     "lat": 33.480083,
     "lng": 130.175488,
     "openTime": "09:00",
-    "closeTime": "17:00"
+    "closeTime": "17:00",
+    "prefecture": "福岡県"
   },
   {
     "id": "farm-resort-itoshima-dogrun",
@@ -484,7 +485,8 @@
     "large_dog": "大型犬OK・ドッグラン内はリード不要、ドッグラン以外はリード必須・体重制限なし",
     "url": "https://www.farmresort-itoshima.com/",
     "openTime": "11:00",
-    "closeTime": "21:00"
+    "closeTime": "21:00",
+    "prefecture": "福岡県"
   },
   {
     "id": "kannawa-jigoku-dogrun-beppu",
@@ -510,7 +512,8 @@
     "large_dog": "大型犬エリアあり、小型犬エリア（体高40cmまで）、フリーエリアあり",
     "url": "https://www.city.beppu.oita.jp/sisetu/kouen_tyuusyajyou/03kouen_03-07dogrun.html",
     "openTime": "10:00",
-    "closeTime": "18:00"
+    "closeTime": "18:00",
+    "prefecture": "大分県"
   },
   {
     "id": "yufuin-yutopo-walk",
@@ -537,7 +540,8 @@
     "large_dog": "街道は大型犬OK・リード必須。店舗により異なるため要確認",
     "url": "https://yunotubo.com/",
     "lat": 33.275252,
-    "lng": 131.362608
+    "lng": 131.362608,
+    "prefecture": "大分県"
   },
   {
     "id": "kuju-hana-koen-walk",
@@ -730,7 +734,8 @@
     "openTime": "09:00",
     "closeTime": "21:00",
     "lat": 33.0917,
-    "lng": 129.85
+    "lng": 129.85,
+    "prefecture": "長崎県"
   },
   {
     "id": "cafe-fuchsia-dogrun-saga",
@@ -869,7 +874,8 @@
     "lat": 32.7017851,
     "lng": 131.300939,
     "openTime": "08:30",
-    "closeTime": "17:00"
+    "closeTime": "17:00",
+    "prefecture": "大分県"
   },
   {
     "id": "aoshima-jinja-walk-miyazaki",
@@ -951,7 +957,8 @@
     "large_dog": "大型犬OK・リード必須・体重制限なし（大型犬用広場あり）",
     "url": "https://pjm.synapse-site.jp/sub2.html",
     "openTime": "09:00",
-    "closeTime": "19:00"
+    "closeTime": "19:00",
+    "prefecture": "鹿児島県"
   },
   {
     "id": "kirishima-jingu-walk-kagoshima",
@@ -979,7 +986,8 @@
     "lat": 31.858368,
     "lng": 130.871127,
     "openTime": "08:00",
-    "closeTime": "17:00"
+    "closeTime": "17:00",
+    "prefecture": "鹿児島県"
   },
   {
     "id": "marinoa-city-dogrun-fukuoka",
@@ -1105,7 +1113,8 @@
     "lastChecked": "2026-05-01",
     "weekendRecommended": true,
     "lat": 33.640157,
-    "lng": 130.196691
+    "lng": 130.196691,
+    "prefecture": "福岡県"
   },
   {
     "id": "kawachi-wisteria-walk-kitakyushu",
