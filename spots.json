@@ -570,7 +570,8 @@
     "lat": 33.047202,
     "lng": 131.244903,
     "openTime": "08:30",
-    "closeTime": "17:30"
+    "closeTime": "17:30",
+    "prefecture": "大分県"
   },
   {
     "id": "morinomiyako-dogrun-kumamoto",
@@ -817,7 +818,8 @@
     "lat": 33.327092,
     "lng": 130.384264,
     "openTime": "09:00",
-    "closeTime": "17:00"
+    "closeTime": "17:00",
+    "prefecture": "佐賀県"
   },
   {
     "id": "miyazaki-sports-park-dogrun",
