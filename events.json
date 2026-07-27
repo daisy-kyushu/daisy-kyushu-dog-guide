@@ -22,7 +22,7 @@
     "dogPolicy": "犬関連イベントとして確認。会場ルール・入場条件・リード条件は公式情報で確認してください。",
     "status": "upcoming",
     "memo": "国内最大級のペット総合イベント。ドーム内冷房完備で夏でも快適。ペットグッズ即売会・ふれあいコーナー・各種ステージ。前売りチケット販売中（大人1,300円）。開催時間10:00〜17:00。",
-    "lastChecked": "2026-07-26"
+    "lastChecked": "2026-07-27"
   },
   {
     "id": "jkc-kyushu-show-2026",
@@ -45,7 +45,7 @@
     "officialUrl": "https://www.jkc.or.jp/",
     "snsUrl": "",
     "mapQuery": "福岡県 展示場",
-    "lastChecked": "2026-07-26"
+    "lastChecked": "2026-07-27"
   },
   {
     "id": "mydog-kanmon-autumn-2026",
@@ -70,7 +70,7 @@
     "dogPolicy": "犬同伴参加可能。リード着用必須。",
     "status": "upcoming",
     "memo": "夕暮れ時の関門海峡を背景にした幻想的なトワイライトマルシェ。開催時間：15:00〜21:00（11日のみ17:00〜）。",
-    "lastChecked": "2026-07-26"
+    "lastChecked": "2026-07-27"
   },
   {
     "id": "jkc-kyushu-agility-2026",
@@ -93,7 +93,7 @@
     "officialUrl": "https://www.jkc.or.jp/",
     "snsUrl": "",
     "mapQuery": "熊本県 競技場",
-    "lastChecked": "2026-07-26"
+    "lastChecked": "2026-07-27"
   },
   {
     "id": "saga-balloon-pet-2026",
@@ -116,7 +116,7 @@
     "officialUrl": "https://www.sibf.jp/",
     "snsUrl": "",
     "mapQuery": "嘉瀬川河川敷 佐賀市",
-    "lastChecked": "2026-07-26"
+    "lastChecked": "2026-07-27"
   },
   {
     "id": "oita-doggo-land-2026",
@@ -138,7 +138,7 @@
       "大分",
       "九州"
     ],
-    "lastChecked": "2026-07-26",
+    "lastChecked": "2026-07-27",
     "status": "upcoming",
     "memo": "開催日・会場・犬同伴ルールは変更される可能性があります。参加前に必ず公式サイト・公式SNSで最新情報をご確認ください。"
   }
