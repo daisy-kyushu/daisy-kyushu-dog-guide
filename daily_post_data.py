@@ -157,9 +157,19 @@ def pick_spot(spots, weather="unknown", prefer_indoor=False):
 def pick_product(products):
     seed = get_today_seed() + 1
     rng = random.Random(seed)
+    def safe_rating(p):
+        try:
+            return float(p.get("rating") or 0)
+        except (ValueError, TypeError):
+            return 0.0
     good_products = [p for p in products
-                     if p.get("rating", 0) >= 4.0
-                     and p.get("affiliateStatus") != "inactive"]
+                     if safe_rating(p) >= 4.0
+                     and p.get("affiliateStatus") not in ["inactive", None]
+                     and p.get("affiliateStatus") != ""]
+    if not good_products:
+        # affiliateStatusがactiveなものを優先
+        good_products = [p for p in products
+                         if p.get("affiliateStatus") in ["affiliate-active", "active"]]
     if not good_products:
         good_products = products if products else []
     return rng.choice(good_products) if good_products else None
