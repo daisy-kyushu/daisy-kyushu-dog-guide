@@ -1,17 +1,16 @@
-#!/usr/bin/env python3
 """
-Daisy九州犬連れガイド - 統合Instagram自動投稿スクリプト（メイン）
+Daisy九州犬連れガイド - Instagram自動投稿スクリプト（AI情報特化版）
 
-【組み合わせた4つの機能】
-1. 曜日別テーマ投稿（月水金=スポット、火土=グッズ、木=イベント、日=サマリー）
-2. 今日の一スポット（spots.jsonから毎日1件ずつ自動紹介、455件で1年以上ネタ継続）
-3. イベント直前リマインド（3日以内のイベントを最優先で告知）
-4. 天気連動（晴れ→屋外スポット優先、雨→室内スポット特集に自動切り替え）
+【曜日別テーマ】
+月: 🤖 AI活用術（保存必至！プロンプト・使い方Tips）
+火: 🐾 犬連れスポット紹介（九州の大型犬OKスポット）
+水: ✨ AI×ペット変身術（Daisyで試せるAI画像テクニック）
+木: 🛒 おすすめ犬グッズ（大型犬・サモエド向け）
+金: 📸 AI画像プロンプト集（週末に試したくなるネタ）
+土: 🗺️ 週末お出かけスポット（天気連動）
+日: 📊 AI最新トレンドまとめ（今週のバズりAI情報）
 
-【全投稿にAI注記を追加】
-「※この投稿はAIが自動生成しています。情報は変更される場合があります。」
-
-毎朝8:00に実行。投稿案を生成してManusがユーザーに確認を求める。
+毎朝8:00 JST に自動実行。
 """
 
 import json
@@ -33,28 +32,118 @@ DATA_DIR = Path("/home/ubuntu/daisy-kyushu-dog-guide")
 OUTPUT_DIR = Path("/home/ubuntu/daily_post_output")
 OUTPUT_DIR.mkdir(exist_ok=True)
 
-# AI注記（全投稿に追加）
-AI_DISCLAIMER = "※この投稿はAIが自動生成しています。営業時間・料金・ペット可否等の情報は変更される場合があります。お出かけ前に必ず公式サイトや現地にご確認ください。"
+AI_DISCLAIMER = "※この投稿はAIが自動生成しています。情報は変更される場合があります。"
 
 # 曜日別テーマ (0=月, 1=火, 2=水, 3=木, 4=金, 5=土, 6=日)
 THEME_BY_WEEKDAY = {
-    0: "spot",      # 月: スポット紹介
-    1: "product",   # 火: おすすめグッズ
-    2: "spot",      # 水: スポット紹介
-    3: "event",     # 木: イベント告知
-    4: "spot",      # 金: 週末スポット
-    5: "product",   # 土: 週末グッズ
-    6: "summary",   # 日: サイト紹介・まとめ
+    0: "ai_tips",       # 月: AI活用術
+    1: "spot",          # 火: 犬連れスポット
+    2: "ai_pet_art",    # 水: AI×ペット変身術
+    3: "product",       # 木: おすすめ犬グッズ
+    4: "ai_prompt",     # 金: AIプロンプト集
+    5: "spot_weekend",  # 土: 週末スポット（天気連動）
+    6: "ai_trend",      # 日: AI最新トレンドまとめ
 }
 
 THEME_LABELS = {
-    "spot": "犬連れスポット紹介",
-    "product": "おすすめ犬グッズ",
-    "event": "イベント告知",
-    "summary": "サイト紹介",
-    "weather_indoor": "☔ 雨の日おすすめ室内スポット",
+    "ai_tips":      "🤖 AI活用術",
+    "spot":         "🐾 犬連れスポット紹介",
+    "ai_pet_art":   "✨ AI×ペット変身術",
+    "product":      "🛒 おすすめ犬グッズ",
+    "ai_prompt":    "📸 AIプロンプト集",
+    "spot_weekend": "🗺️ 週末お出かけスポット",
+    "ai_trend":     "📊 AI最新トレンドまとめ",
     "event_urgent": "🚨 イベント直前告知",
 }
+
+# AI活用術テーマのローテーション（月曜日ごとに変わる）
+AI_TIPS_TOPICS = [
+    {
+        "title": "ChatGPTで愛犬の写真をスマホから脱出させる方法",
+        "hook": "📱 愛犬がスマホを突き破って飛び出す！",
+        "content": "2ステップで誰でもできるAI画像術",
+        "step1": "愛犬の写真をChatGPTに添付して「スマホの画面に表示されている画像を作って。縦向きスマホ、秋の背景」と送る",
+        "step2": "STEP1の画像を添付して「スマホ画面を突き破って飛び出す画像に変えて。ガラスの破片が飛び散っている」と送る",
+        "prompt_ja": "スマホの画面に表示されている犬が、画面を突き破って飛び出す画像に変えて。ガラスの破片が飛び散っている。シネマティック、フォトリアリスティック。",
+        "prompt_en": "The dog shown on the smartphone screen bursts through the screen and leaps out. Glass shards fly everywhere. Cinematic, photorealistic.",
+        "cta": "うちの子でもやってみて！コメントで見せてね🐾",
+        "hashtags": "#ChatGPT #AI画像 #犬のいる生活 #サモエド #AI活用術 #AIアート #犬好きな人と繋がりたい #プロンプト",
+    },
+    {
+        "title": "愛犬を子犬の群れに囲ませる魔法のプロンプト",
+        "hook": "🐶 うちの子が子犬に囲まれた！",
+        "content": "世界でバズ中のAI画像トレンド",
+        "step1": "愛犬の写真をChatGPTに添付して下記プロンプトを送るだけ！",
+        "step2": "",
+        "prompt_ja": "添付の写真の犬の周りに、同じ犬種の子犬を6〜8匹追加して。子犬たちは地面に自然に座ったり立ったりしている。背景・照明・元の犬の見た目は一切変えないで。フォトリアリスティック。",
+        "prompt_en": "Place 6–8 puppies of the same breed sitting and standing close around the adult dog in the attached photo. Keep the original dog's appearance, background, and lighting completely unchanged. Photorealistic.",
+        "cta": "作れたらコメントで見せてね！保存して後で試してみて🐾",
+        "hashtags": "#ChatGPT #AI画像 #犬のいる生活 #サモエド #AI活用術 #子犬 #プロンプト #犬好きな人と繋がりたい",
+    },
+    {
+        "title": "愛犬を王族に変える！ロイヤルポートレートの作り方",
+        "hook": "👑 うちの子が貴族になった！",
+        "content": "印刷してプレゼントにもなるクオリティ",
+        "step1": "愛犬の写真をChatGPTに添付して下記プロンプトを送るだけ！",
+        "step2": "",
+        "prompt_ja": "添付の写真の犬を、王冠と深紅のベルベットのマントを着た貴族の犬として、クラシックな油絵風のポートレートに変換して。金色のフレーム装飾、暗い背景、ドラマチックな照明。",
+        "prompt_en": "Transform the dog in the attached photo into a noble dog wearing a golden crown and deep crimson velvet cape. Classic oil painting portrait style, ornate gold frame, dark background, dramatic lighting.",
+        "cta": "保存して愛犬の誕生日プレゼントにも使えるよ🎂",
+        "hashtags": "#ChatGPT #AI画像 #犬のいる生活 #サモエド #AI活用術 #AIアート #プロンプト #犬好きな人と繋がりたい",
+    },
+    {
+        "title": "愛犬が人間だったら？人間化AIアートの作り方",
+        "hook": "🧑 うちの子が人間になった！",
+        "content": "コメントが爆増するバズりネタ",
+        "step1": "愛犬の写真をChatGPTに添付して下記プロンプトを送るだけ！",
+        "step2": "",
+        "prompt_ja": "添付の写真の犬が人間だったら？という発想で、犬の毛色と同じ髪色の明るく笑顔の人物のポートレートを作って。犬の特徴（毛色・目の色）を人間の外見に反映させて。背景はソフトなボケ、ゴールデンアワーの光。シネマティックポートレート写真スタイル。",
+        "prompt_en": "Imagine the dog in the attached photo as a human. Create a photorealistic portrait of a person with hair color matching the dog's fur, with a bright smile. Reflect the dog's features (fur color, eye color) in the human appearance. Background: soft bokeh, golden hour light. Cinematic portrait style.",
+        "cta": "うちの子バージョン作ったらコメントで見せてね！",
+        "hashtags": "#ChatGPT #AI画像 #犬のいる生活 #サモエド #AI活用術 #AIアート #プロンプト #犬好きな人と繋がりたい",
+    },
+]
+
+# AI×ペット変身術テーマ（水曜日）
+AI_PET_ART_TOPICS = [
+    {
+        "title": "Daisyがスマホから飛び出した！",
+        "hook": "📱 実際のDaisyの写真で作ってみた",
+        "content": "ChatGPTの画像編集機能で誰でも作れる",
+        "tips": [
+            "愛犬の写真を1枚用意するだけでOK",
+            "ChatGPT（GPT-4o）の画像添付機能を使う",
+            "プロンプトは日本語でOK！",
+        ],
+        "hashtags": "#AI画像 #ChatGPT #サモエド #犬のいる生活 #AIアート #プロンプト #AI活用 #犬好きな人と繋がりたい",
+    },
+    {
+        "title": "DaisyをAIで子犬の群れに囲ませてみた",
+        "hook": "🐶 実際のDaisyの写真で試してみた結果",
+        "content": "1プロンプトで完成！世界でバズ中のトレンド",
+        "tips": [
+            "愛犬の写真を添付するだけ",
+            "背景・元の犬の見た目は変わらない",
+            "子犬の数は自由に指定できる",
+        ],
+        "hashtags": "#AI画像 #ChatGPT #サモエド #犬のいる生活 #AIアート #子犬 #AI活用 #犬好きな人と繋がりたい",
+    },
+]
+
+# AIトレンドまとめテーマ（日曜日）
+AI_TREND_TOPICS = [
+    {
+        "title": "今週のAI×ペット画像トレンドまとめ",
+        "trends": [
+            "📱 スマホ突き破り系 → 世界中でバズ中",
+            "🐶 子犬に囲まれる系 → 保存数が爆増",
+            "👑 ロイヤルポートレート系 → 誕生日プレゼントに人気",
+            "🧑 人間化系 → コメントが爆増するタイプ",
+        ],
+        "tool": "ChatGPT（GPT-4o）の画像添付機能を使うだけ！",
+        "hashtags": "#AI画像 #ChatGPT #AIトレンド #犬のいる生活 #サモエド #AI活用術 #AIアート #プロンプト",
+    },
+]
 
 
 def load_data():
@@ -199,26 +288,109 @@ def pick_event(events):
 
 
 def generate_caption(theme, item, client, weather="unknown", urgent_days=None):
-    """テーマ・天気・緊急度に応じたキャプションを生成"""
+    """テーマに応じたキャプションをGPTで生成"""
     today = datetime.date.today()
     season = "夏" if today.month in [6, 7, 8] else "秋" if today.month in [9, 10, 11] else "冬" if today.month in [12, 1, 2] else "春"
+    week_num = (today.day - 1) // 7  # 月内の週番号 (0〜4)
 
-    # イントロ文（天気・緊急告知）
-    intro = ""
-    if urgent_days is not None:
-        if urgent_days == 0:
-            intro = "🚨 今日開催！見逃せないドッグイベントです！\n\n"
-        elif urgent_days == 1:
-            intro = "⏰ 明日開催！まだ間に合います！\n\n"
-        else:
-            intro = f"📅 あと{urgent_days}日！直前告知です！\n\n"
-    elif weather == "rain":
-        intro = "今日は雨ですね☔ 雨の日でも愛犬と楽しめる室内スポットをご紹介！\n\n"
-    elif weather == "sunny":
-        intro = "今日はお出かけ日和🌞 愛犬と一緒に行きたいスポットをご紹介！\n\n"
+    # ===== AI活用術（月曜）=====
+    if theme == "ai_tips":
+        topic = AI_TIPS_TOPICS[week_num % len(AI_TIPS_TOPICS)]
+        has_step2 = bool(topic.get("step2"))
+        step2_text = f"\n\n【STEP 2】STEP1の画像をChatGPTに添付して送る\n🇯🇵 {topic['prompt_ja']}\n🇺🇸 {topic['prompt_en']}" if has_step2 else ""
+        caption = f"""{topic['hook']}
 
-    if theme in ["spot", "weather_indoor"]:
-        indoor_note = "（室内・雨の日OK）" if theme == "weather_indoor" else ""
+{topic['content']}
+
+━━━━━━━━━━━
+📋 魔法のプロンプト（コピーOK）
+━━━━━━━━━━━
+
+【STEP 1】愛犬の写真をChatGPTに添付して送る
+🇯🇵 {topic['prompt_ja']}
+🇺🇸 {topic['prompt_en']}{step2_text}
+
+━━━━━━━━━━━
+ChatGPT / Gemini に送るだけ！
+
+{topic['cta']}"""
+        return caption, f"{caption}\n\n{AI_DISCLAIMER}"
+
+    # ===== AI×ペット変身術（水曜）=====
+    elif theme == "ai_pet_art":
+        topic = AI_PET_ART_TOPICS[week_num % len(AI_PET_ART_TOPICS)]
+        tips_text = "\n".join([f"✅ {t}" for t in topic["tips"]])
+        caption = f"""{topic['hook']}
+
+{topic['content']}
+
+{tips_text}
+
+詳しい手順はプロフのリンクから🐾
+うちの子でも試してみてね！"""
+        return caption, f"{caption}\n\n{AI_DISCLAIMER}"
+
+    # ===== AIプロンプト集（金曜）=====
+    elif theme == "ai_prompt":
+        topic = AI_TIPS_TOPICS[(week_num + 2) % len(AI_TIPS_TOPICS)]  # 月曜とずらす
+        prompt = f"""あなたはAI画像生成のプロで、Instagramで「保存必至」と言われるプロンプト紹介投稿を作成する専門家です。
+
+今週末に試したくなるAI画像プロンプトを1つ紹介するInstagram投稿文を作成してください。
+
+テーマ: {topic['title']}
+プロンプト（日本語）: {topic['prompt_ja']}
+プロンプト（英語）: {topic['prompt_en']}
+
+【ルール】
+- 300文字以内（ハッシュタグ・注記除く）
+- 最初の1行は短いキャッチコピー（絵文字あり、20文字以内）
+- 「週末に試してみて！」という呼びかけを含める
+- プロンプトをそのまま投稿文中に載せる（コピペしやすいように）
+- ハッシュタグは含めない
+
+投稿文のみ出力してください。"""
+        response = client.chat.completions.create(
+            model="gpt-4.1-mini",
+            messages=[{"role": "user", "content": prompt}],
+            max_tokens=600, temperature=0.7,
+        )
+        caption = response.choices[0].message.content.strip()
+        return caption, f"{caption}\n\n{AI_DISCLAIMER}"
+
+    # ===== AIトレンドまとめ（日曜）=====
+    elif theme == "ai_trend":
+        topic = AI_TREND_TOPICS[0]
+        trends_text = "\n".join(topic["trends"])
+        prompt = f"""あなたはAI情報を発信するInstagramアカウントの担当者です。
+
+今週のAI×ペット画像トレンドをまとめた「保存必至」のInstagram投稿文を作成してください。
+
+今週のトレンド:
+{trends_text}
+
+使えるツール: {topic['tool']}
+
+【ルール】
+- 400文字以内（ハッシュタグ・注記除く）
+- 最初の1行は短いキャッチコピー（絵文字あり、20文字以内）
+- 「保存して後で試してみて！」という呼びかけを含める
+- 各トレンドを箇条書きで紹介
+- ハッシュタグは含めない
+
+投稿文のみ出力してください。"""
+        response = client.chat.completions.create(
+            model="gpt-4.1-mini",
+            messages=[{"role": "user", "content": prompt}],
+            max_tokens=600, temperature=0.7,
+        )
+        caption = response.choices[0].message.content.strip()
+        return caption, f"{caption}\n\n{AI_DISCLAIMER}"
+
+    # ===== 犬連れスポット（火曜・土曜）=====
+    elif theme in ["spot", "spot_weekend"]:
+        weekend_note = "週末のお出かけに！" if theme == "spot_weekend" else ""
+        indoor_note = "（室内・雨の日OK）" if weather == "rain" else ""
+        weather_intro = "今日は雨ですね☔ 雨の日でも愛犬と楽しめる室内スポットをご紹介！\n\n" if weather == "rain" else "今日はお出かけ日和🌞 愛犬と一緒に行きたいスポットをご紹介！\n\n" if weather == "sunny" else ""
         prompt = f"""あなたは九州の犬連れ旅行サイト「Daisy九州犬連れガイド」のInstagram担当です。
 サモエドのDaisyと一緒に九州を旅するコンセプトのアカウントです。
 
@@ -236,13 +408,22 @@ def generate_caption(theme, item, client, weather="unknown", urgent_days=None):
 - 300文字以内（ハッシュタグ・注記除く）
 - 最初の1行は短いキャッチコピー（20文字以内）
 - Daisyが実際に訪れた感想風に書く（一人称: Daisyが〜）
+- {weekend_note}
 - 「要確認」「不明」「空欄」の情報は書かない
 - 最後に「詳しくはプロフのリンクから🐾」
 - ハッシュタグは含めない
-- 改行を適切に使う
 
 キャプションのみ出力してください。"""
+        response = client.chat.completions.create(
+            model="gpt-4.1-mini",
+            messages=[{"role": "user", "content": prompt}],
+            max_tokens=500, temperature=0.7,
+        )
+        base_caption = response.choices[0].message.content.strip()
+        full_caption = f"{weather_intro}{base_caption}\n\n{AI_DISCLAIMER}"
+        return base_caption, full_caption
 
+    # ===== おすすめ犬グッズ（木曜）=====
     elif theme == "product":
         prompt = f"""あなたは九州の犬連れ旅行サイト「Daisy九州犬連れガイド」のInstagram担当です。
 
@@ -262,14 +443,26 @@ def generate_caption(theme, item, client, weather="unknown", urgent_days=None):
 - 「要確認」の情報は書かない
 - 最後に「楽天で購入できます🛒 詳しくはプロフのリンクから🐾」
 - ハッシュタグは含めない
-- 改行を適切に使う
 
 キャプションのみ出力してください。"""
+        response = client.chat.completions.create(
+            model="gpt-4.1-mini",
+            messages=[{"role": "user", "content": prompt}],
+            max_tokens=500, temperature=0.7,
+        )
+        base_caption = response.choices[0].message.content.strip()
+        return base_caption, f"{base_caption}\n\n{AI_DISCLAIMER}"
 
-    elif theme in ["event", "event_urgent"]:
-        prompt = f"""あなたは九州の犬連れ旅行サイト「Daisy九州犬連れガイド」のInstagram担当です。
-
-以下のイベント情報を元に、Instagramの投稿キャプションを作成してください。
+    # ===== イベント直前告知 =====
+    elif theme == "event_urgent":
+        intro = ""
+        if urgent_days == 0:
+            intro = "🚨 今日開催！見逃せないドッグイベントです！\n\n"
+        elif urgent_days == 1:
+            intro = "⏰ 明日開催！まだ間に合います！\n\n"
+        else:
+            intro = f"📅 あと{urgent_days}日！直前告知です！\n\n"
+        prompt = f"""以下のイベント情報を元に、Instagramの投稿キャプションを作成してください。
 
 イベント名: {item.get('title') or item.get('name', '')}
 エリア: {item.get('area', '')}
@@ -285,58 +478,66 @@ def generate_caption(theme, item, client, weather="unknown", urgent_days=None):
 - 「要確認」「不明」の情報は省く
 - 最後に「詳しくはプロフのリンクから🐾」
 - ハッシュタグは含めない
-- 改行を適切に使う
 
 キャプションのみ出力してください。"""
+        response = client.chat.completions.create(
+            model="gpt-4.1-mini",
+            messages=[{"role": "user", "content": prompt}],
+            max_tokens=500, temperature=0.7,
+        )
+        base_caption = response.choices[0].message.content.strip()
+        return base_caption, f"{intro}{base_caption}\n\n{AI_DISCLAIMER}"
 
-    else:  # summary
-        prompt = f"""あなたは九州の犬連れ旅行サイト「Daisy九州犬連れガイド」のInstagram担当です。
-
-{season}の週末のお出かけを促す、サイト紹介のInstagramキャプションを作成してください。
-
-サイト概要:
-- 九州の犬連れスポット455件以上掲載
-- 大型犬・サモエド向け情報に特化
-- イベント情報・おすすめグッズも掲載
-- 動物病院132件・アウトドア174件も掲載
-
-【ルール】
-- 300文字以内（ハッシュタグ・注記除く）
-- 最初の1行は短いキャッチコピー（20文字以内）
-- 週末のお出かけを促す内容
-- 最後に「詳しくはプロフのリンクから🐾」
-- ハッシュタグは含めない
-- 改行を適切に使う
-
-キャプションのみ出力してください。"""
-
-    response = client.chat.completions.create(
-        model="gpt-4.1-mini",
-        messages=[{"role": "user", "content": prompt}],
-        max_tokens=500,
-        temperature=0.7,
-    )
-    base_caption = response.choices[0].message.content.strip()
-
-    # イントロ + キャプション + AI注記
-    full_caption = f"{intro}{base_caption}\n\n{AI_DISCLAIMER}"
-    return base_caption, full_caption
+    else:
+        caption = "Daisyと一緒に九州を旅しよう🐾\n\n九州の犬連れスポット455件以上掲載中！\n詳しくはプロフのリンクから🐾"
+        return caption, f"{caption}\n\n{AI_DISCLAIMER}"
 
 
 def generate_ad_image(theme, item, client, output_path, weather="unknown"):
-    """gpt-image-2で広告風チラシ画像を生成"""
+    """gpt-image-2で投稿画像を生成"""
     today = datetime.date.today()
     season = "夏" if today.month in [6, 7, 8] else "秋" if today.month in [9, 10, 11] else "冬" if today.month in [12, 1, 2] else "春"
-    weather_desc = "rainy cozy atmosphere" if weather == "rain" else "sunny bright day" if weather == "sunny" else "pleasant day"
+    week_num = (today.day - 1) // 7
 
-    if theme in ["spot", "weather_indoor"]:
+    if theme == "ai_tips":
+        topic = AI_TIPS_TOPICS[week_num % len(AI_TIPS_TOPICS)]
+        image_prompt = f"""Professional Japanese Instagram post image for AI tips content.
+Style: Clean modern dark background with neon blue/purple accent colors. Tech-savvy aesthetic.
+Main visual: A smartphone screen showing a cute white Samoyed dog photo, with the dog dramatically bursting through the screen with glass shards flying.
+Text overlay: '{topic['hook']}' in large bold Japanese text at top. '魔法のプロンプト公開中' badge. 'ChatGPT / Gemini で試せる！' at bottom.
+Quality: High-resolution, Instagram-ready, 1:1 square format. Readable Japanese text."""
+
+    elif theme == "ai_pet_art":
+        topic = AI_PET_ART_TOPICS[week_num % len(AI_PET_ART_TOPICS)]
+        image_prompt = f"""Professional Japanese Instagram post image for AI pet art content.
+Style: Clean modern aesthetic with soft pastel colors and tech elements.
+Main visual: A beautiful white fluffy Samoyed dog in a magical AI-transformed scene. {topic['hook']}
+Text overlay: '{topic['hook']}' in large bold Japanese text. 'AI×ペット変身術' badge. 'ChatGPTで作れる！' label.
+Quality: High-resolution, Instagram-ready, 1:1 square format. Readable Japanese text."""
+
+    elif theme == "ai_prompt":
+        topic = AI_TIPS_TOPICS[(week_num + 2) % len(AI_TIPS_TOPICS)]
+        image_prompt = f"""Professional Japanese Instagram post image for AI prompt tips.
+Style: Clean modern design with gradient background (purple to blue). Code/prompt aesthetic.
+Main visual: A white Samoyed dog in a magical transformed AI art scene. Beautiful cinematic lighting.
+Text overlay: '今週末試したいAIプロンプト' in large bold Japanese text. 'コピペOK' badge. 'ChatGPT / Gemini 対応' label.
+Quality: High-resolution, Instagram-ready, 1:1 square format. Readable Japanese text."""
+
+    elif theme == "ai_trend":
+        image_prompt = f"""Professional Japanese Instagram post image for AI trend summary.
+Style: Clean modern infographic style with dark background and colorful accent elements.
+Main visual: Multiple small AI-transformed dog photos arranged in a grid/collage. White Samoyed featured prominently.
+Text overlay: '今週のAI×ペット画像トレンド' in large bold Japanese text. '保存必至' badge. '4つのトレンドを解説' label.
+Quality: High-resolution, Instagram-ready, 1:1 square format. Readable Japanese text."""
+
+    elif theme in ["spot", "spot_weekend"]:
         name = item.get('name', '')
         area = item.get('area', '')
         spot_type = item.get('type', '')
-        indoor_note = "cozy indoor" if theme == "weather_indoor" else "outdoor"
+        weather_desc = "rainy cozy atmosphere" if weather == "rain" else "sunny bright day" if weather == "sunny" else "pleasant day"
         image_prompt = f"""Professional Japanese Instagram flyer for a dog-friendly spot in Kyushu.
-Main subject: Fluffy white Samoyed dog enjoying {indoor_note} at '{name}' in {area} ({spot_type}), {weather_desc}.
-Style: Bright cheerful modern Japanese ad, {season} colors, clean typography, 1:1 square format.
+Main subject: Fluffy white Samoyed dog enjoying at '{name}' in {area} ({spot_type}), {weather_desc}, {season} season.
+Style: Bright cheerful modern Japanese ad, clean typography, 1:1 square format.
 Text overlay: Title '{name}', badge '{area}', '大型犬OK', '犬連れOK'.
 Quality: Readable Japanese text, professional Instagram design."""
 
@@ -349,20 +550,19 @@ Style: Bright clean modern Japanese ad, warm colors, product photography feel, 1
 Text overlay: Title '{product_name}', badge '{category}', '楽天で購入', '大型犬おすすめ'.
 Quality: Readable Japanese text, professional Instagram design."""
 
-    elif theme in ["event", "event_urgent"]:
+    elif theme == "event_urgent":
         event_name = item.get('title') or item.get('name', '')
         area = item.get('area', '')
         date_str = item.get('date') or item.get('eventDate', '')
-        urgency = "URGENT event happening soon! " if theme == "event_urgent" else ""
-        image_prompt = f"""Professional Japanese Instagram event poster. {urgency}
+        image_prompt = f"""Professional Japanese Instagram event poster. URGENT event!
 Main subject: Fluffy white Samoyed dog at a festive dog event in Kyushu.
 Style: Bright energetic modern Japanese event poster, vibrant colors, 1:1 square format.
 Text overlay: Title '{event_name}', date '{date_str}', location '{area}', 'イベント開催！'.
 Quality: Readable Japanese text, professional Instagram design."""
 
-    else:  # summary
+    else:
         image_prompt = f"""Professional Japanese Instagram flyer for a dog travel guide website.
-Main subject: Fluffy white Samoyed dog in front of beautiful Kyushu scenery, {weather_desc}.
+Main subject: Fluffy white Samoyed dog in front of beautiful Kyushu scenery.
 Style: Bright cheerful modern Japanese ad, {season} colors, clean layout, 1:1 square format.
 Text overlay: Title '九州犬連れガイド', '455スポット掲載', '大型犬OK情報満載'.
 Quality: Readable Japanese text, professional Instagram design."""
@@ -392,12 +592,26 @@ def upload_image(image_path):
             url = line.split("CDN URL:")[-1].strip() if "CDN URL:" in line else line.strip()
             if url.startswith("https://"):
                 return url
-    # URLが見つからない場合はローカルパスを返す
     return str(image_path)
 
 
+def get_hashtags(theme):
+    """テーマ別ハッシュタグを返す"""
+    base = "#犬のいる生活 #サモエド #サモエド部 #白い犬 #もふもふ犬 #大型犬のいる生活 #daisy_samoyed1217"
+    if theme in ["ai_tips", "ai_pet_art", "ai_prompt", "ai_trend"]:
+        return f"#AI画像 #ChatGPT #AIアート #プロンプト #AI活用術 #AIトレンド {base}"
+    elif theme in ["spot", "spot_weekend"]:
+        return f"#犬連れ旅行 #ペットと旅行 #九州旅行 #九州犬連れ #大型犬おでかけ #わんこ旅 #犬連れスポット #犬連れ九州 {base}"
+    elif theme == "product":
+        return f"#犬グッズ #大型犬グッズ #犬用品 #わんこグッズ #楽天 {base}"
+    elif theme == "event_urgent":
+        return f"#犬イベント #ドッグイベント #九州 #犬連れ旅行 {base}"
+    else:
+        return base
+
+
 def get_item_link(theme, item):
-    if theme in ["spot", "weather_indoor"]:
+    if theme in ["spot", "spot_weekend"]:
         spot_id = item.get('id', '')
         return f"{SITE_URL}/spots.html#{spot_id}" if spot_id else f"{SITE_URL}/spots.html"
     elif theme == "product":
@@ -410,7 +624,7 @@ def get_item_link(theme, item):
 
 def main():
     print("=" * 60)
-    print("🐾 Daisy九州犬連れガイド - 本日の投稿案を生成中...")
+    print("🐾 Daisy Instagram - 本日の投稿案を生成中...")
     print("=" * 60)
 
     today = datetime.date.today()
@@ -418,6 +632,7 @@ def main():
     base_theme = THEME_BY_WEEKDAY[weekday]
 
     print(f"\n📅 {today.strftime('%Y年%m月%d日')} ({['月','火','水','木','金','土','日'][weekday]}曜日)")
+    print(f"📌 本日のテーマ: {THEME_LABELS.get(base_theme, base_theme)}")
 
     spots, products, events = load_data()
 
@@ -427,53 +642,34 @@ def main():
     weather_label = {"rain": "☔ 雨", "sunny": "☀️ 晴れ", "cloudy": "☁️ 曇り"}.get(weather, "不明")
     print(f"   今日の天気: {weather_label}")
 
-    # 直前イベント確認
+    # 直前イベント確認（どの曜日でも緊急イベントがあれば優先）
     urgent = check_urgent_event(events)
     urgent_days = urgent[0] if urgent else None
     urgent_event_data = urgent[1] if urgent else None
     if urgent_days is not None:
         print(f"🚨 直前イベント検出: {urgent_event_data.get('title') or urgent_event_data.get('name')} (あと{urgent_days}日)")
 
-    # テーマ決定（優先順位: 緊急イベント > 天気連動 > 曜日テーマ）
+    # テーマ決定（優先順位: 緊急イベント > 曜日テーマ）
     theme = base_theme
     item = None
-    weather_note = ""
 
     if urgent_days is not None and urgent_days <= 1:
         theme = "event_urgent"
         item = urgent_event_data
-        print(f"\n📌 テーマ: {THEME_LABELS['event_urgent']} → {item.get('title') or item.get('name')}")
+        print(f"\n⚠️  緊急イベントのため本日のテーマを変更: {THEME_LABELS['event_urgent']}")
 
-    elif base_theme == "spot" and weather == "rain":
-        theme = "weather_indoor"
-        item, _ = pick_spot(spots, weather="rain", prefer_indoor=True)
-        weather_note = "雨の日室内スポット"
-        print(f"\n📌 テーマ: {THEME_LABELS['weather_indoor']} → {item.get('name')} ({item.get('area')})")
-
-    elif base_theme == "spot":
-        item, _ = pick_spot(spots, weather=weather)
-        print(f"\n📌 テーマ: {THEME_LABELS['spot']} → {item.get('name')} ({item.get('area')})")
+    elif base_theme in ["spot", "spot_weekend"]:
+        item, _ = pick_spot(spots, weather=weather, prefer_indoor=(weather == "rain"))
+        print(f"   スポット: {item.get('name')} ({item.get('area')})")
 
     elif base_theme == "product":
         item = pick_product(products)
         if not item:
             theme = "spot"
             item, _ = pick_spot(spots, weather)
-            print(f"\n📌 テーマ: 商品データなし → スポット紹介に切り替え: {item.get('name')}")
+            print(f"   商品データなし → スポット紹介に切り替え: {item.get('name')}")
         else:
-            print(f"\n📌 テーマ: {THEME_LABELS['product']} → {item.get('productName', '')}")
-
-    elif base_theme == "event":
-        item = pick_event(events)
-        if not item:
-            theme = "spot"
-            item, _ = pick_spot(spots, weather)
-            print(f"\n📌 テーマ: イベントなし → スポット紹介に切り替え: {item.get('name')}")
-        else:
-            print(f"\n📌 テーマ: {THEME_LABELS['event']} → {item.get('title') or item.get('name')}")
-
-    else:  # summary
-        print(f"\n📌 テーマ: {THEME_LABELS['summary']}")
+            print(f"   商品: {item.get('productName', '')}")
 
     client = OpenAI()
 
@@ -487,7 +683,7 @@ def main():
     print("   ✅ 投稿文生成完了")
 
     # 画像生成
-    print("🎨 広告風チラシ画像を生成中...")
+    print("🎨 投稿画像を生成中...")
     image_path = OUTPUT_DIR / f"post_{today.isoformat()}.png"
     try:
         generate_ad_image(theme, item or {}, client, image_path, weather=weather)
@@ -507,24 +703,17 @@ def main():
             print(f"   ⚠️ アップロード失敗: {e}")
             image_cdn_url = str(image_path)
 
-    # リンク
+    # リンク・ハッシュタグ
     link = get_item_link(theme, item or {})
+    hashtags = get_hashtags(theme)
 
-    # 楽天Room用投稿文（商品テーマのみ）
-    rakuten_room_comment = None
-    if theme == "product" and item:
-        prompt = f"""楽天ROOMの投稿コメントを作成してください。
-商品名: {item.get('productName', '')}
-カテゴリ: {item.get('category', '')}
-メモ: {item.get('memo', '')}
-【ルール】100文字以内、大型犬・サモエドとの旅行に役立つ観点、絵文字1〜2個、自然な口コミ風
-コメントのみ出力してください。"""
-        resp = client.chat.completions.create(
-            model="gpt-4.1-mini",
-            messages=[{"role": "user", "content": prompt}],
-            max_tokens=200, temperature=0.7,
-        )
-        rakuten_room_comment = resp.choices[0].message.content.strip()
+    # 投稿画像URL決定
+    post_image_url = image_cdn_url
+    if not post_image_url or not post_image_url.startswith("http"):
+        post_image_url = "https://daisy-kyushu.github.io/daisy-kyushu-dog-guide/assets/og-image.png"
+
+    # キャプション（ハッシュタグ付き）
+    caption_with_tags = f"{full_caption}\n\n{hashtags}"
 
     # 結果を保存
     item_name = ""
@@ -537,40 +726,22 @@ def main():
         "theme": theme,
         "theme_label": THEME_LABELS.get(theme, theme),
         "weather": weather,
-        "weather_note": weather_note,
-        "urgent_event_days": urgent_days,
         "item_name": item_name,
         "caption": caption,
-        "ai_disclaimer": AI_DISCLAIMER,
         "full_caption": full_caption,
+        "caption_with_tags": caption_with_tags,
         "link": link,
         "image_path": str(image_path) if image_path else "",
         "image_cdn_url": image_cdn_url or "",
-        "rakuten_room_comment": rakuten_room_comment,
     }
 
     output_file = OUTPUT_DIR / f"post_{today.isoformat()}.json"
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
-    # ===== Instagram自動投稿（確認なし）=====
+    # ===== Instagram自動投稿 =====
     print("\n📤 Instagramに自動投稿中...")
 
-    # 投稿に使う画像URLを決定
-    post_image_url = image_cdn_url
-    if not post_image_url or not post_image_url.startswith("http"):
-        # フォールバック: OGP画像
-        post_image_url = "https://daisy-kyushu.github.io/daisy-kyushu-dog-guide/assets/og-image.png"
-
-    # ハッシュタグを追加
-    hashtags = (
-        "#犬のいる生活 #犬連れ旅行 #ペットと旅行 #サモエド "
-        "#九州旅行 #九州犬連れ #大型犬おでかけ #わんこ旅 #犬連れスポット "
-        "#サモエド部 #白い犬 #もふもふ犬 #大型犬のいる生活 #犬連れ九州 #daisy_samoyed1217"
-    )
-    caption_with_tags = f"{full_caption}\n\n{hashtags}"
-
-    # MCP経由でInstagramに投稿
     payload = {
         "type": "post",
         "caption": caption_with_tags,
@@ -593,12 +764,10 @@ def main():
         result_proc = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
         if result_proc.returncode == 0:
             print("   ✅ Instagram投稿成功！")
-            print(result_proc.stdout[:500] if result_proc.stdout else "")
             output["instagram_posted"] = True
             output["instagram_result"] = result_proc.stdout[:500]
         else:
             print(f"   ❌ Instagram投稿失敗")
-            print(f"   stdout: {result_proc.stdout[:300]}")
             print(f"   stderr: {result_proc.stderr[:300]}")
             output["instagram_posted"] = False
             output["instagram_error"] = result_proc.stderr[:300]
@@ -617,8 +786,6 @@ def main():
     print(f"\n【テーマ】{THEME_LABELS.get(theme, theme)}：{item_name}")
     print(f"\n【キャプション】\n{full_caption}")
     print(f"\n【画像URL】{post_image_url}")
-    if rakuten_room_comment:
-        print(f"\n【楽天Roomコメント】{rakuten_room_comment}")
     print(f"\n💾 保存先: {output_file}")
 
     return output
