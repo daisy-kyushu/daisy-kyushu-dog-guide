@@ -877,3 +877,10 @@ def main():
 if __name__ == "__main__":
     result = main()
     print("\n✨ 本日の自動投稿が完了しました！")
+
+    # インサイトログを更新
+    try:
+        import collect_insights
+        collect_insights.main()
+    except Exception as e:
+        print(f"⚠️ インサイト収集エラー（投稿には影響なし）: {e}")
