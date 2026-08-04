@@ -5,7 +5,7 @@ Daisy九州犬連れガイド - Instagram自動投稿スクリプト（AI情報�
 月: 🤖 AI活用術（保存必至！プロンプト・使い方Tips）
 火: 🐾 犬連れスポット紹介（九州の大型犬OKスポット）
 水: ✨ AI×ペット変身術（Daisyで試せるAI画像テクニック）
-木: 🛒 おすすめ犬グッズ（大型犬・サモエド向け）
+木: 🐾 犬連れスポット紹介②（エリア別・テーマ別特集）
 金: 📸 AI画像プロンプト集（週末に試したくなるネタ）
 土: 🗺️ 週末お出かけスポット（天気連動）
 日: 📊 AI最新トレンドまとめ（今週のバズりAI情報）
@@ -39,7 +39,7 @@ THEME_BY_WEEKDAY = {
     0: "ai_tips",       # 月: AI活用術
     1: "spot",          # 火: 犬連れスポット
     2: "ai_pet_art",    # 水: AI×ペット変身術
-    3: "product",       # 木: おすすめ犬グッズ
+    3: "spot_theme",    # 木: スポット特集（エリア別・テーマ別）
     4: "ai_prompt",     # 金: AIプロンプト集
     5: "spot_weekend",  # 土: 週末スポット（天気連動）
     6: "ai_trend",      # 日: AI最新トレンドまとめ
@@ -49,7 +49,7 @@ THEME_LABELS = {
     "ai_tips":      "🤖 AI活用術",
     "spot":         "🐾 犬連れスポット紹介",
     "ai_pet_art":   "✨ AI×ペット変身術",
-    "product":      "🛒 おすすめ犬グッズ",
+    "spot_theme":   "🗺️ スポット特集",
     "ai_prompt":    "📸 AIプロンプト集",
     "spot_weekend": "🗺️ 週末お出かけスポット",
     "ai_trend":     "📊 AI最新トレンドまとめ",
@@ -386,6 +386,61 @@ ChatGPT / Gemini に送るだけ！
         caption = response.choices[0].message.content.strip()
         return caption, f"{caption}\n\n{AI_DISCLAIMER}"
 
+    # ===== スポット特集（木曜）: エリア別・テーマ別特集 =====
+    elif theme == "spot_theme":
+        # 週番号でテーマを変える
+        week_of_year = today.isocalendar()[1]
+        spot_themes = [
+            ("福岡県", "カフェ", "福岡県の犬連れカフェ特集"),
+            ("大分県", "温泉", "大分県の犬と泊まれる温泉旅館特集"),
+            ("鹿児島県", "公園", "鹿児島県の大型犬OKな公園特集"),
+            ("熊本県", "ドッグラン", "熊本県のドッグラン特集"),
+            ("長崎県", None, "長崎県の犬連れスポット特集"),
+            ("佐賀県", None, "佐賀県の犬連れスポット特集"),
+            ("宮崎県", None, "宮崎県の犬連れスポット特集"),
+        ]
+        pref, spot_type_filter, theme_title = spot_themes[week_of_year % len(spot_themes)]
+
+        # 指定エリア・タイプでフィルタ
+        filtered = [s for s in spots
+                    if s.get("prefecture") == pref
+                    and s.get("status") not in ["閉業", "ペット同伴不可"]]
+        if spot_type_filter:
+            typed = [s for s in filtered if spot_type_filter in s.get("type", "")]
+            filtered = typed if typed else filtered
+
+        seed = get_today_seed()
+        rng = random.Random(seed)
+        item = rng.choice(filtered) if filtered else rng.choice(spots)
+
+        prompt = f"""あなたは九州の犬連れ旅行サイト「Daisy九州犬連れガイド」のInstagram担当です。
+今週の特集テーマ「{theme_title}」の投稿を作成してください。
+
+スポット名: {item.get('name')}
+エリア: {item.get('area')}
+種別: {item.get('type')}
+大型犬: {item.get('largeDog', '')}
+メモ: {item.get('memo', '')}
+営業時間: {item.get('hours', '')}
+料金: {item.get('fee', '')}
+
+【ルール】
+- 300文字以内（ハッシュタグ・注記除く）
+- 最初の1行は「今週の特集：{theme_title}」から始める
+- Daisyが実際に訪れた感想風に書く
+- 「要確認」「不明」「空欄」の情報は書かない
+- 最後に「詳しくはプロフのリンクから🐾」
+- ハッシュタグは含めない
+
+キャプションのみ出力してください。"""
+        response = client.chat.completions.create(
+            model="gpt-4.1-mini",
+            messages=[{"role": "user", "content": prompt}],
+            max_tokens=500, temperature=0.7,
+        )
+        base_caption = response.choices[0].message.content.strip()
+        return base_caption, f"{base_caption}\n\n{AI_DISCLAIMER}"
+
     # ===== 犬連れスポット（火曜・土曜）=====
     elif theme in ["spot", "spot_weekend"]:
         weekend_note = "週末のお出かけに！" if theme == "spot_weekend" else ""
@@ -541,13 +596,26 @@ Style: Bright cheerful modern Japanese ad, clean typography, 1:1 square format.
 Text overlay: Title '{name}', badge '{area}', '大型犬OK', '犬連れOK'.
 Quality: Readable Japanese text, professional Instagram design."""
 
-    elif theme == "product":
-        product_name = item.get('productName', '')
-        category = item.get('category', '')
-        image_prompt = f"""Professional Japanese Instagram flyer for a dog product.
-Main subject: Fluffy white Samoyed dog with '{product_name}' ({category}).
-Style: Bright clean modern Japanese ad, warm colors, product photography feel, 1:1 square format.
-Text overlay: Title '{product_name}', badge '{category}', '楽天で購入', '大型犬おすすめ'.
+    elif theme == "spot_theme":
+        week_of_year = datetime.date.today().isocalendar()[1]
+        spot_themes_labels = [
+            "福岡県の犬連れカフェ特集",
+            "大分県の犬と泊まれる温泉旅館特集",
+            "鹿児島県の大型犬OK公園特集",
+            "熊本県のドッグラン特集",
+            "長崎県の犬連れスポット特集",
+            "佐賀県の犬連れスポット特集",
+            "宮崎県の犬連れスポット特集",
+        ]
+        theme_title = spot_themes_labels[week_of_year % len(spot_themes_labels)]
+        name = item.get('name', '') if item else ''
+        area = item.get('area', '') if item else ''
+        spot_type = item.get('type', '') if item else ''
+        image_prompt = f"""Professional Japanese Instagram flyer for a dog-friendly spot special feature in Kyushu.
+Theme: '{theme_title}'
+Main subject: Fluffy white Samoyed dog enjoying at '{name}' in {area} ({spot_type}), {season} season.
+Style: Bright cheerful modern Japanese ad, clean typography, special feature badge, 1:1 square format.
+Text overlay: Special feature title '{theme_title}', spot name '{name}', badge '{area}', '大型犬OK', '犬連れOK'.
 Quality: Readable Japanese text, professional Instagram design."""
 
     elif theme == "event_urgent":
@@ -662,14 +730,29 @@ def main():
         item, _ = pick_spot(spots, weather=weather, prefer_indoor=(weather == "rain"))
         print(f"   スポット: {item.get('name')} ({item.get('area')})")
 
-    elif base_theme == "product":
-        item = pick_product(products)
-        if not item:
-            theme = "spot"
-            item, _ = pick_spot(spots, weather)
-            print(f"   商品データなし → スポット紹介に切り替え: {item.get('name')}")
-        else:
-            print(f"   商品: {item.get('productName', '')}")
+    elif base_theme == "spot_theme":
+        # 木曜: エリア別・テーマ別スポット特集
+        week_of_year = today.isocalendar()[1]
+        spot_themes = [
+            ("福岡県", "カフェ", "福岡県の犬連れカフェ特集"),
+            ("大分県", "温泉", "大分県の犬と泊まれる温泉旅館特集"),
+            ("鹿児島県", "公園", "鹿児島県の大型犬OK公園特集"),
+            ("熊本県", "ドッグラン", "熊本県のドッグラン特集"),
+            ("長崎県", None, "長崎県の犬連れスポット特集"),
+            ("佐賀県", None, "佐賀県の犬連れスポット特集"),
+            ("宮崎県", None, "宮崎県の犬連れスポット特集"),
+        ]
+        pref, spot_type_filter, theme_title = spot_themes[week_of_year % len(spot_themes)]
+        filtered = [s for s in spots
+                    if s.get("prefecture") == pref
+                    and s.get("status") not in ["閉業", "ペット同伴不可"]]
+        if spot_type_filter:
+            typed = [s for s in filtered if spot_type_filter in s.get("type", "")]
+            filtered = typed if typed else filtered
+        seed = get_today_seed()
+        rng = random.Random(seed)
+        item = rng.choice(filtered) if filtered else rng.choice(spots)
+        print(f"   特集テーマ: {theme_title} / スポット: {item.get('name')}")
 
     client = OpenAI()
 

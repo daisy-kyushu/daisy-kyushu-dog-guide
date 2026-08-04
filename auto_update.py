@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
 daisy-kyushu-dog-guide 自動更新スクリプト
-週3回（月・水・金）実行される自動更新処理
+毎日実行される自動更新処理
 
 更新内容:
 1. events.jsonのステータスを今日の日付基準で自動更新（終了済みイベントをpastに変更）
-2. 新規イベント情報をWebから収集して追加
+2. 新規イベント情報をWebから収集して追加（毎日実行）
 3. spots.jsonの「要確認」スポットの公式情報を再確認
 4. GitHubにプッシュ
 """
@@ -168,7 +168,7 @@ def git_commit_and_push(message):
 
 def main():
     log("=" * 50)
-    log("daisy-kyushu-dog-guide 自動更新開始")
+    log("daisy-kyushu-dog-guide 自動更新開始（毎日実行）")
     log(f"実行日: {TODAY}")
     log("=" * 50)
     
