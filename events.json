@@ -22,7 +22,7 @@
     "dogPolicy": "犬同伴参加可能。リード着用必須。",
     "status": "upcoming",
     "memo": "夕暮れ時の関門海峡を背景にした幻想的なトワイライトマルシェ。開催時間：15:00〜21:00（11日のみ17:00〜）。",
-    "lastChecked": "2026-09-01"
+    "lastChecked": "2026-09-02"
   },
   {
     "id": "jkc-kyushu-agility-2026",
@@ -45,7 +45,7 @@
     "officialUrl": "https://www.jkc.or.jp/",
     "snsUrl": "",
     "mapQuery": "熊本県 競技場",
-    "lastChecked": "2026-09-01"
+    "lastChecked": "2026-09-02"
   },
   {
     "id": "saga-balloon-pet-2026",
@@ -68,7 +68,7 @@
     "officialUrl": "https://www.sibf.jp/",
     "snsUrl": "",
     "mapQuery": "嘉瀬川河川敷 佐賀市",
-    "lastChecked": "2026-09-01"
+    "lastChecked": "2026-09-02"
   },
   {
     "id": "oita-doggo-land-2026",
@@ -90,7 +90,7 @@
       "大分",
       "九州"
     ],
-    "lastChecked": "2026-09-01",
+    "lastChecked": "2026-09-02",
     "status": "upcoming",
     "memo": "開催日・会場・犬同伴ルールは変更される可能性があります。参加前に必ず公式サイト・公式SNSで最新情報をご確認ください。"
   }
