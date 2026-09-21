@@ -1,28 +1,5 @@
 [
   {
-    "id": "jkc-kyushu-agility-2026",
-    "name": "JKC 九州 アジリティ競技会 2026",
-    "title": "JKC 九州 アジリティ競技会 2026",
-    "area": "熊本県",
-    "venue": "熊本県内施設",
-    "date": "2026-09-20",
-    "eventDate": "2026-09-20",
-    "category": "competition",
-    "status": "upcoming",
-    "tags": [
-      "アジリティ",
-      "JKC",
-      "九州",
-      "競技"
-    ],
-    "dogPolicy": "競技参加はJKC登録必要。観覧は一般入場可能。",
-    "memo": "JKC主催のアジリティ競技会。障害物コースを愛犬と一緒に走る競技を観覧できます。",
-    "officialUrl": "https://www.jkc.or.jp/",
-    "snsUrl": "",
-    "mapQuery": "熊本県 競技場",
-    "lastChecked": "2026-09-20"
-  },
-  {
     "id": "saga-balloon-pet-2026",
     "name": "佐賀インターナショナルバルーンフェスタ 2026（ペット同伴エリア）",
     "title": "佐賀インターナショナルバルーンフェスタ 2026",
@@ -43,7 +20,7 @@
     "officialUrl": "https://www.sibf.jp/",
     "snsUrl": "",
     "mapQuery": "嘉瀬川河川敷 佐賀市",
-    "lastChecked": "2026-09-20"
+    "lastChecked": "2026-09-21"
   },
   {
     "id": "oita-doggo-land-2026",
@@ -65,7 +42,7 @@
       "大分",
       "九州"
     ],
-    "lastChecked": "2026-09-20",
+    "lastChecked": "2026-09-21",
     "status": "upcoming",
     "memo": "開催日・会場・犬同伴ルールは変更される可能性があります。参加前に必ず公式サイト・公式SNSで最新情報をご確認ください。"
   }
